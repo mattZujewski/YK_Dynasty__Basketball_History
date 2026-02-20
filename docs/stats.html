@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Analysis &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F4CA; Trade Analysis</h1>
+      <p class="subtitle">Player context and dynasty impact for every trade</p>
+    </header>
+
+    <!-- Trade Selector -->
+    <div class="chart-section" style="padding:18px 24px">
+      <div class="filter-bar" style="gap:16px">
+        <div style="flex:1">
+          <label>Select Trade:</label>
+          <select class="filter-select" id="trade-select" style="width:100%">
+            <option value="">Choose a trade&hellip;</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stat Bar -->
+    <div class="stat-bar" id="stats-bar"></div>
+
+    <!-- Biggest Trades Section -->
+    <div class="chart-section" id="biggest-trades-section">
+      <h2>&#x1F525; Biggest Trades</h2>
+      <p class="chart-description">Trades involving the most dynasty-ranked players</p>
+      <div id="biggest-trades-grid" class="roster-grid">
+        <div class="loading-spinner" style="text-align:center;padding:40px;color:var(--text-muted)">Loading&hellip;</div>
+      </div>
+    </div>
+
+    <!-- Selected Trade Details -->
+    <div id="trade-detail" style="display:none"></div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/dashboards/stats.js"></script>
+</body>
+</html>

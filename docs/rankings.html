@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dynasty Rankings &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F451; Dynasty Rankings</h1>
+      <p class="subtitle">Lawson Dynasty Rankings &mdash; January 2026</p>
+    </header>
+
+    <!-- Filters -->
+    <div class="chart-section" style="padding:18px 24px">
+      <div class="filter-bar" style="gap:16px">
+        <div>
+          <label>Position:</label>
+          <select class="filter-select" id="pos-filter">
+            <option value="all">All Positions</option>
+            <option value="PG">PG</option>
+            <option value="SG">SG</option>
+            <option value="SF">SF</option>
+            <option value="PF">PF</option>
+            <option value="C">C</option>
+          </select>
+        </div>
+        <div>
+          <label>Owner:</label>
+          <select class="filter-select" id="owner-filter">
+            <option value="all">All Owners</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stat Bar -->
+    <div class="stat-bar" id="rankings-stats"></div>
+
+    <!-- Rankings Table -->
+    <div class="chart-section">
+      <h2>Full Rankings</h2>
+      <p class="chart-description" id="rankings-desc">Loading&hellip;</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="rankings-table">
+          <thead>
+            <tr>
+              <th data-sort="rank" style="width:60px">Rank</th>
+              <th data-sort="player">Player</th>
+              <th data-sort="pos">Pos</th>
+              <th data-sort="team">NBA Team</th>
+              <th data-sort="owner">Owner</th>
+              <th data-sort="ppg" style="text-align:center">PPG</th>
+              <th data-sort="rpg" style="text-align:center">RPG</th>
+              <th data-sort="apg" style="text-align:center">APG</th>
+            </tr>
+          </thead>
+          <tbody id="rankings-tbody">
+            <tr><td colspan="8" class="text-center text-muted" style="padding:24px">Loading&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/dashboards/rankings.js"></script>
+</body>
+</html>
