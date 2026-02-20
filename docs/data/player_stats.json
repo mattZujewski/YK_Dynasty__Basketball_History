@@ -1,10 +1,10 @@
 {
   "meta": {
-    "fetched": "2026-02-19",
+    "fetched": "2026-02-20",
     "season": "2024-25",
     "source": "basketball-reference.com",
-    "total_players": 246,
-    "matched": 244,
+    "total_players": 245,
+    "matched": 243,
     "missed": 2
   },
   "players": {
@@ -1931,24 +1931,6 @@
         "fg_pct": 53.5,
         "fg3_pct": 30.8,
         "ft_pct": 69.6,
-        "season": "2024-25"
-      }
-    },
-    "Jericho Sims": {
-      "nba_team": "2TM",
-      "pos": "C",
-      "stats": {
-        "gp": 53,
-        "mpg": 11.9,
-        "ppg": 1.8,
-        "rpg": 3.7,
-        "apg": 0.6,
-        "spg": 0.2,
-        "bpg": 0.4,
-        "topg": 0.6,
-        "fg_pct": 63.4,
-        "fg3_pct": 0.0,
-        "ft_pct": 61.5,
         "season": "2024-25"
       }
     },

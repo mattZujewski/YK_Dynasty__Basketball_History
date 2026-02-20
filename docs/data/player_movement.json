@@ -1,8 +1,8 @@
 {
   "meta": {
-    "total_players": 246,
+    "total_players": 245,
     "traded": 56,
-    "startup": 190,
+    "startup": 189,
     "total_trade_events": 154
   },
   "players": {
@@ -1457,17 +1457,6 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
-        }
-      ],
-      "traded": false
-    },
-    "Jericho Sims": {
-      "current_owner": "HaleTrager",
-      "history": [
-        {
-          "type": "startup",
-          "owner": "HaleTrager",
           "season": "unknown"
         }
       ],
