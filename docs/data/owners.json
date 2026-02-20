@@ -1,0 +1,143 @@
+{
+  "owners": [
+    {
+      "id": "peterson",
+      "realName": "Kelvin Peterson",
+      "abbrevs": ["PETE", "DIME"],
+      "altNames": ["Peterson", "Kelvin", "AlwaysDroppin"],
+      "fantraxUsername": "kpcrispy3",
+      "fantraxAbbrev": "Kelvin",
+      "teams": {
+        "2022-23": "Always Droppin Dimes",
+        "2023-24": "Always Droppin Dimes",
+        "2024-25": "Always Droppin Dimes",
+        "2025-26": "Always Droppin Dimes"
+      }
+    },
+    {
+      "id": "jowkar",
+      "realName": "Nick Jowkar",
+      "abbrevs": ["JOWK"],
+      "altNames": ["Jowkar"],
+      "fantraxUsername": "NickJowkar",
+      "fantraxAbbrev": "Jowk",
+      "teams": {
+        "2022-23": "Charlotte Wobnets",
+        "2023-24": "Ball Don't Lie",
+        "2024-25": "Ball Don't Lie",
+        "2025-26": "Ball Don't Lie"
+      }
+    },
+    {
+      "id": "berke",
+      "realName": "Logan Berke",
+      "abbrevs": ["BERK"],
+      "altNames": ["Berke", "Logan"],
+      "fantraxUsername": "lbtape",
+      "fantraxAbbrev": "Berke",
+      "teams": {
+        "2022-23": "Giddey Up",
+        "2023-24": "BKs Whoppers",
+        "2024-25": "Burner account",
+        "2025-26": "Burner account"
+      }
+    },
+    {
+      "id": "baden",
+      "realName": "Sam Baden",
+      "abbrevs": ["VLAND", "KELL", "BADEN"],
+      "altNames": ["Vlandis", "Kelley", "Baden"],
+      "fantraxUsername": "BadenBaden",
+      "fantraxAbbrev": "FLAGGS",
+      "franchiseHistory": [
+        {"owner": "Spencer Vlandis", "period": "2020-2022", "abbrev": "VLAND"},
+        {"owner": "Brendan Kelley", "period": "2023-2024", "abbrev": "KELL"},
+        {"owner": "Sam Baden", "period": "2024-present", "abbrev": "BADEN"}
+      ],
+      "teams": {
+        "2023-24": "BKs Whoppers",
+        "2024-25": "Flaming Flaggs",
+        "2025-26": "Flaming Flaggs"
+      }
+    },
+    {
+      "id": "delaney",
+      "realName": "David Delaney",
+      "abbrevs": ["DELA"],
+      "altNames": ["Delaney"],
+      "fantraxUsername": "Daviddjd16",
+      "fantraxAbbrev": "DELA",
+      "teams": {
+        "2022-23": "Freshly Washed Kings",
+        "2023-24": "Freshly Washed Kings",
+        "2024-25": "Freshly Washed Kings",
+        "2025-26": "Freshly Washed Kings"
+      }
+    },
+    {
+      "id": "green",
+      "realName": "Max Green",
+      "abbrevs": ["GREEN"],
+      "altNames": ["Green", "Max"],
+      "fantraxUsername": "maxgreen9",
+      "fantraxAbbrev": "Max",
+      "teams": {
+        "2023-24": "Ice Trae",
+        "2024-25": "Ice Trae",
+        "2025-26": "Ice Trae"
+      }
+    },
+    {
+      "id": "gold",
+      "realName": "Sam Gold",
+      "abbrevs": ["GOLD"],
+      "altNames": ["Gold"],
+      "fantraxUsername": "sgold58",
+      "fantraxAbbrev": "Gold",
+      "teams": {
+        "2022-23": "Kelvin got No Dimes",
+        "2023-24": "Kelvin got No Dimes",
+        "2025-26": "Kentucky Fried Guards"
+      }
+    },
+    {
+      "id": "zujewski",
+      "realName": "Matthew Zujewski",
+      "abbrevs": ["ZJEW"],
+      "altNames": ["Zujewski", "Franz"],
+      "fantraxUsername": "MattZujewski",
+      "fantraxAbbrev": "Franz",
+      "teams": {
+        "2022-23": "Only Franz",
+        "2024-25": "Only Franz",
+        "2025-26": "Only Franz"
+      }
+    },
+    {
+      "id": "moss",
+      "realName": "Max Moss",
+      "abbrevs": ["MOSS"],
+      "altNames": ["Moss"],
+      "fantraxUsername": "mmoss11",
+      "fantraxAbbrev": "Moss",
+      "teams": {
+        "2022-23": "Pure Sweat Farm",
+        "2024-25": "Pure Sweat Farm",
+        "2025-26": "Pure Sweat Farm"
+      }
+    },
+    {
+      "id": "haletrager",
+      "realName": "Ryan HaleTrager",
+      "abbrevs": ["TRAG", "HALE"],
+      "altNames": ["Trager", "Hale", "HaleTrager"],
+      "fantraxUsername": "HaleTrager",
+      "fantraxAbbrev": "Hale",
+      "teams": {
+        "2023-24": "Twin Towers",
+        "2024-25": "Twin Towers",
+        "2025-26": "Twin Towers"
+      }
+    }
+  ]
+}

@@ -45,7 +45,6 @@
     "season": "2020-21",
     "date": null,
     "give": [
-      "Jowkar Receives",
       "JOWK Peterson 2022 2nd"
     ],
     "get": [
@@ -277,7 +276,6 @@
     "season": "2021-22",
     "date": null,
     "give": [
-      "2nd place",
       "DELA Terry Rozier"
     ],
     "get": [
@@ -298,7 +296,6 @@
     "season": "2021-22",
     "date": null,
     "give": [
-      "Delaney",
       "JOWK Tyler Herro"
     ],
     "get": [
@@ -329,7 +326,6 @@
     "season": "2021-22",
     "date": null,
     "give": [
-      "Moss",
       "PETE Caris Levert"
     ],
     "get": [
@@ -350,7 +346,6 @@
     "season": "2021-22",
     "date": null,
     "give": [
-      "Green",
       "JOWK Delaney 2023 1st round"
     ],
     "get": [
@@ -605,8 +600,8 @@
     ],
     "get": [
       "JOWK Berke 2023 1st round (#6 overall)",
-      "Malik Beasley",
-      "Killian Hayes"
+      "JOWK Malik Beasley",
+      "JOWK Killian Hayes"
     ]
   },
   {
@@ -627,7 +622,7 @@
     ],
     "get": [
       "DELA Peterson 2025 1st round",
-      "John Wall"
+      "DELA John Wall"
     ]
   },
   {
@@ -648,15 +643,14 @@
     ],
     "get": [
       "TRAG Peterson 2025 1st round",
-      "John Konchar",
-      "Bol Bol"
+      "TRAG John Konchar",
+      "TRAG Bol Bol"
     ]
   },
   {
     "season": "2022-23",
     "date": null,
     "give": [
-      "Kelvin",
       "JOWK De'Andre Hunter"
     ],
     "get": [
@@ -667,7 +661,6 @@
     "season": "2022-23",
     "date": null,
     "give": [
-      "Kelvin",
       "MOSS Brandon Clarke"
     ],
     "get": [
@@ -678,7 +671,6 @@
     "season": "2022-23",
     "date": null,
     "give": [
-      "Moss",
       "HALE Marcus Smart"
     ],
     "get": [
@@ -693,15 +685,14 @@
     ],
     "get": [
       "DELA Green 2024 1st round",
-      "Caleb Martin",
-      "Chris Duarte"
+      "GOLD Caleb Martin",
+      "GOLD Chris Duarte"
     ]
   },
   {
     "season": "2022-23",
     "date": null,
     "give": [
-      "Delaney",
       "VLAND Gold 2023 2nd round"
     ],
     "get": [
@@ -712,7 +703,6 @@
     "season": "2022-23",
     "date": null,
     "give": [
-      "Logan",
       "DELA Vlandis 2026 1st round"
     ],
     "get": [
@@ -806,7 +796,7 @@
       "BERK Tobias Harris"
     ],
     "get": [
-      "Josh Hart"
+      "PETE Josh Hart"
     ]
   },
   {
@@ -883,7 +873,6 @@
     "season": "2023-24",
     "date": null,
     "give": [
-      "Green",
       "BERK Shai Gilgeous-Alexander"
     ],
     "get": [
@@ -904,7 +893,6 @@
     "season": "2023-24",
     "date": null,
     "give": [
-      "Jowkar",
       "DELA Bradley Beal"
     ],
     "get": [
@@ -925,7 +913,6 @@
     "season": "2023-24",
     "date": null,
     "give": [
-      "Jowkar",
       "DELA Kyle Kuzma"
     ],
     "get": [
@@ -1076,13 +1063,12 @@
   },
   {
     "season": "2024-25",
-    "date": null,
+    "date": "2025-07-26",
     "give": [
       "KELL Mikal Bridges"
     ],
     "get": [
-      "PETE Jowkar 2026 1st round",
-      "July 26th, 2025"
+      "PETE Jowkar 2026 1st round"
     ]
   },
   {
@@ -1150,7 +1136,6 @@
     "season": "2024-25",
     "date": null,
     "give": [
-      "Kelvin",
       "BERK Paul George"
     ],
     "get": [
@@ -1161,7 +1146,6 @@
     "season": "2024-25",
     "date": null,
     "give": [
-      "Green",
       "TRAG Coby White"
     ],
     "get": [
@@ -1172,7 +1156,6 @@
     "season": "2024-25",
     "date": null,
     "give": [
-      "Logan",
       "TRAG Yves Missi"
     ],
     "get": [
@@ -1183,7 +1166,6 @@
     "season": "2024-25",
     "date": null,
     "give": [
-      "Moss",
       "TRAG Jordan Poole"
     ],
     "get": [

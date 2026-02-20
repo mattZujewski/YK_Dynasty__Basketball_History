@@ -1,0 +1,1553 @@
+{
+  "season": "2025-26",
+  "league_id": "sz7vm5xwmancf4tr",
+  "teams": {
+    "Jowkar": {
+      "team_name": "Ball Don't Lie",
+      "owner": "Nick Jowkar",
+      "fantrax_id": "g2bt8hb6mancf4xf",
+      "players": [
+        {
+          "name": "Brandin Podziemski",
+          "pos": "SG",
+          "nbaTeam": "GS",
+          "status": "RESERVE"
+        },
+        {
+          "name": "DAngelo Russell",
+          "pos": "PG",
+          "nbaTeam": "WAS",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Deni Avdija",
+          "pos": "SF",
+          "nbaTeam": "POR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Derrick White",
+          "pos": "SG",
+          "nbaTeam": "BOS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Donte DiVincenzo",
+          "pos": "SG",
+          "nbaTeam": "MIN",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Isaiah Hartenstein",
+          "pos": "C",
+          "nbaTeam": "OKC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jaden Ivey",
+          "pos": "SG",
+          "nbaTeam": "CHI",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jalen Johnson",
+          "pos": "SF",
+          "nbaTeam": "ATL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "John Collins",
+          "pos": "PF",
+          "nbaTeam": "LAC",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Karl-Anthony Towns",
+          "pos": "C",
+          "nbaTeam": "NY",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Kasparas Jakucionis",
+          "pos": "SG",
+          "nbaTeam": "MIA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "LaMelo Ball",
+          "pos": "PG",
+          "nbaTeam": "CHA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Luka Doncic",
+          "pos": "PG",
+          "nbaTeam": "LAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Nickeil Alexander-Walker",
+          "pos": "SG",
+          "nbaTeam": "ATL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Nikola Jokic",
+          "pos": "C",
+          "nbaTeam": "DEN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Pascal Siakam",
+          "pos": "PF",
+          "nbaTeam": "IND",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Paul George",
+          "pos": "PF",
+          "nbaTeam": "PHI",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Pelle Larsson",
+          "pos": "SG",
+          "nbaTeam": "MIA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Peyton Watson",
+          "pos": "SF",
+          "nbaTeam": "DEN",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Tari Eason",
+          "pos": "PF",
+          "nbaTeam": "HOU",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Tre Jones",
+          "pos": "PG",
+          "nbaTeam": "CHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Victor Wembanyama",
+          "pos": "C",
+          "nbaTeam": "SA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Walker Kessler",
+          "pos": "C",
+          "nbaTeam": "UTA",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Zion Williamson",
+          "pos": "PF",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Asa Newell",
+          "pos": "PF",
+          "nbaTeam": "ATL",
+          "status": "MINORS"
+        },
+        {
+          "name": "Nikola Jovic",
+          "pos": "PF",
+          "nbaTeam": "MIA",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "HaleTrager": {
+      "team_name": "Twin Towers",
+      "owner": "Ryan HaleTrager",
+      "fantrax_id": "3x5ywhipmancf4xc",
+      "players": [
+        {
+          "name": "Alperen Sengun",
+          "pos": "C",
+          "nbaTeam": "HOU",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Amen Thompson",
+          "pos": "SF",
+          "nbaTeam": "HOU",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Ausar Thompson",
+          "pos": "SF",
+          "nbaTeam": "DET",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Austin Reaves",
+          "pos": "SG",
+          "nbaTeam": "LAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Collin Murray-Boyles",
+          "pos": "PF",
+          "nbaTeam": "TOR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Desmond Bane",
+          "pos": "SG",
+          "nbaTeam": "ORL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Devin Booker",
+          "pos": "SG",
+          "nbaTeam": "PHO",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Ivica Zubac",
+          "pos": "C",
+          "nbaTeam": "IND",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Jalen Smith",
+          "pos": "C",
+          "nbaTeam": "CHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jamal Murray",
+          "pos": "PG",
+          "nbaTeam": "DEN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jaylen Wells",
+          "pos": "SG",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jericho Sims",
+          "pos": "C",
+          "nbaTeam": "MIL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kawhi Leonard",
+          "pos": "SF",
+          "nbaTeam": "LAC",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Kristaps Porzingis",
+          "pos": "C",
+          "nbaTeam": "GS",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Kyshawn George",
+          "pos": "SG",
+          "nbaTeam": "WAS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Maxime Raynaud",
+          "pos": "C",
+          "nbaTeam": "SAC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Neemias Queta",
+          "pos": "C",
+          "nbaTeam": "BOS",
+          "status": "RESERVE"
+        },
+        {
+          "name": "P.J. Washington",
+          "pos": "PF",
+          "nbaTeam": "DAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Payton Pritchard",
+          "pos": "PG",
+          "nbaTeam": "BOS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Saddiq Bey",
+          "pos": "SF",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Santi Aldama",
+          "pos": "PF",
+          "nbaTeam": "MEM",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Scottie Barnes",
+          "pos": "PF",
+          "nbaTeam": "TOR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Stephen Curry",
+          "pos": "PG",
+          "nbaTeam": "GS",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Trey Murphy",
+          "pos": "SF",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Carter Bryant",
+          "pos": "PF",
+          "nbaTeam": "SA",
+          "status": "MINORS"
+        },
+        {
+          "name": "Hugo Gonzalez",
+          "pos": "SG",
+          "nbaTeam": "BOS",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Moss": {
+      "team_name": "Pure Sweat Fam",
+      "owner": "Max Moss",
+      "fantrax_id": "jnnpv3gjmancf4xb",
+      "players": [
+        {
+          "name": "Brandon Miller",
+          "pos": "SF",
+          "nbaTeam": "CHA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Brandon Williams",
+          "pos": "PG",
+          "nbaTeam": "DAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Brice Sensabaugh",
+          "pos": "SF",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "CJ McCollum",
+          "pos": "PG",
+          "nbaTeam": "ATL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Daniss Jenkins",
+          "pos": "PG",
+          "nbaTeam": "DET",
+          "status": "RESERVE"
+        },
+        {
+          "name": "DeAaron Fox",
+          "pos": "PG",
+          "nbaTeam": "SA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Dennis Schroder",
+          "pos": "PG",
+          "nbaTeam": "CLE",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Dominick Barlow",
+          "pos": "SF",
+          "nbaTeam": "PHI",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Donovan Clingan",
+          "pos": "C",
+          "nbaTeam": "POR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Ja Morant",
+          "pos": "PG",
+          "nbaTeam": "MEM",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jakob Poeltl",
+          "pos": "C",
+          "nbaTeam": "TOR",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Jalen Green",
+          "pos": "SG",
+          "nbaTeam": "PHO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jared McCain",
+          "pos": "SG",
+          "nbaTeam": "OKC",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jayson Tatum",
+          "pos": "PF",
+          "nbaTeam": "BOS",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Joel Embiid",
+          "pos": "C",
+          "nbaTeam": "PHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kelly Oubre Jr.",
+          "pos": "SF",
+          "nbaTeam": "PHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Mouhamed Gueye",
+          "pos": "PF",
+          "nbaTeam": "ATL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Myles Turner",
+          "pos": "C",
+          "nbaTeam": "MIL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Noah Penda",
+          "pos": "SF",
+          "nbaTeam": "ORL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "OG Anunoby",
+          "pos": "PF",
+          "nbaTeam": "NY",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Olivier-Maxence Prosper",
+          "pos": "PF",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Rudy Gobert",
+          "pos": "C",
+          "nbaTeam": "MIN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Tyler Herro",
+          "pos": "SG",
+          "nbaTeam": "MIA",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Tyrese Haliburton",
+          "pos": "PG",
+          "nbaTeam": "IND",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Adem Bona",
+          "pos": "C",
+          "nbaTeam": "PHI",
+          "status": "MINORS"
+        },
+        {
+          "name": "Ron Holland",
+          "pos": "SF",
+          "nbaTeam": "DET",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Zujewski": {
+      "team_name": "Only Franz",
+      "owner": "Matthew Zujewski",
+      "fantrax_id": "0s0goax3mancf4x7",
+      "players": [
+        {
+          "name": "Anfernee Simons",
+          "pos": "SG",
+          "nbaTeam": "CHI",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Cameron Johnson",
+          "pos": "PF",
+          "nbaTeam": "DEN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Chet Holmgren",
+          "pos": "C",
+          "nbaTeam": "OKC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Coby White",
+          "pos": "SG",
+          "nbaTeam": "CHA",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Deandre Ayton",
+          "pos": "C",
+          "nbaTeam": "LAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Dylan Harper",
+          "pos": "SG",
+          "nbaTeam": "SA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Franz Wagner",
+          "pos": "SF",
+          "nbaTeam": "ORL",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Jalen Williams",
+          "pos": "SG",
+          "nbaTeam": "OKC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jaren Jackson",
+          "pos": "C",
+          "nbaTeam": "UTA",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Jarrett Allen",
+          "pos": "C",
+          "nbaTeam": "CLE",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jaylen Brown",
+          "pos": "SF",
+          "nbaTeam": "BOS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jeremiah Fears",
+          "pos": "PG",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kelel Ware",
+          "pos": "C",
+          "nbaTeam": "MIA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Keyonte George",
+          "pos": "PG",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kon Knueppel",
+          "pos": "SF",
+          "nbaTeam": "CHA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Malik Monk",
+          "pos": "SG",
+          "nbaTeam": "SAC",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Max Christie",
+          "pos": "SG",
+          "nbaTeam": "DAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Naz Reid",
+          "pos": "C",
+          "nbaTeam": "MIN",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Nicolas Claxton",
+          "pos": "C",
+          "nbaTeam": "BKN",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Stephon Castle",
+          "pos": "PG",
+          "nbaTeam": "SA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Toumani Camara",
+          "pos": "PF",
+          "nbaTeam": "POR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Liam McNeeley",
+          "pos": "SF",
+          "nbaTeam": "CHA",
+          "status": "MINORS"
+        },
+        {
+          "name": "Sion James",
+          "pos": "SG",
+          "nbaTeam": "CHA",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Berke": {
+      "team_name": "Burner account",
+      "owner": "Logan Berke",
+      "fantrax_id": "iwtsclrxmancf4xa",
+      "players": [
+        {
+          "name": "Aaron Wiggins",
+          "pos": "SG",
+          "nbaTeam": "OKC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Brandon Ingram",
+          "pos": "SF",
+          "nbaTeam": "TOR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "DeMar DeRozan",
+          "pos": "SF",
+          "nbaTeam": "SAC",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Dillon Brooks",
+          "pos": "SF",
+          "nbaTeam": "PHO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Giannis Antetokounmpo",
+          "pos": "PF",
+          "nbaTeam": "MIL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Gui Santos",
+          "pos": "PF",
+          "nbaTeam": "GS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jerami Grant",
+          "pos": "PF",
+          "nbaTeam": "POR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jimmy Butler",
+          "pos": "SF",
+          "nbaTeam": "GS",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Josh Hart",
+          "pos": "SG",
+          "nbaTeam": "NY",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jrue Holiday",
+          "pos": "PG",
+          "nbaTeam": "POR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Julian Champagnie",
+          "pos": "SF",
+          "nbaTeam": "SA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jusuf Nurkic",
+          "pos": "C",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kevin Durant",
+          "pos": "PF",
+          "nbaTeam": "HOU",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Khris Middleton",
+          "pos": "SF",
+          "nbaTeam": "DAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kris Dunn",
+          "pos": "PG",
+          "nbaTeam": "LAC",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "LeBron James",
+          "pos": "SF",
+          "nbaTeam": "LAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Mikal Bridges",
+          "pos": "SF",
+          "nbaTeam": "NY",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Nikola Vucevic",
+          "pos": "C",
+          "nbaTeam": "BOS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Sam Merrill",
+          "pos": "SG",
+          "nbaTeam": "CLE",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Scotty Pippen",
+          "pos": "PG",
+          "nbaTeam": "MEM",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Tim Hardaway",
+          "pos": "SG",
+          "nbaTeam": "DEN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Zach LaVine",
+          "pos": "SG",
+          "nbaTeam": "SAC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kam Jones",
+          "pos": "SG",
+          "nbaTeam": "IND",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Green": {
+      "team_name": "Ice Trae",
+      "owner": "Max Green",
+      "fantrax_id": "op4s395nmancf4x5",
+      "players": [
+        {
+          "name": "Ajay Mitchell",
+          "pos": "SG",
+          "nbaTeam": "OKC",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Anthony Edwards",
+          "pos": "SG",
+          "nbaTeam": "MIN",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Bam Adebayo",
+          "pos": "C",
+          "nbaTeam": "MIA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Cade Cunningham",
+          "pos": "PG",
+          "nbaTeam": "DET",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Davion Mitchell",
+          "pos": "PG",
+          "nbaTeam": "MIA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "DayRon Sharpe",
+          "pos": "C",
+          "nbaTeam": "BKN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Devin Vassell",
+          "pos": "SG",
+          "nbaTeam": "SA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Donovan Mitchell",
+          "pos": "SG",
+          "nbaTeam": "CLE",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Evan Mobley",
+          "pos": "PF",
+          "nbaTeam": "CLE",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "GG Jackson",
+          "pos": "PF",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Grayson Allen",
+          "pos": "SG",
+          "nbaTeam": "PHO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Herbert Jones",
+          "pos": "SF",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Immanuel Quickley",
+          "pos": "PG",
+          "nbaTeam": "TOR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jaden McDaniels",
+          "pos": "PF",
+          "nbaTeam": "MIN",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jalen Brunson",
+          "pos": "PG",
+          "nbaTeam": "NY",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jaylon Tyson",
+          "pos": "SG",
+          "nbaTeam": "CLE",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Noah Clowney",
+          "pos": "PF",
+          "nbaTeam": "BKN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Norman Powell",
+          "pos": "SG",
+          "nbaTeam": "MIA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Onyeka Okongwu",
+          "pos": "C",
+          "nbaTeam": "ATL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "RJ Barrett",
+          "pos": "SF",
+          "nbaTeam": "TOR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Scoot Henderson",
+          "pos": "PG",
+          "nbaTeam": "POR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Trae Young",
+          "pos": "PG",
+          "nbaTeam": "WAS",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Ryan Dunn",
+          "pos": "SF",
+          "nbaTeam": "PHO",
+          "status": "MINORS"
+        },
+        {
+          "name": "Will Riley",
+          "pos": "SF",
+          "nbaTeam": "WAS",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Baden": {
+      "team_name": "Flaming Flaggs",
+      "owner": "Sam Baden",
+      "fantrax_id": "36wdyek5mancf4x2",
+      "players": [
+        {
+          "name": "Andrew Wiggins",
+          "pos": "SF",
+          "nbaTeam": "MIA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Cameron Thomas",
+          "pos": "SG",
+          "nbaTeam": "MIL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Carlton Carrington",
+          "pos": "PG",
+          "nbaTeam": "WAS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Cedric Coward",
+          "pos": "SG",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Cooper Flagg",
+          "pos": "SF",
+          "nbaTeam": "DAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Dereck Lively",
+          "pos": "C",
+          "nbaTeam": "DAL",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Egor Demin",
+          "pos": "PG",
+          "nbaTeam": "BKN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Isaiah Collier",
+          "pos": "PG",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Isaiah Stewart",
+          "pos": "C",
+          "nbaTeam": "DET",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "JaKobe Walter",
+          "pos": "SG",
+          "nbaTeam": "TOR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jordan Poole",
+          "pos": "SG",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Matas Buzelis",
+          "pos": "SF",
+          "nbaTeam": "CHI",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Michael Porter",
+          "pos": "SF",
+          "nbaTeam": "BKN",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Miles McBride",
+          "pos": "PG",
+          "nbaTeam": "NY",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Mitchell Robinson",
+          "pos": "C",
+          "nbaTeam": "NY",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Moussa Diabate",
+          "pos": "C",
+          "nbaTeam": "CHA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Naji Marshall",
+          "pos": "SF",
+          "nbaTeam": "DAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Robert Dillingham",
+          "pos": "PG",
+          "nbaTeam": "CHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Ryan Kalkbrenner",
+          "pos": "C",
+          "nbaTeam": "CHA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Ty Jerome",
+          "pos": "SG",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Walter Clayton",
+          "pos": "PG",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Zaccharie Risacher",
+          "pos": "SF",
+          "nbaTeam": "ATL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Zach Edey",
+          "pos": "C",
+          "nbaTeam": "MEM",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Danny Wolf",
+          "pos": "PF",
+          "nbaTeam": "BKN",
+          "status": "MINORS"
+        },
+        {
+          "name": "Yves Missi",
+          "pos": "C",
+          "nbaTeam": "NO",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Gold": {
+      "team_name": "Kentucky Fried Guards",
+      "owner": "Sam Gold",
+      "fantrax_id": "590tzhoqmancf4xe",
+      "players": [
+        {
+          "name": "Ace Bailey",
+          "pos": "SF",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Andrew Nembhard",
+          "pos": "SG",
+          "nbaTeam": "IND",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Anthony Black",
+          "pos": "PG",
+          "nbaTeam": "ORL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Ayo Dosunmu",
+          "pos": "SG",
+          "nbaTeam": "MIN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Bennedict Mathurin",
+          "pos": "SF",
+          "nbaTeam": "LAC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Christian Braun",
+          "pos": "SG",
+          "nbaTeam": "DEN",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Collin Gillespie",
+          "pos": "PG",
+          "nbaTeam": "PHO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Daniel Gafford",
+          "pos": "C",
+          "nbaTeam": "DAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jabari Smith",
+          "pos": "PF",
+          "nbaTeam": "HOU",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jalen Duren",
+          "pos": "C",
+          "nbaTeam": "DET",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jalen Suggs",
+          "pos": "PG",
+          "nbaTeam": "ORL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jonathan Kuminga",
+          "pos": "PF",
+          "nbaTeam": "ATL",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Kyle Filipowski",
+          "pos": "C",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Mark Williams",
+          "pos": "C",
+          "nbaTeam": "PHO",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Paolo Banchero",
+          "pos": "PF",
+          "nbaTeam": "ORL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Reed Sheppard",
+          "pos": "PG",
+          "nbaTeam": "HOU",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Russell Westbrook",
+          "pos": "PG",
+          "nbaTeam": "SAC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Sandro Mamukelashvili",
+          "pos": "PF",
+          "nbaTeam": "TOR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Shaedon Sharpe",
+          "pos": "SG",
+          "nbaTeam": "POR",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Shai Gilgeous-Alexander",
+          "pos": "PG",
+          "nbaTeam": "OKC",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "T.J. McConnell",
+          "pos": "PG",
+          "nbaTeam": "IND",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Tyrese Maxey",
+          "pos": "PG",
+          "nbaTeam": "PHI",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Cam Whitmore",
+          "pos": "SF",
+          "nbaTeam": "WAS",
+          "status": "MINORS"
+        },
+        {
+          "name": "Noa Essengue",
+          "pos": "PF",
+          "nbaTeam": "CHI",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Peterson": {
+      "team_name": "Always Droppin Dimes",
+      "owner": "Kelvin Peterson",
+      "fantrax_id": "z0phxgklmancf4x8",
+      "players": [
+        {
+          "name": "Aaron Gordon",
+          "pos": "PF",
+          "nbaTeam": "DEN",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Aaron Nesmith",
+          "pos": "SF",
+          "nbaTeam": "IND",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Anthony Davis",
+          "pos": "PF",
+          "nbaTeam": "WAS",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Bilal Coulibaly",
+          "pos": "SF",
+          "nbaTeam": "WAS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Bobby Portis",
+          "pos": "PF",
+          "nbaTeam": "MIL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Caleb Love",
+          "pos": "SG",
+          "nbaTeam": "POR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Collin Sexton",
+          "pos": "SG",
+          "nbaTeam": "CHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Damian Lillard",
+          "pos": "PG",
+          "nbaTeam": "POR",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Dejounte Murray",
+          "pos": "PG",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Domantas Sabonis",
+          "pos": "C",
+          "nbaTeam": "SAC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Draymond Green",
+          "pos": "PF",
+          "nbaTeam": "GS",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Fred VanVleet",
+          "pos": "PG",
+          "nbaTeam": "HOU",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "James Harden",
+          "pos": "PG",
+          "nbaTeam": "CLE",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Julius Randle",
+          "pos": "PF",
+          "nbaTeam": "MIN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Kyrie Irving",
+          "pos": "SG",
+          "nbaTeam": "DAL",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Lauri Markkanen",
+          "pos": "PF",
+          "nbaTeam": "UTA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Miles Bridges",
+          "pos": "SF",
+          "nbaTeam": "CHA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Moses Moody",
+          "pos": "SG",
+          "nbaTeam": "GS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Nolan Traore",
+          "pos": "PG",
+          "nbaTeam": "BKN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Quentin Grimes",
+          "pos": "SG",
+          "nbaTeam": "PHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Robert Williams",
+          "pos": "C",
+          "nbaTeam": "POR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Ryan Rollins",
+          "pos": "PG",
+          "nbaTeam": "MIL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Tobias Harris",
+          "pos": "PF",
+          "nbaTeam": "DET",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Wendell Carter",
+          "pos": "C",
+          "nbaTeam": "ORL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Devin Carter",
+          "pos": "PG",
+          "nbaTeam": "SAC",
+          "status": "MINORS"
+        },
+        {
+          "name": "Thomas Sorber",
+          "pos": "C",
+          "nbaTeam": "OKC",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Delaney": {
+      "team_name": "Freshly Washed Kings",
+      "owner": "David Delaney",
+      "fantrax_id": "ylqh2565mancf4wy",
+      "players": [
+        {
+          "name": "Alex Sarr",
+          "pos": "C",
+          "nbaTeam": "WAS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Cam Spencer",
+          "pos": "SG",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Cason Wallace",
+          "pos": "SG",
+          "nbaTeam": "OKC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Cody Williams",
+          "pos": "SG",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Darius Garland",
+          "pos": "PG",
+          "nbaTeam": "LAC",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Derik Queen",
+          "pos": "C",
+          "nbaTeam": "NO",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Dyson Daniels",
+          "pos": "SG",
+          "nbaTeam": "ATL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jaime Jaquez",
+          "pos": "SF",
+          "nbaTeam": "MIA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jarace Walker",
+          "pos": "PF",
+          "nbaTeam": "IND",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jay Huff",
+          "pos": "C",
+          "nbaTeam": "IND",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jeremy Sochan",
+          "pos": "PF",
+          "nbaTeam": "NY",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Josh Giddey",
+          "pos": "PG",
+          "nbaTeam": "CHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Keegan Murray",
+          "pos": "PF",
+          "nbaTeam": "SAC",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Keldon Johnson",
+          "pos": "SF",
+          "nbaTeam": "SA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kevin Porter",
+          "pos": "SG",
+          "nbaTeam": "MIL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Khaman Maluach",
+          "pos": "C",
+          "nbaTeam": "PHO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Nikola Topic",
+          "pos": "PG",
+          "nbaTeam": "OKC",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Nique Clifford",
+          "pos": "SG",
+          "nbaTeam": "SAC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Taylor Hendricks",
+          "pos": "PF",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Tre Johnson",
+          "pos": "SG",
+          "nbaTeam": "WAS",
+          "status": "RESERVE"
+        },
+        {
+          "name": "VJ Edgecombe",
+          "pos": "SG",
+          "nbaTeam": "PHI",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Joan Beringer",
+          "pos": "PF",
+          "nbaTeam": "MIN",
+          "status": "MINORS"
+        },
+        {
+          "name": "Yang Hansen",
+          "pos": "C",
+          "nbaTeam": "POR",
+          "status": "MINORS"
+        }
+      ]
+    }
+  },
+  "source": "public_api"
+}

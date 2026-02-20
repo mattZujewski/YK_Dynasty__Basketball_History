@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rosters &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F4DD; Current Rosters</h1>
+      <p class="subtitle">2025&ndash;26 rosters pulled from Fantrax</p>
+    </header>
+
+    <!-- Stat Bar -->
+    <div class="stat-bar" id="roster-stats">
+      <div class="stat-card">
+        <span class="stat-label">Franchises</span>
+        <span class="stat-value gold">10</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Total Players</span>
+        <span class="stat-value" id="stat-total-players">&mdash;</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Avg Roster Size</span>
+        <span class="stat-value" id="stat-avg-roster">&mdash;</span>
+      </div>
+    </div>
+
+    <!-- Roster Grid -->
+    <div id="roster-grid" class="roster-grid">
+      <div class="loading-spinner" style="text-align:center;padding:40px;color:var(--text-muted)">Loading&hellip;</div>
+    </div>
+
+    <!-- Fallback message if no data -->
+    <div class="chart-section" id="no-data-msg" style="display:none">
+      <h2>No Roster Data Available</h2>
+      <p class="chart-description">
+        Roster data hasn't been fetched yet. Run the Fantrax API script to populate:
+      </p>
+      <pre style="background:var(--bg-card);border:1px solid var(--border);border-radius:8px;padding:16px;overflow-x:auto;font-size:0.85rem;color:var(--text-primary)">python3 scripts/fantrax_yk.py --season 2025-26</pre>
+    </div>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script>
+    (async function () {
+      const YK = window.YK;
+      const grid = document.getElementById('roster-grid');
+
+      let rosterData;
+      try {
+        rosterData = await YK.loadJSON('data/rosters_2025_26.json');
+      } catch (e) {
+        console.warn('No roster data found:', e);
+        grid.style.display = 'none';
+        document.getElementById('no-data-msg').style.display = 'block';
+        return;
+      }
+
+      const teams = rosterData.teams || {};
+      const ownerKeys = Object.keys(teams).sort();
+
+      if (ownerKeys.length === 0) {
+        grid.style.display = 'none';
+        document.getElementById('no-data-msg').style.display = 'block';
+        return;
+      }
+
+      // Stat bar
+      let totalPlayers = 0;
+      ownerKeys.forEach(key => {
+        totalPlayers += (teams[key].players || []).length;
+      });
+      document.getElementById('stat-total-players').textContent = totalPlayers;
+      document.getElementById('stat-avg-roster').textContent =
+        ownerKeys.length > 0 ? (totalPlayers / ownerKeys.length).toFixed(1) : '—';
+
+      // Build roster cards
+      let html = '';
+      ownerKeys.forEach(ownerKey => {
+        const team = teams[ownerKey];
+        const color = YK.ownerColor(ownerKey);
+        const displayName = YK.ownerDisplayName(ownerKey);
+        const teamName = team.team_name || '—';
+        const players = team.players || [];
+
+        html += `
+          <div class="roster-card" style="border-top:3px solid ${color}">
+            <div class="roster-card-header">
+              <span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:${color};margin-right:8px;vertical-align:middle"></span>
+              <strong>${displayName}</strong>
+              <span style="color:var(--text-muted);font-size:0.82rem;margin-left:8px">${teamName}</span>
+              <span class="badge badge-active" style="margin-left:auto;font-size:0.75rem">${players.length} players</span>
+            </div>
+            <div class="roster-card-body">
+              ${players.length === 0
+                ? '<div style="color:var(--text-muted);padding:12px;text-align:center;font-style:italic">No player data available</div>'
+                : `<table class="roster-player-table">
+                    <thead><tr><th>Player</th><th>Pos</th><th>Team</th></tr></thead>
+                    <tbody>${players.map(p => `
+                      <tr>
+                        <td><strong>${escapeHtml(p.name)}</strong></td>
+                        <td style="color:var(--text-muted)">${escapeHtml(p.pos || '—')}</td>
+                        <td style="color:var(--text-muted)">${escapeHtml(p.nbaTeam || '—')}</td>
+                      </tr>`).join('')}
+                    </tbody>
+                  </table>`
+              }
+            </div>
+          </div>`;
+      });
+
+      grid.innerHTML = html;
+
+      function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+    })();
+  </script>
+
+  <style>
+    .roster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .roster-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .roster-card-header {
+      display: flex;
+      align-items: center;
+      padding: 14px 18px;
+      background: var(--bg-secondary, var(--bg-card));
+      border-bottom: 1px solid var(--border);
+    }
+    .roster-card-body {
+      max-height: 420px;
+      overflow-y: auto;
+    }
+    .roster-player-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .roster-player-table th {
+      position: sticky;
+      top: 0;
+      background: var(--bg-card);
+      padding: 6px 12px;
+      text-align: left;
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 1px solid var(--border);
+    }
+    .roster-player-table td {
+      padding: 5px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .roster-player-table tbody tr:hover {
+      background: var(--bg-hover, rgba(0,0,0,0.02));
+    }
+    @media (max-width: 720px) {
+      .roster-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</body>
+</html>

@@ -103,14 +103,14 @@
         filterBar.appendChild(btn);
       });
 
-      // Parse owner from trade string: "ABBREV Player Name" or "ABBREV text"
+      // Parse canonical owner from trade string: "ABBREV Player Name"
       function parseOwner(str) {
         const parts = str.trim().split(/\s+/);
         const abbrev = parts[0];
         return YK.resolveOwner(abbrev);
       }
 
-      // Count trades per owner
+      // Count trades per canonical owner (10 bars, not 14)
       function countByOwner(filtered) {
         const counts = {};
         filtered.forEach(trade => {
@@ -144,8 +144,16 @@
           tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted" style="padding:24px">No trades found</td></tr>';
         } else {
           tbody.innerHTML = filtered.map(trade => {
-            const giveStr = (trade.give || []).map(g => `<div style="margin-bottom:2px">${escapeHtml(g)}</div>`).join('');
-            const getStr = (trade.get || []).map(g => `<div style="margin-bottom:2px">${escapeHtml(g)}</div>`).join('');
+            const giveStr = (trade.give || []).map(g => {
+              const owner = parseOwner(g);
+              const color = YK.ownerColor(owner);
+              return `<div style="margin-bottom:2px"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${color};margin-right:4px;vertical-align:middle"></span>${escapeHtml(g)}</div>`;
+            }).join('');
+            const getStr = (trade.get || []).map(g => {
+              const owner = parseOwner(g);
+              const color = YK.ownerColor(owner);
+              return `<div style="margin-bottom:2px"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:${color};margin-right:4px;vertical-align:middle"></span>${escapeHtml(g)}</div>`;
+            }).join('');
             return `<tr data-season="${trade.season}" data-date="${trade.date || ''}">
               <td><strong>${trade.season}</strong></td>
               <td style="white-space:nowrap;color:var(--text-muted);font-size:0.8rem">${trade.date || '&mdash;'}</td>
@@ -155,10 +163,10 @@
           }).join('');
         }
 
-        // Render bar chart
+        // Render bar chart — use display names on x-axis
         const counts = countByOwner(filtered);
         const sortedOwners = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
-        const labels = sortedOwners;
+        const labels = sortedOwners.map(o => YK.ownerDisplayName(o));
         const data = sortedOwners.map(o => counts[o]);
         const colors = sortedOwners.map(o => YK.ownerColor(o));
 
@@ -177,13 +185,23 @@
               borderRadius: 4,
             }],
           },
-          options: YK.barOptions({ yLabel: 'Number of Trades' }),
+          options: {
+            ...YK.barOptions({ yLabel: 'Number of Trades' }),
+            scales: {
+              ...YK.barOptions({ yLabel: 'Number of Trades' }).scales,
+              x: {
+                ...YK.barOptions({}).scales.x,
+                ticks: { maxRotation: 45, font: { size: 10 } },
+              },
+            },
+          },
         });
 
-        // Insight
+        // Insight — use display names
         if (sortedOwners.length > 0) {
+          const topOwner = sortedOwners[0];
           document.getElementById('insight-volume').innerHTML =
-            `<strong>${sortedOwners[0]}</strong> leads with <strong>${counts[sortedOwners[0]]}</strong> trade participations` +
+            `<strong>${YK.ownerDisplayName(topOwner)}</strong> leads with <strong>${counts[topOwner]}</strong> trade participations` +
             (activeSeason !== 'all' ? ` in ${activeSeason}` : ' across all seasons') + '.';
         }
       }

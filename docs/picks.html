@@ -23,7 +23,7 @@
     <div class="chart-section">
       <h2>Pick Ownership Grid</h2>
       <p class="chart-description">
-        Rows are current owners. Columns are draft years. Each cell shows the picks that owner controls.
+        Rows are current owners (10 franchises). Columns are draft years. Each cell shows the picks that owner controls.
         <span class="pick-1st">Green = 1st round</span> &middot;
         <span class="pick-2nd">Gray = 2nd round</span> &middot;
         * = swap rights
@@ -70,15 +70,14 @@
       }
 
       const years = Object.keys(picksData).sort();
-      const owners = [...new Set(
-        years.flatMap(yr => Object.keys(picksData[yr]))
-      )].sort();
+
+      // Use canonical 10 owners from YK, sorted alphabetically
+      const owners = YK.OWNERS_ALPHA.slice();
 
       // Build grid
       const container = document.getElementById('pick-grid-container');
-      const numCols = years.length + 1; // owner column + year columns
 
-      let gridHTML = `<div class="pick-grid" style="grid-template-columns: 140px repeat(${years.length}, 1fr);">`;
+      let gridHTML = `<div class="pick-grid" style="grid-template-columns: 180px repeat(${years.length}, 1fr);">`;
 
       // Header row
       gridHTML += `<div class="pick-cell header">Owner</div>`;
@@ -89,9 +88,10 @@
       // Owner rows
       owners.forEach(owner => {
         const color = YK.ownerColor(owner);
+        const displayName = YK.ownerDisplayName(owner);
         gridHTML += `<div class="pick-cell owner-name">
           <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>
-          ${owner}
+          ${displayName}
         </div>`;
 
         years.forEach(yr => {
@@ -159,16 +159,17 @@
         });
       });
 
-      const sortedHoarders = owners.sort((a, b) => ownerTotals[b].total - ownerTotals[a].total);
+      const sortedHoarders = owners.slice().sort((a, b) => ownerTotals[b].total - ownerTotals[a].total);
 
       const hoarderTbody = document.getElementById('hoarder-tbody');
       hoarderTbody.innerHTML = sortedHoarders.map(owner => {
         const t = ownerTotals[owner];
         const color = YK.ownerColor(owner);
-        return `<tr data-owner="${owner}" data-total="${t.total}" data-firsts="${t.firsts}" data-seconds="${t.seconds}">
+        const displayName = YK.ownerDisplayName(owner);
+        return `<tr data-owner="${displayName}" data-total="${t.total}" data-firsts="${t.firsts}" data-seconds="${t.seconds}">
           <td>
             <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};margin-right:7px;vertical-align:middle"></span>
-            <strong>${owner}</strong>
+            <strong>${displayName}</strong>
           </td>
           <td style="text-align:center;font-weight:700;font-size:1.1rem">${t.total}</td>
           <td style="text-align:center"><span class="pick-1st">${t.firsts}</span></td>
@@ -181,7 +182,7 @@
       if (topHoarder) {
         const t = ownerTotals[topHoarder];
         document.getElementById('hoarder-insight').innerHTML =
-          `<strong>${topHoarder}</strong> controls a league-high <strong>${t.total}</strong> picks across 2027&ndash;2031, ` +
+          `<strong>${YK.ownerDisplayName(topHoarder)}</strong> controls a league-high <strong>${t.total}</strong> picks across 2027&ndash;2031, ` +
           `including <strong>${t.firsts}</strong> first-round picks.`;
       }
 

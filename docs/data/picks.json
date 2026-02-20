@@ -1,6 +1,6 @@
 {
   "2027": {
-    "Trager": [
+    "HaleTrager": [
       "1st Round Trager (swap w/Baden*)",
       "2nd Round Trager",
       "1st Round Gold"
@@ -26,10 +26,19 @@
     "Berke": [
       "1st Round Zujewski",
       "2nd Round Peterson"
-    ]
+    ],
+    "Peterson": [],
+    "Moss": [
+      "2nd Round Moss"
+    ],
+    "Zujewski": [],
+    "Gold": [
+      "2nd Round Gold"
+    ],
+    "Baden": []
   },
   "2028": {
-    "Trager": [
+    "HaleTrager": [
       "2nd Round Trager",
       "1st Round Gold"
     ],
@@ -58,10 +67,15 @@
     "Berke": [
       "1st Round Zujewski",
       "2nd Round Zujewski"
-    ]
+    ],
+    "Peterson": [],
+    "Moss": [],
+    "Zujewski": [],
+    "Gold": [],
+    "Baden": []
   },
   "2029": {
-    "Trager": [
+    "HaleTrager": [
       "1st Round Trager",
       "2nd Round Trager",
       "1st Round Gold"
@@ -90,10 +104,15 @@
     "Berke": [
       "1st Round Zujewski",
       "2nd Round Zujewski"
-    ]
+    ],
+    "Peterson": [],
+    "Moss": [],
+    "Zujewski": [],
+    "Gold": [],
+    "Baden": []
   },
   "2030": {
-    "Trager": [
+    "HaleTrager": [
       "1st Round Trager",
       "2nd Round Trager",
       "2nd Round Gold",
@@ -122,10 +141,15 @@
       "1st Round Berke",
       "1st Round Zujewski",
       "2nd Round Zujewski"
-    ]
+    ],
+    "Peterson": [],
+    "Moss": [],
+    "Zujewski": [],
+    "Gold": [],
+    "Baden": []
   },
   "2031": {
-    "Trager": [
+    "HaleTrager": [
       "1st Round Trager",
       "2nd Round Trager",
       "1st Round Gold",
@@ -154,6 +178,11 @@
       "2nd Round Berke",
       "1st Round Zujewski",
       "2nd Round Zujewski"
-    ]
+    ],
+    "Peterson": [],
+    "Moss": [],
+    "Zujewski": [],
+    "Gold": [],
+    "Baden": []
   }
 }

@@ -15,6 +15,7 @@
     const isTrade    = path.includes('trade.html');
     const isPicks    = path.includes('picks.html');
     const isStandings= path.includes('standings.html');
+    const isRoster   = path.includes('roster.html');
 
     function activeClass(flag) { return flag ? ' nav-active' : ''; }
 
@@ -31,6 +32,7 @@
     <a class="nav-link${activeClass(isIndex)}"     href="${base}index.html">Home</a>
     <a class="nav-link${activeClass(isStandings)}" href="${base}standings.html">Standings</a>
     <a class="nav-link${activeClass(isTrade)}"     href="${base}trade.html">Trades</a>
+    <a class="nav-link${activeClass(isRoster)}"    href="${base}roster.html">Rosters</a>
     <a class="nav-link${activeClass(isPicks)}"     href="${base}picks.html">Picks</a>
   </div>
   <span class="nav-spacer"></span>

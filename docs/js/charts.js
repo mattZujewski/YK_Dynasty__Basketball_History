@@ -8,24 +8,89 @@ window.YK = window.YK || {};
 (function (YK) {
   'use strict';
 
-  // Owner abbreviation → full name mapping
+  // ── Owner abbreviation → canonical owner name ──────────────────
+  // TRAG + HALE = same person (Ryan HaleTrager)
+  // VLAND + KELL + BADEN = same franchise slot (currently Sam Baden)
+  // PETE + DIME = same person (Kelvin Peterson)
   const OWNER_ABBREVS = {
-    TRAG: 'Trager', JOWK: 'Jowkar', DELA: 'Delaney', GREEN: 'Green',
-    BERK: 'Berke', PETE: 'Peterson', MOSS: 'Moss', ZJEW: 'Zujewski',
-    GOLD: 'Gold', KELL: 'Kelley', VLAND: 'Vlandis', HALE: 'Hale',
-    DIME: 'AlwaysDroppin', BADEN: 'Baden',
+    TRAG:  'HaleTrager',  HALE:  'HaleTrager',
+    JOWK:  'Jowkar',
+    DELA:  'Delaney',
+    GREEN: 'Green',
+    BERK:  'Berke',
+    PETE:  'Peterson',     DIME:  'Peterson',
+    MOSS:  'Moss',
+    ZJEW:  'Zujewski',
+    GOLD:  'Gold',
+    KELL:  'Baden',        VLAND: 'Baden',       BADEN: 'Baden',
   };
 
+  // Display name variants found in trade logs → canonical name
+  const OWNER_ALT_NAMES = {
+    'Kelvin':        'Peterson',
+    'Peterson':      'Peterson',
+    'AlwaysDroppin': 'Peterson',
+    'Jowkar':        'Jowkar',
+    'Delaney':       'Delaney',
+    'Green':         'Green',
+    'Max':           'Green',
+    'Logan':         'Berke',
+    'Berke':         'Berke',
+    'Moss':          'Moss',
+    'Trager':        'HaleTrager',
+    'Hale':          'HaleTrager',
+    'HaleTrager':    'HaleTrager',
+    'Vlandis':       'Baden',
+    'Kelley':        'Baden',
+    'Baden':         'Baden',
+    'Zujewski':      'Zujewski',
+    'Franz':         'Zujewski',
+    'Gold':          'Gold',
+  };
+
+  // Canonical 10 owners sorted alphabetically
   const OWNERS_ALPHA = [
-    'Trager', 'Jowkar', 'Delaney', 'Green', 'Berke',
-    'Peterson', 'Moss', 'Zujewski', 'Gold', 'Kelley',
-    'Vlandis', 'Hale',
+    'Baden', 'Berke', 'Delaney', 'Gold', 'Green',
+    'HaleTrager', 'Jowkar', 'Moss', 'Peterson', 'Zujewski',
   ];
 
-  // Tableau10-based palette for 12 owners
+  // Owner display names (friendlier for UI)
+  const OWNER_DISPLAY = {
+    'Baden':       'Sam Baden',
+    'Berke':       'Logan Berke',
+    'Delaney':     'David Delaney',
+    'Gold':        'Sam Gold',
+    'Green':       'Max Green',
+    'HaleTrager':  'Ryan HaleTrager',
+    'Jowkar':      'Nick Jowkar',
+    'Moss':        'Max Moss',
+    'Peterson':    'Kelvin Peterson',
+    'Zujewski':    'Matthew Zujewski',
+  };
+
+  // Team name → canonical owner mapping (all seasons)
+  const TEAM_TO_OWNER = {
+    'Always Droppin Dimes': 'Peterson',
+    'Ball Don\'t Lie':      'Jowkar',
+    'BKs Whoppers':         'Baden',
+    'Burner account':       'Berke',
+    'Charlotte Wobnets':    'Jowkar',
+    'Flaming Flaggs':       'Baden',
+    'Freshly Washed Kings': 'Delaney',
+    'Giddey Up':            'Berke',
+    'Ice Trae':             'Green',
+    'Kelvin got No Dimes':  'Gold',
+    'Kentucky Fried Guards':'Gold',
+    'Only Franz':           'Zujewski',
+    'Pure Sweat Farm':      'Moss',
+    'Pure Sweat Fam':       'Moss',
+    'Twin Towers':          'HaleTrager',
+  };
+
+  // Tableau10-based palette for 10 owners
   const OWNER_COLORS_RAW = [
-    '#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f', '#edc948',
-    '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac', '#1a6b3c', '#d4a017',
+    '#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f',
+    '#edc948', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac',
   ];
 
   function ownerColor(name) {
@@ -41,9 +106,22 @@ window.YK = window.YK || {};
     return `rgba(${r},${g},${b},${alpha})`;
   }
 
-  // Resolve owner abbreviation to full name
-  function resolveOwner(abbrev) {
-    return OWNER_ABBREVS[abbrev] || abbrev;
+  // Resolve any abbreviation, alt name, or canonical name → canonical owner
+  function resolveOwner(abbrevOrName) {
+    if (OWNER_ABBREVS[abbrevOrName]) return OWNER_ABBREVS[abbrevOrName];
+    if (OWNER_ALT_NAMES[abbrevOrName]) return OWNER_ALT_NAMES[abbrevOrName];
+    if (OWNERS_ALPHA.includes(abbrevOrName)) return abbrevOrName;
+    return abbrevOrName;
+  }
+
+  // Resolve team name → canonical owner
+  function teamToOwner(teamName) {
+    return TEAM_TO_OWNER[teamName] || null;
+  }
+
+  // Get display name for canonical owner
+  function ownerDisplayName(canonical) {
+    return OWNER_DISPLAY[canonical] || canonical;
   }
 
   // CSS var reader
@@ -154,10 +232,15 @@ window.YK = window.YK || {};
   Object.assign(YK, {
     OWNERS_ALPHA,
     OWNER_ABBREVS,
+    OWNER_ALT_NAMES,
     OWNER_COLORS_RAW,
+    OWNER_DISPLAY,
+    TEAM_TO_OWNER,
     ownerColor,
     ownerColorAlpha,
     resolveOwner,
+    teamToOwner,
+    ownerDisplayName,
     cssVar,
     applyChartDefaults,
     barOptions,

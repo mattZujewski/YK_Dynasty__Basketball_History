@@ -20,11 +20,11 @@
     <div class="stat-bar">
       <div class="stat-card">
         <span class="stat-label">Seasons</span>
-        <span class="stat-value" id="stat-seasons">6</span>
+        <span class="stat-value">6</span>
       </div>
       <div class="stat-card">
-        <span class="stat-label">Teams</span>
-        <span class="stat-value gold" id="stat-teams">10</span>
+        <span class="stat-label">Franchises</span>
+        <span class="stat-value gold">10</span>
       </div>
       <div class="stat-card">
         <span class="stat-label">Total Trades</span>
@@ -32,7 +32,7 @@
       </div>
       <div class="stat-card">
         <span class="stat-label">Champions</span>
-        <span class="stat-value gold" id="stat-champs">3</span>
+        <span class="stat-value gold" id="stat-champs">&mdash;</span>
       </div>
     </div>
 
@@ -42,10 +42,10 @@
         <div class="card-icon">&#x1F3C6;</div>
         <div class="card-title">All-Time Standings</div>
         <div class="card-desc">
-          Aggregate win-loss records across all Fantrax seasons, sorted by
-          winning percentage. See who dominates.
+          Aggregate win-loss records by owner across all Fantrax seasons,
+          sorted by winning percentage.
         </div>
-        <span class="card-tag">Sortable</span>
+        <span class="card-tag">By Owner</span>
       </a>
       <a class="dashboard-card" href="trade.html">
         <div class="card-icon">&#x1F504;</div>
@@ -65,6 +65,15 @@
         </div>
         <span class="card-tag">5-Year Grid</span>
       </a>
+      <a class="dashboard-card" href="roster.html">
+        <div class="card-icon">&#x1F4DD;</div>
+        <div class="card-title">Rosters</div>
+        <div class="card-desc">
+          Current 2025&ndash;26 rosters pulled from Fantrax. See every
+          player on every team.
+        </div>
+        <span class="card-tag">Live Data</span>
+      </a>
     </div>
 
     <!-- Champion History -->
@@ -77,6 +86,7 @@
             <tr>
               <th>Season</th>
               <th>Champion</th>
+              <th>Owner</th>
               <th>Record</th>
               <th>FPTS</th>
             </tr>
@@ -99,6 +109,7 @@
             <tr>
               <th data-sort="rank">Rank</th>
               <th data-sort="team">Team</th>
+              <th data-sort="owner">Owner</th>
               <th data-sort="w">W</th>
               <th data-sort="l">L</th>
               <th data-sort="pct">Win %</th>
@@ -108,6 +119,48 @@
           <tbody id="standings-tbody"></tbody>
         </table>
       </div>
+    </div>
+
+    <!-- Franchise History: Inherited Slot -->
+    <div class="chart-section">
+      <h2>&#x1F504; Franchise History: The Inherited Slot</h2>
+      <p class="chart-description">One franchise slot, three different owners over the league's history.</p>
+      <div class="data-table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th>Owner</th>
+              <th>Team Names</th>
+              <th>Excel Abbrev</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>2020&ndash;2022</strong></td>
+              <td>Spencer Vlandis</td>
+              <td style="color:var(--text-muted)">&mdash;</td>
+              <td><code>VLAND</code></td>
+            </tr>
+            <tr>
+              <td><strong>2023&ndash;2024</strong></td>
+              <td>Brendan Kelley</td>
+              <td>BKs Whoppers</td>
+              <td><code>KELL</code></td>
+            </tr>
+            <tr>
+              <td><strong>2024&ndash;present</strong></td>
+              <td>Sam Baden</td>
+              <td>Flaming Flaggs</td>
+              <td><code>BADEN</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chart-insight">
+        All trades under <strong>VLAND</strong>, <strong>KELL</strong>, and <strong>BADEN</strong> abbreviations
+        are attributed to this single franchise slot throughout the site.
+      </p>
     </div>
 
     <!-- Dynasty Rankings (Top 20) -->
@@ -133,7 +186,6 @@
     (async function () {
       const YK = window.YK;
 
-      // Load data
       let seasonsData, tradesData, rankingsData;
       try {
         [seasonsData, tradesData, rankingsData] = await Promise.all([
@@ -150,16 +202,23 @@
 
       // Stat bar
       document.getElementById('stat-trades').textContent = tradesData.length;
+      const champCount = seasons.filter(s => s.champion).length;
+      document.getElementById('stat-champs').textContent = champCount;
 
       // Champion table
       const champTbody = document.getElementById('champ-tbody');
       const champs = seasons.filter(s => s.champion);
       champTbody.innerHTML = champs.map(s => {
         const winner = s.standings.find(t => t.team === s.champion);
+        const owner = YK.teamToOwner(s.champion);
+        const ownerDisplay = owner ? YK.ownerDisplayName(owner) : '&mdash;';
+        const color = owner ? YK.ownerColor(owner) : '#888';
         return `<tr>
           <td><strong>${s.year}</strong></td>
+          <td><span class="badge badge-champ">${s.champion}</span></td>
           <td>
-            <span class="badge badge-champ">${s.champion}</span>
+            <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>
+            ${ownerDisplay}
           </td>
           <td>${winner ? `${winner.w}-${winner.l}` : '&mdash;'}</td>
           <td>${winner ? winner.fpts.toLocaleString() : '&mdash;'}</td>
@@ -175,12 +234,19 @@
         if (!s) return;
         standingsTbody.innerHTML = s.standings.map(t => {
           const isChamp = t.team === s.champion;
-          return `<tr data-rank="${t.rank}" data-team="${t.team}" data-w="${t.w}" data-l="${t.l}" data-pct="${t.win_pct}" data-fpts="${t.fpts}">
+          const owner = YK.teamToOwner(t.team);
+          const ownerDisplay = owner ? YK.ownerDisplayName(owner) : '&mdash;';
+          const color = owner ? YK.ownerColor(owner) : '#888';
+          return `<tr data-rank="${t.rank}" data-team="${t.team}" data-owner="${ownerDisplay}" data-w="${t.w}" data-l="${t.l}" data-pct="${t.win_pct}" data-fpts="${t.fpts}">
             <td style="text-align:center;font-weight:700">${t.rank}</td>
             <td>
               ${isChamp ? '<span style="color:var(--brand-gold);margin-right:4px">&#x1F3C6;</span>' : ''}
               <strong>${t.team}</strong>
               ${s.in_progress && t.rank === 1 ? ' <span class="badge badge-active" style="margin-left:6px">IN PROGRESS</span>' : ''}
+            </td>
+            <td>
+              <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>
+              ${ownerDisplay}
             </td>
             <td style="text-align:center">${t.w}</td>
             <td style="text-align:center">${t.l}</td>
@@ -190,7 +256,6 @@
         }).join('');
       }
 
-      // Build filter buttons
       seasons.forEach((s, i) => {
         const btn = document.createElement('button');
         btn.className = 'filter-btn' + (i === seasons.length - 1 ? ' active' : '');
@@ -203,10 +268,7 @@
         filterBar.appendChild(btn);
       });
 
-      // Show current season by default
       renderStandings(seasons[seasons.length - 1].year);
-
-      // Make standings sortable
       YK.makeSortable(document.getElementById('standings-table'));
 
       // Dynasty rankings (top 20)
