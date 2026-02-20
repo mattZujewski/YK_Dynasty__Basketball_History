@@ -8,7 +8,7 @@
   document.addEventListener('DOMContentLoaded', async function () {
     const YK = window.YK;
 
-    let seasonsData, tradesData, picksData, rosterData, ownersData, rankingsData;
+    let seasonsData, tradesData, picksData, rosterData, ownersData, rankingsData, statsData;
     try {
       [seasonsData, tradesData, picksData, rosterData, ownersData, rankingsData] = await Promise.all([
         YK.loadJSON('data/seasons.json'),
@@ -18,11 +18,14 @@
         YK.loadJSON('data/owners.json'),
         YK.loadJSON('data/rankings.json'),
       ]);
+      statsData = await YK.loadJSON('data/player_stats.json').catch(function() { return null; });
     } catch (e) {
       console.error('Failed to load data:', e);
       document.getElementById('team-profile').innerHTML = '<div class="error-msg">Failed to load data.</div>';
       return;
     }
+
+    var playerStats = (statsData && statsData.players) || {};
 
     var seasons = seasonsData.seasons;
     var owners = YK.OWNERS_ALPHA.slice();
@@ -267,19 +270,47 @@
           return a.name.localeCompare(b.name);
         });
 
+        // Team strength summary
+        var rankedCount = 0;
+        var totalRankScore = 0;
+        var totalPpg = 0;
+        var ppgCount = 0;
+        players.forEach(function(p) {
+          var rank = rankMap[YK.normalizeName(p.name)];
+          if (rank !== undefined) { rankedCount++; totalRankScore += rank; }
+          var ps = playerStats[p.name];
+          if (ps && ps.stats) { totalPpg += ps.stats.ppg; ppgCount++; }
+        });
+        var avgRank = rankedCount > 0 ? (totalRankScore / rankedCount).toFixed(1) : '—';
+        var avgPpg = ppgCount > 0 ? (totalPpg / ppgCount).toFixed(1) : '—';
+
+        rosterHtml += '<div class="stat-bar" style="margin-bottom:16px">';
+        rosterHtml += '<div class="stat-card"><span class="stat-label">Players</span><span class="stat-value">' + players.length + '</span></div>';
+        rosterHtml += '<div class="stat-card"><span class="stat-label">Dynasty Ranked</span><span class="stat-value">' + rankedCount + '</span></div>';
+        rosterHtml += '<div class="stat-card"><span class="stat-label">Avg Rank</span><span class="stat-value">' + avgRank + '</span></div>';
+        rosterHtml += '<div class="stat-card"><span class="stat-label">Avg PPG</span><span class="stat-value">' + avgPpg + '</span></div>';
+        rosterHtml += '</div>';
+
         rosterHtml += '<p class="chart-description">' + teamData.team_name + ' &middot; ' + players.length + ' players</p>';
         rosterHtml += '<div class="data-table-wrapper"><table class="data-table">';
-        rosterHtml += '<thead><tr><th>Player</th><th>Pos</th><th>NBA Team</th><th>Status</th></tr></thead>';
+        rosterHtml += '<thead><tr><th>Player</th><th>Pos</th><th>NBA Team</th><th style="text-align:center">PPG</th><th style="text-align:center">RPG</th><th style="text-align:center">APG</th><th>Status</th></tr></thead>';
         rosterHtml += '<tbody>';
         players.forEach(function(p) {
           var rank = rankMap[YK.normalizeName(p.name)];
           var rankBadge = rank !== undefined
             ? ' <span style="background:rgba(232,184,75,0.18);color:#c7960a;font-size:0.68rem;font-weight:800;padding:1px 5px;border-radius:99px;margin-left:4px">#' + rank + '</span>'
             : '';
+          var ps = playerStats[p.name];
+          var ppg = ps ? ps.stats.ppg : '—';
+          var rpg = ps ? ps.stats.rpg : '—';
+          var apg = ps ? ps.stats.apg : '—';
           rosterHtml += '<tr>';
           rosterHtml += '<td><strong>' + YK.escapeHtml(p.name) + '</strong>' + rankBadge + '</td>';
           rosterHtml += '<td style="color:var(--text-muted)">' + YK.escapeHtml(p.pos || '—') + '</td>';
           rosterHtml += '<td style="color:var(--text-muted)">' + YK.escapeHtml(p.nbaTeam || '—') + '</td>';
+          rosterHtml += '<td style="text-align:center">' + ppg + '</td>';
+          rosterHtml += '<td style="text-align:center">' + rpg + '</td>';
+          rosterHtml += '<td style="text-align:center">' + apg + '</td>';
           rosterHtml += '<td>' + YK.statusBadge(p.status) + '</td>';
           rosterHtml += '</tr>';
         });

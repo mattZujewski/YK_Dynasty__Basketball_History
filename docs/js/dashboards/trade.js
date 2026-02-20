@@ -9,13 +9,22 @@
     const YK = window.YK;
     YK.applyChartDefaults();
 
-    let trades;
+    let trades, rankingsData;
     try {
-      trades = await YK.loadJSON('data/trades.json');
+      [trades, rankingsData] = await Promise.all([
+        YK.loadJSON('data/trades.json'),
+        YK.loadJSON('data/rankings.json'),
+      ]);
     } catch (e) {
-      console.error('Failed to load trades:', e);
+      console.error('Failed to load data:', e);
       return;
     }
+
+    // Build rank lookup
+    var rankMap = {};
+    (rankingsData.rankings || []).forEach(function(r) {
+      rankMap[YK.normalizeName(r.player)] = r.rank;
+    });
 
     // Dynamic subtitle
     var allSeasons = [];
@@ -154,29 +163,25 @@
       if (filtered.length === 0) {
         tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted" style="padding:24px">No trades found</td></tr>';
       } else {
+        function formatTradeItem(g) {
+          var owner = YK.parseOwner(g);
+          var color = YK.ownerColor(owner);
+          var lastName = (YK.ownerDisplayName(owner) || '').split(' ').pop();
+          var asset = YK.parseAsset(g);
+          var rank = rankMap[YK.normalizeName(asset)];
+          var rankBadge = rank !== undefined
+            ? ' <span style="background:rgba(232,184,75,0.18);color:#c7960a;font-size:0.66rem;font-weight:800;padding:1px 4px;border-radius:99px">#' + rank + '</span>'
+            : '';
+          return '<div style="margin-bottom:2px">' +
+            '<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:' + color + ';margin-right:4px;vertical-align:middle"></span>' +
+            '<span style="color:var(--text-muted);font-weight:600;font-size:0.75rem">' + YK.escapeHtml(lastName) + '</span> ' +
+            YK.escapeHtml(asset) + rankBadge +
+          '</div>';
+        }
+
         tbody.innerHTML = filtered.map(function(trade) {
-          var giveStr = (trade.give || []).map(function(g) {
-            var owner = YK.parseOwner(g);
-            var color = YK.ownerColor(owner);
-            var lastName = (YK.ownerDisplayName(owner) || '').split(' ').pop();
-            var asset = YK.parseAsset(g);
-            return '<div style="margin-bottom:2px">' +
-              '<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:' + color + ';margin-right:4px;vertical-align:middle"></span>' +
-              '<span style="color:var(--text-muted);font-weight:600;font-size:0.75rem">' + YK.escapeHtml(lastName) + '</span> ' +
-              YK.escapeHtml(asset) +
-            '</div>';
-          }).join('');
-          var getStr = (trade.get || []).map(function(g) {
-            var owner = YK.parseOwner(g);
-            var color = YK.ownerColor(owner);
-            var lastName = (YK.ownerDisplayName(owner) || '').split(' ').pop();
-            var asset = YK.parseAsset(g);
-            return '<div style="margin-bottom:2px">' +
-              '<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:' + color + ';margin-right:4px;vertical-align:middle"></span>' +
-              '<span style="color:var(--text-muted);font-weight:600;font-size:0.75rem">' + YK.escapeHtml(lastName) + '</span> ' +
-              YK.escapeHtml(asset) +
-            '</div>';
-          }).join('');
+          var giveStr = (trade.give || []).map(formatTradeItem).join('');
+          var getStr = (trade.get || []).map(formatTradeItem).join('');
           return '<tr data-season="' + trade.season + '" data-date="' + (trade.date || '') + '">' +
             '<td><strong>' + trade.season + '</strong></td>' +
             '<td style="white-space:nowrap;color:var(--text-muted);font-size:0.8rem">' + (trade.date || '&mdash;') + '</td>' +

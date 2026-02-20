@@ -9,13 +9,14 @@
     const YK = window.YK;
     const grid = document.getElementById('roster-grid');
 
-    let rosterData, seasonsData, rankingsData;
+    let rosterData, seasonsData, rankingsData, statsData;
     try {
       [rosterData, seasonsData, rankingsData] = await Promise.all([
         YK.loadJSON('data/rosters_2025_26.json'),
         YK.loadJSON('data/seasons.json'),
         YK.loadJSON('data/rankings.json'),
       ]);
+      statsData = await YK.loadJSON('data/player_stats.json').catch(function() { return null; });
     } catch (e) {
       console.warn('No roster data found:', e);
       grid.style.display = 'none';
@@ -25,6 +26,7 @@
 
     const teams = rosterData.teams || {};
     const ownerKeys = Object.keys(teams);
+    const playerStats = (statsData && statsData.players) || {};
 
     if (ownerKeys.length === 0) {
       grid.style.display = 'none';
@@ -118,17 +120,24 @@
         html += '<div style="color:var(--text-muted);padding:12px;text-align:center;font-style:italic">No player data available</div>';
       } else {
         html += '<table class="roster-player-table">';
-        html += '<thead><tr><th>Player</th><th>Pos</th><th>Team</th><th>Status</th></tr></thead>';
+        html += '<thead><tr><th>Player</th><th>Pos</th><th>Team</th><th style="text-align:center">PPG</th><th style="text-align:center">RPG</th><th style="text-align:center">APG</th><th>Status</th></tr></thead>';
         html += '<tbody>';
         players.forEach(p => {
           const rank = rankMap[YK.normalizeName(p.name)];
           const rankBadge = rank !== undefined
             ? ' <span style="background:rgba(232,184,75,0.18);color:#c7960a;font-size:0.68rem;font-weight:800;padding:1px 5px;border-radius:99px;margin-left:4px">#' + rank + '</span>'
             : '';
+          const ps = playerStats[p.name];
+          const ppg = ps ? ps.stats.ppg : '—';
+          const rpg = ps ? ps.stats.rpg : '—';
+          const apg = ps ? ps.stats.apg : '—';
           html += '<tr>';
           html += '<td><strong>' + YK.escapeHtml(p.name) + '</strong>' + rankBadge + '</td>';
           html += '<td style="color:var(--text-muted)">' + YK.escapeHtml(p.pos || '—') + '</td>';
           html += '<td style="color:var(--text-muted)">' + YK.escapeHtml(p.nbaTeam || '—') + '</td>';
+          html += '<td style="text-align:center;font-size:0.82rem">' + ppg + '</td>';
+          html += '<td style="text-align:center;font-size:0.82rem">' + rpg + '</td>';
+          html += '<td style="text-align:center;font-size:0.82rem">' + apg + '</td>';
           html += '<td>' + YK.statusBadge(p.status) + '</td>';
           html += '</tr>';
         });
