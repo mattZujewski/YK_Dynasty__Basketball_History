@@ -5,7 +5,8 @@
     "source": "basketball-reference.com",
     "total_players": 245,
     "matched": 243,
-    "missed": 2
+    "missed": 2,
+    "total_matched": 248
   },
   "players": {
     "Aaron Gordon": {
@@ -4381,6 +4382,88 @@
         "ft_pct": 95.0,
         "season": "2025-26"
       }
+    },
+    "Egor Demin": {
+      "name": "Egor Demin",
+      "team": "BRK",
+      "season": "2025-26",
+      "stats": {
+        "games": 47,
+        "ppg": 10.8,
+        "rpg": 3.2,
+        "apg": 3.3,
+        "fg_pct": 40.6,
+        "3p_pct": 39.6,
+        "ft_pct": 85.2,
+        "mpg": 25.0
+      },
+      "source": "basketball-reference.com"
+    },
+    "Thomas Sorber": {
+      "name": "Thomas Sorber",
+      "team": "OKC",
+      "season": "2024-25 (college)",
+      "stats": {
+        "games": 24,
+        "ppg": 14.5,
+        "rpg": 8.5,
+        "apg": 2.4,
+        "fg_pct": 53.2,
+        "3p_pct": 0,
+        "ft_pct": 0,
+        "mpg": 0
+      },
+      "note": "Out for 2025-26 season (ACL). College stats from Georgetown.",
+      "source": "basketball-reference.com"
+    },
+    "Isaiah Joe": {
+      "name": "Isaiah Joe",
+      "team": "OKC",
+      "season": "2024-25",
+      "stats": {
+        "games": 74,
+        "ppg": 10.2,
+        "rpg": 2.6,
+        "apg": 1.6,
+        "fg_pct": 0,
+        "3p_pct": 41.2,
+        "ft_pct": 0,
+        "mpg": 21.7
+      },
+      "source": "basketball-reference.com"
+    },
+    "Kyle Kuzma": {
+      "name": "Kyle Kuzma",
+      "team": "MIL",
+      "season": "2024-25",
+      "stats": {
+        "games": 65,
+        "ppg": 14.8,
+        "rpg": 5.7,
+        "apg": 2.3,
+        "fg_pct": 43.6,
+        "3p_pct": 0,
+        "ft_pct": 0,
+        "mpg": 29.8
+      },
+      "source": "basketball-reference.com"
+    },
+    "Marvin Bagley": {
+      "name": "Marvin Bagley",
+      "team": "MEM",
+      "season": "2024-25",
+      "stats": {
+        "games": 19,
+        "ppg": 4.9,
+        "rpg": 2.9,
+        "apg": 0.4,
+        "fg_pct": 0,
+        "3p_pct": 0,
+        "ft_pct": 0,
+        "mpg": 0
+      },
+      "note": "Limited playing time, traded from WSH to MEM mid-season",
+      "source": "basketball-reference.com"
     }
   },
   "missed": [

@@ -3,7 +3,8 @@
     "total_players": 245,
     "traded": 56,
     "startup": 189,
-    "total_trade_events": 154
+    "total_trade_events": 154,
+    "startup_seasons_inferred": 189
   },
   "players": {
     "Aaron Gordon": {
@@ -25,7 +26,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -36,7 +38,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -47,7 +50,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -58,7 +62,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -69,7 +74,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -80,7 +86,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -91,7 +98,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -102,7 +110,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -113,7 +122,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -137,7 +147,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -148,7 +159,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -172,7 +184,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -183,7 +196,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -194,7 +208,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -205,7 +220,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -216,7 +232,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -240,7 +257,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -251,7 +269,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -262,7 +281,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -273,7 +293,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -297,7 +318,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -308,7 +330,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -319,7 +342,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -343,7 +367,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -354,7 +379,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -365,7 +391,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -376,7 +403,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -387,7 +415,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -398,7 +427,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -409,7 +439,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -420,7 +451,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -431,7 +463,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -442,7 +475,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -453,7 +487,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -464,7 +499,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -495,7 +531,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -506,7 +543,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -517,7 +555,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -548,7 +587,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -559,7 +599,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -603,7 +644,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -614,7 +656,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -638,7 +681,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -649,7 +693,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -660,7 +705,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -731,7 +777,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -742,7 +789,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -753,7 +801,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -764,7 +813,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -775,7 +825,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -786,7 +837,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -817,7 +869,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -828,7 +881,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -852,7 +906,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -863,7 +918,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -874,7 +930,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -905,7 +962,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -929,7 +987,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -953,7 +1012,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -964,7 +1024,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -975,7 +1036,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1006,7 +1068,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1017,7 +1080,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1028,7 +1092,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1039,7 +1104,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1050,7 +1116,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1061,7 +1128,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1072,7 +1140,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1083,7 +1152,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1094,7 +1164,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1105,7 +1176,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1129,7 +1201,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1140,7 +1213,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1151,7 +1225,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1162,7 +1237,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1173,7 +1249,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1197,7 +1274,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1208,7 +1286,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1219,7 +1298,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1230,7 +1310,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1241,7 +1322,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1252,7 +1334,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1263,7 +1346,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1274,7 +1358,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1325,7 +1410,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1336,7 +1422,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1347,7 +1434,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1358,7 +1446,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1369,7 +1458,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1393,7 +1483,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1404,7 +1495,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1415,7 +1507,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1446,7 +1539,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1457,7 +1551,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1468,7 +1563,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1479,7 +1575,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1523,7 +1620,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1547,7 +1645,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1571,7 +1670,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1582,7 +1682,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1626,7 +1727,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1637,7 +1739,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1648,7 +1751,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1672,7 +1776,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1683,7 +1788,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1694,7 +1800,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1705,7 +1812,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1729,7 +1837,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1740,7 +1849,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1751,7 +1861,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1762,7 +1873,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1773,7 +1885,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1784,7 +1897,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1795,7 +1909,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1806,7 +1921,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1844,7 +1960,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1894,7 +2011,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1918,7 +2036,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1942,7 +2061,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1953,7 +2073,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1964,7 +2085,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -1975,7 +2097,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2012,7 +2135,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2036,7 +2160,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2047,7 +2172,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2058,7 +2184,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2069,7 +2196,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2080,7 +2208,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2091,7 +2220,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2115,7 +2245,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2152,7 +2283,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2163,7 +2295,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2174,7 +2307,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2185,7 +2319,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2196,7 +2331,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2207,7 +2343,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2218,7 +2355,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2229,7 +2367,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2240,7 +2379,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2251,7 +2391,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2262,7 +2403,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2286,7 +2428,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2297,7 +2440,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2362,7 +2506,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2373,7 +2518,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2384,7 +2530,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2395,7 +2542,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2406,7 +2554,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2417,7 +2566,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2428,7 +2578,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2439,7 +2590,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2450,7 +2602,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2461,7 +2614,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2485,7 +2639,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2496,7 +2651,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2507,7 +2663,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2545,7 +2702,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2556,7 +2714,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2567,7 +2726,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2578,7 +2738,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2589,7 +2750,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2600,7 +2762,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2611,7 +2774,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2642,7 +2806,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2653,7 +2818,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2664,7 +2830,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2675,7 +2842,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2686,7 +2854,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2697,7 +2866,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2708,7 +2878,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2719,7 +2890,8 @@
         {
           "type": "startup",
           "owner": "Berke",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2750,7 +2922,8 @@
         {
           "type": "startup",
           "owner": "Zujewski",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2761,7 +2934,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2772,7 +2946,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2783,7 +2958,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2794,7 +2970,8 @@
         {
           "type": "startup",
           "owner": "HaleTrager",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2805,7 +2982,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2829,7 +3007,8 @@
         {
           "type": "startup",
           "owner": "Moss",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2840,7 +3019,8 @@
         {
           "type": "startup",
           "owner": "Gold",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2851,7 +3031,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2862,7 +3043,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2023-24",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2873,7 +3055,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2884,7 +3067,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2895,7 +3079,8 @@
         {
           "type": "startup",
           "owner": "Peterson",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2906,7 +3091,8 @@
         {
           "type": "startup",
           "owner": "Green",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2917,7 +3103,8 @@
         {
           "type": "startup",
           "owner": "Delaney",
-          "season": "unknown"
+          "season": "2025-26",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2941,7 +3128,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2952,7 +3140,8 @@
         {
           "type": "startup",
           "owner": "Baden",
-          "season": "unknown"
+          "season": "2024-25",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
@@ -2976,7 +3165,8 @@
         {
           "type": "startup",
           "owner": "Jowkar",
-          "season": "unknown"
+          "season": "2022-23",
+          "season_source": "inferred_from_roster"
         }
       ],
       "traded": false
