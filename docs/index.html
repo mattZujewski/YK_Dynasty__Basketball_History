@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F3C0; YK Dynasty Basketball</h1>
+      <p class="subtitle">Fantrax NBA Dynasty League &middot; Est. 2020 &middot; Year VI</p>
+    </header>
+
+    <!-- Stat Bar -->
+    <div class="stat-bar">
+      <div class="stat-card">
+        <span class="stat-label">Seasons</span>
+        <span class="stat-value" id="stat-seasons">6</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Teams</span>
+        <span class="stat-value gold" id="stat-teams">10</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Total Trades</span>
+        <span class="stat-value" id="stat-trades">&mdash;</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Champions</span>
+        <span class="stat-value gold" id="stat-champs">3</span>
+      </div>
+    </div>
+
+    <!-- Dashboard Navigation Cards -->
+    <div class="dashboard-grid">
+      <a class="dashboard-card" href="standings.html">
+        <div class="card-icon">&#x1F3C6;</div>
+        <div class="card-title">All-Time Standings</div>
+        <div class="card-desc">
+          Aggregate win-loss records across all Fantrax seasons, sorted by
+          winning percentage. See who dominates.
+        </div>
+        <span class="card-tag">Sortable</span>
+      </a>
+      <a class="dashboard-card" href="trade.html">
+        <div class="card-icon">&#x1F504;</div>
+        <div class="card-title">Trade Log</div>
+        <div class="card-desc">
+          Every trade across 6 seasons. Filter by year, browse the full
+          history, and see who's dealing the most.
+        </div>
+        <span class="card-tag">120+ Trades</span>
+      </a>
+      <a class="dashboard-card" href="picks.html">
+        <div class="card-icon">&#x1F4CB;</div>
+        <div class="card-title">Draft Picks</div>
+        <div class="card-desc">
+          Who owns which future picks from 2027&ndash;2031. The ultimate
+          war chest tracker for dynasty managers.
+        </div>
+        <span class="card-tag">5-Year Grid</span>
+      </a>
+    </div>
+
+    <!-- Champion History -->
+    <div class="chart-section">
+      <h2>&#x1F3C6; Champion History</h2>
+      <p class="chart-description">League champions by season. Only the elite.</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="champ-table">
+          <thead>
+            <tr>
+              <th>Season</th>
+              <th>Champion</th>
+              <th>Record</th>
+              <th>FPTS</th>
+            </tr>
+          </thead>
+          <tbody id="champ-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Season Standings Switcher -->
+    <div class="chart-section">
+      <h2>Season Standings</h2>
+      <p class="chart-description">Click a season to view standings for that year.</p>
+      <div class="filter-bar" id="season-filter-bar">
+        <label>Season:</label>
+      </div>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="standings-table">
+          <thead>
+            <tr>
+              <th data-sort="rank">Rank</th>
+              <th data-sort="team">Team</th>
+              <th data-sort="w">W</th>
+              <th data-sort="l">L</th>
+              <th data-sort="pct">Win %</th>
+              <th data-sort="fpts">FPTS</th>
+            </tr>
+          </thead>
+          <tbody id="standings-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Dynasty Rankings (Top 20) -->
+    <div class="chart-section">
+      <h2>&#x1F451; Dynasty Player Rankings</h2>
+      <p class="chart-description">Lawson Rankings &mdash; January 2026 Top 20</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="rankings-table">
+          <thead>
+            <tr>
+              <th style="width:60px">Rank</th>
+              <th>Player</th>
+            </tr>
+          </thead>
+          <tbody id="rankings-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script>
+    (async function () {
+      const YK = window.YK;
+
+      // Load data
+      let seasonsData, tradesData, rankingsData;
+      try {
+        [seasonsData, tradesData, rankingsData] = await Promise.all([
+          YK.loadJSON('data/seasons.json'),
+          YK.loadJSON('data/trades.json'),
+          YK.loadJSON('data/rankings.json'),
+        ]);
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        return;
+      }
+
+      const seasons = seasonsData.seasons;
+
+      // Stat bar
+      document.getElementById('stat-trades').textContent = tradesData.length;
+
+      // Champion table
+      const champTbody = document.getElementById('champ-tbody');
+      const champs = seasons.filter(s => s.champion);
+      champTbody.innerHTML = champs.map(s => {
+        const winner = s.standings.find(t => t.team === s.champion);
+        return `<tr>
+          <td><strong>${s.year}</strong></td>
+          <td>
+            <span class="badge badge-champ">${s.champion}</span>
+          </td>
+          <td>${winner ? `${winner.w}-${winner.l}` : '&mdash;'}</td>
+          <td>${winner ? winner.fpts.toLocaleString() : '&mdash;'}</td>
+        </tr>`;
+      }).join('');
+
+      // Season standings switcher
+      const filterBar = document.getElementById('season-filter-bar');
+      const standingsTbody = document.getElementById('standings-tbody');
+
+      function renderStandings(season) {
+        const s = seasons.find(x => x.year === season);
+        if (!s) return;
+        standingsTbody.innerHTML = s.standings.map(t => {
+          const isChamp = t.team === s.champion;
+          return `<tr data-rank="${t.rank}" data-team="${t.team}" data-w="${t.w}" data-l="${t.l}" data-pct="${t.win_pct}" data-fpts="${t.fpts}">
+            <td style="text-align:center;font-weight:700">${t.rank}</td>
+            <td>
+              ${isChamp ? '<span style="color:var(--brand-gold);margin-right:4px">&#x1F3C6;</span>' : ''}
+              <strong>${t.team}</strong>
+              ${s.in_progress && t.rank === 1 ? ' <span class="badge badge-active" style="margin-left:6px">IN PROGRESS</span>' : ''}
+            </td>
+            <td style="text-align:center">${t.w}</td>
+            <td style="text-align:center">${t.l}</td>
+            <td style="text-align:center;font-weight:600">${(t.win_pct * 100).toFixed(1)}%</td>
+            <td style="text-align:right">${t.fpts.toLocaleString()}</td>
+          </tr>`;
+        }).join('');
+      }
+
+      // Build filter buttons
+      seasons.forEach((s, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn' + (i === seasons.length - 1 ? ' active' : '');
+        btn.textContent = s.year;
+        btn.addEventListener('click', () => {
+          filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderStandings(s.year);
+        });
+        filterBar.appendChild(btn);
+      });
+
+      // Show current season by default
+      renderStandings(seasons[seasons.length - 1].year);
+
+      // Make standings sortable
+      YK.makeSortable(document.getElementById('standings-table'));
+
+      // Dynasty rankings (top 20)
+      const rankingsTbody = document.getElementById('rankings-tbody');
+      rankingsTbody.innerHTML = rankingsData.rankings.slice(0, 20).map(r => {
+        return `<tr>
+          <td style="text-align:center;font-weight:700;color:var(--brand-green)">${r.rank}</td>
+          <td>${r.player}</td>
+        </tr>`;
+      }).join('');
+    })();
+  </script>
+</body>
+</html>

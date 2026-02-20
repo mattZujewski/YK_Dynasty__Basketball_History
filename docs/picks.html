@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Draft Picks &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F4CB; Future Draft Pick Ownership</h1>
+      <p class="subtitle">Who owns which picks from 2027&ndash;2031</p>
+    </header>
+
+    <!-- Stat bar -->
+    <div class="stat-bar" id="pick-stats"></div>
+
+    <!-- Pick Grid -->
+    <div class="chart-section">
+      <h2>Pick Ownership Grid</h2>
+      <p class="chart-description">
+        Rows are current owners. Columns are draft years. Each cell shows the picks that owner controls.
+        <span class="pick-1st">Green = 1st round</span> &middot;
+        <span class="pick-2nd">Gray = 2nd round</span> &middot;
+        * = swap rights
+      </p>
+      <div class="data-table-wrapper" style="border:none">
+        <div id="pick-grid-container">
+          <div class="loading-spinner"><div class="spinner"></div> Loading&hellip;</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pick Hoarder Insight -->
+    <div class="chart-section" id="hoarder-section" style="display:none">
+      <h2>&#x1F4B0; Pick Hoarder Watch</h2>
+      <p class="chart-description">Who's stockpiling the most draft capital?</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="hoarder-table">
+          <thead>
+            <tr>
+              <th data-sort="owner">Owner</th>
+              <th data-sort="total" style="text-align:center">Total Picks</th>
+              <th data-sort="firsts" style="text-align:center">1st Rounders</th>
+              <th data-sort="seconds" style="text-align:center">2nd Rounders</th>
+            </tr>
+          </thead>
+          <tbody id="hoarder-tbody"></tbody>
+        </table>
+      </div>
+      <p class="chart-insight" id="hoarder-insight"></p>
+    </div>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script>
+    (async function () {
+      const YK = window.YK;
+
+      let picksData;
+      try {
+        picksData = await YK.loadJSON('data/picks.json');
+      } catch (e) {
+        console.error('Failed to load picks:', e);
+        return;
+      }
+
+      const years = Object.keys(picksData).sort();
+      const owners = [...new Set(
+        years.flatMap(yr => Object.keys(picksData[yr]))
+      )].sort();
+
+      // Build grid
+      const container = document.getElementById('pick-grid-container');
+      const numCols = years.length + 1; // owner column + year columns
+
+      let gridHTML = `<div class="pick-grid" style="grid-template-columns: 140px repeat(${years.length}, 1fr);">`;
+
+      // Header row
+      gridHTML += `<div class="pick-cell header">Owner</div>`;
+      years.forEach(yr => {
+        gridHTML += `<div class="pick-cell header" style="text-align:center">${yr}</div>`;
+      });
+
+      // Owner rows
+      owners.forEach(owner => {
+        const color = YK.ownerColor(owner);
+        gridHTML += `<div class="pick-cell owner-name">
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>
+          ${owner}
+        </div>`;
+
+        years.forEach(yr => {
+          const picks = (picksData[yr] && picksData[yr][owner]) || [];
+          if (picks.length === 0) {
+            gridHTML += `<div class="pick-cell pick-content" style="text-align:center;color:var(--text-muted)">&mdash;</div>`;
+          } else {
+            const pickItems = picks.map(p => {
+              const is1st = p.toLowerCase().includes('1st');
+              const cls = is1st ? 'pick-1st' : 'pick-2nd';
+              return `<div class="pick-item ${cls}">${escapeHtml(p)}</div>`;
+            }).join('');
+            gridHTML += `<div class="pick-cell pick-content">${pickItems}</div>`;
+          }
+        });
+      });
+
+      gridHTML += '</div>';
+      container.innerHTML = gridHTML;
+
+      // Stat bar
+      let totalPicks = 0;
+      let total1st = 0;
+      let total2nd = 0;
+      years.forEach(yr => {
+        Object.values(picksData[yr] || {}).forEach(picks => {
+          picks.forEach(p => {
+            totalPicks++;
+            if (p.toLowerCase().includes('1st')) total1st++;
+            else total2nd++;
+          });
+        });
+      });
+
+      document.getElementById('pick-stats').innerHTML = `
+        <div class="stat-card">
+          <span class="stat-label">Years Tracked</span>
+          <span class="stat-value">${years.length}</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Total Picks</span>
+          <span class="stat-value gold">${totalPicks}</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">1st Rounders</span>
+          <span class="stat-value">${total1st}</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">2nd Rounders</span>
+          <span class="stat-value gold">${total2nd}</span>
+        </div>
+      `;
+
+      // Hoarder table
+      const ownerTotals = {};
+      owners.forEach(owner => {
+        ownerTotals[owner] = { total: 0, firsts: 0, seconds: 0 };
+        years.forEach(yr => {
+          const picks = (picksData[yr] && picksData[yr][owner]) || [];
+          picks.forEach(p => {
+            ownerTotals[owner].total++;
+            if (p.toLowerCase().includes('1st')) ownerTotals[owner].firsts++;
+            else ownerTotals[owner].seconds++;
+          });
+        });
+      });
+
+      const sortedHoarders = owners.sort((a, b) => ownerTotals[b].total - ownerTotals[a].total);
+
+      const hoarderTbody = document.getElementById('hoarder-tbody');
+      hoarderTbody.innerHTML = sortedHoarders.map(owner => {
+        const t = ownerTotals[owner];
+        const color = YK.ownerColor(owner);
+        return `<tr data-owner="${owner}" data-total="${t.total}" data-firsts="${t.firsts}" data-seconds="${t.seconds}">
+          <td>
+            <span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};margin-right:7px;vertical-align:middle"></span>
+            <strong>${owner}</strong>
+          </td>
+          <td style="text-align:center;font-weight:700;font-size:1.1rem">${t.total}</td>
+          <td style="text-align:center"><span class="pick-1st">${t.firsts}</span></td>
+          <td style="text-align:center">${t.seconds}</td>
+        </tr>`;
+      }).join('');
+
+      // Insight
+      const topHoarder = sortedHoarders[0];
+      if (topHoarder) {
+        const t = ownerTotals[topHoarder];
+        document.getElementById('hoarder-insight').innerHTML =
+          `<strong>${topHoarder}</strong> controls a league-high <strong>${t.total}</strong> picks across 2027&ndash;2031, ` +
+          `including <strong>${t.firsts}</strong> first-round picks.`;
+      }
+
+      document.getElementById('hoarder-section').style.display = 'block';
+      YK.makeSortable(document.getElementById('hoarder-table'));
+
+      function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+    })();
+  </script>
+</body>
+</html>

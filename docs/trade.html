@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Log &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/chart.umd.min.js"></script>
+  <script src="js/chartjs-fix.js"></script>
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F504; Trade Log</h1>
+      <p class="subtitle">Every trade across 6 seasons of YK Dynasty Basketball</p>
+    </header>
+
+    <!-- Filter Bar -->
+    <div class="chart-section" style="padding:18px 24px">
+      <div class="filter-bar" id="season-filter-bar">
+        <label>Season:</label>
+      </div>
+    </div>
+
+    <!-- Trade Volume by Owner Chart -->
+    <div class="chart-section">
+      <h2>Trade Volume by Owner</h2>
+      <p class="chart-description">How many trades each owner has participated in across all seasons.</p>
+      <div class="chart-wrapper" style="height:360px">
+        <canvas id="chart-trade-volume"></canvas>
+      </div>
+      <p class="chart-insight" id="insight-volume"></p>
+    </div>
+
+    <!-- Trade Events List -->
+    <div class="chart-section">
+      <h2>Trade Events</h2>
+      <p class="chart-description">
+        <span id="trade-count">Loading&hellip;</span>
+      </p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="trade-table">
+          <thead>
+            <tr>
+              <th style="width:85px" data-sort="season">Season</th>
+              <th style="width:90px" data-sort="date">Date</th>
+              <th>Give</th>
+              <th>Get</th>
+            </tr>
+          </thead>
+          <tbody id="trade-tbody">
+            <tr><td colspan="4" class="text-center text-muted" style="padding:24px">Loading&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script>
+    (async function () {
+      const YK = window.YK;
+      YK.applyChartDefaults();
+
+      let trades;
+      try {
+        trades = await YK.loadJSON('data/trades.json');
+      } catch (e) {
+        console.error('Failed to load trades:', e);
+        return;
+      }
+
+      // Extract unique seasons
+      const allSeasons = [...new Set(trades.map(t => t.season))].sort();
+      let activeSeason = 'all';
+
+      // Build filter buttons
+      const filterBar = document.getElementById('season-filter-bar');
+      const allBtn = document.createElement('button');
+      allBtn.className = 'filter-btn active';
+      allBtn.textContent = 'All';
+      allBtn.addEventListener('click', () => {
+        activeSeason = 'all';
+        filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        allBtn.classList.add('active');
+        render();
+      });
+      filterBar.appendChild(allBtn);
+
+      allSeasons.forEach(s => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.textContent = s;
+        btn.addEventListener('click', () => {
+          activeSeason = s;
+          filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          render();
+        });
+        filterBar.appendChild(btn);
+      });
+
+      // Parse owner from trade string: "ABBREV Player Name" or "ABBREV text"
+      function parseOwner(str) {
+        const parts = str.trim().split(/\s+/);
+        const abbrev = parts[0];
+        return YK.resolveOwner(abbrev);
+      }
+
+      // Count trades per owner
+      function countByOwner(filtered) {
+        const counts = {};
+        filtered.forEach(trade => {
+          const owners = new Set();
+          [...(trade.give || []), ...(trade.get || [])].forEach(item => {
+            const owner = parseOwner(item);
+            if (owner && YK.OWNERS_ALPHA.includes(owner)) {
+              owners.add(owner);
+            }
+          });
+          owners.forEach(o => { counts[o] = (counts[o] || 0) + 1; });
+        });
+        return counts;
+      }
+
+      let chartInstance = null;
+
+      function render() {
+        const filtered = activeSeason === 'all'
+          ? trades
+          : trades.filter(t => t.season === activeSeason);
+
+        // Trade count label
+        document.getElementById('trade-count').textContent =
+          `${filtered.length} trade${filtered.length !== 1 ? 's' : ''}` +
+          (activeSeason !== 'all' ? ` in ${activeSeason}` : ' across all seasons');
+
+        // Render trade table
+        const tbody = document.getElementById('trade-tbody');
+        if (filtered.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted" style="padding:24px">No trades found</td></tr>';
+        } else {
+          tbody.innerHTML = filtered.map(trade => {
+            const giveStr = (trade.give || []).map(g => `<div style="margin-bottom:2px">${escapeHtml(g)}</div>`).join('');
+            const getStr = (trade.get || []).map(g => `<div style="margin-bottom:2px">${escapeHtml(g)}</div>`).join('');
+            return `<tr data-season="${trade.season}" data-date="${trade.date || ''}">
+              <td><strong>${trade.season}</strong></td>
+              <td style="white-space:nowrap;color:var(--text-muted);font-size:0.8rem">${trade.date || '&mdash;'}</td>
+              <td style="font-size:0.82rem">${giveStr}</td>
+              <td style="font-size:0.82rem">${getStr}</td>
+            </tr>`;
+          }).join('');
+        }
+
+        // Render bar chart
+        const counts = countByOwner(filtered);
+        const sortedOwners = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+        const labels = sortedOwners;
+        const data = sortedOwners.map(o => counts[o]);
+        const colors = sortedOwners.map(o => YK.ownerColor(o));
+
+        if (chartInstance) chartInstance.destroy();
+
+        const ctx = document.getElementById('chart-trade-volume').getContext('2d');
+        chartInstance = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels,
+            datasets: [{
+              data,
+              backgroundColor: colors,
+              borderColor: colors.map(c => c),
+              borderWidth: 1,
+              borderRadius: 4,
+            }],
+          },
+          options: YK.barOptions({ yLabel: 'Number of Trades' }),
+        });
+
+        // Insight
+        if (sortedOwners.length > 0) {
+          document.getElementById('insight-volume').innerHTML =
+            `<strong>${sortedOwners[0]}</strong> leads with <strong>${counts[sortedOwners[0]]}</strong> trade participations` +
+            (activeSeason !== 'all' ? ` in ${activeSeason}` : ' across all seasons') + '.';
+        }
+      }
+
+      function escapeHtml(str) {
+        const div = document.createElement('div');
+        div.textContent = str;
+        return div.innerHTML;
+      }
+
+      render();
+      YK.makeSortable(document.getElementById('trade-table'));
+    })();
+  </script>
+</body>
+</html>

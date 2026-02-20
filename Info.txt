@@ -1,0 +1,9 @@
+Year: URL
+2025-26: https://www.fantrax.com/fantasy/league/sz7vm5xwmancf4tr/home
+2024-25:https://www.fantrax.com/fantasy/league/26ihddrglvclsxav/home
+2023-24:https://www.fantrax.com/fantasy/league/tz7m8b61lhphjz9w/home
+2022-23:https://www.fantrax.com/fantasy/league/n7exgxhpl1ydddam/home
+
+FX_RM = _qpxzUhpSVBxZAUMPAVQCAEZdAQIcCBsHFBNZBxsRRhdbSAI=
+JSESSIONID=node019pol5dfw00hi1q1kdjdvlq590553988.node0
+

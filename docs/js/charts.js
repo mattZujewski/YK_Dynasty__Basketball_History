@@ -1,0 +1,174 @@
+/**
+ * charts.js — Shared Chart.js defaults & utilities
+ * YK Dynasty Basketball
+ */
+
+window.YK = window.YK || {};
+
+(function (YK) {
+  'use strict';
+
+  // Owner abbreviation → full name mapping
+  const OWNER_ABBREVS = {
+    TRAG: 'Trager', JOWK: 'Jowkar', DELA: 'Delaney', GREEN: 'Green',
+    BERK: 'Berke', PETE: 'Peterson', MOSS: 'Moss', ZJEW: 'Zujewski',
+    GOLD: 'Gold', KELL: 'Kelley', VLAND: 'Vlandis', HALE: 'Hale',
+    DIME: 'AlwaysDroppin', BADEN: 'Baden',
+  };
+
+  const OWNERS_ALPHA = [
+    'Trager', 'Jowkar', 'Delaney', 'Green', 'Berke',
+    'Peterson', 'Moss', 'Zujewski', 'Gold', 'Kelley',
+    'Vlandis', 'Hale',
+  ];
+
+  // Tableau10-based palette for 12 owners
+  const OWNER_COLORS_RAW = [
+    '#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f', '#edc948',
+    '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac', '#1a6b3c', '#d4a017',
+  ];
+
+  function ownerColor(name) {
+    const idx = OWNERS_ALPHA.indexOf(name);
+    return idx >= 0 ? OWNER_COLORS_RAW[idx] : '#888';
+  }
+
+  function ownerColorAlpha(name, alpha = 0.18) {
+    const hex = ownerColor(name);
+    const r = parseInt(hex.slice(1,3),16);
+    const g = parseInt(hex.slice(3,5),16);
+    const b = parseInt(hex.slice(5,7),16);
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
+
+  // Resolve owner abbreviation to full name
+  function resolveOwner(abbrev) {
+    return OWNER_ABBREVS[abbrev] || abbrev;
+  }
+
+  // CSS var reader
+  function cssVar(name) {
+    return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  }
+
+  // Chart.js global defaults
+  function applyChartDefaults() {
+    if (typeof Chart === 'undefined') return;
+    const textColor   = cssVar('--text-primary')   || '#1a1a2e';
+    const mutedColor  = cssVar('--text-muted')     || '#8892a4';
+    const borderColor = cssVar('--border')         || '#e2e8f0';
+    const bgCard      = cssVar('--bg-card')        || '#ffffff';
+
+    Chart.defaults.color             = textColor;
+    Chart.defaults.borderColor       = borderColor;
+    Chart.defaults.font.family       = "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+    Chart.defaults.font.size         = 12;
+    Chart.defaults.plugins.tooltip.backgroundColor = bgCard;
+    Chart.defaults.plugins.tooltip.titleColor       = textColor;
+    Chart.defaults.plugins.tooltip.bodyColor        = textColor;
+    Chart.defaults.plugins.tooltip.borderColor      = borderColor;
+    Chart.defaults.plugins.tooltip.borderWidth      = 1;
+    Chart.defaults.plugins.tooltip.padding          = 10;
+    Chart.defaults.plugins.tooltip.cornerRadius     = 6;
+    Chart.defaults.plugins.tooltip.displayColors    = true;
+    Chart.defaults.plugins.legend.labels.color      = textColor;
+    Chart.defaults.plugins.legend.labels.boxWidth   = 12;
+    Chart.defaults.plugins.legend.labels.padding    = 14;
+    Chart.defaults.scale = Chart.defaults.scale || {};
+    Chart.defaults.scale.grid = { color: borderColor };
+    Chart.defaults.scale.ticks = Object.assign({}, Chart.defaults.scale.ticks, { color: mutedColor });
+    ['category', 'linear', 'logarithmic', 'time', 'timeseries', 'radialLinear'].forEach(type => {
+      try {
+        const sd = Chart.defaults.scales[type] = Chart.defaults.scales[type] || {};
+        sd.ticks = Object.assign({ padding: 3 }, sd.ticks, { color: mutedColor });
+      } catch (_) {}
+    });
+  }
+
+  document.addEventListener('themechange', applyChartDefaults);
+
+  // Standard chart options
+  function barOptions({ title, xLabel, yLabel, stacked = false } = {}) {
+    return {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: stacked },
+        title: title ? { display: true, text: title, font: { size: 14, weight: '700' }, padding: { bottom: 12 } } : { display: false },
+      },
+      scales: {
+        x: {
+          stacked,
+          title: xLabel ? { display: true, text: xLabel } : { display: false },
+          grid: { display: false },
+        },
+        y: {
+          stacked,
+          beginAtZero: true,
+          ticks: { precision: 0 },
+          title: yLabel ? { display: true, text: yLabel } : { display: false },
+        },
+      },
+    };
+  }
+
+  // Sortable table helper
+  function makeSortable(tableEl) {
+    const ths = tableEl.querySelectorAll('th[data-sort]');
+    let currentCol = null, asc = true;
+
+    ths.forEach(th => {
+      th.style.cursor = 'pointer';
+      th.addEventListener('click', () => {
+        const col = th.dataset.sort;
+        if (col === currentCol) { asc = !asc; } else { asc = false; currentCol = col; }
+        ths.forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+        th.classList.add(asc ? 'sort-asc' : 'sort-desc');
+
+        const tbody = tableEl.querySelector('tbody');
+        const rows = Array.from(tbody.querySelectorAll('tr'));
+        rows.sort((a, b) => {
+          const av = a.dataset[col] ?? a.cells[th.cellIndex]?.textContent ?? '';
+          const bv = b.dataset[col] ?? b.cells[th.cellIndex]?.textContent ?? '';
+          const an = parseFloat(av), bn = parseFloat(bv);
+          if (!isNaN(an) && !isNaN(bn)) return asc ? an - bn : bn - an;
+          return asc ? av.localeCompare(bv) : bv.localeCompare(av);
+        });
+        rows.forEach(r => tbody.appendChild(r));
+      });
+    });
+  }
+
+  // JSON loader with cache
+  const _cache = {};
+  async function loadJSON(url) {
+    if (_cache[url]) return _cache[url];
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
+    const data = await res.json();
+    _cache[url] = data;
+    return data;
+  }
+
+  // Expose public API
+  Object.assign(YK, {
+    OWNERS_ALPHA,
+    OWNER_ABBREVS,
+    OWNER_COLORS_RAW,
+    ownerColor,
+    ownerColorAlpha,
+    resolveOwner,
+    cssVar,
+    applyChartDefaults,
+    barOptions,
+    makeSortable,
+    loadJSON,
+  });
+
+  if (typeof Chart !== 'undefined') {
+    applyChartDefaults();
+  } else {
+    document.addEventListener('DOMContentLoaded', applyChartDefaults);
+  }
+
+})(window.YK);

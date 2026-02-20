@@ -1,0 +1,159 @@
+{
+  "2027": {
+    "Trager": [
+      "1st Round Trager (swap w/Baden*)",
+      "2nd Round Trager",
+      "1st Round Gold"
+    ],
+    "Jowkar": [
+      "1st Round Delaney",
+      "2nd Round Berke",
+      "1st Round Moss (Baden swap rights)"
+    ],
+    "Delaney": [
+      "1st Round Peterson",
+      "2nd Round Delaney",
+      "2nd Round Zujewski",
+      "1st Round Baden* (swap w/Moss)",
+      "1st Round Jowkar",
+      "1st Round Berke",
+      "2nd Round Baden",
+      "2nd Round Jowkar"
+    ],
+    "Green": [
+      "1st Round Green"
+    ],
+    "Berke": [
+      "1st Round Zujewski",
+      "2nd Round Peterson"
+    ]
+  },
+  "2028": {
+    "Trager": [
+      "2nd Round Trager",
+      "1st Round Gold"
+    ],
+    "Jowkar": [
+      "1st Round Jowkar",
+      "2nd Round Berke"
+    ],
+    "Delaney": [
+      "1st Round Delaney",
+      "1st Round Berke",
+      "2nd Round Delaney",
+      "2nd Round Jowkar",
+      "1st Round Baden*",
+      "1st Round Moss",
+      "2nd Round Moss",
+      "2nd Round Kelley",
+      "2nd Round Gold"
+    ],
+    "Green": [
+      "1st Round Green",
+      "2nd Round Green",
+      "1st Round Peterson",
+      "1st Round Trager",
+      "2nd Round Peterson"
+    ],
+    "Berke": [
+      "1st Round Zujewski",
+      "2nd Round Zujewski"
+    ]
+  },
+  "2029": {
+    "Trager": [
+      "1st Round Trager",
+      "2nd Round Trager",
+      "1st Round Gold"
+    ],
+    "Jowkar": [
+      "1st Round Jowkar",
+      "2nd Round Jowkar",
+      "2nd Round Berke",
+      "1st Round Moss",
+      "1st Round Green",
+      "2nd Round Moss"
+    ],
+    "Delaney": [
+      "1st Round Delaney",
+      "2nd Round Delaney",
+      "1st Round Baden*",
+      "2nd Round Baden"
+    ],
+    "Green": [
+      "2nd Round Green",
+      "1st Round Peterson",
+      "1st Round Berke",
+      "2nd Round Peterson",
+      "2nd Round Gold"
+    ],
+    "Berke": [
+      "1st Round Zujewski",
+      "2nd Round Zujewski"
+    ]
+  },
+  "2030": {
+    "Trager": [
+      "1st Round Trager",
+      "2nd Round Trager",
+      "2nd Round Gold",
+      "1st Round Gold"
+    ],
+    "Jowkar": [
+      "1st Round Jowkar",
+      "2nd Round Jowkar",
+      "2nd Round Berke",
+      "1st Round Moss",
+      "2nd Round Moss"
+    ],
+    "Delaney": [
+      "1st Round Delaney",
+      "2nd Round Delaney",
+      "1st Round Baden",
+      "2nd Round Baden"
+    ],
+    "Green": [
+      "1st Round Green",
+      "2nd Round Green",
+      "1st Round Peterson",
+      "2nd Round Peterson"
+    ],
+    "Berke": [
+      "1st Round Berke",
+      "1st Round Zujewski",
+      "2nd Round Zujewski"
+    ]
+  },
+  "2031": {
+    "Trager": [
+      "1st Round Trager",
+      "2nd Round Trager",
+      "1st Round Gold",
+      "2nd Round Gold"
+    ],
+    "Jowkar": [
+      "1st Round Jowkar",
+      "2nd Round Jowkar",
+      "1st Round Moss",
+      "2nd Round Moss"
+    ],
+    "Delaney": [
+      "1st Round Delaney",
+      "2nd Round Delaney",
+      "1st Round Baden",
+      "2nd Round Baden"
+    ],
+    "Green": [
+      "1st Round Green",
+      "2nd Round Green",
+      "1st Round Peterson",
+      "2nd Round Peterson"
+    ],
+    "Berke": [
+      "1st Round Berke",
+      "2nd Round Berke",
+      "1st Round Zujewski",
+      "2nd Round Zujewski"
+    ]
+  }
+}

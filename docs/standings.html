@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All-Time Standings &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/chart.umd.min.js"></script>
+  <script src="js/chartjs-fix.js"></script>
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F3C6; All-Time Standings</h1>
+      <p class="subtitle">Aggregate records across all Fantrax seasons (2022&ndash;23 to present)</p>
+    </header>
+
+    <!-- All-Time Standings Table -->
+    <div class="chart-section">
+      <h2>All-Time Win-Loss Records</h2>
+      <p class="chart-description">Combined records from all seasons. Sorted by winning percentage. Teams that appeared in fewer seasons may have fewer games played.</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="alltime-table">
+          <thead>
+            <tr>
+              <th data-sort="rank" style="width:50px">Rank</th>
+              <th data-sort="team">Team</th>
+              <th data-sort="seasons" style="text-align:center">Seasons</th>
+              <th data-sort="w" style="text-align:center">W</th>
+              <th data-sort="l" style="text-align:center">L</th>
+              <th data-sort="pct" style="text-align:center">Win %</th>
+              <th data-sort="fpts" style="text-align:right">Total FPTS</th>
+              <th data-sort="titles" style="text-align:center">Titles</th>
+            </tr>
+          </thead>
+          <tbody id="alltime-tbody">
+            <tr><td colspan="8" class="text-center text-muted" style="padding:24px">Loading&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chart-insight" id="alltime-insight"></p>
+    </div>
+
+    <!-- All-Time Win% Bar Chart -->
+    <div class="chart-section">
+      <h2>Win Percentage by Team</h2>
+      <p class="chart-description">All-time winning percentage across all seasons played.</p>
+      <div class="chart-wrapper" style="height:380px">
+        <canvas id="chart-winpct"></canvas>
+      </div>
+    </div>
+
+    <!-- Season-by-Season Table -->
+    <div class="chart-section">
+      <h2>Season-by-Season Results</h2>
+      <p class="chart-description">Each team's record and finish by year.</p>
+      <div class="filter-bar" id="season-detail-filter">
+        <label>Season:</label>
+      </div>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="season-detail-table">
+          <thead>
+            <tr>
+              <th data-sort="rank" style="width:50px">Rank</th>
+              <th data-sort="team">Team</th>
+              <th data-sort="w" style="text-align:center">W</th>
+              <th data-sort="l" style="text-align:center">L</th>
+              <th data-sort="pct" style="text-align:center">Win %</th>
+              <th data-sort="fpts" style="text-align:right">FPTS</th>
+            </tr>
+          </thead>
+          <tbody id="season-detail-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/charts.js"></script>
+  <script>
+    (async function () {
+      const YK = window.YK;
+      YK.applyChartDefaults();
+
+      let seasonsData;
+      try {
+        seasonsData = await YK.loadJSON('data/seasons.json');
+      } catch (e) {
+        console.error('Failed to load data:', e);
+        return;
+      }
+
+      const seasons = seasonsData.seasons;
+
+      // --- All-Time Aggregation ---
+      // Group by team name across seasons
+      const teamMap = {};
+
+      seasons.forEach(season => {
+        season.standings.forEach(entry => {
+          const team = entry.team;
+          if (!teamMap[team]) {
+            teamMap[team] = { team, w: 0, l: 0, fpts: 0, seasons: 0, titles: 0 };
+          }
+          teamMap[team].w += entry.w;
+          teamMap[team].l += entry.l;
+          teamMap[team].fpts += entry.fpts;
+          teamMap[team].seasons += 1;
+          if (season.champion === team) teamMap[team].titles += 1;
+        });
+      });
+
+      const allTeams = Object.values(teamMap).map(t => {
+        t.pct = t.w + t.l > 0 ? t.w / (t.w + t.l) : 0;
+        return t;
+      }).sort((a, b) => b.pct - a.pct || b.w - a.w);
+
+      // Render all-time table
+      const alltimeTbody = document.getElementById('alltime-tbody');
+      alltimeTbody.innerHTML = allTeams.map((t, i) => {
+        return `<tr data-rank="${i+1}" data-team="${t.team}" data-seasons="${t.seasons}" data-w="${t.w}" data-l="${t.l}" data-pct="${t.pct.toFixed(3)}" data-fpts="${t.fpts}" data-titles="${t.titles}">
+          <td style="text-align:center;font-weight:700">${i + 1}</td>
+          <td>
+            <strong>${t.team}</strong>
+            ${t.titles > 0 ? ` <span class="badge badge-champ">${t.titles}x Champ</span>` : ''}
+          </td>
+          <td style="text-align:center">${t.seasons}</td>
+          <td style="text-align:center;font-weight:600">${t.w}</td>
+          <td style="text-align:center">${t.l}</td>
+          <td style="text-align:center;font-weight:700;color:var(--brand-green)">${(t.pct * 100).toFixed(1)}%</td>
+          <td style="text-align:right">${t.fpts.toLocaleString()}</td>
+          <td style="text-align:center">${t.titles > 0 ? t.titles : '&mdash;'}</td>
+        </tr>`;
+      }).join('');
+
+      YK.makeSortable(document.getElementById('alltime-table'));
+
+      // Insight
+      if (allTeams.length > 0) {
+        const top = allTeams[0];
+        document.getElementById('alltime-insight').innerHTML =
+          `<strong>${top.team}</strong> holds the best all-time record at ` +
+          `<strong>${top.w}-${top.l}</strong> (${(top.pct * 100).toFixed(1)}%) across ${top.seasons} season${top.seasons > 1 ? 's' : ''}.` +
+          (top.titles > 0 ? ` They've won <strong>${top.titles}</strong> championship${top.titles > 1 ? 's' : ''}.` : '');
+      }
+
+      // --- Win% Bar Chart ---
+      const chartLabels = allTeams.map(t => t.team);
+      const chartData = allTeams.map(t => +(t.pct * 100).toFixed(1));
+      const chartColors = allTeams.map((t, i) => {
+        if (t.titles > 0) return '#e8b84b'; // gold for champions
+        return i < 3 ? '#1a6b3c' : '#4e79a7';
+      });
+
+      new Chart(document.getElementById('chart-winpct').getContext('2d'), {
+        type: 'bar',
+        data: {
+          labels: chartLabels,
+          datasets: [{
+            data: chartData,
+            backgroundColor: chartColors,
+            borderColor: chartColors,
+            borderWidth: 1,
+            borderRadius: 4,
+          }],
+        },
+        options: {
+          ...YK.barOptions({ yLabel: 'Win %' }),
+          scales: {
+            ...YK.barOptions({ yLabel: 'Win %' }).scales,
+            x: {
+              ...YK.barOptions({}).scales.x,
+              ticks: { maxRotation: 45, font: { size: 10 } },
+            },
+            y: {
+              ...YK.barOptions({ yLabel: 'Win %' }).scales.y,
+              max: 100,
+            },
+          },
+        },
+      });
+
+      // --- Season-by-Season Detail ---
+      const filterBar = document.getElementById('season-detail-filter');
+      const detailTbody = document.getElementById('season-detail-tbody');
+
+      function renderSeasonDetail(season) {
+        const s = seasons.find(x => x.year === season);
+        if (!s) return;
+        detailTbody.innerHTML = s.standings.map(t => {
+          const isChamp = t.team === s.champion;
+          return `<tr data-rank="${t.rank}" data-team="${t.team}" data-w="${t.w}" data-l="${t.l}" data-pct="${t.win_pct}" data-fpts="${t.fpts}">
+            <td style="text-align:center;font-weight:700">${t.rank}</td>
+            <td>
+              ${isChamp ? '<span style="color:var(--brand-gold);margin-right:4px">&#x1F3C6;</span>' : ''}
+              <strong>${t.team}</strong>
+            </td>
+            <td style="text-align:center">${t.w}</td>
+            <td style="text-align:center">${t.l}</td>
+            <td style="text-align:center;font-weight:600">${(t.win_pct * 100).toFixed(1)}%</td>
+            <td style="text-align:right">${t.fpts.toLocaleString()}</td>
+          </tr>`;
+        }).join('');
+      }
+
+      seasons.forEach((s, i) => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn' + (i === seasons.length - 1 ? ' active' : '');
+        btn.textContent = s.year;
+        btn.addEventListener('click', () => {
+          filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderSeasonDetail(s.year);
+        });
+        filterBar.appendChild(btn);
+      });
+
+      renderSeasonDetail(seasons[seasons.length - 1].year);
+      YK.makeSortable(document.getElementById('season-detail-table'));
+    })();
+  </script>
+</body>
+</html>
