@@ -711,3 +711,215 @@ html.dark .chart-insight {
   .season-pill { min-width: 68px; font-size: 0.68rem; }
   .btn { font-size: 0.8rem; padding: 6px 12px; }
 }
+
+/* --- Trade Partner Matrix -------------------------------- */
+.trade-matrix {
+  display: grid;
+  gap: 2px;
+  overflow-x: auto;
+}
+.trade-matrix-cell {
+  min-width: 48px;
+  padding: 6px 4px;
+  text-align: center;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  line-height: 1.3;
+}
+.trade-matrix-cell.header {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  background: var(--bg-primary);
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+.trade-matrix-cell.row-label {
+  font-weight: 700;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  text-align: left;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+.trade-matrix-cell.diagonal {
+  background: var(--bg-primary);
+  color: var(--text-muted);
+}
+.trade-matrix-cell.has-trades {
+  background: rgba(26,107,60,0.12);
+  color: var(--brand-green);
+  font-weight: 700;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+.trade-matrix-cell.has-trades:hover {
+  background: rgba(26,107,60,0.25);
+}
+.trade-matrix-cell.hot {
+  background: var(--brand-green);
+  color: #fff;
+}
+.trade-matrix-cell.hot:hover {
+  background: #145c32;
+}
+.trade-matrix-cell.empty {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+/* Matrix Tooltip */
+.matrix-tooltip {
+  position: fixed;
+  z-index: 3000;
+  max-width: 320px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-lg);
+  padding: 14px 16px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  font-size: 0.82rem;
+}
+.matrix-tooltip.visible { opacity: 1; }
+.matrix-tooltip .tooltip-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+.matrix-tooltip .tooltip-item {
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  line-height: 1.4;
+  font-size: 0.78rem;
+}
+
+/* --- Pick Color-Coding ----------------------------------- */
+.pick-item.pick-own {
+  border-left: 3px solid var(--brand-green);
+  padding-left: 6px;
+}
+.pick-item.pick-acquired {
+  border-left: 3px solid var(--kept);
+  padding-left: 6px;
+}
+.pick-item.pick-swap {
+  border-left: 3px solid var(--brand-gold);
+  padding-left: 6px;
+}
+.pick-grid .summary-row {
+  font-weight: 700;
+  background: var(--bg-primary);
+  border-top: 2px solid var(--border-strong);
+}
+.pick-grid .owner-highlight {
+  background: rgba(232,184,75,0.06);
+}
+
+/* --- Team Profile Page ----------------------------------- */
+.team-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+.team-profile-header .color-bar {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 6px;
+}
+.team-profile-header .profile-info {
+  padding-left: 14px;
+}
+.team-profile-header .profile-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+.team-profile-header .profile-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+.team-profile-header .profile-record {
+  margin-left: auto;
+  text-align: right;
+}
+.team-profile-header .profile-record .big-num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--brand-green);
+}
+.team-profile-header .profile-record .rec-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.ownership-timeline {
+  display: flex;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  margin-top: 12px;
+  border: 1px solid var(--border);
+}
+.ownership-era {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 0 12px;
+  min-width: 60px;
+}
+
+/* Owner select dropdown for team page */
+.owner-select-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.owner-select-bar label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.owner-select-bar select {
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg-input);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+.owner-select-bar select:focus { border-color: var(--brand-green); }
+
+/* --- Responsive additions -------------------------------- */
+@media (max-width: 768px) {
+  .trade-matrix-cell { min-width: 36px; font-size: 0.68rem; padding: 4px 2px; }
+  .team-profile-header { flex-direction: column; align-items: flex-start; }
+  .team-profile-header .profile-record { margin-left: 0; text-align: left; margin-top: 12px; }
+}

@@ -16,6 +16,7 @@
     const isPicks    = path.includes('picks.html');
     const isStandings= path.includes('standings.html');
     const isRoster   = path.includes('roster.html');
+    const isTeam     = path.includes('team.html');
 
     function activeClass(flag) { return flag ? ' nav-active' : ''; }
 
@@ -34,9 +35,10 @@
     <a class="nav-link${activeClass(isTrade)}"     href="${base}trade.html">Trades</a>
     <a class="nav-link${activeClass(isRoster)}"    href="${base}roster.html">Rosters</a>
     <a class="nav-link${activeClass(isPicks)}"     href="${base}picks.html">Picks</a>
+    <a class="nav-link${activeClass(isTeam)}"      href="${base}team.html">Teams</a>
   </div>
   <span class="nav-spacer"></span>
-  <span class="nav-meta" id="nav-data-date">Season VI</span>
+  <span class="nav-meta" id="nav-data-date">2025-26</span>
   <button id="dark-mode-toggle" aria-label="Toggle dark mode">\u{1F319}</button>
 </nav>`;
 

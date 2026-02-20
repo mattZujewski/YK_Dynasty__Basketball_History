@@ -13,28 +13,11 @@
   <main class="page-container">
     <header class="page-header">
       <h1>&#x1F3C0; YK Dynasty Basketball</h1>
-      <p class="subtitle">Fantrax NBA Dynasty League &middot; Est. 2020 &middot; Year VI</p>
+      <p class="subtitle" id="index-subtitle">Loading&hellip;</p>
     </header>
 
-    <!-- Stat Bar -->
-    <div class="stat-bar">
-      <div class="stat-card">
-        <span class="stat-label">Seasons</span>
-        <span class="stat-value">6</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-label">Franchises</span>
-        <span class="stat-value gold">10</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-label">Total Trades</span>
-        <span class="stat-value" id="stat-trades">&mdash;</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-label">Champions</span>
-        <span class="stat-value gold" id="stat-champs">&mdash;</span>
-      </div>
-    </div>
+    <!-- Stat Bar (dynamic) -->
+    <div class="stat-bar" id="stat-bar"></div>
 
     <!-- Dashboard Navigation Cards -->
     <div class="dashboard-grid">
@@ -51,10 +34,10 @@
         <div class="card-icon">&#x1F504;</div>
         <div class="card-title">Trade Log</div>
         <div class="card-desc">
-          Every trade across 6 seasons. Filter by year, browse the full
+          Every trade across all seasons. Filter by year, browse the full
           history, and see who's dealing the most.
         </div>
-        <span class="card-tag">120+ Trades</span>
+        <span class="card-tag" id="card-trade-tag">Trades</span>
       </a>
       <a class="dashboard-card" href="picks.html">
         <div class="card-icon">&#x1F4CB;</div>
@@ -74,6 +57,36 @@
         </div>
         <span class="card-tag">Live Data</span>
       </a>
+      <a class="dashboard-card" href="team.html">
+        <div class="card-icon">&#x1F464;</div>
+        <div class="card-title">Team Profiles</div>
+        <div class="card-desc">
+          Detailed owner profiles with season history, trade logs,
+          draft picks, and current roster.
+        </div>
+        <span class="card-tag">10 Owners</span>
+      </a>
+    </div>
+
+    <!-- Owner Overview Table -->
+    <div class="chart-section" id="owner-overview-section" style="display:none">
+      <h2>&#x1F4CA; Owner Overview</h2>
+      <p class="chart-description">Aggregate stats for each franchise. Click an owner to view their full profile.</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="owner-overview-table">
+          <thead>
+            <tr>
+              <th data-sort="owner">Owner</th>
+              <th data-sort="w" style="text-align:center">W</th>
+              <th data-sort="l" style="text-align:center">L</th>
+              <th data-sort="pct" style="text-align:center">Win %</th>
+              <th data-sort="titles" style="text-align:center">Titles</th>
+              <th data-sort="trades" style="text-align:center">Trades</th>
+            </tr>
+          </thead>
+          <tbody id="owner-overview-tbody"></tbody>
+        </table>
+      </div>
     </div>
 
     <!-- Champion History -->
@@ -200,68 +213,156 @@
 
       const seasons = seasonsData.seasons;
 
-      // Stat bar
-      document.getElementById('stat-trades').textContent = tradesData.length;
-      const champCount = seasons.filter(s => s.champion).length;
-      document.getElementById('stat-champs').textContent = champCount;
+      // Dynamic subtitle
+      document.getElementById('index-subtitle').innerHTML =
+        'Fantrax NBA Dynasty League &middot; Est. 2020 &middot; ' + seasons.length + ' Seasons';
+
+      // Dynamic stat bar
+      const champCount = seasons.filter(function(s) { return s.champion; }).length;
+      document.getElementById('stat-bar').innerHTML =
+        '<div class="stat-card">' +
+          '<span class="stat-label">Seasons</span>' +
+          '<span class="stat-value">' + seasons.length + '</span>' +
+        '</div>' +
+        '<div class="stat-card">' +
+          '<span class="stat-label">Franchises</span>' +
+          '<span class="stat-value gold">10</span>' +
+        '</div>' +
+        '<div class="stat-card">' +
+          '<span class="stat-label">Total Trades</span>' +
+          '<span class="stat-value">' + tradesData.length + '</span>' +
+        '</div>' +
+        '<div class="stat-card">' +
+          '<span class="stat-label">Champions</span>' +
+          '<span class="stat-value gold">' + champCount + '</span>' +
+        '</div>';
+
+      document.getElementById('card-trade-tag').textContent = tradesData.length + ' Trades';
+
+      // --- Owner Overview Table ---
+      // Parse canonical owner from trade string
+      function parseOwner(str) {
+        var parts = str.trim().split(/\s+/);
+        return YK.resolveOwner(parts[0]);
+      }
+
+      // Count trades per owner
+      var tradeCounts = {};
+      tradesData.forEach(function(trade) {
+        var owners = new Set();
+        (trade.give || []).concat(trade.get || []).forEach(function(item) {
+          var owner = parseOwner(item);
+          if (owner && YK.OWNERS_ALPHA.includes(owner)) owners.add(owner);
+        });
+        owners.forEach(function(o) { tradeCounts[o] = (tradeCounts[o] || 0) + 1; });
+      });
+
+      // Aggregate W/L/Titles by owner
+      var ownerStats = {};
+      YK.OWNERS_ALPHA.forEach(function(o) {
+        ownerStats[o] = { w: 0, l: 0, titles: 0, pct: 0 };
+      });
+
+      seasons.forEach(function(season) {
+        season.standings.forEach(function(entry) {
+          var owner = YK.teamToOwner(entry.team);
+          if (!owner || !ownerStats[owner]) return;
+          ownerStats[owner].w += entry.w;
+          ownerStats[owner].l += entry.l;
+          if (season.champion === entry.team) ownerStats[owner].titles++;
+        });
+      });
+
+      Object.keys(ownerStats).forEach(function(o) {
+        var s = ownerStats[o];
+        s.pct = (s.w + s.l) > 0 ? s.w / (s.w + s.l) : 0;
+      });
+
+      // Sort by win%
+      var sortedOverview = YK.OWNERS_ALPHA.slice().sort(function(a, b) {
+        return ownerStats[b].pct - ownerStats[a].pct || ownerStats[b].w - ownerStats[a].w;
+      });
+
+      var overviewTbody = document.getElementById('owner-overview-tbody');
+      overviewTbody.innerHTML = sortedOverview.map(function(owner) {
+        var s = ownerStats[owner];
+        var color = YK.ownerColor(owner);
+        var displayName = YK.ownerDisplayName(owner);
+        var tc = tradeCounts[owner] || 0;
+        return '<tr class="clickable" data-owner="' + displayName + '" data-w="' + s.w + '" data-l="' + s.l + '" data-pct="' + s.pct.toFixed(3) + '" data-titles="' + s.titles + '" data-trades="' + tc + '" onclick="window.location.href=\'team.html?owner=' + owner + '\'">' +
+          '<td>' +
+            '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + color + ';margin-right:7px;vertical-align:middle"></span>' +
+            '<strong>' + displayName + '</strong>' +
+            (s.titles > 0 ? ' <span class="badge badge-champ">' + s.titles + 'x</span>' : '') +
+          '</td>' +
+          '<td style="text-align:center;font-weight:600">' + s.w + '</td>' +
+          '<td style="text-align:center">' + s.l + '</td>' +
+          '<td style="text-align:center;font-weight:700;color:var(--brand-green)">' + (s.pct * 100).toFixed(1) + '%</td>' +
+          '<td style="text-align:center">' + (s.titles > 0 ? s.titles : '&mdash;') + '</td>' +
+          '<td style="text-align:center">' + tc + '</td>' +
+        '</tr>';
+      }).join('');
+
+      document.getElementById('owner-overview-section').style.display = 'block';
+      YK.makeSortable(document.getElementById('owner-overview-table'));
 
       // Champion table
-      const champTbody = document.getElementById('champ-tbody');
-      const champs = seasons.filter(s => s.champion);
-      champTbody.innerHTML = champs.map(s => {
-        const winner = s.standings.find(t => t.team === s.champion);
-        const owner = YK.teamToOwner(s.champion);
-        const ownerDisplay = owner ? YK.ownerDisplayName(owner) : '&mdash;';
-        const color = owner ? YK.ownerColor(owner) : '#888';
-        return `<tr>
-          <td><strong>${s.year}</strong></td>
-          <td><span class="badge badge-champ">${s.champion}</span></td>
-          <td>
-            <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>
-            ${ownerDisplay}
-          </td>
-          <td>${winner ? `${winner.w}-${winner.l}` : '&mdash;'}</td>
-          <td>${winner ? winner.fpts.toLocaleString() : '&mdash;'}</td>
-        </tr>`;
+      var champTbody = document.getElementById('champ-tbody');
+      var champs = seasons.filter(function(s) { return s.champion; });
+      champTbody.innerHTML = champs.map(function(s) {
+        var winner = s.standings.find(function(t) { return t.team === s.champion; });
+        var owner = YK.teamToOwner(s.champion);
+        var ownerDisplay = owner ? YK.ownerDisplayName(owner) : '&mdash;';
+        var color = owner ? YK.ownerColor(owner) : '#888';
+        return '<tr>' +
+          '<td><strong>' + s.year + '</strong></td>' +
+          '<td><span class="badge badge-champ">' + s.champion + '</span></td>' +
+          '<td>' +
+            '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + color + ';margin-right:6px;vertical-align:middle"></span>' +
+            ownerDisplay +
+          '</td>' +
+          '<td>' + (winner ? winner.w + '-' + winner.l : '&mdash;') + '</td>' +
+          '<td>' + (winner ? winner.fpts.toLocaleString() : '&mdash;') + '</td>' +
+        '</tr>';
       }).join('');
 
       // Season standings switcher
-      const filterBar = document.getElementById('season-filter-bar');
-      const standingsTbody = document.getElementById('standings-tbody');
+      var filterBar = document.getElementById('season-filter-bar');
+      var standingsTbody = document.getElementById('standings-tbody');
 
       function renderStandings(season) {
-        const s = seasons.find(x => x.year === season);
+        var s = seasons.find(function(x) { return x.year === season; });
         if (!s) return;
-        standingsTbody.innerHTML = s.standings.map(t => {
-          const isChamp = t.team === s.champion;
-          const owner = YK.teamToOwner(t.team);
-          const ownerDisplay = owner ? YK.ownerDisplayName(owner) : '&mdash;';
-          const color = owner ? YK.ownerColor(owner) : '#888';
-          return `<tr data-rank="${t.rank}" data-team="${t.team}" data-owner="${ownerDisplay}" data-w="${t.w}" data-l="${t.l}" data-pct="${t.win_pct}" data-fpts="${t.fpts}">
-            <td style="text-align:center;font-weight:700">${t.rank}</td>
-            <td>
-              ${isChamp ? '<span style="color:var(--brand-gold);margin-right:4px">&#x1F3C6;</span>' : ''}
-              <strong>${t.team}</strong>
-              ${s.in_progress && t.rank === 1 ? ' <span class="badge badge-active" style="margin-left:6px">IN PROGRESS</span>' : ''}
-            </td>
-            <td>
-              <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${color};margin-right:6px;vertical-align:middle"></span>
-              ${ownerDisplay}
-            </td>
-            <td style="text-align:center">${t.w}</td>
-            <td style="text-align:center">${t.l}</td>
-            <td style="text-align:center;font-weight:600">${(t.win_pct * 100).toFixed(1)}%</td>
-            <td style="text-align:right">${t.fpts.toLocaleString()}</td>
-          </tr>`;
+        standingsTbody.innerHTML = s.standings.map(function(t) {
+          var isChamp = t.team === s.champion;
+          var owner = YK.teamToOwner(t.team);
+          var ownerDisplay = owner ? YK.ownerDisplayName(owner) : '&mdash;';
+          var color = owner ? YK.ownerColor(owner) : '#888';
+          return '<tr data-rank="' + t.rank + '" data-team="' + t.team + '" data-owner="' + ownerDisplay + '" data-w="' + t.w + '" data-l="' + t.l + '" data-pct="' + t.win_pct + '" data-fpts="' + t.fpts + '">' +
+            '<td style="text-align:center;font-weight:700">' + t.rank + '</td>' +
+            '<td>' +
+              (isChamp ? '<span style="color:var(--brand-gold);margin-right:4px">&#x1F3C6;</span>' : '') +
+              '<strong>' + t.team + '</strong>' +
+              (s.in_progress && t.rank === 1 ? ' <span class="badge badge-active" style="margin-left:6px">IN PROGRESS</span>' : '') +
+            '</td>' +
+            '<td>' +
+              '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + color + ';margin-right:6px;vertical-align:middle"></span>' +
+              ownerDisplay +
+            '</td>' +
+            '<td style="text-align:center">' + t.w + '</td>' +
+            '<td style="text-align:center">' + t.l + '</td>' +
+            '<td style="text-align:center;font-weight:600">' + (t.win_pct * 100).toFixed(1) + '%</td>' +
+            '<td style="text-align:right">' + t.fpts.toLocaleString() + '</td>' +
+          '</tr>';
         }).join('');
       }
 
-      seasons.forEach((s, i) => {
-        const btn = document.createElement('button');
+      seasons.forEach(function(s, i) {
+        var btn = document.createElement('button');
         btn.className = 'filter-btn' + (i === seasons.length - 1 ? ' active' : '');
         btn.textContent = s.year;
-        btn.addEventListener('click', () => {
-          filterBar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.addEventListener('click', function() {
+          filterBar.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
           btn.classList.add('active');
           renderStandings(s.year);
         });
@@ -272,12 +373,12 @@
       YK.makeSortable(document.getElementById('standings-table'));
 
       // Dynasty rankings (top 20)
-      const rankingsTbody = document.getElementById('rankings-tbody');
-      rankingsTbody.innerHTML = rankingsData.rankings.slice(0, 20).map(r => {
-        return `<tr>
-          <td style="text-align:center;font-weight:700;color:var(--brand-green)">${r.rank}</td>
-          <td>${r.player}</td>
-        </tr>`;
+      var rankingsTbody = document.getElementById('rankings-tbody');
+      rankingsTbody.innerHTML = rankingsData.rankings.slice(0, 20).map(function(r) {
+        return '<tr>' +
+          '<td style="text-align:center;font-weight:700;color:var(--brand-green)">' + r.rank + '</td>' +
+          '<td>' + r.player + '</td>' +
+        '</tr>';
       }).join('');
     })();
   </script>
