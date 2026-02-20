@@ -41,7 +41,7 @@
           "name": "Isaiah Hartenstein",
           "pos": "C",
           "nbaTeam": "OKC",
-          "status": "RESERVE"
+          "status": "ACTIVE"
         },
         {
           "name": "Jaden Ivey",
@@ -71,7 +71,7 @@
           "name": "Kasparas Jakucionis",
           "pos": "SG",
           "nbaTeam": "MIA",
-          "status": "ACTIVE"
+          "status": "RESERVE"
         },
         {
           "name": "LaMelo Ball",
@@ -101,7 +101,7 @@
           "name": "Pascal Siakam",
           "pos": "PF",
           "nbaTeam": "IND",
-          "status": "ACTIVE"
+          "status": "RESERVE"
         },
         {
           "name": "Paul George",
@@ -113,7 +113,7 @@
           "name": "Pelle Larsson",
           "pos": "SG",
           "nbaTeam": "MIA",
-          "status": "RESERVE"
+          "status": "ACTIVE"
         },
         {
           "name": "Peyton Watson",
@@ -211,6 +211,12 @@
           "pos": "SG",
           "nbaTeam": "PHO",
           "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Isaiah Joe",
+          "pos": "SG",
+          "nbaTeam": "OKC",
+          "status": "ACTIVE"
         },
         {
           "name": "Ivica Zubac",
@@ -512,7 +518,7 @@
           "name": "Coby White",
           "pos": "SG",
           "nbaTeam": "CHA",
-          "status": "INJURED_RESERVE"
+          "status": "RESERVE"
         },
         {
           "name": "Deandre Ayton",
@@ -536,7 +542,7 @@
           "name": "Jalen Williams",
           "pos": "SG",
           "nbaTeam": "OKC",
-          "status": "ACTIVE"
+          "status": "INJURED_RESERVE"
         },
         {
           "name": "Jaren Jackson",
@@ -572,7 +578,7 @@
           "name": "Keyonte George",
           "pos": "PG",
           "nbaTeam": "UTA",
-          "status": "ACTIVE"
+          "status": "INJURED_RESERVE"
         },
         {
           "name": "Kon Knueppel",
@@ -581,9 +587,21 @@
           "status": "ACTIVE"
         },
         {
+          "name": "Kyle Kuzma",
+          "pos": "PF",
+          "nbaTeam": "MIL",
+          "status": "RESERVE"
+        },
+        {
           "name": "Malik Monk",
           "pos": "SG",
           "nbaTeam": "SAC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Marvin Bagley",
+          "pos": "PF",
+          "nbaTeam": "DAL",
           "status": "RESERVE"
         },
         {
@@ -602,7 +620,7 @@
           "name": "Nicolas Claxton",
           "pos": "C",
           "nbaTeam": "BKN",
-          "status": "INJURED_RESERVE"
+          "status": "RESERVE"
         },
         {
           "name": "Stephon Castle",
@@ -663,7 +681,7 @@
           "name": "Giannis Antetokounmpo",
           "pos": "PF",
           "nbaTeam": "MIL",
-          "status": "ACTIVE"
+          "status": "INJURED_RESERVE"
         },
         {
           "name": "Gui Santos",
@@ -705,7 +723,7 @@
           "name": "Jusuf Nurkic",
           "pos": "C",
           "nbaTeam": "UTA",
-          "status": "ACTIVE"
+          "status": "INJURED_RESERVE"
         },
         {
           "name": "Kevin Durant",
@@ -814,7 +832,7 @@
           "name": "DayRon Sharpe",
           "pos": "C",
           "nbaTeam": "BKN",
-          "status": "RESERVE"
+          "status": "ACTIVE"
         },
         {
           "name": "Devin Vassell",
@@ -832,7 +850,7 @@
           "name": "Evan Mobley",
           "pos": "PF",
           "nbaTeam": "CLE",
-          "status": "ACTIVE"
+          "status": "RESERVE"
         },
         {
           "name": "GG Jackson",

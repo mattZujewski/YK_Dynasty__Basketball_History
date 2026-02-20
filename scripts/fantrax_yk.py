@@ -44,9 +44,9 @@ INTERNAL_API_URL = "https://www.fantrax.com/fxpa/req"
 
 # YK Dynasty league IDs by season
 LEAGUE_IDS = {
-    "2022-23": "onh4f1waliy86zii",
-    "2023-24": "h2dbi0ocliy86zii",
-    "2024-25": "7bfjhrbxlmancf4t",
+    "2022-23": "n7exgxhpl1ydddam",
+    "2023-24": "tz7m8b61lhphjz9w",
+    "2024-25": "26ihddrglvclsxav",
     "2025-26": "sz7vm5xwmancf4tr",
 }
 
@@ -360,13 +360,15 @@ TEAM_NAME_TO_OWNER = {
     "Ball Don't Lie": "Jowkar",
     "BKs Whoppers": "Baden",
     "Burner account": "Berke",
-    "Charlotte Wobnets": "Jowkar",
+    "Charlotte Wobnets": "Baden",       # Vlandis franchise (predecessor of Baden)
     "Flaming Flaggs": "Baden",
     "Freshly Washed Kings": "Delaney",
-    "Giddey Up": "Berke",
+    "Giddey Up": "Gold",                # Confirmed by Fantrax shortName "Gold"
     "Ice Trae": "Green",
-    "Kelvin got No Dimes": "Gold",
+    "Kelvin got No Dimes": "Berke",     # Confirmed by Fantrax shortName "Berke"
     "Kentucky Fried Guards": "Gold",
+    "Lob Land": "HaleTrager",
+    "No Shaime": "Gold",
     "Only Franz": "Zujewski",
     "Pure Sweat Farm": "Moss",
     "Pure Sweat Fam": "Moss",

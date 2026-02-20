@@ -1,0 +1,73 @@
+{
+  "Peterson": {
+    "name": "Kelvin Peterson",
+    "teams": [
+      { "name": "Always Droppin Dimes", "seasons": ["2022-23", "2023-24", "2024-25", "2025-26"] }
+    ]
+  },
+  "Jowkar": {
+    "name": "Nick Jowkar",
+    "teams": [
+      { "name": "Ball Don't Lie", "seasons": ["2022-23", "2023-24", "2024-25", "2025-26"] }
+    ]
+  },
+  "Berke": {
+    "name": "Logan Berke",
+    "teams": [
+      { "name": "Kelvin got No Dimes", "seasons": ["2022-23", "2023-24"] },
+      { "name": "Burner account", "seasons": ["2024-25", "2025-26"] }
+    ]
+  },
+  "Baden": {
+    "name": "Sam Baden",
+    "franchiseHistory": [
+      { "owner": "Spencer Vlandis", "period": "2022-2023", "abbrev": "VLAND" },
+      { "owner": "Brendan Kelley", "period": "2023-2024", "abbrev": "KELL" },
+      { "owner": "Sam Baden", "period": "2024-present", "abbrev": "BADEN" }
+    ],
+    "teams": [
+      { "name": "Charlotte Wobnets", "seasons": ["2022-23"], "operator": "Spencer Vlandis" },
+      { "name": "BKs Whoppers", "seasons": ["2023-24", "2024-25"], "operator": "Brendan Kelley / Sam Baden" },
+      { "name": "Flaming Flaggs", "seasons": ["2025-26"], "operator": "Sam Baden" }
+    ]
+  },
+  "Delaney": {
+    "name": "David Delaney",
+    "teams": [
+      { "name": "Freshly Washed Kings", "seasons": ["2022-23", "2023-24", "2024-25", "2025-26"] }
+    ]
+  },
+  "Green": {
+    "name": "Max Green",
+    "teams": [
+      { "name": "Ice Trae", "seasons": ["2022-23", "2023-24", "2024-25", "2025-26"] }
+    ]
+  },
+  "Gold": {
+    "name": "Sam Gold",
+    "teams": [
+      { "name": "Giddey Up", "seasons": ["2022-23"] },
+      { "name": "No Shaime", "seasons": ["2023-24"] },
+      { "name": "Kentucky Fried Guards", "seasons": ["2024-25", "2025-26"] }
+    ]
+  },
+  "Zujewski": {
+    "name": "Matthew Zujewski",
+    "teams": [
+      { "name": "Only Franz", "seasons": ["2022-23", "2023-24", "2024-25", "2025-26"] }
+    ]
+  },
+  "Moss": {
+    "name": "Max Moss",
+    "teams": [
+      { "name": "Pure Sweat Fam", "seasons": ["2022-23", "2023-24", "2024-25", "2025-26"] }
+    ]
+  },
+  "HaleTrager": {
+    "name": "Ryan HaleTrager",
+    "teams": [
+      { "name": "Lob Land", "seasons": ["2022-23"] },
+      { "name": "Twin Towers", "seasons": ["2023-24", "2024-25", "2025-26"] }
+    ]
+  }
+}

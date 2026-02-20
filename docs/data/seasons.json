@@ -15,7 +15,7 @@
         },
         {
           "rank": 2,
-          "team": "Pure Sweat Farm",
+          "team": "Pure Sweat Fam",
           "w": 15,
           "l": 2,
           "t": 0,
@@ -66,6 +66,33 @@
           "t": 0,
           "win_pct": 0.353,
           "fpts": 22693
+        },
+        {
+          "rank": 8,
+          "team": "Ice Trae",
+          "w": 4,
+          "l": 13,
+          "t": 0,
+          "win_pct": 0.235,
+          "fpts": 24191
+        },
+        {
+          "rank": 9,
+          "team": "Ball Don't Lie",
+          "w": 4,
+          "l": 13,
+          "t": 0,
+          "win_pct": 0.235,
+          "fpts": 20994
+        },
+        {
+          "rank": 10,
+          "team": "Lob Land",
+          "w": 3,
+          "l": 14,
+          "t": 0,
+          "win_pct": 0.176,
+          "fpts": 23380
         }
       ]
     },
@@ -88,7 +115,7 @@
           "w": 13,
           "l": 3,
           "t": 0,
-          "win_pct": 0.813,
+          "win_pct": 0.812,
           "fpts": 28877
         },
         {
@@ -97,7 +124,7 @@
           "w": 13,
           "l": 3,
           "t": 0,
-          "win_pct": 0.813,
+          "win_pct": 0.812,
           "fpts": 27782
         },
         {
@@ -106,8 +133,8 @@
           "w": 12,
           "l": 4,
           "t": 0,
-          "win_pct": 0.76,
-          "fpts": 26050
+          "win_pct": 0.75,
+          "fpts": 28050
         },
         {
           "rank": 5,
@@ -135,6 +162,33 @@
           "t": 0,
           "win_pct": 0.438,
           "fpts": 23443
+        },
+        {
+          "rank": 8,
+          "team": "Pure Sweat Fam",
+          "w": 2,
+          "l": 14,
+          "t": 0,
+          "win_pct": 0.125,
+          "fpts": 21225
+        },
+        {
+          "rank": 9,
+          "team": "Only Franz",
+          "w": 1,
+          "l": 15,
+          "t": 0,
+          "win_pct": 0.062,
+          "fpts": 20049
+        },
+        {
+          "rank": 10,
+          "team": "No Shaime",
+          "w": 1,
+          "l": 15,
+          "t": 0,
+          "win_pct": 0.062,
+          "fpts": 17958
         }
       ]
     },
@@ -149,7 +203,7 @@
           "l": 2,
           "t": 0,
           "win_pct": 0.875,
-          "fpts": 28688
+          "fpts": 23539
         },
         {
           "rank": 2,
@@ -157,8 +211,8 @@
           "w": 13,
           "l": 3,
           "t": 0,
-          "win_pct": 0.813,
-          "fpts": 28274
+          "win_pct": 0.812,
+          "fpts": 23217
         },
         {
           "rank": 3,
@@ -166,8 +220,8 @@
           "w": 12,
           "l": 4,
           "t": 0,
-          "win_pct": 0.76,
-          "fpts": 27702
+          "win_pct": 0.75,
+          "fpts": 22663
         },
         {
           "rank": 4,
@@ -176,7 +230,7 @@
           "l": 6,
           "t": 0,
           "win_pct": 0.625,
-          "fpts": 26127
+          "fpts": 23026
         },
         {
           "rank": 5,
@@ -184,17 +238,17 @@
           "w": 9,
           "l": 7,
           "t": 0,
-          "win_pct": 0.563,
-          "fpts": 26734
+          "win_pct": 0.562,
+          "fpts": 25008
         },
         {
           "rank": 6,
-          "team": "Pure Sweat Farm",
+          "team": "Pure Sweat Fam",
           "w": 7,
           "l": 9,
           "t": 0,
           "win_pct": 0.438,
-          "fpts": 24703
+          "fpts": 24664
         },
         {
           "rank": 7,
@@ -203,14 +257,40 @@
           "l": 9,
           "t": 0,
           "win_pct": 0.438,
-          "fpts": 24273
+          "fpts": 23774
+        },
+        {
+          "rank": 8,
+          "team": "Kentucky Fried Guards",
+          "w": 6,
+          "l": 10,
+          "t": 0,
+          "win_pct": 0.375,
+          "fpts": 23118
+        },
+        {
+          "rank": 9,
+          "team": "Freshly Washed Kings",
+          "w": 2,
+          "l": 14,
+          "t": 0,
+          "win_pct": 0.125,
+          "fpts": 23967
+        },
+        {
+          "rank": 10,
+          "team": "BKs Whoppers",
+          "w": 0,
+          "l": 16,
+          "t": 0,
+          "win_pct": 0.0,
+          "fpts": 24135
         }
       ]
     },
     {
       "year": "2025-26",
       "champion": null,
-      "in_progress": true,
       "standings": [
         {
           "rank": 1,
@@ -219,7 +299,7 @@
           "l": 0,
           "t": 0,
           "win_pct": 1.0,
-          "fpts": 29010
+          "fpts": 23358
         },
         {
           "rank": 2,
@@ -228,7 +308,7 @@
           "l": 3,
           "t": 0,
           "win_pct": 0.8,
-          "fpts": 25111
+          "fpts": 21731
         },
         {
           "rank": 3,
@@ -237,7 +317,7 @@
           "l": 4,
           "t": 0,
           "win_pct": 0.733,
-          "fpts": 27074
+          "fpts": 23176
         },
         {
           "rank": 4,
@@ -246,7 +326,7 @@
           "l": 4,
           "t": 0,
           "win_pct": 0.733,
-          "fpts": 27033
+          "fpts": 23857
         },
         {
           "rank": 5,
@@ -255,7 +335,7 @@
           "l": 7,
           "t": 0,
           "win_pct": 0.533,
-          "fpts": 23265
+          "fpts": 23144
         },
         {
           "rank": 6,
@@ -264,7 +344,7 @@
           "l": 8,
           "t": 0,
           "win_pct": 0.467,
-          "fpts": 22193
+          "fpts": 23206
         },
         {
           "rank": 7,
@@ -273,16 +353,16 @@
           "l": 9,
           "t": 0,
           "win_pct": 0.4,
-          "fpts": 22868
+          "fpts": 21844
         },
         {
           "rank": 8,
-          "team": "Pure Sweat Farm",
+          "team": "Pure Sweat Fam",
           "w": 2,
           "l": 13,
           "t": 0,
           "win_pct": 0.133,
-          "fpts": 18367
+          "fpts": 23224
         },
         {
           "rank": 9,
@@ -291,7 +371,7 @@
           "l": 13,
           "t": 0,
           "win_pct": 0.133,
-          "fpts": 18038
+          "fpts": 23685
         },
         {
           "rank": 10,
@@ -300,9 +380,10 @@
           "l": 14,
           "t": 0,
           "win_pct": 0.067,
-          "fpts": 18238
+          "fpts": 23972
         }
-      ]
+      ],
+      "in_progress": true
     }
   ]
 }

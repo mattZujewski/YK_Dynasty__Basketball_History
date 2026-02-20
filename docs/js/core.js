@@ -22,7 +22,7 @@ window.YK = window.YK || {};
     MOSS:  'Moss',
     ZJEW:  'Zujewski',
     GOLD:  'Gold',
-    KELL:  'Baden',        VLAND: 'Baden',       BADEN: 'Baden',
+    KELL:  'Baden',        VLAND: 'Baden',       BADEN: 'Baden',    FLAGGS: 'Baden',
   };
 
   // Display name variants found in trade logs → canonical name
@@ -68,19 +68,21 @@ window.YK = window.YK || {};
     'Zujewski':    'Matthew Zujewski',
   };
 
-  // Team name → canonical owner mapping (all seasons)
+  // Team name → canonical owner mapping (all seasons, verified against Fantrax)
   const TEAM_TO_OWNER = {
     'Always Droppin Dimes': 'Peterson',
     'Ball Don\'t Lie':      'Jowkar',
     'BKs Whoppers':         'Baden',
     'Burner account':       'Berke',
-    'Charlotte Wobnets':    'Jowkar',
+    'Charlotte Wobnets':    'Baden',    // Vlandis franchise (2022-23)
     'Flaming Flaggs':       'Baden',
     'Freshly Washed Kings': 'Delaney',
-    'Giddey Up':            'Berke',
+    'Giddey Up':            'Gold',     // Confirmed by Fantrax shortName "Gold"
     'Ice Trae':             'Green',
-    'Kelvin got No Dimes':  'Gold',
+    'Kelvin got No Dimes':  'Berke',    // Confirmed by Fantrax shortName "Berke"
     'Kentucky Fried Guards':'Gold',
+    'Lob Land':             'HaleTrager', // 2022-23
+    'No Shaime':            'Gold',       // 2023-24
     'Only Franz':           'Zujewski',
     'Pure Sweat Farm':      'Moss',
     'Pure Sweat Fam':       'Moss',

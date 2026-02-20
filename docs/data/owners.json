@@ -22,7 +22,7 @@
       "fantraxUsername": "NickJowkar",
       "fantraxAbbrev": "Jowk",
       "teams": {
-        "2022-23": "Charlotte Wobnets",
+        "2022-23": "Ball Don't Lie",
         "2023-24": "Ball Don't Lie",
         "2024-25": "Ball Don't Lie",
         "2025-26": "Ball Don't Lie"
@@ -36,8 +36,8 @@
       "fantraxUsername": "lbtape",
       "fantraxAbbrev": "Berke",
       "teams": {
-        "2022-23": "Giddey Up",
-        "2023-24": "BKs Whoppers",
+        "2022-23": "Kelvin got No Dimes",
+        "2023-24": "Kelvin got No Dimes",
         "2024-25": "Burner account",
         "2025-26": "Burner account"
       }
@@ -45,18 +45,19 @@
     {
       "id": "baden",
       "realName": "Sam Baden",
-      "abbrevs": ["VLAND", "KELL", "BADEN"],
+      "abbrevs": ["VLAND", "KELL", "BADEN", "FLAGGS"],
       "altNames": ["Vlandis", "Kelley", "Baden"],
       "fantraxUsername": "BadenBaden",
       "fantraxAbbrev": "FLAGGS",
       "franchiseHistory": [
-        {"owner": "Spencer Vlandis", "period": "2020-2022", "abbrev": "VLAND"},
+        {"owner": "Spencer Vlandis", "period": "2022-2023", "abbrev": "VLAND"},
         {"owner": "Brendan Kelley", "period": "2023-2024", "abbrev": "KELL"},
         {"owner": "Sam Baden", "period": "2024-present", "abbrev": "BADEN"}
       ],
       "teams": {
+        "2022-23": "Charlotte Wobnets",
         "2023-24": "BKs Whoppers",
-        "2024-25": "Flaming Flaggs",
+        "2024-25": "BKs Whoppers",
         "2025-26": "Flaming Flaggs"
       }
     },
@@ -82,6 +83,7 @@
       "fantraxUsername": "maxgreen9",
       "fantraxAbbrev": "Max",
       "teams": {
+        "2022-23": "Ice Trae",
         "2023-24": "Ice Trae",
         "2024-25": "Ice Trae",
         "2025-26": "Ice Trae"
@@ -95,8 +97,9 @@
       "fantraxUsername": "sgold58",
       "fantraxAbbrev": "Gold",
       "teams": {
-        "2022-23": "Kelvin got No Dimes",
-        "2023-24": "Kelvin got No Dimes",
+        "2022-23": "Giddey Up",
+        "2023-24": "No Shaime",
+        "2024-25": "Kentucky Fried Guards",
         "2025-26": "Kentucky Fried Guards"
       }
     },
@@ -109,6 +112,7 @@
       "fantraxAbbrev": "Franz",
       "teams": {
         "2022-23": "Only Franz",
+        "2023-24": "Only Franz",
         "2024-25": "Only Franz",
         "2025-26": "Only Franz"
       }
@@ -121,9 +125,10 @@
       "fantraxUsername": "mmoss11",
       "fantraxAbbrev": "Moss",
       "teams": {
-        "2022-23": "Pure Sweat Farm",
-        "2024-25": "Pure Sweat Farm",
-        "2025-26": "Pure Sweat Farm"
+        "2022-23": "Pure Sweat Fam",
+        "2023-24": "Pure Sweat Fam",
+        "2024-25": "Pure Sweat Fam",
+        "2025-26": "Pure Sweat Fam"
       }
     },
     {
@@ -134,6 +139,7 @@
       "fantraxUsername": "HaleTrager",
       "fantraxAbbrev": "Hale",
       "teams": {
+        "2022-23": "Lob Land",
         "2023-24": "Twin Towers",
         "2024-25": "Twin Towers",
         "2025-26": "Twin Towers"
