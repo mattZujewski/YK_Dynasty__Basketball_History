@@ -1,0 +1,4408 @@
+{
+  "meta": {
+    "fetched": "2026-02-19",
+    "season": "2024-25",
+    "source": "basketball-reference.com",
+    "total_players": 246,
+    "matched": 244,
+    "missed": 2
+  },
+  "players": {
+    "Aaron Gordon": {
+      "nba_team": "DEN",
+      "pos": "PF",
+      "stats": {
+        "gp": 51,
+        "mpg": 28.4,
+        "ppg": 14.7,
+        "rpg": 4.8,
+        "apg": 3.2,
+        "spg": 0.5,
+        "bpg": 0.3,
+        "topg": 1.4,
+        "fg_pct": 53.1,
+        "fg3_pct": 43.6,
+        "ft_pct": 81.0,
+        "season": "2024-25"
+      }
+    },
+    "Aaron Nesmith": {
+      "nba_team": "IND",
+      "pos": "SF",
+      "stats": {
+        "gp": 45,
+        "mpg": 25.0,
+        "ppg": 12.0,
+        "rpg": 4.0,
+        "apg": 1.2,
+        "spg": 0.8,
+        "bpg": 0.4,
+        "topg": 0.8,
+        "fg_pct": 50.7,
+        "fg3_pct": 43.1,
+        "ft_pct": 91.3,
+        "season": "2024-25"
+      }
+    },
+    "Aaron Wiggins": {
+      "nba_team": "OKC",
+      "pos": "SG",
+      "stats": {
+        "gp": 76,
+        "mpg": 22.9,
+        "ppg": 12.0,
+        "rpg": 3.9,
+        "apg": 1.8,
+        "spg": 0.8,
+        "bpg": 0.2,
+        "topg": 0.9,
+        "fg_pct": 48.8,
+        "fg3_pct": 38.3,
+        "ft_pct": 83.1,
+        "season": "2024-25"
+      }
+    },
+    "Adem Bona": {
+      "nba_team": "PHI",
+      "pos": "C",
+      "stats": {
+        "gp": 58,
+        "mpg": 15.6,
+        "ppg": 5.8,
+        "rpg": 4.2,
+        "apg": 0.5,
+        "spg": 0.4,
+        "bpg": 1.2,
+        "topg": 1.1,
+        "fg_pct": 70.3,
+        "fg3_pct": 0.0,
+        "ft_pct": 67.0,
+        "season": "2024-25"
+      }
+    },
+    "Ajay Mitchell": {
+      "nba_team": "OKC",
+      "pos": "SG",
+      "stats": {
+        "gp": 36,
+        "mpg": 16.6,
+        "ppg": 6.5,
+        "rpg": 1.9,
+        "apg": 1.8,
+        "spg": 0.7,
+        "bpg": 0.1,
+        "topg": 0.8,
+        "fg_pct": 49.5,
+        "fg3_pct": 38.3,
+        "ft_pct": 82.9,
+        "season": "2024-25"
+      }
+    },
+    "Alex Sarr": {
+      "nba_team": "WAS",
+      "pos": "C",
+      "stats": {
+        "gp": 67,
+        "mpg": 27.1,
+        "ppg": 13.0,
+        "rpg": 6.5,
+        "apg": 2.4,
+        "spg": 0.7,
+        "bpg": 1.5,
+        "topg": 1.7,
+        "fg_pct": 39.4,
+        "fg3_pct": 30.8,
+        "ft_pct": 67.9,
+        "season": "2024-25"
+      }
+    },
+    "Alperen Sengun": {
+      "nba_team": "HOU",
+      "pos": "C",
+      "stats": {
+        "gp": 76,
+        "mpg": 31.5,
+        "ppg": 19.1,
+        "rpg": 10.3,
+        "apg": 4.9,
+        "spg": 1.1,
+        "bpg": 0.8,
+        "topg": 2.6,
+        "fg_pct": 49.6,
+        "fg3_pct": 23.3,
+        "ft_pct": 69.2,
+        "season": "2024-25"
+      }
+    },
+    "Amen Thompson": {
+      "nba_team": "HOU",
+      "pos": "SF",
+      "stats": {
+        "gp": 69,
+        "mpg": 32.2,
+        "ppg": 14.1,
+        "rpg": 8.2,
+        "apg": 3.8,
+        "spg": 1.4,
+        "bpg": 1.3,
+        "topg": 2.0,
+        "fg_pct": 55.7,
+        "fg3_pct": 27.5,
+        "ft_pct": 68.4,
+        "season": "2024-25"
+      }
+    },
+    "Andrew Nembhard": {
+      "nba_team": "IND",
+      "pos": "SG",
+      "stats": {
+        "gp": 65,
+        "mpg": 28.9,
+        "ppg": 10.0,
+        "rpg": 3.3,
+        "apg": 5.0,
+        "spg": 1.2,
+        "bpg": 0.2,
+        "topg": 1.7,
+        "fg_pct": 45.8,
+        "fg3_pct": 29.1,
+        "ft_pct": 79.4,
+        "season": "2024-25"
+      }
+    },
+    "Andrew Wiggins": {
+      "nba_team": "2TM",
+      "pos": "SF",
+      "stats": {
+        "gp": 60,
+        "mpg": 30.7,
+        "ppg": 18.0,
+        "rpg": 4.5,
+        "apg": 2.6,
+        "spg": 1.0,
+        "bpg": 0.8,
+        "topg": 1.7,
+        "fg_pct": 44.8,
+        "fg3_pct": 37.4,
+        "ft_pct": 76.3,
+        "season": "2024-25"
+      }
+    },
+    "Anfernee Simons": {
+      "nba_team": "POR",
+      "pos": "SG",
+      "stats": {
+        "gp": 70,
+        "mpg": 32.7,
+        "ppg": 19.3,
+        "rpg": 2.7,
+        "apg": 4.8,
+        "spg": 0.9,
+        "bpg": 0.1,
+        "topg": 2.0,
+        "fg_pct": 42.6,
+        "fg3_pct": 36.3,
+        "ft_pct": 90.2,
+        "season": "2024-25"
+      }
+    },
+    "Anthony Black": {
+      "nba_team": "ORL",
+      "pos": "PG",
+      "stats": {
+        "gp": 78,
+        "mpg": 24.2,
+        "ppg": 9.4,
+        "rpg": 2.9,
+        "apg": 3.1,
+        "spg": 1.1,
+        "bpg": 0.6,
+        "topg": 1.8,
+        "fg_pct": 42.3,
+        "fg3_pct": 31.8,
+        "ft_pct": 76.1,
+        "season": "2024-25"
+      }
+    },
+    "Anthony Davis": {
+      "nba_team": "2TM",
+      "pos": "PF",
+      "stats": {
+        "gp": 51,
+        "mpg": 33.5,
+        "ppg": 24.7,
+        "rpg": 11.6,
+        "apg": 3.5,
+        "spg": 1.2,
+        "bpg": 2.2,
+        "topg": 2.2,
+        "fg_pct": 51.6,
+        "fg3_pct": 28.2,
+        "ft_pct": 77.5,
+        "season": "2024-25"
+      }
+    },
+    "Anthony Edwards": {
+      "nba_team": "MIN",
+      "pos": "SG",
+      "stats": {
+        "gp": 79,
+        "mpg": 36.3,
+        "ppg": 27.6,
+        "rpg": 5.7,
+        "apg": 4.5,
+        "spg": 1.2,
+        "bpg": 0.6,
+        "topg": 3.2,
+        "fg_pct": 44.7,
+        "fg3_pct": 39.5,
+        "ft_pct": 83.7,
+        "season": "2024-25"
+      }
+    },
+    "Ausar Thompson": {
+      "nba_team": "DET",
+      "pos": "SF",
+      "stats": {
+        "gp": 59,
+        "mpg": 22.5,
+        "ppg": 10.1,
+        "rpg": 5.1,
+        "apg": 2.3,
+        "spg": 1.7,
+        "bpg": 0.7,
+        "topg": 1.4,
+        "fg_pct": 53.5,
+        "fg3_pct": 22.4,
+        "ft_pct": 64.1,
+        "season": "2024-25"
+      }
+    },
+    "Austin Reaves": {
+      "nba_team": "LAL",
+      "pos": "SG",
+      "stats": {
+        "gp": 73,
+        "mpg": 34.9,
+        "ppg": 20.2,
+        "rpg": 4.5,
+        "apg": 5.8,
+        "spg": 1.1,
+        "bpg": 0.3,
+        "topg": 2.4,
+        "fg_pct": 46.0,
+        "fg3_pct": 37.7,
+        "ft_pct": 87.7,
+        "season": "2024-25"
+      }
+    },
+    "Ayo Dosunmu": {
+      "nba_team": "CHI",
+      "pos": "SG",
+      "stats": {
+        "gp": 46,
+        "mpg": 30.3,
+        "ppg": 12.3,
+        "rpg": 3.5,
+        "apg": 4.5,
+        "spg": 0.9,
+        "bpg": 0.4,
+        "topg": 1.5,
+        "fg_pct": 49.2,
+        "fg3_pct": 32.8,
+        "ft_pct": 78.5,
+        "season": "2024-25"
+      }
+    },
+    "Bam Adebayo": {
+      "nba_team": "MIA",
+      "pos": "C",
+      "stats": {
+        "gp": 78,
+        "mpg": 34.3,
+        "ppg": 18.1,
+        "rpg": 9.6,
+        "apg": 4.3,
+        "spg": 1.3,
+        "bpg": 0.7,
+        "topg": 2.1,
+        "fg_pct": 48.5,
+        "fg3_pct": 35.7,
+        "ft_pct": 76.5,
+        "season": "2024-25"
+      }
+    },
+    "Bennedict Mathurin": {
+      "nba_team": "IND",
+      "pos": "SF",
+      "stats": {
+        "gp": 72,
+        "mpg": 29.8,
+        "ppg": 16.1,
+        "rpg": 5.3,
+        "apg": 1.9,
+        "spg": 0.7,
+        "bpg": 0.3,
+        "topg": 1.9,
+        "fg_pct": 45.8,
+        "fg3_pct": 34.0,
+        "ft_pct": 83.1,
+        "season": "2024-25"
+      }
+    },
+    "Bilal Coulibaly": {
+      "nba_team": "WAS",
+      "pos": "SF",
+      "stats": {
+        "gp": 59,
+        "mpg": 33.0,
+        "ppg": 12.3,
+        "rpg": 5.0,
+        "apg": 3.4,
+        "spg": 1.3,
+        "bpg": 0.7,
+        "topg": 2.1,
+        "fg_pct": 42.1,
+        "fg3_pct": 28.1,
+        "ft_pct": 74.6,
+        "season": "2024-25"
+      }
+    },
+    "Bobby Portis": {
+      "nba_team": "MIL",
+      "pos": "PF",
+      "stats": {
+        "gp": 49,
+        "mpg": 25.4,
+        "ppg": 13.9,
+        "rpg": 8.4,
+        "apg": 2.1,
+        "spg": 0.7,
+        "bpg": 0.5,
+        "topg": 1.2,
+        "fg_pct": 46.6,
+        "fg3_pct": 36.5,
+        "ft_pct": 83.6,
+        "season": "2024-25"
+      }
+    },
+    "Brandin Podziemski": {
+      "nba_team": "GSW",
+      "pos": "SG",
+      "stats": {
+        "gp": 64,
+        "mpg": 26.8,
+        "ppg": 11.7,
+        "rpg": 5.1,
+        "apg": 3.4,
+        "spg": 1.1,
+        "bpg": 0.2,
+        "topg": 1.2,
+        "fg_pct": 44.5,
+        "fg3_pct": 37.2,
+        "ft_pct": 75.8,
+        "season": "2024-25"
+      }
+    },
+    "Brandon Ingram": {
+      "nba_team": "NOP",
+      "pos": "SF",
+      "stats": {
+        "gp": 18,
+        "mpg": 33.1,
+        "ppg": 22.2,
+        "rpg": 5.6,
+        "apg": 5.2,
+        "spg": 0.9,
+        "bpg": 0.6,
+        "topg": 3.8,
+        "fg_pct": 46.5,
+        "fg3_pct": 37.4,
+        "ft_pct": 85.5,
+        "season": "2024-25"
+      }
+    },
+    "Brandon Miller": {
+      "nba_team": "CHO",
+      "pos": "SF",
+      "stats": {
+        "gp": 27,
+        "mpg": 34.2,
+        "ppg": 21.0,
+        "rpg": 4.9,
+        "apg": 3.6,
+        "spg": 1.1,
+        "bpg": 0.7,
+        "topg": 2.8,
+        "fg_pct": 40.3,
+        "fg3_pct": 35.5,
+        "ft_pct": 86.1,
+        "season": "2024-25"
+      }
+    },
+    "Brandon Williams": {
+      "nba_team": "DAL",
+      "pos": "PG",
+      "stats": {
+        "gp": 33,
+        "mpg": 14.8,
+        "ppg": 8.3,
+        "rpg": 1.8,
+        "apg": 2.3,
+        "spg": 0.7,
+        "bpg": 0.2,
+        "topg": 1.2,
+        "fg_pct": 52.1,
+        "fg3_pct": 40.0,
+        "ft_pct": 83.3,
+        "season": "2024-25"
+      }
+    },
+    "Brice Sensabaugh": {
+      "nba_team": "UTA",
+      "pos": "SF",
+      "stats": {
+        "gp": 71,
+        "mpg": 20.2,
+        "ppg": 10.9,
+        "rpg": 3.0,
+        "apg": 1.5,
+        "spg": 0.6,
+        "bpg": 0.1,
+        "topg": 1.5,
+        "fg_pct": 45.9,
+        "fg3_pct": 42.2,
+        "ft_pct": 89.0,
+        "season": "2024-25"
+      }
+    },
+    "CJ McCollum": {
+      "nba_team": "NOP",
+      "pos": "PG",
+      "stats": {
+        "gp": 56,
+        "mpg": 32.7,
+        "ppg": 21.1,
+        "rpg": 3.8,
+        "apg": 4.1,
+        "spg": 0.8,
+        "bpg": 0.4,
+        "topg": 1.9,
+        "fg_pct": 44.4,
+        "fg3_pct": 37.3,
+        "ft_pct": 71.7,
+        "season": "2024-25"
+      }
+    },
+    "Cade Cunningham": {
+      "nba_team": "DET",
+      "pos": "PG",
+      "stats": {
+        "gp": 70,
+        "mpg": 35.0,
+        "ppg": 26.1,
+        "rpg": 6.1,
+        "apg": 9.1,
+        "spg": 1.0,
+        "bpg": 0.8,
+        "topg": 4.4,
+        "fg_pct": 46.9,
+        "fg3_pct": 35.6,
+        "ft_pct": 84.6,
+        "season": "2024-25"
+      }
+    },
+    "Cam Spencer": {
+      "nba_team": "MEM",
+      "pos": "SG",
+      "stats": {
+        "gp": 25,
+        "mpg": 10.1,
+        "ppg": 4.2,
+        "rpg": 1.2,
+        "apg": 1.4,
+        "spg": 0.4,
+        "bpg": 0.0,
+        "topg": 0.2,
+        "fg_pct": 41.5,
+        "fg3_pct": 36.5,
+        "ft_pct": 1.0,
+        "season": "2024-25"
+      }
+    },
+    "Cam Whitmore": {
+      "nba_team": "HOU",
+      "pos": "SF",
+      "stats": {
+        "gp": 51,
+        "mpg": 16.2,
+        "ppg": 9.4,
+        "rpg": 3.0,
+        "apg": 1.0,
+        "spg": 0.6,
+        "bpg": 0.3,
+        "topg": 0.9,
+        "fg_pct": 44.4,
+        "fg3_pct": 35.5,
+        "ft_pct": 75.0,
+        "season": "2024-25"
+      }
+    },
+    "Cameron Johnson": {
+      "nba_team": "BRK",
+      "pos": "PF",
+      "stats": {
+        "gp": 57,
+        "mpg": 31.6,
+        "ppg": 18.8,
+        "rpg": 4.3,
+        "apg": 3.4,
+        "spg": 0.9,
+        "bpg": 0.4,
+        "topg": 1.7,
+        "fg_pct": 47.5,
+        "fg3_pct": 39.0,
+        "ft_pct": 89.3,
+        "season": "2024-25"
+      }
+    },
+    "Cameron Thomas": {
+      "nba_team": "BRK",
+      "pos": "SG",
+      "stats": {
+        "gp": 25,
+        "mpg": 31.2,
+        "ppg": 24.0,
+        "rpg": 3.3,
+        "apg": 3.8,
+        "spg": 0.6,
+        "bpg": 0.1,
+        "topg": 2.5,
+        "fg_pct": 43.8,
+        "fg3_pct": 34.9,
+        "ft_pct": 88.1,
+        "season": "2024-25"
+      }
+    },
+    "Carlton Carrington": {
+      "nba_team": "WAS",
+      "pos": "PG",
+      "stats": {
+        "gp": 82,
+        "mpg": 30.0,
+        "ppg": 9.8,
+        "rpg": 4.2,
+        "apg": 4.4,
+        "spg": 0.7,
+        "bpg": 0.3,
+        "topg": 1.7,
+        "fg_pct": 40.1,
+        "fg3_pct": 33.9,
+        "ft_pct": 81.2,
+        "season": "2024-25"
+      }
+    },
+    "Cason Wallace": {
+      "nba_team": "OKC",
+      "pos": "SG",
+      "stats": {
+        "gp": 68,
+        "mpg": 27.6,
+        "ppg": 8.4,
+        "rpg": 3.4,
+        "apg": 2.5,
+        "spg": 1.8,
+        "bpg": 0.5,
+        "topg": 0.9,
+        "fg_pct": 47.4,
+        "fg3_pct": 35.6,
+        "ft_pct": 81.1,
+        "season": "2024-25"
+      }
+    },
+    "Chet Holmgren": {
+      "nba_team": "OKC",
+      "pos": "C",
+      "stats": {
+        "gp": 32,
+        "mpg": 27.4,
+        "ppg": 15.0,
+        "rpg": 8.0,
+        "apg": 2.0,
+        "spg": 0.7,
+        "bpg": 2.2,
+        "topg": 1.8,
+        "fg_pct": 49.0,
+        "fg3_pct": 37.9,
+        "ft_pct": 75.4,
+        "season": "2024-25"
+      }
+    },
+    "Christian Braun": {
+      "nba_team": "DEN",
+      "pos": "SG",
+      "stats": {
+        "gp": 79,
+        "mpg": 33.9,
+        "ppg": 15.4,
+        "rpg": 5.2,
+        "apg": 2.6,
+        "spg": 1.1,
+        "bpg": 0.5,
+        "topg": 1.0,
+        "fg_pct": 58.0,
+        "fg3_pct": 39.7,
+        "ft_pct": 82.7,
+        "season": "2024-25"
+      }
+    },
+    "Coby White": {
+      "nba_team": "CHI",
+      "pos": "SG",
+      "stats": {
+        "gp": 74,
+        "mpg": 33.1,
+        "ppg": 20.4,
+        "rpg": 3.7,
+        "apg": 4.5,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 2.4,
+        "fg_pct": 45.3,
+        "fg3_pct": 37.0,
+        "ft_pct": 90.2,
+        "season": "2024-25"
+      }
+    },
+    "Cody Williams": {
+      "nba_team": "UTA",
+      "pos": "SG",
+      "stats": {
+        "gp": 50,
+        "mpg": 21.2,
+        "ppg": 4.6,
+        "rpg": 2.3,
+        "apg": 1.2,
+        "spg": 0.5,
+        "bpg": 0.3,
+        "topg": 0.9,
+        "fg_pct": 32.3,
+        "fg3_pct": 25.9,
+        "ft_pct": 72.5,
+        "season": "2024-25"
+      }
+    },
+    "Collin Gillespie": {
+      "nba_team": "PHO",
+      "pos": "PG",
+      "stats": {
+        "gp": 33,
+        "mpg": 14.0,
+        "ppg": 5.9,
+        "rpg": 2.4,
+        "apg": 2.4,
+        "spg": 0.6,
+        "bpg": 0.2,
+        "topg": 0.5,
+        "fg_pct": 43.0,
+        "fg3_pct": 43.3,
+        "ft_pct": 86.4,
+        "season": "2024-25"
+      }
+    },
+    "Collin Sexton": {
+      "nba_team": "UTA",
+      "pos": "SG",
+      "stats": {
+        "gp": 63,
+        "mpg": 27.9,
+        "ppg": 18.4,
+        "rpg": 2.7,
+        "apg": 4.2,
+        "spg": 0.7,
+        "bpg": 0.1,
+        "topg": 2.5,
+        "fg_pct": 48.0,
+        "fg3_pct": 40.6,
+        "ft_pct": 86.5,
+        "season": "2024-25"
+      }
+    },
+    "DAngelo Russell": {
+      "nba_team": "2TM",
+      "pos": "PG",
+      "stats": {
+        "gp": 58,
+        "mpg": 25.5,
+        "ppg": 12.6,
+        "rpg": 2.8,
+        "apg": 5.1,
+        "spg": 1.0,
+        "bpg": 0.4,
+        "topg": 1.9,
+        "fg_pct": 39.0,
+        "fg3_pct": 31.4,
+        "ft_pct": 83.4,
+        "season": "2024-25"
+      }
+    },
+    "Damian Lillard": {
+      "nba_team": "MIL",
+      "pos": "PG",
+      "stats": {
+        "gp": 58,
+        "mpg": 36.1,
+        "ppg": 24.9,
+        "rpg": 4.7,
+        "apg": 7.1,
+        "spg": 1.2,
+        "bpg": 0.2,
+        "topg": 2.8,
+        "fg_pct": 44.8,
+        "fg3_pct": 37.6,
+        "ft_pct": 92.1,
+        "season": "2024-25"
+      }
+    },
+    "Daniel Gafford": {
+      "nba_team": "DAL",
+      "pos": "C",
+      "stats": {
+        "gp": 57,
+        "mpg": 21.5,
+        "ppg": 12.3,
+        "rpg": 6.8,
+        "apg": 1.4,
+        "spg": 0.4,
+        "bpg": 1.8,
+        "topg": 1.2,
+        "fg_pct": 70.2,
+        "fg3_pct": 0.0,
+        "ft_pct": 68.9,
+        "season": "2024-25"
+      }
+    },
+    "Daniss Jenkins": {
+      "nba_team": "DET",
+      "pos": "PG",
+      "stats": {
+        "gp": 7,
+        "mpg": 3.3,
+        "ppg": 1.0,
+        "rpg": 0.3,
+        "apg": 0.4,
+        "spg": 0.0,
+        "bpg": 0.0,
+        "topg": 0.1,
+        "fg_pct": 30.0,
+        "fg3_pct": 14.3,
+        "ft_pct": 0.0,
+        "season": "2024-25"
+      }
+    },
+    "Darius Garland": {
+      "nba_team": "CLE",
+      "pos": "PG",
+      "stats": {
+        "gp": 75,
+        "mpg": 30.7,
+        "ppg": 20.6,
+        "rpg": 2.9,
+        "apg": 6.7,
+        "spg": 1.2,
+        "bpg": 0.1,
+        "topg": 2.5,
+        "fg_pct": 47.2,
+        "fg3_pct": 40.1,
+        "ft_pct": 87.8,
+        "season": "2024-25"
+      }
+    },
+    "Davion Mitchell": {
+      "nba_team": "2TM",
+      "pos": "PG",
+      "stats": {
+        "gp": 74,
+        "mpg": 27.4,
+        "ppg": 7.9,
+        "rpg": 2.3,
+        "apg": 4.9,
+        "spg": 1.0,
+        "bpg": 0.2,
+        "topg": 1.7,
+        "fg_pct": 46.8,
+        "fg3_pct": 39.8,
+        "ft_pct": 69.0,
+        "season": "2024-25"
+      }
+    },
+    "DayRon Sharpe": {
+      "nba_team": "BRK",
+      "pos": "C",
+      "stats": {
+        "gp": 50,
+        "mpg": 18.1,
+        "ppg": 7.9,
+        "rpg": 6.6,
+        "apg": 1.8,
+        "spg": 0.8,
+        "bpg": 0.8,
+        "topg": 1.3,
+        "fg_pct": 52.1,
+        "fg3_pct": 24.4,
+        "ft_pct": 75.7,
+        "season": "2024-25"
+      }
+    },
+    "DeAaron Fox": {
+      "nba_team": "2TM",
+      "pos": "PG",
+      "stats": {
+        "gp": 62,
+        "mpg": 36.1,
+        "ppg": 23.5,
+        "rpg": 4.8,
+        "apg": 6.3,
+        "spg": 1.5,
+        "bpg": 0.4,
+        "topg": 2.8,
+        "fg_pct": 46.3,
+        "fg3_pct": 31.0,
+        "ft_pct": 82.7,
+        "season": "2024-25"
+      }
+    },
+    "DeMar DeRozan": {
+      "nba_team": "SAC",
+      "pos": "SF",
+      "stats": {
+        "gp": 77,
+        "mpg": 35.9,
+        "ppg": 22.2,
+        "rpg": 3.9,
+        "apg": 4.4,
+        "spg": 0.8,
+        "bpg": 0.4,
+        "topg": 1.4,
+        "fg_pct": 47.7,
+        "fg3_pct": 32.8,
+        "ft_pct": 85.7,
+        "season": "2024-25"
+      }
+    },
+    "Deandre Ayton": {
+      "nba_team": "POR",
+      "pos": "C",
+      "stats": {
+        "gp": 40,
+        "mpg": 30.2,
+        "ppg": 14.4,
+        "rpg": 10.2,
+        "apg": 1.6,
+        "spg": 0.8,
+        "bpg": 1.0,
+        "topg": 1.7,
+        "fg_pct": 56.6,
+        "fg3_pct": 18.8,
+        "ft_pct": 66.7,
+        "season": "2024-25"
+      }
+    },
+    "Dejounte Murray": {
+      "nba_team": "NOP",
+      "pos": "PG",
+      "stats": {
+        "gp": 31,
+        "mpg": 32.6,
+        "ppg": 17.5,
+        "rpg": 6.5,
+        "apg": 7.4,
+        "spg": 2.0,
+        "bpg": 0.4,
+        "topg": 3.4,
+        "fg_pct": 39.3,
+        "fg3_pct": 29.9,
+        "ft_pct": 82.3,
+        "season": "2024-25"
+      }
+    },
+    "Deni Avdija": {
+      "nba_team": "POR",
+      "pos": "SF",
+      "stats": {
+        "gp": 72,
+        "mpg": 30.0,
+        "ppg": 16.9,
+        "rpg": 7.3,
+        "apg": 3.9,
+        "spg": 1.0,
+        "bpg": 0.5,
+        "topg": 2.7,
+        "fg_pct": 47.6,
+        "fg3_pct": 36.5,
+        "ft_pct": 78.0,
+        "season": "2024-25"
+      }
+    },
+    "Dennis Schroder": {
+      "nba_team": "3TM",
+      "pos": "PG",
+      "stats": {
+        "gp": 75,
+        "mpg": 28.1,
+        "ppg": 13.1,
+        "rpg": 2.6,
+        "apg": 5.4,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 1.9,
+        "fg_pct": 40.6,
+        "fg3_pct": 34.2,
+        "ft_pct": 83.8,
+        "season": "2024-25"
+      }
+    },
+    "Dereck Lively": {
+      "nba_team": "DAL",
+      "pos": "C",
+      "stats": {
+        "gp": 36,
+        "mpg": 23.1,
+        "ppg": 8.7,
+        "rpg": 7.5,
+        "apg": 2.4,
+        "spg": 0.6,
+        "bpg": 1.6,
+        "topg": 1.1,
+        "fg_pct": 70.2,
+        "fg3_pct": 0.0,
+        "ft_pct": 63.0,
+        "season": "2024-25"
+      }
+    },
+    "Derrick White": {
+      "nba_team": "BOS",
+      "pos": "SG",
+      "stats": {
+        "gp": 76,
+        "mpg": 33.9,
+        "ppg": 16.4,
+        "rpg": 4.5,
+        "apg": 4.8,
+        "spg": 0.9,
+        "bpg": 1.1,
+        "topg": 1.7,
+        "fg_pct": 44.2,
+        "fg3_pct": 38.4,
+        "ft_pct": 83.9,
+        "season": "2024-25"
+      }
+    },
+    "Desmond Bane": {
+      "nba_team": "MEM",
+      "pos": "SG",
+      "stats": {
+        "gp": 69,
+        "mpg": 32.0,
+        "ppg": 19.2,
+        "rpg": 6.1,
+        "apg": 5.3,
+        "spg": 1.2,
+        "bpg": 0.4,
+        "topg": 2.4,
+        "fg_pct": 48.4,
+        "fg3_pct": 39.2,
+        "ft_pct": 89.4,
+        "season": "2024-25"
+      }
+    },
+    "Devin Booker": {
+      "nba_team": "PHO",
+      "pos": "SG",
+      "stats": {
+        "gp": 75,
+        "mpg": 37.3,
+        "ppg": 25.6,
+        "rpg": 4.1,
+        "apg": 7.1,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 2.9,
+        "fg_pct": 46.1,
+        "fg3_pct": 33.2,
+        "ft_pct": 89.4,
+        "season": "2024-25"
+      }
+    },
+    "Devin Carter": {
+      "nba_team": "SAC",
+      "pos": "PG",
+      "stats": {
+        "gp": 36,
+        "mpg": 11.0,
+        "ppg": 3.8,
+        "rpg": 2.1,
+        "apg": 1.1,
+        "spg": 0.6,
+        "bpg": 0.1,
+        "topg": 0.5,
+        "fg_pct": 37.0,
+        "fg3_pct": 29.5,
+        "ft_pct": 59.1,
+        "season": "2024-25"
+      }
+    },
+    "Devin Vassell": {
+      "nba_team": "SAS",
+      "pos": "SG",
+      "stats": {
+        "gp": 64,
+        "mpg": 31.0,
+        "ppg": 16.3,
+        "rpg": 4.0,
+        "apg": 2.9,
+        "spg": 1.3,
+        "bpg": 0.5,
+        "topg": 1.4,
+        "fg_pct": 44.3,
+        "fg3_pct": 36.8,
+        "ft_pct": 79.2,
+        "season": "2024-25"
+      }
+    },
+    "Dillon Brooks": {
+      "nba_team": "HOU",
+      "pos": "SF",
+      "stats": {
+        "gp": 75,
+        "mpg": 31.8,
+        "ppg": 14.0,
+        "rpg": 3.7,
+        "apg": 1.7,
+        "spg": 0.8,
+        "bpg": 0.2,
+        "topg": 1.0,
+        "fg_pct": 42.9,
+        "fg3_pct": 39.7,
+        "ft_pct": 81.8,
+        "season": "2024-25"
+      }
+    },
+    "Domantas Sabonis": {
+      "nba_team": "SAC",
+      "pos": "C",
+      "stats": {
+        "gp": 70,
+        "mpg": 34.7,
+        "ppg": 19.1,
+        "rpg": 13.9,
+        "apg": 6.0,
+        "spg": 0.7,
+        "bpg": 0.4,
+        "topg": 2.9,
+        "fg_pct": 59.0,
+        "fg3_pct": 41.7,
+        "ft_pct": 75.4,
+        "season": "2024-25"
+      }
+    },
+    "Dominick Barlow": {
+      "nba_team": "ATL",
+      "pos": "SF",
+      "stats": {
+        "gp": 35,
+        "mpg": 10.7,
+        "ppg": 4.2,
+        "rpg": 2.4,
+        "apg": 0.5,
+        "spg": 0.3,
+        "bpg": 0.5,
+        "topg": 0.1,
+        "fg_pct": 53.1,
+        "fg3_pct": 25.9,
+        "ft_pct": 63.6,
+        "season": "2024-25"
+      }
+    },
+    "Donovan Clingan": {
+      "nba_team": "POR",
+      "pos": "C",
+      "stats": {
+        "gp": 67,
+        "mpg": 19.8,
+        "ppg": 6.5,
+        "rpg": 7.9,
+        "apg": 1.1,
+        "spg": 0.5,
+        "bpg": 1.6,
+        "topg": 1.1,
+        "fg_pct": 53.9,
+        "fg3_pct": 28.6,
+        "ft_pct": 59.6,
+        "season": "2024-25"
+      }
+    },
+    "Donovan Mitchell": {
+      "nba_team": "CLE",
+      "pos": "SG",
+      "stats": {
+        "gp": 71,
+        "mpg": 31.4,
+        "ppg": 24.0,
+        "rpg": 4.5,
+        "apg": 5.0,
+        "spg": 1.3,
+        "bpg": 0.2,
+        "topg": 2.1,
+        "fg_pct": 44.3,
+        "fg3_pct": 36.8,
+        "ft_pct": 82.3,
+        "season": "2024-25"
+      }
+    },
+    "Donte DiVincenzo": {
+      "nba_team": "MIN",
+      "pos": "SG",
+      "stats": {
+        "gp": 62,
+        "mpg": 25.9,
+        "ppg": 11.7,
+        "rpg": 3.7,
+        "apg": 3.6,
+        "spg": 1.2,
+        "bpg": 0.3,
+        "topg": 1.6,
+        "fg_pct": 42.2,
+        "fg3_pct": 39.7,
+        "ft_pct": 77.8,
+        "season": "2024-25"
+      }
+    },
+    "Draymond Green": {
+      "nba_team": "GSW",
+      "pos": "PF",
+      "stats": {
+        "gp": 68,
+        "mpg": 29.2,
+        "ppg": 9.0,
+        "rpg": 6.1,
+        "apg": 5.6,
+        "spg": 1.5,
+        "bpg": 1.0,
+        "topg": 2.6,
+        "fg_pct": 42.4,
+        "fg3_pct": 32.5,
+        "ft_pct": 68.7,
+        "season": "2024-25"
+      }
+    },
+    "Dyson Daniels": {
+      "nba_team": "ATL",
+      "pos": "SG",
+      "stats": {
+        "gp": 76,
+        "mpg": 33.8,
+        "ppg": 14.1,
+        "rpg": 5.9,
+        "apg": 4.4,
+        "spg": 3.0,
+        "bpg": 0.7,
+        "topg": 2.0,
+        "fg_pct": 49.3,
+        "fg3_pct": 34.0,
+        "ft_pct": 59.3,
+        "season": "2024-25"
+      }
+    },
+    "Evan Mobley": {
+      "nba_team": "CLE",
+      "pos": "PF",
+      "stats": {
+        "gp": 71,
+        "mpg": 30.5,
+        "ppg": 18.5,
+        "rpg": 9.3,
+        "apg": 3.2,
+        "spg": 0.9,
+        "bpg": 1.6,
+        "topg": 2.0,
+        "fg_pct": 55.7,
+        "fg3_pct": 37.0,
+        "ft_pct": 72.5,
+        "season": "2024-25"
+      }
+    },
+    "Franz Wagner": {
+      "nba_team": "ORL",
+      "pos": "SF",
+      "stats": {
+        "gp": 60,
+        "mpg": 33.7,
+        "ppg": 24.2,
+        "rpg": 5.7,
+        "apg": 4.7,
+        "spg": 1.3,
+        "bpg": 0.4,
+        "topg": 2.3,
+        "fg_pct": 46.3,
+        "fg3_pct": 29.5,
+        "ft_pct": 87.1,
+        "season": "2024-25"
+      }
+    },
+    "Fred VanVleet": {
+      "nba_team": "HOU",
+      "pos": "PG",
+      "stats": {
+        "gp": 60,
+        "mpg": 35.2,
+        "ppg": 14.1,
+        "rpg": 3.7,
+        "apg": 5.6,
+        "spg": 1.6,
+        "bpg": 0.4,
+        "topg": 1.5,
+        "fg_pct": 37.8,
+        "fg3_pct": 34.5,
+        "ft_pct": 81.0,
+        "season": "2024-25"
+      }
+    },
+    "GG Jackson": {
+      "nba_team": "MEM",
+      "pos": "PF",
+      "stats": {
+        "gp": 29,
+        "mpg": 15.8,
+        "ppg": 7.2,
+        "rpg": 3.2,
+        "apg": 1.0,
+        "spg": 0.4,
+        "bpg": 0.2,
+        "topg": 1.1,
+        "fg_pct": 37.2,
+        "fg3_pct": 33.7,
+        "ft_pct": 72.5,
+        "season": "2024-25"
+      }
+    },
+    "Giannis Antetokounmpo": {
+      "nba_team": "MIL",
+      "pos": "PF",
+      "stats": {
+        "gp": 67,
+        "mpg": 34.2,
+        "ppg": 30.4,
+        "rpg": 11.9,
+        "apg": 6.5,
+        "spg": 0.9,
+        "bpg": 1.2,
+        "topg": 3.1,
+        "fg_pct": 60.1,
+        "fg3_pct": 22.2,
+        "ft_pct": 61.7,
+        "season": "2024-25"
+      }
+    },
+    "Grayson Allen": {
+      "nba_team": "PHO",
+      "pos": "SG",
+      "stats": {
+        "gp": 64,
+        "mpg": 24.1,
+        "ppg": 10.6,
+        "rpg": 3.0,
+        "apg": 2.1,
+        "spg": 0.8,
+        "bpg": 0.3,
+        "topg": 1.2,
+        "fg_pct": 44.8,
+        "fg3_pct": 42.6,
+        "ft_pct": 81.6,
+        "season": "2024-25"
+      }
+    },
+    "Gui Santos": {
+      "nba_team": "GSW",
+      "pos": "PF",
+      "stats": {
+        "gp": 56,
+        "mpg": 13.6,
+        "ppg": 4.1,
+        "rpg": 3.1,
+        "apg": 1.4,
+        "spg": 0.4,
+        "bpg": 0.2,
+        "topg": 0.8,
+        "fg_pct": 45.8,
+        "fg3_pct": 33.0,
+        "ft_pct": 69.0,
+        "season": "2024-25"
+      }
+    },
+    "Herbert Jones": {
+      "nba_team": "NOP",
+      "pos": "SF",
+      "stats": {
+        "gp": 20,
+        "mpg": 32.4,
+        "ppg": 10.3,
+        "rpg": 3.9,
+        "apg": 3.3,
+        "spg": 1.9,
+        "bpg": 0.5,
+        "topg": 1.8,
+        "fg_pct": 43.6,
+        "fg3_pct": 30.6,
+        "ft_pct": 82.5,
+        "season": "2024-25"
+      }
+    },
+    "Immanuel Quickley": {
+      "nba_team": "TOR",
+      "pos": "PG",
+      "stats": {
+        "gp": 33,
+        "mpg": 27.8,
+        "ppg": 17.1,
+        "rpg": 3.5,
+        "apg": 5.8,
+        "spg": 0.7,
+        "bpg": 0.1,
+        "topg": 1.8,
+        "fg_pct": 42.0,
+        "fg3_pct": 37.8,
+        "ft_pct": 86.7,
+        "season": "2024-25"
+      }
+    },
+    "Isaiah Collier": {
+      "nba_team": "UTA",
+      "pos": "PG",
+      "stats": {
+        "gp": 71,
+        "mpg": 25.9,
+        "ppg": 8.7,
+        "rpg": 3.3,
+        "apg": 6.3,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 2.9,
+        "fg_pct": 42.2,
+        "fg3_pct": 24.9,
+        "ft_pct": 68.2,
+        "season": "2024-25"
+      }
+    },
+    "Isaiah Hartenstein": {
+      "nba_team": "OKC",
+      "pos": "C",
+      "stats": {
+        "gp": 57,
+        "mpg": 27.9,
+        "ppg": 11.2,
+        "rpg": 10.7,
+        "apg": 3.8,
+        "spg": 0.8,
+        "bpg": 1.1,
+        "topg": 1.7,
+        "fg_pct": 58.1,
+        "fg3_pct": 0.0,
+        "ft_pct": 67.5,
+        "season": "2024-25"
+      }
+    },
+    "Isaiah Stewart": {
+      "nba_team": "DET",
+      "pos": "C",
+      "stats": {
+        "gp": 72,
+        "mpg": 19.9,
+        "ppg": 6.0,
+        "rpg": 5.5,
+        "apg": 1.7,
+        "spg": 0.4,
+        "bpg": 1.4,
+        "topg": 0.9,
+        "fg_pct": 55.9,
+        "fg3_pct": 32.1,
+        "ft_pct": 75.9,
+        "season": "2024-25"
+      }
+    },
+    "Ivica Zubac": {
+      "nba_team": "LAC",
+      "pos": "C",
+      "stats": {
+        "gp": 80,
+        "mpg": 32.8,
+        "ppg": 16.8,
+        "rpg": 12.6,
+        "apg": 2.7,
+        "spg": 0.7,
+        "bpg": 1.1,
+        "topg": 1.6,
+        "fg_pct": 62.8,
+        "fg3_pct": 0.0,
+        "ft_pct": 66.1,
+        "season": "2024-25"
+      }
+    },
+    "Ja Morant": {
+      "nba_team": "MEM",
+      "pos": "PG",
+      "stats": {
+        "gp": 50,
+        "mpg": 30.4,
+        "ppg": 23.2,
+        "rpg": 4.1,
+        "apg": 7.3,
+        "spg": 1.2,
+        "bpg": 0.2,
+        "topg": 3.7,
+        "fg_pct": 45.4,
+        "fg3_pct": 30.9,
+        "ft_pct": 82.4,
+        "season": "2024-25"
+      }
+    },
+    "JaKobe Walter": {
+      "nba_team": "TOR",
+      "pos": "SG",
+      "stats": {
+        "gp": 52,
+        "mpg": 21.2,
+        "ppg": 8.6,
+        "rpg": 3.1,
+        "apg": 1.6,
+        "spg": 0.8,
+        "bpg": 0.2,
+        "topg": 1.0,
+        "fg_pct": 40.5,
+        "fg3_pct": 34.9,
+        "ft_pct": 79.5,
+        "season": "2024-25"
+      }
+    },
+    "Jabari Smith": {
+      "nba_team": "HOU",
+      "pos": "PF",
+      "stats": {
+        "gp": 57,
+        "mpg": 30.1,
+        "ppg": 12.2,
+        "rpg": 7.0,
+        "apg": 1.1,
+        "spg": 0.4,
+        "bpg": 0.7,
+        "topg": 1.1,
+        "fg_pct": 43.8,
+        "fg3_pct": 35.4,
+        "ft_pct": 82.5,
+        "season": "2024-25"
+      }
+    },
+    "Jaden Ivey": {
+      "nba_team": "DET",
+      "pos": "SG",
+      "stats": {
+        "gp": 30,
+        "mpg": 29.9,
+        "ppg": 17.6,
+        "rpg": 4.1,
+        "apg": 4.0,
+        "spg": 0.9,
+        "bpg": 0.4,
+        "topg": 3.0,
+        "fg_pct": 46.0,
+        "fg3_pct": 40.9,
+        "ft_pct": 73.3,
+        "season": "2024-25"
+      }
+    },
+    "Jaden McDaniels": {
+      "nba_team": "MIN",
+      "pos": "PF",
+      "stats": {
+        "gp": 82,
+        "mpg": 31.9,
+        "ppg": 12.2,
+        "rpg": 5.7,
+        "apg": 2.0,
+        "spg": 1.3,
+        "bpg": 0.9,
+        "topg": 1.2,
+        "fg_pct": 47.7,
+        "fg3_pct": 33.0,
+        "ft_pct": 81.3,
+        "season": "2024-25"
+      }
+    },
+    "Jaime Jaquez": {
+      "nba_team": "MIA",
+      "pos": "SF",
+      "stats": {
+        "gp": 66,
+        "mpg": 20.7,
+        "ppg": 8.6,
+        "rpg": 4.4,
+        "apg": 2.5,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 1.5,
+        "fg_pct": 46.1,
+        "fg3_pct": 31.1,
+        "ft_pct": 75.4,
+        "season": "2024-25"
+      }
+    },
+    "Jakob Poeltl": {
+      "nba_team": "TOR",
+      "pos": "C",
+      "stats": {
+        "gp": 57,
+        "mpg": 29.6,
+        "ppg": 14.5,
+        "rpg": 9.6,
+        "apg": 2.8,
+        "spg": 1.2,
+        "bpg": 1.2,
+        "topg": 1.9,
+        "fg_pct": 62.7,
+        "fg3_pct": 33.3,
+        "ft_pct": 67.4,
+        "season": "2024-25"
+      }
+    },
+    "Jalen Brunson": {
+      "nba_team": "NYK",
+      "pos": "PG",
+      "stats": {
+        "gp": 65,
+        "mpg": 35.4,
+        "ppg": 26.0,
+        "rpg": 2.9,
+        "apg": 7.3,
+        "spg": 0.9,
+        "bpg": 0.1,
+        "topg": 2.5,
+        "fg_pct": 48.8,
+        "fg3_pct": 38.3,
+        "ft_pct": 82.1,
+        "season": "2024-25"
+      }
+    },
+    "Jalen Duren": {
+      "nba_team": "DET",
+      "pos": "C",
+      "stats": {
+        "gp": 78,
+        "mpg": 26.1,
+        "ppg": 11.8,
+        "rpg": 10.3,
+        "apg": 2.7,
+        "spg": 0.7,
+        "bpg": 1.1,
+        "topg": 1.7,
+        "fg_pct": 69.2,
+        "fg3_pct": 0.0,
+        "ft_pct": 66.9,
+        "season": "2024-25"
+      }
+    },
+    "Jalen Green": {
+      "nba_team": "HOU",
+      "pos": "SG",
+      "stats": {
+        "gp": 82,
+        "mpg": 32.9,
+        "ppg": 21.0,
+        "rpg": 4.6,
+        "apg": 3.4,
+        "spg": 0.9,
+        "bpg": 0.3,
+        "topg": 2.5,
+        "fg_pct": 42.3,
+        "fg3_pct": 35.4,
+        "ft_pct": 81.3,
+        "season": "2024-25"
+      }
+    },
+    "Jalen Johnson": {
+      "nba_team": "ATL",
+      "pos": "SF",
+      "stats": {
+        "gp": 36,
+        "mpg": 35.7,
+        "ppg": 18.9,
+        "rpg": 10.0,
+        "apg": 5.0,
+        "spg": 1.6,
+        "bpg": 1.0,
+        "topg": 2.9,
+        "fg_pct": 50.0,
+        "fg3_pct": 31.2,
+        "ft_pct": 74.6,
+        "season": "2024-25"
+      }
+    },
+    "Jalen Smith": {
+      "nba_team": "CHI",
+      "pos": "C",
+      "stats": {
+        "gp": 64,
+        "mpg": 15.0,
+        "ppg": 8.2,
+        "rpg": 5.6,
+        "apg": 1.0,
+        "spg": 0.3,
+        "bpg": 0.7,
+        "topg": 0.6,
+        "fg_pct": 46.6,
+        "fg3_pct": 32.4,
+        "ft_pct": 80.9,
+        "season": "2024-25"
+      }
+    },
+    "Jalen Suggs": {
+      "nba_team": "ORL",
+      "pos": "PG",
+      "stats": {
+        "gp": 35,
+        "mpg": 28.6,
+        "ppg": 16.2,
+        "rpg": 4.0,
+        "apg": 3.7,
+        "spg": 1.5,
+        "bpg": 0.9,
+        "topg": 2.9,
+        "fg_pct": 41.0,
+        "fg3_pct": 31.4,
+        "ft_pct": 88.2,
+        "season": "2024-25"
+      }
+    },
+    "Jalen Williams": {
+      "nba_team": "OKC",
+      "pos": "SG",
+      "stats": {
+        "gp": 69,
+        "mpg": 32.4,
+        "ppg": 21.6,
+        "rpg": 5.3,
+        "apg": 5.1,
+        "spg": 1.6,
+        "bpg": 0.7,
+        "topg": 2.2,
+        "fg_pct": 48.4,
+        "fg3_pct": 36.5,
+        "ft_pct": 78.9,
+        "season": "2024-25"
+      }
+    },
+    "Jamal Murray": {
+      "nba_team": "DEN",
+      "pos": "PG",
+      "stats": {
+        "gp": 67,
+        "mpg": 36.1,
+        "ppg": 21.4,
+        "rpg": 3.9,
+        "apg": 6.0,
+        "spg": 1.4,
+        "bpg": 0.5,
+        "topg": 2.1,
+        "fg_pct": 47.4,
+        "fg3_pct": 39.3,
+        "ft_pct": 88.6,
+        "season": "2024-25"
+      }
+    },
+    "James Harden": {
+      "nba_team": "LAC",
+      "pos": "PG",
+      "stats": {
+        "gp": 79,
+        "mpg": 35.3,
+        "ppg": 22.8,
+        "rpg": 5.8,
+        "apg": 8.7,
+        "spg": 1.5,
+        "bpg": 0.7,
+        "topg": 4.3,
+        "fg_pct": 41.0,
+        "fg3_pct": 35.2,
+        "ft_pct": 87.4,
+        "season": "2024-25"
+      }
+    },
+    "Jarace Walker": {
+      "nba_team": "IND",
+      "pos": "PF",
+      "stats": {
+        "gp": 75,
+        "mpg": 15.8,
+        "ppg": 6.1,
+        "rpg": 3.1,
+        "apg": 1.5,
+        "spg": 0.7,
+        "bpg": 0.3,
+        "topg": 1.0,
+        "fg_pct": 47.2,
+        "fg3_pct": 40.5,
+        "ft_pct": 66.7,
+        "season": "2024-25"
+      }
+    },
+    "Jared McCain": {
+      "nba_team": "PHI",
+      "pos": "SG",
+      "stats": {
+        "gp": 23,
+        "mpg": 25.7,
+        "ppg": 15.3,
+        "rpg": 2.4,
+        "apg": 2.6,
+        "spg": 0.7,
+        "bpg": 0.0,
+        "topg": 1.6,
+        "fg_pct": 46.0,
+        "fg3_pct": 38.3,
+        "ft_pct": 87.5,
+        "season": "2024-25"
+      }
+    },
+    "Jaren Jackson": {
+      "nba_team": "MEM",
+      "pos": "C",
+      "stats": {
+        "gp": 74,
+        "mpg": 29.8,
+        "ppg": 22.2,
+        "rpg": 5.6,
+        "apg": 2.0,
+        "spg": 1.2,
+        "bpg": 1.5,
+        "topg": 2.1,
+        "fg_pct": 48.8,
+        "fg3_pct": 37.5,
+        "ft_pct": 78.1,
+        "season": "2024-25"
+      }
+    },
+    "Jarrett Allen": {
+      "nba_team": "CLE",
+      "pos": "C",
+      "stats": {
+        "gp": 82,
+        "mpg": 28.0,
+        "ppg": 13.5,
+        "rpg": 9.7,
+        "apg": 1.9,
+        "spg": 0.9,
+        "bpg": 0.9,
+        "topg": 1.2,
+        "fg_pct": 70.6,
+        "fg3_pct": 0.0,
+        "ft_pct": 71.8,
+        "season": "2024-25"
+      }
+    },
+    "Jay Huff": {
+      "nba_team": "MEM",
+      "pos": "C",
+      "stats": {
+        "gp": 64,
+        "mpg": 11.7,
+        "ppg": 6.9,
+        "rpg": 2.0,
+        "apg": 0.6,
+        "spg": 0.3,
+        "bpg": 0.9,
+        "topg": 0.5,
+        "fg_pct": 51.5,
+        "fg3_pct": 40.5,
+        "ft_pct": 78.6,
+        "season": "2024-25"
+      }
+    },
+    "Jaylen Brown": {
+      "nba_team": "BOS",
+      "pos": "SF",
+      "stats": {
+        "gp": 63,
+        "mpg": 34.3,
+        "ppg": 22.2,
+        "rpg": 5.8,
+        "apg": 4.5,
+        "spg": 1.2,
+        "bpg": 0.3,
+        "topg": 2.6,
+        "fg_pct": 46.3,
+        "fg3_pct": 32.4,
+        "ft_pct": 76.4,
+        "season": "2024-25"
+      }
+    },
+    "Jaylen Wells": {
+      "nba_team": "MEM",
+      "pos": "SG",
+      "stats": {
+        "gp": 79,
+        "mpg": 25.9,
+        "ppg": 10.4,
+        "rpg": 3.4,
+        "apg": 1.7,
+        "spg": 0.6,
+        "bpg": 0.1,
+        "topg": 0.9,
+        "fg_pct": 42.5,
+        "fg3_pct": 35.2,
+        "ft_pct": 82.2,
+        "season": "2024-25"
+      }
+    },
+    "Jaylon Tyson": {
+      "nba_team": "CLE",
+      "pos": "SG",
+      "stats": {
+        "gp": 47,
+        "mpg": 9.6,
+        "ppg": 3.6,
+        "rpg": 2.0,
+        "apg": 0.9,
+        "spg": 0.3,
+        "bpg": 0.1,
+        "topg": 0.6,
+        "fg_pct": 43.0,
+        "fg3_pct": 34.5,
+        "ft_pct": 79.2,
+        "season": "2024-25"
+      }
+    },
+    "Jayson Tatum": {
+      "nba_team": "BOS",
+      "pos": "PF",
+      "stats": {
+        "gp": 72,
+        "mpg": 36.4,
+        "ppg": 26.8,
+        "rpg": 8.7,
+        "apg": 6.0,
+        "spg": 1.1,
+        "bpg": 0.5,
+        "topg": 2.9,
+        "fg_pct": 45.2,
+        "fg3_pct": 34.3,
+        "ft_pct": 81.4,
+        "season": "2024-25"
+      }
+    },
+    "Jerami Grant": {
+      "nba_team": "POR",
+      "pos": "PF",
+      "stats": {
+        "gp": 47,
+        "mpg": 32.4,
+        "ppg": 14.4,
+        "rpg": 3.5,
+        "apg": 2.1,
+        "spg": 0.9,
+        "bpg": 1.0,
+        "topg": 1.4,
+        "fg_pct": 37.3,
+        "fg3_pct": 36.5,
+        "ft_pct": 84.9,
+        "season": "2024-25"
+      }
+    },
+    "Jeremy Sochan": {
+      "nba_team": "SAS",
+      "pos": "PF",
+      "stats": {
+        "gp": 54,
+        "mpg": 25.3,
+        "ppg": 11.4,
+        "rpg": 6.5,
+        "apg": 2.4,
+        "spg": 0.8,
+        "bpg": 0.5,
+        "topg": 1.6,
+        "fg_pct": 53.5,
+        "fg3_pct": 30.8,
+        "ft_pct": 69.6,
+        "season": "2024-25"
+      }
+    },
+    "Jericho Sims": {
+      "nba_team": "2TM",
+      "pos": "C",
+      "stats": {
+        "gp": 53,
+        "mpg": 11.9,
+        "ppg": 1.8,
+        "rpg": 3.7,
+        "apg": 0.6,
+        "spg": 0.2,
+        "bpg": 0.4,
+        "topg": 0.6,
+        "fg_pct": 63.4,
+        "fg3_pct": 0.0,
+        "ft_pct": 61.5,
+        "season": "2024-25"
+      }
+    },
+    "Jimmy Butler": {
+      "nba_team": "2TM",
+      "pos": "SF",
+      "stats": {
+        "gp": 55,
+        "mpg": 31.7,
+        "ppg": 17.5,
+        "rpg": 5.4,
+        "apg": 5.4,
+        "spg": 1.4,
+        "bpg": 0.3,
+        "topg": 1.3,
+        "fg_pct": 50.4,
+        "fg3_pct": 30.8,
+        "ft_pct": 84.2,
+        "season": "2024-25"
+      }
+    },
+    "Joel Embiid": {
+      "nba_team": "PHI",
+      "pos": "C",
+      "stats": {
+        "gp": 19,
+        "mpg": 30.2,
+        "ppg": 23.8,
+        "rpg": 8.2,
+        "apg": 4.5,
+        "spg": 0.7,
+        "bpg": 0.9,
+        "topg": 3.3,
+        "fg_pct": 44.4,
+        "fg3_pct": 29.9,
+        "ft_pct": 88.2,
+        "season": "2024-25"
+      }
+    },
+    "John Collins": {
+      "nba_team": "UTA",
+      "pos": "PF",
+      "stats": {
+        "gp": 40,
+        "mpg": 30.5,
+        "ppg": 19.0,
+        "rpg": 8.2,
+        "apg": 2.0,
+        "spg": 1.0,
+        "bpg": 1.0,
+        "topg": 2.6,
+        "fg_pct": 52.7,
+        "fg3_pct": 39.9,
+        "ft_pct": 84.8,
+        "season": "2024-25"
+      }
+    },
+    "Jonathan Kuminga": {
+      "nba_team": "GSW",
+      "pos": "PF",
+      "stats": {
+        "gp": 47,
+        "mpg": 24.3,
+        "ppg": 15.3,
+        "rpg": 4.6,
+        "apg": 2.2,
+        "spg": 0.8,
+        "bpg": 0.4,
+        "topg": 1.5,
+        "fg_pct": 45.4,
+        "fg3_pct": 30.5,
+        "ft_pct": 66.8,
+        "season": "2024-25"
+      }
+    },
+    "Jordan Poole": {
+      "nba_team": "WAS",
+      "pos": "SG",
+      "stats": {
+        "gp": 68,
+        "mpg": 29.4,
+        "ppg": 20.5,
+        "rpg": 3.0,
+        "apg": 4.5,
+        "spg": 1.3,
+        "bpg": 0.4,
+        "topg": 3.0,
+        "fg_pct": 43.2,
+        "fg3_pct": 37.8,
+        "ft_pct": 88.3,
+        "season": "2024-25"
+      }
+    },
+    "Josh Giddey": {
+      "nba_team": "CHI",
+      "pos": "PG",
+      "stats": {
+        "gp": 70,
+        "mpg": 30.2,
+        "ppg": 14.6,
+        "rpg": 8.1,
+        "apg": 7.2,
+        "spg": 1.2,
+        "bpg": 0.6,
+        "topg": 2.9,
+        "fg_pct": 46.5,
+        "fg3_pct": 37.8,
+        "ft_pct": 78.1,
+        "season": "2024-25"
+      }
+    },
+    "Josh Hart": {
+      "nba_team": "NYK",
+      "pos": "SG",
+      "stats": {
+        "gp": 77,
+        "mpg": 37.6,
+        "ppg": 13.6,
+        "rpg": 9.6,
+        "apg": 5.9,
+        "spg": 1.5,
+        "bpg": 0.4,
+        "topg": 2.1,
+        "fg_pct": 52.5,
+        "fg3_pct": 33.3,
+        "ft_pct": 77.6,
+        "season": "2024-25"
+      }
+    },
+    "Jrue Holiday": {
+      "nba_team": "BOS",
+      "pos": "PG",
+      "stats": {
+        "gp": 62,
+        "mpg": 30.6,
+        "ppg": 11.1,
+        "rpg": 4.3,
+        "apg": 3.9,
+        "spg": 1.1,
+        "bpg": 0.4,
+        "topg": 1.2,
+        "fg_pct": 44.3,
+        "fg3_pct": 35.3,
+        "ft_pct": 90.9,
+        "season": "2024-25"
+      }
+    },
+    "Julian Champagnie": {
+      "nba_team": "SAS",
+      "pos": "SF",
+      "stats": {
+        "gp": 82,
+        "mpg": 23.6,
+        "ppg": 9.9,
+        "rpg": 3.9,
+        "apg": 1.4,
+        "spg": 0.7,
+        "bpg": 0.4,
+        "topg": 0.9,
+        "fg_pct": 41.5,
+        "fg3_pct": 37.1,
+        "ft_pct": 90.4,
+        "season": "2024-25"
+      }
+    },
+    "Julius Randle": {
+      "nba_team": "MIN",
+      "pos": "PF",
+      "stats": {
+        "gp": 69,
+        "mpg": 32.3,
+        "ppg": 18.7,
+        "rpg": 7.1,
+        "apg": 4.7,
+        "spg": 0.7,
+        "bpg": 0.2,
+        "topg": 2.8,
+        "fg_pct": 48.5,
+        "fg3_pct": 34.4,
+        "ft_pct": 80.6,
+        "season": "2024-25"
+      }
+    },
+    "Jusuf Nurkic": {
+      "nba_team": "2TM",
+      "pos": "C",
+      "stats": {
+        "gp": 51,
+        "mpg": 20.8,
+        "ppg": 8.9,
+        "rpg": 7.8,
+        "apg": 2.3,
+        "spg": 0.8,
+        "bpg": 0.7,
+        "topg": 1.9,
+        "fg_pct": 47.7,
+        "fg3_pct": 30.5,
+        "ft_pct": 66.4,
+        "season": "2024-25"
+      }
+    },
+    "Karl-Anthony Towns": {
+      "nba_team": "NYK",
+      "pos": "C",
+      "stats": {
+        "gp": 72,
+        "mpg": 35.0,
+        "ppg": 24.4,
+        "rpg": 12.8,
+        "apg": 3.1,
+        "spg": 1.0,
+        "bpg": 0.7,
+        "topg": 2.7,
+        "fg_pct": 52.6,
+        "fg3_pct": 42.0,
+        "ft_pct": 82.9,
+        "season": "2024-25"
+      }
+    },
+    "Kawhi Leonard": {
+      "nba_team": "LAC",
+      "pos": "SF",
+      "stats": {
+        "gp": 37,
+        "mpg": 31.9,
+        "ppg": 21.5,
+        "rpg": 5.9,
+        "apg": 3.1,
+        "spg": 1.6,
+        "bpg": 0.5,
+        "topg": 1.9,
+        "fg_pct": 49.8,
+        "fg3_pct": 41.1,
+        "ft_pct": 81.0,
+        "season": "2024-25"
+      }
+    },
+    "Keegan Murray": {
+      "nba_team": "SAC",
+      "pos": "PF",
+      "stats": {
+        "gp": 76,
+        "mpg": 34.3,
+        "ppg": 12.4,
+        "rpg": 6.7,
+        "apg": 1.4,
+        "spg": 0.8,
+        "bpg": 0.9,
+        "topg": 0.8,
+        "fg_pct": 44.4,
+        "fg3_pct": 34.3,
+        "ft_pct": 83.3,
+        "season": "2024-25"
+      }
+    },
+    "Keldon Johnson": {
+      "nba_team": "SAS",
+      "pos": "SF",
+      "stats": {
+        "gp": 77,
+        "mpg": 23.9,
+        "ppg": 12.7,
+        "rpg": 4.8,
+        "apg": 1.6,
+        "spg": 0.6,
+        "bpg": 0.3,
+        "topg": 1.0,
+        "fg_pct": 48.2,
+        "fg3_pct": 31.8,
+        "ft_pct": 77.3,
+        "season": "2024-25"
+      }
+    },
+    "Kelel Ware": {
+      "nba_team": "MIA",
+      "pos": "C",
+      "stats": {
+        "gp": 64,
+        "mpg": 22.2,
+        "ppg": 9.3,
+        "rpg": 7.4,
+        "apg": 0.9,
+        "spg": 0.6,
+        "bpg": 1.1,
+        "topg": 0.9,
+        "fg_pct": 55.4,
+        "fg3_pct": 31.5,
+        "ft_pct": 68.7,
+        "season": "2024-25"
+      }
+    },
+    "Kelly Oubre Jr.": {
+      "nba_team": "PHI",
+      "pos": "SF",
+      "stats": {
+        "gp": 60,
+        "mpg": 34.6,
+        "ppg": 15.1,
+        "rpg": 6.1,
+        "apg": 1.8,
+        "spg": 1.5,
+        "bpg": 0.5,
+        "topg": 1.3,
+        "fg_pct": 47.0,
+        "fg3_pct": 29.3,
+        "ft_pct": 75.1,
+        "season": "2024-25"
+      }
+    },
+    "Kevin Durant": {
+      "nba_team": "PHO",
+      "pos": "PF",
+      "stats": {
+        "gp": 62,
+        "mpg": 36.5,
+        "ppg": 26.6,
+        "rpg": 6.0,
+        "apg": 4.2,
+        "spg": 0.8,
+        "bpg": 1.2,
+        "topg": 3.1,
+        "fg_pct": 52.7,
+        "fg3_pct": 43.0,
+        "ft_pct": 83.9,
+        "season": "2024-25"
+      }
+    },
+    "Kevin Porter": {
+      "nba_team": "2TM",
+      "pos": "SG",
+      "stats": {
+        "gp": 75,
+        "mpg": 19.8,
+        "ppg": 10.3,
+        "rpg": 3.7,
+        "apg": 3.4,
+        "spg": 1.1,
+        "bpg": 0.2,
+        "topg": 1.8,
+        "fg_pct": 44.9,
+        "fg3_pct": 31.1,
+        "ft_pct": 76.9,
+        "season": "2024-25"
+      }
+    },
+    "Keyonte George": {
+      "nba_team": "UTA",
+      "pos": "PG",
+      "stats": {
+        "gp": 67,
+        "mpg": 31.5,
+        "ppg": 16.8,
+        "rpg": 3.8,
+        "apg": 5.6,
+        "spg": 0.7,
+        "bpg": 0.1,
+        "topg": 2.7,
+        "fg_pct": 39.1,
+        "fg3_pct": 34.3,
+        "ft_pct": 81.8,
+        "season": "2024-25"
+      }
+    },
+    "Khris Middleton": {
+      "nba_team": "2TM",
+      "pos": "SF",
+      "stats": {
+        "gp": 37,
+        "mpg": 22.8,
+        "ppg": 11.9,
+        "rpg": 3.7,
+        "apg": 4.1,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 1.5,
+        "fg_pct": 47.5,
+        "fg3_pct": 36.1,
+        "ft_pct": 85.7,
+        "season": "2024-25"
+      }
+    },
+    "Kris Dunn": {
+      "nba_team": "LAC",
+      "pos": "PG",
+      "stats": {
+        "gp": 74,
+        "mpg": 24.1,
+        "ppg": 6.4,
+        "rpg": 3.4,
+        "apg": 2.8,
+        "spg": 1.7,
+        "bpg": 0.4,
+        "topg": 1.0,
+        "fg_pct": 43.9,
+        "fg3_pct": 33.5,
+        "ft_pct": 68.2,
+        "season": "2024-25"
+      }
+    },
+    "Kristaps Porzingis": {
+      "nba_team": "BOS",
+      "pos": "C",
+      "stats": {
+        "gp": 42,
+        "mpg": 28.8,
+        "ppg": 19.5,
+        "rpg": 6.8,
+        "apg": 2.1,
+        "spg": 0.7,
+        "bpg": 1.5,
+        "topg": 1.3,
+        "fg_pct": 48.3,
+        "fg3_pct": 41.2,
+        "ft_pct": 80.9,
+        "season": "2024-25"
+      }
+    },
+    "Kyle Filipowski": {
+      "nba_team": "UTA",
+      "pos": "C",
+      "stats": {
+        "gp": 72,
+        "mpg": 21.1,
+        "ppg": 9.6,
+        "rpg": 6.1,
+        "apg": 1.9,
+        "spg": 0.7,
+        "bpg": 0.3,
+        "topg": 1.4,
+        "fg_pct": 50.2,
+        "fg3_pct": 35.0,
+        "ft_pct": 65.0,
+        "season": "2024-25"
+      }
+    },
+    "Kyrie Irving": {
+      "nba_team": "DAL",
+      "pos": "SG",
+      "stats": {
+        "gp": 50,
+        "mpg": 36.1,
+        "ppg": 24.7,
+        "rpg": 4.8,
+        "apg": 4.6,
+        "spg": 1.3,
+        "bpg": 0.5,
+        "topg": 2.2,
+        "fg_pct": 47.3,
+        "fg3_pct": 40.1,
+        "ft_pct": 91.6,
+        "season": "2024-25"
+      }
+    },
+    "Kyshawn George": {
+      "nba_team": "WAS",
+      "pos": "SG",
+      "stats": {
+        "gp": 68,
+        "mpg": 26.5,
+        "ppg": 8.7,
+        "rpg": 4.2,
+        "apg": 2.5,
+        "spg": 1.0,
+        "bpg": 0.7,
+        "topg": 1.4,
+        "fg_pct": 37.2,
+        "fg3_pct": 32.2,
+        "ft_pct": 75.3,
+        "season": "2024-25"
+      }
+    },
+    "LaMelo Ball": {
+      "nba_team": "CHO",
+      "pos": "PG",
+      "stats": {
+        "gp": 47,
+        "mpg": 32.0,
+        "ppg": 25.2,
+        "rpg": 4.9,
+        "apg": 7.4,
+        "spg": 1.1,
+        "bpg": 0.3,
+        "topg": 3.6,
+        "fg_pct": 40.5,
+        "fg3_pct": 33.9,
+        "ft_pct": 84.3,
+        "season": "2024-25"
+      }
+    },
+    "Lauri Markkanen": {
+      "nba_team": "UTA",
+      "pos": "PF",
+      "stats": {
+        "gp": 47,
+        "mpg": 31.4,
+        "ppg": 19.0,
+        "rpg": 5.9,
+        "apg": 1.5,
+        "spg": 0.7,
+        "bpg": 0.4,
+        "topg": 1.4,
+        "fg_pct": 42.3,
+        "fg3_pct": 34.6,
+        "ft_pct": 87.6,
+        "season": "2024-25"
+      }
+    },
+    "LeBron James": {
+      "nba_team": "LAL",
+      "pos": "SF",
+      "stats": {
+        "gp": 70,
+        "mpg": 34.9,
+        "ppg": 24.4,
+        "rpg": 7.8,
+        "apg": 8.2,
+        "spg": 1.0,
+        "bpg": 0.6,
+        "topg": 3.7,
+        "fg_pct": 51.3,
+        "fg3_pct": 37.6,
+        "ft_pct": 78.2,
+        "season": "2024-25"
+      }
+    },
+    "Luka Doncic": {
+      "nba_team": "2TM",
+      "pos": "PG",
+      "stats": {
+        "gp": 50,
+        "mpg": 35.4,
+        "ppg": 28.2,
+        "rpg": 8.2,
+        "apg": 7.7,
+        "spg": 1.8,
+        "bpg": 0.4,
+        "topg": 3.6,
+        "fg_pct": 45.0,
+        "fg3_pct": 36.8,
+        "ft_pct": 78.2,
+        "season": "2024-25"
+      }
+    },
+    "Malik Monk": {
+      "nba_team": "SAC",
+      "pos": "SG",
+      "stats": {
+        "gp": 65,
+        "mpg": 31.6,
+        "ppg": 17.2,
+        "rpg": 3.8,
+        "apg": 5.6,
+        "spg": 0.9,
+        "bpg": 0.6,
+        "topg": 2.4,
+        "fg_pct": 43.9,
+        "fg3_pct": 32.5,
+        "ft_pct": 86.5,
+        "season": "2024-25"
+      }
+    },
+    "Mark Williams": {
+      "nba_team": "CHO",
+      "pos": "C",
+      "stats": {
+        "gp": 44,
+        "mpg": 26.6,
+        "ppg": 15.3,
+        "rpg": 10.2,
+        "apg": 2.5,
+        "spg": 0.7,
+        "bpg": 1.2,
+        "topg": 1.6,
+        "fg_pct": 60.4,
+        "fg3_pct": 0.0,
+        "ft_pct": 80.4,
+        "season": "2024-25"
+      }
+    },
+    "Matas Buzelis": {
+      "nba_team": "CHI",
+      "pos": "SF",
+      "stats": {
+        "gp": 80,
+        "mpg": 18.9,
+        "ppg": 8.6,
+        "rpg": 3.5,
+        "apg": 1.0,
+        "spg": 0.4,
+        "bpg": 0.9,
+        "topg": 0.9,
+        "fg_pct": 45.4,
+        "fg3_pct": 36.1,
+        "ft_pct": 81.5,
+        "season": "2024-25"
+      }
+    },
+    "Max Christie": {
+      "nba_team": "2TM",
+      "pos": "SG",
+      "stats": {
+        "gp": 78,
+        "mpg": 27.3,
+        "ppg": 9.6,
+        "rpg": 3.3,
+        "apg": 1.9,
+        "spg": 0.8,
+        "bpg": 0.4,
+        "topg": 1.1,
+        "fg_pct": 42.7,
+        "fg3_pct": 36.6,
+        "ft_pct": 85.5,
+        "season": "2024-25"
+      }
+    },
+    "Michael Porter": {
+      "nba_team": "DEN",
+      "pos": "SF",
+      "stats": {
+        "gp": 77,
+        "mpg": 33.7,
+        "ppg": 18.2,
+        "rpg": 7.0,
+        "apg": 2.1,
+        "spg": 0.6,
+        "bpg": 0.5,
+        "topg": 1.4,
+        "fg_pct": 50.4,
+        "fg3_pct": 39.5,
+        "ft_pct": 76.8,
+        "season": "2024-25"
+      }
+    },
+    "Mikal Bridges": {
+      "nba_team": "NYK",
+      "pos": "SF",
+      "stats": {
+        "gp": 82,
+        "mpg": 37.0,
+        "ppg": 17.6,
+        "rpg": 3.2,
+        "apg": 3.7,
+        "spg": 0.9,
+        "bpg": 0.5,
+        "topg": 1.6,
+        "fg_pct": 50.0,
+        "fg3_pct": 35.4,
+        "ft_pct": 81.4,
+        "season": "2024-25"
+      }
+    },
+    "Miles Bridges": {
+      "nba_team": "CHO",
+      "pos": "SF",
+      "stats": {
+        "gp": 64,
+        "mpg": 31.7,
+        "ppg": 20.3,
+        "rpg": 7.5,
+        "apg": 3.9,
+        "spg": 0.7,
+        "bpg": 0.7,
+        "topg": 2.1,
+        "fg_pct": 43.1,
+        "fg3_pct": 31.3,
+        "ft_pct": 87.0,
+        "season": "2024-25"
+      }
+    },
+    "Miles McBride": {
+      "nba_team": "NYK",
+      "pos": "PG",
+      "stats": {
+        "gp": 64,
+        "mpg": 24.9,
+        "ppg": 9.5,
+        "rpg": 2.5,
+        "apg": 2.9,
+        "spg": 1.0,
+        "bpg": 0.3,
+        "topg": 0.6,
+        "fg_pct": 40.6,
+        "fg3_pct": 36.9,
+        "ft_pct": 81.3,
+        "season": "2024-25"
+      }
+    },
+    "Mitchell Robinson": {
+      "nba_team": "NYK",
+      "pos": "C",
+      "stats": {
+        "gp": 17,
+        "mpg": 17.1,
+        "ppg": 5.1,
+        "rpg": 5.9,
+        "apg": 0.8,
+        "spg": 0.9,
+        "bpg": 1.1,
+        "topg": 0.6,
+        "fg_pct": 66.1,
+        "fg3_pct": 0.0,
+        "ft_pct": 68.4,
+        "season": "2024-25"
+      }
+    },
+    "Moses Moody": {
+      "nba_team": "GSW",
+      "pos": "SG",
+      "stats": {
+        "gp": 74,
+        "mpg": 22.3,
+        "ppg": 9.8,
+        "rpg": 2.6,
+        "apg": 1.3,
+        "spg": 0.8,
+        "bpg": 0.4,
+        "topg": 0.7,
+        "fg_pct": 43.3,
+        "fg3_pct": 37.4,
+        "ft_pct": 79.7,
+        "season": "2024-25"
+      }
+    },
+    "Mouhamed Gueye": {
+      "nba_team": "ATL",
+      "pos": "PF",
+      "stats": {
+        "gp": 33,
+        "mpg": 16.2,
+        "ppg": 6.0,
+        "rpg": 4.2,
+        "apg": 0.8,
+        "spg": 0.8,
+        "bpg": 1.0,
+        "topg": 0.5,
+        "fg_pct": 42.1,
+        "fg3_pct": 25.9,
+        "ft_pct": 76.2,
+        "season": "2024-25"
+      }
+    },
+    "Moussa Diabate": {
+      "nba_team": "CHO",
+      "pos": "C",
+      "stats": {
+        "gp": 71,
+        "mpg": 17.5,
+        "ppg": 5.7,
+        "rpg": 6.2,
+        "apg": 0.8,
+        "spg": 0.6,
+        "bpg": 0.6,
+        "topg": 0.9,
+        "fg_pct": 59.6,
+        "fg3_pct": 0.0,
+        "ft_pct": 59.5,
+        "season": "2024-25"
+      }
+    },
+    "Myles Turner": {
+      "nba_team": "IND",
+      "pos": "C",
+      "stats": {
+        "gp": 72,
+        "mpg": 30.2,
+        "ppg": 15.6,
+        "rpg": 6.5,
+        "apg": 1.5,
+        "spg": 0.8,
+        "bpg": 2.0,
+        "topg": 1.7,
+        "fg_pct": 48.1,
+        "fg3_pct": 39.6,
+        "ft_pct": 77.3,
+        "season": "2024-25"
+      }
+    },
+    "Naji Marshall": {
+      "nba_team": "DAL",
+      "pos": "SF",
+      "stats": {
+        "gp": 69,
+        "mpg": 27.8,
+        "ppg": 13.2,
+        "rpg": 4.8,
+        "apg": 3.0,
+        "spg": 1.0,
+        "bpg": 0.2,
+        "topg": 1.6,
+        "fg_pct": 50.8,
+        "fg3_pct": 27.5,
+        "ft_pct": 81.3,
+        "season": "2024-25"
+      }
+    },
+    "Naz Reid": {
+      "nba_team": "MIN",
+      "pos": "C",
+      "stats": {
+        "gp": 80,
+        "mpg": 27.5,
+        "ppg": 14.2,
+        "rpg": 6.0,
+        "apg": 2.3,
+        "spg": 0.7,
+        "bpg": 0.9,
+        "topg": 1.4,
+        "fg_pct": 46.2,
+        "fg3_pct": 37.9,
+        "ft_pct": 77.6,
+        "season": "2024-25"
+      }
+    },
+    "Neemias Queta": {
+      "nba_team": "BOS",
+      "pos": "C",
+      "stats": {
+        "gp": 62,
+        "mpg": 13.9,
+        "ppg": 5.0,
+        "rpg": 3.8,
+        "apg": 0.7,
+        "spg": 0.3,
+        "bpg": 0.7,
+        "topg": 0.6,
+        "fg_pct": 65.0,
+        "fg3_pct": 0.0,
+        "ft_pct": 75.4,
+        "season": "2024-25"
+      }
+    },
+    "Nickeil Alexander-Walker": {
+      "nba_team": "MIN",
+      "pos": "SG",
+      "stats": {
+        "gp": 82,
+        "mpg": 25.3,
+        "ppg": 9.4,
+        "rpg": 3.2,
+        "apg": 2.7,
+        "spg": 0.6,
+        "bpg": 0.4,
+        "topg": 1.2,
+        "fg_pct": 43.8,
+        "fg3_pct": 38.1,
+        "ft_pct": 78.0,
+        "season": "2024-25"
+      }
+    },
+    "Nicolas Claxton": {
+      "nba_team": "BRK",
+      "pos": "C",
+      "stats": {
+        "gp": 70,
+        "mpg": 26.9,
+        "ppg": 10.3,
+        "rpg": 7.4,
+        "apg": 2.2,
+        "spg": 0.9,
+        "bpg": 1.4,
+        "topg": 1.2,
+        "fg_pct": 56.3,
+        "fg3_pct": 23.8,
+        "ft_pct": 51.3,
+        "season": "2024-25"
+      }
+    },
+    "Nikola Jokic": {
+      "nba_team": "DEN",
+      "pos": "C",
+      "stats": {
+        "gp": 70,
+        "mpg": 36.7,
+        "ppg": 29.6,
+        "rpg": 12.7,
+        "apg": 10.2,
+        "spg": 1.8,
+        "bpg": 0.6,
+        "topg": 3.3,
+        "fg_pct": 57.6,
+        "fg3_pct": 41.7,
+        "ft_pct": 80.0,
+        "season": "2024-25"
+      }
+    },
+    "Nikola Jovic": {
+      "nba_team": "MIA",
+      "pos": "PF",
+      "stats": {
+        "gp": 46,
+        "mpg": 25.1,
+        "ppg": 10.7,
+        "rpg": 3.9,
+        "apg": 2.8,
+        "spg": 0.8,
+        "bpg": 0.3,
+        "topg": 1.3,
+        "fg_pct": 45.6,
+        "fg3_pct": 37.1,
+        "ft_pct": 82.8,
+        "season": "2024-25"
+      }
+    },
+    "Nikola Vucevic": {
+      "nba_team": "CHI",
+      "pos": "C",
+      "stats": {
+        "gp": 73,
+        "mpg": 31.2,
+        "ppg": 18.5,
+        "rpg": 10.1,
+        "apg": 3.5,
+        "spg": 0.8,
+        "bpg": 0.7,
+        "topg": 1.6,
+        "fg_pct": 53.0,
+        "fg3_pct": 40.2,
+        "ft_pct": 80.5,
+        "season": "2024-25"
+      }
+    },
+    "Noah Clowney": {
+      "nba_team": "BRK",
+      "pos": "PF",
+      "stats": {
+        "gp": 46,
+        "mpg": 22.7,
+        "ppg": 9.1,
+        "rpg": 3.9,
+        "apg": 0.9,
+        "spg": 0.5,
+        "bpg": 0.5,
+        "topg": 1.0,
+        "fg_pct": 35.8,
+        "fg3_pct": 33.3,
+        "ft_pct": 83.8,
+        "season": "2024-25"
+      }
+    },
+    "Norman Powell": {
+      "nba_team": "LAC",
+      "pos": "SG",
+      "stats": {
+        "gp": 60,
+        "mpg": 32.6,
+        "ppg": 21.8,
+        "rpg": 3.2,
+        "apg": 2.1,
+        "spg": 1.2,
+        "bpg": 0.2,
+        "topg": 1.8,
+        "fg_pct": 48.4,
+        "fg3_pct": 41.8,
+        "ft_pct": 80.4,
+        "season": "2024-25"
+      }
+    },
+    "OG Anunoby": {
+      "nba_team": "NYK",
+      "pos": "PF",
+      "stats": {
+        "gp": 74,
+        "mpg": 36.6,
+        "ppg": 18.0,
+        "rpg": 4.8,
+        "apg": 2.2,
+        "spg": 1.5,
+        "bpg": 0.9,
+        "topg": 1.4,
+        "fg_pct": 47.6,
+        "fg3_pct": 37.2,
+        "ft_pct": 81.0,
+        "season": "2024-25"
+      }
+    },
+    "Olivier-Maxence Prosper": {
+      "nba_team": "DAL",
+      "pos": "PF",
+      "stats": {
+        "gp": 52,
+        "mpg": 11.2,
+        "ppg": 3.9,
+        "rpg": 2.4,
+        "apg": 0.8,
+        "spg": 0.5,
+        "bpg": 0.1,
+        "topg": 0.3,
+        "fg_pct": 40.2,
+        "fg3_pct": 23.5,
+        "ft_pct": 64.5,
+        "season": "2024-25"
+      }
+    },
+    "Onyeka Okongwu": {
+      "nba_team": "ATL",
+      "pos": "C",
+      "stats": {
+        "gp": 74,
+        "mpg": 27.9,
+        "ppg": 13.4,
+        "rpg": 8.9,
+        "apg": 2.3,
+        "spg": 0.9,
+        "bpg": 0.9,
+        "topg": 1.2,
+        "fg_pct": 56.7,
+        "fg3_pct": 32.4,
+        "ft_pct": 75.9,
+        "season": "2024-25"
+      }
+    },
+    "P.J. Washington": {
+      "nba_team": "DAL",
+      "pos": "PF",
+      "stats": {
+        "gp": 57,
+        "mpg": 32.2,
+        "ppg": 14.7,
+        "rpg": 7.8,
+        "apg": 2.3,
+        "spg": 1.1,
+        "bpg": 1.1,
+        "topg": 2.1,
+        "fg_pct": 45.3,
+        "fg3_pct": 38.1,
+        "ft_pct": 72.2,
+        "season": "2024-25"
+      }
+    },
+    "Paolo Banchero": {
+      "nba_team": "ORL",
+      "pos": "PF",
+      "stats": {
+        "gp": 46,
+        "mpg": 34.4,
+        "ppg": 25.9,
+        "rpg": 7.5,
+        "apg": 4.8,
+        "spg": 0.8,
+        "bpg": 0.6,
+        "topg": 3.0,
+        "fg_pct": 45.2,
+        "fg3_pct": 32.0,
+        "ft_pct": 72.7,
+        "season": "2024-25"
+      }
+    },
+    "Pascal Siakam": {
+      "nba_team": "IND",
+      "pos": "PF",
+      "stats": {
+        "gp": 78,
+        "mpg": 32.7,
+        "ppg": 20.2,
+        "rpg": 6.9,
+        "apg": 3.4,
+        "spg": 0.9,
+        "bpg": 0.5,
+        "topg": 1.4,
+        "fg_pct": 51.9,
+        "fg3_pct": 38.9,
+        "ft_pct": 73.4,
+        "season": "2024-25"
+      }
+    },
+    "Paul George": {
+      "nba_team": "PHI",
+      "pos": "PF",
+      "stats": {
+        "gp": 41,
+        "mpg": 32.5,
+        "ppg": 16.2,
+        "rpg": 5.3,
+        "apg": 4.3,
+        "spg": 1.8,
+        "bpg": 0.5,
+        "topg": 2.6,
+        "fg_pct": 43.0,
+        "fg3_pct": 35.8,
+        "ft_pct": 81.4,
+        "season": "2024-25"
+      }
+    },
+    "Payton Pritchard": {
+      "nba_team": "BOS",
+      "pos": "PG",
+      "stats": {
+        "gp": 80,
+        "mpg": 28.4,
+        "ppg": 14.3,
+        "rpg": 3.8,
+        "apg": 3.5,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 1.0,
+        "fg_pct": 47.2,
+        "fg3_pct": 40.7,
+        "ft_pct": 84.5,
+        "season": "2024-25"
+      }
+    },
+    "Pelle Larsson": {
+      "nba_team": "MIA",
+      "pos": "SG",
+      "stats": {
+        "gp": 55,
+        "mpg": 14.2,
+        "ppg": 4.6,
+        "rpg": 1.7,
+        "apg": 1.2,
+        "spg": 0.6,
+        "bpg": 0.1,
+        "topg": 0.4,
+        "fg_pct": 43.8,
+        "fg3_pct": 33.7,
+        "ft_pct": 67.2,
+        "season": "2024-25"
+      }
+    },
+    "Peyton Watson": {
+      "nba_team": "DEN",
+      "pos": "SF",
+      "stats": {
+        "gp": 68,
+        "mpg": 24.4,
+        "ppg": 8.1,
+        "rpg": 3.4,
+        "apg": 1.4,
+        "spg": 0.7,
+        "bpg": 1.4,
+        "topg": 0.8,
+        "fg_pct": 47.7,
+        "fg3_pct": 35.3,
+        "ft_pct": 69.3,
+        "season": "2024-25"
+      }
+    },
+    "Quentin Grimes": {
+      "nba_team": "2TM",
+      "pos": "SG",
+      "stats": {
+        "gp": 75,
+        "mpg": 26.8,
+        "ppg": 14.6,
+        "rpg": 4.3,
+        "apg": 3.0,
+        "spg": 1.0,
+        "bpg": 0.3,
+        "topg": 1.9,
+        "fg_pct": 46.7,
+        "fg3_pct": 38.5,
+        "ft_pct": 75.7,
+        "season": "2024-25"
+      }
+    },
+    "RJ Barrett": {
+      "nba_team": "TOR",
+      "pos": "SF",
+      "stats": {
+        "gp": 58,
+        "mpg": 32.2,
+        "ppg": 21.1,
+        "rpg": 6.3,
+        "apg": 5.4,
+        "spg": 0.8,
+        "bpg": 0.3,
+        "topg": 2.8,
+        "fg_pct": 46.8,
+        "fg3_pct": 35.0,
+        "ft_pct": 63.0,
+        "season": "2024-25"
+      }
+    },
+    "Reed Sheppard": {
+      "nba_team": "HOU",
+      "pos": "PG",
+      "stats": {
+        "gp": 52,
+        "mpg": 12.6,
+        "ppg": 4.4,
+        "rpg": 1.5,
+        "apg": 1.4,
+        "spg": 0.7,
+        "bpg": 0.3,
+        "topg": 0.7,
+        "fg_pct": 35.1,
+        "fg3_pct": 33.8,
+        "ft_pct": 81.3,
+        "season": "2024-25"
+      }
+    },
+    "Robert Dillingham": {
+      "nba_team": "MIN",
+      "pos": "PG",
+      "stats": {
+        "gp": 49,
+        "mpg": 10.5,
+        "ppg": 4.5,
+        "rpg": 1.0,
+        "apg": 2.0,
+        "spg": 0.4,
+        "bpg": 0.0,
+        "topg": 1.1,
+        "fg_pct": 44.1,
+        "fg3_pct": 33.8,
+        "ft_pct": 53.3,
+        "season": "2024-25"
+      }
+    },
+    "Robert Williams": {
+      "nba_team": "POR",
+      "pos": "C",
+      "stats": {
+        "gp": 20,
+        "mpg": 17.6,
+        "ppg": 5.8,
+        "rpg": 5.9,
+        "apg": 1.1,
+        "spg": 0.7,
+        "bpg": 1.7,
+        "topg": 0.9,
+        "fg_pct": 64.1,
+        "fg3_pct": 33.3,
+        "ft_pct": 88.2,
+        "season": "2024-25"
+      }
+    },
+    "Ron Holland": {
+      "nba_team": "DET",
+      "pos": "SF",
+      "stats": {
+        "gp": 81,
+        "mpg": 15.6,
+        "ppg": 6.4,
+        "rpg": 2.7,
+        "apg": 1.0,
+        "spg": 0.6,
+        "bpg": 0.2,
+        "topg": 0.9,
+        "fg_pct": 47.4,
+        "fg3_pct": 23.8,
+        "ft_pct": 75.4,
+        "season": "2024-25"
+      }
+    },
+    "Rudy Gobert": {
+      "nba_team": "MIN",
+      "pos": "C",
+      "stats": {
+        "gp": 72,
+        "mpg": 33.2,
+        "ppg": 12.0,
+        "rpg": 10.9,
+        "apg": 1.8,
+        "spg": 0.8,
+        "bpg": 1.4,
+        "topg": 1.2,
+        "fg_pct": 66.9,
+        "fg3_pct": 0.0,
+        "ft_pct": 67.4,
+        "season": "2024-25"
+      }
+    },
+    "Russell Westbrook": {
+      "nba_team": "DEN",
+      "pos": "PG",
+      "stats": {
+        "gp": 75,
+        "mpg": 27.9,
+        "ppg": 13.3,
+        "rpg": 4.9,
+        "apg": 6.1,
+        "spg": 1.4,
+        "bpg": 0.5,
+        "topg": 3.2,
+        "fg_pct": 44.9,
+        "fg3_pct": 32.3,
+        "ft_pct": 66.1,
+        "season": "2024-25"
+      }
+    },
+    "Ryan Dunn": {
+      "nba_team": "PHO",
+      "pos": "SF",
+      "stats": {
+        "gp": 74,
+        "mpg": 19.1,
+        "ppg": 6.9,
+        "rpg": 3.6,
+        "apg": 0.8,
+        "spg": 0.6,
+        "bpg": 0.5,
+        "topg": 0.5,
+        "fg_pct": 43.0,
+        "fg3_pct": 31.1,
+        "ft_pct": 48.7,
+        "season": "2024-25"
+      }
+    },
+    "Ryan Rollins": {
+      "nba_team": "MIL",
+      "pos": "PG",
+      "stats": {
+        "gp": 56,
+        "mpg": 14.6,
+        "ppg": 6.2,
+        "rpg": 1.9,
+        "apg": 1.9,
+        "spg": 0.8,
+        "bpg": 0.3,
+        "topg": 0.9,
+        "fg_pct": 48.7,
+        "fg3_pct": 40.8,
+        "ft_pct": 80.0,
+        "season": "2024-25"
+      }
+    },
+    "Sam Merrill": {
+      "nba_team": "CLE",
+      "pos": "SG",
+      "stats": {
+        "gp": 71,
+        "mpg": 19.7,
+        "ppg": 7.2,
+        "rpg": 2.2,
+        "apg": 1.5,
+        "spg": 0.7,
+        "bpg": 0.2,
+        "topg": 0.5,
+        "fg_pct": 40.6,
+        "fg3_pct": 37.2,
+        "ft_pct": 96.6,
+        "season": "2024-25"
+      }
+    },
+    "Sandro Mamukelashvili": {
+      "nba_team": "SAS",
+      "pos": "PF",
+      "stats": {
+        "gp": 61,
+        "mpg": 11.2,
+        "ppg": 6.3,
+        "rpg": 3.1,
+        "apg": 0.8,
+        "spg": 0.4,
+        "bpg": 0.3,
+        "topg": 0.4,
+        "fg_pct": 50.2,
+        "fg3_pct": 37.3,
+        "ft_pct": 74.1,
+        "season": "2024-25"
+      }
+    },
+    "Santi Aldama": {
+      "nba_team": "MEM",
+      "pos": "PF",
+      "stats": {
+        "gp": 65,
+        "mpg": 25.5,
+        "ppg": 12.5,
+        "rpg": 6.4,
+        "apg": 2.9,
+        "spg": 0.8,
+        "bpg": 0.4,
+        "topg": 1.1,
+        "fg_pct": 48.3,
+        "fg3_pct": 36.8,
+        "ft_pct": 69.1,
+        "season": "2024-25"
+      }
+    },
+    "Scoot Henderson": {
+      "nba_team": "POR",
+      "pos": "PG",
+      "stats": {
+        "gp": 66,
+        "mpg": 26.7,
+        "ppg": 12.7,
+        "rpg": 3.0,
+        "apg": 5.1,
+        "spg": 1.0,
+        "bpg": 0.2,
+        "topg": 2.7,
+        "fg_pct": 41.9,
+        "fg3_pct": 35.4,
+        "ft_pct": 76.7,
+        "season": "2024-25"
+      }
+    },
+    "Scottie Barnes": {
+      "nba_team": "TOR",
+      "pos": "PF",
+      "stats": {
+        "gp": 65,
+        "mpg": 32.8,
+        "ppg": 19.3,
+        "rpg": 7.7,
+        "apg": 5.8,
+        "spg": 1.4,
+        "bpg": 1.0,
+        "topg": 2.8,
+        "fg_pct": 44.6,
+        "fg3_pct": 27.1,
+        "ft_pct": 75.5,
+        "season": "2024-25"
+      }
+    },
+    "Scotty Pippen": {
+      "nba_team": "MEM",
+      "pos": "PG",
+      "stats": {
+        "gp": 79,
+        "mpg": 21.3,
+        "ppg": 9.9,
+        "rpg": 3.3,
+        "apg": 4.4,
+        "spg": 1.3,
+        "bpg": 0.4,
+        "topg": 1.7,
+        "fg_pct": 48.0,
+        "fg3_pct": 39.7,
+        "ft_pct": 71.3,
+        "season": "2024-25"
+      }
+    },
+    "Shaedon Sharpe": {
+      "nba_team": "POR",
+      "pos": "SG",
+      "stats": {
+        "gp": 72,
+        "mpg": 31.3,
+        "ppg": 18.5,
+        "rpg": 4.5,
+        "apg": 2.8,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 2.1,
+        "fg_pct": 45.2,
+        "fg3_pct": 31.1,
+        "ft_pct": 78.5,
+        "season": "2024-25"
+      }
+    },
+    "Shai Gilgeous-Alexander": {
+      "nba_team": "OKC",
+      "pos": "PG",
+      "stats": {
+        "gp": 76,
+        "mpg": 34.2,
+        "ppg": 32.7,
+        "rpg": 5.0,
+        "apg": 6.4,
+        "spg": 1.7,
+        "bpg": 1.0,
+        "topg": 2.4,
+        "fg_pct": 51.9,
+        "fg3_pct": 37.5,
+        "ft_pct": 89.8,
+        "season": "2024-25"
+      }
+    },
+    "Stephen Curry": {
+      "nba_team": "GSW",
+      "pos": "PG",
+      "stats": {
+        "gp": 70,
+        "mpg": 32.2,
+        "ppg": 24.5,
+        "rpg": 4.4,
+        "apg": 6.0,
+        "spg": 1.1,
+        "bpg": 0.4,
+        "topg": 2.9,
+        "fg_pct": 44.8,
+        "fg3_pct": 39.7,
+        "ft_pct": 93.3,
+        "season": "2024-25"
+      }
+    },
+    "Stephon Castle": {
+      "nba_team": "SAS",
+      "pos": "PG",
+      "stats": {
+        "gp": 81,
+        "mpg": 26.7,
+        "ppg": 14.7,
+        "rpg": 3.7,
+        "apg": 4.1,
+        "spg": 0.9,
+        "bpg": 0.3,
+        "topg": 2.2,
+        "fg_pct": 42.8,
+        "fg3_pct": 28.5,
+        "ft_pct": 72.4,
+        "season": "2024-25"
+      }
+    },
+    "T.J. McConnell": {
+      "nba_team": "IND",
+      "pos": "PG",
+      "stats": {
+        "gp": 79,
+        "mpg": 17.9,
+        "ppg": 9.1,
+        "rpg": 2.4,
+        "apg": 4.4,
+        "spg": 1.1,
+        "bpg": 0.3,
+        "topg": 1.4,
+        "fg_pct": 51.9,
+        "fg3_pct": 30.6,
+        "ft_pct": 74.0,
+        "season": "2024-25"
+      }
+    },
+    "Tari Eason": {
+      "nba_team": "HOU",
+      "pos": "PF",
+      "stats": {
+        "gp": 57,
+        "mpg": 24.9,
+        "ppg": 12.0,
+        "rpg": 6.4,
+        "apg": 1.5,
+        "spg": 1.7,
+        "bpg": 0.9,
+        "topg": 1.1,
+        "fg_pct": 48.7,
+        "fg3_pct": 34.2,
+        "ft_pct": 76.0,
+        "season": "2024-25"
+      }
+    },
+    "Taylor Hendricks": {
+      "nba_team": "UTA",
+      "pos": "PF",
+      "stats": {
+        "gp": 3,
+        "mpg": 25.0,
+        "ppg": 4.7,
+        "rpg": 5.0,
+        "apg": 0.7,
+        "spg": 1.7,
+        "bpg": 1.3,
+        "topg": 0.7,
+        "fg_pct": 22.2,
+        "fg3_pct": 25.0,
+        "ft_pct": 75.0,
+        "season": "2024-25"
+      }
+    },
+    "Tim Hardaway": {
+      "nba_team": "DET",
+      "pos": "SG",
+      "stats": {
+        "gp": 77,
+        "mpg": 28.0,
+        "ppg": 11.0,
+        "rpg": 2.4,
+        "apg": 1.6,
+        "spg": 0.5,
+        "bpg": 0.1,
+        "topg": 0.6,
+        "fg_pct": 40.6,
+        "fg3_pct": 36.8,
+        "ft_pct": 85.5,
+        "season": "2024-25"
+      }
+    },
+    "Tobias Harris": {
+      "nba_team": "DET",
+      "pos": "PF",
+      "stats": {
+        "gp": 73,
+        "mpg": 31.6,
+        "ppg": 13.7,
+        "rpg": 5.9,
+        "apg": 2.2,
+        "spg": 1.0,
+        "bpg": 0.8,
+        "topg": 1.2,
+        "fg_pct": 47.7,
+        "fg3_pct": 34.5,
+        "ft_pct": 86.1,
+        "season": "2024-25"
+      }
+    },
+    "Toumani Camara": {
+      "nba_team": "POR",
+      "pos": "PF",
+      "stats": {
+        "gp": 78,
+        "mpg": 32.7,
+        "ppg": 11.3,
+        "rpg": 5.8,
+        "apg": 2.2,
+        "spg": 1.5,
+        "bpg": 0.6,
+        "topg": 1.4,
+        "fg_pct": 45.8,
+        "fg3_pct": 37.5,
+        "ft_pct": 72.2,
+        "season": "2024-25"
+      }
+    },
+    "Trae Young": {
+      "nba_team": "ATL",
+      "pos": "PG",
+      "stats": {
+        "gp": 76,
+        "mpg": 36.0,
+        "ppg": 24.2,
+        "rpg": 3.1,
+        "apg": 11.6,
+        "spg": 1.2,
+        "bpg": 0.2,
+        "topg": 4.7,
+        "fg_pct": 41.1,
+        "fg3_pct": 34.0,
+        "ft_pct": 87.5,
+        "season": "2024-25"
+      }
+    },
+    "Tre Jones": {
+      "nba_team": "2TM",
+      "pos": "PG",
+      "stats": {
+        "gp": 46,
+        "mpg": 19.7,
+        "ppg": 7.2,
+        "rpg": 2.5,
+        "apg": 4.2,
+        "spg": 0.8,
+        "bpg": 0.2,
+        "topg": 0.8,
+        "fg_pct": 53.8,
+        "fg3_pct": 39.6,
+        "ft_pct": 82.1,
+        "season": "2024-25"
+      }
+    },
+    "Trey Murphy": {
+      "nba_team": "NOP",
+      "pos": "SF",
+      "stats": {
+        "gp": 53,
+        "mpg": 35.0,
+        "ppg": 21.2,
+        "rpg": 5.1,
+        "apg": 3.5,
+        "spg": 1.1,
+        "bpg": 0.7,
+        "topg": 1.9,
+        "fg_pct": 45.4,
+        "fg3_pct": 36.1,
+        "ft_pct": 88.7,
+        "season": "2024-25"
+      }
+    },
+    "Ty Jerome": {
+      "nba_team": "CLE",
+      "pos": "SG",
+      "stats": {
+        "gp": 70,
+        "mpg": 19.9,
+        "ppg": 12.5,
+        "rpg": 2.5,
+        "apg": 3.4,
+        "spg": 1.1,
+        "bpg": 0.0,
+        "topg": 1.3,
+        "fg_pct": 51.6,
+        "fg3_pct": 43.9,
+        "ft_pct": 87.2,
+        "season": "2024-25"
+      }
+    },
+    "Tyler Herro": {
+      "nba_team": "MIA",
+      "pos": "SG",
+      "stats": {
+        "gp": 77,
+        "mpg": 35.4,
+        "ppg": 23.9,
+        "rpg": 5.2,
+        "apg": 5.5,
+        "spg": 0.9,
+        "bpg": 0.2,
+        "topg": 2.6,
+        "fg_pct": 47.2,
+        "fg3_pct": 37.5,
+        "ft_pct": 87.8,
+        "season": "2024-25"
+      }
+    },
+    "Tyrese Haliburton": {
+      "nba_team": "IND",
+      "pos": "PG",
+      "stats": {
+        "gp": 73,
+        "mpg": 33.6,
+        "ppg": 18.6,
+        "rpg": 3.5,
+        "apg": 9.2,
+        "spg": 1.4,
+        "bpg": 0.7,
+        "topg": 1.6,
+        "fg_pct": 47.3,
+        "fg3_pct": 38.8,
+        "ft_pct": 85.1,
+        "season": "2024-25"
+      }
+    },
+    "Tyrese Maxey": {
+      "nba_team": "PHI",
+      "pos": "PG",
+      "stats": {
+        "gp": 52,
+        "mpg": 37.7,
+        "ppg": 26.3,
+        "rpg": 3.3,
+        "apg": 6.1,
+        "spg": 1.8,
+        "bpg": 0.4,
+        "topg": 2.4,
+        "fg_pct": 43.7,
+        "fg3_pct": 33.7,
+        "ft_pct": 87.9,
+        "season": "2024-25"
+      }
+    },
+    "Victor Wembanyama": {
+      "nba_team": "SAS",
+      "pos": "C",
+      "stats": {
+        "gp": 46,
+        "mpg": 33.2,
+        "ppg": 24.3,
+        "rpg": 11.0,
+        "apg": 3.7,
+        "spg": 1.1,
+        "bpg": 3.8,
+        "topg": 3.2,
+        "fg_pct": 47.6,
+        "fg3_pct": 35.2,
+        "ft_pct": 83.6,
+        "season": "2024-25"
+      }
+    },
+    "Walker Kessler": {
+      "nba_team": "UTA",
+      "pos": "C",
+      "stats": {
+        "gp": 58,
+        "mpg": 30.0,
+        "ppg": 11.1,
+        "rpg": 12.2,
+        "apg": 1.7,
+        "spg": 0.6,
+        "bpg": 2.4,
+        "topg": 1.5,
+        "fg_pct": 66.3,
+        "fg3_pct": 17.6,
+        "ft_pct": 52.0,
+        "season": "2024-25"
+      }
+    },
+    "Wendell Carter": {
+      "nba_team": "ORL",
+      "pos": "C",
+      "stats": {
+        "gp": 68,
+        "mpg": 25.9,
+        "ppg": 9.1,
+        "rpg": 7.2,
+        "apg": 2.0,
+        "spg": 0.8,
+        "bpg": 0.6,
+        "topg": 1.1,
+        "fg_pct": 46.0,
+        "fg3_pct": 23.4,
+        "ft_pct": 73.7,
+        "season": "2024-25"
+      }
+    },
+    "Yves Missi": {
+      "nba_team": "NOP",
+      "pos": "C",
+      "stats": {
+        "gp": 73,
+        "mpg": 26.8,
+        "ppg": 9.1,
+        "rpg": 8.2,
+        "apg": 1.4,
+        "spg": 0.5,
+        "bpg": 1.3,
+        "topg": 1.1,
+        "fg_pct": 54.7,
+        "fg3_pct": 0.0,
+        "ft_pct": 62.3,
+        "season": "2024-25"
+      }
+    },
+    "Zaccharie Risacher": {
+      "nba_team": "ATL",
+      "pos": "SF",
+      "stats": {
+        "gp": 75,
+        "mpg": 24.6,
+        "ppg": 12.6,
+        "rpg": 3.6,
+        "apg": 1.2,
+        "spg": 0.7,
+        "bpg": 0.5,
+        "topg": 1.2,
+        "fg_pct": 45.8,
+        "fg3_pct": 35.5,
+        "ft_pct": 71.1,
+        "season": "2024-25"
+      }
+    },
+    "Zach Edey": {
+      "nba_team": "MEM",
+      "pos": "C",
+      "stats": {
+        "gp": 66,
+        "mpg": 21.5,
+        "ppg": 9.2,
+        "rpg": 8.3,
+        "apg": 1.0,
+        "spg": 0.5,
+        "bpg": 1.3,
+        "topg": 1.3,
+        "fg_pct": 58.0,
+        "fg3_pct": 34.6,
+        "ft_pct": 70.9,
+        "season": "2024-25"
+      }
+    },
+    "Zach LaVine": {
+      "nba_team": "2TM",
+      "pos": "SG",
+      "stats": {
+        "gp": 74,
+        "mpg": 35.2,
+        "ppg": 23.3,
+        "rpg": 4.3,
+        "apg": 4.2,
+        "spg": 0.8,
+        "bpg": 0.2,
+        "topg": 2.8,
+        "fg_pct": 51.1,
+        "fg3_pct": 44.6,
+        "ft_pct": 82.5,
+        "season": "2024-25"
+      }
+    },
+    "Zion Williamson": {
+      "nba_team": "NOP",
+      "pos": "PF",
+      "stats": {
+        "gp": 30,
+        "mpg": 28.6,
+        "ppg": 24.6,
+        "rpg": 7.2,
+        "apg": 5.3,
+        "spg": 1.2,
+        "bpg": 0.9,
+        "topg": 3.0,
+        "fg_pct": 56.7,
+        "fg3_pct": 23.1,
+        "ft_pct": 65.6,
+        "season": "2024-25"
+      }
+    },
+    "Ace Bailey": {
+      "nba_team": "UTA",
+      "pos": "SF",
+      "stats": {
+        "gp": 49,
+        "mpg": 26.3,
+        "ppg": 11.7,
+        "rpg": 3.9,
+        "apg": 1.7,
+        "spg": 0.8,
+        "bpg": 0.5,
+        "topg": 1.3,
+        "fg_pct": 45.0,
+        "fg3_pct": 34.0,
+        "ft_pct": 70.8,
+        "season": "2025-26"
+      }
+    },
+    "Asa Newell": {
+      "nba_team": "ATL",
+      "pos": "PF",
+      "stats": {
+        "gp": 39,
+        "mpg": 11.3,
+        "ppg": 5.1,
+        "rpg": 2.1,
+        "apg": 0.5,
+        "spg": 0.4,
+        "bpg": 0.3,
+        "topg": 0.5,
+        "fg_pct": 53.7,
+        "fg3_pct": 39.7,
+        "ft_pct": 56.0,
+        "season": "2025-26"
+      }
+    },
+    "Caleb Love": {
+      "nba_team": "POR",
+      "pos": "SG",
+      "stats": {
+        "gp": 45,
+        "mpg": 22.2,
+        "ppg": 11.3,
+        "rpg": 2.5,
+        "apg": 2.7,
+        "spg": 0.6,
+        "bpg": 0.1,
+        "topg": 1.4,
+        "fg_pct": 39.0,
+        "fg3_pct": 32.1,
+        "ft_pct": 73.5,
+        "season": "2025-26"
+      }
+    },
+    "Carter Bryant": {
+      "nba_team": "SAS",
+      "pos": "PF",
+      "stats": {
+        "gp": 43,
+        "mpg": 9.3,
+        "ppg": 3.4,
+        "rpg": 2.0,
+        "apg": 0.3,
+        "spg": 0.2,
+        "bpg": 0.2,
+        "topg": 0.3,
+        "fg_pct": 37.1,
+        "fg3_pct": 32.1,
+        "ft_pct": 68.2,
+        "season": "2025-26"
+      }
+    },
+    "Cedric Coward": {
+      "nba_team": "MEM",
+      "pos": "SG",
+      "stats": {
+        "gp": 48,
+        "mpg": 26.3,
+        "ppg": 13.3,
+        "rpg": 6.2,
+        "apg": 2.9,
+        "spg": 0.6,
+        "bpg": 0.4,
+        "topg": 1.8,
+        "fg_pct": 46.8,
+        "fg3_pct": 34.0,
+        "ft_pct": 84.3,
+        "season": "2025-26"
+      }
+    },
+    "Collin Murray-Boyles": {
+      "nba_team": "TOR",
+      "pos": "PF",
+      "stats": {
+        "gp": 43,
+        "mpg": 22.2,
+        "ppg": 7.9,
+        "rpg": 5.0,
+        "apg": 2.1,
+        "spg": 0.9,
+        "bpg": 0.9,
+        "topg": 1.2,
+        "fg_pct": 55.3,
+        "fg3_pct": 34.8,
+        "ft_pct": 63.9,
+        "season": "2025-26"
+      }
+    },
+    "Cooper Flagg": {
+      "nba_team": "DAL",
+      "pos": "SF",
+      "stats": {
+        "gp": 49,
+        "mpg": 34.1,
+        "ppg": 20.4,
+        "rpg": 6.6,
+        "apg": 4.1,
+        "spg": 1.2,
+        "bpg": 0.8,
+        "topg": 2.2,
+        "fg_pct": 48.2,
+        "fg3_pct": 30.2,
+        "ft_pct": 80.4,
+        "season": "2025-26"
+      }
+    },
+    "Danny Wolf": {
+      "nba_team": "BRK",
+      "pos": "PF",
+      "stats": {
+        "gp": 39,
+        "mpg": 20.2,
+        "ppg": 8.4,
+        "rpg": 4.7,
+        "apg": 2.0,
+        "spg": 0.6,
+        "bpg": 0.5,
+        "topg": 1.1,
+        "fg_pct": 40.5,
+        "fg3_pct": 32.6,
+        "ft_pct": 78.6,
+        "season": "2025-26"
+      }
+    },
+    "Derik Queen": {
+      "nba_team": "NOP",
+      "pos": "C",
+      "stats": {
+        "gp": 55,
+        "mpg": 26.0,
+        "ppg": 12.2,
+        "rpg": 7.2,
+        "apg": 4.1,
+        "spg": 1.0,
+        "bpg": 0.9,
+        "topg": 2.4,
+        "fg_pct": 49.1,
+        "fg3_pct": 27.8,
+        "ft_pct": 77.7,
+        "season": "2025-26"
+      }
+    },
+    "Dylan Harper": {
+      "nba_team": "SAS",
+      "pos": "SG",
+      "stats": {
+        "gp": 43,
+        "mpg": 21.7,
+        "ppg": 10.9,
+        "rpg": 3.4,
+        "apg": 3.7,
+        "spg": 0.8,
+        "bpg": 0.3,
+        "topg": 1.3,
+        "fg_pct": 46.7,
+        "fg3_pct": 25.2,
+        "ft_pct": 75.0,
+        "season": "2025-26"
+      }
+    },
+    "Hugo Gonzalez": {
+      "nba_team": "BOS",
+      "pos": "SG",
+      "stats": {
+        "gp": 49,
+        "mpg": 15.2,
+        "ppg": 3.8,
+        "rpg": 3.3,
+        "apg": 0.6,
+        "spg": 0.6,
+        "bpg": 0.2,
+        "topg": 0.6,
+        "fg_pct": 46.0,
+        "fg3_pct": 32.9,
+        "ft_pct": 47.6,
+        "season": "2025-26"
+      }
+    },
+    "Jeremiah Fears": {
+      "nba_team": "NOP",
+      "pos": "PG",
+      "stats": {
+        "gp": 56,
+        "mpg": 25.6,
+        "ppg": 13.2,
+        "rpg": 3.7,
+        "apg": 3.1,
+        "spg": 1.3,
+        "bpg": 0.3,
+        "topg": 2.2,
+        "fg_pct": 42.9,
+        "fg3_pct": 32.4,
+        "ft_pct": 81.4,
+        "season": "2025-26"
+      }
+    },
+    "Joan Beringer": {
+      "nba_team": "MIN",
+      "pos": "PF",
+      "stats": {
+        "gp": 27,
+        "mpg": 6.7,
+        "ppg": 3.0,
+        "rpg": 2.0,
+        "apg": 0.3,
+        "spg": 0.1,
+        "bpg": 0.4,
+        "topg": 0.3,
+        "fg_pct": 66.1,
+        "fg3_pct": 0.0,
+        "ft_pct": 61.5,
+        "season": "2025-26"
+      }
+    },
+    "Kam Jones": {
+      "nba_team": "IND",
+      "pos": "SG",
+      "stats": {
+        "gp": 18,
+        "mpg": 11.9,
+        "ppg": 3.1,
+        "rpg": 1.1,
+        "apg": 1.5,
+        "spg": 0.2,
+        "bpg": 0.0,
+        "topg": 0.4,
+        "fg_pct": 41.4,
+        "fg3_pct": 20.0,
+        "ft_pct": 50.0,
+        "season": "2025-26"
+      }
+    },
+    "Kasparas Jakucionis": {
+      "nba_team": "MIA",
+      "pos": "SG",
+      "stats": {
+        "gp": 29,
+        "mpg": 17.0,
+        "ppg": 5.6,
+        "rpg": 2.4,
+        "apg": 2.4,
+        "spg": 0.7,
+        "bpg": 0.1,
+        "topg": 0.9,
+        "fg_pct": 39.8,
+        "fg3_pct": 45.1,
+        "ft_pct": 88.9,
+        "season": "2025-26"
+      }
+    },
+    "Khaman Maluach": {
+      "nba_team": "PHO",
+      "pos": "C",
+      "stats": {
+        "gp": 23,
+        "mpg": 4.7,
+        "ppg": 1.3,
+        "rpg": 1.1,
+        "apg": 0.1,
+        "spg": 0.0,
+        "bpg": 0.4,
+        "topg": 0.4,
+        "fg_pct": 45.8,
+        "fg3_pct": 0.0,
+        "ft_pct": 90.0,
+        "season": "2025-26"
+      }
+    },
+    "Kon Knueppel": {
+      "nba_team": "CHO",
+      "pos": "SF",
+      "stats": {
+        "gp": 54,
+        "mpg": 32.1,
+        "ppg": 18.9,
+        "rpg": 5.5,
+        "apg": 3.6,
+        "spg": 0.7,
+        "bpg": 0.2,
+        "topg": 2.2,
+        "fg_pct": 48.4,
+        "fg3_pct": 43.1,
+        "ft_pct": 90.2,
+        "season": "2025-26"
+      }
+    },
+    "Liam McNeeley": {
+      "nba_team": "CHO",
+      "pos": "SF",
+      "stats": {
+        "gp": 28,
+        "mpg": 12.2,
+        "ppg": 4.1,
+        "rpg": 2.1,
+        "apg": 0.8,
+        "spg": 0.2,
+        "bpg": 0.1,
+        "topg": 0.4,
+        "fg_pct": 38.6,
+        "fg3_pct": 37.9,
+        "ft_pct": 80.6,
+        "season": "2025-26"
+      }
+    },
+    "Maxime Raynaud": {
+      "nba_team": "SAC",
+      "pos": "C",
+      "stats": {
+        "gp": 48,
+        "mpg": 23.5,
+        "ppg": 9.8,
+        "rpg": 6.6,
+        "apg": 1.0,
+        "spg": 0.5,
+        "bpg": 0.5,
+        "topg": 1.0,
+        "fg_pct": 55.2,
+        "fg3_pct": 26.8,
+        "ft_pct": 75.3,
+        "season": "2025-26"
+      }
+    },
+    "Nikola Topic": {
+      "nba_team": "OKC",
+      "pos": "PG",
+      "stats": {
+        "gp": 1,
+        "mpg": 12.0,
+        "ppg": 2.0,
+        "rpg": 1.0,
+        "apg": 1.0,
+        "spg": 0.0,
+        "bpg": 0.0,
+        "topg": 3.0,
+        "fg_pct": 33.3,
+        "fg3_pct": 0.0,
+        "ft_pct": 0.0,
+        "season": "2025-26"
+      }
+    },
+    "Nique Clifford": {
+      "nba_team": "SAC",
+      "pos": "SG",
+      "stats": {
+        "gp": 52,
+        "mpg": 21.3,
+        "ppg": 6.6,
+        "rpg": 3.1,
+        "apg": 1.7,
+        "spg": 0.7,
+        "bpg": 0.3,
+        "topg": 1.2,
+        "fg_pct": 39.3,
+        "fg3_pct": 31.7,
+        "ft_pct": 71.2,
+        "season": "2025-26"
+      }
+    },
+    "Noa Essengue": {
+      "nba_team": "CHI",
+      "pos": "PF",
+      "stats": {
+        "gp": 2,
+        "mpg": 3.0,
+        "ppg": 0.0,
+        "rpg": 0.0,
+        "apg": 0.0,
+        "spg": 0.5,
+        "bpg": 0.0,
+        "topg": 0.0,
+        "fg_pct": 0.0,
+        "fg3_pct": 0.0,
+        "ft_pct": 0.0,
+        "season": "2025-26"
+      }
+    },
+    "Noah Penda": {
+      "nba_team": "ORL",
+      "pos": "SF",
+      "stats": {
+        "gp": 38,
+        "mpg": 13.7,
+        "ppg": 4.8,
+        "rpg": 3.7,
+        "apg": 1.2,
+        "spg": 0.6,
+        "bpg": 0.4,
+        "topg": 0.8,
+        "fg_pct": 43.5,
+        "fg3_pct": 38.5,
+        "ft_pct": 64.1,
+        "season": "2025-26"
+      }
+    },
+    "Nolan Traore": {
+      "nba_team": "BRK",
+      "pos": "PG",
+      "stats": {
+        "gp": 31,
+        "mpg": 21.0,
+        "ppg": 7.5,
+        "rpg": 1.6,
+        "apg": 3.5,
+        "spg": 0.5,
+        "bpg": 0.4,
+        "topg": 1.6,
+        "fg_pct": 40.2,
+        "fg3_pct": 33.7,
+        "ft_pct": 76.7,
+        "season": "2025-26"
+      }
+    },
+    "Ryan Kalkbrenner": {
+      "nba_team": "CHO",
+      "pos": "C",
+      "stats": {
+        "gp": 43,
+        "mpg": 22.9,
+        "ppg": 8.2,
+        "rpg": 6.0,
+        "apg": 0.7,
+        "spg": 0.6,
+        "bpg": 1.5,
+        "topg": 1.0,
+        "fg_pct": 75.8,
+        "fg3_pct": 0.0,
+        "ft_pct": 67.5,
+        "season": "2025-26"
+      }
+    },
+    "Saddiq Bey": {
+      "nba_team": "NOP",
+      "pos": "SF",
+      "stats": {
+        "gp": 49,
+        "mpg": 30.5,
+        "ppg": 16.6,
+        "rpg": 5.9,
+        "apg": 2.5,
+        "spg": 0.9,
+        "bpg": 0.0,
+        "topg": 0.7,
+        "fg_pct": 44.6,
+        "fg3_pct": 34.8,
+        "ft_pct": 84.4,
+        "season": "2025-26"
+      }
+    },
+    "Sion James": {
+      "nba_team": "CHO",
+      "pos": "SG",
+      "stats": {
+        "gp": 55,
+        "mpg": 23.9,
+        "ppg": 5.6,
+        "rpg": 3.4,
+        "apg": 1.9,
+        "spg": 0.5,
+        "bpg": 0.3,
+        "topg": 0.9,
+        "fg_pct": 37.8,
+        "fg3_pct": 36.5,
+        "ft_pct": 85.5,
+        "season": "2025-26"
+      }
+    },
+    "Tre Johnson": {
+      "nba_team": "WAS",
+      "pos": "SG",
+      "stats": {
+        "gp": 40,
+        "mpg": 25.0,
+        "ppg": 12.9,
+        "rpg": 2.7,
+        "apg": 2.2,
+        "spg": 0.7,
+        "bpg": 0.3,
+        "topg": 1.4,
+        "fg_pct": 44.0,
+        "fg3_pct": 38.6,
+        "ft_pct": 89.2,
+        "season": "2025-26"
+      }
+    },
+    "VJ Edgecombe": {
+      "nba_team": "PHI",
+      "pos": "SG",
+      "stats": {
+        "gp": 50,
+        "mpg": 35.4,
+        "ppg": 14.9,
+        "rpg": 5.4,
+        "apg": 4.1,
+        "spg": 1.5,
+        "bpg": 0.5,
+        "topg": 1.8,
+        "fg_pct": 42.3,
+        "fg3_pct": 35.2,
+        "ft_pct": 78.6,
+        "season": "2025-26"
+      }
+    },
+    "Walter Clayton": {
+      "nba_team": "2TM",
+      "pos": "PG",
+      "stats": {
+        "gp": 47,
+        "mpg": 18.3,
+        "ppg": 6.9,
+        "rpg": 2.0,
+        "apg": 3.3,
+        "spg": 0.6,
+        "bpg": 0.3,
+        "topg": 1.3,
+        "fg_pct": 40.0,
+        "fg3_pct": 29.8,
+        "ft_pct": 93.8,
+        "season": "2025-26"
+      }
+    },
+    "Will Riley": {
+      "nba_team": "WAS",
+      "pos": "SF",
+      "stats": {
+        "gp": 45,
+        "mpg": 16.6,
+        "ppg": 7.0,
+        "rpg": 2.2,
+        "apg": 1.4,
+        "spg": 0.6,
+        "bpg": 0.1,
+        "topg": 0.9,
+        "fg_pct": 41.2,
+        "fg3_pct": 32.7,
+        "ft_pct": 77.3,
+        "season": "2025-26"
+      }
+    },
+    "Yang Hansen": {
+      "nba_team": "POR",
+      "pos": "C",
+      "stats": {
+        "gp": 34,
+        "mpg": 7.5,
+        "ppg": 2.2,
+        "rpg": 1.6,
+        "apg": 0.6,
+        "spg": 0.1,
+        "bpg": 0.2,
+        "topg": 0.9,
+        "fg_pct": 29.8,
+        "fg3_pct": 13.5,
+        "ft_pct": 95.0,
+        "season": "2025-26"
+      }
+    }
+  },
+  "missed": [
+    "Egor Demin",
+    "Thomas Sorber"
+  ]
+}

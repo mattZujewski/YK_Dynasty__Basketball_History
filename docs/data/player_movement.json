@@ -1,0 +1,2996 @@
+{
+  "meta": {
+    "total_players": 246,
+    "traded": 56,
+    "startup": 190,
+    "total_trade_events": 154
+  },
+  "players": {
+    "Aaron Gordon": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "Peterson",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Aaron Nesmith": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Aaron Wiggins": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ace Bailey": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Adem Bona": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ajay Mitchell": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Alex Sarr": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Alperen Sengun": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Amen Thompson": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Andrew Nembhard": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Andrew Wiggins": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Jowkar",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Anfernee Simons": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Anthony Black": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Anthony Davis": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "Peterson",
+          "season": "2022-23",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Anthony Edwards": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Asa Newell": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ausar Thompson": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Austin Reaves": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ayo Dosunmu": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Bam Adebayo": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Moss",
+          "to": "Green",
+          "season": "2024-25",
+          "date": "2025-07-27"
+        }
+      ],
+      "traded": true
+    },
+    "Bennedict Mathurin": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Bilal Coulibaly": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Bobby Portis": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Brandin Podziemski": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Brandon Ingram": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "HaleTrager",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Brandon Miller": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Brandon Williams": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Brice Sensabaugh": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "CJ McCollum": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Baden",
+          "to": "Moss",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Cade Cunningham": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Caleb Love": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Cam Spencer": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Cam Whitmore": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Cameron Johnson": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Cameron Thomas": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Carlton Carrington": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Carter Bryant": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Cason Wallace": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Cedric Coward": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Chet Holmgren": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Christian Braun": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Coby White": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Baden",
+          "to": "Jowkar",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Zujewski",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Cody Williams": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Collin Gillespie": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Collin Murray-Boyles": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Collin Sexton": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "HaleTrager",
+          "season": "2020-21",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Berke",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Cooper Flagg": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "DAngelo Russell": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Damian Lillard": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Jowkar",
+          "to": "Peterson",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Daniel Gafford": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Jowkar",
+          "to": "Baden",
+          "season": "2023-24",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Baden",
+          "to": "HaleTrager",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Daniss Jenkins": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Danny Wolf": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Darius Garland": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Delaney",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Davion Mitchell": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "DayRon Sharpe": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "DeAaron Fox": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "DeMar DeRozan": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Delaney",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Deandre Ayton": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "HaleTrager",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Dejounte Murray": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Moss",
+          "to": "Peterson",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Delaney",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Berke",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Peterson",
+          "season": "2022-23",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Deni Avdija": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Dennis Schroder": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Dereck Lively": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Derik Queen": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Derrick White": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Desmond Bane": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Devin Booker": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "HaleTrager",
+          "season": "2023-24",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Gold",
+          "to": "Delaney",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Devin Carter": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Devin Vassell": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Dillon Brooks": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Jowkar",
+          "to": "Zujewski",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Domantas Sabonis": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Dominick Barlow": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Donovan Clingan": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Donovan Mitchell": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Moss",
+          "season": "2020-21",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Moss",
+          "to": "Baden",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Donte DiVincenzo": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Draymond Green": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "Delaney",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Dylan Harper": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Dyson Daniels": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Green",
+          "to": "Delaney",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Egor Demin": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Evan Mobley": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Franz Wagner": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Fred VanVleet": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Delaney",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Peterson",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "GG Jackson": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Giannis Antetokounmpo": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Grayson Allen": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Gui Santos": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Herbert Jones": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Hugo Gonzalez": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Immanuel Quickley": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Isaiah Collier": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Isaiah Hartenstein": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Isaiah Stewart": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ivica Zubac": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Gold",
+          "to": "HaleTrager",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Ja Morant": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "JaKobe Walter": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jabari Smith": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jaden Ivey": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jaden McDaniels": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jaime Jaquez": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "Delaney",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Jakob Poeltl": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jalen Brunson": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jalen Duren": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jalen Green": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jalen Johnson": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jalen Smith": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jalen Suggs": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jalen Williams": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jamal Murray": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "HaleTrager",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "James Harden": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Berke",
+          "season": "2020-21",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Delaney",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Peterson",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Jarace Walker": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jared McCain": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jaren Jackson": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jarrett Allen": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jay Huff": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jaylen Brown": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Zujewski",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Jaylen Wells": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jaylon Tyson": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jayson Tatum": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jerami Grant": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Jowkar",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Baden",
+          "to": "Jowkar",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Jeremiah Fears": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jeremy Sochan": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jericho Sims": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jimmy Butler": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Joan Beringer": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Joel Embiid": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Peterson",
+          "season": "2020-21",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Green",
+          "to": "Moss",
+          "season": "2024-25",
+          "date": "2025-07-27"
+        }
+      ],
+      "traded": true
+    },
+    "John Collins": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Delaney",
+          "season": "2022-23",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Jonathan Kuminga": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Jordan Poole": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Baden",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Josh Giddey": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Josh Hart": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Berke",
+          "season": "2022-23",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Jrue Holiday": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Julian Champagnie": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Julius Randle": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Peterson",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Jusuf Nurkic": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Jowkar",
+          "to": "Baden",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Berke",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Kam Jones": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Karl-Anthony Towns": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kasparas Jakucionis": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kawhi Leonard": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Peterson",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Keegan Murray": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Keldon Johnson": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kelel Ware": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kelly Oubre Jr.": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kevin Durant": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Berke",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Kevin Porter": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Keyonte George": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Khaman Maluach": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Khris Middleton": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kon Knueppel": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kris Dunn": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kristaps Porzingis": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kyle Filipowski": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Kyrie Irving": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Zujewski",
+          "season": "2020-21",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "Delaney",
+          "season": "2022-23",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Peterson",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Kyshawn George": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "LaMelo Ball": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Baden",
+          "to": "Jowkar",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Lauri Markkanen": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Peterson",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "LeBron James": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Berke",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Liam McNeeley": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Luka Doncic": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Jowkar",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Malik Monk": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Mark Williams": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Gold",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Matas Buzelis": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Max Christie": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Maxime Raynaud": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Michael Porter": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Mikal Bridges": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Berke",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Miles Bridges": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Peterson",
+          "season": "2025-26",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Miles McBride": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Mitchell Robinson": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Baden",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Moses Moody": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Mouhamed Gueye": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Moussa Diabate": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Myles Turner": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Naji Marshall": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Naz Reid": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Neemias Queta": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Gold",
+          "to": "HaleTrager",
+          "season": "2025-26",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Nickeil Alexander-Walker": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Nicolas Claxton": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Green",
+          "to": "Peterson",
+          "season": "2022-23",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Nikola Jokic": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Jowkar",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Nikola Jovic": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Nikola Topic": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Nikola Vucevic": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Nique Clifford": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Noa Essengue": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Noah Clowney": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Noah Penda": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Nolan Traore": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Norman Powell": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "OG Anunoby": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Olivier-Maxence Prosper": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Onyeka Okongwu": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Jowkar",
+          "to": "Green",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "P.J. Washington": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Paolo Banchero": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Pascal Siakam": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "Jowkar",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Jowkar",
+          "season": "2022-23",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Paul George": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "Peterson",
+          "season": "2020-21",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Moss",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Berke",
+          "season": "2022-23",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Jowkar",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Payton Pritchard": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Pelle Larsson": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Peyton Watson": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Quentin Grimes": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "RJ Barrett": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Reed Sheppard": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Robert Dillingham": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Robert Williams": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ron Holland": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Rudy Gobert": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Russell Westbrook": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Baden",
+          "to": "Moss",
+          "season": "2020-21",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Ryan Dunn": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ryan Kalkbrenner": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ryan Rollins": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Saddiq Bey": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Green",
+          "to": "Jowkar",
+          "season": "2020-21",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Jowkar",
+          "to": "Zujewski",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Zujewski",
+          "to": "Jowkar",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Sam Merrill": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Sandro Mamukelashvili": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Santi Aldama": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Scoot Henderson": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Scottie Barnes": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Scotty Pippen": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Shaedon Sharpe": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Shai Gilgeous-Alexander": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Delaney",
+          "season": "2023-24",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Delaney",
+          "to": "Gold",
+          "season": "2023-24",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Sion James": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Stephen Curry": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Stephon Castle": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "T.J. McConnell": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Tari Eason": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Taylor Hendricks": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Thomas Sorber": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Tim Hardaway": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Berke",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Tobias Harris": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Baden",
+          "to": "Peterson",
+          "season": "2021-22",
+          "date": null
+        },
+        {
+          "type": "trade",
+          "from": "Berke",
+          "to": "Peterson",
+          "season": "2022-23",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Toumani Camara": {
+      "current_owner": "Zujewski",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Zujewski",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Trae Young": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Tre Johnson": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Tre Jones": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Trey Murphy": {
+      "current_owner": "HaleTrager",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "HaleTrager",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Ty Jerome": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Tyler Herro": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Jowkar",
+          "to": "Baden",
+          "season": "2021-22",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Tyrese Haliburton": {
+      "current_owner": "Moss",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Moss",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Tyrese Maxey": {
+      "current_owner": "Gold",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Gold",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "VJ Edgecombe": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Victor Wembanyama": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Walker Kessler": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Walter Clayton": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Wendell Carter": {
+      "current_owner": "Peterson",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Peterson",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Will Riley": {
+      "current_owner": "Green",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Green",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Yang Hansen": {
+      "current_owner": "Delaney",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Delaney",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Yves Missi": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "trade",
+          "from": "HaleTrager",
+          "to": "Baden",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Zaccharie Risacher": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Zach Edey": {
+      "current_owner": "Baden",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Baden",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    },
+    "Zach LaVine": {
+      "current_owner": "Berke",
+      "history": [
+        {
+          "type": "trade",
+          "from": "Jowkar",
+          "to": "Berke",
+          "season": "2024-25",
+          "date": null
+        }
+      ],
+      "traded": true
+    },
+    "Zion Williamson": {
+      "current_owner": "Jowkar",
+      "history": [
+        {
+          "type": "startup",
+          "owner": "Jowkar",
+          "season": "unknown"
+        }
+      ],
+      "traded": false
+    }
+  }
+}

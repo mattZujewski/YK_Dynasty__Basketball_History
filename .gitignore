@@ -3,3 +3,4 @@ scripts/config.yaml
 scripts/__pycache__/
 *.pyc
 node_modules/
+scripts/.venv/

@@ -1,0 +1,3 @@
+# No external dependencies required.
+# fetch_player_stats.py uses only stdlib (urllib, json, re).
+# build_player_movement.py uses only stdlib (json, re, unicodedata).
