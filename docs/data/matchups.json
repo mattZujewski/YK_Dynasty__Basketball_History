@@ -1,0 +1,9 @@
+{
+  "note": "Matchup data not available from Fantrax API. getMatchupScores only returns current-week data for logged-in user, not historical matchups.",
+  "seasons": {
+    "2022-23": { "matchups": [], "status": "unavailable" },
+    "2023-24": { "matchups": [], "status": "unavailable" },
+    "2024-25": { "matchups": [], "status": "unavailable" },
+    "2025-26": { "matchups": [], "status": "in_progress" }
+  }
+}
