@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Players &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F50D; Player Search</h1>
+      <p class="subtitle">Search any player to see NBA stats, dynasty rank, and ownership history</p>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="chart-section" style="padding:18px 24px">
+      <div class="filter-bar">
+        <label>Search:</label>
+        <input type="text" id="player-search" class="filter-select" placeholder="Type a player name..." style="flex:1;min-width:200px" autocomplete="off" />
+      </div>
+    </div>
+
+    <!-- Player Profile (shown when selected) -->
+    <div id="player-profile" style="display:none"></div>
+
+    <!-- Default: Top Ranked Players -->
+    <div class="chart-section" id="top-players-section">
+      <h2>&#x1F451; Top Dynasty Players</h2>
+      <p class="chart-description">Top 20 dynasty-ranked players on rosters</p>
+      <div id="top-players-grid" class="roster-grid">
+        <div class="loading-spinner" style="text-align:center;padding:40px;color:var(--text-muted)">Loading&hellip;</div>
+      </div>
+    </div>
+
+    <!-- Search Results -->
+    <div class="chart-section" id="search-results-section" style="display:none">
+      <h2>Search Results</h2>
+      <div id="search-results"></div>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/dashboards/players.js"></script>
+</body>
+</html>
