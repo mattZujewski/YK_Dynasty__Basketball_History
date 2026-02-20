@@ -1,5 +1,5 @@
 /**
- * charts.js — Shared Chart.js defaults & utilities
+ * core.js — Shared utilities, owner mappings & Chart.js defaults
  * YK Dynasty Basketball
  */
 
@@ -228,6 +228,50 @@ window.YK = window.YK || {};
     return data;
   }
 
+  // ── Shared utility functions (extracted from inline scripts) ─────
+
+  function escapeHtml(str) {
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function parseOwner(str) {
+    var parts = str.trim().split(/\s+/);
+    return resolveOwner(parts[0]);
+  }
+
+  function parseAsset(str) {
+    return str.trim().split(/\s+/).slice(1).join(' ');
+  }
+
+  function classifyPick(pickStr, holderOwner) {
+    var isSwap = pickStr.includes('*') || pickStr.toLowerCase().includes('swap');
+    if (isSwap) return 'pick-swap';
+    var match = pickStr.match(/(?:1st|2nd)\s+Round\s+(\w+)/i);
+    if (match) {
+      var original = resolveOwner(match[1]);
+      if (original === holderOwner) return 'pick-own';
+      return 'pick-acquired';
+    }
+    return 'pick-own';
+  }
+
+  function statusBadge(status) {
+    if (!status) return '';
+    switch (status.toUpperCase()) {
+      case 'ACTIVE':          return '<span class="badge badge-active">Active</span>';
+      case 'RESERVE':         return '<span class="badge badge-reserve">Reserve</span>';
+      case 'INJURED_RESERVE': return '<span class="badge badge-ir">IR</span>';
+      case 'MINORS':          return '<span class="badge badge-minors">Minors</span>';
+      default:                return '<span class="badge">' + escapeHtml(status) + '</span>';
+    }
+  }
+
+  function normalizeName(str) {
+    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  }
+
   // Expose public API
   Object.assign(YK, {
     OWNERS_ALPHA,
@@ -246,6 +290,12 @@ window.YK = window.YK || {};
     barOptions,
     makeSortable,
     loadJSON,
+    escapeHtml,
+    parseOwner,
+    parseAsset,
+    classifyPick,
+    statusBadge,
+    normalizeName,
   });
 
   if (typeof Chart !== 'undefined') {
