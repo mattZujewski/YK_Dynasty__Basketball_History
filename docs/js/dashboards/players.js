@@ -147,11 +147,10 @@
       html += '</div>';
 
       // Stats box
-      if (player.stats) {
-        var s = player.stats.stats;
+      if (player.stats && player.stats.stats && player.stats.stats.ppg) {
         html += '<div class="profile-record" style="text-align:center">';
-        html += '<div class="big-num" style="font-size:1.8rem">' + s.ppg + '</div>';
-        html += '<div class="rec-label">PPG (' + (s.season || '2024-25') + ')</div>';
+        html += '<div class="big-num" style="font-size:1.8rem">' + player.stats.stats.ppg + '</div>';
+        html += '<div class="rec-label">PPG (' + (player.stats.season || '2024-25') + ')</div>';
         html += '</div>';
       }
       html += '</div>';
@@ -159,16 +158,30 @@
       // Stats Detail
       if (player.stats) {
         var s = player.stats.stats;
+        var displaySeason = player.stats.season || '2024-25';
         html += '<div class="chart-section">';
-        html += '<h2>&#x1F4CA; Season Stats (' + (s.season || '2024-25') + ')</h2>';
+        html += '<h2>&#x1F4CA; Season Stats (' + displaySeason + ')</h2>';
+        if (player.stats.note) {
+          html += '<p class="chart-description" style="color:var(--text-muted);font-style:italic">' + YK.escapeHtml(player.stats.note) + '</p>';
+        }
         html += '<div class="stat-bar">';
         var statPairs = [
-          ['GP', s.gp], ['MPG', s.mpg], ['PPG', s.ppg], ['RPG', s.rpg],
-          ['APG', s.apg], ['SPG', s.spg], ['BPG', s.bpg], ['TO', s.topg],
-          ['FG%', s.fg_pct + '%'], ['3P%', s.fg3_pct + '%'], ['FT%', s.ft_pct + '%'],
+          ['GP', s.games || s.gp || '—'],
+          ['MPG', s.mpg || '—'],
+          ['PPG', s.ppg || '—'],
+          ['RPG', s.rpg || '—'],
+          ['APG', s.apg || '—'],
+          ['SPG', s.spg || '—'],
+          ['BPG', s.bpg || '—'],
+          ['TO', s.topg || '—'],
+          ['FG%', s.fg_pct ? s.fg_pct + '%' : '—'],
+          ['3P%', (s.fg3_pct || s['3p_pct']) ? (s.fg3_pct || s['3p_pct']) + '%' : '—'],
+          ['FT%', s.ft_pct ? s.ft_pct + '%' : '—'],
         ];
         statPairs.forEach(function(pair) {
-          html += '<div class="stat-card"><span class="stat-label">' + pair[0] + '</span><span class="stat-value">' + pair[1] + '</span></div>';
+          if (pair[1] && pair[1] !== '—' && pair[1] !== '0' && pair[1] !== '0%') {
+            html += '<div class="stat-card"><span class="stat-label">' + pair[0] + '</span><span class="stat-value">' + pair[1] + '</span></div>';
+          }
         });
         html += '</div></div>';
       }
