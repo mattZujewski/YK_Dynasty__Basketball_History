@@ -1,0 +1,1007 @@
+{
+  "meta": {
+    "total_picks": 46,
+    "traded": 46,
+    "pending": 10,
+    "used": 36
+  },
+  "picks": {
+    "berke_2021_1": {
+      "pick_id": "berke_2021_1",
+      "original_owner": "Berke",
+      "draft_year": 2021,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 1,
+          "season": "2020-21",
+          "from": "Berke",
+          "to": "Baden",
+          "raw": "BERK Berke 2021 1st round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "used"
+    },
+    "baden_2021_2": {
+      "pick_id": "baden_2021_2",
+      "original_owner": "Baden",
+      "draft_year": 2021,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 1,
+          "season": "2020-21",
+          "from": "Baden",
+          "to": "Berke",
+          "raw": "VLAND Vlandis 2021 2nd round"
+        }
+      ],
+      "current_owner": "Berke",
+      "status": "used"
+    },
+    "peterson_2023_1": {
+      "pick_id": "peterson_2023_1",
+      "original_owner": "Peterson",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 8,
+          "season": "2020-21",
+          "from": "Peterson",
+          "to": "Green",
+          "raw": "DIME Kelvin 2023 1st Round"
+        }
+      ],
+      "current_owner": "Green",
+      "status": "used"
+    },
+    "berke_2022_1": {
+      "pick_id": "berke_2022_1",
+      "original_owner": "Berke",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 20,
+          "season": "2021-22",
+          "from": "Berke",
+          "to": "HaleTrager",
+          "raw": "BERK Berke 2022 1st Round"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "used"
+    },
+    "gold_2023_1": {
+      "pick_id": "gold_2023_1",
+      "original_owner": "Gold",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 22,
+          "season": "2021-22",
+          "from": "Gold",
+          "to": "Moss",
+          "raw": "GOLD Gold 2023 1st round"
+        }
+      ],
+      "current_owner": "Moss",
+      "status": "used"
+    },
+    "baden_2022_1": {
+      "pick_id": "baden_2022_1",
+      "original_owner": "Baden",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": true,
+      "trades": [
+        {
+          "trade_index": 22,
+          "season": "2021-22",
+          "from": "Moss",
+          "to": "Gold",
+          "raw": "MOSS Vlandis 2022 1st round (swap rights)"
+        },
+        {
+          "trade_index": 40,
+          "season": "2021-22",
+          "from": "Baden",
+          "to": "Green",
+          "raw": "VLAND Vlandis 2022 1st round"
+        }
+      ],
+      "current_owner": "Green",
+      "status": "used"
+    },
+    "green_2022_1": {
+      "pick_id": "green_2022_1",
+      "original_owner": "Green",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 25,
+          "season": "2021-22",
+          "from": "Baden",
+          "to": "Jowkar",
+          "raw": "VLAND Green 2022 1st round (#4 overall)"
+        },
+        {
+          "trade_index": 40,
+          "season": "2021-22",
+          "from": "Green",
+          "to": "Baden",
+          "raw": "GREEN Green 2022 1st round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "used"
+    },
+    "jowkar_2022_1": {
+      "pick_id": "jowkar_2022_1",
+      "original_owner": "Jowkar",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 28,
+          "season": "2021-22",
+          "from": "Baden",
+          "to": "HaleTrager",
+          "raw": "VLAND Jowkar 2022 1st round (#5 overall)"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "used"
+    },
+    "green_2023_2": {
+      "pick_id": "green_2023_2",
+      "original_owner": "Green",
+      "draft_year": 2023,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 30,
+          "season": "2021-22",
+          "from": "Jowkar",
+          "to": "Green",
+          "raw": "JOWK 2023 Green 2nd round"
+        },
+        {
+          "trade_index": 66,
+          "season": "2022-23",
+          "from": "Peterson",
+          "to": "HaleTrager",
+          "raw": "PETE Green 2023 2nd round"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "used"
+    },
+    "delaney_2023_1": {
+      "pick_id": "delaney_2023_1",
+      "original_owner": "Delaney",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 34,
+          "season": "2021-22",
+          "from": "Jowkar",
+          "to": "Green",
+          "raw": "JOWK Delaney 2023 1st round"
+        }
+      ],
+      "current_owner": "Green",
+      "status": "used"
+    },
+    "baden_2022_2": {
+      "pick_id": "baden_2022_2",
+      "original_owner": "Baden",
+      "draft_year": 2022,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 35,
+          "season": "2021-22",
+          "from": "Baden",
+          "to": "HaleTrager",
+          "raw": "VLAND Vlandis 2022 2nd round (#13 overall)"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "used"
+    },
+    "berke_2024_2": {
+      "pick_id": "berke_2024_2",
+      "original_owner": "Berke",
+      "draft_year": 2024,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 38,
+          "season": "2021-22",
+          "from": "Berke",
+          "to": "Jowkar",
+          "raw": "BERK Berke 2024 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "used"
+    },
+    "delaney_2022_1": {
+      "pick_id": "delaney_2022_1",
+      "original_owner": "Delaney",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 47,
+          "season": "2021-22",
+          "from": "Baden",
+          "to": "Gold",
+          "raw": "VLAND Delaney 2022 1st round (#7 overall)"
+        }
+      ],
+      "current_owner": "Gold",
+      "status": "used"
+    },
+    "peterson_2022_1": {
+      "pick_id": "peterson_2022_1",
+      "original_owner": "Peterson",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 47,
+          "season": "2021-22",
+          "from": "Gold",
+          "to": "Baden",
+          "raw": "GOLD Peterson 2022 1st round (#8 overall)"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "used"
+    },
+    "berke_2022_2": {
+      "pick_id": "berke_2022_2",
+      "original_owner": "Berke",
+      "draft_year": 2022,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 50,
+          "season": "2021-22",
+          "from": "Green",
+          "to": "HaleTrager",
+          "raw": "GREEN 2022 Berke 2nd round (#20 overall)"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "used"
+    },
+    "green_2025_2": {
+      "pick_id": "green_2025_2",
+      "original_owner": "Green",
+      "draft_year": 2025,
+      "round": 2,
+      "is_swap": true,
+      "trades": [
+        {
+          "trade_index": 50,
+          "season": "2021-22",
+          "from": "HaleTrager",
+          "to": "Green",
+          "raw": "TRAG Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)"
+        }
+      ],
+      "current_owner": "Green",
+      "status": "used"
+    },
+    "berke_2025_1": {
+      "pick_id": "berke_2025_1",
+      "original_owner": "Berke",
+      "draft_year": 2025,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 51,
+          "season": "2021-22",
+          "from": "Berke",
+          "to": "Jowkar",
+          "raw": "BERK Berke 2025 1st round"
+        },
+        {
+          "trade_index": 104,
+          "season": "2024-25",
+          "from": "Baden",
+          "to": "Baden",
+          "raw": "BADEN Berke 2025 1st round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "used"
+    },
+    "baden_2023_2": {
+      "pick_id": "baden_2023_2",
+      "original_owner": "Baden",
+      "draft_year": 2023,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 54,
+          "season": "2021-22",
+          "from": "HaleTrager",
+          "to": "Green",
+          "raw": "TRAG Vlandis 2023 2nd round (#13 overall)"
+        }
+      ],
+      "current_owner": "Green",
+      "status": "used"
+    },
+    "green_2022_2": {
+      "pick_id": "green_2022_2",
+      "original_owner": "Green",
+      "draft_year": 2022,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 54,
+          "season": "2021-22",
+          "from": "Green",
+          "to": "HaleTrager",
+          "raw": "GREEN Green 2022 2nd round (#14 overall)"
+        },
+        {
+          "trade_index": 55,
+          "season": "2021-22",
+          "from": "HaleTrager",
+          "to": "Jowkar",
+          "raw": "TRAG Green 2022 2nd round (#14 overall)"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "used"
+    },
+    "delaney_2022_2": {
+      "pick_id": "delaney_2022_2",
+      "original_owner": "Delaney",
+      "draft_year": 2022,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 55,
+          "season": "2021-22",
+          "from": "Jowkar",
+          "to": "HaleTrager",
+          "raw": "JOWK Delaney 2022 2nd round (#17 overall)"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "used"
+    },
+    "peterson_2025_1": {
+      "pick_id": "peterson_2025_1",
+      "original_owner": "Peterson",
+      "draft_year": 2025,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 56,
+          "season": "2022-23",
+          "from": "Delaney",
+          "to": "Jowkar",
+          "raw": "DELA Peterson 2025 1st Round"
+        },
+        {
+          "trade_index": 61,
+          "season": "2022-23",
+          "from": "Delaney",
+          "to": "HaleTrager",
+          "raw": "DELA Peterson 2025 1st round"
+        },
+        {
+          "trade_index": 63,
+          "season": "2022-23",
+          "from": "HaleTrager",
+          "to": "Peterson",
+          "raw": "TRAG Peterson 2025 1st round"
+        },
+        {
+          "trade_index": 88,
+          "season": "2023-24",
+          "from": "Peterson",
+          "to": "Delaney",
+          "raw": "PETE Peterson 2025 1st round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "used"
+    },
+    "green_2024_1": {
+      "pick_id": "green_2024_1",
+      "original_owner": "Green",
+      "draft_year": 2024,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 57,
+          "season": "2022-23",
+          "from": "Berke",
+          "to": "HaleTrager",
+          "raw": "BERK Green 2024 1st Round"
+        },
+        {
+          "trade_index": 67,
+          "season": "2022-23",
+          "from": "Delaney",
+          "to": "Gold",
+          "raw": "DELA Green 2024 1st round"
+        },
+        {
+          "trade_index": 69,
+          "season": "2022-23",
+          "from": "HaleTrager",
+          "to": "Delaney",
+          "raw": "HALE Green 2024 1st round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "used"
+    },
+    "berke_2023_1": {
+      "pick_id": "berke_2023_1",
+      "original_owner": "Berke",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 59,
+          "season": "2022-23",
+          "from": "Jowkar",
+          "to": "Delaney",
+          "raw": "JOWK Berke 2023 1st round (#6 overall)"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "used"
+    },
+    "moss_2023_1": {
+      "pick_id": "moss_2023_1",
+      "original_owner": "Moss",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 62,
+          "season": "2022-23",
+          "from": "Moss",
+          "to": "Gold",
+          "raw": "MOSS Moss 2023 1st round"
+        }
+      ],
+      "current_owner": "Gold",
+      "status": "used"
+    },
+    "baden_2027_2": {
+      "pick_id": "baden_2027_2",
+      "original_owner": "Baden",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 64,
+          "season": "2022-23",
+          "from": "Baden",
+          "to": "Jowkar",
+          "raw": "VLAND Vlandis 2027 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 16,
+        "value_tier": "late",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "gold_2023_2": {
+      "pick_id": "gold_2023_2",
+      "original_owner": "Gold",
+      "draft_year": 2023,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 68,
+          "season": "2022-23",
+          "from": "Baden",
+          "to": "Berke",
+          "raw": "VLAND Gold 2023 2nd round"
+        },
+        {
+          "trade_index": 75,
+          "season": "2022-23",
+          "from": "Berke",
+          "to": "Jowkar",
+          "raw": "BERK Gold 2023 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "used"
+    },
+    "baden_2026_1": {
+      "pick_id": "baden_2026_1",
+      "original_owner": "Baden",
+      "draft_year": 2026,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 69,
+          "season": "2022-23",
+          "from": "Delaney",
+          "to": "HaleTrager",
+          "raw": "DELA Vlandis 2026 1st round"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "used"
+    },
+    "delaney_2027_1": {
+      "pick_id": "delaney_2027_1",
+      "original_owner": "Delaney",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 71,
+          "season": "2022-23",
+          "from": "Delaney",
+          "to": "Gold",
+          "raw": "DELA Delaney 2027 1st round"
+        },
+        {
+          "trade_index": 74,
+          "season": "2022-23",
+          "from": "Gold",
+          "to": "Jowkar",
+          "raw": "GOLD Delaney 2027 1st round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 6,
+        "value_tier": "high",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "delaney_2024_1": {
+      "pick_id": "delaney_2024_1",
+      "original_owner": "Delaney",
+      "draft_year": 2024,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 72,
+          "season": "2022-23",
+          "from": "Berke",
+          "to": "Zujewski",
+          "raw": "BERK Delaney 2024 1st round"
+        },
+        {
+          "trade_index": 91,
+          "season": "2023-24",
+          "from": "Delaney",
+          "to": "Baden",
+          "raw": "DELA Delaney 2024 1st round (#6 overall)"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "used"
+    },
+    "moss_2026_2": {
+      "pick_id": "moss_2026_2",
+      "original_owner": "Moss",
+      "draft_year": 2026,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 77,
+          "season": "2022-23",
+          "from": "Moss",
+          "to": "Jowkar",
+          "raw": "MOSS Moss 2026 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "used"
+    },
+    "baden_2028_1": {
+      "pick_id": "baden_2028_1",
+      "original_owner": "Baden",
+      "draft_year": 2028,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 79,
+          "season": "2023-24",
+          "from": "Baden",
+          "to": "Moss",
+          "raw": "KELL Kelley 2028 1st round"
+        }
+      ],
+      "current_owner": "Moss",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 6,
+        "value_tier": "high",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "haletrager_2024_1": {
+      "pick_id": "haletrager_2024_1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2024,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 80,
+          "season": "2023-24",
+          "from": "HaleTrager",
+          "to": "Baden",
+          "raw": "TRAG Trager 2024 1st round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "used"
+    },
+    "delaney_2025_2": {
+      "pick_id": "delaney_2025_2",
+      "original_owner": "Delaney",
+      "draft_year": 2025,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 81,
+          "season": "2023-24",
+          "from": "HaleTrager",
+          "to": "Peterson",
+          "raw": "TRAG Delaney 2025 2nd round"
+        },
+        {
+          "trade_index": 99,
+          "season": "2023-24",
+          "from": "Peterson",
+          "to": "Delaney",
+          "raw": "PETE Delaney 2025 2nd round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "used"
+    },
+    "berke_2029_2": {
+      "pick_id": "berke_2029_2",
+      "original_owner": "Berke",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 89,
+          "season": "2023-24",
+          "from": "Berke",
+          "to": "Jowkar",
+          "raw": "BERK Berke 2029 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 16,
+        "value_tier": "late",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "baden_2024_1": {
+      "pick_id": "baden_2024_1",
+      "original_owner": "Baden",
+      "draft_year": 2024,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 91,
+          "season": "2023-24",
+          "from": "Baden",
+          "to": "Delaney",
+          "raw": "KELL Kelley 2024 1st round (#5 overall)"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "used"
+    },
+    "jowkar_2026_1": {
+      "pick_id": "jowkar_2026_1",
+      "original_owner": "Jowkar",
+      "draft_year": 2026,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 95,
+          "season": "2023-24",
+          "from": "Jowkar",
+          "to": "Peterson",
+          "raw": "JOWK Jowkar 2026 1st round"
+        },
+        {
+          "trade_index": 105,
+          "season": "2024-25",
+          "from": "Peterson",
+          "to": "Baden",
+          "raw": "PETE Jowkar 2026 1st round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "used"
+    },
+    "jowkar_2024_2": {
+      "pick_id": "jowkar_2024_2",
+      "original_owner": "Jowkar",
+      "draft_year": 2024,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 97,
+          "season": "2023-24",
+          "from": "Peterson",
+          "to": "Delaney",
+          "raw": "PETE Jowkar 2024 2nd round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "used"
+    },
+    "berke_2028_2": {
+      "pick_id": "berke_2028_2",
+      "original_owner": "Berke",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 100,
+          "season": "2023-24",
+          "from": "Delaney",
+          "to": "Jowkar",
+          "raw": "DELA Berke 2028 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 16,
+        "value_tier": "late",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "peterson_2026_2": {
+      "pick_id": "peterson_2026_2",
+      "original_owner": "Peterson",
+      "draft_year": 2026,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 103,
+          "season": "2024-25",
+          "from": "Peterson",
+          "to": "Zujewski",
+          "raw": "PETE Peterson 2026 2nd round"
+        }
+      ],
+      "current_owner": "Zujewski",
+      "status": "used"
+    },
+    "baden_2025_2": {
+      "pick_id": "baden_2025_2",
+      "original_owner": "Baden",
+      "draft_year": 2025,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 104,
+          "season": "2024-25",
+          "from": "Baden",
+          "to": "Baden",
+          "raw": "KELL Kelley 2025 2nd round"
+        },
+        {
+          "trade_index": 106,
+          "season": "2024-25",
+          "from": "Baden",
+          "to": "HaleTrager",
+          "raw": "BADEN Baden 2025 2nd round"
+        },
+        {
+          "trade_index": 116,
+          "season": "2024-25",
+          "from": "Jowkar",
+          "to": "Delaney",
+          "raw": "JOWK Kelley 2025 2nd round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "used"
+    },
+    "gold_2027_2": {
+      "pick_id": "gold_2027_2",
+      "original_owner": "Gold",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 104,
+          "season": "2024-25",
+          "from": "Jowkar",
+          "to": "Baden",
+          "raw": "JOWK Gold 2027 2nd round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 16,
+        "value_tier": "late",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "zujewski_2026_2": {
+      "pick_id": "zujewski_2026_2",
+      "original_owner": "Zujewski",
+      "draft_year": 2026,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 106,
+          "season": "2024-25",
+          "from": "Peterson",
+          "to": "Baden",
+          "raw": "PETE Zujewski 2026 2nd round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "used"
+    },
+    "berke_2027_1": {
+      "pick_id": "berke_2027_1",
+      "original_owner": "Berke",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 106,
+          "season": "2024-25",
+          "from": "HaleTrager",
+          "to": "Baden",
+          "raw": "TRAG Berke 2027 1st round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 6,
+        "value_tier": "high",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "gold_2030_2": {
+      "pick_id": "gold_2030_2",
+      "original_owner": "Gold",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 108,
+          "season": "2024-25",
+          "from": "Gold",
+          "to": "HaleTrager",
+          "raw": "GOLD Gold 2030 2nd round"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 16,
+        "value_tier": "late",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "zujewski_2027_2": {
+      "pick_id": "zujewski_2027_2",
+      "original_owner": "Zujewski",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 110,
+          "season": "2024-25",
+          "from": "Peterson",
+          "to": "Delaney",
+          "raw": "PETE Zujewski 2027 2nd round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 16,
+        "value_tier": "late",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    },
+    "berke_2030_2": {
+      "pick_id": "berke_2030_2",
+      "original_owner": "Berke",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 117,
+          "season": "2025-26",
+          "from": "Berke",
+          "to": "Jowkar",
+          "raw": "BERK Berke 2030 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "pending",
+      "projected": {
+        "pick_slot": 16,
+        "value_tier": "late",
+        "based_on": "2025-26 standings (rank #5)"
+      }
+    }
+  }
+}
