@@ -33,7 +33,9 @@
       "Bash(du:*)",
       "Bash(head:*)",
       "Bash(lsof:*)",
-      "Bash(ps:*)"
+      "Bash(ps:*)",
+      "Bash(git restore:*)",
+      "Bash(git log:*)"
     ]
   }
 }
