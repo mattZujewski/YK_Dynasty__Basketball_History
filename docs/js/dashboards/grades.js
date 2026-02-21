@@ -368,12 +368,13 @@
       html += '<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:14px">';
 
       // Side A sends → Side B receives
+      // Note: sa.gave items from trade_grades.json are already clean (no owner prefix)
       html += '<div style="flex:1;min-width:200px">';
       html += '<div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);margin-bottom:6px">';
       html += '<span style="color:' + colA + ';font-weight:700">' + nameA.split(' ').pop() + '</span> sends \u2192</div>';
       html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
       (sa.gave || []).forEach(function(item) {
-        html += '<span style="background:var(--bg-main);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.78rem">' + YK.escapeHtml(assetLabel(item)) + '</span>';
+        html += '<span style="background:var(--bg-main);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.78rem">' + YK.escapeHtml(item) + '</span>';
       });
       if (!sa.gave || sa.gave.length === 0) html += '<span style="color:var(--text-muted);font-size:0.78rem">\u2014</span>';
       html += '</div></div>';
@@ -384,7 +385,7 @@
       html += '<span style="color:' + colB + ';font-weight:700">' + nameB.split(' ').pop() + '</span> sends \u2192</div>';
       html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
       (sb.gave || []).forEach(function(item) {
-        html += '<span style="background:var(--bg-main);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.78rem">' + YK.escapeHtml(assetLabel(item)) + '</span>';
+        html += '<span style="background:var(--bg-main);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.78rem">' + YK.escapeHtml(item) + '</span>';
       });
       if (!sb.gave || sb.gave.length === 0) html += '<span style="color:var(--text-muted);font-size:0.78rem">\u2014</span>';
       html += '</div></div>';

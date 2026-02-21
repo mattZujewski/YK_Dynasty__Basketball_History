@@ -177,7 +177,7 @@
           "trade_index": 68,
           "season": "2022-23",
           "from": "Baden",
-          "to": "Peterson",
+          "to": "Jowkar",
           "raw": "VLAND Vlandis 2027 2nd round"
         }
       ],
@@ -2144,11 +2144,11 @@
           "trade_index": 97,
           "season": "2023-24",
           "from": "Peterson",
-          "to": "Jowkar",
+          "to": "Delaney",
           "raw": "PETE Peterson 2025 1st round"
         }
       ],
-      "current_owner": "Jowkar",
+      "current_owner": "Delaney",
       "status": "completed",
       "draft_slot": 6,
       "overall_slot": 6,
@@ -2598,13 +2598,14 @@
       ]
     },
     "Delaney": {
-      "total_held": 30,
+      "total_held": 31,
       "own_picks": 9,
-      "acquired_picks": 21,
+      "acquired_picks": 22,
       "traded_away": 7,
       "received_grades": [
         "A+",
         "C",
+        "B",
         "F",
         "C",
         "F",
@@ -2686,9 +2687,9 @@
       ]
     },
     "Jowkar": {
-      "total_held": 28,
+      "total_held": 27,
       "own_picks": 7,
-      "acquired_picks": 21,
+      "acquired_picks": 20,
       "traded_away": 8,
       "received_grades": [
         "F",
@@ -2697,7 +2698,6 @@
         "A+",
         "F",
         "D",
-        "B",
         "F",
         "F",
         "F"

@@ -71,9 +71,9 @@
         "total_sides": 7
       },
       "Peterson": {
-        "avg_gpa": 2.15,
+        "avg_gpa": 2.23,
         "avg_grade": "C",
-        "total_sides": 24
+        "total_sides": 25
       },
       "Zujewski": {
         "avg_gpa": 1.68,
@@ -384,7 +384,6 @@
       "side_a": {
         "owner": "Jowkar",
         "gave": [
-          "Jowkar Receives",
           "Peterson 2022 2nd"
         ],
         "received": [
@@ -410,24 +409,9 @@
           "Delaney 2021 2nd (#17)"
         ],
         "received": [
-          "Jowkar Receives",
           "Peterson 2022 2nd"
         ],
-        "received_players": [
-          {
-            "player": "Jowkar Receives",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2020-21",
-            "post_season": "2021-22",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          }
-        ],
+        "received_players": [],
         "received_picks": [
           "Peterson 2022 2nd"
         ],
@@ -2066,7 +2050,6 @@
       "side_a": {
         "owner": "Delaney",
         "gave": [
-          "2nd place",
           "Terry Rozier"
         ],
         "received": [
@@ -2103,23 +2086,9 @@
           "D'Angelo Russell"
         ],
         "received": [
-          "2nd place",
           "Terry Rozier"
         ],
         "received_players": [
-          {
-            "player": "2nd place",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2021-22",
-            "post_season": "2022-23",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Terry Rozier",
             "pre_fpg": 37.3,
@@ -2137,7 +2106,7 @@
         "received_picks": [],
         "received_delta": -1.5,
         "grade": "D",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "D",
@@ -2146,7 +2115,7 @@
       },
       "pick_components": [],
       "summary": "Delaney won this trade (C vs D). Combined grade considers both players and picks.",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 28,
@@ -2218,7 +2187,6 @@
       "side_a": {
         "owner": "Jowkar",
         "gave": [
-          "Delaney",
           "Tyler Herro"
         ],
         "received": [
@@ -2255,23 +2223,9 @@
           "Lamelo Ball"
         ],
         "received": [
-          "Delaney",
           "Tyler Herro"
         ],
         "received_players": [
-          {
-            "player": "Delaney",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2021-22",
-            "post_season": "2022-23",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Tyler Herro",
             "pre_fpg": 32.2,
@@ -2289,7 +2243,7 @@
         "received_picks": [],
         "received_delta": 1.7,
         "grade": "B",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "B",
@@ -2298,7 +2252,7 @@
       },
       "pick_components": [],
       "summary": "Even trade (B vs B). Both sides got comparable value.",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 30,
@@ -2444,7 +2398,6 @@
       "side_a": {
         "owner": "Peterson",
         "gave": [
-          "Moss",
           "Caris Levert"
         ],
         "received": [
@@ -2482,23 +2435,9 @@
           "Dennis Schroeder"
         ],
         "received": [
-          "Moss",
           "Caris Levert"
         ],
         "received_players": [
-          {
-            "player": "Moss",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2021-22",
-            "post_season": "2022-23",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Caris Levert",
             "pre_fpg": 29.6,
@@ -2516,7 +2455,7 @@
         "received_picks": [],
         "received_delta": -4.2,
         "grade": "F",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "F",
@@ -2608,7 +2547,6 @@
       "side_a": {
         "owner": "Jowkar",
         "gave": [
-          "Green",
           "Delaney 2023 1st round"
         ],
         "received": [
@@ -2645,24 +2583,9 @@
           "Bradley Beal"
         ],
         "received": [
-          "Green",
           "Delaney 2023 1st round"
         ],
-        "received_players": [
-          {
-            "player": "Green",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2021-22",
-            "post_season": "2022-23",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          }
-        ],
+        "received_players": [],
         "received_picks": [
           "Delaney 2023 1st round"
         ],
@@ -5308,7 +5231,6 @@
       "side_a": {
         "owner": "Jowkar",
         "gave": [
-          "Kelvin",
           "De'Andre Hunter"
         ],
         "received": [
@@ -5342,23 +5264,9 @@
           "Vlandis 2027 2nd round"
         ],
         "received": [
-          "Kelvin",
           "De'Andre Hunter"
         ],
         "received_players": [
-          {
-            "player": "Kelvin",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2022-23",
-            "post_season": "2023-24",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "De'Andre Hunter",
             "pre_fpg": 23.3,
@@ -5376,7 +5284,7 @@
         "received_picks": [],
         "received_delta": 0.8,
         "grade": "C",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "C",
@@ -5394,7 +5302,6 @@
       "side_a": {
         "owner": "Moss",
         "gave": [
-          "Kelvin",
           "Brandon Clarke"
         ],
         "received": [
@@ -5431,23 +5338,9 @@
           "Kyle Anderson"
         ],
         "received": [
-          "Kelvin",
           "Brandon Clarke"
         ],
         "received_players": [
-          {
-            "player": "Kelvin",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2022-23",
-            "post_season": "2023-24",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Brandon Clarke",
             "pre_fpg": 22.7,
@@ -5465,7 +5358,7 @@
         "received_picks": [],
         "received_delta": 3.5,
         "grade": "B",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "B",
@@ -5474,7 +5367,7 @@
       },
       "pick_components": [],
       "summary": "Partial data (Moss: F, Gold: B).",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 70,
@@ -5483,7 +5376,6 @@
       "side_a": {
         "owner": "HaleTrager",
         "gave": [
-          "Moss",
           "Marcus Smart",
           "Will Barton"
         ],
@@ -5510,24 +5402,10 @@
           "Green 2023 2nd round"
         ],
         "received": [
-          "Moss",
           "Marcus Smart",
           "Will Barton"
         ],
         "received_players": [
-          {
-            "player": "Moss",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2022-23",
-            "post_season": "2023-24",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Marcus Smart",
             "pre_fpg": 29.9,
@@ -5691,7 +5569,6 @@
       "side_a": {
         "owner": "Baden",
         "gave": [
-          "Delaney",
           "Gold 2023 2nd round",
           "De'Andre Hunter"
         ],
@@ -5729,24 +5606,10 @@
           "Kelly Oubre Jr."
         ],
         "received": [
-          "Delaney",
           "Gold 2023 2nd round",
           "De'Andre Hunter"
         ],
         "received_players": [
-          {
-            "player": "Delaney",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2022-23",
-            "post_season": "2023-24",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "De'Andre Hunter",
             "pre_fpg": 23.3,
@@ -5766,7 +5629,7 @@
         ],
         "received_delta": 0.8,
         "grade": "C",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "C",
@@ -5775,7 +5638,7 @@
       },
       "pick_components": [],
       "summary": "Partial data (Baden: F, Berke: C).",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 74,
@@ -6548,7 +6411,6 @@
       "side_a": {
         "owner": "Delaney",
         "gave": [
-          "Logan",
           "Vlandis 2026 1st round"
         ],
         "received": [
@@ -6574,24 +6436,9 @@
           "Green 2024 1st round"
         ],
         "received": [
-          "Logan",
           "Vlandis 2026 1st round"
         ],
-        "received_players": [
-          {
-            "player": "Logan",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2022-23",
-            "post_season": "2023-24",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          }
-        ],
+        "received_players": [],
         "received_picks": [
           "Vlandis 2026 1st round"
         ],
@@ -6647,7 +6494,7 @@
         "grade_basis": "players_only"
       },
       "side_b": {
-        "owner": "Unknown",
+        "owner": "Peterson",
         "gave": [
           "Josh Hart"
         ],
@@ -6680,7 +6527,7 @@
         "grade_basis": "players_only"
       },
       "pick_components": [],
-      "summary": "Unknown won this trade (D vs A). Combined grade considers both players and picks.",
+      "summary": "Peterson won this trade (D vs A). Combined grade considers both players and picks.",
       "grade_confidence": "high"
     },
     {
@@ -7755,7 +7602,6 @@
       "side_a": {
         "owner": "Berke",
         "gave": [
-          "Green",
           "Shai Gilgeous-Alexander"
         ],
         "received": [
@@ -7837,23 +7683,9 @@
           "James Harden"
         ],
         "received": [
-          "Green",
           "Shai Gilgeous-Alexander"
         ],
         "received_players": [
-          {
-            "player": "Green",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2023-24",
-            "post_season": "2024-25",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Shai Gilgeous-Alexander",
             "pre_fpg": 56.8,
@@ -7871,7 +7703,7 @@
         "received_picks": [],
         "received_delta": 1.7,
         "grade": "B",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "B",
@@ -7880,7 +7712,7 @@
       },
       "pick_components": [],
       "summary": "Partial data (Berke: F, Delaney: B).",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 97,
@@ -7889,7 +7721,6 @@
       "side_a": {
         "owner": "Delaney",
         "gave": [
-          "Jowkar",
           "Bradley Beal",
           "Terry Rozier"
         ],
@@ -7924,24 +7755,10 @@
           "Peterson 2025 1st round"
         ],
         "received": [
-          "Jowkar",
           "Bradley Beal",
           "Terry Rozier"
         ],
         "received_players": [
-          {
-            "player": "Jowkar",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2023-24",
-            "post_season": "2024-25",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Bradley Beal",
             "pre_fpg": 35.4,
@@ -7972,7 +7789,7 @@
         "received_picks": [],
         "received_delta": -21.3,
         "grade": "F",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "F",
@@ -7990,7 +7807,6 @@
       "side_a": {
         "owner": "Delaney",
         "gave": [
-          "Jowkar",
           "Kyle Kuzma",
           "Spencer Dinwiddie"
         ],
@@ -8043,24 +7859,10 @@
           "Jeremy Sochan"
         ],
         "received": [
-          "Jowkar",
           "Kyle Kuzma",
           "Spencer Dinwiddie"
         ],
         "received_players": [
-          {
-            "player": "Jowkar",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2023-24",
-            "post_season": "2024-25",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Kyle Kuzma",
             "pre_fpg": 36.7,
@@ -8091,7 +7893,7 @@
         "received_picks": [],
         "received_delta": -13.4,
         "grade": "F",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "F",
@@ -8100,7 +7902,7 @@
       },
       "pick_components": [],
       "summary": "Partial data (Delaney: A+, Green: F).",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 99,
@@ -9515,23 +9317,9 @@
         ],
         "received": [
           "Jowkar 2026 1st round",
-          "July 26th, 2025",
           "Mitchell Robinson"
         ],
         "received_players": [
-          {
-            "player": "July 26th, 2025",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2024-25",
-            "post_season": "2025-26",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Mitchell Robinson",
             "pre_fpg": 20.2,
@@ -9551,7 +9339,7 @@
         ],
         "received_delta": 2.5,
         "grade": "B",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [
           {
@@ -9570,7 +9358,6 @@
         "owner": "Peterson",
         "gave": [
           "Jowkar 2026 1st round",
-          "July 26th, 2025",
           "Mitchell Robinson"
         ],
         "received": [
@@ -9617,7 +9404,7 @@
       },
       "pick_components": [],
       "summary": "Partial data (Peterson: C, Peterson: F).",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 117,
@@ -10298,7 +10085,6 @@
       "side_a": {
         "owner": "Berke",
         "gave": [
-          "Kelvin",
           "Paul George",
           "Jrue Holiday",
           "Bradley Beal"
@@ -10337,25 +10123,11 @@
           "Zach LaVine"
         ],
         "received": [
-          "Kelvin",
           "Paul George",
           "Jrue Holiday",
           "Bradley Beal"
         ],
         "received_players": [
-          {
-            "player": "Kelvin",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2024-25",
-            "post_season": "2025-26",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Paul George",
             "pre_fpg": 34.0,
@@ -10399,7 +10171,7 @@
         "received_picks": [],
         "received_delta": -15.1,
         "grade": "F",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "F",
@@ -10408,7 +10180,7 @@
       },
       "pick_components": [],
       "summary": "Partial data (Berke: F, Jowkar: F).",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 126,
@@ -10417,7 +10189,6 @@
       "side_a": {
         "owner": "HaleTrager",
         "gave": [
-          "Green",
           "Coby White",
           "Nicolas Claxton"
         ],
@@ -10455,24 +10226,10 @@
           "Jamal Murray"
         ],
         "received": [
-          "Green",
           "Coby White",
           "Nicolas Claxton"
         ],
         "received_players": [
-          {
-            "player": "Green",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2024-25",
-            "post_season": "2025-26",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Coby White",
             "pre_fpg": 33.9,
@@ -10521,7 +10278,6 @@
       "side_a": {
         "owner": "HaleTrager",
         "gave": [
-          "Logan",
           "Yves Missi",
           "Jordan Poole"
         ],
@@ -10574,24 +10330,10 @@
           "Kristaps Porzingis"
         ],
         "received": [
-          "Logan",
           "Yves Missi",
           "Jordan Poole"
         ],
         "received_players": [
-          {
-            "player": "Logan",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2024-25",
-            "post_season": "2025-26",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Yves Missi",
             "pre_fpg": 24.7,
@@ -10622,7 +10364,7 @@
         "received_picks": [],
         "received_delta": -18.9,
         "grade": "F",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "F",
@@ -10631,7 +10373,7 @@
       },
       "pick_components": [],
       "summary": "Partial data (HaleTrager: F, Peterson: F).",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 128,
@@ -10640,7 +10382,6 @@
       "side_a": {
         "owner": "HaleTrager",
         "gave": [
-          "Moss",
           "Jordan Poole",
           "Yves Missi"
         ],
@@ -10693,24 +10434,10 @@
           "Daniel Gafford"
         ],
         "received": [
-          "Moss",
           "Jordan Poole",
           "Yves Missi"
         ],
         "received_players": [
-          {
-            "player": "Moss",
-            "pre_fpg": null,
-            "post_fpg": null,
-            "delta": null,
-            "pre_season": "2024-25",
-            "post_season": "2025-26",
-            "gp_pre": 0,
-            "gp_post": 0,
-            "dynasty_rank": null,
-            "status": "no_data",
-            "injury_affected": false
-          },
           {
             "player": "Jordan Poole",
             "pre_fpg": 34.3,
@@ -10741,7 +10468,7 @@
         "received_picks": [],
         "received_delta": -18.9,
         "grade": "F",
-        "confidence": "medium",
+        "confidence": "high",
         "injury_affected": false,
         "pick_grades": [],
         "combined_grade": "F",
@@ -10750,7 +10477,7 @@
       },
       "pick_components": [],
       "summary": "Partial data (HaleTrager: F, Peterson: F).",
-      "grade_confidence": "medium"
+      "grade_confidence": "high"
     },
     {
       "trade_index": 129,

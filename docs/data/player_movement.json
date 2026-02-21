@@ -3,7 +3,7 @@
     "total_players": 248,
     "traded": 84,
     "startup": 164,
-    "total_trade_events": 264
+    "total_trade_events": 261
   },
   "players": {
     "Aaron Gordon": {
@@ -1704,7 +1704,7 @@
         {
           "type": "trade",
           "from": "HaleTrager",
-          "to": "John",
+          "to": "Delaney",
           "season": "2022-23",
           "date": null
         },
@@ -1765,6 +1765,13 @@
     "Josh Hart": {
       "current_owner": "Berke",
       "history": [
+        {
+          "type": "trade",
+          "from": "Peterson",
+          "to": "Berke",
+          "season": "2022-23",
+          "date": null
+        },
         {
           "type": "trade",
           "from": "Zujewski",
@@ -2065,7 +2072,7 @@
         {
           "type": "trade",
           "from": "Gold",
-          "to": "Chris",
+          "to": "Delaney",
           "season": "2022-23",
           "date": "2022-10-17"
         },
@@ -2367,7 +2374,7 @@
         {
           "type": "trade",
           "from": "Peterson",
-          "to": "July",
+          "to": "Baden",
           "season": "2024-25",
           "date": "2024-10-21"
         }
@@ -2481,7 +2488,7 @@
         {
           "type": "trade",
           "from": "Peterson",
-          "to": "John",
+          "to": "HaleTrager",
           "season": "2022-23",
           "date": null
         },
@@ -3165,7 +3172,7 @@
         {
           "type": "trade",
           "from": "Berke",
-          "to": "Josh",
+          "to": "Peterson",
           "season": "2022-23",
           "date": null
         }

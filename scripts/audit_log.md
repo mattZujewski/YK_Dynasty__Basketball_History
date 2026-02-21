@@ -332,3 +332,35 @@ These mappings were **incorrect** in the original data and have been corrected:
   - Moss: GPA 2.47 (C)
   - Peterson: GPA 2.15 (C)
   - Zujewski: GPA 1.68 (C)
+
+
+## track_pick_outcomes.py (8.4)
+- Total picks: 138 (34 completed, 101 projected, 3 pending)
+- Picks with trades: 53
+- Grade distribution: {'A+': 5, 'F': 13, 'A': 4, 'B': 3, 'C': 6, 'D': 3}
+  - Baden: holds 4, traded 9
+  - Berke: holds 15, traded 8
+  - Delaney: holds 31, traded 7
+  - Gold: holds 4, traded 4
+  - Green: holds 22, traded 3
+  - HaleTrager: holds 24, traded 9
+  - Jowkar: holds 27, traded 8
+  - Moss: holds 2, traded 3
+  - Peterson: holds 8, traded 12
+  - Zujewski: holds 1, traded 0
+
+
+## combine_trade_grades.py (8.5)
+- Player-only: 189, Pick-only: 25, Mixed: 9
+- Newly graded: 25, Still INC: 53
+- Distribution: {'F': 82, 'INC': 53, 'B': 36, 'A': 22, 'D': 45, 'C': 25, 'A+': 13}
+  - Baden: GPA 2.44 (C)
+  - Berke: GPA 2.31 (C)
+  - Delaney: GPA 2.54 (B)
+  - Gold: GPA 2.95 (B)
+  - Green: GPA 2.83 (B)
+  - HaleTrager: GPA 1.77 (C)
+  - Jowkar: GPA 2.35 (C)
+  - Moss: GPA 2.47 (C)
+  - Peterson: GPA 2.23 (C)
+  - Zujewski: GPA 1.68 (C)
