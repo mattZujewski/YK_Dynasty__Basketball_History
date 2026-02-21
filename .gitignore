@@ -6,3 +6,4 @@ node_modules/
 scripts/.venv/
 scripts/errors.log
 docs/data/raw/
+*.xlsx
