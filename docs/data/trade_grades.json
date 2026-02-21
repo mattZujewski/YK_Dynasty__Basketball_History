@@ -1,0 +1,6533 @@
+{
+  "meta": {
+    "total_trades": 120,
+    "graded": 76,
+    "incomplete": 44,
+    "grade_distribution": {
+      "A+": 10,
+      "A": 9,
+      "B": 16,
+      "C": 46,
+      "D": 25,
+      "F": 79
+    },
+    "methodology": "Season-level stats comparison. Pre=trade season, Post=next full season. FPts = PTS + REB*1.2 + AST*1.5 + STL*3 + BLK*3 - TO*1"
+  },
+  "trades": [
+    {
+      "trade_index": 0,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Deandre Hunter"
+        ],
+        "received": [
+          "Jaren Jackson Jr",
+          "Kendrick Nunn"
+        ],
+        "received_players": [
+          {
+            "player": "Jaren Jackson Jr",
+            "pre_fpg": 29.5,
+            "post_fpg": 32.8,
+            "delta": 3.3,
+            "pre_ppg": 14.4,
+            "post_ppg": 16.3,
+            "dynasty_rank": 48,
+            "status": "graded"
+          },
+          {
+            "player": "Kendrick Nunn",
+            "pre_fpg": 24.5,
+            "post_fpg": null,
+            "delta": -12.2,
+            "pre_ppg": 14.6,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -8.9,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "side_b": {
+        "owner": "Green",
+        "gave": [
+          "Jaren Jackson Jr",
+          "Kendrick Nunn"
+        ],
+        "received": [
+          "Deandre Hunter"
+        ],
+        "received_players": [
+          {
+            "player": "Deandre Hunter",
+            "pre_fpg": 26.2,
+            "post_fpg": 21.3,
+            "delta": -4.9,
+            "pre_ppg": 15.0,
+            "post_ppg": 13.4,
+            "dynasty_rank": 183,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.9,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Green won this trade (received -4.9 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "medium"
+    },
+    {
+      "trade_index": 1,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Berke 2021 1st round"
+        ],
+        "received": [
+          "Vlandis 2021 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Vlandis 2021 2nd round"
+        ],
+        "received": [
+          "Berke 2021 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Berke",
+          "pick": "Vlandis 2021 2nd round"
+        },
+        {
+          "received_by": "Baden",
+          "pick": "Berke 2021 1st round"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 2,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Joel Embiid"
+        ],
+        "received": [
+          "Deandre Ayton"
+        ],
+        "received_players": [
+          {
+            "player": "Deandre Ayton",
+            "pre_fpg": 33.0,
+            "post_fpg": 34.1,
+            "delta": 1.1,
+            "pre_ppg": 14.4,
+            "post_ppg": 17.2,
+            "dynasty_rank": 129,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.1,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Deandre Ayton"
+        ],
+        "received": [
+          "Joel Embiid"
+        ],
+        "received_players": [
+          {
+            "player": "Joel Embiid",
+            "pre_fpg": 49.5,
+            "post_fpg": 55.6,
+            "delta": 6.1,
+            "pre_ppg": 28.5,
+            "post_ppg": 30.6,
+            "dynasty_rank": 81,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 6.1,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +6.1 FPts/g net). HaleTrager got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 3,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Demar Derozan"
+        ],
+        "received": [
+          "Collin Sexton",
+          "Berke 2023 1st"
+        ],
+        "received_players": [
+          {
+            "player": "Collin Sexton",
+            "pre_fpg": 35.4,
+            "post_fpg": 23.0,
+            "delta": -12.4,
+            "pre_ppg": 24.3,
+            "post_ppg": 16.0,
+            "dynasty_rank": 219,
+            "status": "graded"
+          },
+          {
+            "player": "Berke 2023 1st",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": -12.4,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Collin Sexton",
+          "Berke 2023 1st"
+        ],
+        "received": [
+          "Demar Derozan"
+        ],
+        "received_players": [
+          {
+            "player": "Demar Derozan",
+            "pre_fpg": 38.3,
+            "post_fpg": 42.7,
+            "delta": 4.4,
+            "pre_ppg": 21.6,
+            "post_ppg": 27.9,
+            "dynasty_rank": 208,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 4.4,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +4.4 FPts/g net). HaleTrager got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 4,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Peterson 2022 2nd"
+        ],
+        "received": [
+          "Delaney 2021 2nd (#17)"
+        ],
+        "received_players": [
+          {
+            "player": "Delaney 2021 2nd (#17)",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Delaney 2021 2nd (#17)"
+        ],
+        "received": [
+          "Peterson 2022 2nd"
+        ],
+        "received_players": [
+          {
+            "player": "Peterson 2022 2nd",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Roughly even trade \u2014 both sides got comparable production.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 5,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Kemba Walker"
+        ],
+        "received": [
+          "Draymond Green"
+        ],
+        "received_players": [
+          {
+            "player": "Draymond Green",
+            "pre_fpg": 33.4,
+            "post_fpg": 31.0,
+            "delta": -2.4,
+            "pre_ppg": 7.0,
+            "post_ppg": 7.5,
+            "dynasty_rank": 206,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.4,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Draymond Green"
+        ],
+        "received": [
+          "Kemba Walker"
+        ],
+        "received_players": [
+          {
+            "player": "Kemba Walker",
+            "pre_fpg": 33.6,
+            "post_fpg": 21.8,
+            "delta": -11.8,
+            "pre_ppg": 19.3,
+            "post_ppg": 11.6,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -11.8,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received -2.4 FPts/g net). Zujewski got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 6,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Andrew Wiggins"
+        ],
+        "received": [
+          "Montrezl Harrell"
+        ],
+        "received_players": [
+          {
+            "player": "Montrezl Harrell",
+            "pre_fpg": 25.7,
+            "post_fpg": 25.4,
+            "delta": -0.3,
+            "pre_ppg": 13.5,
+            "post_ppg": 13.1,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.3,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Montrezl Harrell"
+        ],
+        "received": [
+          "Andrew Wiggins"
+        ],
+        "received_players": [
+          {
+            "player": "Andrew Wiggins",
+            "pre_fpg": 32.0,
+            "post_fpg": 29.5,
+            "delta": -2.5,
+            "pre_ppg": 18.6,
+            "post_ppg": 17.2,
+            "dynasty_rank": 131,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.5,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Berke won this trade (received -0.3 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 7,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Moss",
+        "gave": [
+          "Malcolm Brogdon"
+        ],
+        "received": [
+          "Donovan Mitchell"
+        ],
+        "received_players": [
+          {
+            "player": "Donovan Mitchell",
+            "pre_fpg": 40.6,
+            "post_fpg": 41.0,
+            "delta": 0.4,
+            "pre_ppg": 26.4,
+            "post_ppg": 25.9,
+            "dynasty_rank": 20,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.4,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Donovan Mitchell"
+        ],
+        "received": [
+          "Malcolm Brogdon"
+        ],
+        "received_players": [
+          {
+            "player": "Malcolm Brogdon",
+            "pre_fpg": 37.9,
+            "post_fpg": 35.6,
+            "delta": -2.3,
+            "pre_ppg": 21.2,
+            "post_ppg": 19.1,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.3,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Moss won this trade (received +0.4 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 8,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Green",
+        "gave": [
+          "Mason Plumlee"
+        ],
+        "received": [
+          "Kelvin 2023 1st Round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Kelvin 2023 1st Round"
+        ],
+        "received": [
+          "Mason Plumlee"
+        ],
+        "received_players": [
+          {
+            "player": "Mason Plumlee",
+            "pre_fpg": 30.2,
+            "post_fpg": 23.5,
+            "delta": -6.7,
+            "pre_ppg": 10.4,
+            "post_ppg": 6.5,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.7,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Green",
+          "pick": "Kelvin 2023 1st Round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 9,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Steph Curry"
+        ],
+        "received": [
+          "De'Aaron Fox"
+        ],
+        "received_players": [
+          {
+            "player": "De'Aaron Fox",
+            "pre_fpg": 43.2,
+            "post_fpg": 38.3,
+            "delta": -4.9,
+            "pre_ppg": 25.2,
+            "post_ppg": 23.2,
+            "dynasty_rank": 59,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.9,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "De'Aaron Fox"
+        ],
+        "received": [
+          "Steph Curry"
+        ],
+        "received_players": [
+          {
+            "player": "Steph Curry",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +0.0 FPts/g net). Baden got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 10,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "James Harden"
+        ],
+        "received": [
+          "Brandon Ingram"
+        ],
+        "received_players": [
+          {
+            "player": "Brandon Ingram",
+            "pre_fpg": 38.4,
+            "post_fpg": 38.7,
+            "delta": 0.3,
+            "pre_ppg": 23.8,
+            "post_ppg": 22.7,
+            "dynasty_rank": 90,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.3,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Brandon Ingram"
+        ],
+        "received": [
+          "James Harden"
+        ],
+        "received_players": [
+          {
+            "player": "James Harden",
+            "pre_fpg": 52.3,
+            "post_fpg": 48.0,
+            "delta": -4.3,
+            "pre_ppg": 24.6,
+            "post_ppg": 22.0,
+            "dynasty_rank": 65,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.3,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "HaleTrager won this trade (received +0.3 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 11,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Moss",
+        "gave": [
+          "Donovan Mitchell"
+        ],
+        "received": [
+          "Russell Westbrook"
+        ],
+        "received_players": [
+          {
+            "player": "Russell Westbrook",
+            "pre_fpg": 54.2,
+            "post_fpg": 38.1,
+            "delta": -16.1,
+            "pre_ppg": 22.2,
+            "post_ppg": 18.5,
+            "dynasty_rank": 372,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -16.1,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Russell Westbrook"
+        ],
+        "received": [
+          "Donovan Mitchell"
+        ],
+        "received_players": [
+          {
+            "player": "Donovan Mitchell",
+            "pre_fpg": 40.6,
+            "post_fpg": 41.0,
+            "delta": 0.4,
+            "pre_ppg": 26.4,
+            "post_ppg": 25.9,
+            "dynasty_rank": 20,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.4,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Baden won this trade (received +0.4 FPts/g net). Moss got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 12,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Damian Lillard"
+        ],
+        "received": [
+          "Nikola Jokic"
+        ],
+        "received_players": [
+          {
+            "player": "Nikola Jokic",
+            "pre_fpg": 54.7,
+            "post_fpg": 58.9,
+            "delta": 4.2,
+            "pre_ppg": 26.4,
+            "post_ppg": 27.1,
+            "dynasty_rank": 3,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 4.2,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Nikola Jokic"
+        ],
+        "received": [
+          "Damian Lillard"
+        ],
+        "received_players": [
+          {
+            "player": "Damian Lillard",
+            "pre_fpg": 45.7,
+            "post_fpg": 40.0,
+            "delta": -5.7,
+            "pre_ppg": 28.8,
+            "post_ppg": 24.0,
+            "dynasty_rank": 153,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -5.7,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +4.2 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 13,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Kyrie Irving"
+        ],
+        "received": [
+          "Paul George"
+        ],
+        "received_players": [
+          {
+            "player": "Paul George",
+            "pre_fpg": 40.2,
+            "post_fpg": 44.8,
+            "delta": 4.6,
+            "pre_ppg": 23.3,
+            "post_ppg": 24.3,
+            "dynasty_rank": 152,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 4.6,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Paul George"
+        ],
+        "received": [
+          "Kyrie Irving"
+        ],
+        "received_players": [
+          {
+            "player": "Kyrie Irving",
+            "pre_fpg": 45.6,
+            "post_fpg": 44.9,
+            "delta": -0.7,
+            "pre_ppg": 26.9,
+            "post_ppg": 27.4,
+            "dynasty_rank": 64,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.7,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +4.6 FPts/g net). Zujewski got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 14,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Richaun Holmes"
+        ],
+        "received": [
+          "Terry Rozier"
+        ],
+        "received_players": [
+          {
+            "player": "Terry Rozier",
+            "pre_fpg": 35.2,
+            "post_fpg": 34.7,
+            "delta": -0.5,
+            "pre_ppg": 20.4,
+            "post_ppg": 19.3,
+            "dynasty_rank": 527,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.5,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Terry Rozier"
+        ],
+        "received": [
+          "Richaun Holmes"
+        ],
+        "received_players": [
+          {
+            "player": "Richaun Holmes",
+            "pre_fpg": 32.1,
+            "post_fpg": 23.1,
+            "delta": -9.0,
+            "pre_ppg": 14.2,
+            "post_ppg": 10.4,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -9.0,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received -0.5 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 15,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Thaddeus Young"
+        ],
+        "received": [
+          "Dennis Schroeder"
+        ],
+        "received_players": [
+          {
+            "player": "Dennis Schroeder",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Dennis Schroeder"
+        ],
+        "received": [
+          "Thaddeus Young"
+        ],
+        "received_players": [
+          {
+            "player": "Thaddeus Young",
+            "pre_fpg": 29.1,
+            "post_fpg": 16.9,
+            "delta": -12.2,
+            "pre_ppg": 12.1,
+            "post_ppg": 6.2,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -12.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +0.0 FPts/g net). Delaney got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 16,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Klay Thompson"
+        ],
+        "received": [
+          "D'Angelo Russell"
+        ],
+        "received_players": [
+          {
+            "player": "D'Angelo Russell",
+            "pre_fpg": 32.6,
+            "post_fpg": 34.1,
+            "delta": 1.5,
+            "pre_ppg": 19.0,
+            "post_ppg": 18.1,
+            "dynasty_rank": 333,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.5,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "D'Angelo Russell"
+        ],
+        "received": [
+          "Klay Thompson"
+        ],
+        "received_players": [
+          {
+            "player": "Klay Thompson",
+            "pre_fpg": null,
+            "post_fpg": 31.0,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": 20.4,
+            "dynasty_rank": 349,
+            "status": "no_baseline"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +1.5 FPts/g net). Baden got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 17,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Onyeka Okongwu"
+        ],
+        "received": [
+          "Saddiq Bey"
+        ],
+        "received_players": [
+          {
+            "player": "Saddiq Bey",
+            "pre_fpg": 21.5,
+            "post_fpg": 28.9,
+            "delta": 7.4,
+            "pre_ppg": 12.2,
+            "post_ppg": 16.1,
+            "dynasty_rank": 228,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 7.4,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Green",
+        "gave": [
+          "Saddiq Bey"
+        ],
+        "received": [
+          "Onyeka Okongwu"
+        ],
+        "received_players": [
+          {
+            "player": "Onyeka Okongwu",
+            "pre_fpg": 12.2,
+            "post_fpg": 21.7,
+            "delta": 9.5,
+            "pre_ppg": 4.6,
+            "post_ppg": 8.2,
+            "dynasty_rank": 50,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 9.5,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Green won this trade (received +9.5 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 18,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Derrick Rose"
+        ],
+        "received": [
+          "Lou Williams"
+        ],
+        "received_players": [
+          {
+            "player": "Lou Williams",
+            "pre_fpg": 19.7,
+            "post_fpg": 12.1,
+            "delta": -7.6,
+            "pre_ppg": 11.3,
+            "post_ppg": 6.3,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.6,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Lou Williams"
+        ],
+        "received": [
+          "Derrick Rose"
+        ],
+        "received_players": [
+          {
+            "player": "Derrick Rose",
+            "pre_fpg": 26.7,
+            "post_fpg": 24.0,
+            "delta": -2.7,
+            "pre_ppg": 14.7,
+            "post_ppg": 12.0,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.7,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received -2.7 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 19,
+      "season": "2020-21",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Kendrick Nunn"
+        ],
+        "received": [
+          "Klay Thompson"
+        ],
+        "received_players": [
+          {
+            "player": "Klay Thompson",
+            "pre_fpg": null,
+            "post_fpg": 31.0,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": 20.4,
+            "dynasty_rank": 349,
+            "status": "no_baseline"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Klay Thompson"
+        ],
+        "received": [
+          "Kendrick Nunn"
+        ],
+        "received_players": [
+          {
+            "player": "Kendrick Nunn",
+            "pre_fpg": 24.5,
+            "post_fpg": null,
+            "delta": -12.2,
+            "pre_ppg": 14.6,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -12.2,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +0.0 FPts/g net). Baden got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 20,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Berke 2022 1st Round"
+        ],
+        "received": [
+          "Mitchell Robinson"
+        ],
+        "received_players": [
+          {
+            "player": "Mitchell Robinson",
+            "pre_fpg": 26.6,
+            "post_fpg": 27.4,
+            "delta": 0.8,
+            "pre_ppg": 8.5,
+            "post_ppg": 7.4,
+            "dynasty_rank": 161,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.8,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Mitchell Robinson"
+        ],
+        "received": [
+          "Berke 2022 1st Round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Berke 2022 1st Round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 21,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Fred Vanvleet"
+        ],
+        "received": [
+          "Lebron James"
+        ],
+        "received_players": [
+          {
+            "player": "Lebron James",
+            "pre_fpg": 53.1,
+            "post_fpg": 50.4,
+            "delta": -2.7,
+            "pre_ppg": 30.3,
+            "post_ppg": 28.9,
+            "dynasty_rank": 111,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.7,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Lebron James"
+        ],
+        "received": [
+          "Fred Vanvleet"
+        ],
+        "received_players": [
+          {
+            "player": "Fred Vanvleet",
+            "pre_fpg": 39.6,
+            "post_fpg": 40.2,
+            "delta": 0.6,
+            "pre_ppg": 20.3,
+            "post_ppg": 19.3,
+            "dynasty_rank": 122,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.6,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +0.6 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 22,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Gold",
+        "gave": [
+          "Gold 2023 1st round"
+        ],
+        "received": [
+          "Vlandis 2022 1st round (swap rights)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Moss",
+        "gave": [
+          "Vlandis 2022 1st round (swap rights)"
+        ],
+        "received": [
+          "Gold 2023 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Gold",
+          "pick": "Vlandis 2022 1st round (swap rights)"
+        },
+        {
+          "received_by": "Moss",
+          "pick": "Gold 2023 1st round"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 23,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Zujewski",
+        "gave": [
+          "Pascal Siakam"
+        ],
+        "received": [
+          "Saddiq Bey"
+        ],
+        "received_players": [
+          {
+            "player": "Saddiq Bey",
+            "pre_fpg": 28.9,
+            "post_fpg": 24.1,
+            "delta": -4.8,
+            "pre_ppg": 16.1,
+            "post_ppg": 13.8,
+            "dynasty_rank": 228,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.8,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Saddiq Bey"
+        ],
+        "received": [
+          "Pascal Siakam"
+        ],
+        "received_players": [
+          {
+            "player": "Pascal Siakam",
+            "pre_fpg": 43.9,
+            "post_fpg": 44.1,
+            "delta": 0.2,
+            "pre_ppg": 22.8,
+            "post_ppg": 24.2,
+            "dynasty_rank": 88,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.2,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +0.2 FPts/g net). Zujewski got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 24,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Moss",
+        "gave": [
+          "Dejounte Murray"
+        ],
+        "received": [
+          "Paul George"
+        ],
+        "received_players": [
+          {
+            "player": "Paul George",
+            "pre_fpg": 44.8,
+            "post_fpg": 41.4,
+            "delta": -3.4,
+            "pre_ppg": 24.3,
+            "post_ppg": 23.8,
+            "dynasty_rank": 152,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.4,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Paul George"
+        ],
+        "received": [
+          "Dejounte Murray"
+        ],
+        "received_players": [
+          {
+            "player": "Dejounte Murray",
+            "pre_fpg": 49.2,
+            "post_fpg": 39.2,
+            "delta": -10.0,
+            "pre_ppg": 21.1,
+            "post_ppg": 20.5,
+            "dynasty_rank": 109,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -10.0,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Moss won this trade (received -3.4 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 25,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Jerami Grant",
+          "Green 2022 1st round (#4 overall)"
+        ],
+        "received": [
+          "Caris Levert"
+        ],
+        "received_players": [
+          {
+            "player": "Caris Levert",
+            "pre_fpg": 29.9,
+            "post_fpg": 24.8,
+            "delta": -5.1,
+            "pre_ppg": 17.0,
+            "post_ppg": 12.1,
+            "dynasty_rank": 350,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -5.1,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Caris Levert"
+        ],
+        "received": [
+          "Jerami Grant",
+          "Green 2022 1st round (#4 overall)"
+        ],
+        "received_players": [
+          {
+            "player": "Jerami Grant",
+            "pre_fpg": 31.6,
+            "post_fpg": 32.5,
+            "delta": 0.9,
+            "pre_ppg": 19.2,
+            "post_ppg": 20.5,
+            "dynasty_rank": 180,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.9,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Green 2022 1st round (#4 overall)"
+        }
+      ],
+      "summary": "Jowkar won this trade (received +0.9 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 26,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Fred VanVleet"
+        ],
+        "received": [
+          "Dejounte Murray"
+        ],
+        "received_players": [
+          {
+            "player": "Dejounte Murray",
+            "pre_fpg": 49.2,
+            "post_fpg": 39.2,
+            "delta": -10.0,
+            "pre_ppg": 21.1,
+            "post_ppg": 20.5,
+            "dynasty_rank": 109,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -10.0,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Dejounte Murray"
+        ],
+        "received": [
+          "Fred VanVleet"
+        ],
+        "received_players": [
+          {
+            "player": "Fred VanVleet",
+            "pre_fpg": 39.6,
+            "post_fpg": 40.2,
+            "delta": 0.6,
+            "pre_ppg": 20.3,
+            "post_ppg": 19.3,
+            "dynasty_rank": 122,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.6,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +0.6 FPts/g net). Delaney got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 27,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Terry Rozier"
+        ],
+        "received": [
+          "D'Angelo Russell"
+        ],
+        "received_players": [
+          {
+            "player": "D'Angelo Russell",
+            "pre_fpg": 34.1,
+            "post_fpg": 32.3,
+            "delta": -1.8,
+            "pre_ppg": 18.1,
+            "post_ppg": 17.8,
+            "dynasty_rank": 333,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -1.8,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "D'Angelo Russell"
+        ],
+        "received": [
+          "Terry Rozier"
+        ],
+        "received_players": [
+          {
+            "player": "Terry Rozier",
+            "pre_fpg": 34.7,
+            "post_fpg": 36.1,
+            "delta": 1.4,
+            "pre_ppg": 19.3,
+            "post_ppg": 21.1,
+            "dynasty_rank": 527,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.4,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +1.4 FPts/g net). Delaney got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 28,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Cj McCollum"
+        ],
+        "received": [
+          "Jowkar 2022 1st round (#5 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Jowkar 2022 1st round (#5 overall)"
+        ],
+        "received": [
+          "Cj McCollum"
+        ],
+        "received_players": [
+          {
+            "player": "Cj McCollum",
+            "pre_fpg": 37.4,
+            "post_fpg": 36.5,
+            "delta": -0.9,
+            "pre_ppg": 22.1,
+            "post_ppg": 20.9,
+            "dynasty_rank": 232,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.9,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Jowkar 2022 1st round (#5 overall)"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 29,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Tyler Herro"
+        ],
+        "received": [
+          "Lamelo Ball"
+        ],
+        "received_players": [
+          {
+            "player": "Lamelo Ball",
+            "pre_fpg": 42.2,
+            "post_fpg": 44.8,
+            "delta": 2.6,
+            "pre_ppg": 20.1,
+            "post_ppg": 23.3,
+            "dynasty_rank": 36,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 2.6,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Lamelo Ball"
+        ],
+        "received": [
+          "Tyler Herro"
+        ],
+        "received_players": [
+          {
+            "player": "Tyler Herro",
+            "pre_fpg": 32.5,
+            "post_fpg": 33.5,
+            "delta": 1.0,
+            "pre_ppg": 20.7,
+            "post_ppg": 20.1,
+            "dynasty_rank": 69,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.0,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +2.6 FPts/g net). Baden got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 30,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "2023 Green 2nd round"
+        ],
+        "received": [
+          "De'andre Hunter"
+        ],
+        "received_players": [
+          {
+            "player": "De'andre Hunter",
+            "pre_fpg": 21.3,
+            "post_fpg": 23.7,
+            "delta": 2.4,
+            "pre_ppg": 13.4,
+            "post_ppg": 15.4,
+            "dynasty_rank": 183,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 2.4,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Green",
+        "gave": [
+          "De'andre Hunter"
+        ],
+        "received": [
+          "2023 Green 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Green",
+          "pick": "2023 Green 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 31,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Jae'Sean Tate"
+        ],
+        "received": [
+          "Malik Beasley"
+        ],
+        "received_players": [
+          {
+            "player": "Malik Beasley",
+            "pre_fpg": 19.4,
+            "post_fpg": 20.7,
+            "delta": 1.3,
+            "pre_ppg": 12.1,
+            "post_ppg": 12.7,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.3,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Malik Beasley"
+        ],
+        "received": [
+          "Jae'Sean Tate"
+        ],
+        "received_players": [
+          {
+            "player": "Jae'Sean Tate",
+            "pre_fpg": 24.9,
+            "post_fpg": 18.9,
+            "delta": -6.0,
+            "pre_ppg": 11.8,
+            "post_ppg": 9.1,
+            "dynasty_rank": 421,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.0,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +1.3 FPts/g net). Baden got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 32,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Caris Levert"
+        ],
+        "received": [
+          "Dennis Schroeder"
+        ],
+        "received_players": [
+          {
+            "player": "Dennis Schroeder",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Dennis Schroeder"
+        ],
+        "received": [
+          "Caris Levert"
+        ],
+        "received_players": [
+          {
+            "player": "Caris Levert",
+            "pre_fpg": 29.9,
+            "post_fpg": 24.8,
+            "delta": -5.1,
+            "pre_ppg": 17.0,
+            "post_ppg": 12.1,
+            "dynasty_rank": 350,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -5.1,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +0.0 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 33,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Jusuf Nurkic"
+        ],
+        "received": [
+          "Reggie Jackson"
+        ],
+        "received_players": [
+          {
+            "player": "Reggie Jackson",
+            "pre_fpg": 28.7,
+            "post_fpg": 18.5,
+            "delta": -10.2,
+            "pre_ppg": 16.8,
+            "post_ppg": 10.2,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -10.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Reggie Jackson"
+        ],
+        "received": [
+          "Jusuf Nurkic"
+        ],
+        "received_players": [
+          {
+            "player": "Jusuf Nurkic",
+            "pre_fpg": 35.0,
+            "post_fpg": 31.1,
+            "delta": -3.9,
+            "pre_ppg": 15.0,
+            "post_ppg": 13.3,
+            "dynasty_rank": 226,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.9,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Baden won this trade (received -3.9 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 34,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Delaney 2023 1st round"
+        ],
+        "received": [
+          "Bradley Beal"
+        ],
+        "received_players": [
+          {
+            "player": "Bradley Beal",
+            "pre_fpg": 39.2,
+            "post_fpg": 37.9,
+            "delta": -1.3,
+            "pre_ppg": 23.2,
+            "post_ppg": 23.2,
+            "dynasty_rank": 231,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -1.3,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Green",
+        "gave": [
+          "Bradley Beal"
+        ],
+        "received": [
+          "Delaney 2023 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Green",
+          "pick": "Delaney 2023 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 35,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Vlandis 2022 2nd round (#13 overall)"
+        ],
+        "received": [
+          "Mo Bamba"
+        ],
+        "received_players": [
+          {
+            "player": "Mo Bamba",
+            "pre_fpg": 27.6,
+            "post_fpg": 16.5,
+            "delta": -11.1,
+            "pre_ppg": 10.6,
+            "post_ppg": 6.6,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -11.1,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Mo Bamba"
+        ],
+        "received": [
+          "Vlandis 2022 2nd round (#13 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Vlandis 2022 2nd round (#13 overall)"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 36,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Harrison Barnes"
+        ],
+        "received": [
+          "Jordan Clarkson"
+        ],
+        "received_players": [
+          {
+            "player": "Jordan Clarkson",
+            "pre_fpg": 25.4,
+            "post_fpg": 31.3,
+            "delta": 5.9,
+            "pre_ppg": 16.0,
+            "post_ppg": 20.8,
+            "dynasty_rank": 371,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 5.9,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Jordan Clarkson"
+        ],
+        "received": [
+          "Harrison Barnes"
+        ],
+        "received_players": [
+          {
+            "player": "Harrison Barnes",
+            "pre_fpg": 27.9,
+            "post_fpg": 24.2,
+            "delta": -3.7,
+            "pre_ppg": 16.4,
+            "post_ppg": 15.0,
+            "dynasty_rank": 292,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.7,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Berke won this trade (received +5.9 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 37,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Mike Conley"
+        ],
+        "received": [
+          "Lauri Markkanen"
+        ],
+        "received_players": [
+          {
+            "player": "Lauri Markkanen",
+            "pre_fpg": 26.3,
+            "post_fpg": 40.5,
+            "delta": 14.2,
+            "pre_ppg": 14.8,
+            "post_ppg": 25.6,
+            "dynasty_rank": 46,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 14.2,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Lauri Markkanen"
+        ],
+        "received": [
+          "Mike Conley"
+        ],
+        "received_players": [
+          {
+            "player": "Mike Conley",
+            "pre_fpg": 28.3,
+            "post_fpg": 27.6,
+            "delta": -0.7,
+            "pre_ppg": 13.7,
+            "post_ppg": 11.9,
+            "dynasty_rank": 426,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.7,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +14.2 FPts/g net). Delaney got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 38,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Kemba Walker"
+        ],
+        "received": [
+          "Berke 2024 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Berke 2024 2nd round"
+        ],
+        "received": [
+          "Kemba Walker"
+        ],
+        "received_players": [
+          {
+            "player": "Kemba Walker",
+            "pre_fpg": 21.8,
+            "post_fpg": 14.1,
+            "delta": -7.7,
+            "pre_ppg": 11.6,
+            "post_ppg": 8.0,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.7,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Berke 2024 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 39,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Dillon Brooks"
+        ],
+        "received": [
+          "Saddiq Bey"
+        ],
+        "received_players": [
+          {
+            "player": "Saddiq Bey",
+            "pre_fpg": 28.9,
+            "post_fpg": 24.1,
+            "delta": -4.8,
+            "pre_ppg": 16.1,
+            "post_ppg": 13.8,
+            "dynasty_rank": 228,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.8,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Saddiq Bey"
+        ],
+        "received": [
+          "Dillon Brooks"
+        ],
+        "received_players": [
+          {
+            "player": "Dillon Brooks",
+            "pre_fpg": 29.0,
+            "post_fpg": 24.1,
+            "delta": -4.9,
+            "pre_ppg": 18.4,
+            "post_ppg": 14.3,
+            "dynasty_rank": 189,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.9,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Roughly even trade \u2014 both sides got comparable production.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 40,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Green",
+        "gave": [
+          "Green 2022 1st round"
+        ],
+        "received": [
+          "Vlandis 2022 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Vlandis 2022 1st round"
+        ],
+        "received": [
+          "Green 2022 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Green",
+          "pick": "Vlandis 2022 1st round"
+        },
+        {
+          "received_by": "Baden",
+          "pick": "Green 2022 1st round"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 41,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Luka Doncic"
+        ],
+        "received": [
+          "Bradley Beal"
+        ],
+        "received_players": [
+          {
+            "player": "Bradley Beal",
+            "pre_fpg": 39.2,
+            "post_fpg": 37.9,
+            "delta": -1.3,
+            "pre_ppg": 23.2,
+            "post_ppg": 23.2,
+            "dynasty_rank": 231,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -1.3,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Bradley Beal"
+        ],
+        "received": [
+          "Luka Doncic"
+        ],
+        "received_players": [
+          {
+            "player": "Luka Doncic",
+            "pre_fpg": 53.3,
+            "post_fpg": 56.8,
+            "delta": 3.5,
+            "pre_ppg": 28.4,
+            "post_ppg": 32.4,
+            "dynasty_rank": 4,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 3.5,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received +3.5 FPts/g net). Delaney got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 42,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Green",
+        "gave": [
+          "Spencer Dinwiddie"
+        ],
+        "received": [
+          "Jarred Vanderbilt"
+        ],
+        "received_players": [
+          {
+            "player": "Jarred Vanderbilt",
+            "pre_fpg": 23.6,
+            "post_fpg": 23.5,
+            "delta": -0.1,
+            "pre_ppg": 6.9,
+            "post_ppg": 7.9,
+            "dynasty_rank": 346,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.1,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Jarred Vanderbilt"
+        ],
+        "received": [
+          "Spencer Dinwiddie"
+        ],
+        "received_players": [
+          {
+            "player": "Spencer Dinwiddie",
+            "pre_fpg": 27.6,
+            "post_fpg": 32.6,
+            "delta": 5.0,
+            "pre_ppg": 13.7,
+            "post_ppg": 17.3,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 5.0,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +5.0 FPts/g net). Green got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 43,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Julius Randle"
+        ],
+        "received": [
+          "Christian Wood"
+        ],
+        "received_players": [
+          {
+            "player": "Christian Wood",
+            "pre_fpg": 37.0,
+            "post_fpg": 30.8,
+            "delta": -6.2,
+            "pre_ppg": 17.9,
+            "post_ppg": 16.6,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Christian Wood"
+        ],
+        "received": [
+          "Julius Randle"
+        ],
+        "received_players": [
+          {
+            "player": "Julius Randle",
+            "pre_fpg": 39.8,
+            "post_fpg": 43.1,
+            "delta": 3.3,
+            "pre_ppg": 20.1,
+            "post_ppg": 25.1,
+            "dynasty_rank": 96,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 3.3,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +3.3 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 44,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Alec Burks"
+        ],
+        "received": [
+          "Patrick Beverly"
+        ],
+        "received_players": [
+          {
+            "player": "Patrick Beverly",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Patrick Beverly"
+        ],
+        "received": [
+          "Alec Burks"
+        ],
+        "received_players": [
+          {
+            "player": "Alec Burks",
+            "pre_fpg": 24.9,
+            "post_fpg": 21.4,
+            "delta": -3.5,
+            "pre_ppg": 11.7,
+            "post_ppg": 12.8,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.5,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +0.0 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 45,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Gabe Vincent"
+        ],
+        "received": [
+          "Aaron Gordon"
+        ],
+        "received_players": [
+          {
+            "player": "Aaron Gordon",
+            "pre_fpg": 27.6,
+            "post_fpg": 32.1,
+            "delta": 4.5,
+            "pre_ppg": 15.0,
+            "post_ppg": 16.3,
+            "dynasty_rank": 128,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 4.5,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Aaron Gordon"
+        ],
+        "received": [
+          "Gabe Vincent"
+        ],
+        "received_players": [
+          {
+            "player": "Gabe Vincent",
+            "pre_fpg": 17.5,
+            "post_fpg": 17.3,
+            "delta": -0.2,
+            "pre_ppg": 8.7,
+            "post_ppg": 9.4,
+            "dynasty_rank": 430,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.2,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +4.5 FPts/g net). Zujewski got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 46,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Tobias Harris"
+        ],
+        "received": [
+          "De'Angelo Russell"
+        ],
+        "received_players": [
+          {
+            "player": "De'Angelo Russell",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "De'Angelo Russell"
+        ],
+        "received": [
+          "Tobias Harris"
+        ],
+        "received_players": [
+          {
+            "player": "Tobias Harris",
+            "pre_fpg": 32.6,
+            "post_fpg": 28.3,
+            "delta": -4.3,
+            "pre_ppg": 17.2,
+            "post_ppg": 14.7,
+            "dynasty_rank": 197,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.3,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Baden won this trade (received +0.0 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 47,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Delaney 2022 1st round (#7 overall)"
+        ],
+        "received": [
+          "Peterson 2022 1st round (#8 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Gold",
+        "gave": [
+          "Peterson 2022 1st round (#8 overall)"
+        ],
+        "received": [
+          "Delaney 2022 1st round (#7 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Baden",
+          "pick": "Peterson 2022 1st round (#8 overall)"
+        },
+        {
+          "received_by": "Gold",
+          "pick": "Delaney 2022 1st round (#7 overall)"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 48,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Mo Bamba"
+        ],
+        "received": [
+          "Jemai Grant"
+        ],
+        "received_players": [
+          {
+            "player": "Jemai Grant",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Gold",
+        "gave": [
+          "Jemai Grant"
+        ],
+        "received": [
+          "Mo Bamba"
+        ],
+        "received_players": [
+          {
+            "player": "Mo Bamba",
+            "pre_fpg": 27.6,
+            "post_fpg": 16.5,
+            "delta": -11.1,
+            "pre_ppg": 10.6,
+            "post_ppg": 6.6,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -11.1,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Baden won this trade (received +0.0 FPts/g net). Gold got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 49,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Coby White"
+        ],
+        "received": [
+          "Clint Capela"
+        ],
+        "received_players": [
+          {
+            "player": "Clint Capela",
+            "pre_fpg": 32.6,
+            "post_fpg": 31.4,
+            "delta": -1.2,
+            "pre_ppg": 11.1,
+            "post_ppg": 12.0,
+            "dynasty_rank": 300,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -1.2,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Clint Capela"
+        ],
+        "received": [
+          "Coby White"
+        ],
+        "received_players": [
+          {
+            "player": "Coby White",
+            "pre_fpg": 21.6,
+            "post_fpg": 18.8,
+            "delta": -2.8,
+            "pre_ppg": 12.7,
+            "post_ppg": 9.7,
+            "dynasty_rank": 127,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.8,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Baden won this trade (received -1.2 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 50,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Green",
+        "gave": [
+          "2022 Berke 2nd round (#20 overall)"
+        ],
+        "received": [
+          "Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)"
+        ],
+        "received": [
+          "2022 Berke 2nd round (#20 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Green",
+          "pick": "Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)"
+        },
+        {
+          "received_by": "HaleTrager",
+          "pick": "2022 Berke 2nd round (#20 overall)"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 51,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Andre Drummond"
+        ],
+        "received": [
+          "Berke 2025 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Berke 2025 1st round"
+        ],
+        "received": [
+          "Andre Drummond"
+        ],
+        "received_players": [
+          {
+            "player": "Andre Drummond",
+            "pre_fpg": 26.2,
+            "post_fpg": 16.9,
+            "delta": -9.3,
+            "pre_ppg": 7.9,
+            "post_ppg": 6.0,
+            "dynasty_rank": 287,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -9.3,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Berke 2025 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 52,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Collin Sexton"
+        ],
+        "received": [
+          "Christian Wood"
+        ],
+        "received_players": [
+          {
+            "player": "Christian Wood",
+            "pre_fpg": 37.0,
+            "post_fpg": 30.8,
+            "delta": -6.2,
+            "pre_ppg": 17.9,
+            "post_ppg": 16.6,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Christian Wood"
+        ],
+        "received": [
+          "Collin Sexton"
+        ],
+        "received_players": [
+          {
+            "player": "Collin Sexton",
+            "pre_fpg": 23.0,
+            "post_fpg": 21.6,
+            "delta": -1.4,
+            "pre_ppg": 16.0,
+            "post_ppg": 14.3,
+            "dynasty_rank": 219,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -1.4,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Berke won this trade (received -1.4 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 53,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "James Harden"
+        ],
+        "received": [
+          "Dejounte Murray"
+        ],
+        "received_players": [
+          {
+            "player": "Dejounte Murray",
+            "pre_fpg": 49.2,
+            "post_fpg": 39.2,
+            "delta": -10.0,
+            "pre_ppg": 21.1,
+            "post_ppg": 20.5,
+            "dynasty_rank": 109,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -10.0,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Dejounte Murray"
+        ],
+        "received": [
+          "James Harden"
+        ],
+        "received_players": [
+          {
+            "player": "James Harden",
+            "pre_fpg": 48.0,
+            "post_fpg": 46.1,
+            "delta": -1.9,
+            "pre_ppg": 22.0,
+            "post_ppg": 21.0,
+            "dynasty_rank": 65,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -1.9,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received -1.9 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 54,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Vlandis 2023 2nd round (#13 overall)"
+        ],
+        "received": [
+          "Green 2022 2nd round (#14 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Green",
+        "gave": [
+          "Green 2022 2nd round (#14 overall)"
+        ],
+        "received": [
+          "Vlandis 2023 2nd round (#13 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Green 2022 2nd round (#14 overall)"
+        },
+        {
+          "received_by": "Green",
+          "pick": "Vlandis 2023 2nd round (#13 overall)"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 55,
+      "season": "2021-22",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Green 2022 2nd round (#14 overall)"
+        ],
+        "received": [
+          "Delaney 2022 2nd round (#17 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Delaney 2022 2nd round (#17 overall)"
+        ],
+        "received": [
+          "Green 2022 2nd round (#14 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Delaney 2022 2nd round (#17 overall)"
+        },
+        {
+          "received_by": "Jowkar",
+          "pick": "Green 2022 2nd round (#14 overall)"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 56,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Peterson 2025 1st Round"
+        ],
+        "received": [
+          "Klay Thompson"
+        ],
+        "received_players": [
+          {
+            "player": "Klay Thompson",
+            "pre_fpg": 31.9,
+            "post_fpg": 27.1,
+            "delta": -4.8,
+            "pre_ppg": 21.9,
+            "post_ppg": 17.9,
+            "dynasty_rank": 349,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.8,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Klay Thompson"
+        ],
+        "received": [
+          "Peterson 2025 1st Round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Peterson 2025 1st Round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 57,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Brandom Ingram"
+        ],
+        "received": [
+          "Green 2024 1st Round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Green 2024 1st Round"
+        ],
+        "received": [
+          "Brandom Ingram"
+        ],
+        "received_players": [
+          {
+            "player": "Brandom Ingram",
+            "pre_fpg": 40.0,
+            "post_fpg": 37.2,
+            "delta": -2.8,
+            "pre_ppg": 24.7,
+            "post_ppg": 20.8,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.8,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Green 2024 1st Round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 58,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Paul George"
+        ],
+        "received": [
+          "Dejounte Murray"
+        ],
+        "received_players": [
+          {
+            "player": "Dejounte Murray",
+            "pre_fpg": 39.2,
+            "post_fpg": 41.0,
+            "delta": 1.8,
+            "pre_ppg": 20.5,
+            "post_ppg": 22.5,
+            "dynasty_rank": 109,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.8,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Dejounte Murray"
+        ],
+        "received": [
+          "Paul George"
+        ],
+        "received_players": [
+          {
+            "player": "Paul George",
+            "pre_fpg": 41.4,
+            "post_fpg": 38.0,
+            "delta": -3.4,
+            "pre_ppg": 23.8,
+            "post_ppg": 22.6,
+            "dynasty_rank": 152,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.4,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +1.8 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 59,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Pascal Siakam"
+        ],
+        "received": [
+          "Berke 2023 1st round (#6 overall)",
+          "Malik Beasley",
+          "Killian Hayes"
+        ],
+        "received_players": [
+          {
+            "player": "Malik Beasley",
+            "pre_fpg": 20.7,
+            "post_fpg": 19.5,
+            "delta": -1.2,
+            "pre_ppg": 12.7,
+            "post_ppg": 11.3,
+            "dynasty_rank": null,
+            "status": "graded"
+          },
+          {
+            "player": "Killian Hayes",
+            "pre_fpg": 26.2,
+            "post_fpg": 20.6,
+            "delta": -5.6,
+            "pre_ppg": 10.3,
+            "post_ppg": 6.9,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.8,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Berke 2023 1st round (#6 overall)",
+          "Malik Beasley",
+          "Killian Hayes"
+        ],
+        "received": [
+          "Pascal Siakam"
+        ],
+        "received_players": [
+          {
+            "player": "Pascal Siakam",
+            "pre_fpg": 44.1,
+            "post_fpg": 38.2,
+            "delta": -5.9,
+            "pre_ppg": 24.2,
+            "post_ppg": 21.7,
+            "dynasty_rank": 88,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -5.9,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Delaney",
+          "pick": "Berke 2023 1st round (#6 overall)"
+        }
+      ],
+      "summary": "Roughly even trade \u2014 both sides got comparable production.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 60,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Jarred Vanderbilt"
+        ],
+        "received": [
+          "Nicolas Claxton"
+        ],
+        "received_players": [
+          {
+            "player": "Nicolas Claxton",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Green",
+        "gave": [
+          "Nicolas Claxton"
+        ],
+        "received": [
+          "Jarred Vanderbilt"
+        ],
+        "received_players": [
+          {
+            "player": "Jarred Vanderbilt",
+            "pre_fpg": 23.5,
+            "post_fpg": 16.0,
+            "delta": -7.5,
+            "pre_ppg": 7.9,
+            "post_ppg": 5.2,
+            "dynasty_rank": 346,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.5,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +0.0 FPts/g net). Green got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 61,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "John Collins"
+        ],
+        "received": [
+          "Peterson 2025 1st round",
+          "John Wall"
+        ],
+        "received_players": [
+          {
+            "player": "John Wall",
+            "pre_fpg": 23.6,
+            "post_fpg": null,
+            "delta": -11.8,
+            "pre_ppg": 11.4,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -11.8,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Peterson 2025 1st round",
+          "John Wall"
+        ],
+        "received": [
+          "John Collins"
+        ],
+        "received_players": [
+          {
+            "player": "John Collins",
+            "pre_fpg": 26.4,
+            "post_fpg": 30.0,
+            "delta": 3.6,
+            "pre_ppg": 13.1,
+            "post_ppg": 15.1,
+            "dynasty_rank": 138,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 3.6,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Peterson 2025 1st round"
+        }
+      ],
+      "summary": "Delaney won this trade (received +3.6 FPts/g net). HaleTrager got the short end.",
+      "grade_confidence": "medium"
+    },
+    {
+      "trade_index": 62,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Gold",
+        "gave": [
+          "Kristaps Porzingis"
+        ],
+        "received": [
+          "Moss 2023 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Moss",
+        "gave": [
+          "Moss 2023 1st round"
+        ],
+        "received": [
+          "Kristaps Porzingis"
+        ],
+        "received_players": [
+          {
+            "player": "Kristaps Porzingis",
+            "pre_fpg": 42.4,
+            "post_fpg": 37.9,
+            "delta": -4.5,
+            "pre_ppg": 23.2,
+            "post_ppg": 20.1,
+            "dynasty_rank": 151,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.5,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Gold",
+          "pick": "Moss 2023 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 63,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Nicholas Claxton"
+        ],
+        "received": [
+          "Peterson 2025 1st round",
+          "John Konchar",
+          "Bol Bol"
+        ],
+        "received_players": [
+          {
+            "player": "John Konchar",
+            "pre_fpg": 16.1,
+            "post_fpg": 17.5,
+            "delta": 1.4,
+            "pre_ppg": 5.1,
+            "post_ppg": 4.3,
+            "dynasty_rank": 432,
+            "status": "graded"
+          },
+          {
+            "player": "Bol Bol",
+            "pre_fpg": 20.8,
+            "post_fpg": 11.6,
+            "delta": -9.2,
+            "pre_ppg": 9.1,
+            "post_ppg": 5.2,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.8,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Peterson 2025 1st round",
+          "John Konchar",
+          "Bol Bol"
+        ],
+        "received": [
+          "Nicholas Claxton"
+        ],
+        "received_players": [
+          {
+            "player": "Nicholas Claxton",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Peterson",
+          "pick": "Peterson 2025 1st round"
+        }
+      ],
+      "summary": "HaleTrager won this trade (received +0.0 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 64,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "De'Andre Hunter"
+        ],
+        "received": [
+          "Vlandis 2027 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Vlandis 2027 2nd round"
+        ],
+        "received": [
+          "De'Andre Hunter"
+        ],
+        "received_players": [
+          {
+            "player": "De'Andre Hunter",
+            "pre_fpg": 23.7,
+            "post_fpg": 24.0,
+            "delta": 0.3,
+            "pre_ppg": 15.4,
+            "post_ppg": 15.6,
+            "dynasty_rank": 183,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.3,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Vlandis 2027 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 65,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Moss",
+        "gave": [
+          "Brandon Clarke"
+        ],
+        "received": [
+          "Kyle Anderson"
+        ],
+        "received_players": [
+          {
+            "player": "Kyle Anderson",
+            "pre_fpg": 27.6,
+            "post_fpg": 20.2,
+            "delta": -7.4,
+            "pre_ppg": 9.4,
+            "post_ppg": 6.4,
+            "dynasty_rank": 407,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.4,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Gold",
+        "gave": [
+          "Kyle Anderson"
+        ],
+        "received": [
+          "Brandon Clarke"
+        ],
+        "received_players": [
+          {
+            "player": "Brandon Clarke",
+            "pre_fpg": 21.5,
+            "post_fpg": 24.8,
+            "delta": 3.3,
+            "pre_ppg": 10.0,
+            "post_ppg": 11.3,
+            "dynasty_rank": 290,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 3.3,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Gold won this trade (received +3.3 FPts/g net). Moss got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 66,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Marcus Smart"
+        ],
+        "received": [
+          "Green 2023 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Green 2023 2nd round"
+        ],
+        "received": [
+          "Marcus Smart"
+        ],
+        "received_players": [
+          {
+            "player": "Marcus Smart",
+            "pre_fpg": 28.1,
+            "post_fpg": 28.3,
+            "delta": 0.2,
+            "pre_ppg": 11.5,
+            "post_ppg": 14.5,
+            "dynasty_rank": 253,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.2,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Green 2023 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 67,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Gold",
+        "gave": [
+          "Kyle Kuzma"
+        ],
+        "received": [
+          "Green 2024 1st round",
+          "Caleb Martin",
+          "Chris Duarte"
+        ],
+        "received_players": [
+          {
+            "player": "Caleb Martin",
+            "pre_fpg": 20.9,
+            "post_fpg": 21.0,
+            "delta": 0.1,
+            "pre_ppg": 9.6,
+            "post_ppg": 10.0,
+            "dynasty_rank": 394,
+            "status": "graded"
+          },
+          {
+            "player": "Chris Duarte",
+            "pre_fpg": 14.2,
+            "post_fpg": 8.5,
+            "delta": -5.7,
+            "pre_ppg": 7.9,
+            "post_ppg": 3.9,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -5.6,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Green 2024 1st round",
+          "Caleb Martin",
+          "Chris Duarte"
+        ],
+        "received": [
+          "Kyle Kuzma"
+        ],
+        "received_players": [
+          {
+            "player": "Kyle Kuzma",
+            "pre_fpg": 35.7,
+            "post_fpg": 37.3,
+            "delta": 1.6,
+            "pre_ppg": 21.2,
+            "post_ppg": 22.2,
+            "dynasty_rank": 279,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.6,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Gold",
+          "pick": "Green 2024 1st round"
+        }
+      ],
+      "summary": "Delaney won this trade (received +1.6 FPts/g net). Gold got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 68,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Gold 2023 2nd round"
+        ],
+        "received": [
+          "Kelly Oubre Jr."
+        ],
+        "received_players": [
+          {
+            "player": "Kelly Oubre Jr.",
+            "pre_fpg": 32.3,
+            "post_fpg": 27.7,
+            "delta": -4.6,
+            "pre_ppg": 20.3,
+            "post_ppg": 15.4,
+            "dynasty_rank": 214,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.6,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Kelly Oubre Jr."
+        ],
+        "received": [
+          "Gold 2023 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Berke",
+          "pick": "Gold 2023 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 69,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Vlandis 2026 1st round"
+        ],
+        "received": [
+          "Green 2024 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Green 2024 1st round"
+        ],
+        "received": [
+          "Vlandis 2026 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Delaney",
+          "pick": "Green 2024 1st round"
+        },
+        {
+          "received_by": "HaleTrager",
+          "pick": "Vlandis 2026 1st round"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 70,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Wendall Carter Jr."
+        ],
+        "received": [
+          "Kyrie Irving"
+        ],
+        "received_players": [
+          {
+            "player": "Kyrie Irving",
+            "pre_fpg": 45.1,
+            "post_fpg": 43.0,
+            "delta": -2.1,
+            "pre_ppg": 27.1,
+            "post_ppg": 25.6,
+            "dynasty_rank": 64,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.1,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Kyrie Irving"
+        ],
+        "received": [
+          "Wendall Carter Jr."
+        ],
+        "received_players": [
+          {
+            "player": "Wendall Carter Jr.",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Zujewski won this trade (received +0.0 FPts/g net). Delaney got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 71,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Gold",
+        "gave": [
+          "Cam Johnson"
+        ],
+        "received": [
+          "Delaney 2027 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Delaney 2027 1st round"
+        ],
+        "received": [
+          "Cam Johnson"
+        ],
+        "received_players": [
+          {
+            "player": "Cam Johnson",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Gold",
+          "pick": "Delaney 2027 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 72,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Delaney 2024 1st round"
+        ],
+        "received": [
+          "Kawhi Leonard"
+        ],
+        "received_players": [
+          {
+            "player": "Kawhi Leonard",
+            "pre_fpg": 41.5,
+            "post_fpg": 42.1,
+            "delta": 0.6,
+            "pre_ppg": 23.8,
+            "post_ppg": 23.7,
+            "dynasty_rank": 80,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.6,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Kawhi Leonard"
+        ],
+        "received": [
+          "Delaney 2024 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Zujewski",
+          "pick": "Delaney 2024 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 73,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Jaren Jackson Jr"
+        ],
+        "received": [
+          "Anthony Davis"
+        ],
+        "received_players": [
+          {
+            "player": "Anthony Davis",
+            "pre_fpg": 51.9,
+            "post_fpg": 53.5,
+            "delta": 1.6,
+            "pre_ppg": 25.9,
+            "post_ppg": 24.7,
+            "dynasty_rank": 52,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.6,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Anthony Davis"
+        ],
+        "received": [
+          "Jaren Jackson Jr"
+        ],
+        "received_players": [
+          {
+            "player": "Jaren Jackson Jr",
+            "pre_fpg": 38.6,
+            "post_fpg": 38.6,
+            "delta": 0.0,
+            "pre_ppg": 18.6,
+            "post_ppg": 22.5,
+            "dynasty_rank": 48,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +1.6 FPts/g net). Zujewski got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 74,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Cam Whitmore"
+        ],
+        "received": [
+          "Delaney 2027 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Gold",
+        "gave": [
+          "Delaney 2027 1st round"
+        ],
+        "received": [
+          "Cam Whitmore"
+        ],
+        "received_players": [
+          {
+            "player": "Cam Whitmore",
+            "pre_fpg": null,
+            "post_fpg": 19.9,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": 12.3,
+            "dynasty_rank": 277,
+            "status": "no_baseline"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Delaney 2027 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 75,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Gold 2023 2nd round"
+        ],
+        "received": [
+          "Donte DiVincenzo"
+        ],
+        "received_players": [
+          {
+            "player": "Donte DiVincenzo",
+            "pre_fpg": 22.7,
+            "post_fpg": 27.7,
+            "delta": 5.0,
+            "pre_ppg": 9.4,
+            "post_ppg": 15.5,
+            "dynasty_rank": 104,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 5.0,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Donte DiVincenzo"
+        ],
+        "received": [
+          "Gold 2023 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Gold 2023 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 76,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Jordan Clarkson"
+        ],
+        "received": [
+          "Mo Bamba"
+        ],
+        "received_players": [
+          {
+            "player": "Mo Bamba",
+            "pre_fpg": 16.5,
+            "post_fpg": 14.3,
+            "delta": -2.2,
+            "pre_ppg": 6.6,
+            "post_ppg": 4.4,
+            "dynasty_rank": null,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.2,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Mo Bamba"
+        ],
+        "received": [
+          "Jordan Clarkson"
+        ],
+        "received_players": [
+          {
+            "player": "Jordan Clarkson",
+            "pre_fpg": 31.3,
+            "post_fpg": 28.1,
+            "delta": -3.2,
+            "pre_ppg": 20.8,
+            "post_ppg": 17.1,
+            "dynasty_rank": 371,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Roughly even trade \u2014 both sides got comparable production.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 77,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Jordan Clarkson"
+        ],
+        "received": [
+          "Moss 2026 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Moss",
+        "gave": [
+          "Moss 2026 2nd round"
+        ],
+        "received": [
+          "Jordan Clarkson"
+        ],
+        "received_players": [
+          {
+            "player": "Jordan Clarkson",
+            "pre_fpg": 31.3,
+            "post_fpg": 28.1,
+            "delta": -3.2,
+            "pre_ppg": 20.8,
+            "post_ppg": 17.1,
+            "dynasty_rank": 371,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Moss 2026 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 78,
+      "season": "2022-23",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Tobias Harris"
+        ],
+        "received": [
+          "Josh Hart"
+        ],
+        "received_players": [
+          {
+            "player": "Josh Hart",
+            "pre_fpg": 27.9,
+            "post_fpg": 27.6,
+            "delta": -0.3,
+            "pre_ppg": 9.8,
+            "post_ppg": 9.4,
+            "dynasty_rank": 106,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.3,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Josh Hart"
+        ],
+        "received": [
+          "Tobias Harris"
+        ],
+        "received_players": [
+          {
+            "player": "Tobias Harris",
+            "pre_fpg": 28.3,
+            "post_fpg": 33.5,
+            "delta": 5.2,
+            "pre_ppg": 14.7,
+            "post_ppg": 17.2,
+            "dynasty_rank": 197,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 5.2,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received +5.2 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 79,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Kelley 2028 1st round"
+        ],
+        "received": [
+          "Kristaps Porzingus"
+        ],
+        "received_players": [
+          {
+            "player": "Kristaps Porzingus",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Moss",
+        "gave": [
+          "Kristaps Porzingus"
+        ],
+        "received": [
+          "Kelley 2028 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Moss",
+          "pick": "Kelley 2028 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 80,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Desmond Bane"
+        ],
+        "received": [
+          "Trager 2024 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Trager 2024 1st round"
+        ],
+        "received": [
+          "Desmond Bane"
+        ],
+        "received_players": [
+          {
+            "player": "Desmond Bane",
+            "pre_fpg": 39.0,
+            "post_fpg": 36.9,
+            "delta": -2.1,
+            "pre_ppg": 23.7,
+            "post_ppg": 19.2,
+            "dynasty_rank": 47,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.1,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Baden",
+          "pick": "Trager 2024 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 81,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Coby White"
+        ],
+        "received": [
+          "Delaney 2025 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Delaney 2025 2nd round"
+        ],
+        "received": [
+          "Coby White"
+        ],
+        "received_players": [
+          {
+            "player": "Coby White",
+            "pre_fpg": 32.8,
+            "post_fpg": 32.5,
+            "delta": -0.3,
+            "pre_ppg": 19.1,
+            "post_ppg": 20.4,
+            "dynasty_rank": 127,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.3,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Peterson",
+          "pick": "Delaney 2025 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 82,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Jaylen Brown"
+        ],
+        "received": [
+          "Jaime Jaquez"
+        ],
+        "received_players": [
+          {
+            "player": "Jaime Jaquez",
+            "pre_fpg": 22.8,
+            "post_fpg": 19.4,
+            "delta": -3.4,
+            "pre_ppg": 11.9,
+            "post_ppg": 8.6,
+            "dynasty_rank": 177,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.4,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Jaime Jaquez"
+        ],
+        "received": [
+          "Jaylen Brown"
+        ],
+        "received_players": [
+          {
+            "player": "Jaylen Brown",
+            "pre_fpg": 37.7,
+            "post_fpg": 37.8,
+            "delta": 0.1,
+            "pre_ppg": 23.0,
+            "post_ppg": 22.2,
+            "dynasty_rank": 53,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.1,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Zujewski won this trade (received +0.1 FPts/g net). Delaney got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 83,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Moss",
+        "gave": [
+          "De'Aaron Fox"
+        ],
+        "received": [
+          "CJ McCollum"
+        ],
+        "received_players": [
+          {
+            "player": "CJ McCollum",
+            "pre_fpg": 34.9,
+            "post_fpg": 33.5,
+            "delta": -1.4,
+            "pre_ppg": 20.0,
+            "post_ppg": 21.1,
+            "dynasty_rank": 232,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -1.4,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "CJ McCollum"
+        ],
+        "received": [
+          "De'Aaron Fox"
+        ],
+        "received_players": [
+          {
+            "player": "De'Aaron Fox",
+            "pre_fpg": 45.1,
+            "post_fpg": 41.6,
+            "delta": -3.5,
+            "pre_ppg": 26.6,
+            "post_ppg": 23.5,
+            "dynasty_rank": 59,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.5,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Moss won this trade (received -1.4 FPts/g net). Baden got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 84,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Mitchell Robinson"
+        ],
+        "received": [
+          "Clint Capela"
+        ],
+        "received_players": [
+          {
+            "player": "Clint Capela",
+            "pre_fpg": 31.3,
+            "post_fpg": 24.7,
+            "delta": -6.6,
+            "pre_ppg": 11.5,
+            "post_ppg": 8.9,
+            "dynasty_rank": 300,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.6,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Clint Capela"
+        ],
+        "received": [
+          "Mitchell Robinson"
+        ],
+        "received_players": [
+          {
+            "player": "Mitchell Robinson",
+            "pre_fpg": 22.8,
+            "post_fpg": 18.8,
+            "delta": -4.0,
+            "pre_ppg": 5.6,
+            "post_ppg": 5.1,
+            "dynasty_rank": 161,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.0,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Baden won this trade (received -4.0 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 85,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Darius Garland"
+        ],
+        "received": [
+          "Devin Booker"
+        ],
+        "received_players": [
+          {
+            "player": "Devin Booker",
+            "pre_fpg": 44.2,
+            "post_fpg": 41.6,
+            "delta": -2.6,
+            "pre_ppg": 27.1,
+            "post_ppg": 25.6,
+            "dynasty_rank": 28,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.6,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Devin Booker"
+        ],
+        "received": [
+          "Darius Garland"
+        ],
+        "received_players": [
+          {
+            "player": "Darius Garland",
+            "pre_fpg": 32.1,
+            "post_fpg": 35.5,
+            "delta": 3.4,
+            "pre_ppg": 18.0,
+            "post_ppg": 20.6,
+            "dynasty_rank": 39,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 3.4,
+        "grade": "A",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +3.4 FPts/g net). HaleTrager got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 86,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Shai Gilgeous-Alexander"
+        ],
+        "received": [
+          "Kevin Durant"
+        ],
+        "received_players": [
+          {
+            "player": "Kevin Durant",
+            "pre_fpg": 45.5,
+            "post_fpg": 43.0,
+            "delta": -2.5,
+            "pre_ppg": 27.1,
+            "post_ppg": 26.6,
+            "dynasty_rank": 66,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.5,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "Kevin Durant"
+        ],
+        "received": [
+          "Shai Gilgeous-Alexander"
+        ],
+        "received_players": [
+          {
+            "player": "Shai Gilgeous-Alexander",
+            "pre_fpg": 52.5,
+            "post_fpg": 54.0,
+            "delta": 1.5,
+            "pre_ppg": 30.1,
+            "post_ppg": 32.7,
+            "dynasty_rank": 2,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.5,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +1.5 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 87,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Jerami Grant"
+        ],
+        "received": [
+          "Daniel Gafford"
+        ],
+        "received_players": [
+          {
+            "player": "Daniel Gafford",
+            "pre_fpg": 30.5,
+            "post_fpg": 28.0,
+            "delta": -2.5,
+            "pre_ppg": 11.0,
+            "post_ppg": 12.3,
+            "dynasty_rank": 142,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.5,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Daniel Gafford"
+        ],
+        "received": [
+          "Jerami Grant"
+        ],
+        "received_players": [
+          {
+            "player": "Jerami Grant",
+            "pre_fpg": 31.5,
+            "post_fpg": 26.1,
+            "delta": -5.4,
+            "pre_ppg": 21.0,
+            "post_ppg": 14.4,
+            "dynasty_rank": 180,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -5.4,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Baden won this trade (received -2.5 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 88,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Bradley Beal"
+        ],
+        "received": [
+          "Peterson 2025 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Peterson 2025 1st round"
+        ],
+        "received": [
+          "Bradley Beal"
+        ],
+        "received_players": [
+          {
+            "player": "Bradley Beal",
+            "pre_fpg": 33.0,
+            "post_fpg": 29.4,
+            "delta": -3.6,
+            "pre_ppg": 18.2,
+            "post_ppg": 17.0,
+            "dynasty_rank": 231,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.6,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Delaney",
+          "pick": "Peterson 2025 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 89,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Donte Divincenzo"
+        ],
+        "received": [
+          "Berke 2029 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Berke 2029 2nd round"
+        ],
+        "received": [
+          "Donte Divincenzo"
+        ],
+        "received_players": [
+          {
+            "player": "Donte Divincenzo",
+            "pre_fpg": 27.7,
+            "post_fpg": 24.4,
+            "delta": -3.3,
+            "pre_ppg": 15.5,
+            "post_ppg": 11.7,
+            "dynasty_rank": 104,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.3,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Berke 2029 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 90,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Kyle Kuzma"
+        ],
+        "received": [
+          "Dyson Daniels"
+        ],
+        "received_players": [
+          {
+            "player": "Dyson Daniels",
+            "pre_fpg": 18.9,
+            "post_fpg": 36.9,
+            "delta": 18.0,
+            "pre_ppg": 5.8,
+            "post_ppg": 14.1,
+            "dynasty_rank": 87,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 18.0,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Green",
+        "gave": [
+          "Dyson Daniels"
+        ],
+        "received": [
+          "Kyle Kuzma"
+        ],
+        "received_players": [
+          {
+            "player": "Kyle Kuzma",
+            "pre_fpg": 37.3,
+            "post_fpg": 25.6,
+            "delta": -11.7,
+            "pre_ppg": 22.2,
+            "post_ppg": 14.8,
+            "dynasty_rank": 279,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -11.7,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +18.0 FPts/g net). Green got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 91,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Delaney 2024 1st round (#6 overall)"
+        ],
+        "received": [
+          "Kelley 2024 1st round (#5 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Kelley 2024 1st round (#5 overall)"
+        ],
+        "received": [
+          "Delaney 2024 1st round (#6 overall)"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Delaney",
+          "pick": "Kelley 2024 1st round (#5 overall)"
+        },
+        {
+          "received_by": "Baden",
+          "pick": "Delaney 2024 1st round (#6 overall)"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 92,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Clint Capela"
+        ],
+        "received": [
+          "Kawhi Leonard"
+        ],
+        "received_players": [
+          {
+            "player": "Kawhi Leonard",
+            "pre_fpg": 42.1,
+            "post_fpg": 37.6,
+            "delta": -4.5,
+            "pre_ppg": 23.7,
+            "post_ppg": 21.5,
+            "dynasty_rank": 80,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.5,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Kawhi Leonard"
+        ],
+        "received": [
+          "Clint Capela"
+        ],
+        "received_players": [
+          {
+            "player": "Clint Capela",
+            "pre_fpg": 31.3,
+            "post_fpg": 24.7,
+            "delta": -6.6,
+            "pre_ppg": 11.5,
+            "post_ppg": 8.9,
+            "dynasty_rank": 300,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.6,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received -4.5 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 93,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Klay Thompson"
+        ],
+        "received": [
+          "Luguentz Dort"
+        ],
+        "received_players": [
+          {
+            "player": "Luguentz Dort",
+            "pre_fpg": 20.9,
+            "post_fpg": 21.5,
+            "delta": 0.6,
+            "pre_ppg": 10.9,
+            "post_ppg": 10.1,
+            "dynasty_rank": 237,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.6,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Luguentz Dort"
+        ],
+        "received": [
+          "Klay Thompson"
+        ],
+        "received_players": [
+          {
+            "player": "Klay Thompson",
+            "pre_fpg": 27.1,
+            "post_fpg": 23.2,
+            "delta": -3.9,
+            "pre_ppg": 17.9,
+            "post_ppg": 14.0,
+            "dynasty_rank": 349,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.9,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +0.6 FPts/g net). Jowkar got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 94,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Shai Gilgeous-Alexander"
+        ],
+        "received": [
+          "Devin Booker"
+        ],
+        "received_players": [
+          {
+            "player": "Devin Booker",
+            "pre_fpg": 44.2,
+            "post_fpg": 41.6,
+            "delta": -2.6,
+            "pre_ppg": 27.1,
+            "post_ppg": 25.6,
+            "dynasty_rank": 28,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.6,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Gold",
+        "gave": [
+          "Devin Booker"
+        ],
+        "received": [
+          "Shai Gilgeous-Alexander"
+        ],
+        "received_players": [
+          {
+            "player": "Shai Gilgeous-Alexander",
+            "pre_fpg": 52.5,
+            "post_fpg": 54.0,
+            "delta": 1.5,
+            "pre_ppg": 30.1,
+            "post_ppg": 32.7,
+            "dynasty_rank": 2,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.5,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Gold won this trade (received +1.5 FPts/g net). Delaney got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 95,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Brandon Podziemski"
+        ],
+        "received": [
+          "Jowkar 2026 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Jowkar 2026 1st round"
+        ],
+        "received": [
+          "Brandon Podziemski"
+        ],
+        "received_players": [
+          {
+            "player": "Brandon Podziemski",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Peterson",
+          "pick": "Jowkar 2026 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 96,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Jusuf Nurkic"
+        ],
+        "received": [
+          "Kyrie Irving"
+        ],
+        "received_players": [
+          {
+            "player": "Kyrie Irving",
+            "pre_fpg": 43.0,
+            "post_fpg": 40.6,
+            "delta": -2.4,
+            "pre_ppg": 25.6,
+            "post_ppg": 24.7,
+            "dynasty_rank": 64,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.4,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "Kyrie Irving"
+        ],
+        "received": [
+          "Jusuf Nurkic"
+        ],
+        "received_players": [
+          {
+            "player": "Jusuf Nurkic",
+            "pre_fpg": 34.4,
+            "post_fpg": 24.3,
+            "delta": -10.1,
+            "pre_ppg": 10.9,
+            "post_ppg": 8.9,
+            "dynasty_rank": 226,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -10.1,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Peterson won this trade (received -2.4 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 97,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Draymond Green"
+        ],
+        "received": [
+          "Jowkar 2024 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Jowkar 2024 2nd round"
+        ],
+        "received": [
+          "Draymond Green"
+        ],
+        "received_players": [
+          {
+            "player": "Draymond Green",
+            "pre_fpg": 29.4,
+            "post_fpg": 29.6,
+            "delta": 0.2,
+            "pre_ppg": 8.6,
+            "post_ppg": 9.0,
+            "dynasty_rank": 206,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 0.2,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Delaney",
+          "pick": "Jowkar 2024 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 98,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Bojan Bogdanovic"
+        ],
+        "received": [
+          "De'Andre Hunter"
+        ],
+        "received_players": [
+          {
+            "player": "De'Andre Hunter",
+            "pre_fpg": 24.0,
+            "post_fpg": 25.6,
+            "delta": 1.6,
+            "pre_ppg": 15.6,
+            "post_ppg": 17.0,
+            "dynasty_rank": 183,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.6,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "De'Andre Hunter"
+        ],
+        "received": [
+          "Bojan Bogdanovic"
+        ],
+        "received_players": [
+          {
+            "player": "Bojan Bogdanovic",
+            "pre_fpg": 21.0,
+            "post_fpg": null,
+            "delta": -10.5,
+            "pre_ppg": 15.2,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -10.5,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "pick_components": [],
+      "summary": "Delaney won this trade (received +1.6 FPts/g net). Berke got the short end.",
+      "grade_confidence": "medium"
+    },
+    {
+      "trade_index": 99,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Tyus Jones"
+        ],
+        "received": [
+          "Delaney 2025 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Delaney 2025 2nd round"
+        ],
+        "received": [
+          "Tyus Jones"
+        ],
+        "received_players": [
+          {
+            "player": "Tyus Jones",
+            "pre_fpg": 29.4,
+            "post_fpg": 22.9,
+            "delta": -6.5,
+            "pre_ppg": 12.0,
+            "post_ppg": 10.2,
+            "dynasty_rank": 358,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.5,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Delaney",
+          "pick": "Delaney 2025 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 100,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Berke 2028 2nd round"
+        ],
+        "received": [
+          "Saddiq Bey"
+        ],
+        "received_players": [
+          {
+            "player": "Saddiq Bey",
+            "pre_fpg": 25.9,
+            "post_fpg": null,
+            "delta": -12.9,
+            "pre_ppg": 13.7,
+            "post_ppg": null,
+            "dynasty_rank": 228,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -12.9,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Saddiq Bey"
+        ],
+        "received": [
+          "Berke 2028 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Berke 2028 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 101,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "De'Aaron Fox"
+        ],
+        "received": [
+          "Jonas Valanciunas"
+        ],
+        "received_players": [
+          {
+            "player": "Jonas Valanciunas",
+            "pre_fpg": 28.1,
+            "post_fpg": 24.4,
+            "delta": -3.7,
+            "pre_ppg": 12.2,
+            "post_ppg": 10.4,
+            "dynasty_rank": 359,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.7,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Moss",
+        "gave": [
+          "Jonas Valanciunas"
+        ],
+        "received": [
+          "De'Aaron Fox"
+        ],
+        "received_players": [
+          {
+            "player": "De'Aaron Fox",
+            "pre_fpg": 45.1,
+            "post_fpg": 41.6,
+            "delta": -3.5,
+            "pre_ppg": 26.6,
+            "post_ppg": 23.5,
+            "dynasty_rank": 59,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.5,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Roughly even trade \u2014 both sides got comparable production.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 102,
+      "season": "2023-24",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "D'Angelo Russell"
+        ],
+        "received": [
+          "Marvin Bagley"
+        ],
+        "received_players": [
+          {
+            "player": "Marvin Bagley",
+            "pre_fpg": 22.9,
+            "post_fpg": 9.6,
+            "delta": -13.3,
+            "pre_ppg": 11.7,
+            "post_ppg": 4.4,
+            "dynasty_rank": 345,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -13.3,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Marvin Bagley"
+        ],
+        "received": [
+          "D'Angelo Russell"
+        ],
+        "received_players": [
+          {
+            "player": "D'Angelo Russell",
+            "pre_fpg": 33.3,
+            "post_fpg": 25.9,
+            "delta": -7.4,
+            "pre_ppg": 18.0,
+            "post_ppg": 12.6,
+            "dynasty_rank": 333,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.4,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received -7.4 FPts/g net). Baden got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 103,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "Zujewski",
+        "gave": [
+          "Wendall Carter Jr."
+        ],
+        "received": [
+          "Peterson 2026 2nd round",
+          "Spencer Dinwiddie"
+        ],
+        "received_players": [
+          {
+            "player": "Spencer Dinwiddie",
+            "pre_fpg": 22.7,
+            "post_fpg": null,
+            "delta": -11.3,
+            "pre_ppg": 11.0,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -11.3,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Peterson 2026 2nd round",
+          "Spencer Dinwiddie"
+        ],
+        "received": [
+          "Wendall Carter Jr."
+        ],
+        "received_players": [
+          {
+            "player": "Wendall Carter Jr.",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Zujewski",
+          "pick": "Peterson 2026 2nd round"
+        }
+      ],
+      "summary": "Peterson won this trade (received +0.0 FPts/g net). Zujewski got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 104,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Kelley 2025 2nd round"
+        ],
+        "received": [
+          "Gold 2027 2nd round",
+          "Berke 2025 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Gold 2027 2nd round",
+          "Berke 2025 1st round"
+        ],
+        "received": [
+          "Kelley 2025 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Baden",
+          "pick": "Gold 2027 2nd round"
+        },
+        {
+          "received_by": "Baden",
+          "pick": "Berke 2025 1st round"
+        },
+        {
+          "received_by": "Baden",
+          "pick": "Kelley 2025 2nd round"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 105,
+      "season": "2024-25",
+      "date": "2025-07-26",
+      "side_a": {
+        "owner": "Baden",
+        "gave": [
+          "Mikal Bridges"
+        ],
+        "received": [
+          "Jowkar 2026 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Jowkar 2026 1st round"
+        ],
+        "received": [
+          "Mikal Bridges"
+        ],
+        "received_players": [
+          {
+            "player": "Mikal Bridges",
+            "pre_fpg": 29.6,
+            "post_fpg": 32.3,
+            "delta": 2.7,
+            "pre_ppg": 17.6,
+            "post_ppg": 15.8,
+            "dynasty_rank": 74,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 2.7,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Baden",
+          "pick": "Jowkar 2026 1st round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 106,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Zujewski 2026 2nd round",
+          "Berke 2027 1st round"
+        ],
+        "received": [
+          "Baden 2025 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Baden 2025 2nd round"
+        ],
+        "received": [
+          "Zujewski 2026 2nd round",
+          "Berke 2027 1st round"
+        ],
+        "received_players": [],
+        "received_delta": 0,
+        "grade": "INC",
+        "grade_reason": "pick-only trade",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Peterson",
+          "pick": "Baden 2025 2nd round"
+        },
+        {
+          "received_by": "Baden",
+          "pick": "Zujewski 2026 2nd round"
+        },
+        {
+          "received_by": "Baden",
+          "pick": "Berke 2027 1st round"
+        }
+      ],
+      "summary": "Pick-only trade \u2014 graded on pick outcomes only.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 107,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Mark Williams"
+        ],
+        "received": [
+          "Ivica Zubac"
+        ],
+        "received_players": [
+          {
+            "player": "Ivica Zubac",
+            "pre_fpg": 39.8,
+            "post_fpg": 32.6,
+            "delta": -7.2,
+            "pre_ppg": 16.8,
+            "post_ppg": 14.4,
+            "dynasty_rank": 54,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Gold",
+        "gave": [
+          "Ivica Zubac"
+        ],
+        "received": [
+          "Mark Williams"
+        ],
+        "received_players": [
+          {
+            "player": "Mark Williams",
+            "pre_fpg": 35.4,
+            "post_fpg": 28.2,
+            "delta": -7.2,
+            "pre_ppg": 15.3,
+            "post_ppg": 12.1,
+            "dynasty_rank": 95,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Roughly even trade \u2014 both sides got comparable production.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 108,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Daniel Gafford"
+        ],
+        "received": [
+          "Gold 2030 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Gold",
+        "gave": [
+          "Gold 2030 2nd round"
+        ],
+        "received": [
+          "Daniel Gafford"
+        ],
+        "received_players": [
+          {
+            "player": "Daniel Gafford",
+            "pre_fpg": 28.0,
+            "post_fpg": 22.2,
+            "delta": -5.8,
+            "pre_ppg": 12.3,
+            "post_ppg": 8.0,
+            "dynasty_rank": 142,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -5.8,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "HaleTrager",
+          "pick": "Gold 2030 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 109,
+      "season": "2024-25",
+      "date": "2025-07-27",
+      "side_a": {
+        "owner": "Green",
+        "gave": [
+          "Joel Embiid"
+        ],
+        "received": [
+          "Bam Adebayo"
+        ],
+        "received_players": [
+          {
+            "player": "Bam Adebayo",
+            "pre_fpg": 40.0,
+            "post_fpg": 37.7,
+            "delta": -2.3,
+            "pre_ppg": 18.1,
+            "post_ppg": 18.4,
+            "dynasty_rank": 44,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -2.3,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Moss",
+        "gave": [
+          "Bam Adebayo"
+        ],
+        "received": [
+          "Joel Embiid"
+        ],
+        "received_players": [
+          {
+            "player": "Joel Embiid",
+            "pre_fpg": 41.9,
+            "post_fpg": 43.5,
+            "delta": 1.6,
+            "pre_ppg": 23.8,
+            "post_ppg": 26.6,
+            "dynasty_rank": 81,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 1.6,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Moss won this trade (received +1.6 FPts/g net). Green got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 110,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "Delaney",
+        "gave": [
+          "Bobby Portis"
+        ],
+        "received": [
+          "Zujewski 2027 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Peterson",
+        "gave": [
+          "Zujewski 2027 2nd round"
+        ],
+        "received": [
+          "Bobby Portis"
+        ],
+        "received_players": [
+          {
+            "player": "Bobby Portis",
+            "pre_fpg": 29.5,
+            "post_fpg": 24.8,
+            "delta": -4.7,
+            "pre_ppg": 13.9,
+            "post_ppg": 13.2,
+            "dynasty_rank": 243,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -4.7,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Delaney",
+          "pick": "Zujewski 2027 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 111,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Mikal Bridges"
+        ],
+        "received": [
+          "James Harden"
+        ],
+        "received_players": [
+          {
+            "player": "James Harden",
+            "pre_fpg": 45.1,
+            "post_fpg": 44.5,
+            "delta": -0.6,
+            "pre_ppg": 22.8,
+            "post_ppg": 24.8,
+            "dynasty_rank": 65,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -0.6,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Berke",
+        "gave": [
+          "James Harden"
+        ],
+        "received": [
+          "Mikal Bridges"
+        ],
+        "received_players": [
+          {
+            "player": "Mikal Bridges",
+            "pre_fpg": 29.6,
+            "post_fpg": 32.3,
+            "delta": 2.7,
+            "pre_ppg": 17.6,
+            "post_ppg": 15.8,
+            "dynasty_rank": 74,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 2.7,
+        "grade": "B",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Berke won this trade (received +2.7 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 112,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Paul George"
+        ],
+        "received": [
+          "Zach Lavine"
+        ],
+        "received_players": [
+          {
+            "player": "Zach Lavine",
+            "pre_fpg": 35.0,
+            "post_fpg": 27.1,
+            "delta": -7.9,
+            "pre_ppg": 23.3,
+            "post_ppg": 19.2,
+            "dynasty_rank": 132,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -7.9,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Zach Lavine"
+        ],
+        "received": [
+          "Paul George"
+        ],
+        "received_players": [
+          {
+            "player": "Paul George",
+            "pre_fpg": 33.3,
+            "post_fpg": 32.1,
+            "delta": -1.2,
+            "pre_ppg": 16.2,
+            "post_ppg": 16.0,
+            "dynasty_rank": 152,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -1.2,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "Jowkar won this trade (received -1.2 FPts/g net). Berke got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 113,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Coby White"
+        ],
+        "received": [
+          "Jamal Murray"
+        ],
+        "received_players": [
+          {
+            "player": "Jamal Murray",
+            "pre_fpg": 38.7,
+            "post_fpg": 44.3,
+            "delta": 5.6,
+            "pre_ppg": 21.4,
+            "post_ppg": 25.6,
+            "dynasty_rank": 33,
+            "status": "graded"
+          }
+        ],
+        "received_delta": 5.6,
+        "grade": "A+",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Zujewski",
+        "gave": [
+          "Jamal Murray"
+        ],
+        "received": [
+          "Coby White"
+        ],
+        "received_players": [
+          {
+            "player": "Coby White",
+            "pre_fpg": 32.5,
+            "post_fpg": 29.5,
+            "delta": -3.0,
+            "pre_ppg": 20.4,
+            "post_ppg": 18.6,
+            "dynasty_rank": 127,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -3.0,
+        "grade": "D",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "HaleTrager won this trade (received +5.6 FPts/g net). Zujewski got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 114,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Yves Missi"
+        ],
+        "received": [
+          "Daniel Gafford"
+        ],
+        "received_players": [
+          {
+            "player": "Daniel Gafford",
+            "pre_fpg": 28.0,
+            "post_fpg": 22.2,
+            "delta": -5.8,
+            "pre_ppg": 12.3,
+            "post_ppg": 8.0,
+            "dynasty_rank": 142,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -5.8,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Daniel Gafford"
+        ],
+        "received": [
+          "Yves Missi"
+        ],
+        "received_players": [
+          {
+            "player": "Yves Missi",
+            "pre_fpg": 25.3,
+            "post_fpg": 18.4,
+            "delta": -6.9,
+            "pre_ppg": 9.1,
+            "post_ppg": 5.6,
+            "dynasty_rank": 238,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -6.9,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "HaleTrager won this trade (received -5.8 FPts/g net). Baden got the short end.",
+      "grade_confidence": "high"
+    },
+    {
+      "trade_index": 115,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Jordan Poole"
+        ],
+        "received": [
+          "Kristaps Porzingus"
+        ],
+        "received_players": [
+          {
+            "player": "Kristaps Porzingus",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Baden",
+        "gave": [
+          "Kristaps Porzingus"
+        ],
+        "received": [
+          "Jordan Poole"
+        ],
+        "received_players": [
+          {
+            "player": "Jordan Poole",
+            "pre_fpg": 33.0,
+            "post_fpg": 22.4,
+            "delta": -10.6,
+            "pre_ppg": 20.5,
+            "post_ppg": 14.5,
+            "dynasty_rank": 194,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -10.6,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "HaleTrager won this trade (received +0.0 FPts/g net). Baden got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 116,
+      "season": "2024-25",
+      "date": null,
+      "side_a": {
+        "owner": "Jowkar",
+        "gave": [
+          "Kelley 2025 2nd round"
+        ],
+        "received": [
+          "John Collins"
+        ],
+        "received_players": [
+          {
+            "player": "John Collins",
+            "pre_fpg": 35.2,
+            "post_fpg": 25.0,
+            "delta": -10.2,
+            "pre_ppg": 19.0,
+            "post_ppg": 13.8,
+            "dynasty_rank": 138,
+            "status": "graded"
+          }
+        ],
+        "received_delta": -10.2,
+        "grade": "F",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "Delaney",
+        "gave": [
+          "John Collins"
+        ],
+        "received": [
+          "Kelley 2025 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Delaney",
+          "pick": "Kelley 2025 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 117,
+      "season": "2025-26",
+      "date": null,
+      "side_a": {
+        "owner": "Berke",
+        "gave": [
+          "Berke 2030 2nd round"
+        ],
+        "received": [
+          "Noah Clowney"
+        ],
+        "received_players": [
+          {
+            "player": "Noah Clowney",
+            "pre_fpg": 23.4,
+            "post_fpg": null,
+            "delta": -11.7,
+            "pre_ppg": 12.9,
+            "post_ppg": null,
+            "dynasty_rank": 178,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -11.7,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "side_b": {
+        "owner": "Jowkar",
+        "gave": [
+          "Noah Clowney"
+        ],
+        "received": [
+          "Berke 2030 2nd round"
+        ],
+        "received_players": [],
+        "received_delta": 0.0,
+        "grade": "INC",
+        "injury_affected": false
+      },
+      "pick_components": [
+        {
+          "received_by": "Jowkar",
+          "pick": "Berke 2030 2nd round"
+        }
+      ],
+      "summary": "Insufficient data to grade this trade.",
+      "grade_confidence": "incomplete"
+    },
+    {
+      "trade_index": 118,
+      "season": "2025-26",
+      "date": null,
+      "side_a": {
+        "owner": "Gold",
+        "gave": [
+          "Neemias Queta"
+        ],
+        "received": [
+          "Ayo Dosumnu"
+        ],
+        "received_players": [
+          {
+            "player": "Ayo Dosumnu",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Ayo Dosumnu"
+        ],
+        "received": [
+          "Neemias Queta"
+        ],
+        "received_players": [
+          {
+            "player": "Neemias Queta",
+            "pre_fpg": 27.3,
+            "post_fpg": null,
+            "delta": -13.7,
+            "pre_ppg": 9.7,
+            "post_ppg": null,
+            "dynasty_rank": 160,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -13.7,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "pick_components": [],
+      "summary": "Gold won this trade (received +0.0 FPts/g net). HaleTrager got the short end.",
+      "grade_confidence": "low"
+    },
+    {
+      "trade_index": 119,
+      "season": "2025-26",
+      "date": null,
+      "side_a": {
+        "owner": "Peterson",
+        "gave": [
+          "Steph Curry"
+        ],
+        "received": [
+          "Miles Bridges"
+        ],
+        "received_players": [
+          {
+            "player": "Miles Bridges",
+            "pre_fpg": 32.3,
+            "post_fpg": null,
+            "delta": -16.1,
+            "pre_ppg": 18.2,
+            "post_ppg": null,
+            "dynasty_rank": 117,
+            "status": "no_post_data"
+          }
+        ],
+        "received_delta": -16.1,
+        "grade": "F",
+        "injury_affected": true
+      },
+      "side_b": {
+        "owner": "HaleTrager",
+        "gave": [
+          "Miles Bridges"
+        ],
+        "received": [
+          "Steph Curry"
+        ],
+        "received_players": [
+          {
+            "player": "Steph Curry",
+            "pre_fpg": null,
+            "post_fpg": null,
+            "delta": 0.0,
+            "pre_ppg": null,
+            "post_ppg": null,
+            "dynasty_rank": null,
+            "status": "no_data"
+          }
+        ],
+        "received_delta": 0.0,
+        "grade": "C",
+        "injury_affected": false
+      },
+      "pick_components": [],
+      "summary": "HaleTrager won this trade (received +0.0 FPts/g net). Peterson got the short end.",
+      "grade_confidence": "low"
+    }
+  ]
+}
