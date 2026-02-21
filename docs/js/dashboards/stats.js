@@ -73,7 +73,7 @@
       var rankedCount = players.filter(function(p) { return p.rank !== undefined; }).length;
       var totalRankScore = 0;
       players.forEach(function(p) {
-        if (p.rank !== undefined) totalRankScore += (50 - p.rank);
+        if (p.rank !== undefined) totalRankScore += Math.max(0, 50 - p.rank);
       });
 
       return {
@@ -247,11 +247,11 @@
       // Trade Value Meter
       var giveScore = 0, getScore = 0;
       ta.giveItems.forEach(function(item) {
-        if (item.rank !== undefined) giveScore += (50 - item.rank);
+        if (item.rank !== undefined) giveScore += Math.max(0, 50 - item.rank);
         if (item.stats && item.stats.stats) giveScore += item.stats.stats.ppg;
       });
       ta.getItems.forEach(function(item) {
-        if (item.rank !== undefined) getScore += (50 - item.rank);
+        if (item.rank !== undefined) getScore += Math.max(0, 50 - item.rank);
         if (item.stats && item.stats.stats) getScore += item.stats.stats.ppg;
       });
       var totalScore = giveScore + getScore;

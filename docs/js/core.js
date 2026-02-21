@@ -244,7 +244,12 @@ window.YK = window.YK || {};
   }
 
   function parseAsset(str) {
-    return str.trim().split(/\s+/).slice(1).join(' ');
+    var parts = str.trim().split(/\s+/).slice(1);
+    // Strip position prefix if present (e.g., "SF/PF Deandre Hunter" → "Deandre Hunter")
+    if (parts.length > 1 && /^(?:PG|SG|SF|PF|C)(?:\/(?:PG|SG|SF|PF|C))?$/i.test(parts[0])) {
+      parts = parts.slice(1);
+    }
+    return parts.join(' ');
   }
 
   function classifyPick(pickStr, holderOwner) {

@@ -250,10 +250,11 @@
       });
 
       picksHtml += '</div></div>';
-      picksHtml += '<p class="chart-insight"><strong>' + totalOwnerPicks + '</strong> total picks across ' + pickYears[0] + '&ndash;' + pickYears[pickYears.length - 1] + '.</p>';
+      picksHtml += '<p class="chart-insight"><strong>' + totalOwnerPicks + '</strong> total picks' + (pickYears.length > 0 ? ' across ' + pickYears[0] + '&ndash;' + pickYears[pickYears.length - 1] : '') + '.</p>';
       picksHtml += '</div>';
 
       // === E. Dynasty Assets ===
+      var teamData = rosterData && rosterData.teams && rosterData.teams[ownerKey];
       var assetsHtml = '<div class="chart-section">';
       assetsHtml += '<h2>&#x2B50; Dynasty Assets</h2>';
 
@@ -291,8 +292,6 @@
       // === F. Current Roster ===
       var rosterHtml = '<div class="chart-section">';
       rosterHtml += '<h2>&#x1F4DD; Current Roster (2025-26)</h2>';
-
-      var teamData = rosterData && rosterData.teams && rosterData.teams[ownerKey];
       if (!teamData || !teamData.players || teamData.players.length === 0) {
         rosterHtml += '<p class="text-muted" style="padding:16px">No roster data available.</p>';
       } else {

@@ -58,7 +58,8 @@
         if (g.startYear === g.endYear) {
           return g.team + " ('" + startShort + '-' + endShort + ')';
         }
-        return g.team + " ('" + startShort + '-' + endShort + ')';
+        var endLong = g.endYear.split('-')[1];
+        return g.team + " ('" + startShort + '-' + endLong + ')';
       }).join(', ');
     }
 
