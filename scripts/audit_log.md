@@ -125,3 +125,35 @@ These mappings were **incorrect** in the original data and have been corrected:
 - Name corrections: 29
 - Fuzzy matches: 4
 - Unmatched: 0
+
+
+## track_pick_outcomes.py (8.4)
+- Total picks: 53 (34 completed, 16 projected, 3 pending)
+- Picks with trades: 53
+- Grade distribution: {'A+': 5, 'F': 13, 'A': 4, 'B': 3, 'C': 6, 'D': 3}
+  - Baden: holds 6, traded 9
+  - Berke: holds 2, traded 8
+  - Delaney: holds 6, traded 7
+  - Gold: holds 4, traded 4
+  - Green: holds 3, traded 3
+  - HaleTrager: holds 9, traded 9
+  - Jowkar: holds 11, traded 8
+  - Moss: holds 2, traded 3
+  - Peterson: holds 9, traded 12
+  - Zujewski: holds 1, traded 0
+
+
+## track_pick_outcomes.py (8.4)
+- Total picks: 138 (34 completed, 101 projected, 3 pending)
+- Picks with trades: 53
+- Grade distribution: {'A+': 5, 'F': 13, 'A': 4, 'B': 3, 'C': 6, 'D': 3}
+  - Baden: holds 4, traded 9
+  - Berke: holds 15, traded 8
+  - Delaney: holds 31, traded 7
+  - Gold: holds 4, traded 4
+  - Green: holds 22, traded 3
+  - HaleTrager: holds 25, traded 9
+  - Jowkar: holds 27, traded 8
+  - Moss: holds 2, traded 3
+  - Peterson: holds 7, traded 12
+  - Zujewski: holds 1, traded 0

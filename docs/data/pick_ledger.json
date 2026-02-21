@@ -1,31 +1,24 @@
 {
   "meta": {
-    "total_picks": 46,
-    "traded": 46,
-    "pending": 10,
-    "used": 36
+    "total_picks": 138,
+    "traded": 53,
+    "completed": 34,
+    "projected": 101,
+    "pending": 3,
+    "grade_distribution": {
+      "A+": 5,
+      "F": 13,
+      "A": 4,
+      "B": 3,
+      "C": 6,
+      "D": 3
+    },
+    "pick_grade_scale": "1-2=A+, 3-4=A, 5-6=B, 7-8=C, 9=D, 10=F (Rd1); 11-12=C, 13-14=D, 15-20=F (Rd2)",
+    "projection_basis": "2025-26 standings"
   },
   "picks": {
-    "berke_2021_1": {
-      "pick_id": "berke_2021_1",
-      "original_owner": "Berke",
-      "draft_year": 2021,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 1,
-          "season": "2020-21",
-          "from": "Berke",
-          "to": "Baden",
-          "raw": "BERK Berke 2021 1st round"
-        }
-      ],
-      "current_owner": "Baden",
-      "status": "used"
-    },
-    "baden_2021_2": {
-      "pick_id": "baden_2021_2",
+    "Baden_2021_R2": {
+      "pick_id": "Baden_2021_R2",
       "original_owner": "Baden",
       "draft_year": 2021,
       "round": 2,
@@ -40,90 +33,11 @@
         }
       ],
       "current_owner": "Berke",
-      "status": "used"
+      "status": "no_draft_data"
     },
-    "peterson_2023_1": {
-      "pick_id": "peterson_2023_1",
-      "original_owner": "Peterson",
-      "draft_year": 2023,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 8,
-          "season": "2020-21",
-          "from": "Peterson",
-          "to": "Green",
-          "raw": "DIME Kelvin 2023 1st Round"
-        }
-      ],
-      "current_owner": "Green",
-      "status": "used"
-    },
-    "berke_2022_1": {
-      "pick_id": "berke_2022_1",
-      "original_owner": "Berke",
-      "draft_year": 2022,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 20,
-          "season": "2021-22",
-          "from": "Berke",
-          "to": "HaleTrager",
-          "raw": "BERK Berke 2022 1st Round"
-        }
-      ],
-      "current_owner": "HaleTrager",
-      "status": "used"
-    },
-    "gold_2023_1": {
-      "pick_id": "gold_2023_1",
-      "original_owner": "Gold",
-      "draft_year": 2023,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 22,
-          "season": "2021-22",
-          "from": "Gold",
-          "to": "Moss",
-          "raw": "GOLD Gold 2023 1st round"
-        }
-      ],
-      "current_owner": "Moss",
-      "status": "used"
-    },
-    "baden_2022_1": {
-      "pick_id": "baden_2022_1",
+    "Baden_2022_R1": {
+      "pick_id": "Baden_2022_R1",
       "original_owner": "Baden",
-      "draft_year": 2022,
-      "round": 1,
-      "is_swap": true,
-      "trades": [
-        {
-          "trade_index": 22,
-          "season": "2021-22",
-          "from": "Moss",
-          "to": "Gold",
-          "raw": "MOSS Vlandis 2022 1st round (swap rights)"
-        },
-        {
-          "trade_index": 40,
-          "season": "2021-22",
-          "from": "Baden",
-          "to": "Green",
-          "raw": "VLAND Vlandis 2022 1st round"
-        }
-      ],
-      "current_owner": "Green",
-      "status": "used"
-    },
-    "green_2022_1": {
-      "pick_id": "green_2022_1",
-      "original_owner": "Green",
       "draft_year": 2022,
       "round": 1,
       "is_swap": false,
@@ -136,79 +50,36 @@
           "raw": "VLAND Green 2022 1st round (#4 overall)"
         },
         {
-          "trade_index": 40,
-          "season": "2021-22",
-          "from": "Green",
-          "to": "Baden",
-          "raw": "GREEN Green 2022 1st round"
-        }
-      ],
-      "current_owner": "Baden",
-      "status": "used"
-    },
-    "jowkar_2022_1": {
-      "pick_id": "jowkar_2022_1",
-      "original_owner": "Jowkar",
-      "draft_year": 2022,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
           "trade_index": 28,
           "season": "2021-22",
           "from": "Baden",
           "to": "HaleTrager",
           "raw": "VLAND Jowkar 2022 1st round (#5 overall)"
-        }
-      ],
-      "current_owner": "HaleTrager",
-      "status": "used"
-    },
-    "green_2023_2": {
-      "pick_id": "green_2023_2",
-      "original_owner": "Green",
-      "draft_year": 2023,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 30,
-          "season": "2021-22",
-          "from": "Jowkar",
-          "to": "Green",
-          "raw": "JOWK 2023 Green 2nd round"
         },
         {
-          "trade_index": 66,
-          "season": "2022-23",
-          "from": "Peterson",
-          "to": "HaleTrager",
-          "raw": "PETE Green 2023 2nd round"
-        }
-      ],
-      "current_owner": "HaleTrager",
-      "status": "used"
-    },
-    "delaney_2023_1": {
-      "pick_id": "delaney_2023_1",
-      "original_owner": "Delaney",
-      "draft_year": 2023,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 34,
+          "trade_index": 40,
           "season": "2021-22",
-          "from": "Jowkar",
+          "from": "Baden",
           "to": "Green",
-          "raw": "JOWK Delaney 2023 1st round"
+          "raw": "VLAND Vlandis 2022 1st round"
+        },
+        {
+          "trade_index": 47,
+          "season": "2021-22",
+          "from": "Baden",
+          "to": "Gold",
+          "raw": "VLAND Delaney 2022 1st round (#7 overall)"
         }
       ],
-      "current_owner": "Green",
-      "status": "used"
+      "current_owner": "Gold",
+      "status": "completed",
+      "draft_slot": 3,
+      "overall_slot": 3,
+      "pick_grade": "A",
+      "pick_gpa": 4.0
     },
-    "baden_2022_2": {
-      "pick_id": "baden_2022_2",
+    "Baden_2022_R2": {
+      "pick_id": "Baden_2022_R2",
       "original_owner": "Baden",
       "draft_year": 2022,
       "round": 2,
@@ -223,10 +94,284 @@
         }
       ],
       "current_owner": "HaleTrager",
-      "status": "used"
+      "status": "completed",
+      "draft_slot": 3,
+      "overall_slot": 13,
+      "pick_grade": "D",
+      "pick_gpa": 1.0
     },
-    "berke_2024_2": {
-      "pick_id": "berke_2024_2",
+    "Baden_2023_R2": {
+      "pick_id": "Baden_2023_R2",
+      "original_owner": "Baden",
+      "draft_year": 2023,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 68,
+          "season": "2022-23",
+          "from": "Baden",
+          "to": "Berke",
+          "raw": "VLAND Gold 2023 2nd round"
+        }
+      ],
+      "current_owner": "Berke",
+      "status": "completed",
+      "draft_slot": 8,
+      "overall_slot": 18,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Baden_2025_R1": {
+      "pick_id": "Baden_2025_R1",
+      "original_owner": "Baden",
+      "draft_year": 2025,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 104,
+          "season": "2024-25",
+          "from": "Baden",
+          "to": "Peterson",
+          "raw": "BADEN Berke 2025 1st round"
+        }
+      ],
+      "current_owner": "Peterson",
+      "status": "completed",
+      "draft_slot": 1,
+      "overall_slot": 1,
+      "pick_grade": "A+",
+      "pick_gpa": 4.3
+    },
+    "Baden_2025_R2": {
+      "pick_id": "Baden_2025_R2",
+      "original_owner": "Baden",
+      "draft_year": 2025,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 106,
+          "season": "2024-25",
+          "from": "Baden",
+          "to": "HaleTrager",
+          "raw": "BADEN Baden 2025 2nd round"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "completed",
+      "draft_slot": 1,
+      "overall_slot": 11,
+      "pick_grade": "C",
+      "pick_gpa": 2.0
+    },
+    "Baden_2027_R2": {
+      "pick_id": "Baden_2027_R2",
+      "original_owner": "Baden",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 64,
+          "season": "2022-23",
+          "from": "Baden",
+          "to": "Jowkar",
+          "raw": "VLAND Vlandis 2027 2nd round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 1,
+      "projected_overall": 11,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #10)"
+    },
+    "Baden_2028_R2": {
+      "pick_id": "Baden_2028_R2",
+      "original_owner": "Baden",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 1,
+      "projected_overall": 11,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #10)"
+    },
+    "Baden_2029_R2": {
+      "pick_id": "Baden_2029_R2",
+      "original_owner": "Baden",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 1,
+      "projected_overall": 11,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #10)"
+    },
+    "Baden_2030_R1": {
+      "pick_id": "Baden_2030_R1",
+      "original_owner": "Baden",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 1,
+      "projected_overall": 1,
+      "projected_grade": "A+",
+      "projected_gpa": 4.3,
+      "projection_basis": "2025-26 standings (rank #10)"
+    },
+    "Baden_2030_R2": {
+      "pick_id": "Baden_2030_R2",
+      "original_owner": "Baden",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 1,
+      "projected_overall": 11,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #10)"
+    },
+    "Baden_2031_R1": {
+      "pick_id": "Baden_2031_R1",
+      "original_owner": "Baden",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 1,
+      "projected_overall": 1,
+      "projected_grade": "A+",
+      "projected_gpa": 4.3,
+      "projection_basis": "2025-26 standings (rank #10)"
+    },
+    "Baden_2031_R2": {
+      "pick_id": "Baden_2031_R2",
+      "original_owner": "Baden",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 1,
+      "projected_overall": 11,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #10)"
+    },
+    "Berke_2021_R1": {
+      "pick_id": "Berke_2021_R1",
+      "original_owner": "Berke",
+      "draft_year": 2021,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 1,
+          "season": "2020-21",
+          "from": "Berke",
+          "to": "Baden",
+          "raw": "BERK Berke 2021 1st round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "no_draft_data"
+    },
+    "Berke_2022_R1": {
+      "pick_id": "Berke_2022_R1",
+      "original_owner": "Berke",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 20,
+          "season": "2021-22",
+          "from": "Berke",
+          "to": "HaleTrager",
+          "raw": "BERK Berke 2022 1st Round"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "completed",
+      "draft_slot": 10,
+      "overall_slot": 10,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Berke_2023_R2": {
+      "pick_id": "Berke_2023_R2",
+      "original_owner": "Berke",
+      "draft_year": 2023,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 75,
+          "season": "2022-23",
+          "from": "Berke",
+          "to": "Jowkar",
+          "raw": "BERK Gold 2023 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "completed",
+      "draft_slot": 6,
+      "overall_slot": 16,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Berke_2024_R1": {
+      "pick_id": "Berke_2024_R1",
+      "original_owner": "Berke",
+      "draft_year": 2024,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 57,
+          "season": "2022-23",
+          "from": "Berke",
+          "to": "HaleTrager",
+          "raw": "BERK Green 2024 1st Round"
+        },
+        {
+          "trade_index": 72,
+          "season": "2022-23",
+          "from": "Berke",
+          "to": "Zujewski",
+          "raw": "BERK Delaney 2024 1st round"
+        }
+      ],
+      "current_owner": "Zujewski",
+      "status": "completed",
+      "draft_slot": 8,
+      "overall_slot": 8,
+      "pick_grade": "C",
+      "pick_gpa": 2.0
+    },
+    "Berke_2024_R2": {
+      "pick_id": "Berke_2024_R2",
       "original_owner": "Berke",
       "draft_year": 2024,
       "round": 2,
@@ -241,82 +386,14 @@
         }
       ],
       "current_owner": "Jowkar",
-      "status": "used"
+      "status": "completed",
+      "draft_slot": 8,
+      "overall_slot": 18,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
     },
-    "delaney_2022_1": {
-      "pick_id": "delaney_2022_1",
-      "original_owner": "Delaney",
-      "draft_year": 2022,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 47,
-          "season": "2021-22",
-          "from": "Baden",
-          "to": "Gold",
-          "raw": "VLAND Delaney 2022 1st round (#7 overall)"
-        }
-      ],
-      "current_owner": "Gold",
-      "status": "used"
-    },
-    "peterson_2022_1": {
-      "pick_id": "peterson_2022_1",
-      "original_owner": "Peterson",
-      "draft_year": 2022,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 47,
-          "season": "2021-22",
-          "from": "Gold",
-          "to": "Baden",
-          "raw": "GOLD Peterson 2022 1st round (#8 overall)"
-        }
-      ],
-      "current_owner": "Baden",
-      "status": "used"
-    },
-    "berke_2022_2": {
-      "pick_id": "berke_2022_2",
-      "original_owner": "Berke",
-      "draft_year": 2022,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 50,
-          "season": "2021-22",
-          "from": "Green",
-          "to": "HaleTrager",
-          "raw": "GREEN 2022 Berke 2nd round (#20 overall)"
-        }
-      ],
-      "current_owner": "HaleTrager",
-      "status": "used"
-    },
-    "green_2025_2": {
-      "pick_id": "green_2025_2",
-      "original_owner": "Green",
-      "draft_year": 2025,
-      "round": 2,
-      "is_swap": true,
-      "trades": [
-        {
-          "trade_index": 50,
-          "season": "2021-22",
-          "from": "HaleTrager",
-          "to": "Green",
-          "raw": "TRAG Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)"
-        }
-      ],
-      "current_owner": "Green",
-      "status": "used"
-    },
-    "berke_2025_1": {
-      "pick_id": "berke_2025_1",
+    "Berke_2025_R1": {
+      "pick_id": "Berke_2025_R1",
       "original_owner": "Berke",
       "draft_year": 2025,
       "round": 1,
@@ -328,82 +405,231 @@
           "from": "Berke",
           "to": "Jowkar",
           "raw": "BERK Berke 2025 1st round"
-        },
-        {
-          "trade_index": 104,
-          "season": "2024-25",
-          "from": "Baden",
-          "to": "Baden",
-          "raw": "BADEN Berke 2025 1st round"
-        }
-      ],
-      "current_owner": "Baden",
-      "status": "used"
-    },
-    "baden_2023_2": {
-      "pick_id": "baden_2023_2",
-      "original_owner": "Baden",
-      "draft_year": 2023,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 54,
-          "season": "2021-22",
-          "from": "HaleTrager",
-          "to": "Green",
-          "raw": "TRAG Vlandis 2023 2nd round (#13 overall)"
-        }
-      ],
-      "current_owner": "Green",
-      "status": "used"
-    },
-    "green_2022_2": {
-      "pick_id": "green_2022_2",
-      "original_owner": "Green",
-      "draft_year": 2022,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 54,
-          "season": "2021-22",
-          "from": "Green",
-          "to": "HaleTrager",
-          "raw": "GREEN Green 2022 2nd round (#14 overall)"
-        },
-        {
-          "trade_index": 55,
-          "season": "2021-22",
-          "from": "HaleTrager",
-          "to": "Jowkar",
-          "raw": "TRAG Green 2022 2nd round (#14 overall)"
         }
       ],
       "current_owner": "Jowkar",
-      "status": "used"
+      "status": "completed",
+      "draft_slot": 7,
+      "overall_slot": 7,
+      "pick_grade": "C",
+      "pick_gpa": 2.0
     },
-    "delaney_2022_2": {
-      "pick_id": "delaney_2022_2",
-      "original_owner": "Delaney",
-      "draft_year": 2022,
+    "Berke_2027_R1": {
+      "pick_id": "Berke_2027_R1",
+      "original_owner": "Berke",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 5,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Berke_2027_R2": {
+      "pick_id": "Berke_2027_R2",
+      "original_owner": "Berke",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 15,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Berke_2028_R1": {
+      "pick_id": "Berke_2028_R1",
+      "original_owner": "Berke",
+      "draft_year": 2028,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 5,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Berke_2028_R2": {
+      "pick_id": "Berke_2028_R2",
+      "original_owner": "Berke",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 15,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Berke_2029_R1": {
+      "pick_id": "Berke_2029_R1",
+      "original_owner": "Berke",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 5,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Berke_2029_R2": {
+      "pick_id": "Berke_2029_R2",
+      "original_owner": "Berke",
+      "draft_year": 2029,
       "round": 2,
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 55,
-          "season": "2021-22",
-          "from": "Jowkar",
-          "to": "HaleTrager",
-          "raw": "JOWK Delaney 2022 2nd round (#17 overall)"
+          "trade_index": 89,
+          "season": "2023-24",
+          "from": "Berke",
+          "to": "Jowkar",
+          "raw": "BERK Berke 2029 2nd round"
         }
       ],
-      "current_owner": "HaleTrager",
-      "status": "used"
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 15,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #6)"
     },
-    "peterson_2025_1": {
-      "pick_id": "peterson_2025_1",
-      "original_owner": "Peterson",
+    "Berke_2030_R1": {
+      "pick_id": "Berke_2030_R1",
+      "original_owner": "Berke",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 5,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Berke_2030_R2": {
+      "pick_id": "Berke_2030_R2",
+      "original_owner": "Berke",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 117,
+          "season": "2025-26",
+          "from": "Berke",
+          "to": "Jowkar",
+          "raw": "BERK Berke 2030 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 15,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Berke_2031_R1": {
+      "pick_id": "Berke_2031_R1",
+      "original_owner": "Berke",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 5,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Berke_2031_R2": {
+      "pick_id": "Berke_2031_R2",
+      "original_owner": "Berke",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 5,
+      "projected_overall": 15,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #6)"
+    },
+    "Delaney_2021_R2": {
+      "pick_id": "Delaney_2021_R2",
+      "original_owner": "Delaney",
+      "draft_year": 2021,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 4,
+          "season": "2020-21",
+          "from": "Delaney",
+          "to": "Jowkar",
+          "raw": "DELA Delaney 2021 2nd (#17)"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "no_draft_data"
+    },
+    "Delaney_2024_R1": {
+      "pick_id": "Delaney_2024_R1",
+      "original_owner": "Delaney",
+      "draft_year": 2024,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 67,
+          "season": "2022-23",
+          "from": "Delaney",
+          "to": "Gold",
+          "raw": "DELA Green 2024 1st round"
+        },
+        {
+          "trade_index": 91,
+          "season": "2023-24",
+          "from": "Delaney",
+          "to": "Peterson",
+          "raw": "DELA Delaney 2024 1st round (#6 overall)"
+        }
+      ],
+      "current_owner": "Peterson",
+      "status": "completed",
+      "draft_slot": 6,
+      "overall_slot": 6,
+      "pick_grade": "B",
+      "pick_gpa": 3.0
+    },
+    "Delaney_2025_R1": {
+      "pick_id": "Delaney_2025_R1",
+      "original_owner": "Delaney",
       "draft_year": 2025,
       "round": 1,
       "is_swap": false,
@@ -421,144 +647,18 @@
           "from": "Delaney",
           "to": "HaleTrager",
           "raw": "DELA Peterson 2025 1st round"
-        },
-        {
-          "trade_index": 63,
-          "season": "2022-23",
-          "from": "HaleTrager",
-          "to": "Peterson",
-          "raw": "TRAG Peterson 2025 1st round"
-        },
-        {
-          "trade_index": 88,
-          "season": "2023-24",
-          "from": "Peterson",
-          "to": "Delaney",
-          "raw": "PETE Peterson 2025 1st round"
         }
       ],
-      "current_owner": "Delaney",
-      "status": "used"
+      "current_owner": "HaleTrager",
+      "status": "completed",
+      "draft_slot": 2,
+      "overall_slot": 2,
+      "pick_grade": "A+",
+      "pick_gpa": 4.3
     },
-    "green_2024_1": {
-      "pick_id": "green_2024_1",
-      "original_owner": "Green",
-      "draft_year": 2024,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 57,
-          "season": "2022-23",
-          "from": "Berke",
-          "to": "HaleTrager",
-          "raw": "BERK Green 2024 1st Round"
-        },
-        {
-          "trade_index": 67,
-          "season": "2022-23",
-          "from": "Delaney",
-          "to": "Gold",
-          "raw": "DELA Green 2024 1st round"
-        },
-        {
-          "trade_index": 69,
-          "season": "2022-23",
-          "from": "HaleTrager",
-          "to": "Delaney",
-          "raw": "HALE Green 2024 1st round"
-        }
-      ],
-      "current_owner": "Delaney",
-      "status": "used"
-    },
-    "berke_2023_1": {
-      "pick_id": "berke_2023_1",
-      "original_owner": "Berke",
-      "draft_year": 2023,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 59,
-          "season": "2022-23",
-          "from": "Jowkar",
-          "to": "Delaney",
-          "raw": "JOWK Berke 2023 1st round (#6 overall)"
-        }
-      ],
-      "current_owner": "Delaney",
-      "status": "used"
-    },
-    "moss_2023_1": {
-      "pick_id": "moss_2023_1",
-      "original_owner": "Moss",
-      "draft_year": 2023,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 62,
-          "season": "2022-23",
-          "from": "Moss",
-          "to": "Gold",
-          "raw": "MOSS Moss 2023 1st round"
-        }
-      ],
-      "current_owner": "Gold",
-      "status": "used"
-    },
-    "baden_2027_2": {
-      "pick_id": "baden_2027_2",
-      "original_owner": "Baden",
-      "draft_year": 2027,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 64,
-          "season": "2022-23",
-          "from": "Baden",
-          "to": "Jowkar",
-          "raw": "VLAND Vlandis 2027 2nd round"
-        }
-      ],
-      "current_owner": "Jowkar",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 16,
-        "value_tier": "late",
-        "based_on": "2025-26 standings (rank #5)"
-      }
-    },
-    "gold_2023_2": {
-      "pick_id": "gold_2023_2",
-      "original_owner": "Gold",
-      "draft_year": 2023,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 68,
-          "season": "2022-23",
-          "from": "Baden",
-          "to": "Berke",
-          "raw": "VLAND Gold 2023 2nd round"
-        },
-        {
-          "trade_index": 75,
-          "season": "2022-23",
-          "from": "Berke",
-          "to": "Jowkar",
-          "raw": "BERK Gold 2023 2nd round"
-        }
-      ],
-      "current_owner": "Jowkar",
-      "status": "used"
-    },
-    "baden_2026_1": {
-      "pick_id": "baden_2026_1",
-      "original_owner": "Baden",
+    "Delaney_2026_R1": {
+      "pick_id": "Delaney_2026_R1",
+      "original_owner": "Delaney",
       "draft_year": 2026,
       "round": 1,
       "is_swap": false,
@@ -572,10 +672,15 @@
         }
       ],
       "current_owner": "HaleTrager",
-      "status": "used"
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 2,
+      "projected_grade": "A+",
+      "projected_gpa": 4.3,
+      "projection_basis": "2025-26 standings (rank #9)"
     },
-    "delaney_2027_1": {
-      "pick_id": "delaney_2027_1",
+    "Delaney_2027_R1": {
+      "pick_id": "Delaney_2027_R1",
       "original_owner": "Delaney",
       "draft_year": 2027,
       "round": 1,
@@ -587,219 +692,49 @@
           "from": "Delaney",
           "to": "Gold",
           "raw": "DELA Delaney 2027 1st round"
-        },
-        {
-          "trade_index": 74,
-          "season": "2022-23",
-          "from": "Gold",
-          "to": "Jowkar",
-          "raw": "GOLD Delaney 2027 1st round"
         }
       ],
       "current_owner": "Jowkar",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 6,
-        "value_tier": "high",
-        "based_on": "2025-26 standings (rank #5)"
-      }
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 2,
+      "projected_grade": "A+",
+      "projected_gpa": 4.3,
+      "projection_basis": "2025-26 standings (rank #9)"
     },
-    "delaney_2024_1": {
-      "pick_id": "delaney_2024_1",
+    "Delaney_2027_R2": {
+      "pick_id": "Delaney_2027_R2",
       "original_owner": "Delaney",
-      "draft_year": 2024,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 72,
-          "season": "2022-23",
-          "from": "Berke",
-          "to": "Zujewski",
-          "raw": "BERK Delaney 2024 1st round"
-        },
-        {
-          "trade_index": 91,
-          "season": "2023-24",
-          "from": "Delaney",
-          "to": "Baden",
-          "raw": "DELA Delaney 2024 1st round (#6 overall)"
-        }
-      ],
-      "current_owner": "Baden",
-      "status": "used"
-    },
-    "moss_2026_2": {
-      "pick_id": "moss_2026_2",
-      "original_owner": "Moss",
-      "draft_year": 2026,
+      "draft_year": 2027,
       "round": 2,
       "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 77,
-          "season": "2022-23",
-          "from": "Moss",
-          "to": "Jowkar",
-          "raw": "MOSS Moss 2026 2nd round"
-        }
-      ],
-      "current_owner": "Jowkar",
-      "status": "used"
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 12,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #9)"
     },
-    "baden_2028_1": {
-      "pick_id": "baden_2028_1",
-      "original_owner": "Baden",
+    "Delaney_2028_R1": {
+      "pick_id": "Delaney_2028_R1",
+      "original_owner": "Delaney",
       "draft_year": 2028,
       "round": 1,
       "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 79,
-          "season": "2023-24",
-          "from": "Baden",
-          "to": "Moss",
-          "raw": "KELL Kelley 2028 1st round"
-        }
-      ],
-      "current_owner": "Moss",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 6,
-        "value_tier": "high",
-        "based_on": "2025-26 standings (rank #5)"
-      }
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 2,
+      "projected_grade": "A+",
+      "projected_gpa": 4.3,
+      "projection_basis": "2025-26 standings (rank #9)"
     },
-    "haletrager_2024_1": {
-      "pick_id": "haletrager_2024_1",
-      "original_owner": "HaleTrager",
-      "draft_year": 2024,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 80,
-          "season": "2023-24",
-          "from": "HaleTrager",
-          "to": "Baden",
-          "raw": "TRAG Trager 2024 1st round"
-        }
-      ],
-      "current_owner": "Baden",
-      "status": "used"
-    },
-    "delaney_2025_2": {
-      "pick_id": "delaney_2025_2",
+    "Delaney_2028_R2": {
+      "pick_id": "Delaney_2028_R2",
       "original_owner": "Delaney",
-      "draft_year": 2025,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 81,
-          "season": "2023-24",
-          "from": "HaleTrager",
-          "to": "Peterson",
-          "raw": "TRAG Delaney 2025 2nd round"
-        },
-        {
-          "trade_index": 99,
-          "season": "2023-24",
-          "from": "Peterson",
-          "to": "Delaney",
-          "raw": "PETE Delaney 2025 2nd round"
-        }
-      ],
-      "current_owner": "Delaney",
-      "status": "used"
-    },
-    "berke_2029_2": {
-      "pick_id": "berke_2029_2",
-      "original_owner": "Berke",
-      "draft_year": 2029,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 89,
-          "season": "2023-24",
-          "from": "Berke",
-          "to": "Jowkar",
-          "raw": "BERK Berke 2029 2nd round"
-        }
-      ],
-      "current_owner": "Jowkar",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 16,
-        "value_tier": "late",
-        "based_on": "2025-26 standings (rank #5)"
-      }
-    },
-    "baden_2024_1": {
-      "pick_id": "baden_2024_1",
-      "original_owner": "Baden",
-      "draft_year": 2024,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 91,
-          "season": "2023-24",
-          "from": "Baden",
-          "to": "Delaney",
-          "raw": "KELL Kelley 2024 1st round (#5 overall)"
-        }
-      ],
-      "current_owner": "Delaney",
-      "status": "used"
-    },
-    "jowkar_2026_1": {
-      "pick_id": "jowkar_2026_1",
-      "original_owner": "Jowkar",
-      "draft_year": 2026,
-      "round": 1,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 95,
-          "season": "2023-24",
-          "from": "Jowkar",
-          "to": "Peterson",
-          "raw": "JOWK Jowkar 2026 1st round"
-        },
-        {
-          "trade_index": 105,
-          "season": "2024-25",
-          "from": "Peterson",
-          "to": "Baden",
-          "raw": "PETE Jowkar 2026 1st round"
-        }
-      ],
-      "current_owner": "Baden",
-      "status": "used"
-    },
-    "jowkar_2024_2": {
-      "pick_id": "jowkar_2024_2",
-      "original_owner": "Jowkar",
-      "draft_year": 2024,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 97,
-          "season": "2023-24",
-          "from": "Peterson",
-          "to": "Delaney",
-          "raw": "PETE Jowkar 2024 2nd round"
-        }
-      ],
-      "current_owner": "Delaney",
-      "status": "used"
-    },
-    "berke_2028_2": {
-      "pick_id": "berke_2028_2",
-      "original_owner": "Berke",
       "draft_year": 2028,
       "round": 2,
       "is_swap": false,
@@ -812,130 +747,263 @@
           "raw": "DELA Berke 2028 2nd round"
         }
       ],
-      "current_owner": "Jowkar",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 16,
-        "value_tier": "late",
-        "based_on": "2025-26 standings (rank #5)"
-      }
-    },
-    "peterson_2026_2": {
-      "pick_id": "peterson_2026_2",
-      "original_owner": "Peterson",
-      "draft_year": 2026,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 103,
-          "season": "2024-25",
-          "from": "Peterson",
-          "to": "Zujewski",
-          "raw": "PETE Peterson 2026 2nd round"
-        }
-      ],
-      "current_owner": "Zujewski",
-      "status": "used"
-    },
-    "baden_2025_2": {
-      "pick_id": "baden_2025_2",
-      "original_owner": "Baden",
-      "draft_year": 2025,
-      "round": 2,
-      "is_swap": false,
-      "trades": [
-        {
-          "trade_index": 104,
-          "season": "2024-25",
-          "from": "Baden",
-          "to": "Baden",
-          "raw": "KELL Kelley 2025 2nd round"
-        },
-        {
-          "trade_index": 106,
-          "season": "2024-25",
-          "from": "Baden",
-          "to": "HaleTrager",
-          "raw": "BADEN Baden 2025 2nd round"
-        },
-        {
-          "trade_index": 116,
-          "season": "2024-25",
-          "from": "Jowkar",
-          "to": "Delaney",
-          "raw": "JOWK Kelley 2025 2nd round"
-        }
-      ],
       "current_owner": "Delaney",
-      "status": "used"
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 12,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #9)"
     },
-    "gold_2027_2": {
-      "pick_id": "gold_2027_2",
+    "Delaney_2029_R1": {
+      "pick_id": "Delaney_2029_R1",
+      "original_owner": "Delaney",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 2,
+      "projected_grade": "A+",
+      "projected_gpa": 4.3,
+      "projection_basis": "2025-26 standings (rank #9)"
+    },
+    "Delaney_2029_R2": {
+      "pick_id": "Delaney_2029_R2",
+      "original_owner": "Delaney",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 12,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #9)"
+    },
+    "Delaney_2030_R1": {
+      "pick_id": "Delaney_2030_R1",
+      "original_owner": "Delaney",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 2,
+      "projected_grade": "A+",
+      "projected_gpa": 4.3,
+      "projection_basis": "2025-26 standings (rank #9)"
+    },
+    "Delaney_2030_R2": {
+      "pick_id": "Delaney_2030_R2",
+      "original_owner": "Delaney",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 12,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #9)"
+    },
+    "Delaney_2031_R1": {
+      "pick_id": "Delaney_2031_R1",
+      "original_owner": "Delaney",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 2,
+      "projected_grade": "A+",
+      "projected_gpa": 4.3,
+      "projection_basis": "2025-26 standings (rank #9)"
+    },
+    "Delaney_2031_R2": {
+      "pick_id": "Delaney_2031_R2",
+      "original_owner": "Delaney",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 2,
+      "projected_overall": 12,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #9)"
+    },
+    "Gold_2022_R1": {
+      "pick_id": "Gold_2022_R1",
       "original_owner": "Gold",
-      "draft_year": 2027,
-      "round": 2,
+      "draft_year": 2022,
+      "round": 1,
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 104,
-          "season": "2024-25",
-          "from": "Jowkar",
+          "trade_index": 47,
+          "season": "2021-22",
+          "from": "Gold",
           "to": "Baden",
-          "raw": "JOWK Gold 2027 2nd round"
+          "raw": "GOLD Peterson 2022 1st round (#8 overall)"
         }
       ],
       "current_owner": "Baden",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 16,
-        "value_tier": "late",
-        "based_on": "2025-26 standings (rank #5)"
-      }
+      "status": "completed",
+      "draft_slot": 2,
+      "overall_slot": 2,
+      "pick_grade": "A+",
+      "pick_gpa": 4.3
     },
-    "zujewski_2026_2": {
-      "pick_id": "zujewski_2026_2",
-      "original_owner": "Zujewski",
-      "draft_year": 2026,
-      "round": 2,
+    "Gold_2023_R1": {
+      "pick_id": "Gold_2023_R1",
+      "original_owner": "Gold",
+      "draft_year": 2023,
+      "round": 1,
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 106,
-          "season": "2024-25",
-          "from": "Peterson",
-          "to": "Baden",
-          "raw": "PETE Zujewski 2026 2nd round"
+          "trade_index": 22,
+          "season": "2021-22",
+          "from": "Gold",
+          "to": "Moss",
+          "raw": "GOLD Gold 2023 1st round"
         }
       ],
-      "current_owner": "Baden",
-      "status": "used"
+      "current_owner": "Moss",
+      "status": "completed",
+      "draft_slot": 4,
+      "overall_slot": 4,
+      "pick_grade": "A",
+      "pick_gpa": 4.0
     },
-    "berke_2027_1": {
-      "pick_id": "berke_2027_1",
-      "original_owner": "Berke",
+    "Gold_2027_R1": {
+      "pick_id": "Gold_2027_R1",
+      "original_owner": "Gold",
       "draft_year": 2027,
       "round": 1,
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 106,
-          "season": "2024-25",
-          "from": "HaleTrager",
-          "to": "Baden",
-          "raw": "TRAG Berke 2027 1st round"
+          "trade_index": 74,
+          "season": "2022-23",
+          "from": "Gold",
+          "to": "Jowkar",
+          "raw": "GOLD Delaney 2027 1st round"
         }
       ],
-      "current_owner": "Baden",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 6,
-        "value_tier": "high",
-        "based_on": "2025-26 standings (rank #5)"
-      }
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 9,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #2)"
     },
-    "gold_2030_2": {
-      "pick_id": "gold_2030_2",
+    "Gold_2027_R2": {
+      "pick_id": "Gold_2027_R2",
+      "original_owner": "Gold",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Gold",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 19,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #2)"
+    },
+    "Gold_2028_R1": {
+      "pick_id": "Gold_2028_R1",
+      "original_owner": "Gold",
+      "draft_year": 2028,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 9,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #2)"
+    },
+    "Gold_2028_R2": {
+      "pick_id": "Gold_2028_R2",
+      "original_owner": "Gold",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 19,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #2)"
+    },
+    "Gold_2029_R1": {
+      "pick_id": "Gold_2029_R1",
+      "original_owner": "Gold",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 9,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #2)"
+    },
+    "Gold_2029_R2": {
+      "pick_id": "Gold_2029_R2",
+      "original_owner": "Gold",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 19,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #2)"
+    },
+    "Gold_2030_R1": {
+      "pick_id": "Gold_2030_R1",
+      "original_owner": "Gold",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 9,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #2)"
+    },
+    "Gold_2030_R2": {
+      "pick_id": "Gold_2030_R2",
       "original_owner": "Gold",
       "draft_year": 2030,
       "round": 2,
@@ -950,16 +1018,1243 @@
         }
       ],
       "current_owner": "HaleTrager",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 16,
-        "value_tier": "late",
-        "based_on": "2025-26 standings (rank #5)"
-      }
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 19,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #2)"
     },
-    "zujewski_2027_2": {
-      "pick_id": "zujewski_2027_2",
-      "original_owner": "Zujewski",
+    "Gold_2031_R1": {
+      "pick_id": "Gold_2031_R1",
+      "original_owner": "Gold",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 9,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #2)"
+    },
+    "Gold_2031_R2": {
+      "pick_id": "Gold_2031_R2",
+      "original_owner": "Gold",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 9,
+      "projected_overall": 19,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #2)"
+    },
+    "Green_2022_R1": {
+      "pick_id": "Green_2022_R1",
+      "original_owner": "Green",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 40,
+          "season": "2021-22",
+          "from": "Green",
+          "to": "Baden",
+          "raw": "GREEN Green 2022 1st round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "completed",
+      "draft_slot": 4,
+      "overall_slot": 4,
+      "pick_grade": "A",
+      "pick_gpa": 4.0
+    },
+    "Green_2022_R2": {
+      "pick_id": "Green_2022_R2",
+      "original_owner": "Green",
+      "draft_year": 2022,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 50,
+          "season": "2021-22",
+          "from": "Green",
+          "to": "HaleTrager",
+          "raw": "GREEN 2022 Berke 2nd round (#20 overall)"
+        },
+        {
+          "trade_index": 54,
+          "season": "2021-22",
+          "from": "Green",
+          "to": "HaleTrager",
+          "raw": "GREEN Green 2022 2nd round (#14 overall)"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "completed",
+      "draft_slot": 4,
+      "overall_slot": 14,
+      "pick_grade": "D",
+      "pick_gpa": 1.0
+    },
+    "Green_2027_R1": {
+      "pick_id": "Green_2027_R1",
+      "original_owner": "Green",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 8,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "Green_2028_R1": {
+      "pick_id": "Green_2028_R1",
+      "original_owner": "Green",
+      "draft_year": 2028,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 8,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "Green_2028_R2": {
+      "pick_id": "Green_2028_R2",
+      "original_owner": "Green",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 18,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "Green_2029_R1": {
+      "pick_id": "Green_2029_R1",
+      "original_owner": "Green",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 8,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "Green_2029_R2": {
+      "pick_id": "Green_2029_R2",
+      "original_owner": "Green",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 18,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "Green_2030_R1": {
+      "pick_id": "Green_2030_R1",
+      "original_owner": "Green",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 8,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "Green_2030_R2": {
+      "pick_id": "Green_2030_R2",
+      "original_owner": "Green",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 18,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "Green_2031_R1": {
+      "pick_id": "Green_2031_R1",
+      "original_owner": "Green",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 8,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "Green_2031_R2": {
+      "pick_id": "Green_2031_R2",
+      "original_owner": "Green",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 8,
+      "projected_overall": 18,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #3)"
+    },
+    "HaleTrager_2022_R2": {
+      "pick_id": "HaleTrager_2022_R2",
+      "original_owner": "HaleTrager",
+      "draft_year": 2022,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 55,
+          "season": "2021-22",
+          "from": "HaleTrager",
+          "to": "Jowkar",
+          "raw": "TRAG Green 2022 2nd round (#14 overall)"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "completed",
+      "draft_slot": 9,
+      "overall_slot": 19,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "HaleTrager_2023_R1": {
+      "pick_id": "HaleTrager_2023_R1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 3,
+          "season": "2020-21",
+          "from": "HaleTrager",
+          "to": "HaleTrager",
+          "raw": "TRAG Berke 2023 1st"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "completed",
+      "draft_slot": 1,
+      "overall_slot": 1,
+      "pick_grade": "A+",
+      "pick_gpa": 4.3
+    },
+    "HaleTrager_2023_R2": {
+      "pick_id": "HaleTrager_2023_R2",
+      "original_owner": "HaleTrager",
+      "draft_year": 2023,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 54,
+          "season": "2021-22",
+          "from": "HaleTrager",
+          "to": "Green",
+          "raw": "TRAG Vlandis 2023 2nd round (#13 overall)"
+        }
+      ],
+      "current_owner": "Green",
+      "status": "completed",
+      "draft_slot": 1,
+      "overall_slot": 11,
+      "pick_grade": "C",
+      "pick_gpa": 2.0
+    },
+    "HaleTrager_2024_R1": {
+      "pick_id": "HaleTrager_2024_R1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2024,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 69,
+          "season": "2022-23",
+          "from": "HaleTrager",
+          "to": "Delaney",
+          "raw": "HALE Green 2024 1st round"
+        },
+        {
+          "trade_index": 80,
+          "season": "2023-24",
+          "from": "HaleTrager",
+          "to": "Peterson",
+          "raw": "TRAG Trager 2024 1st round"
+        }
+      ],
+      "current_owner": "Peterson",
+      "status": "completed",
+      "draft_slot": 4,
+      "overall_slot": 4,
+      "pick_grade": "A",
+      "pick_gpa": 4.0
+    },
+    "HaleTrager_2025_R1": {
+      "pick_id": "HaleTrager_2025_R1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2025,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 63,
+          "season": "2022-23",
+          "from": "HaleTrager",
+          "to": "Peterson",
+          "raw": "TRAG Peterson 2025 1st round"
+        }
+      ],
+      "current_owner": "Peterson",
+      "status": "completed",
+      "draft_slot": 8,
+      "overall_slot": 8,
+      "pick_grade": "C",
+      "pick_gpa": 2.0
+    },
+    "HaleTrager_2025_R2": {
+      "pick_id": "HaleTrager_2025_R2",
+      "original_owner": "HaleTrager",
+      "draft_year": 2025,
+      "round": 2,
+      "is_swap": true,
+      "trades": [
+        {
+          "trade_index": 50,
+          "season": "2021-22",
+          "from": "HaleTrager",
+          "to": "Green",
+          "raw": "TRAG Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)"
+        },
+        {
+          "trade_index": 81,
+          "season": "2023-24",
+          "from": "HaleTrager",
+          "to": "Peterson",
+          "raw": "TRAG Delaney 2025 2nd round"
+        }
+      ],
+      "current_owner": "Peterson",
+      "status": "completed",
+      "draft_slot": 8,
+      "overall_slot": 18,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "HaleTrager_2027_R1": {
+      "pick_id": "HaleTrager_2027_R1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 106,
+          "season": "2024-25",
+          "from": "HaleTrager",
+          "to": "Baden",
+          "raw": "TRAG Berke 2027 1st round"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 7,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2027_R2": {
+      "pick_id": "HaleTrager_2027_R2",
+      "original_owner": "HaleTrager",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 17,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2028_R1": {
+      "pick_id": "HaleTrager_2028_R1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2028,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 7,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2028_R2": {
+      "pick_id": "HaleTrager_2028_R2",
+      "original_owner": "HaleTrager",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 17,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2029_R1": {
+      "pick_id": "HaleTrager_2029_R1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 7,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2029_R2": {
+      "pick_id": "HaleTrager_2029_R2",
+      "original_owner": "HaleTrager",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 17,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2030_R1": {
+      "pick_id": "HaleTrager_2030_R1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 7,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2030_R2": {
+      "pick_id": "HaleTrager_2030_R2",
+      "original_owner": "HaleTrager",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 17,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2031_R1": {
+      "pick_id": "HaleTrager_2031_R1",
+      "original_owner": "HaleTrager",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 7,
+      "projected_grade": "C",
+      "projected_gpa": 2.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "HaleTrager_2031_R2": {
+      "pick_id": "HaleTrager_2031_R2",
+      "original_owner": "HaleTrager",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "HaleTrager",
+      "status": "projected",
+      "projected_slot": 7,
+      "projected_overall": 17,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #4)"
+    },
+    "Jowkar_2022_R2": {
+      "pick_id": "Jowkar_2022_R2",
+      "original_owner": "Jowkar",
+      "draft_year": 2022,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 4,
+          "season": "2020-21",
+          "from": "Jowkar",
+          "to": "Delaney",
+          "raw": "JOWK Peterson 2022 2nd"
+        },
+        {
+          "trade_index": 55,
+          "season": "2021-22",
+          "from": "Jowkar",
+          "to": "HaleTrager",
+          "raw": "JOWK Delaney 2022 2nd round (#17 overall)"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "completed",
+      "draft_slot": 5,
+      "overall_slot": 15,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Jowkar_2023_R1": {
+      "pick_id": "Jowkar_2023_R1",
+      "original_owner": "Jowkar",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 34,
+          "season": "2021-22",
+          "from": "Jowkar",
+          "to": "Green",
+          "raw": "JOWK Delaney 2023 1st round"
+        },
+        {
+          "trade_index": 59,
+          "season": "2022-23",
+          "from": "Jowkar",
+          "to": "Delaney",
+          "raw": "JOWK Berke 2023 1st round (#6 overall)"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "completed",
+      "draft_slot": 2,
+      "overall_slot": 2,
+      "pick_grade": "A+",
+      "pick_gpa": 4.3
+    },
+    "Jowkar_2023_R2": {
+      "pick_id": "Jowkar_2023_R2",
+      "original_owner": "Jowkar",
+      "draft_year": 2023,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 30,
+          "season": "2021-22",
+          "from": "Jowkar",
+          "to": "Green",
+          "raw": "JOWK 2023 Green 2nd round"
+        }
+      ],
+      "current_owner": "Green",
+      "status": "completed",
+      "draft_slot": 2,
+      "overall_slot": 12,
+      "pick_grade": "C",
+      "pick_gpa": 2.0
+    },
+    "Jowkar_2025_R2": {
+      "pick_id": "Jowkar_2025_R2",
+      "original_owner": "Jowkar",
+      "draft_year": 2025,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 116,
+          "season": "2024-25",
+          "from": "Jowkar",
+          "to": "Delaney",
+          "raw": "JOWK Kelley 2025 2nd round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "completed",
+      "draft_slot": 10,
+      "overall_slot": 20,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Jowkar_2026_R1": {
+      "pick_id": "Jowkar_2026_R1",
+      "original_owner": "Jowkar",
+      "draft_year": 2026,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 95,
+          "season": "2023-24",
+          "from": "Jowkar",
+          "to": "Peterson",
+          "raw": "JOWK Jowkar 2026 1st round"
+        }
+      ],
+      "current_owner": "Peterson",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 10,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2027_R1": {
+      "pick_id": "Jowkar_2027_R1",
+      "original_owner": "Jowkar",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 10,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2027_R2": {
+      "pick_id": "Jowkar_2027_R2",
+      "original_owner": "Jowkar",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 104,
+          "season": "2024-25",
+          "from": "Jowkar",
+          "to": "Peterson",
+          "raw": "JOWK Gold 2027 2nd round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 20,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2028_R1": {
+      "pick_id": "Jowkar_2028_R1",
+      "original_owner": "Jowkar",
+      "draft_year": 2028,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 10,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2028_R2": {
+      "pick_id": "Jowkar_2028_R2",
+      "original_owner": "Jowkar",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 20,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2029_R1": {
+      "pick_id": "Jowkar_2029_R1",
+      "original_owner": "Jowkar",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 10,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2029_R2": {
+      "pick_id": "Jowkar_2029_R2",
+      "original_owner": "Jowkar",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 20,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2030_R1": {
+      "pick_id": "Jowkar_2030_R1",
+      "original_owner": "Jowkar",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 10,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2030_R2": {
+      "pick_id": "Jowkar_2030_R2",
+      "original_owner": "Jowkar",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 20,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2031_R1": {
+      "pick_id": "Jowkar_2031_R1",
+      "original_owner": "Jowkar",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 10,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Jowkar_2031_R2": {
+      "pick_id": "Jowkar_2031_R2",
+      "original_owner": "Jowkar",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 10,
+      "projected_overall": 20,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #1)"
+    },
+    "Moss_2022_R1": {
+      "pick_id": "Moss_2022_R1",
+      "original_owner": "Moss",
+      "draft_year": 2022,
+      "round": 1,
+      "is_swap": true,
+      "trades": [
+        {
+          "trade_index": 22,
+          "season": "2021-22",
+          "from": "Moss",
+          "to": "Gold",
+          "raw": "MOSS Vlandis 2022 1st round (swap rights)"
+        }
+      ],
+      "current_owner": "Gold",
+      "status": "completed",
+      "draft_slot": 6,
+      "overall_slot": 6,
+      "pick_grade": "B",
+      "pick_gpa": 3.0
+    },
+    "Moss_2023_R1": {
+      "pick_id": "Moss_2023_R1",
+      "original_owner": "Moss",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 62,
+          "season": "2022-23",
+          "from": "Moss",
+          "to": "Gold",
+          "raw": "MOSS Moss 2023 1st round"
+        }
+      ],
+      "current_owner": "Gold",
+      "status": "completed",
+      "draft_slot": 9,
+      "overall_slot": 9,
+      "pick_grade": "D",
+      "pick_gpa": 1.0
+    },
+    "Moss_2026_R2": {
+      "pick_id": "Moss_2026_R2",
+      "original_owner": "Moss",
+      "draft_year": 2026,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 77,
+          "season": "2022-23",
+          "from": "Moss",
+          "to": "Jowkar",
+          "raw": "MOSS Moss 2026 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 13,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2027_R1": {
+      "pick_id": "Moss_2027_R1",
+      "original_owner": "Moss",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": true,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 3,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2027_R2": {
+      "pick_id": "Moss_2027_R2",
+      "original_owner": "Moss",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Moss",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 13,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2028_R1": {
+      "pick_id": "Moss_2028_R1",
+      "original_owner": "Moss",
+      "draft_year": 2028,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 3,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2028_R2": {
+      "pick_id": "Moss_2028_R2",
+      "original_owner": "Moss",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 13,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2029_R1": {
+      "pick_id": "Moss_2029_R1",
+      "original_owner": "Moss",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 3,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2029_R2": {
+      "pick_id": "Moss_2029_R2",
+      "original_owner": "Moss",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 13,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2030_R1": {
+      "pick_id": "Moss_2030_R1",
+      "original_owner": "Moss",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 3,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2030_R2": {
+      "pick_id": "Moss_2030_R2",
+      "original_owner": "Moss",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 13,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2031_R1": {
+      "pick_id": "Moss_2031_R1",
+      "original_owner": "Moss",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 3,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Moss_2031_R2": {
+      "pick_id": "Moss_2031_R2",
+      "original_owner": "Moss",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Jowkar",
+      "status": "projected",
+      "projected_slot": 3,
+      "projected_overall": 13,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #8)"
+    },
+    "Peterson_2023_R1": {
+      "pick_id": "Peterson_2023_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2023,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 8,
+          "season": "2020-21",
+          "from": "Peterson",
+          "to": "Green",
+          "raw": "DIME Kelvin 2023 1st Round"
+        }
+      ],
+      "current_owner": "Green",
+      "status": "completed",
+      "draft_slot": 10,
+      "overall_slot": 10,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Peterson_2023_R2": {
+      "pick_id": "Peterson_2023_R2",
+      "original_owner": "Peterson",
+      "draft_year": 2023,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 66,
+          "season": "2022-23",
+          "from": "Peterson",
+          "to": "HaleTrager",
+          "raw": "PETE Green 2023 2nd round"
+        }
+      ],
+      "current_owner": "HaleTrager",
+      "status": "completed",
+      "draft_slot": 10,
+      "overall_slot": 20,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Peterson_2024_R1": {
+      "pick_id": "Peterson_2024_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2024,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 91,
+          "season": "2023-24",
+          "from": "Peterson",
+          "to": "Delaney",
+          "raw": "KELL Kelley 2024 1st round (#5 overall)"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "completed",
+      "draft_slot": 10,
+      "overall_slot": 10,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Peterson_2024_R2": {
+      "pick_id": "Peterson_2024_R2",
+      "original_owner": "Peterson",
+      "draft_year": 2024,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 97,
+          "season": "2023-24",
+          "from": "Peterson",
+          "to": "Delaney",
+          "raw": "PETE Jowkar 2024 2nd round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "completed",
+      "draft_slot": 10,
+      "overall_slot": 20,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Peterson_2025_R1": {
+      "pick_id": "Peterson_2025_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2025,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 88,
+          "season": "2023-24",
+          "from": "Peterson",
+          "to": "Delaney",
+          "raw": "PETE Peterson 2025 1st round"
+        }
+      ],
+      "current_owner": "Delaney",
+      "status": "completed",
+      "draft_slot": 6,
+      "overall_slot": 6,
+      "pick_grade": "B",
+      "pick_gpa": 3.0
+    },
+    "Peterson_2025_R2": {
+      "pick_id": "Peterson_2025_R2",
+      "original_owner": "Peterson",
+      "draft_year": 2025,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 99,
+          "season": "2023-24",
+          "from": "Peterson",
+          "to": "Delaney",
+          "raw": "PETE Delaney 2025 2nd round"
+        },
+        {
+          "trade_index": 104,
+          "season": "2024-25",
+          "from": "Peterson",
+          "to": "Jowkar",
+          "raw": "KELL Kelley 2025 2nd round"
+        }
+      ],
+      "current_owner": "Jowkar",
+      "status": "completed",
+      "draft_slot": 6,
+      "overall_slot": 16,
+      "pick_grade": "F",
+      "pick_gpa": 0.0
+    },
+    "Peterson_2026_R1": {
+      "pick_id": "Peterson_2026_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2026,
+      "round": 1,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 105,
+          "season": "2024-25",
+          "from": "Peterson",
+          "to": "Peterson",
+          "raw": "PETE Jowkar 2026 1st round"
+        }
+      ],
+      "current_owner": "Peterson",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 4,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2026_R2": {
+      "pick_id": "Peterson_2026_R2",
+      "original_owner": "Peterson",
+      "draft_year": 2026,
+      "round": 2,
+      "is_swap": false,
+      "trades": [
+        {
+          "trade_index": 103,
+          "season": "2024-25",
+          "from": "Peterson",
+          "to": "Zujewski",
+          "raw": "PETE Peterson 2026 2nd round"
+        },
+        {
+          "trade_index": 106,
+          "season": "2024-25",
+          "from": "Peterson",
+          "to": "Baden",
+          "raw": "PETE Zujewski 2026 2nd round"
+        }
+      ],
+      "current_owner": "Baden",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 14,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2027_R1": {
+      "pick_id": "Peterson_2027_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 4,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2027_R2": {
+      "pick_id": "Peterson_2027_R2",
+      "original_owner": "Peterson",
       "draft_year": 2027,
       "round": 2,
       "is_swap": false,
@@ -972,36 +2267,505 @@
           "raw": "PETE Zujewski 2027 2nd round"
         }
       ],
-      "current_owner": "Delaney",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 16,
-        "value_tier": "late",
-        "based_on": "2025-26 standings (rank #5)"
-      }
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 14,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #7)"
     },
-    "berke_2030_2": {
-      "pick_id": "berke_2030_2",
-      "original_owner": "Berke",
-      "draft_year": 2030,
-      "round": 2,
+    "Peterson_2028_R1": {
+      "pick_id": "Peterson_2028_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2028,
+      "round": 1,
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 117,
-          "season": "2025-26",
-          "from": "Berke",
-          "to": "Jowkar",
-          "raw": "BERK Berke 2030 2nd round"
+          "trade_index": 79,
+          "season": "2023-24",
+          "from": "Peterson",
+          "to": "Moss",
+          "raw": "KELL Kelley 2028 1st round"
         }
       ],
-      "current_owner": "Jowkar",
-      "status": "pending",
-      "projected": {
-        "pick_slot": 16,
-        "value_tier": "late",
-        "based_on": "2025-26 standings (rank #5)"
-      }
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 4,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2028_R2": {
+      "pick_id": "Peterson_2028_R2",
+      "original_owner": "Peterson",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 14,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2029_R1": {
+      "pick_id": "Peterson_2029_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 4,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2029_R2": {
+      "pick_id": "Peterson_2029_R2",
+      "original_owner": "Peterson",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 14,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2030_R1": {
+      "pick_id": "Peterson_2030_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 4,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2030_R2": {
+      "pick_id": "Peterson_2030_R2",
+      "original_owner": "Peterson",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 14,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2031_R1": {
+      "pick_id": "Peterson_2031_R1",
+      "original_owner": "Peterson",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 4,
+      "projected_grade": "A",
+      "projected_gpa": 4.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Peterson_2031_R2": {
+      "pick_id": "Peterson_2031_R2",
+      "original_owner": "Peterson",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Green",
+      "status": "projected",
+      "projected_slot": 4,
+      "projected_overall": 14,
+      "projected_grade": "D",
+      "projected_gpa": 1.0,
+      "projection_basis": "2025-26 standings (rank #7)"
+    },
+    "Zujewski_2027_R1": {
+      "pick_id": "Zujewski_2027_R1",
+      "original_owner": "Zujewski",
+      "draft_year": 2027,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 6,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2027_R2": {
+      "pick_id": "Zujewski_2027_R2",
+      "original_owner": "Zujewski",
+      "draft_year": 2027,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Delaney",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 16,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2028_R1": {
+      "pick_id": "Zujewski_2028_R1",
+      "original_owner": "Zujewski",
+      "draft_year": 2028,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 6,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2028_R2": {
+      "pick_id": "Zujewski_2028_R2",
+      "original_owner": "Zujewski",
+      "draft_year": 2028,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 16,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2029_R1": {
+      "pick_id": "Zujewski_2029_R1",
+      "original_owner": "Zujewski",
+      "draft_year": 2029,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 6,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2029_R2": {
+      "pick_id": "Zujewski_2029_R2",
+      "original_owner": "Zujewski",
+      "draft_year": 2029,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 16,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2030_R1": {
+      "pick_id": "Zujewski_2030_R1",
+      "original_owner": "Zujewski",
+      "draft_year": 2030,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 6,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2030_R2": {
+      "pick_id": "Zujewski_2030_R2",
+      "original_owner": "Zujewski",
+      "draft_year": 2030,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 16,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2031_R1": {
+      "pick_id": "Zujewski_2031_R1",
+      "original_owner": "Zujewski",
+      "draft_year": 2031,
+      "round": 1,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 6,
+      "projected_grade": "B",
+      "projected_gpa": 3.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    },
+    "Zujewski_2031_R2": {
+      "pick_id": "Zujewski_2031_R2",
+      "original_owner": "Zujewski",
+      "draft_year": 2031,
+      "round": 2,
+      "is_swap": false,
+      "trades": [],
+      "current_owner": "Berke",
+      "status": "projected",
+      "projected_slot": 6,
+      "projected_overall": 16,
+      "projected_grade": "F",
+      "projected_gpa": 0.0,
+      "projection_basis": "2025-26 standings (rank #5)"
+    }
+  },
+  "owner_summary": {
+    "Baden": {
+      "total_held": 4,
+      "own_picks": 0,
+      "acquired_picks": 4,
+      "traded_away": 9,
+      "received_grades": [
+        "A",
+        "A+",
+        "D"
+      ],
+      "sent_grades": [
+        "A",
+        "A",
+        "A",
+        "A",
+        "D",
+        "C",
+        "F",
+        "A+",
+        "C"
+      ]
+    },
+    "Berke": {
+      "total_held": 15,
+      "own_picks": 3,
+      "acquired_picks": 12,
+      "traded_away": 8,
+      "received_grades": [
+        "F",
+        "D"
+      ],
+      "sent_grades": [
+        "F",
+        "F",
+        "C",
+        "C",
+        "C",
+        "F",
+        "F",
+        "F"
+      ]
+    },
+    "Delaney": {
+      "total_held": 31,
+      "own_picks": 9,
+      "acquired_picks": 22,
+      "traded_away": 7,
+      "received_grades": [
+        "A+",
+        "C",
+        "B",
+        "F",
+        "F",
+        "C",
+        "F",
+        "F"
+      ],
+      "sent_grades": [
+        "A+",
+        "A+",
+        "B",
+        "B",
+        "A+",
+        "A+",
+        "C"
+      ]
+    },
+    "Gold": {
+      "total_held": 4,
+      "own_picks": 1,
+      "acquired_picks": 3,
+      "traded_away": 4,
+      "received_grades": [
+        "B",
+        "A",
+        "D"
+      ],
+      "sent_grades": [
+        "A",
+        "A+",
+        "D",
+        "F"
+      ]
+    },
+    "Green": {
+      "total_held": 22,
+      "own_picks": 8,
+      "acquired_picks": 14,
+      "traded_away": 3,
+      "received_grades": [
+        "F",
+        "C",
+        "C",
+        "A"
+      ],
+      "sent_grades": [
+        "A",
+        "D",
+        "D"
+      ]
+    },
+    "HaleTrager": {
+      "total_held": 25,
+      "own_picks": 10,
+      "acquired_picks": 15,
+      "traded_away": 9,
+      "received_grades": [
+        "A+",
+        "F",
+        "F",
+        "D",
+        "D",
+        "A+",
+        "F",
+        "A+",
+        "D",
+        "C",
+        "C",
+        "F"
+      ],
+      "sent_grades": [
+        "A+",
+        "F",
+        "F",
+        "C",
+        "F",
+        "C",
+        "A",
+        "A",
+        "C"
+      ]
+    },
+    "Jowkar": {
+      "total_held": 27,
+      "own_picks": 7,
+      "acquired_picks": 20,
+      "traded_away": 8,
+      "received_grades": [
+        "F",
+        "C",
+        "F",
+        "A+",
+        "F",
+        "D",
+        "F",
+        "F",
+        "F"
+      ],
+      "sent_grades": [
+        "F",
+        "F",
+        "C",
+        "A+",
+        "A+",
+        "F",
+        "F",
+        "F"
+      ]
+    },
+    "Moss": {
+      "total_held": 2,
+      "own_picks": 1,
+      "acquired_picks": 1,
+      "traded_away": 3,
+      "received_grades": [
+        "A"
+      ],
+      "sent_grades": [
+        "B",
+        "D",
+        "D"
+      ]
+    },
+    "Peterson": {
+      "total_held": 7,
+      "own_picks": 1,
+      "acquired_picks": 6,
+      "traded_away": 12,
+      "received_grades": [
+        "F",
+        "C",
+        "B",
+        "A",
+        "F",
+        "A+",
+        "A"
+      ],
+      "sent_grades": [
+        "F",
+        "F",
+        "A",
+        "B",
+        "F",
+        "F",
+        "F",
+        "F",
+        "D",
+        "D",
+        "A",
+        "D"
+      ]
+    },
+    "Zujewski": {
+      "total_held": 1,
+      "own_picks": 0,
+      "acquired_picks": 1,
+      "traded_away": 0,
+      "received_grades": [
+        "C"
+      ],
+      "sent_grades": []
     }
   }
 }
