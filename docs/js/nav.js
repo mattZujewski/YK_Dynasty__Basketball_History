@@ -20,6 +20,7 @@
     const isPlayers  = path.includes('players.html');
     const isRankings = path.includes('rankings.html');
     const isStats    = path.includes('stats.html');
+    const isGrades   = path.includes('grades.html');
 
     function activeClass(flag) { return flag ? ' nav-active' : ''; }
 
@@ -42,6 +43,7 @@
     <a class="nav-link${activeClass(isPlayers)}"   href="${base}players.html">Players</a>
     <a class="nav-link${activeClass(isRankings)}"  href="${base}rankings.html">Rankings</a>
     <a class="nav-link${activeClass(isStats)}"     href="${base}stats.html">Stats</a>
+    <a class="nav-link${activeClass(isGrades)}"    href="${base}grades.html">Grades</a>
   </div>
   <span class="nav-spacer"></span>
   <span class="nav-meta" id="nav-data-date">2025-26</span>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Grades &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F4CA; Trade Grades</h1>
+      <p class="subtitle">Every trade graded on player production before &amp; after</p>
+    </header>
+
+    <!-- Summary Stats -->
+    <div class="stat-bar" id="grade-stats-bar">
+      <div class="stat-card"><span class="stat-label">Loading&hellip;</span></div>
+    </div>
+
+    <!-- Owner Report Cards -->
+    <div class="chart-section" id="owner-report-section">
+      <h2>&#x1F4CB; Owner Trade Report Cards</h2>
+      <p class="chart-description">Average trade grade per owner &mdash; who consistently wins trades?</p>
+      <div id="owner-report-grid" class="roster-grid"></div>
+    </div>
+
+    <!-- Best & Worst Trades -->
+    <div class="chart-section" id="notable-trades-section">
+      <h2>&#x1F525; Most Lopsided Trades</h2>
+      <p class="chart-description">The biggest winners and losers in league history</p>
+      <div id="notable-trades-grid" class="roster-grid"></div>
+    </div>
+
+    <!-- Filters -->
+    <div class="chart-section" style="padding:18px 24px">
+      <div class="filter-bar" id="grade-filters">
+        <label>Filter:</label>
+        <select id="filter-owner" class="filter-select">
+          <option value="">All Owners</option>
+        </select>
+        <select id="filter-season" class="filter-select">
+          <option value="">All Seasons</option>
+        </select>
+        <select id="filter-grade" class="filter-select">
+          <option value="">All Grades</option>
+          <option value="A+">A+ Only</option>
+          <option value="A">A Only</option>
+          <option value="B">B Only</option>
+          <option value="C">C Only</option>
+          <option value="D">D Only</option>
+          <option value="F">F Only</option>
+        </select>
+        <select id="filter-confidence" class="filter-select">
+          <option value="">All Confidence</option>
+          <option value="high">High Confidence</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Trade Log -->
+    <div class="chart-section" id="trade-log-section">
+      <h2>&#x1F4DD; Full Trade Log</h2>
+      <p class="chart-description" id="trade-count-label"></p>
+      <div id="trade-log" class="data-table-wrapper"></div>
+    </div>
+
+    <!-- Trade Detail (expandable) -->
+    <div id="trade-detail" style="display:none"></div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/dashboards/grades.js"></script>
+</body>
+</html>
