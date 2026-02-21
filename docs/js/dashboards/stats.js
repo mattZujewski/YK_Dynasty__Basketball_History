@@ -23,12 +23,13 @@
     }
 
     var stats = (statsData && statsData.players) || {};
-    var rankings = rankingsData.rankings || [];
+    var rankingsArr = Array.isArray(rankingsData) ? rankingsData : (rankingsData.rankings || []);
 
     // Build rank lookup
     var rankMap = {};
-    rankings.forEach(function(r) {
-      rankMap[YK.normalizeName(r.player)] = r.rank;
+    rankingsArr.forEach(function(r) {
+      var name = r.player_name || r.player;
+      rankMap[YK.normalizeName(name)] = r.rank;
     });
 
     // Build player → stats lookup by normalized name
@@ -113,7 +114,7 @@
       '<div class="stat-card"><span class="stat-label">Total Trades</span><span class="stat-value">' + totalTrades + '</span></div>' +
       '<div class="stat-card"><span class="stat-label">With Ranked Players</span><span class="stat-value">' + tradesWithRanked + '</span></div>' +
       '<div class="stat-card"><span class="stat-label">Players Moved</span><span class="stat-value">' + totalPlayersTraded + '</span></div>' +
-      '<div class="stat-card"><span class="stat-label">Ranked Players</span><span class="stat-value">' + rankings.length + '</span></div>';
+      '<div class="stat-card"><span class="stat-label">Ranked Players</span><span class="stat-value">' + rankingsArr.length + '</span></div>';
 
     // Render biggest trades
     var biggestTrades = tradeAnalysis.slice().sort(function(a, b) {

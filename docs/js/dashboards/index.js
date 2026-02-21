@@ -177,10 +177,16 @@
 
     // Dynasty rankings (top 20)
     var rankingsTbody = document.getElementById('rankings-tbody');
-    rankingsTbody.innerHTML = rankingsData.rankings.slice(0, 20).map(function(r) {
+    var rankingsArr = Array.isArray(rankingsData) ? rankingsData : (rankingsData.rankings || []);
+    rankingsTbody.innerHTML = rankingsArr.slice(0, 20).map(function(r) {
+      var name = r.player_name || r.player;
+      var owner = r.owned_by || null;
+      var ownerBadge = owner
+        ? ' <span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:' + YK.ownerColor(owner) + ';margin-left:6px;vertical-align:middle"></span> <span style="color:var(--text-muted);font-size:0.75rem">' + YK.ownerDisplayName(owner) + '</span>'
+        : ' <span style="color:var(--text-muted);font-size:0.7rem;font-style:italic;margin-left:6px">FA</span>';
       return '<tr>' +
         '<td style="text-align:center;font-weight:700;color:var(--brand-green)">' + r.rank + '</td>' +
-        '<td>' + r.player + '</td>' +
+        '<td>' + YK.escapeHtml(name) + ownerBadge + '</td>' +
       '</tr>';
     }).join('');
   });

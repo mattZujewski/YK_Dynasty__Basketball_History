@@ -1,201 +1,4745 @@
-{
-  "date": "2026-01-01",
-  "rankings": [
-    {
-      "rank": 1,
-      "player": "Victor Wembanyama"
-    },
-    {
-      "rank": 2,
-      "player": "Luka Don\u010di\u0107"
-    },
-    {
-      "rank": 3,
-      "player": "Nikola Joki\u0107"
-    },
-    {
-      "rank": 4,
-      "player": "Shai Gilgeous-Alexander"
-    },
-    {
-      "rank": 5,
-      "player": "Cade Cunningham"
-    },
-    {
-      "rank": 6,
-      "player": "Cooper Flagg"
-    },
-    {
-      "rank": 7,
-      "player": "Alperen \u015eeng\u00fcn"
-    },
-    {
-      "rank": 8,
-      "player": "Jalen Johnson"
-    },
-    {
-      "rank": 9,
-      "player": "Tyrese Maxey"
-    },
-    {
-      "rank": 10,
-      "player": "Giannis Antetokounmpo"
-    },
-    {
-      "rank": 11,
-      "player": "Anthony Edwards"
-    },
-    {
-      "rank": 12,
-      "player": "Jayson Tatum"
-    },
-    {
-      "rank": 13,
-      "player": "Tyrese Haliburton"
-    },
-    {
-      "rank": 14,
-      "player": "Darryn Peterson"
-    },
-    {
-      "rank": 15,
-      "player": "Cameron Boozer"
-    },
-    {
-      "rank": 16,
-      "player": "Evan Mobley"
-    },
-    {
-      "rank": 17,
-      "player": "Scottie Barnes"
-    },
-    {
-      "rank": 18,
-      "player": "Amen Thompson"
-    },
-    {
-      "rank": 19,
-      "player": "Chet Holmgren"
-    },
-    {
-      "rank": 20,
-      "player": "Deni Avdija"
-    },
-    {
-      "rank": 21,
-      "player": "Paolo Banchero"
-    },
-    {
-      "rank": 22,
-      "player": "Josh Giddey"
-    },
-    {
-      "rank": 23,
-      "player": "Jalen Williams"
-    },
-    {
-      "rank": 24,
-      "player": "Devin Booker"
-    },
-    {
-      "rank": 25,
-      "player": "Karl-Anthony Towns"
-    },
-    {
-      "rank": 26,
-      "player": "Dylan Harper"
-    },
-    {
-      "rank": 27,
-      "player": "Donovan Mitchell"
-    },
-    {
-      "rank": 28,
-      "player": "Trae Young"
-    },
-    {
-      "rank": 29,
-      "player": "Austin Reaves"
-    },
-    {
-      "rank": 30,
-      "player": "Franz Wagner"
-    },
-    {
-      "rank": 31,
-      "player": "De'Aaron Fox"
-    },
-    {
-      "rank": 32,
-      "player": "AJ Dybantsa"
-    },
-    {
-      "rank": 33,
-      "player": "Trey Murphy III"
-    },
-    {
-      "rank": 34,
-      "player": "Bam Adebayo"
-    },
-    {
-      "rank": 35,
-      "player": "Jalen Duren"
-    },
-    {
-      "rank": 36,
-      "player": "Kingston Flemings"
-    },
-    {
-      "rank": 37,
-      "player": "Caleb Wilson"
-    },
-    {
-      "rank": 38,
-      "player": "Jamal Murray"
-    },
-    {
-      "rank": 39,
-      "player": "Anthony Davis"
-    },
-    {
-      "rank": 40,
-      "player": "Brandon Miller"
-    },
-    {
-      "rank": 41,
-      "player": "VJ Edgecombe"
-    },
-    {
-      "rank": 42,
-      "player": "Alex Sarr"
-    },
-    {
-      "rank": 43,
-      "player": "Darius Garland"
-    },
-    {
-      "rank": 44,
-      "player": "LaMelo Ball"
-    },
-    {
-      "rank": 45,
-      "player": "Domantas Sabonis"
-    },
-    {
-      "rank": 46,
-      "player": "Jalen Brunson"
-    },
-    {
-      "rank": 47,
-      "player": "Lauri Markkanen"
-    },
-    {
-      "rank": 48,
-      "player": "Derik Queen"
-    },
-    {
-      "rank": 49,
-      "player": "Jaylen Brown"
-    }
-  ]
-}
+[
+  {
+    "rank": 1,
+    "player_name": "Victor Wembanyama",
+    "position": "C",
+    "nba_team": "SAS",
+    "age": 22,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 2,
+    "player_name": "Shai Gilgeous-Alexander",
+    "position": "PG",
+    "nba_team": "OKC",
+    "age": 27,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 3,
+    "player_name": "Nikola Joki\u0107",
+    "position": "C",
+    "nba_team": "DEN",
+    "age": 31,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 4,
+    "player_name": "Luka Don\u010di\u0107",
+    "position": "SF",
+    "nba_team": "LAL",
+    "age": 27,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 5,
+    "player_name": "Cade Cunningham",
+    "position": "SG",
+    "nba_team": "DET",
+    "age": 24,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 6,
+    "player_name": "Cooper Flagg",
+    "position": "PF",
+    "nba_team": "DAL",
+    "age": 19,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 7,
+    "player_name": "Tyrese Maxey",
+    "position": "SG",
+    "nba_team": "PHI",
+    "age": 25,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 8,
+    "player_name": "Anthony Edwards",
+    "position": "SG",
+    "nba_team": "MIN",
+    "age": 24,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 9,
+    "player_name": "Jalen Johnson",
+    "position": "PF",
+    "nba_team": "ATL",
+    "age": 24,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 10,
+    "player_name": "Tyrese Haliburton",
+    "position": "PG",
+    "nba_team": "IND",
+    "age": 25,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 11,
+    "player_name": "Jayson Tatum",
+    "position": "SF",
+    "nba_team": "BOS",
+    "age": 27,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 12,
+    "player_name": "Alperen \u015eeng\u00fcn",
+    "position": "C",
+    "nba_team": "HOU",
+    "age": 23,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 13,
+    "player_name": "Scottie Barnes",
+    "position": "PF",
+    "nba_team": "TOR",
+    "age": 24,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 14,
+    "player_name": "Darryn Peterson",
+    "position": "SG",
+    "nba_team": "-",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 15,
+    "player_name": "Cameron Boozer",
+    "position": "PF",
+    "nba_team": "-",
+    "age": 18,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 16,
+    "player_name": "Amen Thompson",
+    "position": "SF",
+    "nba_team": "HOU",
+    "age": 23,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 17,
+    "player_name": "Evan Mobley",
+    "position": "C",
+    "nba_team": "CLE",
+    "age": 24,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 18,
+    "player_name": "Chet Holmgren",
+    "position": "PF",
+    "nba_team": "OKC",
+    "age": 23,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 19,
+    "player_name": "Deni Avdija",
+    "position": "SF",
+    "nba_team": "POR",
+    "age": 25,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 20,
+    "player_name": "Donovan Mitchell",
+    "position": "SG",
+    "nba_team": "CLE",
+    "age": 29,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 21,
+    "player_name": "Jalen Williams",
+    "position": "SF",
+    "nba_team": "OKC",
+    "age": 24,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 22,
+    "player_name": "Austin Reaves",
+    "position": "SG",
+    "nba_team": "LAL",
+    "age": 27,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 23,
+    "player_name": "AJ Dybantsa",
+    "position": "SF",
+    "nba_team": "-",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 24,
+    "player_name": "Caleb Wilson",
+    "position": "PF",
+    "nba_team": "-",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 25,
+    "player_name": "Giannis Antetokounmpo",
+    "position": "PF",
+    "nba_team": "MIL",
+    "age": 31,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 26,
+    "player_name": "Dylan Harper",
+    "position": "PG",
+    "nba_team": "SAS",
+    "age": 19,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 27,
+    "player_name": "Franz Wagner",
+    "position": "SF",
+    "nba_team": "ORL",
+    "age": 24,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 28,
+    "player_name": "Devin Booker",
+    "position": "SG",
+    "nba_team": "PHO",
+    "age": 29,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 29,
+    "player_name": "Trey Murphy III",
+    "position": "SF",
+    "nba_team": "NOR",
+    "age": 25,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 30,
+    "player_name": "Kon Knueppel II",
+    "position": "SF",
+    "nba_team": "CHA",
+    "age": 20,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 31,
+    "player_name": "Josh Giddey",
+    "position": "SF",
+    "nba_team": "CHI",
+    "age": 23,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 32,
+    "player_name": "Keyonte George",
+    "position": "SG",
+    "nba_team": "UTA",
+    "age": 22,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 33,
+    "player_name": "Jamal Murray",
+    "position": "PG",
+    "nba_team": "DEN",
+    "age": 29,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 34,
+    "player_name": "VJ Edgecombe",
+    "position": "SG",
+    "nba_team": "PHI",
+    "age": 20,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 35,
+    "player_name": "Kingston Flemings",
+    "position": "PG",
+    "nba_team": "-",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 36,
+    "player_name": "LaMelo Ball",
+    "position": "PG",
+    "nba_team": "CHA",
+    "age": 24,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 37,
+    "player_name": "Brandon Miller",
+    "position": "PF",
+    "nba_team": "CHA",
+    "age": 23,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 38,
+    "player_name": "Jalen Duren",
+    "position": "C",
+    "nba_team": "DET",
+    "age": 22,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 39,
+    "player_name": "Darius Garland",
+    "position": "PG",
+    "nba_team": "LAC",
+    "age": 26,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 40,
+    "player_name": "Paolo Banchero",
+    "position": "PF",
+    "nba_team": "ORL",
+    "age": 23,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 41,
+    "player_name": "Alex Sarr",
+    "position": "PF",
+    "nba_team": "WAS",
+    "age": 20,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 42,
+    "player_name": "Trae Young",
+    "position": "PG",
+    "nba_team": "WAS",
+    "age": 27,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 43,
+    "player_name": "Jalen Brunson",
+    "position": "PG",
+    "nba_team": "NYK",
+    "age": 29,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 44,
+    "player_name": "Bam Adebayo",
+    "position": "C",
+    "nba_team": "MIA",
+    "age": 28,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 45,
+    "player_name": "Karl-Anthony Towns",
+    "position": "C",
+    "nba_team": "NYK",
+    "age": 30,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 46,
+    "player_name": "Lauri Markkanen",
+    "position": "PF",
+    "nba_team": "UTA",
+    "age": 28,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 47,
+    "player_name": "Desmond Bane",
+    "position": "SG",
+    "nba_team": "ORL",
+    "age": 27,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 48,
+    "player_name": "Jaren Jackson Jr.",
+    "position": "PF",
+    "nba_team": "UTA",
+    "age": 26,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 49,
+    "player_name": "Derik Queen",
+    "position": "PF",
+    "nba_team": "NOR",
+    "age": 21,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 50,
+    "player_name": "Onyeka Okongwu",
+    "position": "C",
+    "nba_team": "ATL",
+    "age": 25,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 51,
+    "player_name": "Reed Sheppard",
+    "position": "SG",
+    "nba_team": "HOU",
+    "age": 21,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 52,
+    "player_name": "Anthony Davis",
+    "position": "PF",
+    "nba_team": "WAS",
+    "age": 32,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 53,
+    "player_name": "Jaylen Brown",
+    "position": "SF",
+    "nba_team": "BOS",
+    "age": 29,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 54,
+    "player_name": "Ivica Zubac",
+    "position": "C",
+    "nba_team": "IND",
+    "age": 28,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 55,
+    "player_name": "Zach Edey",
+    "position": "C",
+    "nba_team": "MEM",
+    "age": 23,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 56,
+    "player_name": "Stephon Castle",
+    "position": "SF",
+    "nba_team": "SAS",
+    "age": 21,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 57,
+    "player_name": "Cedric Coward",
+    "position": "SF",
+    "nba_team": "MEM",
+    "age": 22,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 58,
+    "player_name": "Derrick White",
+    "position": "PG",
+    "nba_team": "BOS",
+    "age": 31,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 59,
+    "player_name": "De'Aaron Fox",
+    "position": "PG",
+    "nba_team": "SAS",
+    "age": 28,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 60,
+    "player_name": "Jalen Suggs",
+    "position": "PG",
+    "nba_team": "ORL",
+    "age": 24,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 61,
+    "player_name": "Domantas Sabonis",
+    "position": "C",
+    "nba_team": "SAC",
+    "age": 29,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 62,
+    "player_name": "Kyshawn George",
+    "position": "SF",
+    "nba_team": "WAS",
+    "age": 22,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 63,
+    "player_name": "Keaton Wagler",
+    "position": "SG",
+    "nba_team": "-",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 64,
+    "player_name": "Kyrie Irving",
+    "position": "PG",
+    "nba_team": "DAL",
+    "age": 33,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 65,
+    "player_name": "James Harden",
+    "position": "SG",
+    "nba_team": "CLE",
+    "age": 36,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 66,
+    "player_name": "Kevin Durant",
+    "position": "SF",
+    "nba_team": "HOU",
+    "age": 37,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 67,
+    "player_name": "Stephen Curry",
+    "position": "PG",
+    "nba_team": "GSW",
+    "age": 37,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 68,
+    "player_name": "Ausar Thompson",
+    "position": "SF",
+    "nba_team": "DET",
+    "age": 23,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 69,
+    "player_name": "Tyler Herro",
+    "position": "SG",
+    "nba_team": "MIA",
+    "age": 26,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 70,
+    "player_name": "Walker Kessler",
+    "position": "C",
+    "nba_team": "UTA",
+    "age": 24,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 71,
+    "player_name": "Donovan Clingan",
+    "position": "C",
+    "nba_team": "POR",
+    "age": 22,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 72,
+    "player_name": "OG Anunoby",
+    "position": "SF",
+    "nba_team": "NYK",
+    "age": 28,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 73,
+    "player_name": "Isaiah Hartenstein",
+    "position": "C",
+    "nba_team": "OKC",
+    "age": 27,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 74,
+    "player_name": "Mikal Bridges",
+    "position": "SF",
+    "nba_team": "NYK",
+    "age": 29,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 75,
+    "player_name": "Collin Murray-Boyles",
+    "position": "PF",
+    "nba_team": "TOR",
+    "age": 20,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 76,
+    "player_name": "Ja Morant",
+    "position": "PG",
+    "nba_team": "MEM",
+    "age": 26,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 77,
+    "player_name": "Matas Buzelis",
+    "position": "SF",
+    "nba_team": "CHI",
+    "age": 21,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 78,
+    "player_name": "Kel'el Ware",
+    "position": "C",
+    "nba_team": "MIA",
+    "age": 21,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 79,
+    "player_name": "Mikel Brown Jr.",
+    "position": "PG",
+    "nba_team": "-",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 80,
+    "player_name": "Kawhi Leonard",
+    "position": "SF",
+    "nba_team": "LAC",
+    "age": 34,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 81,
+    "player_name": "Joel Embiid",
+    "position": "C",
+    "nba_team": "PHI",
+    "age": 31,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 82,
+    "player_name": "Zion Williamson",
+    "position": "PF",
+    "nba_team": "NOR",
+    "age": 25,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 83,
+    "player_name": "Nickeil Alexander-Walker",
+    "position": "SG",
+    "nba_team": "ATL",
+    "age": 27,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 84,
+    "player_name": "Jaden McDaniels",
+    "position": "PF",
+    "nba_team": "MIN",
+    "age": 25,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 85,
+    "player_name": "Keegan Murray",
+    "position": "PF",
+    "nba_team": "SAC",
+    "age": 25,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 86,
+    "player_name": "Immanuel Quickley",
+    "position": "PG",
+    "nba_team": "TOR",
+    "age": 26,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 87,
+    "player_name": "Dyson Daniels",
+    "position": "PG",
+    "nba_team": "ATL",
+    "age": 22,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 88,
+    "player_name": "Pascal Siakam",
+    "position": "PF",
+    "nba_team": "IND",
+    "age": 31,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 89,
+    "player_name": "Scoot Henderson",
+    "position": "PG",
+    "nba_team": "POR",
+    "age": 22,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 90,
+    "player_name": "Brandon Ingram",
+    "position": "SF",
+    "nba_team": "TOR",
+    "age": 28,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 91,
+    "player_name": "Tari Eason",
+    "position": "PF",
+    "nba_team": "HOU",
+    "age": 24,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 92,
+    "player_name": "Ryan Rollins",
+    "position": "SG",
+    "nba_team": "MIL",
+    "age": 23,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 93,
+    "player_name": "Jeremiah Fears",
+    "position": "PG",
+    "nba_team": "NOR",
+    "age": 19,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 94,
+    "player_name": "Jabari Smith Jr.",
+    "position": "PF",
+    "nba_team": "HOU",
+    "age": 22,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 95,
+    "player_name": "Mark Williams",
+    "position": "C",
+    "nba_team": "PHO",
+    "age": 24,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 96,
+    "player_name": "Julius Randle",
+    "position": "PF",
+    "nba_team": "MIN",
+    "age": 31,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 97,
+    "player_name": "Jarrett Allen",
+    "position": "C",
+    "nba_team": "CLE",
+    "age": 27,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 98,
+    "player_name": "Peyton Watson",
+    "position": "PF",
+    "nba_team": "DEN",
+    "age": 23,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 99,
+    "player_name": "Anthony Black",
+    "position": "SF",
+    "nba_team": "ORL",
+    "age": 22,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 100,
+    "player_name": "Naz Reid",
+    "position": "PF",
+    "nba_team": "MIN",
+    "age": 26,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 101,
+    "player_name": "Michael Porter Jr.",
+    "position": "PF",
+    "nba_team": "BKN",
+    "age": 27,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 102,
+    "player_name": "Myles Turner",
+    "position": "C",
+    "nba_team": "MIL",
+    "age": 29,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 103,
+    "player_name": "Cason Wallace",
+    "position": "PG",
+    "nba_team": "OKC",
+    "age": 22,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 104,
+    "player_name": "Donte DiVincenzo",
+    "position": "SG",
+    "nba_team": "MIN",
+    "age": 29,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 105,
+    "player_name": "Khaman Maluach",
+    "position": "C",
+    "nba_team": "PHO",
+    "age": 19,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 106,
+    "player_name": "Josh Hart",
+    "position": "SF",
+    "nba_team": "NYK",
+    "age": 30,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 107,
+    "player_name": "Ace Bailey",
+    "position": "PF",
+    "nba_team": "UTA",
+    "age": 19,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 108,
+    "player_name": "Tre Johnson",
+    "position": "SG",
+    "nba_team": "WAS",
+    "age": 19,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 109,
+    "player_name": "Dejounte Murray",
+    "position": "PG",
+    "nba_team": "NOR",
+    "age": 29,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 110,
+    "player_name": "Koa Peat",
+    "position": "PF",
+    "nba_team": "-",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 111,
+    "player_name": "LeBron James",
+    "position": "SF",
+    "nba_team": "LAL",
+    "age": 41,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 112,
+    "player_name": "Nic Claxton",
+    "position": "C",
+    "nba_team": "BKN",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 113,
+    "player_name": "Dereck Lively II",
+    "position": "C",
+    "nba_team": "DAL",
+    "age": 22,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 114,
+    "player_name": "Shaedon Sharpe",
+    "position": "SF",
+    "nba_team": "POR",
+    "age": 22,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 115,
+    "player_name": "Egor D\u00ebmin",
+    "position": "PG",
+    "nba_team": "BKN",
+    "age": 19,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 116,
+    "player_name": "Payton Pritchard",
+    "position": "PG",
+    "nba_team": "BOS",
+    "age": 28,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 117,
+    "player_name": "Miles Bridges",
+    "position": "SF",
+    "nba_team": "CHA",
+    "age": 27,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 118,
+    "player_name": "Santi Aldama",
+    "position": "PF",
+    "nba_team": "MEM",
+    "age": 25,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 119,
+    "player_name": "Jalen Green",
+    "position": "SG",
+    "nba_team": "PHO",
+    "age": 24,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 120,
+    "player_name": "Andrew Nembhard",
+    "position": "PG",
+    "nba_team": "IND",
+    "age": 26,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 121,
+    "player_name": "P.J. Washington",
+    "position": "PF",
+    "nba_team": "DAL",
+    "age": 27,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 122,
+    "player_name": "Fred VanVleet",
+    "position": "PG",
+    "nba_team": "HOU",
+    "age": 32,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 123,
+    "player_name": "Toumani Camara",
+    "position": "PF",
+    "nba_team": "POR",
+    "age": 25,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 124,
+    "player_name": "Ajay Mitchell",
+    "position": "PG",
+    "nba_team": "OKC",
+    "age": 23,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 125,
+    "player_name": "Kevin Porter Jr.",
+    "position": "SG",
+    "nba_team": "MIL",
+    "age": 25,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 126,
+    "player_name": "Jakob Poeltl",
+    "position": "C",
+    "nba_team": "TOR",
+    "age": 30,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 127,
+    "player_name": "Coby White",
+    "position": "PG",
+    "nba_team": "CHA",
+    "age": 26,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 128,
+    "player_name": "Aaron Gordon",
+    "position": "PF",
+    "nba_team": "DEN",
+    "age": 30,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 129,
+    "player_name": "Deandre Ayton",
+    "position": "C",
+    "nba_team": "LAL",
+    "age": 27,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 130,
+    "player_name": "Devin Vassell",
+    "position": "SF",
+    "nba_team": "SAS",
+    "age": 25,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 131,
+    "player_name": "Andrew Wiggins",
+    "position": "SF",
+    "nba_team": "MIA",
+    "age": 31,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 132,
+    "player_name": "Zach LaVine",
+    "position": "SG",
+    "nba_team": "SAC",
+    "age": 30,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 133,
+    "player_name": "Norman Powell",
+    "position": "SG",
+    "nba_team": "MIA",
+    "age": 32,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 134,
+    "player_name": "Brandin Podziemski",
+    "position": "SG",
+    "nba_team": "GSW",
+    "age": 23,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 135,
+    "player_name": "Jaylon Tyson",
+    "position": "SF",
+    "nba_team": "CLE",
+    "age": 23,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 136,
+    "player_name": "Christian Braun",
+    "position": "SF",
+    "nba_team": "DEN",
+    "age": 24,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 137,
+    "player_name": "Day'Ron Sharpe",
+    "position": "C",
+    "nba_team": "BKN",
+    "age": 24,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 138,
+    "player_name": "John Collins",
+    "position": "PF",
+    "nba_team": "LAC",
+    "age": 28,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 139,
+    "player_name": "Thomas Sorber",
+    "position": "C",
+    "nba_team": "OKC",
+    "age": 20,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 140,
+    "player_name": "Herbert Jones",
+    "position": "PF",
+    "nba_team": "NOR",
+    "age": 27,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 141,
+    "player_name": "Carter Bryant",
+    "position": "SF",
+    "nba_team": "SAS",
+    "age": 20,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 142,
+    "player_name": "Daniel Gafford",
+    "position": "C",
+    "nba_team": "DAL",
+    "age": 27,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 143,
+    "player_name": "Nikola Topi\u0107",
+    "position": "PG",
+    "nba_team": "OKC",
+    "age": 20,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 144,
+    "player_name": "Malik Monk",
+    "position": "SG",
+    "nba_team": "SAC",
+    "age": 28,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 145,
+    "player_name": "Bilal Coulibaly",
+    "position": "SF",
+    "nba_team": "WAS",
+    "age": 21,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 146,
+    "player_name": "Ronald Holland II",
+    "position": "SF",
+    "nba_team": "DET",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 147,
+    "player_name": "Yang Hansen",
+    "position": "C",
+    "nba_team": "POR",
+    "age": 20,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 148,
+    "player_name": "Kasparas Jaku\u010dionis",
+    "position": "PG",
+    "nba_team": "MIA",
+    "age": 19,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 149,
+    "player_name": "Rudy Gobert",
+    "position": "C",
+    "nba_team": "MIN",
+    "age": 33,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 150,
+    "player_name": "Jimmy Butler III",
+    "position": "SF",
+    "nba_team": "GSW",
+    "age": 36,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 151,
+    "player_name": "Kristaps Porzi\u0146\u0123is",
+    "position": "C",
+    "nba_team": "GSW",
+    "age": 30,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 152,
+    "player_name": "Paul George",
+    "position": "SF",
+    "nba_team": "PHI",
+    "age": 35,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 153,
+    "player_name": "Damian Lillard",
+    "position": "PG",
+    "nba_team": "POR",
+    "age": 35,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 154,
+    "player_name": "Jrue Holiday",
+    "position": "PG",
+    "nba_team": "POR",
+    "age": 35,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 155,
+    "player_name": "Moussa Diabat\u00e9",
+    "position": "C",
+    "nba_team": "CHA",
+    "age": 24,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 156,
+    "player_name": "Moses Moody",
+    "position": "SF",
+    "nba_team": "GSW",
+    "age": 23,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 157,
+    "player_name": "RJ Barrett",
+    "position": "SG",
+    "nba_team": "TOR",
+    "age": 25,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 158,
+    "player_name": "Kyle Filipowski",
+    "position": "C",
+    "nba_team": "UTA",
+    "age": 22,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 159,
+    "player_name": "Jared McCain",
+    "position": "SG",
+    "nba_team": "OKC",
+    "age": 22,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 160,
+    "player_name": "Neemias Queta",
+    "position": "C",
+    "nba_team": "BOS",
+    "age": 26,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 161,
+    "player_name": "Mitchell Robinson",
+    "position": "C",
+    "nba_team": "NYK",
+    "age": 27,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 162,
+    "player_name": "Quentin Grimes",
+    "position": "SG",
+    "nba_team": "PHI",
+    "age": 25,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 163,
+    "player_name": "Aaron Nesmith",
+    "position": "SF",
+    "nba_team": "IND",
+    "age": 26,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 164,
+    "player_name": "Ty Jerome",
+    "position": "PG",
+    "nba_team": "MEM",
+    "age": 28,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 165,
+    "player_name": "Cameron Johnson",
+    "position": "SF",
+    "nba_team": "DEN",
+    "age": 29,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 166,
+    "player_name": "Ryan Kalkbrenner",
+    "position": "C",
+    "nba_team": "CHA",
+    "age": 24,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 167,
+    "player_name": "Collin Gillespie",
+    "position": "PG",
+    "nba_team": "PHO",
+    "age": 26,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 168,
+    "player_name": "Isaiah Stewart",
+    "position": "C",
+    "nba_team": "DET",
+    "age": 24,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 169,
+    "player_name": "Walter Clayton Jr.",
+    "position": "PG",
+    "nba_team": "MEM",
+    "age": 22,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 170,
+    "player_name": "Joan Beringer",
+    "position": "C",
+    "nba_team": "MIN",
+    "age": 19,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 171,
+    "player_name": "Bennedict Mathurin",
+    "position": "SG",
+    "nba_team": "LAC",
+    "age": 23,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 172,
+    "player_name": "Anfernee Simons",
+    "position": "SG",
+    "nba_team": "CHI",
+    "age": 26,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 173,
+    "player_name": "Wendell Carter Jr.",
+    "position": "C",
+    "nba_team": "ORL",
+    "age": 26,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 174,
+    "player_name": "Jaden Ivey",
+    "position": "SG",
+    "nba_team": "CHI",
+    "age": 24,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 175,
+    "player_name": "Nolan Traor\u00e9",
+    "position": "PG",
+    "nba_team": "BKN",
+    "age": 19,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 176,
+    "player_name": "Max Christie",
+    "position": "SG",
+    "nba_team": "DAL",
+    "age": 23,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 177,
+    "player_name": "Jaime Jaquez Jr.",
+    "position": "SF",
+    "nba_team": "MIA",
+    "age": 25,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 178,
+    "player_name": "Noah Clowney",
+    "position": "PF",
+    "nba_team": "BKN",
+    "age": 21,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 179,
+    "player_name": "Maxime Raynaud",
+    "position": "C",
+    "nba_team": "SAC",
+    "age": 22,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 180,
+    "player_name": "Jerami Grant",
+    "position": "PF",
+    "nba_team": "POR",
+    "age": 31,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 181,
+    "player_name": "Danny Wolf",
+    "position": "C",
+    "nba_team": "BKN",
+    "age": 21,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 182,
+    "player_name": "Aaron Wiggins",
+    "position": "SF",
+    "nba_team": "OKC",
+    "age": 27,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 183,
+    "player_name": "De'Andre Hunter",
+    "position": "SF",
+    "nba_team": "SAC",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 184,
+    "player_name": "Tre Jones",
+    "position": "PG",
+    "nba_team": "CHI",
+    "age": 26,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 185,
+    "player_name": "Goga Bitadze",
+    "position": "C",
+    "nba_team": "ORL",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 186,
+    "player_name": "Rob Dillingham",
+    "position": "PG",
+    "nba_team": "CHI",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 187,
+    "player_name": "Ayo Dosunmu",
+    "position": "PG",
+    "nba_team": "MIN",
+    "age": 26,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 188,
+    "player_name": "Cam Spencer",
+    "position": "SG",
+    "nba_team": "MEM",
+    "age": 25,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 189,
+    "player_name": "Dillon Brooks",
+    "position": "SF",
+    "nba_team": "PHO",
+    "age": 30,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 190,
+    "player_name": "Luke Kornet",
+    "position": "C",
+    "nba_team": "SAS",
+    "age": 30,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 191,
+    "player_name": "Grayson Allen",
+    "position": "SG",
+    "nba_team": "PHO",
+    "age": 30,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 192,
+    "player_name": "Nique Clifford",
+    "position": "SF",
+    "nba_team": "SAC",
+    "age": 24,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 193,
+    "player_name": "Jaylen Wells",
+    "position": "SF",
+    "nba_team": "MEM",
+    "age": 22,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 194,
+    "player_name": "Jordan Poole",
+    "position": "SG",
+    "nba_team": "NOR",
+    "age": 26,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 195,
+    "player_name": "Keon Ellis",
+    "position": "SG",
+    "nba_team": "CLE",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 196,
+    "player_name": "Scotty Pippen Jr.",
+    "position": "PG",
+    "nba_team": "MEM",
+    "age": 25,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 197,
+    "player_name": "Tobias Harris",
+    "position": "PF",
+    "nba_team": "DET",
+    "age": 33,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 198,
+    "player_name": "Isaiah Collier",
+    "position": "PG",
+    "nba_team": "UTA",
+    "age": 21,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 199,
+    "player_name": "Jonathan Kuminga",
+    "position": "SF",
+    "nba_team": "ATL",
+    "age": 23,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 200,
+    "player_name": "Bub Carrington",
+    "position": "PG",
+    "nba_team": "WAS",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 201,
+    "player_name": "Davion Mitchell",
+    "position": "PG",
+    "nba_team": "MIA",
+    "age": 27,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 202,
+    "player_name": "Devin Carter",
+    "position": "SG",
+    "nba_team": "SAC",
+    "age": 23,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 203,
+    "player_name": "Cam Thomas",
+    "position": "SG",
+    "nba_team": "MIL",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 204,
+    "player_name": "Naji Marshall",
+    "position": "PF",
+    "nba_team": "DAL",
+    "age": 28,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 205,
+    "player_name": "Dominick Barlow",
+    "position": "PF",
+    "nba_team": "PHI",
+    "age": 22,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 206,
+    "player_name": "Draymond Green",
+    "position": "PF",
+    "nba_team": "GSW",
+    "age": 35,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 207,
+    "player_name": "Justin Champagnie",
+    "position": "SF",
+    "nba_team": "WAS",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 208,
+    "player_name": "DeMar DeRozan",
+    "position": "SF",
+    "nba_team": "SAC",
+    "age": 36,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 209,
+    "player_name": "GG Jackson",
+    "position": "PF",
+    "nba_team": "MEM",
+    "age": 21,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 210,
+    "player_name": "Jarace Walker",
+    "position": "PF",
+    "nba_team": "IND",
+    "age": 22,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 211,
+    "player_name": "Jake LaRavia",
+    "position": "SF",
+    "nba_team": "LAL",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 212,
+    "player_name": "De'Anthony Melton",
+    "position": "SG",
+    "nba_team": "GSW",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 213,
+    "player_name": "Sam Merrill",
+    "position": "SG",
+    "nba_team": "CLE",
+    "age": 29,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 214,
+    "player_name": "Kelly Oubre Jr.",
+    "position": "SF",
+    "nba_team": "PHI",
+    "age": 30,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 215,
+    "player_name": "Noa Essengue",
+    "position": "PF",
+    "nba_team": "CHI",
+    "age": 19,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 216,
+    "player_name": "Jalen Smith",
+    "position": "PF",
+    "nba_team": "CHI",
+    "age": 25,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 217,
+    "player_name": "Alex Caruso",
+    "position": "SG",
+    "nba_team": "OKC",
+    "age": 32,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 218,
+    "player_name": "Nikola Jovi\u0107",
+    "position": "SF",
+    "nba_team": "MIA",
+    "age": 22,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 219,
+    "player_name": "Collin Sexton",
+    "position": "PG",
+    "nba_team": "CHI",
+    "age": 27,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 220,
+    "player_name": "Obi Toppin",
+    "position": "PF",
+    "nba_team": "IND",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 221,
+    "player_name": "Rui Hachimura",
+    "position": "PF",
+    "nba_team": "LAL",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 222,
+    "player_name": "Julian Champagnie",
+    "position": "SF",
+    "nba_team": "SAS",
+    "age": 24,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 223,
+    "player_name": "Sandro Mamukelashvili",
+    "position": "C",
+    "nba_team": "TOR",
+    "age": 26,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 224,
+    "player_name": "Miles McBride",
+    "position": "PG",
+    "nba_team": "NYK",
+    "age": 25,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 225,
+    "player_name": "Robert Williams III",
+    "position": "C",
+    "nba_team": "POR",
+    "age": 28,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 226,
+    "player_name": "Jusuf Nurki\u0107",
+    "position": "C",
+    "nba_team": "UTA",
+    "age": 31,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 227,
+    "player_name": "Derrick Jones Jr.",
+    "position": "SF",
+    "nba_team": "LAC",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 228,
+    "player_name": "Saddiq Bey",
+    "position": "SF",
+    "nba_team": "NOR",
+    "age": 26,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 229,
+    "player_name": "Josh Minott",
+    "position": "PF",
+    "nba_team": "BKN",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 230,
+    "player_name": "Kris Dunn",
+    "position": "SG",
+    "nba_team": "LAC",
+    "age": 31,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 231,
+    "player_name": "Bradley Beal",
+    "position": "SG",
+    "nba_team": "LAC",
+    "age": 32,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 232,
+    "player_name": "CJ McCollum",
+    "position": "SG",
+    "nba_team": "ATL",
+    "age": 34,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 233,
+    "player_name": "Nikola Vu\u010devi\u0107",
+    "position": "C",
+    "nba_team": "BOS",
+    "age": 35,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 234,
+    "player_name": "Zaccharie Risacher",
+    "position": "SF",
+    "nba_team": "ATL",
+    "age": 20,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 235,
+    "player_name": "Will Riley",
+    "position": "SF",
+    "nba_team": "WAS",
+    "age": 20,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 236,
+    "player_name": "Jase Richardson",
+    "position": "SG",
+    "nba_team": "ORL",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 237,
+    "player_name": "Luguentz Dort",
+    "position": "SG",
+    "nba_team": "OKC",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 238,
+    "player_name": "Yves Missi",
+    "position": "C",
+    "nba_team": "NOR",
+    "age": 21,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 239,
+    "player_name": "Brice Sensabaugh",
+    "position": "SF",
+    "nba_team": "UTA",
+    "age": 22,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 240,
+    "player_name": "Taylor Hendricks",
+    "position": "PF",
+    "nba_team": "MEM",
+    "age": 22,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 241,
+    "player_name": "Jamal Shead",
+    "position": "PG",
+    "nba_team": "TOR",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 242,
+    "player_name": "Dennis Schr\u00f6der",
+    "position": "PG",
+    "nba_team": "CLE",
+    "age": 32,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 243,
+    "player_name": "Bobby Portis Jr.",
+    "position": "C",
+    "nba_team": "MIL",
+    "age": 31,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 244,
+    "player_name": "Isaiah Joe",
+    "position": "SG",
+    "nba_team": "OKC",
+    "age": 26,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 245,
+    "player_name": "Keldon Johnson",
+    "position": "SF",
+    "nba_team": "SAS",
+    "age": 26,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 246,
+    "player_name": "Craig Porter Jr.",
+    "position": "SG",
+    "nba_team": "CLE",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 247,
+    "player_name": "Daniss Jenkins",
+    "position": "PG",
+    "nba_team": "DET",
+    "age": 24,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 248,
+    "player_name": "Dylan Cardwell",
+    "position": "C",
+    "nba_team": "SAC",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 249,
+    "player_name": "Brandon Williams",
+    "position": "PG",
+    "nba_team": "DAL",
+    "age": 26,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 250,
+    "player_name": "Hugo Gonz\u00e1lez",
+    "position": "SF",
+    "nba_team": "BOS",
+    "age": 20,
+    "owned_by": "HaleTrager",
+    "fantasy_team": "Twin Towers"
+  },
+  {
+    "rank": 251,
+    "player_name": "Tristan Vuk\u010devi\u0107",
+    "position": "C",
+    "nba_team": "WAS",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 252,
+    "player_name": "Jay Huff",
+    "position": "C",
+    "nba_team": "IND",
+    "age": 27,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 253,
+    "player_name": "Marcus Smart",
+    "position": "SG",
+    "nba_team": "LAL",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 254,
+    "player_name": "Tristan da Silva",
+    "position": "SF",
+    "nba_team": "ORL",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 255,
+    "player_name": "Jose Alvarado",
+    "position": "PG",
+    "nba_team": "NYK",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 256,
+    "player_name": "Quinten Post",
+    "position": "C",
+    "nba_team": "GSW",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 257,
+    "player_name": "Rasheer Fleming",
+    "position": "PF",
+    "nba_team": "PHO",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 258,
+    "player_name": "Yanic Konan Niederh\u00e4user",
+    "position": "C",
+    "nba_team": "LAC",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 259,
+    "player_name": "Jaylin Williams",
+    "position": "C",
+    "nba_team": "OKC",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 260,
+    "player_name": "Asa Newell",
+    "position": "PF",
+    "nba_team": "ATL",
+    "age": 20,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 261,
+    "player_name": "T.J. McConnell",
+    "position": "PG",
+    "nba_team": "IND",
+    "age": 33,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 262,
+    "player_name": "V\u00edt Krej\u010d\u00ed",
+    "position": "PG",
+    "nba_team": "POR",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 263,
+    "player_name": "Jordan Goodwin",
+    "position": "SG",
+    "nba_team": "PHO",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 264,
+    "player_name": "Gui Santos",
+    "position": "SG",
+    "nba_team": "GSW",
+    "age": 23,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 265,
+    "player_name": "Jordan Walsh",
+    "position": "SF",
+    "nba_team": "BOS",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 266,
+    "player_name": "Royce O'Neale",
+    "position": "SF",
+    "nba_team": "PHO",
+    "age": 32,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 267,
+    "player_name": "Dru Smith",
+    "position": "PG",
+    "nba_team": "MIA",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 268,
+    "player_name": "Brook Lopez",
+    "position": "C",
+    "nba_team": "LAC",
+    "age": 37,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 269,
+    "player_name": "Al Horford",
+    "position": "C",
+    "nba_team": "GSW",
+    "age": 39,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 270,
+    "player_name": "Vince Williams Jr.",
+    "position": "SF",
+    "nba_team": "UTA",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 271,
+    "player_name": "Tidjane Sala\u00fcn",
+    "position": "PF",
+    "nba_team": "CHA",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 272,
+    "player_name": "Mouhamed Gueye",
+    "position": "PF",
+    "nba_team": "ATL",
+    "age": 23,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 273,
+    "player_name": "Karlo Matkovi\u0107",
+    "position": "C",
+    "nba_team": "NOR",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 274,
+    "player_name": "Lonzo Ball",
+    "position": "PG",
+    "nba_team": "FA",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 275,
+    "player_name": "Bruce Brown Jr.",
+    "position": "SG",
+    "nba_team": "DEN",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 276,
+    "player_name": "Adem Bona",
+    "position": "C",
+    "nba_team": "PHI",
+    "age": 22,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 277,
+    "player_name": "Cam Whitmore",
+    "position": "SF",
+    "nba_team": "WAS",
+    "age": 21,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 278,
+    "player_name": "Tre Mann",
+    "position": "SG",
+    "nba_team": "CHA",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 279,
+    "player_name": "Kyle Kuzma",
+    "position": "PF",
+    "nba_team": "MIL",
+    "age": 30,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 280,
+    "player_name": "Max Strus",
+    "position": "SG",
+    "nba_team": "CLE",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 281,
+    "player_name": "Trendon Watford",
+    "position": "PF",
+    "nba_team": "PHI",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 282,
+    "player_name": "Liam McNeeley",
+    "position": "SF",
+    "nba_team": "CHA",
+    "age": 20,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 283,
+    "player_name": "Sion James",
+    "position": "SF",
+    "nba_team": "CHA",
+    "age": 23,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 284,
+    "player_name": "Adou Thiero",
+    "position": "SF",
+    "nba_team": "LAL",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 285,
+    "player_name": "Ryan Dunn",
+    "position": "PF",
+    "nba_team": "PHO",
+    "age": 23,
+    "owned_by": "Green",
+    "fantasy_team": "Ice Trae"
+  },
+  {
+    "rank": 286,
+    "player_name": "Pelle Larsson",
+    "position": "SG",
+    "nba_team": "MIA",
+    "age": 25,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 287,
+    "player_name": "Andre Drummond",
+    "position": "C",
+    "nba_team": "PHI",
+    "age": 32,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 288,
+    "player_name": "Steven Adams",
+    "position": "C",
+    "nba_team": "HOU",
+    "age": 32,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 289,
+    "player_name": "Tyler Kolek",
+    "position": "PG",
+    "nba_team": "NYK",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 290,
+    "player_name": "Brandon Clarke",
+    "position": "C",
+    "nba_team": "MEM",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 291,
+    "player_name": "Ryan Nembhard",
+    "position": "PG",
+    "nba_team": "DAL",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 292,
+    "player_name": "Harrison Barnes",
+    "position": "PF",
+    "nba_team": "SAS",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 293,
+    "player_name": "Khris Middleton",
+    "position": "SF",
+    "nba_team": "DAL",
+    "age": 34,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 294,
+    "player_name": "Bones Hyland",
+    "position": "SG",
+    "nba_team": "MIN",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 295,
+    "player_name": "Noah Penda",
+    "position": "PF",
+    "nba_team": "ORL",
+    "age": 21,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 296,
+    "player_name": "Will Richard",
+    "position": "SG",
+    "nba_team": "GSW",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 297,
+    "player_name": "Ja'Kobe Walter",
+    "position": "SG",
+    "nba_team": "TOR",
+    "age": 21,
+    "owned_by": "Baden",
+    "fantasy_team": "Flaming Flaggs"
+  },
+  {
+    "rank": 298,
+    "player_name": "DaRon Holmes II",
+    "position": "C",
+    "nba_team": "DEN",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 299,
+    "player_name": "AJ Green",
+    "position": "SG",
+    "nba_team": "MIL",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 300,
+    "player_name": "Clint Capela",
+    "position": "C",
+    "nba_team": "HOU",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 301,
+    "player_name": "Cody Williams",
+    "position": "SF",
+    "nba_team": "UTA",
+    "age": 21,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 302,
+    "player_name": "Jock Landale",
+    "position": "C",
+    "nba_team": "ATL",
+    "age": 30,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 303,
+    "player_name": "Paul Reed",
+    "position": "PF",
+    "nba_team": "DET",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 304,
+    "player_name": "Nick Richards",
+    "position": "C",
+    "nba_team": "CHI",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 305,
+    "player_name": "Pat Spencer",
+    "position": "PG",
+    "nba_team": "GSW",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 306,
+    "player_name": "Kam Jones",
+    "position": "SG",
+    "nba_team": "IND",
+    "age": 24,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 307,
+    "player_name": "Jonathan Mogbo",
+    "position": "PF",
+    "nba_team": "TOR",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 308,
+    "player_name": "Moritz Wagner",
+    "position": "C",
+    "nba_team": "ORL",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 309,
+    "player_name": "Johnny Furphy",
+    "position": "SF",
+    "nba_team": "IND",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 310,
+    "player_name": "Leonard Miller",
+    "position": "PF",
+    "nba_team": "CHI",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 311,
+    "player_name": "Corey Kispert",
+    "position": "SF",
+    "nba_team": "ATL",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 312,
+    "player_name": "Trayce Jackson-Davis",
+    "position": "C",
+    "nba_team": "TOR",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 313,
+    "player_name": "Kevin Huerter",
+    "position": "SG",
+    "nba_team": "DET",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 314,
+    "player_name": "Oso Ighodaro",
+    "position": "C",
+    "nba_team": "PHO",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 315,
+    "player_name": "Gradey Dick",
+    "position": "SF",
+    "nba_team": "TOR",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 316,
+    "player_name": "Micah Peavy",
+    "position": "SF",
+    "nba_team": "NOR",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 317,
+    "player_name": "Patrick Williams",
+    "position": "PF",
+    "nba_team": "CHI",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 318,
+    "player_name": "Tyrese Proctor",
+    "position": "SG",
+    "nba_team": "CLE",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 319,
+    "player_name": "Chaz Lanier",
+    "position": "SG",
+    "nba_team": "DET",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 320,
+    "player_name": "Ben Saraf",
+    "position": "PG",
+    "nba_team": "BKN",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 321,
+    "player_name": "Gary Trent Jr.",
+    "position": "SG",
+    "nba_team": "MIL",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 322,
+    "player_name": "Luke Kennard",
+    "position": "SG",
+    "nba_team": "LAL",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 323,
+    "player_name": "Ochai Agbaji",
+    "position": "SG",
+    "nba_team": "BKN",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 324,
+    "player_name": "Josh Okogie",
+    "position": "SG",
+    "nba_team": "HOU",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 325,
+    "player_name": "Spencer Jones",
+    "position": "SF",
+    "nba_team": "DEN",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 326,
+    "player_name": "Baylor Scheierman",
+    "position": "SF",
+    "nba_team": "BOS",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 327,
+    "player_name": "Drake Powell",
+    "position": "SF",
+    "nba_team": "BKN",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 328,
+    "player_name": "Jonathan Isaac",
+    "position": "PF",
+    "nba_team": "ORL",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 329,
+    "player_name": "Ziaire Williams",
+    "position": "SF",
+    "nba_team": "BKN",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 330,
+    "player_name": "Nae'Qwan Tomlin",
+    "position": "PF",
+    "nba_team": "CLE",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 331,
+    "player_name": "Sam Hauser",
+    "position": "PF",
+    "nba_team": "BOS",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 332,
+    "player_name": "Ousmane Dieng",
+    "position": "SF",
+    "nba_team": "MIL",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 333,
+    "player_name": "D'Angelo Russell",
+    "position": "PG",
+    "nba_team": "WAS",
+    "age": 30,
+    "owned_by": "Jowkar",
+    "fantasy_team": "Ball Don't Lie"
+  },
+  {
+    "rank": 334,
+    "player_name": "Julian Strawther",
+    "position": "SF",
+    "nba_team": "DEN",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 335,
+    "player_name": "Sidy Cissoko",
+    "position": "SF",
+    "nba_team": "POR",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 336,
+    "player_name": "Kobe Sanders",
+    "position": "SF",
+    "nba_team": "LAC",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 337,
+    "player_name": "Isaiah Jackson",
+    "position": "C",
+    "nba_team": "LAC",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 338,
+    "player_name": "Jeremy Sochan",
+    "position": "PF",
+    "nba_team": "NYK",
+    "age": 22,
+    "owned_by": "Delaney",
+    "fantasy_team": "Freshly Washed Kings"
+  },
+  {
+    "rank": 339,
+    "player_name": "Terrence Shannon Jr.",
+    "position": "SF",
+    "nba_team": "MIN",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 340,
+    "player_name": "Jalen Pickett",
+    "position": "PG",
+    "nba_team": "DEN",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 341,
+    "player_name": "Jordan Miller",
+    "position": "SF",
+    "nba_team": "LAC",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 342,
+    "player_name": "Duncan Robinson",
+    "position": "SG",
+    "nba_team": "DET",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 343,
+    "player_name": "Johni Broome",
+    "position": "C",
+    "nba_team": "PHI",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 344,
+    "player_name": "Tim Hardaway Jr.",
+    "position": "SG",
+    "nba_team": "DEN",
+    "age": 33,
+    "owned_by": "Berke",
+    "fantasy_team": "Burner account"
+  },
+  {
+    "rank": 345,
+    "player_name": "Marvin Bagley III",
+    "position": "C",
+    "nba_team": "DAL",
+    "age": 26,
+    "owned_by": "Zujewski",
+    "fantasy_team": "Only Franz"
+  },
+  {
+    "rank": 346,
+    "player_name": "Jarred Vanderbilt",
+    "position": "PF",
+    "nba_team": "LAL",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 347,
+    "player_name": "Guerschon Yabusele",
+    "position": "PF",
+    "nba_team": "CHI",
+    "age": 30,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 348,
+    "player_name": "Kentavious Caldwell-Pope",
+    "position": "SG",
+    "nba_team": "MEM",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 349,
+    "player_name": "Klay Thompson",
+    "position": "SG",
+    "nba_team": "DAL",
+    "age": 36,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 350,
+    "player_name": "Caris LeVert",
+    "position": "SG",
+    "nba_team": "DET",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 351,
+    "player_name": "Justin Edwards",
+    "position": "SF",
+    "nba_team": "PHI",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 352,
+    "player_name": "Javonte Green",
+    "position": "SG",
+    "nba_team": "DET",
+    "age": 32,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 353,
+    "player_name": "Zach Collins",
+    "position": "C",
+    "nba_team": "CHI",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 354,
+    "player_name": "Jordan Hawkins",
+    "position": "SG",
+    "nba_team": "NOR",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 355,
+    "player_name": "Ben Sheppard",
+    "position": "SF",
+    "nba_team": "IND",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 356,
+    "player_name": "Marcus Sasser",
+    "position": "PG",
+    "nba_team": "DET",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 357,
+    "player_name": "Luka Garza",
+    "position": "C",
+    "nba_team": "BOS",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 358,
+    "player_name": "Tyus Jones",
+    "position": "PG",
+    "nba_team": "DAL",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 359,
+    "player_name": "Jonas Valan\u010di\u016bnas",
+    "position": "C",
+    "nba_team": "DEN",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 360,
+    "player_name": "Simone Fontecchio",
+    "position": "SF",
+    "nba_team": "MIA",
+    "age": 30,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 361,
+    "player_name": "Grant Williams",
+    "position": "PF",
+    "nba_team": "CHA",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 362,
+    "player_name": "Jaylen Clark",
+    "position": "SG",
+    "nba_team": "MIN",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 363,
+    "player_name": "Dean Wade",
+    "position": "PF",
+    "nba_team": "CLE",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 364,
+    "player_name": "Jaxson Hayes",
+    "position": "C",
+    "nba_team": "LAL",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 365,
+    "player_name": "PJ Hall",
+    "position": "PF",
+    "nba_team": "CHA",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 366,
+    "player_name": "Terance Mann",
+    "position": "SG",
+    "nba_team": "BKN",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 367,
+    "player_name": "Brooks Barnhizer",
+    "position": "SF",
+    "nba_team": "OKC",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 368,
+    "player_name": "Gary Payton II",
+    "position": "SG",
+    "nba_team": "GSW",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 369,
+    "player_name": "Josh Green",
+    "position": "SG",
+    "nba_team": "CHA",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 370,
+    "player_name": "Buddy Hield",
+    "position": "SG",
+    "nba_team": "ATL",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 371,
+    "player_name": "Jordan Clarkson",
+    "position": "SG",
+    "nba_team": "NYK",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 372,
+    "player_name": "Russell Westbrook",
+    "position": "PG",
+    "nba_team": "SAC",
+    "age": 37,
+    "owned_by": "Gold",
+    "fantasy_team": "Kentucky Fried Guards"
+  },
+  {
+    "rank": 373,
+    "player_name": "Landry Shamet",
+    "position": "SG",
+    "nba_team": "NYK",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 374,
+    "player_name": "Caleb Love",
+    "position": "PG",
+    "nba_team": "POR",
+    "age": 24,
+    "owned_by": "Peterson",
+    "fantasy_team": "Always Droppin Dimes"
+  },
+  {
+    "rank": 375,
+    "player_name": "Dorian Finney-Smith",
+    "position": "SF",
+    "nba_team": "HOU",
+    "age": 32,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 376,
+    "player_name": "Cole Anthony",
+    "position": "PG",
+    "nba_team": "PHO",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 377,
+    "player_name": "AJ Johnson",
+    "position": "SG",
+    "nba_team": "DAL",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 378,
+    "player_name": "Jamir Watkins",
+    "position": "SF",
+    "nba_team": "WAS",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 379,
+    "player_name": "Haywood Highsmith",
+    "position": "SF",
+    "nba_team": "PHO",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 380,
+    "player_name": "Svi Mykhailiuk",
+    "position": "SF",
+    "nba_team": "UTA",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 381,
+    "player_name": "Kris Murray",
+    "position": "PF",
+    "nba_team": "POR",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 382,
+    "player_name": "Amari Williams",
+    "position": "C",
+    "nba_team": "BOS",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 383,
+    "player_name": "Xavier Tillman Sr.",
+    "position": "C",
+    "nba_team": "CHA",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 384,
+    "player_name": "Larry Nance Jr.",
+    "position": "PF",
+    "nba_team": "CLE",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 385,
+    "player_name": "Jaden Hardy",
+    "position": "SG",
+    "nba_team": "WAS",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 386,
+    "player_name": "Javon Small",
+    "position": "PG",
+    "nba_team": "MEM",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 387,
+    "player_name": "Aaron Holiday",
+    "position": "PG",
+    "nba_team": "HOU",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 388,
+    "player_name": "Mohamed Diawara",
+    "position": "PF",
+    "nba_team": "NYK",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 389,
+    "player_name": "Isaac Okoro",
+    "position": "SF",
+    "nba_team": "CHI",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 390,
+    "player_name": "Blake Wesley",
+    "position": "SG",
+    "nba_team": "POR",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 391,
+    "player_name": "Dalton Knecht",
+    "position": "SF",
+    "nba_team": "LAL",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 392,
+    "player_name": "Jericho Sims",
+    "position": "C",
+    "nba_team": "MIL",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 393,
+    "player_name": "Matisse Thybulle",
+    "position": "SF",
+    "nba_team": "POR",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 394,
+    "player_name": "Caleb Martin",
+    "position": "SF",
+    "nba_team": "DAL",
+    "age": 30,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 395,
+    "player_name": "Ariel Hukporti",
+    "position": "C",
+    "nba_team": "NYK",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 396,
+    "player_name": "Taurean Prince",
+    "position": "SF",
+    "nba_team": "MIL",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 397,
+    "player_name": "Precious Achiuwa",
+    "position": "PF",
+    "nba_team": "SAC",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 398,
+    "player_name": "Quenton Jackson",
+    "position": "SG",
+    "nba_team": "IND",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 399,
+    "player_name": "Bryce McGowens",
+    "position": "SG",
+    "nba_team": "NOR",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 400,
+    "player_name": "Jett Howard",
+    "position": "SF",
+    "nba_team": "ORL",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 401,
+    "player_name": "Keaton Wallace",
+    "position": "PG",
+    "nba_team": "ATL",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 402,
+    "player_name": "Zeke Nnaji",
+    "position": "C",
+    "nba_team": "DEN",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 403,
+    "player_name": "Jalen Wilson",
+    "position": "PF",
+    "nba_team": "BKN",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 404,
+    "player_name": "Bobi Klintman",
+    "position": "PF",
+    "nba_team": "DET",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 405,
+    "player_name": "Drew Eubanks",
+    "position": "C",
+    "nba_team": "SAC",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 406,
+    "player_name": "Andre Jackson Jr.",
+    "position": "SF",
+    "nba_team": "MIL",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 407,
+    "player_name": "Kyle Anderson",
+    "position": "PF",
+    "nba_team": "MEM",
+    "age": 32,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 408,
+    "player_name": "Jamison Battle",
+    "position": "SF",
+    "nba_team": "TOR",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 409,
+    "player_name": "Amir Coffey",
+    "position": "SG",
+    "nba_team": "PHO",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 410,
+    "player_name": "Jabari Walker",
+    "position": "PF",
+    "nba_team": "PHI",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 411,
+    "player_name": "Gary Harris",
+    "position": "SG",
+    "nba_team": "MIL",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 412,
+    "player_name": "Bogdan Bogdanovi\u0107",
+    "position": "SG",
+    "nba_team": "LAC",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 413,
+    "player_name": "Lindy Waters III",
+    "position": "SF",
+    "nba_team": "SAS",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 414,
+    "player_name": "Chris Ma\u00f1on",
+    "position": "SF",
+    "nba_team": "LAL",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 415,
+    "player_name": "Kobe Brown",
+    "position": "PF",
+    "nba_team": "IND",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 416,
+    "player_name": "David Jones Garcia",
+    "position": "SG",
+    "nba_team": "SAS",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 417,
+    "player_name": "Kevon Looney",
+    "position": "C",
+    "nba_team": "NOR",
+    "age": 30,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 418,
+    "player_name": "Nicolas Batum",
+    "position": "SF",
+    "nba_team": "LAC",
+    "age": 37,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 419,
+    "player_name": "Moussa Cisse",
+    "position": "C",
+    "nba_team": "DAL",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 420,
+    "player_name": "Julian Phillips",
+    "position": "SF",
+    "nba_team": "MIN",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 421,
+    "player_name": "Jae'Sean Tate",
+    "position": "PF",
+    "nba_team": "HOU",
+    "age": 30,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 422,
+    "player_name": "Rayan Rupert",
+    "position": "SF",
+    "nba_team": "POR",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 423,
+    "player_name": "Micah Potter",
+    "position": "C",
+    "nba_team": "IND",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 424,
+    "player_name": "A.J. Lawson",
+    "position": "SG",
+    "nba_team": "TOR",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 425,
+    "player_name": "Taelon Peter",
+    "position": "SG",
+    "nba_team": "IND",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 426,
+    "player_name": "Mike Conley",
+    "position": "PG",
+    "nba_team": "MIN",
+    "age": 38,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 427,
+    "player_name": "Cam Christie",
+    "position": "SG",
+    "nba_team": "LAC",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 428,
+    "player_name": "Bronny James",
+    "position": "SG",
+    "nba_team": "LAL",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 429,
+    "player_name": "Pac\u00f4me Dadiet",
+    "position": "SF",
+    "nba_team": "NYK",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 430,
+    "player_name": "Gabe Vincent",
+    "position": "PG",
+    "nba_team": "ATL",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 431,
+    "player_name": "Vladislav Goldin",
+    "position": "C",
+    "nba_team": "MIA",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 432,
+    "player_name": "John Konchar",
+    "position": "SG",
+    "nba_team": "UTA",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 433,
+    "player_name": "Chucky Hepburn",
+    "position": "PG",
+    "nba_team": "TOR",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 434,
+    "player_name": "Curtis Jones",
+    "position": "SG",
+    "nba_team": "DEN",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 435,
+    "player_name": "John Tonje",
+    "position": "SF",
+    "nba_team": "BOS",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 436,
+    "player_name": "Max Shulga",
+    "position": "SF",
+    "nba_team": "BOS",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 437,
+    "player_name": "Kenrich Williams",
+    "position": "SF",
+    "nba_team": "OKC",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 438,
+    "player_name": "Isaiah Crawford",
+    "position": "SF",
+    "nba_team": "HOU",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 439,
+    "player_name": "Maxi Kleber",
+    "position": "PF",
+    "nba_team": "LAL",
+    "age": 34,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 440,
+    "player_name": "Kelly Olynyk",
+    "position": "C",
+    "nba_team": "SAS",
+    "age": 34,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 441,
+    "player_name": "Pat Connaughton",
+    "position": "SF",
+    "nba_team": "CHA",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 442,
+    "player_name": "Enrique Freeman",
+    "position": "PF",
+    "nba_team": "MIN",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 443,
+    "player_name": "Keshad Johnson",
+    "position": "SF",
+    "nba_team": "MIA",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 444,
+    "player_name": "Thomas Bryant",
+    "position": "C",
+    "nba_team": "CLE",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 445,
+    "player_name": "Jordan McLaughlin",
+    "position": "PG",
+    "nba_team": "SAS",
+    "age": 29,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 446,
+    "player_name": "Nikola \u0110uri\u0161i\u0107",
+    "position": "SF",
+    "nba_team": "ATL",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 447,
+    "player_name": "Cameron Payne",
+    "position": "PG",
+    "nba_team": "PHI",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 448,
+    "player_name": "Jevon Carter",
+    "position": "PG",
+    "nba_team": "ORL",
+    "age": 30,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 449,
+    "player_name": "Bismack Biyombo",
+    "position": "C",
+    "nba_team": "SAS",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 450,
+    "player_name": "Rocco Zikarsky",
+    "position": "C",
+    "nba_team": "MIN",
+    "age": 19,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 451,
+    "player_name": "Bogoljub Markovic\u0301",
+    "position": "PF",
+    "nba_team": "MIL",
+    "age": 20,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 452,
+    "player_name": "Saliou Niang",
+    "position": "SG",
+    "nba_team": "CLE",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 453,
+    "player_name": "Nick Smith Jr.",
+    "position": "PG",
+    "nba_team": "LAL",
+    "age": 21,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 454,
+    "player_name": "Lachlan Olbrich",
+    "position": "C",
+    "nba_team": "CHI",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 455,
+    "player_name": "Kobe Bufkin",
+    "position": "SG",
+    "nba_team": "LAL",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 456,
+    "player_name": "Trey Alexander",
+    "position": "PG",
+    "nba_team": "NOR",
+    "age": 22,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 457,
+    "player_name": "Tamar Bates",
+    "position": "SG",
+    "nba_team": "DEN",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 458,
+    "player_name": "Miles Kelly",
+    "position": "SG",
+    "nba_team": "DAL",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 459,
+    "player_name": "Caleb Houstan",
+    "position": "SF",
+    "nba_team": "ATL",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 460,
+    "player_name": "Dalen Terry",
+    "position": "SG",
+    "nba_team": "PHI",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 461,
+    "player_name": "Jahmai Mashack",
+    "position": "SG",
+    "nba_team": "MEM",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 462,
+    "player_name": "JD Davison",
+    "position": "PG",
+    "nba_team": "HOU",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 463,
+    "player_name": "Harrison Ingram",
+    "position": "SF",
+    "nba_team": "SAS",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 464,
+    "player_name": "Koby Brea",
+    "position": "SF",
+    "nba_team": "PHO",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 465,
+    "player_name": "Olivier-Maxence Prosper",
+    "position": "SF",
+    "nba_team": "MEM",
+    "age": 23,
+    "owned_by": "Moss",
+    "fantasy_team": "Pure Sweat Fam"
+  },
+  {
+    "rank": 466,
+    "player_name": "Chaney Johnson",
+    "position": "SF",
+    "nba_team": "BKN",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 467,
+    "player_name": "Tristen Newton",
+    "position": "PG",
+    "nba_team": "HOU",
+    "age": 23,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 468,
+    "player_name": "Alijah Martin",
+    "position": "SG",
+    "nba_team": "TOR",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 469,
+    "player_name": "Dillon Jones",
+    "position": "SF",
+    "nba_team": "NYK",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 470,
+    "player_name": "TyTy Washington Jr.",
+    "position": "PG",
+    "nba_team": "LAC",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 471,
+    "player_name": "L.J. Cryer",
+    "position": "PG",
+    "nba_team": "GSW",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 472,
+    "player_name": "Wendell Moore Jr.",
+    "position": "SG",
+    "nba_team": "DET",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 473,
+    "player_name": "Tristan Enaruna",
+    "position": "SF",
+    "nba_team": "CLE",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 474,
+    "player_name": "Sharife Cooper",
+    "position": "PG",
+    "nba_team": "WAS",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 475,
+    "player_name": "Myron Gardner",
+    "position": "SF",
+    "nba_team": "MIA",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 476,
+    "player_name": "Yuki Kawamura",
+    "position": "PG",
+    "nba_team": "CHI",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 477,
+    "player_name": "Kevin McCullar Jr.",
+    "position": "SF",
+    "nba_team": "NYK",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 478,
+    "player_name": "Johnny Juzang",
+    "position": "SF",
+    "nba_team": "MIN",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 479,
+    "player_name": "RayJ Dennis",
+    "position": "PG",
+    "nba_team": "ATL",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 480,
+    "player_name": "Tosan Evbuomwan",
+    "position": "SF",
+    "nba_team": "CHA",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 481,
+    "player_name": "Hunter Dickinson",
+    "position": "C",
+    "nba_team": "NOR",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 482,
+    "player_name": "E.J. Liddell",
+    "position": "PF",
+    "nba_team": "BKN",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 483,
+    "player_name": "Isaiah Stevens",
+    "position": "PG",
+    "nba_team": "SAC",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 484,
+    "player_name": "Antonio Reeves",
+    "position": "SG",
+    "nba_team": "CHA",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 485,
+    "player_name": "Riley Minix",
+    "position": "PF",
+    "nba_team": "CLE",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 486,
+    "player_name": "Jahmir Young",
+    "position": "PG",
+    "nba_team": "MIA",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 487,
+    "player_name": "Drew Timme",
+    "position": "C",
+    "nba_team": "LAL",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 488,
+    "player_name": "MarJon Beauchamp",
+    "position": "SF",
+    "nba_team": "PHI",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 489,
+    "player_name": "Tolu Smith III",
+    "position": "PF",
+    "nba_team": "DET",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 490,
+    "player_name": "Isaac Jones",
+    "position": "PF",
+    "nba_team": "DET",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 491,
+    "player_name": "Emanuel Miller",
+    "position": "PF",
+    "nba_team": "CLE",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 492,
+    "player_name": "Christian Koloko",
+    "position": "C",
+    "nba_team": "ATL",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 493,
+    "player_name": "Colin Castleton",
+    "position": "C",
+    "nba_team": "ORL",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 494,
+    "player_name": "Ron Harper Jr.",
+    "position": "SF",
+    "nba_team": "BOS",
+    "age": 25,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 495,
+    "player_name": "Pete Nance",
+    "position": "PF",
+    "nba_team": "MIL",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 496,
+    "player_name": "Elijah Harkless",
+    "position": "SG",
+    "nba_team": "UTA",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 497,
+    "player_name": "Oscar Tshiebwe",
+    "position": "C",
+    "nba_team": "UTA",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 498,
+    "player_name": "Trey Jemison",
+    "position": "C",
+    "nba_team": "NYK",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 499,
+    "player_name": "Blake Hinson",
+    "position": "SF",
+    "nba_team": "UTA",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 500,
+    "player_name": "Buddy Boeheim",
+    "position": "SG",
+    "nba_team": "OKC",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 501,
+    "player_name": "Tyson Etienne",
+    "position": "PG",
+    "nba_team": "BKN",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 502,
+    "player_name": "Malevy Leons",
+    "position": "SF",
+    "nba_team": "GSW",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 503,
+    "player_name": "Javonte Cooke",
+    "position": "SG",
+    "nba_team": "POR",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 504,
+    "player_name": "Branden Carlson",
+    "position": "C",
+    "nba_team": "OKC",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 505,
+    "player_name": "Jamaree Bouyea",
+    "position": "PG",
+    "nba_team": "PHO",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 506,
+    "player_name": "Ethan Thompson",
+    "position": "SG",
+    "nba_team": "IND",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 507,
+    "player_name": "Stanley Umude",
+    "position": "SG",
+    "nba_team": "SAS",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 508,
+    "player_name": "Jamal Cain",
+    "position": "SF",
+    "nba_team": "ORL",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 509,
+    "player_name": "Tyrese Martin",
+    "position": "SF",
+    "nba_team": "PHI",
+    "age": 26,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 510,
+    "player_name": "Nate Williams",
+    "position": "SG",
+    "nba_team": "GSW",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 511,
+    "player_name": "Mac McClung",
+    "position": "PG",
+    "nba_team": "CHI",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 512,
+    "player_name": "Daeqwon Plowden",
+    "position": "SF",
+    "nba_team": "SAC",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 513,
+    "player_name": "Isaiah Livers",
+    "position": "SF",
+    "nba_team": "PHO",
+    "age": 27,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 514,
+    "player_name": "Alex Morales",
+    "position": "SG",
+    "nba_team": "ORL",
+    "age": 28,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 515,
+    "player_name": "Alex Antetokounmpo",
+    "position": "SF",
+    "nba_team": "MIL",
+    "age": 24,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 516,
+    "player_name": "Anthony Gill",
+    "position": "PF",
+    "nba_team": "WAS",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 517,
+    "player_name": "Thanasis Antetokounmpo",
+    "position": "SF",
+    "nba_team": "MIL",
+    "age": 33,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 518,
+    "player_name": "Doug McDermott",
+    "position": "SF",
+    "nba_team": "SAC",
+    "age": 34,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 519,
+    "player_name": "Dwight Powell",
+    "position": "C",
+    "nba_team": "DAL",
+    "age": 34,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 520,
+    "player_name": "Seth Curry",
+    "position": "SG",
+    "nba_team": "GSW",
+    "age": 35,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 521,
+    "player_name": "Kevin Love",
+    "position": "PF",
+    "nba_team": "UTA",
+    "age": 37,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 522,
+    "player_name": "DeAndre Jordan",
+    "position": "C",
+    "nba_team": "NOR",
+    "age": 37,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 523,
+    "player_name": "Joe Ingles",
+    "position": "SF",
+    "nba_team": "MIN",
+    "age": 38,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 524,
+    "player_name": "Jeff Green",
+    "position": "PF",
+    "nba_team": "HOU",
+    "age": 39,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 525,
+    "player_name": "Kyle Lowry",
+    "position": "PG",
+    "nba_team": "PHI",
+    "age": 39,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 526,
+    "player_name": "Garrett Temple",
+    "position": "SF",
+    "nba_team": "TOR",
+    "age": 39,
+    "owned_by": null,
+    "fantasy_team": null
+  },
+  {
+    "rank": 527,
+    "player_name": "Terry Rozier",
+    "position": "SG",
+    "nba_team": "MIA",
+    "age": 31,
+    "owned_by": null,
+    "fantasy_team": null
+  }
+]

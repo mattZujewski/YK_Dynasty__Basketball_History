@@ -22,8 +22,10 @@
 
     // Build rank lookup
     var rankMap = {};
-    (rankingsData.rankings || []).forEach(function(r) {
-      rankMap[YK.normalizeName(r.player)] = r.rank;
+    var rankingsArr = Array.isArray(rankingsData) ? rankingsData : (rankingsData.rankings || []);
+    rankingsArr.forEach(function(r) {
+      var name = r.player_name || r.player;
+      rankMap[YK.normalizeName(name)] = r.rank;
     });
 
     // Dynamic subtitle

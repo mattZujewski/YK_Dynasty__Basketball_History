@@ -26,13 +26,14 @@
     var teams = rosterData.teams || {};
     var stats = (statsData && statsData.players) || {};
     var movement = (movementData && movementData.players) || {};
-    var rankings = rankingsData.rankings || [];
+    var rankingsArr = Array.isArray(rankingsData) ? rankingsData : (rankingsData.rankings || []);
 
     // Build all players list: {name, owner, pos, nbaTeam, rank, stats}
     var allPlayers = [];
     var rankMap = {};
-    rankings.forEach(function(r) {
-      rankMap[YK.normalizeName(r.player)] = r.rank;
+    rankingsArr.forEach(function(r) {
+      var name = r.player_name || r.player;
+      rankMap[YK.normalizeName(name)] = r.rank;
     });
 
     Object.keys(teams).forEach(function(owner) {

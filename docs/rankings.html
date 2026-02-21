@@ -13,7 +13,7 @@
   <main class="page-container">
     <header class="page-header">
       <h1>&#x1F451; Dynasty Rankings</h1>
-      <p class="subtitle">Lawson Dynasty Rankings &mdash; January 2026</p>
+      <p class="subtitle">ALL ACCESS Dynasty Rankings &mdash; February 2026</p>
     </header>
 
     <!-- Filters -->
@@ -36,6 +36,14 @@
             <option value="all">All Owners</option>
           </select>
         </div>
+        <div>
+          <label>Status:</label>
+          <select class="filter-select" id="status-filter">
+            <option value="all">All</option>
+            <option value="owned">Owned Only</option>
+            <option value="available">Available Only</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -55,13 +63,14 @@
               <th data-sort="pos">Pos</th>
               <th data-sort="team">NBA Team</th>
               <th data-sort="owner">Owner</th>
+              <th data-sort="age" style="text-align:center">Age</th>
               <th data-sort="ppg" style="text-align:center">PPG</th>
               <th data-sort="rpg" style="text-align:center">RPG</th>
               <th data-sort="apg" style="text-align:center">APG</th>
             </tr>
           </thead>
           <tbody id="rankings-tbody">
-            <tr><td colspan="8" class="text-center text-muted" style="padding:24px">Loading&hellip;</td></tr>
+            <tr><td colspan="9" class="text-center text-muted" style="padding:24px">Loading&hellip;</td></tr>
           </tbody>
         </table>
       </div>
