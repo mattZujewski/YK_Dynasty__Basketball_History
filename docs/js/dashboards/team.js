@@ -30,10 +30,12 @@
     var seasons = seasonsData.seasons;
     var owners = YK.OWNERS_ALPHA.slice();
 
-    // Build rankings lookup
+    // Build rankings lookup — rankings.json is now a flat array
     var rankMap = {};
-    (rankingsData.rankings || []).forEach(function(r) {
-      rankMap[YK.normalizeName(r.player)] = r.rank;
+    var rankingsArr = Array.isArray(rankingsData) ? rankingsData : (rankingsData.rankings || []);
+    rankingsArr.forEach(function(r) {
+      var name = r.player_name || r.player;
+      rankMap[YK.normalizeName(name)] = r.rank;
     });
 
     // Build owner select dropdown
@@ -251,7 +253,42 @@
       picksHtml += '<p class="chart-insight"><strong>' + totalOwnerPicks + '</strong> total picks across ' + pickYears[0] + '&ndash;' + pickYears[pickYears.length - 1] + '.</p>';
       picksHtml += '</div>';
 
-      // === E. Current Roster ===
+      // === E. Dynasty Assets ===
+      var assetsHtml = '<div class="chart-section">';
+      assetsHtml += '<h2>&#x2B50; Dynasty Assets</h2>';
+
+      var rankedOnRoster = [];
+      var teamPlayers = teamData && teamData.players ? teamData.players : [];
+      teamPlayers.forEach(function(p) {
+        var rank = rankMap[YK.normalizeName(p.name)];
+        if (rank !== undefined) {
+          rankedOnRoster.push({ name: p.name, rank: rank, pos: p.pos || '', nbaTeam: p.nbaTeam || '' });
+        }
+      });
+      rankedOnRoster.sort(function(a, b) { return a.rank - b.rank; });
+
+      if (rankedOnRoster.length === 0) {
+        assetsHtml += '<p class="text-muted" style="padding:16px">No dynasty-ranked players on this roster.</p>';
+      } else {
+        assetsHtml += '<div style="display:flex;flex-wrap:wrap;gap:8px;padding:8px 0">';
+        rankedOnRoster.forEach(function(p) {
+          var tierColor, tierLabel;
+          if (p.rank <= 10) { tierColor = 'var(--brand-gold)'; tierLabel = 'T1'; }
+          else if (p.rank <= 25) { tierColor = '#c0c0c0'; tierLabel = 'T2'; }
+          else if (p.rank <= 50) { tierColor = '#cd7f32'; tierLabel = 'T3'; }
+          else { tierColor = 'var(--text-muted)'; tierLabel = ''; }
+
+          assetsHtml += '<div style="display:flex;align-items:center;gap:6px;padding:6px 12px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;font-size:0.85rem">';
+          assetsHtml += '<span style="background:' + tierColor + ';color:' + (p.rank <= 50 ? '#000' : '#fff') + ';font-size:0.65rem;font-weight:800;padding:2px 6px;border-radius:99px">#' + p.rank + '</span>';
+          assetsHtml += '<strong>' + YK.escapeHtml(p.name) + '</strong>';
+          assetsHtml += '<span style="color:var(--text-muted);font-size:0.75rem">' + YK.escapeHtml(p.pos) + '</span>';
+          assetsHtml += '</div>';
+        });
+        assetsHtml += '</div>';
+      }
+      assetsHtml += '</div>';
+
+      // === F. Current Roster ===
       var rosterHtml = '<div class="chart-section">';
       rosterHtml += '<h2>&#x1F4DD; Current Roster (2025-26)</h2>';
 
@@ -319,7 +356,7 @@
       rosterHtml += '</div>';
 
       // Combine all sections
-      container.innerHTML = headerHtml + seasonHtml + tradeHtml + picksHtml + rosterHtml;
+      container.innerHTML = headerHtml + seasonHtml + tradeHtml + picksHtml + assetsHtml + rosterHtml;
     }
 
     // Render initial profile
