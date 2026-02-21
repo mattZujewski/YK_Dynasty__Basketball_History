@@ -27,10 +27,14 @@
     <!-- Player Profile (shown when selected) -->
     <div id="player-profile" style="display:none"></div>
 
-    <!-- Default: Top Ranked Players -->
+    <!-- Default: Top Ranked / Most Traveled Players -->
     <div class="chart-section" id="top-players-section">
-      <h2>&#x1F451; Top Dynasty Players</h2>
-      <p class="chart-description">Top 20 dynasty-ranked players on rosters</p>
+      <div class="filter-bar" id="view-toggle" style="margin-bottom:12px">
+        <button class="filter-btn active" data-view="ranked">&#x1F451; Top Ranked</button>
+        <button class="filter-btn" data-view="traveled">&#x1F504; Most Traveled</button>
+      </div>
+      <h2 id="view-title">&#x1F451; Top Dynasty Players</h2>
+      <p class="chart-description" id="view-description">Top 20 dynasty-ranked players on rosters</p>
       <div id="top-players-grid" class="roster-grid">
         <div class="loading-spinner" style="text-align:center;padding:40px;color:var(--text-muted)">Loading&hellip;</div>
       </div>
