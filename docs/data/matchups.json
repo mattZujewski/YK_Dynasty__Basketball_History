@@ -1,9 +1,442 @@
 {
-  "note": "Matchup data not available from Fantrax API. getMatchupScores only returns current-week data for logged-in user, not historical matchups.",
-  "seasons": {
-    "2022-23": { "matchups": [], "status": "unavailable" },
-    "2023-24": { "matchups": [], "status": "unavailable" },
-    "2024-25": { "matchups": [], "status": "unavailable" },
-    "2025-26": { "matchups": [], "status": "in_progress" }
+  "2022-23": {
+    "matchups": [
+      {
+        "period": 16,
+        "away_team": "Only Franz",
+        "away_owner": "Zujewski",
+        "away_score": 1573.0,
+        "home_team": "Freshly Washed Kings",
+        "home_owner": "Delaney",
+        "home_score": 1558.0,
+        "winner": "Zujewski"
+      },
+      {
+        "period": 16,
+        "away_team": "Ice Trae",
+        "away_owner": "Green",
+        "away_score": 1593.0,
+        "home_team": "Always Droppin Dimes",
+        "home_owner": "Peterson",
+        "home_score": 2401.0,
+        "winner": "Peterson"
+      },
+      {
+        "period": 16,
+        "away_team": "Giddey Up",
+        "away_owner": "Gold",
+        "away_score": 1265.0,
+        "home_team": "Kelvin got No Dimes",
+        "home_owner": "Berke",
+        "home_score": 1942.0,
+        "winner": "Berke"
+      },
+      {
+        "period": 16,
+        "away_team": "Lob Land",
+        "away_owner": "HaleTrager",
+        "away_score": 1488.0,
+        "home_team": "Pure Sweat Fam",
+        "home_owner": "Moss",
+        "home_score": 1795.0,
+        "winner": "Moss"
+      },
+      {
+        "period": 16,
+        "away_team": "Charlotte Wobnets",
+        "away_owner": "Baden",
+        "away_score": 1874.0,
+        "home_team": "Ball Don't Lie",
+        "home_owner": "Jowkar",
+        "home_score": 1432.0,
+        "winner": "Baden"
+      },
+      {
+        "period": 17,
+        "away_team": "Always Droppin Dimes",
+        "away_owner": "Peterson",
+        "away_score": 2256.0,
+        "home_team": "Only Franz",
+        "home_owner": "Zujewski",
+        "home_score": 1376.0,
+        "winner": "Peterson"
+      },
+      {
+        "period": 17,
+        "away_team": "Kelvin got No Dimes",
+        "away_owner": "Berke",
+        "away_score": 1391.0,
+        "home_team": "Freshly Washed Kings",
+        "home_owner": "Delaney",
+        "home_score": 1721.0,
+        "winner": "Delaney"
+      },
+      {
+        "period": 17,
+        "away_team": "Pure Sweat Fam",
+        "away_owner": "Moss",
+        "away_score": 1528.0,
+        "home_team": "Ice Trae",
+        "home_owner": "Green",
+        "home_score": 1454.0,
+        "winner": "Moss"
+      },
+      {
+        "period": 17,
+        "away_team": "Ball Don't Lie",
+        "away_owner": "Jowkar",
+        "away_score": 1098.0,
+        "home_team": "Giddey Up",
+        "home_owner": "Gold",
+        "home_score": 1160.0,
+        "winner": "Gold"
+      },
+      {
+        "period": 17,
+        "away_team": "Charlotte Wobnets",
+        "away_owner": "Baden",
+        "away_score": 1450.0,
+        "home_team": "Lob Land",
+        "home_owner": "HaleTrager",
+        "home_score": 1401.0,
+        "winner": "Baden"
+      }
+    ],
+    "periods_available": [
+      16,
+      17
+    ],
+    "source": "fantrax_api",
+    "note": "Only last 2 scoring periods available via API"
+  },
+  "2023-24": {
+    "matchups": [
+      {
+        "period": 15,
+        "away_team": "Only Franz",
+        "away_owner": "Zujewski",
+        "away_score": 1427.0,
+        "home_team": "BKs Whoppers",
+        "home_owner": "Baden",
+        "home_score": 1705.0,
+        "winner": "Baden"
+      },
+      {
+        "period": 15,
+        "away_team": "Ice Trae",
+        "away_owner": "Green",
+        "away_score": 2166.0,
+        "home_team": "Always Droppin Dimes",
+        "home_owner": "Peterson",
+        "home_score": 2205.0,
+        "winner": "Peterson"
+      },
+      {
+        "period": 15,
+        "away_team": "Pure Sweat Fam",
+        "away_owner": "Moss",
+        "away_score": 1398.0,
+        "home_team": "Ball Don't Lie",
+        "home_owner": "Jowkar",
+        "home_score": 2267.0,
+        "winner": "Jowkar"
+      },
+      {
+        "period": 15,
+        "away_team": "Twin Towers",
+        "away_owner": "HaleTrager",
+        "away_score": 1675.0,
+        "home_team": "Kelvin got No Dimes",
+        "home_owner": "Berke",
+        "home_score": 2206.0,
+        "winner": "Berke"
+      },
+      {
+        "period": 15,
+        "away_team": "No Shaime",
+        "away_owner": "Gold",
+        "away_score": 1356.0,
+        "home_team": "Freshly Washed Kings",
+        "home_owner": "Delaney",
+        "home_score": 1384.0,
+        "winner": "Delaney"
+      },
+      {
+        "period": 16,
+        "away_team": "BKs Whoppers",
+        "away_owner": "Baden",
+        "away_score": 819.0,
+        "home_team": "Ice Trae",
+        "home_owner": "Green",
+        "home_score": 1817.0,
+        "winner": "Green"
+      },
+      {
+        "period": 16,
+        "away_team": "Only Franz",
+        "away_owner": "Zujewski",
+        "away_score": 1299.0,
+        "home_team": "Pure Sweat Fam",
+        "home_owner": "Moss",
+        "home_score": 1270.0,
+        "winner": "Zujewski"
+      },
+      {
+        "period": 16,
+        "away_team": "Always Droppin Dimes",
+        "away_owner": "Peterson",
+        "away_score": 2201.0,
+        "home_team": "Twin Towers",
+        "home_owner": "HaleTrager",
+        "home_score": 1648.0,
+        "winner": "Peterson"
+      },
+      {
+        "period": 16,
+        "away_team": "Ball Don't Lie",
+        "away_owner": "Jowkar",
+        "away_score": 1850.0,
+        "home_team": "No Shaime",
+        "home_owner": "Gold",
+        "home_score": 1015.0,
+        "winner": "Jowkar"
+      },
+      {
+        "period": 16,
+        "away_team": "Kelvin got No Dimes",
+        "away_owner": "Berke",
+        "away_score": 1871.0,
+        "home_team": "Freshly Washed Kings",
+        "home_owner": "Delaney",
+        "home_score": 1367.0,
+        "winner": "Berke"
+      }
+    ],
+    "periods_available": [
+      15,
+      16
+    ],
+    "source": "fantrax_api",
+    "note": "Only last 2 scoring periods available via API"
+  },
+  "2024-25": {
+    "matchups": [
+      {
+        "period": 15,
+        "away_team": "Freshly Washed Kings",
+        "away_owner": "Delaney",
+        "away_score": 1005.0,
+        "home_team": "Kentucky Fried Guards",
+        "home_owner": "Gold",
+        "home_score": 1568.0,
+        "winner": "Gold"
+      },
+      {
+        "period": 15,
+        "away_team": "Burner account",
+        "away_owner": "Berke",
+        "away_score": 1644.0,
+        "home_team": "Only Franz",
+        "home_owner": "Zujewski",
+        "home_score": 1800.0,
+        "winner": "Zujewski"
+      },
+      {
+        "period": 15,
+        "away_team": "Pure Sweat Fam",
+        "away_owner": "Moss",
+        "away_score": 1823.0,
+        "home_team": "Twin Towers",
+        "home_owner": "HaleTrager",
+        "home_score": 1986.0,
+        "winner": "HaleTrager"
+      },
+      {
+        "period": 15,
+        "away_team": "Ice Trae",
+        "away_owner": "Green",
+        "away_score": 2211.0,
+        "home_team": "Ball Don't Lie",
+        "home_owner": "Jowkar",
+        "home_score": 1522.0,
+        "winner": "Green"
+      },
+      {
+        "period": 15,
+        "away_team": "Always Droppin Dimes",
+        "away_owner": "Peterson",
+        "away_score": 1660.0,
+        "home_team": "BKs Whoppers",
+        "home_owner": "Baden",
+        "home_score": 1042.0,
+        "winner": "Peterson"
+      },
+      {
+        "period": 16,
+        "away_team": "Kentucky Fried Guards",
+        "away_owner": "Gold",
+        "away_score": 1629.0,
+        "home_team": "Burner account",
+        "home_owner": "Berke",
+        "home_score": 1271.0,
+        "winner": "Gold"
+      },
+      {
+        "period": 16,
+        "away_team": "Freshly Washed Kings",
+        "away_owner": "Delaney",
+        "away_score": 973.0,
+        "home_team": "Pure Sweat Fam",
+        "home_owner": "Moss",
+        "home_score": 1795.0,
+        "winner": "Moss"
+      },
+      {
+        "period": 16,
+        "away_team": "Only Franz",
+        "away_owner": "Zujewski",
+        "away_score": 1919.0,
+        "home_team": "Ice Trae",
+        "home_owner": "Green",
+        "home_score": 2092.0,
+        "winner": "Green"
+      },
+      {
+        "period": 16,
+        "away_team": "Twin Towers",
+        "away_owner": "HaleTrager",
+        "away_score": 2316.0,
+        "home_team": "Always Droppin Dimes",
+        "home_owner": "Peterson",
+        "home_score": 1558.0,
+        "winner": "HaleTrager"
+      },
+      {
+        "period": 16,
+        "away_team": "Ball Don't Lie",
+        "away_owner": "Jowkar",
+        "away_score": 1916.0,
+        "home_team": "BKs Whoppers",
+        "home_owner": "Baden",
+        "home_score": 1015.0,
+        "winner": "Jowkar"
+      }
+    ],
+    "periods_available": [
+      15,
+      16
+    ],
+    "source": "fantrax_api",
+    "note": "Only last 2 scoring periods available via API"
+  },
+  "2025-26": {
+    "matchups": [
+      {
+        "period": 14,
+        "away_team": "Burner account",
+        "away_owner": "Berke",
+        "away_score": 1544.0,
+        "home_team": "Pure Sweat Fam",
+        "home_owner": "Moss",
+        "home_score": 1454.0,
+        "winner": "Berke"
+      },
+      {
+        "period": 14,
+        "away_team": "Ice Trae",
+        "away_owner": "Green",
+        "away_score": 1751.0,
+        "home_team": "Kentucky Fried Guards",
+        "home_owner": "Gold",
+        "home_score": 1783.0,
+        "winner": "Gold"
+      },
+      {
+        "period": 14,
+        "away_team": "Flaming Flaggs",
+        "away_owner": "Baden",
+        "away_score": 1291.0,
+        "home_team": "Only Franz",
+        "home_owner": "Zujewski",
+        "home_score": 1562.0,
+        "winner": "Zujewski"
+      },
+      {
+        "period": 14,
+        "away_team": "Twin Towers",
+        "away_owner": "HaleTrager",
+        "away_score": 1772.0,
+        "home_team": "Always Droppin Dimes",
+        "home_owner": "Peterson",
+        "home_score": 1479.0,
+        "winner": "HaleTrager"
+      },
+      {
+        "period": 14,
+        "away_team": "Ball Don't Lie",
+        "away_owner": "Jowkar",
+        "away_score": 1816.0,
+        "home_team": "Freshly Washed Kings",
+        "home_owner": "Delaney",
+        "home_score": 1061.0,
+        "winner": "Jowkar"
+      },
+      {
+        "period": 15,
+        "away_team": "Kentucky Fried Guards",
+        "away_owner": "Gold",
+        "away_score": 1523.0,
+        "home_team": "Burner account",
+        "home_owner": "Berke",
+        "home_score": 1143.0,
+        "winner": "Gold"
+      },
+      {
+        "period": 15,
+        "away_team": "Only Franz",
+        "away_owner": "Zujewski",
+        "away_score": 1271.0,
+        "home_team": "Pure Sweat Fam",
+        "home_owner": "Moss",
+        "home_score": 1131.0,
+        "winner": "Zujewski"
+      },
+      {
+        "period": 15,
+        "away_team": "Always Droppin Dimes",
+        "away_owner": "Peterson",
+        "away_score": 1141.0,
+        "home_team": "Ice Trae",
+        "home_owner": "Green",
+        "home_score": 1716.0,
+        "winner": "Green"
+      },
+      {
+        "period": 15,
+        "away_team": "Freshly Washed Kings",
+        "away_owner": "Delaney",
+        "away_score": 978.0,
+        "home_team": "Flaming Flaggs",
+        "home_owner": "Baden",
+        "home_score": 1195.0,
+        "winner": "Baden"
+      },
+      {
+        "period": 15,
+        "away_team": "Ball Don't Lie",
+        "away_owner": "Jowkar",
+        "away_score": 1739.0,
+        "home_team": "Twin Towers",
+        "home_owner": "HaleTrager",
+        "home_score": 1709.0,
+        "winner": "Jowkar"
+      }
+    ],
+    "periods_available": [
+      14,
+      15
+    ],
+    "source": "fantrax_api",
+    "note": "Only last 2 scoring periods available via API"
   }
 }

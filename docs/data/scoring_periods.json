@@ -1,0 +1,386 @@
+{
+  "2022-23": {
+    "teams": {
+      "Peterson": {
+        "team": "Always Droppin Dimes",
+        "w": 16,
+        "l": 1,
+        "fpts_for": 34645.0,
+        "fpts_against": 24845.0,
+        "streak": "14 (W)",
+        "avg_fpts": 2037.9
+      },
+      "Moss": {
+        "team": "Pure Sweat Fam",
+        "w": 15,
+        "l": 2,
+        "fpts_for": 30725.0,
+        "fpts_against": 23685.0,
+        "streak": "8 (W)",
+        "avg_fpts": 1807.4
+      },
+      "Baden": {
+        "team": "Charlotte Wobnets",
+        "w": 12,
+        "l": 5,
+        "fpts_for": 26515.0,
+        "fpts_against": 26500.0,
+        "streak": "3 (W)",
+        "avg_fpts": 1559.7
+      },
+      "Delaney": {
+        "team": "Freshly Washed Kings",
+        "w": 10,
+        "l": 7,
+        "fpts_for": 28416.0,
+        "fpts_against": 26862.0,
+        "streak": "1 (W)",
+        "avg_fpts": 1671.5
+      },
+      "Berke": {
+        "team": "Kelvin got No Dimes",
+        "w": 9,
+        "l": 8,
+        "fpts_for": 26180.0,
+        "fpts_against": 26128.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1540.0
+      },
+      "Zujewski": {
+        "team": "Only Franz",
+        "w": 6,
+        "l": 11,
+        "fpts_for": 23633.0,
+        "fpts_against": 25641.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1390.2
+      },
+      "Gold": {
+        "team": "Giddey Up",
+        "w": 6,
+        "l": 11,
+        "fpts_for": 22693.0,
+        "fpts_against": 27275.0,
+        "streak": "1 (W)",
+        "avg_fpts": 1334.9
+      },
+      "Green": {
+        "team": "Ice Trae",
+        "w": 4,
+        "l": 13,
+        "fpts_for": 24191.0,
+        "fpts_against": 26967.0,
+        "streak": "4 (L)",
+        "avg_fpts": 1423.0
+      },
+      "Jowkar": {
+        "team": "Ball Don't Lie",
+        "w": 4,
+        "l": 13,
+        "fpts_for": 20994.0,
+        "fpts_against": 26914.0,
+        "streak": "6 (L)",
+        "avg_fpts": 1234.9
+      },
+      "HaleTrager": {
+        "team": "Lob Land",
+        "w": 3,
+        "l": 14,
+        "fpts_for": 23380.0,
+        "fpts_against": 26555.0,
+        "streak": "3 (L)",
+        "avg_fpts": 1375.3
+      }
+    },
+    "source": "fantrax_api",
+    "estimated": false
+  },
+  "2023-24": {
+    "teams": {
+      "Peterson": {
+        "team": "Always Droppin Dimes",
+        "w": 15,
+        "l": 1,
+        "fpts_for": 31260.0,
+        "fpts_against": 24400.0,
+        "streak": "12 (W)",
+        "avg_fpts": 1953.8
+      },
+      "Jowkar": {
+        "team": "Ball Don't Lie",
+        "w": 13,
+        "l": 3,
+        "fpts_for": 28877.0,
+        "fpts_against": 23299.0,
+        "streak": "7 (W)",
+        "avg_fpts": 1804.8
+      },
+      "Berke": {
+        "team": "Kelvin got No Dimes",
+        "w": 13,
+        "l": 3,
+        "fpts_for": 27782.0,
+        "fpts_against": 23607.0,
+        "streak": "3 (W)",
+        "avg_fpts": 1736.4
+      },
+      "Green": {
+        "team": "Ice Trae",
+        "w": 12,
+        "l": 4,
+        "fpts_for": 28050.0,
+        "fpts_against": 23959.0,
+        "streak": "1 (W)",
+        "avg_fpts": 1753.1
+      },
+      "Delaney": {
+        "team": "Freshly Washed Kings",
+        "w": 8,
+        "l": 8,
+        "fpts_for": 23398.0,
+        "fpts_against": 24281.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1462.4
+      },
+      "Baden": {
+        "team": "BKs Whoppers",
+        "w": 8,
+        "l": 8,
+        "fpts_for": 22465.0,
+        "fpts_against": 24649.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1404.1
+      },
+      "HaleTrager": {
+        "team": "Twin Towers",
+        "w": 7,
+        "l": 9,
+        "fpts_for": 23443.0,
+        "fpts_against": 24531.0,
+        "streak": "2 (L)",
+        "avg_fpts": 1465.2
+      },
+      "Moss": {
+        "team": "Pure Sweat Fam",
+        "w": 2,
+        "l": 14,
+        "fpts_for": 21225.0,
+        "fpts_against": 24960.0,
+        "streak": "7 (L)",
+        "avg_fpts": 1326.6
+      },
+      "Zujewski": {
+        "team": "Only Franz",
+        "w": 1,
+        "l": 15,
+        "fpts_for": 20049.0,
+        "fpts_against": 25667.0,
+        "streak": "1 (W)",
+        "avg_fpts": 1253.1
+      },
+      "Gold": {
+        "team": "No Shaime",
+        "w": 1,
+        "l": 15,
+        "fpts_for": 17958.0,
+        "fpts_against": 25154.0,
+        "streak": "8 (L)",
+        "avg_fpts": 1122.4
+      }
+    },
+    "source": "fantrax_api",
+    "estimated": false
+  },
+  "2024-25": {
+    "teams": {
+      "Jowkar": {
+        "team": "Ball Don't Lie",
+        "w": 14,
+        "l": 2,
+        "fpts_for": 28688.0,
+        "fpts_against": 23539.0,
+        "streak": "1 (W)",
+        "avg_fpts": 1793.0
+      },
+      "Green": {
+        "team": "Ice Trae",
+        "w": 13,
+        "l": 3,
+        "fpts_for": 28274.0,
+        "fpts_against": 23217.0,
+        "streak": "2 (W)",
+        "avg_fpts": 1767.1
+      },
+      "HaleTrager": {
+        "team": "Twin Towers",
+        "w": 12,
+        "l": 4,
+        "fpts_for": 27702.0,
+        "fpts_against": 22663.0,
+        "streak": "5 (W)",
+        "avg_fpts": 1731.4
+      },
+      "Berke": {
+        "team": "Burner account",
+        "w": 10,
+        "l": 6,
+        "fpts_for": 25127.0,
+        "fpts_against": 23026.0,
+        "streak": "4 (L)",
+        "avg_fpts": 1570.4
+      },
+      "Peterson": {
+        "team": "Always Droppin Dimes",
+        "w": 9,
+        "l": 7,
+        "fpts_for": 26734.0,
+        "fpts_against": 25008.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1670.9
+      },
+      "Moss": {
+        "team": "Pure Sweat Fam",
+        "w": 7,
+        "l": 9,
+        "fpts_for": 24703.0,
+        "fpts_against": 24664.0,
+        "streak": "1 (W)",
+        "avg_fpts": 1543.9
+      },
+      "Zujewski": {
+        "team": "Only Franz",
+        "w": 7,
+        "l": 9,
+        "fpts_for": 24273.0,
+        "fpts_against": 23774.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1517.1
+      },
+      "Gold": {
+        "team": "Kentucky Fried Guards",
+        "w": 6,
+        "l": 10,
+        "fpts_for": 20615.0,
+        "fpts_against": 23118.0,
+        "streak": "3 (W)",
+        "avg_fpts": 1288.4
+      },
+      "Delaney": {
+        "team": "Freshly Washed Kings",
+        "w": 2,
+        "l": 14,
+        "fpts_for": 16523.0,
+        "fpts_against": 23967.0,
+        "streak": "3 (L)",
+        "avg_fpts": 1032.7
+      },
+      "Baden": {
+        "team": "BKs Whoppers",
+        "w": 0,
+        "l": 16,
+        "fpts_for": 14472.0,
+        "fpts_against": 24135.0,
+        "streak": "16 (L)",
+        "avg_fpts": 904.5
+      }
+    },
+    "source": "fantrax_api",
+    "estimated": false
+  },
+  "2025-26": {
+    "teams": {
+      "Jowkar": {
+        "team": "Ball Don't Lie",
+        "w": 15,
+        "l": 0,
+        "fpts_for": 29010.0,
+        "fpts_against": 23358.0,
+        "streak": "15 (W)",
+        "avg_fpts": 1934.0
+      },
+      "Gold": {
+        "team": "Kentucky Fried Guards",
+        "w": 12,
+        "l": 3,
+        "fpts_for": 25111.0,
+        "fpts_against": 21731.0,
+        "streak": "2 (W)",
+        "avg_fpts": 1674.1
+      },
+      "Green": {
+        "team": "Ice Trae",
+        "w": 11,
+        "l": 4,
+        "fpts_for": 27074.0,
+        "fpts_against": 23176.0,
+        "streak": "1 (W)",
+        "avg_fpts": 1804.9
+      },
+      "HaleTrager": {
+        "team": "Twin Towers",
+        "w": 11,
+        "l": 4,
+        "fpts_for": 27033.0,
+        "fpts_against": 23857.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1802.2
+      },
+      "Zujewski": {
+        "team": "Only Franz",
+        "w": 8,
+        "l": 7,
+        "fpts_for": 23265.0,
+        "fpts_against": 23144.0,
+        "streak": "2 (W)",
+        "avg_fpts": 1551.0
+      },
+      "Berke": {
+        "team": "Burner account",
+        "w": 7,
+        "l": 8,
+        "fpts_for": 22193.0,
+        "fpts_against": 23206.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1479.5
+      },
+      "Peterson": {
+        "team": "Always Droppin Dimes",
+        "w": 6,
+        "l": 9,
+        "fpts_for": 22868.0,
+        "fpts_against": 21844.0,
+        "streak": "2 (L)",
+        "avg_fpts": 1524.5
+      },
+      "Moss": {
+        "team": "Pure Sweat Fam",
+        "w": 2,
+        "l": 13,
+        "fpts_for": 18367.0,
+        "fpts_against": 23224.0,
+        "streak": "2 (L)",
+        "avg_fpts": 1224.5
+      },
+      "Delaney": {
+        "team": "Freshly Washed Kings",
+        "w": 2,
+        "l": 13,
+        "fpts_for": 18038.0,
+        "fpts_against": 23685.0,
+        "streak": "8 (L)",
+        "avg_fpts": 1202.5
+      },
+      "Baden": {
+        "team": "Flaming Flaggs",
+        "w": 1,
+        "l": 14,
+        "fpts_for": 18238.0,
+        "fpts_against": 23972.0,
+        "streak": "1 (W)",
+        "avg_fpts": 1215.9
+      }
+    },
+    "source": "fantrax_api",
+    "estimated": false
+  }
+}

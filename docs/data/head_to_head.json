@@ -1,0 +1,994 @@
+{
+  "Zujewski_vs_Delaney": {
+    "owner1": "Zujewski",
+    "owner2": "Delaney",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1573.0,
+        "opp_score": 1558.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Delaney_vs_Zujewski": {
+    "owner1": "Delaney",
+    "owner2": "Zujewski",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1558.0,
+        "opp_score": 1573.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Green_vs_Peterson": {
+    "owner1": "Green",
+    "owner2": "Peterson",
+    "wins": 1,
+    "losses": 2,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1593.0,
+        "opp_score": 2401.0,
+        "result": "L"
+      },
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 2166.0,
+        "opp_score": 2205.0,
+        "result": "L"
+      },
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1716.0,
+        "opp_score": 1141.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Peterson_vs_Green": {
+    "owner1": "Peterson",
+    "owner2": "Green",
+    "wins": 2,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 2401.0,
+        "opp_score": 1593.0,
+        "result": "W"
+      },
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 2205.0,
+        "opp_score": 2166.0,
+        "result": "W"
+      },
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1141.0,
+        "opp_score": 1716.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Gold_vs_Berke": {
+    "owner1": "Gold",
+    "owner2": "Berke",
+    "wins": 2,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1265.0,
+        "opp_score": 1942.0,
+        "result": "L"
+      },
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 1629.0,
+        "opp_score": 1271.0,
+        "result": "W"
+      },
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1523.0,
+        "opp_score": 1143.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Berke_vs_Gold": {
+    "owner1": "Berke",
+    "owner2": "Gold",
+    "wins": 1,
+    "losses": 2,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1942.0,
+        "opp_score": 1265.0,
+        "result": "W"
+      },
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 1271.0,
+        "opp_score": 1629.0,
+        "result": "L"
+      },
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1143.0,
+        "opp_score": 1523.0,
+        "result": "L"
+      }
+    ]
+  },
+  "HaleTrager_vs_Moss": {
+    "owner1": "HaleTrager",
+    "owner2": "Moss",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1488.0,
+        "opp_score": 1795.0,
+        "result": "L"
+      },
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1986.0,
+        "opp_score": 1823.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Moss_vs_HaleTrager": {
+    "owner1": "Moss",
+    "owner2": "HaleTrager",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1795.0,
+        "opp_score": 1488.0,
+        "result": "W"
+      },
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1823.0,
+        "opp_score": 1986.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Baden_vs_Jowkar": {
+    "owner1": "Baden",
+    "owner2": "Jowkar",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1874.0,
+        "opp_score": 1432.0,
+        "result": "W"
+      },
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 1015.0,
+        "opp_score": 1916.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Jowkar_vs_Baden": {
+    "owner1": "Jowkar",
+    "owner2": "Baden",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 16,
+        "score": 1432.0,
+        "opp_score": 1874.0,
+        "result": "L"
+      },
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 1916.0,
+        "opp_score": 1015.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Peterson_vs_Zujewski": {
+    "owner1": "Peterson",
+    "owner2": "Zujewski",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 2256.0,
+        "opp_score": 1376.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Zujewski_vs_Peterson": {
+    "owner1": "Zujewski",
+    "owner2": "Peterson",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1376.0,
+        "opp_score": 2256.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Berke_vs_Delaney": {
+    "owner1": "Berke",
+    "owner2": "Delaney",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1391.0,
+        "opp_score": 1721.0,
+        "result": "L"
+      },
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 1871.0,
+        "opp_score": 1367.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Delaney_vs_Berke": {
+    "owner1": "Delaney",
+    "owner2": "Berke",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1721.0,
+        "opp_score": 1391.0,
+        "result": "W"
+      },
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 1367.0,
+        "opp_score": 1871.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Moss_vs_Green": {
+    "owner1": "Moss",
+    "owner2": "Green",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1528.0,
+        "opp_score": 1454.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Green_vs_Moss": {
+    "owner1": "Green",
+    "owner2": "Moss",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1454.0,
+        "opp_score": 1528.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Jowkar_vs_Gold": {
+    "owner1": "Jowkar",
+    "owner2": "Gold",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1098.0,
+        "opp_score": 1160.0,
+        "result": "L"
+      },
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 1850.0,
+        "opp_score": 1015.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Gold_vs_Jowkar": {
+    "owner1": "Gold",
+    "owner2": "Jowkar",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1160.0,
+        "opp_score": 1098.0,
+        "result": "W"
+      },
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 1015.0,
+        "opp_score": 1850.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Baden_vs_HaleTrager": {
+    "owner1": "Baden",
+    "owner2": "HaleTrager",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1450.0,
+        "opp_score": 1401.0,
+        "result": "W"
+      }
+    ]
+  },
+  "HaleTrager_vs_Baden": {
+    "owner1": "HaleTrager",
+    "owner2": "Baden",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2022-23",
+        "period": 17,
+        "score": 1401.0,
+        "opp_score": 1450.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Zujewski_vs_Baden": {
+    "owner1": "Zujewski",
+    "owner2": "Baden",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 1427.0,
+        "opp_score": 1705.0,
+        "result": "L"
+      },
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1562.0,
+        "opp_score": 1291.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Baden_vs_Zujewski": {
+    "owner1": "Baden",
+    "owner2": "Zujewski",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 1705.0,
+        "opp_score": 1427.0,
+        "result": "W"
+      },
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1291.0,
+        "opp_score": 1562.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Moss_vs_Jowkar": {
+    "owner1": "Moss",
+    "owner2": "Jowkar",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 1398.0,
+        "opp_score": 2267.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Jowkar_vs_Moss": {
+    "owner1": "Jowkar",
+    "owner2": "Moss",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 2267.0,
+        "opp_score": 1398.0,
+        "result": "W"
+      }
+    ]
+  },
+  "HaleTrager_vs_Berke": {
+    "owner1": "HaleTrager",
+    "owner2": "Berke",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 1675.0,
+        "opp_score": 2206.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Berke_vs_HaleTrager": {
+    "owner1": "Berke",
+    "owner2": "HaleTrager",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 2206.0,
+        "opp_score": 1675.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Gold_vs_Delaney": {
+    "owner1": "Gold",
+    "owner2": "Delaney",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 1356.0,
+        "opp_score": 1384.0,
+        "result": "L"
+      },
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1568.0,
+        "opp_score": 1005.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Delaney_vs_Gold": {
+    "owner1": "Delaney",
+    "owner2": "Gold",
+    "wins": 1,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 15,
+        "score": 1384.0,
+        "opp_score": 1356.0,
+        "result": "W"
+      },
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1005.0,
+        "opp_score": 1568.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Baden_vs_Green": {
+    "owner1": "Baden",
+    "owner2": "Green",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 819.0,
+        "opp_score": 1817.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Green_vs_Baden": {
+    "owner1": "Green",
+    "owner2": "Baden",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 1817.0,
+        "opp_score": 819.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Zujewski_vs_Moss": {
+    "owner1": "Zujewski",
+    "owner2": "Moss",
+    "wins": 2,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 1299.0,
+        "opp_score": 1270.0,
+        "result": "W"
+      },
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1271.0,
+        "opp_score": 1131.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Moss_vs_Zujewski": {
+    "owner1": "Moss",
+    "owner2": "Zujewski",
+    "wins": 0,
+    "losses": 2,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 1270.0,
+        "opp_score": 1299.0,
+        "result": "L"
+      },
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1131.0,
+        "opp_score": 1271.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Peterson_vs_HaleTrager": {
+    "owner1": "Peterson",
+    "owner2": "HaleTrager",
+    "wins": 1,
+    "losses": 2,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 2201.0,
+        "opp_score": 1648.0,
+        "result": "W"
+      },
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 1558.0,
+        "opp_score": 2316.0,
+        "result": "L"
+      },
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1479.0,
+        "opp_score": 1772.0,
+        "result": "L"
+      }
+    ]
+  },
+  "HaleTrager_vs_Peterson": {
+    "owner1": "HaleTrager",
+    "owner2": "Peterson",
+    "wins": 2,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2023-24",
+        "period": 16,
+        "score": 1648.0,
+        "opp_score": 2201.0,
+        "result": "L"
+      },
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 2316.0,
+        "opp_score": 1558.0,
+        "result": "W"
+      },
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1772.0,
+        "opp_score": 1479.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Berke_vs_Zujewski": {
+    "owner1": "Berke",
+    "owner2": "Zujewski",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1644.0,
+        "opp_score": 1800.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Zujewski_vs_Berke": {
+    "owner1": "Zujewski",
+    "owner2": "Berke",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1800.0,
+        "opp_score": 1644.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Green_vs_Jowkar": {
+    "owner1": "Green",
+    "owner2": "Jowkar",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 2211.0,
+        "opp_score": 1522.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Jowkar_vs_Green": {
+    "owner1": "Jowkar",
+    "owner2": "Green",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1522.0,
+        "opp_score": 2211.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Peterson_vs_Baden": {
+    "owner1": "Peterson",
+    "owner2": "Baden",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1660.0,
+        "opp_score": 1042.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Baden_vs_Peterson": {
+    "owner1": "Baden",
+    "owner2": "Peterson",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 15,
+        "score": 1042.0,
+        "opp_score": 1660.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Delaney_vs_Moss": {
+    "owner1": "Delaney",
+    "owner2": "Moss",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 973.0,
+        "opp_score": 1795.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Moss_vs_Delaney": {
+    "owner1": "Moss",
+    "owner2": "Delaney",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 1795.0,
+        "opp_score": 973.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Zujewski_vs_Green": {
+    "owner1": "Zujewski",
+    "owner2": "Green",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 1919.0,
+        "opp_score": 2092.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Green_vs_Zujewski": {
+    "owner1": "Green",
+    "owner2": "Zujewski",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2024-25",
+        "period": 16,
+        "score": 2092.0,
+        "opp_score": 1919.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Berke_vs_Moss": {
+    "owner1": "Berke",
+    "owner2": "Moss",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1544.0,
+        "opp_score": 1454.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Moss_vs_Berke": {
+    "owner1": "Moss",
+    "owner2": "Berke",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1454.0,
+        "opp_score": 1544.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Green_vs_Gold": {
+    "owner1": "Green",
+    "owner2": "Gold",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1751.0,
+        "opp_score": 1783.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Gold_vs_Green": {
+    "owner1": "Gold",
+    "owner2": "Green",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1783.0,
+        "opp_score": 1751.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Jowkar_vs_Delaney": {
+    "owner1": "Jowkar",
+    "owner2": "Delaney",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1816.0,
+        "opp_score": 1061.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Delaney_vs_Jowkar": {
+    "owner1": "Delaney",
+    "owner2": "Jowkar",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 14,
+        "score": 1061.0,
+        "opp_score": 1816.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Delaney_vs_Baden": {
+    "owner1": "Delaney",
+    "owner2": "Baden",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 978.0,
+        "opp_score": 1195.0,
+        "result": "L"
+      }
+    ]
+  },
+  "Baden_vs_Delaney": {
+    "owner1": "Baden",
+    "owner2": "Delaney",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1195.0,
+        "opp_score": 978.0,
+        "result": "W"
+      }
+    ]
+  },
+  "Jowkar_vs_HaleTrager": {
+    "owner1": "Jowkar",
+    "owner2": "HaleTrager",
+    "wins": 1,
+    "losses": 0,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1739.0,
+        "opp_score": 1709.0,
+        "result": "W"
+      }
+    ]
+  },
+  "HaleTrager_vs_Jowkar": {
+    "owner1": "HaleTrager",
+    "owner2": "Jowkar",
+    "wins": 0,
+    "losses": 1,
+    "matchups": [
+      {
+        "season": "2025-26",
+        "period": 15,
+        "score": 1709.0,
+        "opp_score": 1739.0,
+        "result": "L"
+      }
+    ]
+  }
+}
