@@ -97,3 +97,31 @@ These mappings were **incorrect** in the original data and have been corrected:
 - `docs/data/rosters_*.json` — All 4 seasons with full rosters
 - `docs/js/core.js` — Updated TEAM_TO_OWNER + added FLAGGS abbrev
 - `docs/data/raw/` — Raw Fantrax API responses cached
+
+
+## rebuild_trade_players.py
+- Total items: 253 (190 players, 63 picks)
+- Name corrections: 29
+- Fuzzy matches: 8
+- Unmatched: 14
+  - Trade #0: Kendrick Nunn
+  - Trade #3: Berke 2023 1st
+  - Trade #4: Peterson 2022 2nd
+  - Trade #4: Delaney 2021 2nd (#17)
+  - Trade #5: Kemba Walker
+  - Trade #6: Montrezl Harrell
+  - Trade #15: Thaddeus Young
+  - Trade #18: Derrick Rose
+  - Trade #18: Lou Williams
+  - Trade #19: Kendrick Nunn
+  - Trade #38: Kemba Walker
+  - Trade #44: Alec Burks
+  - Trade #44: Patrick Beverly
+  - Trade #51: Andre Drummond
+
+
+## rebuild_trade_players.py
+- Total items: 253 (187 players, 66 picks)
+- Name corrections: 29
+- Fuzzy matches: 4
+- Unmatched: 0

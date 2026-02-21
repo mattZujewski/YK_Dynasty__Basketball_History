@@ -3,10 +3,10 @@
     "season": "2020-21",
     "date": null,
     "give": [
-      "JOWK SF/PF Deandre Hunter"
+      "JOWK De'Andre Hunter"
     ],
     "get": [
-      "GREEN PF/C Jaren Jackson Jr",
+      "GREEN Jaren Jackson",
       "JOWK Kendrick Nunn"
     ]
   },
@@ -34,7 +34,7 @@
     "season": "2020-21",
     "date": null,
     "give": [
-      "TRAG Demar Derozan"
+      "TRAG DeMar DeRozan"
     ],
     "get": [
       "DELA Collin Sexton",
@@ -95,7 +95,7 @@
     "season": "2020-21",
     "date": null,
     "give": [
-      "VLAND Steph Curry"
+      "VLAND Stephen Curry"
     ],
     "get": [
       "DIME De'Aaron Fox"
@@ -158,7 +158,7 @@
       "JOWK Thaddeus Young"
     ],
     "get": [
-      "DELA Dennis Schroeder"
+      "DELA Dennis Schroder"
     ]
   },
   {
@@ -215,10 +215,10 @@
     "season": "2021-22",
     "date": null,
     "give": [
-      "BERK Fred Vanvleet"
+      "BERK Fred VanVleet"
     ],
     "get": [
-      "DELA Lebron James"
+      "DELA LeBron James"
     ]
   },
   {
@@ -259,7 +259,7 @@
       "VLAND Green 2022 1st round (#4 overall)"
     ],
     "get": [
-      "JOWK Caris Levert"
+      "JOWK Caris LeVert"
     ]
   },
   {
@@ -286,7 +286,7 @@
     "season": "2021-22",
     "date": null,
     "give": [
-      "TRAG Cj McCollum"
+      "TRAG CJ McCollum"
     ],
     "get": [
       "VLAND Jowkar 2022 1st round (#5 overall)"
@@ -299,7 +299,7 @@
       "JOWK Tyler Herro"
     ],
     "get": [
-      "VLAND Lamelo Ball"
+      "VLAND LaMelo Ball"
     ]
   },
   {
@@ -309,7 +309,7 @@
       "JOWK 2023 Green 2nd round"
     ],
     "get": [
-      "GREEN De'andre Hunter"
+      "GREEN De'Andre Hunter"
     ]
   },
   {
@@ -326,10 +326,10 @@
     "season": "2021-22",
     "date": null,
     "give": [
-      "PETE Caris Levert"
+      "PETE Caris LeVert"
     ],
     "get": [
-      "JOWK Dennis Schroeder"
+      "JOWK Dennis Schroder"
     ]
   },
   {
@@ -449,7 +449,7 @@
       "DELA Alec Burks"
     ],
     "get": [
-      "JOWK Patrick Beverly"
+      "JOWK Patrick Beverley"
     ]
   },
   {
@@ -469,7 +469,7 @@
       "VLAND Tobias Harris"
     ],
     "get": [
-      "PETE De'Angelo Russell"
+      "PETE D'Angelo Russell"
     ]
   },
   {
@@ -489,7 +489,7 @@
       "VLAND Mo Bamba"
     ],
     "get": [
-      "GOLD Jemai Grant"
+      "GOLD Jerami Grant"
     ]
   },
   {
@@ -576,7 +576,7 @@
     "season": "2022-23",
     "date": null,
     "give": [
-      "HALE Brandom Ingram"
+      "HALE Brandon Ingram"
     ],
     "get": [
       "BERK Green 2024 1st Round"
@@ -639,7 +639,7 @@
     "season": "2022-23",
     "date": null,
     "give": [
-      "PETE Nicholas Claxton"
+      "PETE Nicolas Claxton"
     ],
     "get": [
       "TRAG Peterson 2025 1st round",
@@ -713,7 +713,7 @@
     "season": "2022-23",
     "date": null,
     "give": [
-      "DELA Wendall Carter Jr."
+      "DELA Wendell Carter"
     ],
     "get": [
       "ZJEW Kyrie Irving"
@@ -723,7 +723,7 @@
     "season": "2022-23",
     "date": null,
     "give": [
-      "GOLD Cam Johnson"
+      "GOLD Cameron Johnson"
     ],
     "get": [
       "DELA Delaney 2027 1st round"
@@ -743,7 +743,7 @@
     "season": "2022-23",
     "date": null,
     "give": [
-      "PETE Jaren Jackson Jr"
+      "PETE Jaren Jackson"
     ],
     "get": [
       "ZJEW Anthony Davis"
@@ -806,7 +806,7 @@
       "KELL Kelley 2028 1st round"
     ],
     "get": [
-      "MOSS Kristaps Porzingus"
+      "MOSS Kristaps Porzingis"
     ]
   },
   {
@@ -903,7 +903,7 @@
     "season": "2023-24",
     "date": null,
     "give": [
-      "JOWK Donte Divincenzo"
+      "JOWK Donte DiVincenzo"
     ],
     "get": [
       "BERK Berke 2029 2nd round"
@@ -963,7 +963,7 @@
     "season": "2023-24",
     "date": null,
     "give": [
-      "PETE Brandon Podziemski"
+      "PETE Brandin Podziemski"
     ],
     "get": [
       "JOWK Jowkar 2026 1st round"
@@ -1043,7 +1043,7 @@
     "season": "2024-25",
     "date": null,
     "give": [
-      "ZJEW Wendall Carter Jr."
+      "ZJEW Wendell Carter"
     ],
     "get": [
       "PETE Peterson 2026 2nd round",
@@ -1139,7 +1139,7 @@
       "BERK Paul George"
     ],
     "get": [
-      "JOWK Zach Lavine"
+      "JOWK Zach LaVine"
     ]
   },
   {
@@ -1169,7 +1169,7 @@
       "TRAG Jordan Poole"
     ],
     "get": [
-      "KELL Kristaps Porzingus"
+      "KELL Kristaps Porzingis"
     ]
   },
   {
@@ -1199,14 +1199,14 @@
       "GOLD Neemias Queta"
     ],
     "get": [
-      "TRAG Ayo Dosumnu"
+      "TRAG Ayo Dosunmu"
     ]
   },
   {
     "season": "2025-26",
     "date": null,
     "give": [
-      "PETE Steph Curry"
+      "PETE Stephen Curry"
     ],
     "get": [
       "TRAG Miles Bridges"
