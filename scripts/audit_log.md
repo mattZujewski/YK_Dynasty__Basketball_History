@@ -1,4 +1,47 @@
-# YK Dynasty — Step 5 Audit Log
+# YK Dynasty — Audit Log
+
+## Step 7 Findings
+
+### Issue 1: Standings (ALREADY FIXED)
+- seasons.json already has all 10 teams per season (fixed in Step 5)
+- All TEAM_TO_OWNER mappings verified against Fantrax shortNames
+- Owner mapping contradictions in user spec: Charlotte Wobnets=Gold and Kelvin got No Dimes=Peterson
+  are incorrect — Fantrax shortNames confirm Wobnets=Vlandis(Baden) and KGND=Berke
+- Peterson can't own both "Always Droppin Dimes" AND "Kelvin got No Dimes" — confirms Berke owns KGND
+
+### Issue 2: Picks (DATA IS CORRECT — USER EXPECTATION MAY BE WRONG)
+- picks.json structure: key=current owner, pick label=original owner
+- Zujewski has 0 picks across 2027-2031 (all traded to Berke/Delaney)
+  - 2027-2031: "1st Round Zujewski" appears under Berke (all 5 years)
+  - 2027: "2nd Round Zujewski" under Delaney; 2028-2031: under Berke
+- User expected 6 firsts + 5 seconds — this contradicts the Info/picks.json source data
+- Possible explanations: (1) picks.json was parsed wrong from Excel, (2) user is thinking
+  of a different time period, or (3) recent trades changed ownership
+- FLAGGED FOR MANUAL REVIEW: picks data kept as-is from original source
+
+### Issue 3: Rankings (COMPLETE)
+- Parsed 527 players from ALL ACCESS rankings Excel (Categories sheet, 9-cat dynasty)
+- Cross-referenced with rosters_2025_26.json: 243/527 owned, 284 unowned
+- Name matching: stripped suffixes (Jr./III/II), apostrophes, diacritics
+- Top unmatched: all draft prospects with no NBA team (Peterson, Boozer, Dybantsa, etc.)
+
+### Issue 4: Matchup Scraping (PARTIAL)
+- getMatchupScores API returns empty matchups dict for all periods
+- getStandings only shows last 2 scoring periods per season (cannot get all periods)
+- Captured: 2022-23 P16-17, 2023-24 P15-16, 2024-25 P15-16, 2025-26 P14-15
+- Total: 40 individual matchup scores across 4 seasons (partial)
+- Built scoring_periods.json with per-season aggregate stats (FPtsFor, FPtsAgainst, avg)
+
+### Issue 4b: Transaction Scraping (FAILED)
+- HTML pages are JS-rendered (minimal content via requests)
+- All API methods return empty: getTransactionHistory, getTransactionLog, getTransactions,
+  getRecentActivity, getLeagueTransactions, getTradeHistory, getCompletedTrades, getWaiverResults
+- League history page (leagueHistory.go) also JS-rendered, no usable data
+- Trade reconciliation not possible — keeping Excel-sourced 120 trades
+
+---
+
+## Step 5 Audit Log (Previous)
 
 ## Data Corrections Made
 
