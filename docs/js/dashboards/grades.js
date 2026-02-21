@@ -31,6 +31,18 @@
     };
     var GRADE_VALUES = { 'A+': 4.3, 'A': 4.0, 'B': 3.0, 'C': 2.0, 'D': 1.0, 'F': 0.0 };
 
+    /** Get the display grade for a side (prefer combined_grade) */
+    function sideGrade(side) {
+      return side.combined_grade || side.grade || 'INC';
+    }
+
+    /** Get the GPA for a side (prefer combined_gpa) */
+    function sideGpa(side) {
+      if (side.combined_gpa !== undefined && side.combined_gpa !== null) return side.combined_gpa;
+      var g = side.grade;
+      return g && GRADE_VALUES[g] !== undefined ? GRADE_VALUES[g] : null;
+    }
+
     function gradeBadge(grade) {
       var color = GRADE_COLORS[grade] || '#888';
       return '<span style="display:inline-block;min-width:28px;text-align:center;background:' + color + ';color:#fff;font-size:0.72rem;font-weight:800;padding:3px 8px;border-radius:99px">' + YK.escapeHtml(grade) + '</span>';
@@ -42,72 +54,78 @@
       return '<span style="font-size:0.68rem;color:' + color + ';font-weight:600">' + conf + '</span>';
     }
 
+    function basisBadge(basis) {
+      var labels = { players_only: 'Players', picks_only: 'Picks', mixed: 'Mixed', incomplete: 'Inc' };
+      var colors = { players_only: '#4e9af1', picks_only: '#f4a261', mixed: '#2a9d8f', incomplete: '#888' };
+      var label = labels[basis] || basis || '';
+      var color = colors[basis] || '#888';
+      return '<span style="font-size:0.62rem;color:' + color + ';font-weight:600;text-transform:uppercase;letter-spacing:0.5px">' + label + '</span>';
+    }
+
     // ── Summary Stats ──
     var statsBar = document.getElementById('grade-stats-bar');
-    var graded = gradesList.filter(function(t) { return t.grade_confidence !== 'incomplete'; }).length;
-    var incomplete = gradesList.length - graded;
-    var highConf = gradesList.filter(function(t) { return t.grade_confidence === 'high'; }).length;
+    var gradedCount = 0;
+    gradesList.forEach(function(t) {
+      if (sideGrade(t.side_a) !== 'INC') gradedCount++;
+      if (sideGrade(t.side_b) !== 'INC') gradedCount++;
+    });
+    var totalSides = gradesList.length * 2;
+    var incompleteSides = totalSides - gradedCount;
+    var combinedStats = meta.combined_stats || {};
+    var mixedCount = combinedStats.mixed_sides || 0;
+    var pickOnlyCount = combinedStats.pick_only_sides || 0;
 
     statsBar.innerHTML =
       '<div class="stat-card"><span class="stat-label">Total Trades</span><span class="stat-value">' + gradesList.length + '</span></div>' +
-      '<div class="stat-card"><span class="stat-label">Fully Graded</span><span class="stat-value" style="color:var(--brand-green)">' + graded + '</span></div>' +
-      '<div class="stat-card"><span class="stat-label">High Confidence</span><span class="stat-value">' + highConf + '</span></div>' +
-      '<div class="stat-card"><span class="stat-label">Incomplete</span><span class="stat-value" style="color:var(--text-muted)">' + incomplete + '</span></div>';
+      '<div class="stat-card"><span class="stat-label">Graded Sides</span><span class="stat-value" style="color:var(--brand-green)">' + gradedCount + '</span></div>' +
+      '<div class="stat-card"><span class="stat-label">Mixed (P+Picks)</span><span class="stat-value">' + mixedCount + '</span></div>' +
+      '<div class="stat-card"><span class="stat-label">Pick-Only</span><span class="stat-value">' + pickOnlyCount + '</span></div>' +
+      '<div class="stat-card"><span class="stat-label">Incomplete</span><span class="stat-value" style="color:var(--text-muted)">' + incompleteSides + '</span></div>';
 
-    // ── Owner Report Cards ──
-    var ownerStats = {};
+    // ── Owner Report Cards (from meta.owner_report_cards) ──
+    var ownerReport = meta.owner_report_cards || {};
+    var ownerGrid = document.getElementById('owner-report-grid');
+
+    // Also compute win/loss/even from combined grades
+    var ownerWLE = {};
     gradesList.forEach(function(t) {
-      ['side_a', 'side_b'].forEach(function(side) {
-        var s = t[side];
-        var owner = s.owner;
-        if (!ownerStats[owner]) {
-          ownerStats[owner] = { wins: 0, losses: 0, even: 0, grades: [], totalDelta: 0, count: 0 };
-        }
-        var g = s.grade;
-        if (g !== 'INC') {
-          var val = GRADE_VALUES[g];
-          if (val !== undefined) {
-            ownerStats[owner].grades.push(val);
-            ownerStats[owner].totalDelta += s.received_delta;
-            ownerStats[owner].count++;
-          }
-        }
-      });
-      // Determine winner/loser
       var sa = t.side_a;
       var sb = t.side_b;
-      if (sa.grade !== 'INC' && sb.grade !== 'INC') {
-        if (sa.received_delta > sb.received_delta + 1) {
-          if (ownerStats[sa.owner]) ownerStats[sa.owner].wins++;
-          if (ownerStats[sb.owner]) ownerStats[sb.owner].losses++;
-        } else if (sb.received_delta > sa.received_delta + 1) {
-          if (ownerStats[sb.owner]) ownerStats[sb.owner].wins++;
-          if (ownerStats[sa.owner]) ownerStats[sa.owner].losses++;
-        } else {
-          if (ownerStats[sa.owner]) ownerStats[sa.owner].even++;
-          if (ownerStats[sb.owner]) ownerStats[sb.owner].even++;
+      var gA = sideGrade(sa);
+      var gB = sideGrade(sb);
+      [sa.owner, sb.owner].forEach(function(o) {
+        if (!ownerWLE[o]) ownerWLE[o] = { wins: 0, losses: 0, even: 0 };
+      });
+      if (gA !== 'INC' && gB !== 'INC') {
+        var gpaA = sideGpa(sa);
+        var gpaB = sideGpa(sb);
+        if (gpaA !== null && gpaB !== null) {
+          if (gpaA > gpaB + 0.3) {
+            ownerWLE[sa.owner].wins++;
+            ownerWLE[sb.owner].losses++;
+          } else if (gpaB > gpaA + 0.3) {
+            ownerWLE[sb.owner].wins++;
+            ownerWLE[sa.owner].losses++;
+          } else {
+            ownerWLE[sa.owner].even++;
+            ownerWLE[sb.owner].even++;
+          }
         }
       }
     });
 
-    var ownerGrid = document.getElementById('owner-report-grid');
-    var ownerArr = Object.keys(ownerStats).sort(function(a, b) {
-      var avgA = ownerStats[a].grades.length > 0 ? ownerStats[a].grades.reduce(function(s, v) { return s + v; }, 0) / ownerStats[a].grades.length : 0;
-      var avgB = ownerStats[b].grades.length > 0 ? ownerStats[b].grades.reduce(function(s, v) { return s + v; }, 0) / ownerStats[b].grades.length : 0;
-      return avgB - avgA;
+    var ownerArr = Object.keys(ownerReport).sort(function(a, b) {
+      var gpaA = ownerReport[a].avg_gpa || 0;
+      var gpaB = ownerReport[b].avg_gpa || 0;
+      return gpaB - gpaA;
     });
 
     ownerGrid.innerHTML = ownerArr.map(function(owner) {
-      var os = ownerStats[owner];
-      var avg = os.grades.length > 0 ? os.grades.reduce(function(s, v) { return s + v; }, 0) / os.grades.length : 0;
-      var avgGrade;
-      if (avg >= 4.0) avgGrade = 'A';
-      else if (avg >= 3.0) avgGrade = 'B';
-      else if (avg >= 2.0) avgGrade = 'C';
-      else if (avg >= 1.0) avgGrade = 'D';
-      else avgGrade = 'F';
+      var r = ownerReport[owner];
+      var wle = ownerWLE[owner] || { wins: 0, losses: 0, even: 0 };
       var color = YK.ownerColor(owner);
-      var avgDelta = os.count > 0 ? (os.totalDelta / os.count) : 0;
+      var avgGrade = r.avg_grade || 'N/A';
+      var avgGpa = r.avg_gpa || 0;
 
       return '<div class="roster-card" style="border-top:3px solid ' + color + '">' +
         '<div class="roster-card-header">' +
@@ -117,14 +135,13 @@
         '</div>' +
         '<div style="padding:12px 18px;font-size:0.82rem">' +
           '<div style="display:flex;gap:14px;margin-bottom:6px">' +
-            '<span><strong>' + avg.toFixed(1) + '</strong> <span style="color:var(--text-muted);font-size:0.72rem">avg GPA</span></span>' +
-            '<span><strong>' + avgDelta.toFixed(1) + '</strong> <span style="color:var(--text-muted);font-size:0.72rem">avg \u0394 FPts/g</span></span>' +
+            '<span><strong>' + avgGpa.toFixed(2) + '</strong> <span style="color:var(--text-muted);font-size:0.72rem">avg GPA</span></span>' +
+            '<span><strong>' + r.total_sides + '</strong> <span style="color:var(--text-muted);font-size:0.72rem">trades</span></span>' +
           '</div>' +
           '<div style="font-size:0.78rem;color:var(--text-muted)">' +
-            '<span style="color:#2a9d8f;font-weight:600">' + os.wins + 'W</span> / ' +
-            '<span style="color:#e63946;font-weight:600">' + os.losses + 'L</span> / ' +
-            '<span>' + os.even + 'E</span>' +
-            ' &middot; ' + os.count + ' graded trades' +
+            '<span style="color:#2a9d8f;font-weight:600">' + wle.wins + 'W</span> / ' +
+            '<span style="color:#e63946;font-weight:600">' + wle.losses + 'L</span> / ' +
+            '<span>' + wle.even + 'E</span>' +
           '</div>' +
         '</div>' +
       '</div>';
@@ -133,37 +150,41 @@
     // ── Most Lopsided Trades ──
     var notableGrid = document.getElementById('notable-trades-grid');
     var lopsided = gradesList.filter(function(t) {
-      return t.grade_confidence !== 'incomplete';
+      return sideGrade(t.side_a) !== 'INC' || sideGrade(t.side_b) !== 'INC';
     }).sort(function(a, b) {
-      return Math.abs(b.side_a.received_delta - b.side_b.received_delta) -
-             Math.abs(a.side_a.received_delta - a.side_b.received_delta);
+      var gapA = Math.abs((sideGpa(a.side_a) || 0) - (sideGpa(a.side_b) || 0));
+      var gapB = Math.abs((sideGpa(b.side_a) || 0) - (sideGpa(b.side_b) || 0));
+      return gapB - gapA;
     }).slice(0, 8);
 
     notableGrid.innerHTML = lopsided.map(function(t) {
       var sa = t.side_a;
       var sb = t.side_b;
-      var winnerSide = sa.received_delta >= sb.received_delta ? sa : sb;
-      var loserSide = sa.received_delta >= sb.received_delta ? sb : sa;
+      var gA = sideGrade(sa);
+      var gB = sideGrade(sb);
+      var gpaA = sideGpa(sa) || 0;
+      var gpaB = sideGpa(sb) || 0;
+      var winnerSide = gpaA >= gpaB ? sa : sb;
       var winColor = YK.ownerColor(winnerSide.owner);
-      var gap = Math.abs(sa.received_delta - sb.received_delta).toFixed(1);
+      var gap = Math.abs(gpaA - gpaB).toFixed(1);
 
       return '<div class="roster-card" style="border-top:3px solid ' + winColor + ';cursor:pointer" data-trade-idx="' + t.trade_index + '">' +
         '<div class="roster-card-header">' +
           '<strong>' + t.season + '</strong>' +
-          '<span style="margin-left:auto;color:var(--text-muted);font-size:0.72rem">\u0394 ' + gap + '</span>' +
+          '<span style="margin-left:auto;color:var(--text-muted);font-size:0.72rem">\u0394 ' + gap + ' GPA</span>' +
         '</div>' +
         '<div style="padding:12px 18px;font-size:0.82rem">' +
           '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">' +
             '<div>' +
               '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + YK.ownerColor(sa.owner) + ';margin-right:3px;vertical-align:middle"></span>' +
               '<strong>' + (YK.ownerDisplayName(sa.owner) || sa.owner).split(' ').pop() + '</strong> ' +
-              gradeBadge(sa.grade) +
+              gradeBadge(gA) +
             '</div>' +
             '<span style="color:var(--text-muted);font-size:0.72rem">\u2194</span>' +
             '<div>' +
               '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + YK.ownerColor(sb.owner) + ';margin-right:3px;vertical-align:middle"></span>' +
               '<strong>' + (YK.ownerDisplayName(sb.owner) || sb.owner).split(' ').pop() + '</strong> ' +
-              gradeBadge(sb.grade) +
+              gradeBadge(gB) +
             '</div>' +
           '</div>' +
           '<div style="font-size:0.75rem;color:var(--text-muted)">' + YK.escapeHtml(t.summary) + '</div>' +
@@ -171,7 +192,6 @@
       '</div>';
     }).join('');
 
-    // Click handler for notable trade cards
     notableGrid.querySelectorAll('.roster-card[data-trade-idx]').forEach(function(card) {
       card.addEventListener('click', function() {
         showTradeDetail(parseInt(card.dataset.tradeIdx));
@@ -215,14 +235,18 @@
         if (seasonFilter && t.season !== seasonFilter) return false;
         if (confFilter && t.grade_confidence !== confFilter) return false;
         if (ownerFilter && t.side_a.owner !== ownerFilter && t.side_b.owner !== ownerFilter) return false;
-        if (gradeFilter && t.side_a.grade !== gradeFilter && t.side_b.grade !== gradeFilter) return false;
+        if (gradeFilter) {
+          var gA = sideGrade(t.side_a);
+          var gB = sideGrade(t.side_b);
+          if (gA !== gradeFilter && gB !== gradeFilter) return false;
+        }
         return true;
       });
 
       document.getElementById('trade-count-label').textContent = 'Showing ' + filtered.length + ' of ' + gradesList.length + ' trades';
 
       var html = '<table class="data-table">';
-      html += '<thead><tr><th>Season</th><th>Side A</th><th>Grade</th><th></th><th>Side B</th><th>Grade</th><th>\u0394</th><th>Conf</th></tr></thead>';
+      html += '<thead><tr><th>Season</th><th>Side A</th><th>Grade</th><th></th><th>Side B</th><th>Grade</th><th>Basis</th><th>Conf</th></tr></thead>';
       html += '<tbody>';
 
       filtered.forEach(function(t) {
@@ -230,16 +254,20 @@
         var sb = t.side_b;
         var colA = YK.ownerColor(sa.owner);
         var colB = YK.ownerColor(sb.owner);
-        var gap = Math.abs(sa.received_delta - sb.received_delta).toFixed(1);
+        var gA = sideGrade(sa);
+        var gB = sideGrade(sb);
+        var basisA = sa.grade_basis || '';
+        var basisB = sb.grade_basis || '';
+        var basis = basisA === basisB ? basisA : (basisA || basisB);
 
         html += '<tr style="cursor:pointer" class="trade-row" data-trade-idx="' + t.trade_index + '">';
         html += '<td><strong>' + t.season + '</strong></td>';
         html += '<td><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + colA + ';margin-right:3px;vertical-align:middle"></span>' + (YK.ownerDisplayName(sa.owner) || sa.owner).split(' ').pop() + '</td>';
-        html += '<td style="text-align:center">' + gradeBadge(sa.grade) + '</td>';
+        html += '<td style="text-align:center">' + gradeBadge(gA) + '</td>';
         html += '<td style="text-align:center;color:var(--text-muted)">\u2194</td>';
         html += '<td><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + colB + ';margin-right:3px;vertical-align:middle"></span>' + (YK.ownerDisplayName(sb.owner) || sb.owner).split(' ').pop() + '</td>';
-        html += '<td style="text-align:center">' + gradeBadge(sb.grade) + '</td>';
-        html += '<td style="text-align:center;font-weight:600;font-size:0.78rem">' + gap + '</td>';
+        html += '<td style="text-align:center">' + gradeBadge(gB) + '</td>';
+        html += '<td style="text-align:center">' + basisBadge(basis) + '</td>';
         html += '<td style="text-align:center">' + confidenceBadge(t.grade_confidence) + '</td>';
         html += '</tr>';
       });
@@ -247,7 +275,6 @@
       html += '</tbody></table>';
       document.getElementById('trade-log').innerHTML = html;
 
-      // Click handlers
       document.querySelectorAll('.trade-row').forEach(function(row) {
         row.addEventListener('click', function() {
           showTradeDetail(parseInt(row.dataset.tradeIdx));
@@ -284,28 +311,9 @@
 
       // Two-column layout
       html += '<div style="display:flex;gap:16px;flex-wrap:wrap;margin-top:16px">';
-
-      // Side A detail
-      html += renderSideDetail(sa, 'Side A');
-      // Side B detail
-      html += renderSideDetail(sb, 'Side B');
-
+      html += renderSideDetail(sa);
+      html += renderSideDetail(sb);
       html += '</div>';
-
-      // Pick components
-      if (t.pick_components && t.pick_components.length > 0) {
-        html += '<div style="margin-top:16px">';
-        html += '<h3 style="font-size:0.88rem;margin-bottom:8px">\uD83C\uDFAF Pick Components</h3>';
-        html += '<div style="display:flex;flex-wrap:wrap;gap:6px">';
-        t.pick_components.forEach(function(pc) {
-          var recColor = YK.ownerColor(pc.received_by);
-          html += '<span style="background:var(--bg-card);border:1px solid var(--border);padding:4px 10px;border-radius:8px;font-size:0.78rem">';
-          html += '<span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:' + recColor + ';margin-right:4px;vertical-align:middle"></span>';
-          html += YK.escapeHtml(pc.pick) + ' \u2192 ' + (YK.ownerDisplayName(pc.received_by) || pc.received_by).split(' ').pop();
-          html += '</span>';
-        });
-        html += '</div></div>';
-      }
 
       html += '</div>';
       detailDiv.innerHTML = html;
@@ -315,16 +323,24 @@
       });
     }
 
-    function renderSideDetail(side, label) {
+    function renderSideDetail(side) {
       var color = YK.ownerColor(side.owner);
+      var grade = sideGrade(side);
+      var gpa = sideGpa(side);
+      var basis = side.grade_basis || '';
+
       var html = '<div style="flex:1;min-width:300px">';
       html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">';
       html += '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + color + '"></span>';
       html += '<strong>' + YK.ownerDisplayName(side.owner) + '</strong>';
-      html += gradeBadge(side.grade);
-      html += '<span style="color:var(--text-muted);font-size:0.78rem;margin-left:auto">' + (side.received_delta >= 0 ? '+' : '') + side.received_delta.toFixed(1) + ' FPts/g</span>';
+      html += gradeBadge(grade);
+      if (basis) html += basisBadge(basis);
+      if (gpa !== null) {
+        html += '<span style="color:var(--text-muted);font-size:0.72rem;margin-left:auto">GPA ' + gpa.toFixed(2) + '</span>';
+      }
       html += '</div>';
 
+      // Player details
       if (side.received_players && side.received_players.length > 0) {
         html += '<table class="data-table" style="font-size:0.8rem">';
         html += '<thead><tr><th>Player</th><th>Pre FPg</th><th>Post FPg</th><th>\u0394</th><th>Rank</th></tr></thead>';
@@ -346,11 +362,35 @@
           html += '</tr>';
         });
         html += '</tbody></table>';
-      } else {
-        html += '<p style="color:var(--text-muted);font-size:0.82rem;padding:8px 0">No player data for this side.</p>';
       }
 
-      // Show what they gave/received
+      // Pick grade details
+      if (side.pick_grades && side.pick_grades.length > 0) {
+        html += '<div style="margin-top:10px">';
+        html += '<div style="font-size:0.78rem;font-weight:600;margin-bottom:4px">Pick Grades:</div>';
+        html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
+        side.pick_grades.forEach(function(pg) {
+          var slotLabel = pg.slot ? '#' + pg.slot : '';
+          var statusLabel = pg.status === 'projected' ? ' (proj)' : '';
+          html += '<span style="background:var(--bg-card);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.72rem">';
+          html += gradeBadge(pg.grade) + ' ';
+          html += '<span style="color:var(--text-muted)">' + YK.escapeHtml(pg.pick_id) + ' ' + slotLabel + statusLabel + '</span>';
+          html += '</span>';
+        });
+        html += '</div></div>';
+      } else if (side.received_picks && side.received_picks.length > 0 && !(side.pick_grades && side.pick_grades.length > 0)) {
+        html += '<div style="margin-top:8px;font-size:0.75rem;color:var(--text-muted)">';
+        html += '<strong>Picks received:</strong> ' + side.received_picks.map(function(p) { return YK.escapeHtml(p); }).join(', ');
+        html += '</div>';
+      }
+
+      if (!side.received_players || side.received_players.length === 0) {
+        if (!side.pick_grades || side.pick_grades.length === 0) {
+          html += '<p style="color:var(--text-muted);font-size:0.82rem;padding:8px 0">No grading data for this side.</p>';
+        }
+      }
+
+      // Gave/Got summary
       html += '<div style="margin-top:8px;font-size:0.75rem;color:var(--text-muted)">';
       html += '<div><strong>Gave:</strong> ' + (side.gave || []).map(function(g) { return YK.escapeHtml(g); }).join(', ') + '</div>';
       html += '<div><strong>Got:</strong> ' + (side.received || []).map(function(g) { return YK.escapeHtml(g); }).join(', ') + '</div>';
