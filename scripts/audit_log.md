@@ -173,3 +173,21 @@ These mappings were **incorrect** in the original data and have been corrected:
   - Moss: GPA 2.0 (C)
   - Peterson: GPA 2.18 (C)
   - Zujewski: GPA 1.4 (D)
+
+
+## load_trade_csvs.py (8A)
+- Total trades: 170
+- Matched CSV→Excel: 45
+- CSV-only (new): 50
+- Excel-only: 19
+- Multi-player trades (2+): 38
+- Fantrax-confirmed: 95
+
+
+## load_trade_csvs.py (8A)
+- Total trades: 170
+- Excel trades matched: 47
+- CSV-only new: 50
+- Excel-only: 17
+- Empty CSV groups skipped: 0
+- Multi-player improved: 26

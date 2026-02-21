@@ -564,55 +564,420 @@
   },
   {
     "season": "2022-23",
-    "date": null,
+    "date": "2022-10-17",
     "give": [
       "DELA Peterson 2025 1st Round"
     ],
     "get": [
       "JOWK Klay Thompson"
-    ]
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   },
   {
     "season": "2022-23",
-    "date": null,
+    "date": "2022-10-17",
     "give": [
-      "HALE Brandon Ingram"
+      "TRAG Brandon Ingram"
     ],
     "get": [
       "BERK Green 2024 1st Round"
-    ]
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   },
   {
     "season": "2022-23",
-    "date": null,
+    "date": "2022-10-17",
+    "give": [],
+    "get": [
+      "JOWK Berke 2023 1st round (#6 overall)"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-17",
     "give": [
+      "JOWK Andre Drummond",
+      "JOWK Reggie Jackson",
+      "JOWK Victor Oladipo"
+    ],
+    "get": [
+      "BERK Deni Avdija",
+      "BERK Ayo Dosunmu"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-17",
+    "give": [
+      "DELA Dejounte Murray",
+      "DELA Kelly Oubre Jr."
+    ],
+    "get": [
+      "BERK James Harden",
+      "BERK Draymond Green",
+      "BERK Chris Paul"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-17",
+    "give": [
+      "PETE Collin Sexton"
+    ],
+    "get": [
+      "BERK Mitchell Robinson",
+      "BERK Christian Wood"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-17",
+    "give": [
+      "JOWK Clint Capela"
+    ],
+    "get": [
+      "BADEN Coby White"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-17",
+    "give": [
+      "BADEN Mo Bamba"
+    ],
+    "get": [
+      "GOLD Jerami Grant"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-17",
+    "give": [
+      "BADEN P.J. Washington",
+      "BADEN Alex Caruso"
+    ],
+    "get": [
+      "TRAG Desmond Bane"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-17",
+    "give": [
+      "PETE Zach LaVine",
+      "PETE D'Angelo Russell",
+      "PETE Malcolm Brogdon"
+    ],
+    "get": [
+      "BADEN Paul George",
+      "BADEN Tobias Harris",
+      "BADEN Jaren Jackson"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-17",
+    "give": [
+      "BADEN De'Aaron Fox"
+    ],
+    "get": [
+      "MOSS Paul George",
+      "MOSS Tobias Harris"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-10-29",
+    "give": [
+      "PETE Jimmy Butler",
+      "PETE Tobias Harris",
       "PETE Paul George"
     ],
     "get": [
+      "BERK Jrue Holiday",
+      "BERK Collin Sexton",
+      "BERK Bones Hyland",
       "BERK Dejounte Murray"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "DELA Pascal Siakam"
     ],
-    "get": [
-      "JOWK Berke 2023 1st round (#6 overall)",
-      "JOWK Malik Beasley",
-      "JOWK Killian Hayes"
-    ]
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   },
   {
     "season": "2022-23",
-    "date": null,
+    "date": "2022-11-05",
     "give": [
       "PETE Jarred Vanderbilt"
     ],
     "get": [
       "GREEN Nicolas Claxton"
-    ]
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-11-16",
+    "give": [
+      "GOLD Kristaps Porzingis"
+    ],
+    "get": [
+      "MOSS Moss 2023 1st round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-12-06",
+    "give": [
+      "JOWK De'Andre Hunter"
+    ],
+    "get": [
+      "VLAND Vlandis 2027 2nd round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-12-18",
+    "give": [
+      "MOSS Brandon Clarke"
+    ],
+    "get": [
+      "GOLD Kyle Anderson"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-12-18",
+    "give": [
+      "TRAG Marcus Smart",
+      "TRAG Will Barton"
+    ],
+    "get": [
+      "PETE Green 2023 2nd round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-12-19",
+    "give": [],
+    "get": [
+      "JOWK Buddy Hield"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-12-19",
+    "give": [],
+    "get": [
+      "PETE Kenyon Martin"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2022-12-21",
+    "give": [
+      "BADEN De'Andre Hunter",
+      "VLAND Gold 2023 2nd round"
+    ],
+    "get": [
+      "BERK Kelly Oubre Jr."
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2023-01-02",
+    "give": [
+      "DELA Dennis Smith",
+      "DELA Wendell Carter"
+    ],
+    "get": [
+      "ZJEW Kyrie Irving"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2023-01-17",
+    "give": [
+      "GOLD Tyrese Maxey",
+      "GOLD Ben Simmons",
+      "GOLD Jaylen Brown"
+    ],
+    "get": [
+      "MOSS Jayson Tatum"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2022-23",
+    "date": "2023-01-26",
+    "give": [
+      "BERK Delaney 2024 1st round"
+    ],
+    "get": [
+      "ZJEW Kawhi Leonard"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2023-01-28",
+    "give": [
+      "PETE Jaren Jackson"
+    ],
+    "get": [
+      "ZJEW Josh Hart",
+      "ZJEW Anthony Davis"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2023-02-02",
+    "give": [
+      "BERK Gold 2023 2nd round"
+    ],
+    "get": [
+      "JOWK Donte DiVincenzo",
+      "JOWK Cam Reddish"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2023-02-10",
+    "give": [
+      "BERK Jordan Clarkson"
+    ],
+    "get": [
+      "JOWK Mo Bamba"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2023-02-11",
+    "give": [
+      "JOWK Jordan Clarkson"
+    ],
+    "get": [
+      "MOSS Moss 2026 2nd round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2022-23",
+    "date": "2023-02-12",
+    "give": [
+      "BERK Tobias Harris"
+    ],
+    "get": [
+      "PETE Josh Hart"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   },
   {
     "season": "2022-23",
@@ -623,17 +988,8 @@
     "get": [
       "DELA Peterson 2025 1st round",
       "DELA John Wall"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "GOLD Kristaps Porzingis"
     ],
-    "get": [
-      "MOSS Moss 2023 1st round"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2022-23",
@@ -645,37 +1001,8 @@
       "TRAG Peterson 2025 1st round",
       "TRAG John Konchar",
       "TRAG Bol Bol"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "JOWK De'Andre Hunter"
     ],
-    "get": [
-      "VLAND Vlandis 2027 2nd round"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "MOSS Brandon Clarke"
-    ],
-    "get": [
-      "GOLD Kyle Anderson"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "HALE Marcus Smart"
-    ],
-    "get": [
-      "PETE Green 2023 2nd round"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2022-23",
@@ -687,17 +1014,8 @@
       "DELA Green 2024 1st round",
       "GOLD Caleb Martin",
       "GOLD Chris Duarte"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "VLAND Gold 2023 2nd round"
     ],
-    "get": [
-      "BERK Kelly Oubre Jr."
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2022-23",
@@ -707,17 +1025,8 @@
     ],
     "get": [
       "HALE Green 2024 1st round"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "DELA Wendell Carter"
     ],
-    "get": [
-      "ZJEW Kyrie Irving"
-    ]
+    "source": "excel_only_picks"
   },
   {
     "season": "2022-23",
@@ -727,27 +1036,8 @@
     ],
     "get": [
       "DELA Delaney 2027 1st round"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "BERK Delaney 2024 1st round"
     ],
-    "get": [
-      "ZJEW Kawhi Leonard"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "PETE Jaren Jackson"
-    ],
-    "get": [
-      "ZJEW Anthony Davis"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2022-23",
@@ -757,57 +1047,408 @@
     ],
     "get": [
       "GOLD Delaney 2027 1st round"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "BERK Gold 2023 2nd round"
     ],
-    "get": [
-      "JOWK Donte DiVincenzo"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "BERK Jordan Clarkson"
-    ],
-    "get": [
-      "JOWK Mo Bamba"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "JOWK Jordan Clarkson"
-    ],
-    "get": [
-      "MOSS Moss 2026 2nd round"
-    ]
-  },
-  {
-    "season": "2022-23",
-    "date": null,
-    "give": [
-      "BERK Tobias Harris"
-    ],
-    "get": [
-      "PETE Josh Hart"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2023-24",
-    "date": null,
+    "date": "2023-10-23",
     "give": [
+      "GREEN Jalen Duren"
+    ],
+    "get": [],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [
+      "BADEN Jalen Brunson",
+      "BADEN Donovan Mitchell"
+    ],
+    "get": [
+      "GREEN Mikal Bridges"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [
+      "ZJEW Ausar Thompson",
+      "ZJEW Leonard Miller"
+    ],
+    "get": [
+      "TRAG Deandre Ayton",
+      "TRAG Taylor Hendricks",
+      "TRAG Keyonte George"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [
+      "JOWK Cam Whitmore"
+    ],
+    "get": [],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [
+      "BADEN Cam Whitmore",
+      "BADEN Karl-Anthony Towns",
+      "BADEN Jusuf Nurkic"
+    ],
+    "get": [
+      "JOWK Michael Porter",
+      "JOWK Kris Dunn",
+      "JOWK Cameron Thomas"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [],
+    "get": [
+      "GOLD Cameron Johnson",
+      "GOLD Kyle Kuzma",
+      "GOLD Tyus Jones",
+      "GOLD Cole Anthony"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [
+      "PETE Derrick White"
+    ],
+    "get": [
+      "JOWK Jusuf Nurkic"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [
+      "PETE Nicolas Claxton"
+    ],
+    "get": [],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [],
+    "get": [
+      "TRAG John Collins"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-23",
+    "give": [
+      "JOWK Moses Moody"
+    ],
+    "get": [
+      "DELA Pascal Siakam"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-24",
+    "give": [
+      "BADEN Jakob Poeltl",
+      "BADEN Khris Middleton",
       "KELL Kelley 2028 1st round"
     ],
     "get": [
       "MOSS Kristaps Porzingis"
-    ]
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-10-26",
+    "give": [
+      "PETE Coby White"
+    ],
+    "get": [
+      "TRAG Delaney 2025 2nd round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-11-14",
+    "give": [
+      "MOSS Rudy Gobert",
+      "MOSS Myles Turner",
+      "MOSS Bam Adebayo",
+      "MOSS Russell Westbrook",
+      "MOSS De'Aaron Fox"
+    ],
+    "get": [
+      "BADEN Nicolas Batum",
+      "BADEN Jonas Valanciunas",
+      "BADEN CJ McCollum",
+      "BADEN Bismack Biyombo",
+      "BADEN Dario Saric"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-11-16",
+    "give": [
+      "BERK Shai Gilgeous-Alexander"
+    ],
+    "get": [
+      "DELA Kyrie Irving",
+      "DELA DeMar DeRozan",
+      "DELA James Harden",
+      "DELA Kevin Durant"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-11-17",
+    "give": [
+      "DELA Terry Rozier",
+      "DELA Bradley Beal"
+    ],
+    "get": [
+      "PETE Peterson 2025 1st round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-11-30",
+    "give": [
+      "DELA Kyle Kuzma",
+      "DELA Spencer Dinwiddie"
+    ],
+    "get": [
+      "GREEN Jeremy Sochan",
+      "GREEN Dyson Daniels"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-12-19",
+    "give": [
+      "DELA Klay Thompson"
+    ],
+    "get": [
+      "JOWK Luguentz Dort"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-12-22",
+    "give": [
+      "DELA Shai Gilgeous-Alexander"
+    ],
+    "get": [
+      "GOLD Jaylen Brown",
+      "GOLD Josh Giddey",
+      "GOLD Devin Booker"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2023-12-30",
+    "give": [
+      "PETE Brandin Podziemski"
+    ],
+    "get": [
+      "JOWK Jowkar 2026 1st round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2024-01-06",
+    "give": [
+      "PETE Nikola Vucevic",
+      "PETE Jusuf Nurkic"
+    ],
+    "get": [
+      "BERK Kyrie Irving"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2024-01-08",
+    "give": [
+      "DELA Draymond Green"
+    ],
+    "get": [
+      "PETE Jowkar 2024 2nd round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2024-02-05",
+    "give": [
+      "DELA Mike Conley",
+      "DELA Chris Paul",
+      "DELA Bojan Bogdanovic"
+    ],
+    "get": [
+      "BERK De'Andre Hunter"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2024-02-09",
+    "give": [
+      "DELA Tyus Jones"
+    ],
+    "get": [
+      "PETE Delaney 2025 2nd round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2024-02-11",
+    "give": [
+      "DELA Berke 2028 2nd round"
+    ],
+    "get": [
+      "JOWK Zach Collins",
+      "JOWK Saddiq Bey"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2024-02-11",
+    "give": [
+      "BADEN Bam Adebayo",
+      "BADEN De'Aaron Fox",
+      "BADEN Rudy Gobert",
+      "BADEN Myles Turner"
+    ],
+    "get": [
+      "MOSS Jonas Valanciunas",
+      "MOSS Jarred Vanderbilt",
+      "MOSS Isaiah Jackson"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2023-24",
+    "date": "2024-02-12",
+    "give": [
+      "BADEN D'Angelo Russell",
+      "BADEN Zach LaVine"
+    ],
+    "get": [
+      "JOWK Marvin Bagley",
+      "JOWK Klay Thompson"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   },
   {
     "season": "2023-24",
@@ -817,17 +1458,8 @@
     ],
     "get": [
       "TRAG Trager 2024 1st round"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "PETE Coby White"
     ],
-    "get": [
-      "TRAG Delaney 2025 2nd round"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2023-24",
@@ -837,17 +1469,8 @@
     ],
     "get": [
       "ZJEW Jaime Jaquez"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "MOSS De'Aaron Fox"
     ],
-    "get": [
-      "KELL CJ McCollum"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2023-24",
@@ -857,7 +1480,8 @@
     ],
     "get": [
       "KELL Clint Capela"
-    ]
+    ],
+    "source": "excel_only"
   },
   {
     "season": "2023-24",
@@ -867,17 +1491,8 @@
     ],
     "get": [
       "DELA Devin Booker"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "BERK Shai Gilgeous-Alexander"
     ],
-    "get": [
-      "DELA Kevin Durant"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2023-24",
@@ -887,17 +1502,8 @@
     ],
     "get": [
       "JOWK Daniel Gafford"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "DELA Bradley Beal"
     ],
-    "get": [
-      "PETE Peterson 2025 1st round"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2023-24",
@@ -907,17 +1513,8 @@
     ],
     "get": [
       "BERK Berke 2029 2nd round"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "DELA Kyle Kuzma"
     ],
-    "get": [
-      "GREEN Dyson Daniels"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2023-24",
@@ -927,7 +1524,8 @@
     ],
     "get": [
       "KELL Kelley 2024 1st round (#5 overall)"
-    ]
+    ],
+    "source": "excel_only_picks"
   },
   {
     "season": "2023-24",
@@ -937,118 +1535,259 @@
     ],
     "get": [
       "BERK Kawhi Leonard"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "DELA Klay Thompson"
     ],
-    "get": [
-      "JOWK Luguentz Dort"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "DELA Shai Gilgeous-Alexander"
-    ],
-    "get": [
-      "GOLD Devin Booker"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "PETE Brandin Podziemski"
-    ],
-    "get": [
-      "JOWK Jowkar 2026 1st round"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "PETE Jusuf Nurkic"
-    ],
-    "get": [
-      "BERK Kyrie Irving"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "DELA Draymond Green"
-    ],
-    "get": [
-      "PETE Jowkar 2024 2nd round"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "DELA Bojan Bogdanovic"
-    ],
-    "get": [
-      "BERK De'Andre Hunter"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "DELA Tyus Jones"
-    ],
-    "get": [
-      "PETE Delaney 2025 2nd round"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "DELA Berke 2028 2nd round"
-    ],
-    "get": [
-      "JOWK Saddiq Bey"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "KELL De'Aaron Fox"
-    ],
-    "get": [
-      "MOSS Jonas Valanciunas"
-    ]
-  },
-  {
-    "season": "2023-24",
-    "date": null,
-    "give": [
-      "KELL D'Angelo Russell"
-    ],
-    "get": [
-      "JOWK Marvin Bagley"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2024-25",
-    "date": null,
+    "date": "2024-10-21",
     "give": [
       "ZJEW Wendell Carter"
     ],
     "get": [
-      "PETE Peterson 2026 2nd round",
-      "BERK Spencer Dinwiddie"
-    ]
+      "PETE Peterson 2026 2nd round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-10-21",
+    "give": [
+      "BADEN Mikal Bridges",
+      "BADEN Clint Capela"
+    ],
+    "get": [
+      "PETE Mitchell Robinson",
+      "PETE Jowkar 2026 1st round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-10-21",
+    "give": [
+      "PETE Clint Capela",
+      "PETE Jrue Holiday",
+      "PETE Bradley Beal"
+    ],
+    "get": [
+      "BERK Kawhi Leonard"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-10-21",
+    "give": [
+      "JOWK Donte DiVincenzo"
+    ],
+    "get": [],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-10-21",
+    "give": [
+      "BADEN Jerami Grant"
+    ],
+    "get": [
+      "JOWK Daniel Gafford"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-10-21",
+    "give": [
+      "DELA Devin Booker"
+    ],
+    "get": [
+      "TRAG Lonzo Ball",
+      "TRAG Darius Garland",
+      "TRAG Keegan Murray"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-10-21",
+    "give": [
+      "DELA Jaylen Brown",
+      "DELA Cameron Johnson"
+    ],
+    "get": [
+      "ZJEW Taylor Hendricks",
+      "ZJEW Jaime Jaquez"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-10-21",
+    "give": [
+      "BADEN Desmond Bane"
+    ],
+    "get": [],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-10-30",
+    "give": [
+      "TRAG Mark Williams",
+      "TRAG Andrew Nembhard"
+    ],
+    "get": [
+      "GOLD Ivica Zubac"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-11-08",
+    "give": [
+      "GREEN Joel Embiid"
+    ],
+    "get": [
+      "MOSS Bam Adebayo"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2024-12-31",
+    "give": [
+      "DELA Bobby Portis"
+    ],
+    "get": [
+      "PETE Zujewski 2027 2nd round"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2025-01-22",
+    "give": [
+      "PETE Mikal Bridges"
+    ],
+    "get": [
+      "BERK James Harden"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2025-01-27",
+    "give": [
+      "BERK Paul George",
+      "BERK Jrue Holiday",
+      "BERK Bradley Beal"
+    ],
+    "get": [
+      "JOWK Zach LaVine"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2025-01-30",
+    "give": [
+      "TRAG Coby White",
+      "TRAG Nicolas Claxton"
+    ],
+    "get": [
+      "ZJEW Jamal Murray"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2025-02-10",
+    "give": [
+      "TRAG Yves Missi"
+    ],
+    "get": [
+      "BADEN Daniel Gafford"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2025-02-10",
+    "give": [
+      "TRAG Jordan Poole"
+    ],
+    "get": [
+      "BADEN Kristaps Porzingis"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
+  },
+  {
+    "season": "2024-25",
+    "date": "2025-02-10",
+    "give": [
+      "JOWK Kelley 2025 2nd round"
+    ],
+    "get": [
+      "DELA John Collins"
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   },
   {
     "season": "2024-25",
@@ -1059,17 +1798,8 @@
     "get": [
       "JOWK Gold 2027 2nd round",
       "BADEN Berke 2025 1st round"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": "2025-07-26",
-    "give": [
-      "KELL Mikal Bridges"
     ],
-    "get": [
-      "PETE Jowkar 2026 1st round"
-    ]
+    "source": "excel_only_picks"
   },
   {
     "season": "2024-25",
@@ -1080,17 +1810,8 @@
     ],
     "get": [
       "BADEN Baden 2025 2nd round"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": null,
-    "give": [
-      "TRAG Mark Williams"
     ],
-    "get": [
-      "GOLD Ivica Zubac"
-    ]
+    "source": "excel_only_picks"
   },
   {
     "season": "2024-25",
@@ -1100,116 +1821,79 @@
     ],
     "get": [
       "GOLD Gold 2030 2nd round"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": "2025-07-27",
-    "give": [
-      "GREEN Joel Embiid"
     ],
-    "get": [
-      "MOSS Bam Adebayo"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": null,
-    "give": [
-      "DELA Bobby Portis"
-    ],
-    "get": [
-      "PETE Zujewski 2027 2nd round"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": null,
-    "give": [
-      "PETE Mikal Bridges"
-    ],
-    "get": [
-      "BERK James Harden"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": null,
-    "give": [
-      "BERK Paul George"
-    ],
-    "get": [
-      "JOWK Zach LaVine"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": null,
-    "give": [
-      "TRAG Coby White"
-    ],
-    "get": [
-      "ZJEW Jamal Murray"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": null,
-    "give": [
-      "TRAG Yves Missi"
-    ],
-    "get": [
-      "KELL Daniel Gafford"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": null,
-    "give": [
-      "TRAG Jordan Poole"
-    ],
-    "get": [
-      "KELL Kristaps Porzingis"
-    ]
-  },
-  {
-    "season": "2024-25",
-    "date": null,
-    "give": [
-      "JOWK Kelley 2025 2nd round"
-    ],
-    "get": [
-      "DELA John Collins"
-    ]
+    "source": "excel_only"
   },
   {
     "season": "2025-26",
-    "date": null,
+    "date": "2025-10-20",
+    "give": [
+      "TRAG Daniel Gafford"
+    ],
+    "get": [],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2025-26",
+    "date": "2025-10-20",
+    "give": [
+      "JOWK Jrue Holiday",
+      "JOWK Jerami Grant"
+    ],
+    "get": [
+      "BERK Spencer Dinwiddie"
+    ],
+    "source": "fantrax_csv_only",
+    "picks_unknown": true,
+    "fantrax_confirmed": true
+  },
+  {
+    "season": "2025-26",
+    "date": "2025-10-23",
     "give": [
       "BERK Berke 2030 2nd round"
     ],
     "get": [
       "JOWK Noah Clowney"
-    ]
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   },
   {
     "season": "2025-26",
-    "date": null,
+    "date": "2025-12-21",
     "give": [
       "GOLD Neemias Queta"
     ],
     "get": [
       "TRAG Ayo Dosunmu"
-    ]
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   },
   {
     "season": "2025-26",
-    "date": null,
+    "date": "2026-02-09",
     "give": [
-      "PETE Stephen Curry"
+      "PETE Stephen Curry",
+      "PETE Kawhi Leonard"
     ],
     "get": [
+      "TRAG Bilal Coulibaly",
       "TRAG Miles Bridges"
-    ]
+    ],
+    "fantrax_confirmed": true,
+    "sources": {
+      "players": "fantrax_csv",
+      "picks": "excel"
+    }
   }
 ]
