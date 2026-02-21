@@ -8,7 +8,7 @@
   document.addEventListener('DOMContentLoaded', async function () {
     const YK = window.YK;
 
-    let rosterData, statsData, movementData, rankingsData, tradesData;
+    let rosterData, statsData, movementData, rankingsData, tradesData, gradesData;
     try {
       [rosterData, rankingsData, tradesData] = await Promise.all([
         YK.loadJSON('data/rosters_2025_26.json'),
@@ -18,6 +18,7 @@
       // These may not exist yet
       statsData = await YK.loadJSON('data/player_stats.json').catch(function() { return null; });
       movementData = await YK.loadJSON('data/player_movement.json').catch(function() { return null; });
+      gradesData = await YK.loadJSON('data/trade_grades.json').catch(function() { return null; });
     } catch (e) {
       console.error('Failed to load data:', e);
       return;
@@ -27,6 +28,14 @@
     var stats = (statsData && statsData.players) || {};
     var movement = (movementData && movementData.players) || {};
     var rankingsArr = Array.isArray(rankingsData) ? rankingsData : (rankingsData.rankings || []);
+
+    // Build trade grade lookup
+    var gradeMap = {};
+    if (gradesData && gradesData.trades) {
+      gradesData.trades.forEach(function(t) {
+        gradeMap[t.trade_index] = t;
+      });
+    }
 
     // Build all players list: {name, owner, pos, nbaTeam, rank, stats}
     var allPlayers = [];
@@ -442,7 +451,7 @@
         html += '<div class="chart-section">';
         html += '<h2>&#x1F4DD; Trade Appearances (' + playerTrades.length + ')</h2>';
         html += '<div class="data-table-wrapper"><table class="data-table">';
-        html += '<thead><tr><th>Season</th><th>Date</th><th>Give</th><th>Get</th></tr></thead>';
+        html += '<thead><tr><th>Season</th><th>Date</th><th>Give</th><th>Get</th><th style="text-align:center">Grade</th></tr></thead>';
         html += '<tbody>';
         playerTrades.forEach(function(trade) {
           var giveStr = (trade.give || []).map(function(g) {
@@ -462,6 +471,25 @@
           html += '<td style="white-space:nowrap;color:var(--text-muted);font-size:0.8rem">' + (trade.date || '&mdash;') + '</td>';
           html += '<td style="font-size:0.82rem">' + giveStr + '</td>';
           html += '<td style="font-size:0.82rem">' + getStr + '</td>';
+          // Grade badge
+          var tradeIdx = tradesData.indexOf(trade);
+          var gradeInfo = gradeMap[tradeIdx];
+          var gradeHtml = '';
+          if (gradeInfo) {
+            var GRADE_COLORS = {'A+':'#1a6b3c','A':'#2a9d8f','B':'#4e9af1','C':'#f4a261','D':'#e76f51','F':'#e63946','INC':'#888'};
+            var sA = gradeInfo.side_a || {};
+            var sB = gradeInfo.side_b || {};
+            if (sA.grade && sA.grade !== 'INC') {
+              gradeHtml += '<span style="display:inline-block;min-width:22px;text-align:center;background:' + (GRADE_COLORS[sA.grade]||'#888') + ';color:#fff;font-size:0.66rem;font-weight:800;padding:2px 5px;border-radius:99px;margin-right:2px" title="' + YK.escapeHtml(sA.owner) + '">' + sA.grade + '</span>';
+            }
+            if (sB.grade && sB.grade !== 'INC') {
+              gradeHtml += '<span style="display:inline-block;min-width:22px;text-align:center;background:' + (GRADE_COLORS[sB.grade]||'#888') + ';color:#fff;font-size:0.66rem;font-weight:800;padding:2px 5px;border-radius:99px" title="' + YK.escapeHtml(sB.owner) + '">' + sB.grade + '</span>';
+            }
+            if (!gradeHtml) gradeHtml = '<span style="color:var(--text-muted);font-size:0.72rem">N/A</span>';
+          } else {
+            gradeHtml = '<span style="color:var(--text-muted);font-size:0.72rem">&mdash;</span>';
+          }
+          html += '<td style="text-align:center">' + gradeHtml + '</td>';
           html += '</tr>';
         });
         html += '</tbody></table></div></div>';

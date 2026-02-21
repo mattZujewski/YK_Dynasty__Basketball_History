@@ -10,6 +10,7 @@
     YK.applyChartDefaults();
 
     let trades, rankingsData;
+    var gradesData;
     try {
       [trades, rankingsData] = await Promise.all([
         YK.loadJSON('data/trades.json'),
@@ -18,6 +19,15 @@
     } catch (e) {
       console.error('Failed to load data:', e);
       return;
+    }
+
+    gradesData = await YK.loadJSON('data/trade_grades.json').catch(function() { return null; });
+
+    var gradeMap = {};
+    if (gradesData && gradesData.trades) {
+      gradesData.trades.forEach(function(t) {
+        gradeMap[t.trade_index] = t;
+      });
     }
 
     // Build rank lookup
@@ -163,7 +173,7 @@
       // Render trade table
       var tbody = document.getElementById('trade-tbody');
       if (filtered.length === 0) {
-        tbody.innerHTML = '<tr><td colspan="4" class="text-center text-muted" style="padding:24px">No trades found</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="5" class="text-center text-muted" style="padding:24px">No trades found</td></tr>';
       } else {
         function formatTradeItem(g) {
           var owner = YK.parseOwner(g);
@@ -184,11 +194,31 @@
         tbody.innerHTML = filtered.map(function(trade) {
           var giveStr = (trade.give || []).map(formatTradeItem).join('');
           var getStr = (trade.get || []).map(formatTradeItem).join('');
+          var tradeIdx = trades.indexOf(trade);
+          var gradeInfo = gradeMap[tradeIdx];
+          var gradeHtml = '';
+          if (gradeInfo) {
+            var GRADE_COLORS = {'A+':'#1a6b3c','A':'#2a9d8f','B':'#4e9af1','C':'#f4a261','D':'#e76f51','F':'#e63946','INC':'#888'};
+            var sideA = gradeInfo.side_a || {};
+            var sideB = gradeInfo.side_b || {};
+            if (sideA.grade && sideA.grade !== 'INC') {
+              var cA = GRADE_COLORS[sideA.grade] || '#888';
+              gradeHtml += '<span style="display:inline-block;min-width:24px;text-align:center;background:' + cA + ';color:#fff;font-size:0.68rem;font-weight:800;padding:2px 6px;border-radius:99px;margin-right:2px" title="' + YK.escapeHtml(sideA.owner) + '">' + sideA.grade + '</span>';
+            }
+            if (sideB.grade && sideB.grade !== 'INC') {
+              var cB = GRADE_COLORS[sideB.grade] || '#888';
+              gradeHtml += '<span style="display:inline-block;min-width:24px;text-align:center;background:' + cB + ';color:#fff;font-size:0.68rem;font-weight:800;padding:2px 6px;border-radius:99px" title="' + YK.escapeHtml(sideB.owner) + '">' + sideB.grade + '</span>';
+            }
+            if (!gradeHtml) gradeHtml = '<span style="color:var(--text-muted);font-size:0.72rem">N/A</span>';
+          } else {
+            gradeHtml = '<span style="color:var(--text-muted);font-size:0.72rem">&mdash;</span>';
+          }
           return '<tr data-season="' + trade.season + '" data-date="' + (trade.date || '') + '">' +
             '<td><strong>' + trade.season + '</strong></td>' +
             '<td style="white-space:nowrap;color:var(--text-muted);font-size:0.8rem">' + (trade.date || '&mdash;') + '</td>' +
             '<td style="font-size:0.82rem">' + giveStr + '</td>' +
             '<td style="font-size:0.82rem">' + getStr + '</td>' +
+            '<td style="text-align:center">' + gradeHtml + '</td>' +
           '</tr>';
         }).join('');
       }

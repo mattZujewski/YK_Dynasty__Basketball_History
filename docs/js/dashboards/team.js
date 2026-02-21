@@ -19,6 +19,7 @@
         YK.loadJSON('data/rankings.json'),
       ]);
       statsData = await YK.loadJSON('data/player_stats.json').catch(function() { return null; });
+      var gradesData = await YK.loadJSON('data/trade_grades.json').catch(function() { return null; });
     } catch (e) {
       console.error('Failed to load data:', e);
       document.getElementById('team-profile').innerHTML = '<div class="error-msg">Failed to load data.</div>';
@@ -121,6 +122,54 @@
       headerHtml += '</div>';
       headerHtml += '</div>';
 
+      // Trade record from grades
+      if (gradesData && gradesData.trades) {
+        var GRADE_COLORS = {'A+':'#1a6b3c','A':'#2a9d8f','B':'#4e9af1','C':'#f4a261','D':'#e76f51','F':'#e63946','INC':'#888'};
+        var wins = 0, losses = 0, even = 0, totalGpa = 0, gradedCount = 0;
+        var bestTrade = null, worstTrade = null;
+        var bestDelta = -Infinity, worstDelta = Infinity;
+
+        gradesData.trades.forEach(function(t) {
+          var side = null;
+          if (t.side_a && t.side_a.owner === ownerKey) side = t.side_a;
+          else if (t.side_b && t.side_b.owner === ownerKey) side = t.side_b;
+          if (!side || side.grade === 'INC') return;
+
+          var GRADE_VALUES = {'A+':4.3,'A':4.0,'B':3.0,'C':2.0,'D':1.0,'F':0.0};
+          var gv = GRADE_VALUES[side.grade];
+          if (gv !== undefined) { totalGpa += gv; gradedCount++; }
+          if (gv >= 3.0) wins++;
+          else if (gv <= 1.0) losses++;
+          else even++;
+
+          if (side.received_delta > bestDelta) { bestDelta = side.received_delta; bestTrade = t; }
+          if (side.received_delta < worstDelta) { worstDelta = side.received_delta; worstTrade = t; }
+        });
+
+        var gpa = gradedCount > 0 ? (totalGpa / gradedCount).toFixed(2) : '—';
+
+        headerHtml += '<div style="margin-top:12px;padding:12px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px">';
+        headerHtml += '<div style="font-weight:700;font-size:0.82rem;margin-bottom:6px">&#x1F4CA; Trade Record</div>';
+        headerHtml += '<div style="display:flex;gap:16px;flex-wrap:wrap;font-size:0.82rem">';
+        headerHtml += '<span><strong style="color:#2a9d8f">' + wins + '</strong> Win' + (wins !== 1 ? 's' : '') + '</span>';
+        headerHtml += '<span><strong style="color:#e76f51">' + losses + '</strong> Loss' + (losses !== 1 ? 'es' : '') + '</span>';
+        headerHtml += '<span><strong style="color:#f4a261">' + even + '</strong> Even</span>';
+        headerHtml += '<span style="margin-left:auto;font-weight:700">GPA: ' + gpa + '</span>';
+        headerHtml += '</div>';
+
+        if (bestTrade && bestDelta > 0) {
+          var bestSide = bestTrade.side_a && bestTrade.side_a.owner === ownerKey ? bestTrade.side_a : bestTrade.side_b;
+          var bestReceived = (bestSide.received || []).join(', ');
+          headerHtml += '<div style="margin-top:6px;font-size:0.78rem;color:var(--text-muted)">Best: <span style="color:#2a9d8f;font-weight:600">+' + bestDelta.toFixed(1) + '</span> FPg receiving ' + YK.escapeHtml(bestReceived) + ' (' + bestTrade.season + ')</div>';
+        }
+        if (worstTrade && worstDelta < 0) {
+          var worstSide = worstTrade.side_a && worstTrade.side_a.owner === ownerKey ? worstTrade.side_a : worstTrade.side_b;
+          var worstReceived = (worstSide.received || []).join(', ');
+          headerHtml += '<div style="font-size:0.78rem;color:var(--text-muted)">Worst: <span style="color:#e63946;font-weight:600">' + worstDelta.toFixed(1) + '</span> FPg receiving ' + YK.escapeHtml(worstReceived) + ' (' + worstTrade.season + ')</div>';
+        }
+        headerHtml += '</div>';
+      }
+
       // === B. Season-by-Season Record Table ===
       var seasonHtml = '<div class="chart-section">';
       seasonHtml += '<h2>&#x1F4C5; Season-by-Season Record</h2>';
@@ -191,8 +240,12 @@
         tradeHtml += '<p class="text-muted" style="padding:16px">No trades on record.</p>';
       } else {
         tradeHtml += '<div class="data-table-wrapper"><table class="data-table">';
-        tradeHtml += '<thead><tr><th>Season</th><th>Date</th><th>Give</th><th>Get</th></tr></thead>';
+        tradeHtml += '<thead><tr><th>Season</th><th>Date</th><th>Give</th><th>Get</th><th style="text-align:center">Grade</th></tr></thead>';
         tradeHtml += '<tbody>';
+        var gradeMap = {};
+        if (gradesData && gradesData.trades) {
+          gradesData.trades.forEach(function(gt) { gradeMap[gt.trade_index] = gt; });
+        }
         ownerTrades.forEach(function(trade) {
           var giveStr = (trade.give || []).map(function(g) {
             var owner = YK.parseOwner(g);
@@ -206,11 +259,26 @@
             var last = (YK.ownerDisplayName(owner) || '').split(' ').pop();
             return '<div style="margin-bottom:2px"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:' + clr + ';margin-right:4px;vertical-align:middle"></span><span style="color:var(--text-muted);font-weight:600;font-size:0.75rem">' + YK.escapeHtml(last) + '</span> ' + YK.escapeHtml(YK.parseAsset(g)) + '</div>';
           }).join('');
+          var tradeIdx = tradesData.indexOf(trade);
+          var gradeInfo = gradeMap[tradeIdx];
+          var gradeHtml = '';
+          if (gradeInfo) {
+            var mySide = gradeInfo.side_a && gradeInfo.side_a.owner === ownerKey ? gradeInfo.side_a : gradeInfo.side_b;
+            if (mySide && mySide.grade && mySide.grade !== 'INC') {
+              var gc = GRADE_COLORS[mySide.grade] || '#888';
+              gradeHtml = '<span style="display:inline-block;min-width:24px;text-align:center;background:' + gc + ';color:#fff;font-size:0.68rem;font-weight:800;padding:2px 6px;border-radius:99px">' + mySide.grade + '</span>';
+            } else {
+              gradeHtml = '<span style="color:var(--text-muted);font-size:0.72rem">N/A</span>';
+            }
+          } else {
+            gradeHtml = '<span style="color:var(--text-muted);font-size:0.72rem">&mdash;</span>';
+          }
           tradeHtml += '<tr>';
           tradeHtml += '<td><strong>' + trade.season + '</strong></td>';
           tradeHtml += '<td style="white-space:nowrap;color:var(--text-muted);font-size:0.8rem">' + (trade.date || '&mdash;') + '</td>';
           tradeHtml += '<td style="font-size:0.82rem">' + giveStr + '</td>';
           tradeHtml += '<td style="font-size:0.82rem">' + getStr + '</td>';
+          tradeHtml += '<td style="text-align:center">' + gradeHtml + '</td>';
           tradeHtml += '</tr>';
         });
         tradeHtml += '</tbody></table></div>';
