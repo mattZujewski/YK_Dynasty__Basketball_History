@@ -215,7 +215,7 @@
           } else {
             gradeHtml = '<span style="color:var(--text-muted);font-size:0.72rem">&mdash;</span>';
           }
-          return '<tr data-season="' + trade.season + '" data-date="' + (trade.date || '') + '">' +
+          return '<tr data-season="' + trade.season + '" data-date="' + (trade.date || '') + '" data-trade-idx="' + tradeIdx + '" style="cursor:pointer" class="trade-row">' +
             '<td><strong>' + trade.season + '</strong></td>' +
             '<td style="white-space:nowrap;color:var(--text-muted);font-size:0.8rem">' + (trade.date || '&mdash;') + '</td>' +
             '<td style="font-size:0.82rem">' + giveStr + '</td>' +
@@ -224,6 +224,13 @@
           '</tr>';
         }).join('');
       }
+
+      // Attach click handlers
+      document.querySelectorAll('#trade-tbody .trade-row').forEach(function(row) {
+        row.addEventListener('click', function() {
+          showTradeDetail(parseInt(row.dataset.tradeIdx));
+        });
+      });
 
       // Render volume bar chart — use display names
       var counts = countByOwner(filtered);
@@ -360,6 +367,167 @@
         cell.addEventListener('mouseleave', function() {
           tooltip.classList.remove('visible');
         });
+      });
+    }
+
+    // ── Trade Detail ──
+    var detailDiv = document.getElementById('trade-detail');
+    var GRADE_COLORS_DETAIL = {'A+':'#1a6b3c','A':'#2a9d8f','B':'#4e9af1','C':'#f4a261','D':'#e76f51','F':'#e63946','INC':'#888'};
+
+    function gradeBadge(grade) {
+      var color = GRADE_COLORS_DETAIL[grade] || '#888';
+      return '<span style="display:inline-block;min-width:28px;text-align:center;background:' + color + ';color:#fff;font-size:0.72rem;font-weight:800;padding:3px 8px;border-radius:99px">' + YK.escapeHtml(grade) + '</span>';
+    }
+
+    function assetLabel(item) {
+      var parts = item.split(' ', 1);
+      var rest = item.substring(parts[0].length).trim();
+      rest = rest.replace(/^[A-Z]{1,2}\/[A-Z]{1,2}\s+/, '');
+      return rest || item;
+    }
+
+    function showTradeDetail(tradeIdx) {
+      var trade = trades[tradeIdx];
+      if (!trade) { detailDiv.style.display = 'none'; return; }
+
+      var gradeInfo = gradeMap[tradeIdx];
+      detailDiv.style.display = 'block';
+      detailDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      var html = '<div class="chart-section">';
+
+      // Header
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">';
+      html += '<h2>' + trade.season + ' Trade Summary</h2>';
+      html += '<button class="btn-ghost btn-sm" id="close-trade-detail">&times; Close</button>';
+      html += '</div>';
+
+      // Determine owners from trade items
+      var giveOwners = {};
+      var getOwners = {};
+      (trade.give || []).forEach(function(item) {
+        var o = YK.parseOwner(item);
+        if (o) { if (!giveOwners[o]) giveOwners[o] = []; giveOwners[o].push(assetLabel(item)); }
+      });
+      (trade.get || []).forEach(function(item) {
+        var o = YK.parseOwner(item);
+        if (o) { if (!getOwners[o]) getOwners[o] = []; getOwners[o].push(assetLabel(item)); }
+      });
+
+      // Get unique owners across both sides
+      var allOwnersSet = {};
+      Object.keys(giveOwners).forEach(function(o) { allOwnersSet[o] = true; });
+      Object.keys(getOwners).forEach(function(o) { allOwnersSet[o] = true; });
+      var tradeOwnersArr = Object.keys(allOwnersSet);
+
+      // Grade info if available
+      var sa = gradeInfo ? gradeInfo.side_a : null;
+      var sb = gradeInfo ? gradeInfo.side_b : null;
+
+      html += '<div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:20px">';
+
+      if (tradeOwnersArr.length >= 2) {
+        var ownerA = tradeOwnersArr[0];
+        var ownerB = tradeOwnersArr[1];
+        var colA = YK.ownerColor(ownerA);
+        var colB = YK.ownerColor(ownerB);
+        var nameA = YK.ownerDisplayName(ownerA) || ownerA;
+        var nameB = YK.ownerDisplayName(ownerB) || ownerB;
+
+        // Determine what each owner sends
+        var aSends = (giveOwners[ownerA] || []).concat(getOwners[ownerA] || []);
+        var bSends = (giveOwners[ownerB] || []).concat(getOwners[ownerB] || []);
+
+        // Grades
+        var gradeA = '';
+        var gradeB = '';
+        if (sa && sb) {
+          if (sa.owner === ownerA) {
+            gradeA = sa.combined_grade || sa.grade || 'INC';
+            gradeB = sb.combined_grade || sb.grade || 'INC';
+          } else {
+            gradeA = sb.combined_grade || sb.grade || 'INC';
+            gradeB = sa.combined_grade || sa.grade || 'INC';
+          }
+        }
+
+        // Trade parties header
+        html += '<div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;flex-wrap:wrap">';
+        html += '<div style="display:flex;align-items:center;gap:6px">';
+        html += '<span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:' + colA + '"></span>';
+        html += '<strong style="font-size:1.05rem">' + YK.escapeHtml(nameA) + '</strong>';
+        if (gradeA) html += gradeBadge(gradeA);
+        html += '</div>';
+        html += '<span style="color:var(--text-muted);font-size:1.1rem;font-weight:700">\u2194</span>';
+        html += '<div style="display:flex;align-items:center;gap:6px">';
+        html += '<span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:' + colB + '"></span>';
+        html += '<strong style="font-size:1.05rem">' + YK.escapeHtml(nameB) + '</strong>';
+        if (gradeB) html += gradeBadge(gradeB);
+        html += '</div>';
+        html += '</div>';
+
+        // Asset exchange visual
+        html += '<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:14px">';
+
+        // Side A sends
+        html += '<div style="flex:1;min-width:200px">';
+        html += '<div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);margin-bottom:6px">';
+        html += '<span style="color:' + colA + ';font-weight:700">' + nameA.split(' ').pop() + '</span> sends \u2192</div>';
+        html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
+        if (aSends.length > 0) {
+          aSends.forEach(function(item) {
+            html += '<span style="background:var(--bg-main);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.78rem">' + YK.escapeHtml(item) + '</span>';
+          });
+        } else {
+          html += '<span style="color:var(--text-muted);font-size:0.78rem">\u2014</span>';
+        }
+        html += '</div></div>';
+
+        // Side B sends
+        html += '<div style="flex:1;min-width:200px">';
+        html += '<div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);margin-bottom:6px">';
+        html += '<span style="color:' + colB + ';font-weight:700">' + nameB.split(' ').pop() + '</span> sends \u2192</div>';
+        html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
+        if (bSends.length > 0) {
+          bSends.forEach(function(item) {
+            html += '<span style="background:var(--bg-main);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.78rem">' + YK.escapeHtml(item) + '</span>';
+          });
+        } else {
+          html += '<span style="color:var(--text-muted);font-size:0.78rem">\u2014</span>';
+        }
+        html += '</div></div>';
+
+        html += '</div>';
+      } else {
+        // Fallback for unusual trades
+        html += '<div style="margin-bottom:14px">';
+        html += '<div><strong>Give:</strong> ' + (trade.give || []).map(function(g) { return YK.escapeHtml(assetLabel(g)); }).join(', ') + '</div>';
+        html += '<div><strong>Get:</strong> ' + (trade.get || []).map(function(g) { return YK.escapeHtml(assetLabel(g)); }).join(', ') + '</div>';
+        html += '</div>';
+      }
+
+      // Meta row
+      html += '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--border);padding-top:12px">';
+      if (gradeInfo && gradeInfo.summary) {
+        html += '<div style="font-size:0.82rem;color:var(--text-muted);flex:1">' + YK.escapeHtml(gradeInfo.summary) + '</div>';
+      }
+      html += '<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">';
+      if (trade.date) {
+        html += '<span style="font-size:0.75rem;color:var(--text-muted)">' + YK.escapeHtml(trade.date) + '</span>';
+      }
+      if (trade.fantrax_confirmed) {
+        html += '<span style="font-size:0.65rem;color:#2a9d8f;font-weight:600;border:1px solid #2a9d8f;padding:1px 6px;border-radius:99px">\u2713 Fantrax</span>';
+      }
+      if (trade.source === 'fantrax_csv_only') {
+        html += '<span style="font-size:0.65rem;color:#f4a261;font-weight:600;border:1px solid #f4a261;padding:1px 6px;border-radius:99px">CSV only</span>';
+      }
+      html += '</div></div>';
+
+      html += '</div></div>';
+      detailDiv.innerHTML = html;
+
+      document.getElementById('close-trade-detail').addEventListener('click', function() {
+        detailDiv.style.display = 'none';
       });
     }
 

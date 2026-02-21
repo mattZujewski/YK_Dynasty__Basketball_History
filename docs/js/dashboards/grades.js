@@ -289,9 +289,21 @@
     // ── Trade Detail ──
     var detailDiv = document.getElementById('trade-detail');
 
+    /** Build a human-readable asset name from raw item string */
+    function assetLabel(item) {
+      var parts = item.split(' ', 1);
+      var rest = item.substring(parts[0].length).trim();
+      // strip position prefix like "SF/PF "
+      rest = rest.replace(/^[A-Z]{1,2}\/[A-Z]{1,2}\s+/, '');
+      return rest || item;
+    }
+
     function showTradeDetail(tradeIdx) {
       var t = gradesList.find(function(g) { return g.trade_index === tradeIdx; });
       if (!t) { detailDiv.style.display = 'none'; return; }
+
+      // Also get raw trade data for source/date info
+      var rawTrade = tradesData[tradeIdx] || {};
 
       detailDiv.style.display = 'block';
       detailDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -306,7 +318,98 @@
       html += '<button class="btn-ghost btn-sm" id="close-detail">&times; Close</button>';
       html += '</div>';
 
-      // Summary
+      // ── Trade Summary Section ──
+      var colA = YK.ownerColor(sa.owner);
+      var colB = YK.ownerColor(sb.owner);
+      var nameA = YK.ownerDisplayName(sa.owner) || sa.owner;
+      var nameB = YK.ownerDisplayName(sb.owner) || sb.owner;
+      var gA = sideGrade(sa);
+      var gB = sideGrade(sb);
+      var gpaA = sideGpa(sa);
+      var gpaB = sideGpa(sb);
+
+      // Determine verdict
+      var verdict = '';
+      var verdictColor = 'var(--text-muted)';
+      if (gA !== 'INC' && gB !== 'INC' && gpaA !== null && gpaB !== null) {
+        var diff = gpaA - gpaB;
+        if (diff > 0.3) {
+          verdict = nameA.split(' ').pop() + ' wins';
+          verdictColor = colA;
+        } else if (diff < -0.3) {
+          verdict = nameB.split(' ').pop() + ' wins';
+          verdictColor = colB;
+        } else {
+          verdict = 'Even trade';
+          verdictColor = '#f4a261';
+        }
+      } else {
+        verdict = 'Incomplete data';
+      }
+
+      html += '<div style="background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:20px">';
+
+      // Trade parties header
+      html += '<div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px;flex-wrap:wrap">';
+      html += '<div style="display:flex;align-items:center;gap:6px">';
+      html += '<span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:' + colA + '"></span>';
+      html += '<strong style="font-size:1.05rem">' + YK.escapeHtml(nameA) + '</strong>';
+      html += gradeBadge(gA);
+      html += '</div>';
+      html += '<span style="color:var(--text-muted);font-size:1.1rem;font-weight:700">\u2194</span>';
+      html += '<div style="display:flex;align-items:center;gap:6px">';
+      html += '<span style="display:inline-block;width:12px;height:12px;border-radius:50%;background:' + colB + '"></span>';
+      html += '<strong style="font-size:1.05rem">' + YK.escapeHtml(nameB) + '</strong>';
+      html += gradeBadge(gB);
+      html += '</div>';
+      html += '</div>';
+
+      // Asset exchange visual
+      html += '<div style="display:flex;gap:20px;flex-wrap:wrap;margin-bottom:14px">';
+
+      // Side A sends → Side B receives
+      html += '<div style="flex:1;min-width:200px">';
+      html += '<div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);margin-bottom:6px">';
+      html += '<span style="color:' + colA + ';font-weight:700">' + nameA.split(' ').pop() + '</span> sends \u2192</div>';
+      html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
+      (sa.gave || []).forEach(function(item) {
+        html += '<span style="background:var(--bg-main);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.78rem">' + YK.escapeHtml(assetLabel(item)) + '</span>';
+      });
+      if (!sa.gave || sa.gave.length === 0) html += '<span style="color:var(--text-muted);font-size:0.78rem">\u2014</span>';
+      html += '</div></div>';
+
+      // Side B sends → Side A receives
+      html += '<div style="flex:1;min-width:200px">';
+      html += '<div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-muted);margin-bottom:6px">';
+      html += '<span style="color:' + colB + ';font-weight:700">' + nameB.split(' ').pop() + '</span> sends \u2192</div>';
+      html += '<div style="display:flex;flex-wrap:wrap;gap:4px">';
+      (sb.gave || []).forEach(function(item) {
+        html += '<span style="background:var(--bg-main);border:1px solid var(--border);padding:3px 8px;border-radius:6px;font-size:0.78rem">' + YK.escapeHtml(assetLabel(item)) + '</span>';
+      });
+      if (!sb.gave || sb.gave.length === 0) html += '<span style="color:var(--text-muted);font-size:0.78rem">\u2014</span>';
+      html += '</div></div>';
+
+      html += '</div>';
+
+      // Verdict + meta row
+      html += '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid var(--border);padding-top:12px">';
+      html += '<div style="font-weight:700;font-size:0.9rem;color:' + verdictColor + '">' + verdict + '</div>';
+      html += '<div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">';
+      if (t.date || rawTrade.date) {
+        html += '<span style="font-size:0.75rem;color:var(--text-muted)">' + YK.escapeHtml(t.date || rawTrade.date) + '</span>';
+      }
+      html += '<span style="font-size:0.72rem">' + confidenceBadge(t.grade_confidence) + '</span>';
+      if (rawTrade.fantrax_confirmed) {
+        html += '<span style="font-size:0.65rem;color:#2a9d8f;font-weight:600;border:1px solid #2a9d8f;padding:1px 6px;border-radius:99px">\u2713 Fantrax</span>';
+      }
+      if (rawTrade.source === 'fantrax_csv_only') {
+        html += '<span style="font-size:0.65rem;color:#f4a261;font-weight:600;border:1px solid #f4a261;padding:1px 6px;border-radius:99px">CSV only</span>';
+      }
+      html += '</div></div>';
+
+      html += '</div>';
+
+      // Summary text
       html += '<p class="chart-insight">' + YK.escapeHtml(t.summary) + '</p>';
 
       // Two-column layout

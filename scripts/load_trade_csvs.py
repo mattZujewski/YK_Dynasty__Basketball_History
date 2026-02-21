@@ -3,21 +3,25 @@
 load_trade_csvs.py — Load ALL Fantrax trade CSV files, reconcile against
 Excel-sourced trades.json, and rebuild a complete trade dataset.
 
+APPROACH (revised):
+  The Excel trades.json is the STRUCTURAL backbone — it has the correct
+  trade-by-trade breakdown with proper side assignments (who gave what).
+
+  The CSV is used to:
+  1. Add dates to Excel trades that lack them
+  2. Improve player name spellings (CSV → canonical Fantrax names)
+  3. Add genuinely new CSV-only trades (not in Excel)
+  4. Confirm trades as fantrax_confirmed
+
+  We NEVER replace the Excel's side assignments with CSV data, because
+  CSV keeper-day bundles merge multiple trades into one group and cannot
+  reliably determine which player belongs to which distinct trade.
+
 Hard rules:
-  - players_given = ONLY from Fantrax CSV (never from Excel)
-  - picks_given = ONLY from Excel/trades.json (never from Fantrax)
-  - Both arrays populated if a side has both players + picks
-
-Key insight: Fantrax CSVs bundle ALL transactions on the same date between the
-same two teams into one "super-trade" row group. This means keeper-day transactions
-(Oct 17/23/21/20) combine multiple distinct Excel trades into a single CSV grouping.
-We handle this by allowing one CSV trade to match MULTIPLE Excel trades between the
-same owners in the same season.
-
-Sections:
-  1. Load all CSV files, group rows into trades
-  2. Reconcile CSV trades against existing trades.json
-  3. Write final merged trades.json
+  - picks_given = ONLY from Excel (Fantrax CSV pick data is incomplete)
+  - Side assignments (who gave/got) = from Excel (authoritative)
+  - Player name spellings = prefer CSV where matched
+  - Dates = from CSV where available
 
 Usage:
     python3 scripts/load_trade_csvs.py
@@ -28,7 +32,7 @@ import json
 import re
 import unicodedata
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -57,7 +61,6 @@ TEAM_TO_OWNER = {
     "Flaming Flaggs": "Baden",
 }
 
-# Excel abbreviation → canonical owner (for parsing existing trades.json)
 ABBREV_TO_OWNER = {
     "BADEN": "Baden", "VLAND": "Baden", "SAM": "Baden", "VLAD": "Baden",
     "KELL": "Baden", "FLAGGS": "Baden",
@@ -75,30 +78,27 @@ ABBREV_TO_OWNER = {
 
 def date_to_season(date_str):
     """Convert a Fantrax date string to NBA season string."""
-    try:
-        dt = datetime.strptime(date_str.strip(), "%a %b %d, %Y, %I:%M%p")
-    except ValueError:
+    for fmt in ["%a %b %d, %Y, %I:%M%p", "%a %b %d, %Y, %I:%M %p"]:
         try:
-            dt = datetime.strptime(date_str.strip(), "%a %b %d, %Y, %I:%M %p")
+            dt = datetime.strptime(date_str.strip(), fmt)
+            if dt.month >= 7:
+                return f"{dt.year}-{str(dt.year + 1)[-2:]}"
+            else:
+                return f"{dt.year - 1}-{str(dt.year)[-2:]}"
         except ValueError:
-            return None
-    if dt.month >= 7:
-        return f"{dt.year}-{str(dt.year + 1)[-2:]}"
-    else:
-        return f"{dt.year - 1}-{str(dt.year)[-2:]}"
+            continue
+    return None
 
 
-def parse_date(date_str):
-    """Parse Fantrax date to ISO format."""
-    try:
-        dt = datetime.strptime(date_str.strip(), "%a %b %d, %Y, %I:%M%p")
-        return dt.strftime("%Y-%m-%d"), dt
-    except ValueError:
+def parse_date_iso(date_str):
+    """Parse Fantrax date to ISO format string."""
+    for fmt in ["%a %b %d, %Y, %I:%M%p", "%a %b %d, %Y, %I:%M %p"]:
         try:
-            dt = datetime.strptime(date_str.strip(), "%a %b %d, %Y, %I:%M %p")
-            return dt.strftime("%Y-%m-%d"), dt
+            dt = datetime.strptime(date_str.strip(), fmt)
+            return dt.strftime("%Y-%m-%d")
         except ValueError:
-            return None, None
+            continue
+    return None
 
 
 def normalize(name):
@@ -107,33 +107,12 @@ def normalize(name):
     clean = "".join(c for c in nfkd if unicodedata.category(c) != "Mn").lower().strip()
     clean = clean.replace("\u2019", "'").replace("\u2018", "'")
     clean = clean.replace(".", "").replace("'", "")
+    # Remove position prefixes like "SF/PF "
+    clean = re.sub(r"^[A-Z]{1,2}/[A-Z]{1,2}\s+", "", clean)
     for suffix in [" jr", " iii", " ii", " iv", " sr"]:
         if clean.endswith(suffix):
             clean = clean[: -len(suffix)]
     return clean.strip()
-
-
-def clean_player_name(raw):
-    """Clean a player name from CSV — strip HTML tags."""
-    name = raw.strip()
-    name = re.sub(r'<[^>]+>', '', name)
-    return name.strip()
-
-
-def is_pick_row(player_text):
-    """Check if this CSV row is a draft pick."""
-    return "Draft Pick" in player_text
-
-
-def is_pick_excel(item):
-    """Check if a trades.json item is a pick."""
-    lower = item.lower()
-    parts = lower.split(" ", 1)
-    if len(parts) > 1 and parts[0].upper() in ABBREV_TO_OWNER:
-        asset = parts[1]
-    else:
-        asset = lower
-    return bool(re.search(r"(round|\d{4}\s+(1st|2nd)|right to swap|swap rights|frp|srp)", asset))
 
 
 def fuzzy_match_name(name_a, name_b, threshold=0.80):
@@ -145,554 +124,478 @@ def fuzzy_match_name(name_a, name_b, threshold=0.80):
     return SequenceMatcher(None, na, nb).ratio() >= threshold
 
 
-def get_abbrev_for_owner(owner):
-    """Get the primary abbreviation for an owner."""
-    primary = {
+def is_pick_excel(item):
+    """Check if a trades.json item is a pick."""
+    lower = item.lower()
+    parts = lower.split(" ", 1)
+    if len(parts) > 1 and parts[0].upper() in ABBREV_TO_OWNER:
+        asset = parts[1]
+    else:
+        asset = lower
+    return bool(re.search(
+        r"(round|\d{4}\s+(1st|2nd)|right to swap|swap rights|frp|srp)",
+        asset
+    ))
+
+
+def get_owner_from_item(item):
+    """Extract canonical owner from a trades.json item like 'DELA Pascal Siakam'."""
+    parts = item.split(" ", 1)
+    if len(parts) >= 2:
+        return ABBREV_TO_OWNER.get(parts[0].upper())
+    return None
+
+
+def get_player_from_item(item):
+    """Extract player name from a trades.json item."""
+    if is_pick_excel(item):
+        return None
+    parts = item.split(" ", 1)
+    if len(parts) >= 2 and ABBREV_TO_OWNER.get(parts[0].upper()):
+        return parts[1].strip()
+    # Items without a recognized abbreviation prefix (e.g., just "Kelvin")
+    # or position-prefixed items
+    return None
+
+
+# ── Load CSV files into a per-player lookup ──────────────────────────────
+def load_csv_player_index():
+    """
+    Build an index of every player transaction from CSV files.
+    Returns:
+      csv_players: dict[normalized_name] → list of {date, season, from_owner, to_owner, raw_name}
+      csv_trade_dates: dict[(season, frozenset(owners))] → set of ISO dates
+    """
+    csv_files = sorted(INFO.glob("Fantrax-Transaction-History-Trades*.csv"))
+    csv_players = defaultdict(list)
+    csv_trade_dates = defaultdict(set)
+    csv_trade_groups = []
+
+    for csv_file in csv_files:
+        print(f"\n  Loading {csv_file.name}...")
+        with open(csv_file) as f:
+            reader = csv.DictReader(f)
+            rows = list(reader)
+
+        # Group by trade (same date + same two teams)
+        groups = defaultdict(list)
+        for r in rows:
+            key = (r["Date (EST)"], tuple(sorted([r["From"], r["To"]])))
+            groups[key].append(r)
+
+        player_count = 0
+        pick_count = 0
+
+        for (date_str, _), trade_rows in groups.items():
+            iso_date = parse_date_iso(date_str)
+            season = date_to_season(date_str)
+            if not season:
+                continue
+
+            # Determine the two owners
+            owners_in_group = set()
+            group_players = []
+
+            for r in trade_rows:
+                from_owner = TEAM_TO_OWNER.get(r["From"])
+                to_owner = TEAM_TO_OWNER.get(r["To"])
+                if from_owner:
+                    owners_in_group.add(from_owner)
+                if to_owner:
+                    owners_in_group.add(to_owner)
+
+                if "Draft Pick" in r["Player"]:
+                    pick_count += 1
+                    continue
+
+                player_name = re.sub(r'<[^>]+>', '', r["Player"]).strip()
+                norm_name = normalize(player_name)
+
+                entry = {
+                    "date": iso_date,
+                    "season": season,
+                    "from_owner": from_owner,
+                    "to_owner": to_owner,
+                    "raw_name": player_name,
+                }
+                csv_players[norm_name].append(entry)
+                group_players.append(entry)
+                player_count += 1
+
+            if owners_in_group and iso_date:
+                csv_trade_dates[(season, frozenset(owners_in_group))].add(iso_date)
+                csv_trade_groups.append({
+                    "date": iso_date,
+                    "season": season,
+                    "owners": owners_in_group,
+                    "players": group_players,
+                })
+
+        print(f"    {player_count} player rows, {pick_count} pick rows, "
+              f"{len(groups)} trade groups")
+
+    return csv_players, csv_trade_dates, csv_trade_groups
+
+
+def main():
+    print("=" * 60)
+    print("LOAD TRADE CSVS — Excel Backbone + CSV Enrichment")
+    print("=" * 60)
+
+    # ── Step 1: Load CSV player index ──
+    print("\n--- Step 1: Load CSV files ---")
+    csv_players, csv_trade_dates, csv_trade_groups = load_csv_player_index()
+    print(f"\nCSV player index: {len(csv_players)} unique players")
+    print(f"CSV trade date groups: {len(csv_trade_groups)}")
+
+    # ── Step 2: Load and process Excel trades ──
+    print("\n--- Step 2: Process Excel trades ---")
+    with open(TRADES_PATH) as f:
+        excel_trades = json.load(f)
+    print(f"Excel trades: {len(excel_trades)}")
+
+    csv_seasons = set()
+    for entries in csv_players.values():
+        for e in entries:
+            csv_seasons.add(e["season"])
+    print(f"CSV covers seasons: {sorted(csv_seasons)}")
+
+    OWNER_ABBREV = {
         "Baden": "BADEN", "Berke": "BERK", "Delaney": "DELA",
         "Gold": "GOLD", "Green": "GREEN", "HaleTrager": "TRAG",
         "Jowkar": "JOWK", "Moss": "MOSS", "Peterson": "PETE",
         "Zujewski": "ZJEW",
     }
-    return primary.get(owner, "UNKN")
 
+    # ── Step 3: For each Excel trade, enrich with CSV data ──
+    print("\n--- Step 3: Enrich Excel trades with CSV data ---")
 
-# ── SECTION 1: Load CSV files ────────────────────────────────────────────
-def load_all_csvs():
-    """Load all Fantrax trade CSV files, group into trades."""
-    csv_files = sorted(INFO.glob("Fantrax-Transaction-History-Trades*.csv"))
+    name_corrections = 0
+    dates_added = 0
+    trades_confirmed = 0
+    duplicate_removed = 0
+    players_added_total = 0
 
-    if not csv_files:
-        print("ERROR: No CSV files found!")
-        return []
+    # Track seen trades for duplicate detection
+    seen_trades = {}
 
-    all_trades = []
+    enriched_trades = []
+    for i, trade in enumerate(excel_trades):
+        season = trade.get("season", "")
+        give = trade.get("give", [])
+        get_items = trade.get("get", [])
 
-    for csv_file in csv_files:
-        print(f"\n{'='*60}")
-        print(f"FILE: {csv_file.name}")
-        print(f"{'='*60}")
+        # Check for duplicate
+        owners = set()
+        for item in give + get_items:
+            o = get_owner_from_item(item)
+            if o:
+                owners.add(o)
 
-        with open(csv_file) as f:
-            reader = csv.DictReader(f)
-            rows = list(reader)
+        give_players = sorted([normalize(get_player_from_item(x) or "")
+                               for x in give if get_player_from_item(x)])
+        get_players_n = sorted([normalize(get_player_from_item(x) or "")
+                                for x in get_items if get_player_from_item(x)])
+        give_picks = sorted([x for x in give if is_pick_excel(x)])
+        get_picks = sorted([x for x in get_items if is_pick_excel(x)])
 
-        print(f"Rows: {len(rows)}")
-        print(f"Columns: {list(rows[0].keys()) if rows else 'N/A'}")
+        dup_key = (season, frozenset(owners), tuple(give_players),
+                   tuple(get_players_n), tuple(give_picks), tuple(get_picks))
+        if dup_key in seen_trades:
+            print(f"  DUPLICATE REMOVED: #{i} same as #{seen_trades[dup_key]} "
+                  f"({season} {owners})")
+            duplicate_removed += 1
+            continue
+        seen_trades[dup_key] = i
 
-        seasons = set()
-        for r in rows:
-            s = date_to_season(r["Date (EST)"])
-            if s:
-                seasons.add(s)
-        print(f"Seasons detected: {sorted(seasons)}")
+        # Only enrich trades in CSV-covered seasons
+        if season not in csv_seasons:
+            enriched_trades.append(trade)
+            continue
 
-        players = sum(1 for r in rows if not is_pick_row(r["Player"]))
-        picks = sum(1 for r in rows if is_pick_row(r["Player"]))
-        print(f"Player rows: {players}, Pick rows: {picks}")
+        # Try to add/improve date
+        date = trade.get("date")
+        if not date and owners:
+            # Look for matching CSV trade dates
+            possible_dates = csv_trade_dates.get((season, frozenset(owners)), set())
+            if len(possible_dates) == 1:
+                date = list(possible_dates)[0]
+                dates_added += 1
+            elif len(possible_dates) > 1:
+                # Multiple dates — try to find which date matches by player overlap
+                best_date = None
+                best_overlap = 0
+                for d in possible_dates:
+                    overlap = 0
+                    for item in give + get_items:
+                        pname = get_player_from_item(item)
+                        if not pname:
+                            continue
+                        norm_p = normalize(pname)
+                        if norm_p in csv_players:
+                            for entry in csv_players[norm_p]:
+                                if entry["date"] == d and entry["season"] == season:
+                                    if entry["from_owner"] in owners or entry["to_owner"] in owners:
+                                        overlap += 1
+                                        break
+                    if overlap > best_overlap:
+                        best_overlap = overlap
+                        best_date = d
+                if best_date and best_overlap > 0:
+                    date = best_date
+                    dates_added += 1
 
-        # Group rows into trades: same date + same two teams = same trade
-        trade_groups = defaultdict(list)
-        for r in rows:
-            key = (r["Date (EST)"], tuple(sorted([r["From"], r["To"]])))
-            trade_groups[key].append(r)
+        # Improve player name spellings from CSV
+        new_give = []
+        new_get = []
+        confirmed = False
 
-        print(f"Unique trade groups: {len(trade_groups)}")
+        for item in give:
+            pname = get_player_from_item(item)
+            if not pname:
+                new_give.append(item)
+                continue
 
-        # Parse each trade group
-        for (date_str, teams_key), trade_rows in trade_groups.items():
-            iso_date, dt = parse_date(date_str)
-            season = date_to_season(date_str)
+            norm_p = normalize(pname)
+            owner = get_owner_from_item(item)
+            abbrev = item.split(" ", 1)[0]
 
-            team_a = trade_rows[0]["From"]
-            team_b = trade_rows[0]["To"]
-
-            side_a_gave_players = []
-            side_a_gave_picks = []
-            side_b_gave_players = []
-            side_b_gave_picks = []
-
-            for r in trade_rows:
-                player = clean_player_name(r["Player"])
-                from_team = r["From"]
-
-                if is_pick_row(r["Player"]):
-                    pick_text = r["Player"].strip()
-                    if from_team == team_a:
-                        side_a_gave_picks.append(pick_text)
-                    else:
-                        side_b_gave_picks.append(pick_text)
+            # Look for CSV match
+            if norm_p in csv_players:
+                # Direct match — use CSV spelling
+                csv_name = csv_players[norm_p][0]["raw_name"]
+                new_give.append(f"{abbrev} {csv_name}")
+                confirmed = True
+                if csv_name != pname:
+                    name_corrections += 1
+            else:
+                # Try fuzzy match
+                best_match = None
+                best_score = 0
+                for csv_norm, entries in csv_players.items():
+                    score = SequenceMatcher(None, norm_p, csv_norm).ratio()
+                    if score > best_score and score >= 0.80:
+                        best_score = score
+                        best_match = entries[0]["raw_name"]
+                if best_match:
+                    new_give.append(f"{abbrev} {best_match}")
+                    confirmed = True
+                    if best_match != pname:
+                        name_corrections += 1
                 else:
-                    if from_team == team_a:
-                        side_a_gave_players.append(player)
-                    else:
-                        side_b_gave_players.append(player)
+                    new_give.append(item)
 
-            owner_a = TEAM_TO_OWNER.get(team_a, team_a)
-            owner_b = TEAM_TO_OWNER.get(team_b, team_b)
-
-            trade = {
-                "csv_file": csv_file.name,
-                "date": iso_date,
-                "date_raw": date_str,
-                "season": season,
-                "team_a": team_a,
-                "team_b": team_b,
-                "owner_a": owner_a,
-                "owner_b": owner_b,
-                "side_a_players": side_a_gave_players,
-                "side_a_picks": side_a_gave_picks,
-                "side_b_players": side_b_gave_players,
-                "side_b_picks": side_b_gave_picks,
-            }
-            all_trades.append(trade)
-
-        # Print sample trades
-        print(f"\n--- Sample trades from {csv_file.name} ---")
-        file_trades = [t for t in all_trades if t["csv_file"] == csv_file.name]
-        for t in file_trades[:5]:
-            total = len(t["side_a_players"]) + len(t["side_b_players"]) + \
-                    len(t["side_a_picks"]) + len(t["side_b_picks"])
-            print(f"\n  Date: {t['date']} | {t['owner_a']} ↔ {t['owner_b']} ({total} items)")
-            if t["side_a_players"] or t["side_a_picks"]:
-                print(f"    {t['owner_a']} gave: {t['side_a_players'][:3]}"
-                      f"{' + picks' if t['side_a_picks'] else ''}")
-            if t["side_b_players"] or t["side_b_picks"]:
-                print(f"    {t['owner_b']} gave: {t['side_b_players'][:3]}"
-                      f"{' + picks' if t['side_b_picks'] else ''}")
-
-    print(f"\n{'='*60}")
-    print(f"TOTAL CSV TRADE GROUPS LOADED: {len(all_trades)}")
-    print(f"{'='*60}")
-
-    return all_trades
-
-
-# ── SECTION 2: Parse existing trades.json ─────────────────────────────────
-def parse_existing_trades():
-    """Parse existing trades.json into structured format for matching."""
-    with open(TRADES_PATH) as f:
-        trades = json.load(f)
-
-    parsed = []
-    for i, t in enumerate(trades):
-        season = t.get("season", "")
-        date = t.get("date")
-
-        give_items = t.get("give", [])
-        get_items = t.get("get", [])
-
-        side_a_owner = None
-        side_b_owner = None
-        for item in give_items:
-            parts = item.split(" ", 1)
-            if len(parts) >= 2:
-                o = ABBREV_TO_OWNER.get(parts[0].upper())
-                if o:
-                    side_a_owner = o
-                    break
         for item in get_items:
-            parts = item.split(" ", 1)
-            if len(parts) >= 2:
-                o = ABBREV_TO_OWNER.get(parts[0].upper())
-                if o:
-                    side_b_owner = o
-                    break
+            pname = get_player_from_item(item)
+            if not pname:
+                new_get.append(item)
+                continue
 
-        def extract_players(items):
-            players = []
-            for item in items:
-                parts = item.split(" ", 1)
-                if len(parts) < 2:
+            norm_p = normalize(pname)
+            owner = get_owner_from_item(item)
+            abbrev = item.split(" ", 1)[0]
+
+            if norm_p in csv_players:
+                csv_name = csv_players[norm_p][0]["raw_name"]
+                new_get.append(f"{abbrev} {csv_name}")
+                confirmed = True
+                if csv_name != pname:
+                    name_corrections += 1
+            else:
+                best_match = None
+                best_score = 0
+                for csv_norm, entries in csv_players.items():
+                    score = SequenceMatcher(None, norm_p, csv_norm).ratio()
+                    if score > best_score and score >= 0.80:
+                        best_score = score
+                        best_match = entries[0]["raw_name"]
+                if best_match:
+                    new_get.append(f"{abbrev} {best_match}")
+                    confirmed = True
+                    if best_match != pname:
+                        name_corrections += 1
+                else:
+                    new_get.append(item)
+
+        if confirmed:
+            trades_confirmed += 1
+
+        # ── Add missing players from the same CSV trade group ──
+        # If we have a date and owners, find the CSV group for this date+owners
+        # and add any players that aren't already in the trade
+        players_added = 0
+        if date and owners:
+            # Find matching CSV group(s)
+            existing_norm = set()
+            for item in new_give + new_get:
+                p = get_player_from_item(item)
+                if p:
+                    existing_norm.add(normalize(p))
+
+            for group in csv_trade_groups:
+                if group["date"] != date or group["season"] != season:
                     continue
-                if not is_pick_excel(item):
-                    players.append(parts[1].strip())
-            return players
+                if not group["owners"].issubset(owners) and not owners.issubset(group["owners"]):
+                    continue
+                # Check if this group has the same owner pair
+                if frozenset(group["owners"]) != frozenset(owners):
+                    continue
 
-        def extract_picks(items):
-            picks = []
-            for item in items:
-                if is_pick_excel(item):
-                    picks.append(item)
-            return picks
+                for p in group["players"]:
+                    norm_name = normalize(p["raw_name"])
+                    if norm_name in existing_norm:
+                        continue
+                    # This player is in the CSV group but not in the Excel trade
+                    from_owner = p["from_owner"]
+                    if from_owner and from_owner in OWNER_ABBREV:
+                        abbrev = OWNER_ABBREV.get(from_owner, from_owner[:4].upper())
+                        item_str = f"{abbrev} {p['raw_name']}"
+                        # Determine which side: items from from_owner go to
+                        # whichever side already has that owner's items
+                        give_owners_set = set(
+                            get_owner_from_item(x) for x in new_give
+                            if get_owner_from_item(x)
+                        )
+                        if from_owner in give_owners_set:
+                            new_give.append(item_str)
+                        else:
+                            new_get.append(item_str)
+                        existing_norm.add(norm_name)
+                        players_added += 1
+                        confirmed = True
 
-        give_players = extract_players(give_items)
-        give_picks = extract_picks(give_items)
-        get_players = extract_players(get_items)
-        get_picks = extract_picks(get_items)
+        if players_added > 0:
+            players_added_total += players_added
+            print(f"  Trade #{i}: added {players_added} missing players from CSV")
 
-        parsed.append({
-            "index": i,
+        enriched_trade = {
             "season": season,
             "date": date,
-            "owner_a": side_a_owner or "Unknown",
-            "owner_b": side_b_owner or "Unknown",
-            "give_players": give_players,
-            "give_picks": give_picks,
-            "get_players": get_players,
-            "get_picks": get_picks,
-            "raw": t,
-        })
-
-    return parsed
-
-
-# ── SECTION 2: Reconcile ─────────────────────────────────────────────────
-def reconcile(csv_trades, excel_trades):
-    """
-    Match CSV trades to Excel trades. Key insight: one CSV trade group (especially
-    on keeper day) can contain players from MULTIPLE Excel trades between the same
-    two owners. So we allow many-to-one matching (many Excel → one CSV group).
-    """
-    # matched: list of (csv_idx, excel_idx, match_info)
-    matched = []
-    excel_unmatched = set(range(len(excel_trades)))
-    csv_used_for = defaultdict(list)  # csv_idx → [excel_idxs]
-
-    # For each Excel trade, find the CSV trade that contains its players
-    for ei, et in enumerate(excel_trades):
-        excel_all_players = et["give_players"] + et["get_players"]
-
-        # Skip pick-only Excel trades (no players to match against CSV)
-        if not excel_all_players:
-            continue
-
-        best_csv = None
-        best_overlap = 0
-
-        for ci, ct in enumerate(csv_trades):
-            # Must be same season
-            if ct["season"] != et["season"]:
-                continue
-
-            # Must have same two owners
-            csv_owners = {ct["owner_a"], ct["owner_b"]}
-            excel_owners = {et["owner_a"], et["owner_b"]}
-            if csv_owners != excel_owners:
-                continue
-
-            csv_all_players = ct["side_a_players"] + ct["side_b_players"]
-            if not csv_all_players:
-                continue
-
-            # Count how many Excel players appear in this CSV trade
-            overlap = 0
-            for ep in excel_all_players:
-                for cp in csv_all_players:
-                    if fuzzy_match_name(ep, cp):
-                        overlap += 1
-                        break
-
-            if overlap > best_overlap:
-                best_overlap = overlap
-                best_csv = ci
-
-        if best_csv is not None and best_overlap > 0:
-            matched.append((best_csv, ei, f"{best_overlap}/{len(excel_all_players)} players"))
-            csv_used_for[best_csv].append(ei)
-            excel_unmatched.discard(ei)
-
-    # Find CSV trades that didn't match ANY Excel trade
-    csv_unmatched = set()
-    for ci in range(len(csv_trades)):
-        if ci not in csv_used_for:
-            csv_unmatched.add(ci)
-
-    return matched, csv_unmatched, excel_unmatched, csv_used_for
-
-
-def main():
-    print("=" * 60)
-    print("LOAD TRADE CSVS — Complete Trade Dataset Builder")
-    print("=" * 60)
-
-    # ── Section 1: Load CSVs ──
-    csv_trades = load_all_csvs()
-
-    # ── Section 2: Parse existing trades.json and reconcile ──
-    print(f"\n\n{'='*60}")
-    print("RECONCILIATION: CSV vs trades.json")
-    print(f"{'='*60}")
-
-    excel_trades = parse_existing_trades()
-    print(f"\nExcel trades.json: {len(excel_trades)} trades")
-    print(f"CSV trade groups: {len(csv_trades)}")
-
-    csv_seasons = set(t["season"] for t in csv_trades if t.get("season"))
-    print(f"CSV covers seasons: {sorted(csv_seasons)}")
-
-    excel_in_scope = [t for t in excel_trades if t["season"] in csv_seasons]
-    excel_out_of_scope = [t for t in excel_trades if t["season"] not in csv_seasons]
-    print(f"Excel trades in CSV-covered seasons: {len(excel_in_scope)}")
-    print(f"Excel trades in earlier seasons (no CSV): {len(excel_out_of_scope)}")
-
-    matched, csv_unmatched_idx, excel_unmatched_idx, csv_used_for = \
-        reconcile(csv_trades, excel_in_scope)
-
-    # Print reconciliation summary
-    unique_excel_matched = len(set(ei for _, ei, _ in matched))
-    unique_csv_matched = len(csv_used_for)
-    print(f"\n--- Reconciliation Summary ---")
-    print(f"Excel trades matched: {unique_excel_matched}")
-    print(f"CSV groups used: {unique_csv_matched}")
-    print(f"CSV groups with multiple Excel matches: "
-          f"{sum(1 for v in csv_used_for.values() if len(v) > 1)}")
-    print(f"CSV-only (no Excel match): {len(csv_unmatched_idx)}")
-    print(f"Excel-only (no CSV match): {len(excel_unmatched_idx)}")
-
-    # Show multi-match CSV groups
-    print(f"\n--- CSV groups matching multiple Excel trades ---")
-    for ci, excel_idxs in sorted(csv_used_for.items()):
-        if len(excel_idxs) > 1:
-            ct = csv_trades[ci]
-            print(f"\n  CSV: {ct['date']} {ct['owner_a']} ↔ {ct['owner_b']} "
-                  f"({len(ct['side_a_players'])+len(ct['side_b_players'])} players)")
-            for ei in excel_idxs:
-                et = excel_in_scope[ei]
-                print(f"    Excel #{et['index']}: give={et['raw']['give'][:2]}, "
-                      f"get={et['raw']['get'][:2]}")
-
-    # Break down by season
-    for season in sorted(csv_seasons):
-        csv_s = [i for i, t in enumerate(csv_trades) if t["season"] == season]
-        matched_excel_in_s = [ei for _, ei, _ in matched if excel_in_scope[ei]["season"] == season]
-        unmatched_csv_in_s = [i for i in csv_unmatched_idx if csv_trades[i]["season"] == season]
-        unmatched_excel_in_s = [i for i in excel_unmatched_idx
-                                if excel_in_scope[i]["season"] == season]
-
-        print(f"\n  Season {season}:")
-        print(f"    CSV groups: {len(csv_s)}")
-        print(f"    Excel trades matched: {len(matched_excel_in_s)}")
-        print(f"    CSV-only groups: {len(unmatched_csv_in_s)}")
-        if unmatched_csv_in_s:
-            for i in unmatched_csv_in_s:
-                t = csv_trades[i]
-                total_players = len(t["side_a_players"]) + len(t["side_b_players"])
-                total_picks = len(t["side_a_picks"]) + len(t["side_b_picks"])
-                if total_players > 0 or total_picks > 0:
-                    print(f"      → {t['date']} {t['owner_a']} ↔ {t['owner_b']}: "
-                          f"{total_players} players, {total_picks} picks")
-                    if t["side_a_players"]:
-                        print(f"        A gave: {t['side_a_players'][:4]}")
-                    if t["side_b_players"]:
-                        print(f"        B gave: {t['side_b_players'][:4]}")
-                else:
-                    print(f"      → {t['date']} {t['owner_a']} ↔ {t['owner_b']}: "
-                          f"[pick-only swap, 0 players]")
-        print(f"    Excel-only: {len(unmatched_excel_in_s)}")
-        if unmatched_excel_in_s:
-            for i in unmatched_excel_in_s:
-                t = excel_in_scope[i]
-                pick_only = not t["give_players"] and not t["get_players"]
-                print(f"      → {t['date'] or 'no-date'} {t['owner_a']} ↔ {t['owner_b']}: "
-                      f"give={t['raw']['give'][:2]}, get={t['raw']['get'][:2]}"
-                      f" {'[pick-only]' if pick_only else ''}")
-
-    # Multi-player trade analysis
-    print(f"\n--- Multi-player Trade Completeness ---")
-    # For each matched Excel trade, compare player counts
-    improved_count = 0
-    improved_details = []
-    for ci, ei, reason in matched:
-        ct = csv_trades[ci]
-        et = excel_in_scope[ei]
-
-        csv_all = ct["side_a_players"] + ct["side_b_players"]
-        excel_all = et["give_players"] + et["get_players"]
-
-        # Players in CSV but not in Excel (for THIS specific Excel trade's context)
-        # We need to be careful: the CSV group might serve multiple Excel trades
-        # So we just note if the CSV has MORE players total
-        new_for_this = []
-        for cp in csv_all:
-            found_in_excel = False
-            for ep in excel_all:
-                if fuzzy_match_name(cp, ep):
-                    found_in_excel = True
-                    break
-            if not found_in_excel:
-                new_for_this.append(cp)
-
-        if new_for_this:
-            improved_count += 1
-            improved_details.append((ct, et, new_for_this))
-
-    print(f"Matched trades where CSV has additional players: {improved_count}")
-    for ct, et, new_players in improved_details[:10]:
-        print(f"  {ct['date']} {ct['owner_a']} ↔ {ct['owner_b']}: "
-              f"+{len(new_players)} → {new_players[:4]}")
-
-    # ── Section 3: Rebuild trades.json ──
-    print(f"\n\n{'='*60}")
-    print("REBUILDING trades.json")
-    print(f"{'='*60}")
-
-    final_trades = []
-
-    # 1. Keep all out-of-scope Excel trades (2020-21, 2021-22) as-is
-    for et in excel_out_of_scope:
-        final_trades.append(et["raw"])
-
-    # 2. For each matched Excel trade: use CSV players + Excel picks
-    # The Excel trade structure stays as the "unit" — one Excel trade = one output trade.
-    # But we REPLACE the player names from CSV and keep picks from Excel.
-    processed_excel = set()
-
-    for ci, ei, reason in matched:
-        if ei in processed_excel:
-            continue
-        processed_excel.add(ei)
-
-        ct = csv_trades[ci]
-        et = excel_in_scope[ei]
-
-        # Determine side alignment between CSV and Excel
-        # The CSV has owner_a giving side_a_players and owner_b giving side_b_players
-        # The Excel has owner_a's items in 'give' and owner_b's items in 'get'
-        # We need to figure out which CSV side corresponds to which Excel side.
-
-        csv_owner_a = ct["owner_a"]
-        csv_owner_b = ct["owner_b"]
-        excel_owner_a = et["owner_a"]
-
-        # Figure out which CSV players correspond to the Excel give side
-        if csv_owner_a == excel_owner_a:
-            # CSV side_a = Excel give (owner_a gave)
-            csv_give_players = ct["side_a_players"]
-            csv_get_players = ct["side_b_players"]
-        else:
-            # CSV side_b = Excel give (owner_a gave)
-            csv_give_players = ct["side_b_players"]
-            csv_get_players = ct["side_a_players"]
-
-        # For multi-match CSV groups, we need to identify which CSV players
-        # belong to THIS specific Excel trade
-        # Strategy: match Excel players to CSV players, then check for extras
-
-        # Match Excel give players to CSV give players
-        excel_give_matched = set()
-        csv_give_used = set()
-        for ep_idx, ep in enumerate(et["give_players"]):
-            for cp_idx, cp in enumerate(csv_give_players):
-                if cp_idx not in csv_give_used and fuzzy_match_name(ep, cp):
-                    excel_give_matched.add(ep_idx)
-                    csv_give_used.add(cp_idx)
-                    break
-
-        # Match Excel get players to CSV get players
-        excel_get_matched = set()
-        csv_get_used = set()
-        for ep_idx, ep in enumerate(et["get_players"]):
-            for cp_idx, cp in enumerate(csv_get_players):
-                if cp_idx not in csv_get_used and fuzzy_match_name(ep, cp):
-                    excel_get_matched.add(ep_idx)
-                    csv_get_used.add(cp_idx)
-                    break
-
-        # If this CSV group serves multiple Excel trades, only assign
-        # the MATCHED players plus any extras that aren't claimed by other Excel trades
-        other_excel_idxs = [oei for oei in csv_used_for[ci] if oei != ei]
-
-        # Collect all players claimed by other Excel trades in this CSV group
-        other_claimed_give = set()
-        other_claimed_get = set()
-        for oei in other_excel_idxs:
-            oet = excel_in_scope[oei]
-            other_give_align = oet["give_players"] if csv_owner_a == oet["owner_a"] else oet["get_players"]
-            other_get_align = oet["get_players"] if csv_owner_a == oet["owner_a"] else oet["give_players"]
-            for op in other_give_align:
-                for cp_idx, cp in enumerate(csv_give_players):
-                    if fuzzy_match_name(op, cp):
-                        other_claimed_give.add(cp_idx)
-                        break
-            for op in other_get_align:
-                for cp_idx, cp in enumerate(csv_get_players):
-                    if fuzzy_match_name(op, cp):
-                        other_claimed_get.add(cp_idx)
-                        break
-
-        # Build final player lists for this trade:
-        # Include matched players (from CSV names) + unclaimed extras
-        final_give_players = []
-        for cp_idx, cp in enumerate(csv_give_players):
-            if cp_idx in csv_give_used:
-                final_give_players.append(cp)  # Matched to this Excel trade
-            elif cp_idx not in other_claimed_give and len(other_excel_idxs) == 0:
-                # Extra player only if no other Excel trades claim from this CSV
-                final_give_players.append(cp)
-
-        final_get_players = []
-        for cp_idx, cp in enumerate(csv_get_players):
-            if cp_idx in csv_get_used:
-                final_get_players.append(cp)
-            elif cp_idx not in other_claimed_get and len(other_excel_idxs) == 0:
-                final_get_players.append(cp)
-
-        # If this is the only Excel trade for this CSV group, include ALL CSV players
-        if len(csv_used_for[ci]) == 1:
-            final_give_players = list(csv_give_players)
-            final_get_players = list(csv_get_players)
-
-        # Build output trade
-        abbrev_a = get_abbrev_for_owner(et["owner_a"])
-        abbrev_b = get_abbrev_for_owner(et["owner_b"])
-
-        give = [f"{abbrev_a} {p}" for p in final_give_players] + et["give_picks"]
-        get = [f"{abbrev_b} {p}" for p in final_get_players] + et["get_picks"]
-
-        trade_entry = {
-            "season": et["season"],
-            "date": ct["date"],  # CSV date (more reliable, always present)
-            "give": give,
-            "get": get,
-            "fantrax_confirmed": True,
-            "sources": {"players": "fantrax_csv", "picks": "excel"},
+            "give": new_give,
+            "get": new_get,
         }
-        final_trades.append(trade_entry)
+        if confirmed:
+            enriched_trade["fantrax_confirmed"] = True
+        enriched_trades.append(enriched_trade)
 
-    # 3. Excel-only unmatched trades — keep as-is
-    for ei in sorted(excel_unmatched_idx):
-        et = excel_in_scope[ei]
-        entry = dict(et["raw"])
-        pick_only = not et["give_players"] and not et["get_players"]
-        if pick_only:
-            entry["source"] = "excel_only_picks"
-        else:
-            entry["source"] = "excel_only"
-            entry["needs_review"] = True
-        final_trades.append(entry)
+    print(f"  Name corrections: {name_corrections}")
+    print(f"  Dates added: {dates_added}")
+    print(f"  Players added from CSV: {players_added_total}")
+    print(f"  Trades confirmed by CSV: {trades_confirmed}")
+    print(f"  Duplicates removed: {duplicate_removed}")
 
-    # 4. CSV-only trades (missing from Excel) — add as new
-    # But filter out empty pick-only swap entries (keeper day placeholders)
-    csv_only_count = 0
+    # ── Step 4: Add CSV-only trades ──
+    # Only add CSV trades where NONE of the group's players appear in ANY
+    # Excel trade for the same season+owner-pair. This prevents duplication
+    # of keeper-day bundles while allowing genuinely missing trades through.
+    #
+    # CSV groups are bilateral: rows within a group go both directions
+    # (From→To and To→From), so we can build proper give/get sides.
+    print("\n--- Step 4: Find CSV-only trades ---")
+
+    # Build a set of all player names per (season, frozenset(owners))
+    existing_players_by_key = defaultdict(set)
+    for t in enriched_trades:
+        season = t.get("season", "")
+        trade_owners = set()
+        for item in t.get("give", []) + t.get("get", []):
+            o = get_owner_from_item(item)
+            if o:
+                trade_owners.add(o)
+            p = get_player_from_item(item)
+            if p:
+                existing_players_by_key[(season, frozenset(trade_owners))].add(normalize(p))
+
+    # Also build a global per-season set for fuzzy checking
+    existing_players_global = defaultdict(set)
+    for t in enriched_trades:
+        season = t.get("season", "")
+        for item in t.get("give", []) + t.get("get", []):
+            p = get_player_from_item(item)
+            if p:
+                existing_players_global[season].add(normalize(p))
+
+    csv_only_added = 0
     csv_only_empty = 0
-    for ci in sorted(csv_unmatched_idx):
-        ct = csv_trades[ci]
-        total_players = len(ct["side_a_players"]) + len(ct["side_b_players"])
-        total_picks = len(ct["side_a_picks"]) + len(ct["side_b_picks"])
+    csv_only_skipped = 0
 
-        if total_players == 0 and total_picks == 0:
+    for group in csv_trade_groups:
+        season = group["season"]
+        owners = group["owners"]
+        players = group["players"]
+
+        if not players:
             csv_only_empty += 1
-            continue  # Skip empty keeper-day placeholder swaps
+            continue
 
-        abbrev_a = get_abbrev_for_owner(ct["owner_a"])
-        abbrev_b = get_abbrev_for_owner(ct["owner_b"])
+        # Must have exactly two owners
+        all_owners = list(owners)
+        if len(all_owners) != 2:
+            csv_only_skipped += 1
+            continue
 
-        give = [f"{abbrev_a} {p}" for p in ct["side_a_players"]]
-        get = [f"{abbrev_b} {p}" for p in ct["side_b_players"]]
+        # Check: do ANY of this group's players appear in an existing
+        # Excel trade for the same season + owner pair?
+        key = (season, frozenset(owners))
+        existing = existing_players_by_key.get(key, set())
+        global_existing = existing_players_global.get(season, set())
+
+        overlap_count = sum(1 for p in players
+                           if normalize(p["raw_name"]) in existing
+                           or normalize(p["raw_name"]) in global_existing)
+
+        if overlap_count > 0:
+            # At least one player already tracked — this is part of a known
+            # Excel trade or keeper-day bundle. Skip entirely.
+            csv_only_skipped += 1
+            continue
+
+        # Genuinely new CSV-only trade: build bilateral give/get
+        owner_a, owner_b = sorted(all_owners)
+
+        # CSV direction: From = the owner giving the player away
+        # "give" = items FROM owner_a, "get" = items FROM owner_b
+        # (owner_a sends to owner_b = give, owner_b sends to owner_a = get)
+        give_items = []
+        get_items = []
+        for p in players:
+            from_owner = p["from_owner"]
+            to_owner = p["to_owner"]
+            if from_owner and to_owner and from_owner in OWNER_ABBREV:
+                abbrev = OWNER_ABBREV[from_owner]
+                item = f"{abbrev} {p['raw_name']}"
+                # Player goes FROM from_owner TO to_owner
+                # Convention: "give" = what owner_a sends, "get" = what owner_b sends
+                if from_owner == owner_a:
+                    give_items.append(item)
+                else:
+                    get_items.append(item)
+
+        if not give_items and not get_items:
+            csv_only_empty += 1
+            continue
 
         trade_entry = {
-            "season": ct["season"],
-            "date": ct["date"],
-            "give": give,
-            "get": get,
+            "season": season,
+            "date": group["date"],
+            "give": give_items,
+            "get": get_items,
             "source": "fantrax_csv_only",
-            "picks_unknown": True,
             "fantrax_confirmed": True,
         }
-        final_trades.append(trade_entry)
-        csv_only_count += 1
+        enriched_trades.append(trade_entry)
+        csv_only_added += 1
 
-    # Sort by season, then date
+        # Update existing sets so we don't double-add
+        for p in players:
+            existing_players_global[season].add(normalize(p["raw_name"]))
+            existing_players_by_key[key].add(normalize(p["raw_name"]))
+
+    print(f"  CSV-only trades added: {csv_only_added}")
+    print(f"  CSV groups skipped (overlap with Excel): {csv_only_skipped}")
+    print(f"  Empty CSV groups skipped: {csv_only_empty}")
+
+    # ── Step 5: Sort and write ──
     SEASON_ORDER = ["2020-21", "2021-22", "2022-23", "2023-24", "2024-25", "2025-26"]
 
     def sort_key(t):
@@ -701,82 +604,72 @@ def main():
         d = t.get("date") or "9999-99-99"
         return (si, d)
 
-    final_trades.sort(key=sort_key)
+    enriched_trades.sort(key=sort_key)
 
-    # Print final counts
-    print(f"\n--- Final Trade Counts ---")
-    print(f"Total trades: {len(final_trades)}")
+    # Print final summary
+    print(f"\n{'='*60}")
+    print("FINAL SUMMARY")
+    print(f"{'='*60}")
+    print(f"Total trades: {len(enriched_trades)}")
 
-    one_player = 0
+    by_season = defaultdict(int)
+    with_date = 0
+    confirmed = 0
+    pick_only = 0
+    player_count = 0
     multi_player = 0
     player_and_picks = 0
-    pick_only_count = 0
-    csv_source = 0
-    excel_source = 0
 
-    for t in final_trades:
+    for t in enriched_trades:
+        by_season[t["season"]] += 1
+        if t.get("date"):
+            with_date += 1
+        if t.get("fantrax_confirmed"):
+            confirmed += 1
+
         give = t.get("give", [])
         get_items = t.get("get", [])
-
-        give_players = [i for i in give if not is_pick_excel(i)]
-        give_picks = [i for i in give if is_pick_excel(i)]
-        get_players = [i for i in get_items if not is_pick_excel(i)]
-        get_picks = [i for i in get_items if is_pick_excel(i)]
-
-        total_players = len(give_players) + len(get_players)
-        total_picks = len(give_picks) + len(get_picks)
-
-        if total_players == 0:
-            pick_only_count += 1
-        elif total_players == 2:
-            one_player += 1
-        elif total_players >= 3:
+        gp = [x for x in give if not is_pick_excel(x)]
+        rp = [x for x in get_items if not is_pick_excel(x)]
+        gpk = [x for x in give if is_pick_excel(x)]
+        rpk = [x for x in get_items if is_pick_excel(x)]
+        tp = len(gp) + len(rp)
+        tk = len(gpk) + len(rpk)
+        if tp == 0:
+            pick_only += 1
+        elif tp >= 3:
             multi_player += 1
-
-        if total_players > 0 and total_picks > 0:
+        if tp > 0 and tk > 0:
             player_and_picks += 1
+        player_count += tp
 
-        if t.get("fantrax_confirmed"):
-            csv_source += 1
-        else:
-            excel_source += 1
-
-    print(f"Trades with 1 player per side: {one_player}")
-    print(f"Trades with 2+ players on at least one side: {multi_player}")
-    print(f"Trades with picks + players combined: {player_and_picks}")
-    print(f"Pick-only trades: {pick_only_count}")
-    print(f"Fantrax CSV confirmed: {csv_source}")
-    print(f"Excel-only sourced: {excel_source}")
-    print(f"CSV-only new trades: {csv_only_count}")
-    print(f"Empty CSV groups skipped: {csv_only_empty}")
-
-    # Check for needs_review
-    needs_review = [t for t in final_trades if t.get("needs_review")]
-    if needs_review:
-        print(f"\n⚠ Trades needing review: {len(needs_review)}")
-        for t in needs_review:
-            print(f"  → {t.get('season')} {t.get('give',[])} ↔ {t.get('get',[])}")
-    else:
-        print(f"\nNo trades flagged for review.")
+    for s in sorted(by_season):
+        print(f"  {s}: {by_season[s]} trades")
+    print(f"\nTrades with dates: {with_date}")
+    print(f"Fantrax confirmed: {confirmed}")
+    print(f"Pick-only: {pick_only}")
+    print(f"Multi-player (3+): {multi_player}")
+    print(f"Players + picks combined: {player_and_picks}")
+    print(f"Total player items: {player_count}")
 
     # Write
     with open(TRADES_PATH, "w") as f:
-        json.dump(final_trades, f, indent=2)
+        json.dump(enriched_trades, f, indent=2)
     print(f"\nSaved to {TRADES_PATH}")
 
     # Audit log
     audit_path = ROOT / "scripts" / "audit_log.md"
     with open(audit_path, "a") as f:
-        f.write(f"\n\n## load_trade_csvs.py (8A)\n")
-        f.write(f"- Total trades: {len(final_trades)}\n")
-        f.write(f"- Excel trades matched: {unique_excel_matched}\n")
-        f.write(f"- CSV-only new: {csv_only_count}\n")
-        f.write(f"- Excel-only: {len(excel_unmatched_idx)}\n")
-        f.write(f"- Empty CSV groups skipped: {csv_only_empty}\n")
-        f.write(f"- Multi-player improved: {improved_count}\n")
+        f.write(f"\n\n## load_trade_csvs.py (8A revised)\n")
+        f.write(f"- Total trades: {len(enriched_trades)}\n")
+        f.write(f"- Confirmed by CSV: {confirmed}\n")
+        f.write(f"- Name corrections: {name_corrections}\n")
+        f.write(f"- Dates added: {dates_added}\n")
+        f.write(f"- CSV-only added: {csv_only_added}\n")
+        f.write(f"- Duplicates removed: {duplicate_removed}\n")
 
     print(f"\n{'='*60}")
-    print("DONE — trades.json rebuilt with complete CSV player data")
+    print("DONE — trades.json enriched (Excel backbone + CSV names/dates)")
     print(f"{'='*60}")
 
 

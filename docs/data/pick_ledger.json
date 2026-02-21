@@ -108,7 +108,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 75,
+          "trade_index": 73,
           "season": "2022-23",
           "from": "Baden",
           "to": "Berke",
@@ -130,7 +130,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 141,
+          "trade_index": 115,
           "season": "2024-25",
           "from": "Baden",
           "to": "Peterson",
@@ -152,14 +152,14 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 142,
+          "trade_index": 132,
           "season": "2024-25",
           "from": "Baden",
-          "to": "HaleTrager",
+          "to": "Peterson",
           "raw": "BADEN Baden 2025 2nd round"
         }
       ],
-      "current_owner": "HaleTrager",
+      "current_owner": "Peterson",
       "status": "completed",
       "draft_slot": 1,
       "overall_slot": 11,
@@ -174,10 +174,10 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 70,
+          "trade_index": 68,
           "season": "2022-23",
           "from": "Baden",
-          "to": "Jowkar",
+          "to": "Peterson",
           "raw": "VLAND Vlandis 2027 2nd round"
         }
       ],
@@ -327,7 +327,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 80,
+          "trade_index": 78,
           "season": "2022-23",
           "from": "Berke",
           "to": "Jowkar",
@@ -356,7 +356,7 @@
           "raw": "BERK Green 2024 1st Round"
         },
         {
-          "trade_index": 78,
+          "trade_index": 76,
           "season": "2022-23",
           "from": "Berke",
           "to": "Zujewski",
@@ -497,7 +497,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 121,
+          "trade_index": 112,
           "season": "2023-24",
           "from": "Berke",
           "to": "Jowkar",
@@ -535,7 +535,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 146,
+          "trade_index": 135,
           "season": "2025-26",
           "from": "Berke",
           "to": "Jowkar",
@@ -606,14 +606,14 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 86,
+          "trade_index": 60,
           "season": "2022-23",
           "from": "Delaney",
           "to": "Gold",
           "raw": "DELA Green 2024 1st round"
         },
         {
-          "trade_index": 122,
+          "trade_index": 113,
           "season": "2023-24",
           "from": "Delaney",
           "to": "Peterson",
@@ -642,7 +642,7 @@
           "raw": "DELA Peterson 2025 1st Round"
         },
         {
-          "trade_index": 84,
+          "trade_index": 81,
           "season": "2022-23",
           "from": "Delaney",
           "to": "HaleTrager",
@@ -664,7 +664,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 87,
+          "trade_index": 83,
           "season": "2022-23",
           "from": "Delaney",
           "to": "HaleTrager",
@@ -687,7 +687,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 88,
+          "trade_index": 61,
           "season": "2022-23",
           "from": "Delaney",
           "to": "Gold",
@@ -740,7 +740,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 113,
+          "trade_index": 106,
           "season": "2023-24",
           "from": "Delaney",
           "to": "Jowkar",
@@ -897,7 +897,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 89,
+          "trade_index": 62,
           "season": "2022-23",
           "from": "Gold",
           "to": "Jowkar",
@@ -1010,7 +1010,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 143,
+          "trade_index": 122,
           "season": "2024-25",
           "from": "Gold",
           "to": "HaleTrager",
@@ -1315,14 +1315,14 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 87,
+          "trade_index": 83,
           "season": "2022-23",
           "from": "HaleTrager",
           "to": "Delaney",
           "raw": "HALE Green 2024 1st round"
         },
         {
-          "trade_index": 116,
+          "trade_index": 85,
           "season": "2023-24",
           "from": "HaleTrager",
           "to": "Peterson",
@@ -1344,7 +1344,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 85,
+          "trade_index": 82,
           "season": "2022-23",
           "from": "HaleTrager",
           "to": "Peterson",
@@ -1373,7 +1373,7 @@
           "raw": "TRAG Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)"
         },
         {
-          "trade_index": 101,
+          "trade_index": 93,
           "season": "2023-24",
           "from": "HaleTrager",
           "to": "Peterson",
@@ -1395,7 +1395,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 142,
+          "trade_index": 132,
           "season": "2024-25",
           "from": "HaleTrager",
           "to": "Baden",
@@ -1589,14 +1589,14 @@
           "raw": "JOWK Delaney 2023 1st round"
         },
         {
-          "trade_index": 58,
+          "trade_index": 59,
           "season": "2022-23",
           "from": "Jowkar",
-          "to": "Unknown",
+          "to": "Delaney",
           "raw": "JOWK Berke 2023 1st round (#6 overall)"
         }
       ],
-      "current_owner": "Unknown",
+      "current_owner": "Delaney",
       "status": "completed",
       "draft_slot": 2,
       "overall_slot": 2,
@@ -1633,7 +1633,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 140,
+          "trade_index": 129,
           "season": "2024-25",
           "from": "Jowkar",
           "to": "Delaney",
@@ -1655,7 +1655,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 108,
+          "trade_index": 114,
           "season": "2023-24",
           "from": "Jowkar",
           "to": "Peterson",
@@ -1693,7 +1693,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 141,
+          "trade_index": 115,
           "season": "2024-25",
           "from": "Jowkar",
           "to": "Peterson",
@@ -1858,7 +1858,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 69,
+          "trade_index": 67,
           "season": "2022-23",
           "from": "Moss",
           "to": "Gold",
@@ -1880,7 +1880,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 82,
+          "trade_index": 80,
           "season": "2022-23",
           "from": "Moss",
           "to": "Jowkar",
@@ -2075,7 +2075,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 72,
+          "trade_index": 70,
           "season": "2022-23",
           "from": "Peterson",
           "to": "HaleTrager",
@@ -2097,7 +2097,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 122,
+          "trade_index": 113,
           "season": "2023-24",
           "from": "Peterson",
           "to": "Delaney",
@@ -2119,7 +2119,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 110,
+          "trade_index": 103,
           "season": "2023-24",
           "from": "Peterson",
           "to": "Delaney",
@@ -2141,14 +2141,14 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 104,
+          "trade_index": 97,
           "season": "2023-24",
           "from": "Peterson",
-          "to": "Delaney",
+          "to": "Jowkar",
           "raw": "PETE Peterson 2025 1st round"
         }
       ],
-      "current_owner": "Delaney",
+      "current_owner": "Jowkar",
       "status": "completed",
       "draft_slot": 6,
       "overall_slot": 6,
@@ -2163,21 +2163,21 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 112,
+          "trade_index": 105,
           "season": "2023-24",
           "from": "Peterson",
           "to": "Delaney",
           "raw": "PETE Delaney 2025 2nd round"
         },
         {
-          "trade_index": 141,
+          "trade_index": 115,
           "season": "2024-25",
           "from": "Peterson",
-          "to": "Baden",
+          "to": "Jowkar",
           "raw": "KELL Kelley 2025 2nd round"
         }
       ],
-      "current_owner": "Baden",
+      "current_owner": "Jowkar",
       "status": "completed",
       "draft_slot": 6,
       "overall_slot": 16,
@@ -2192,14 +2192,14 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 125,
+          "trade_index": 116,
           "season": "2024-25",
           "from": "Peterson",
-          "to": "Baden",
+          "to": "Peterson",
           "raw": "PETE Jowkar 2026 1st round"
         }
       ],
-      "current_owner": "Baden",
+      "current_owner": "Peterson",
       "status": "projected",
       "projected_slot": 4,
       "projected_overall": 4,
@@ -2215,14 +2215,14 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 124,
+          "trade_index": 131,
           "season": "2024-25",
           "from": "Peterson",
           "to": "Zujewski",
           "raw": "PETE Peterson 2026 2nd round"
         },
         {
-          "trade_index": 142,
+          "trade_index": 132,
           "season": "2024-25",
           "from": "Peterson",
           "to": "Baden",
@@ -2260,7 +2260,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 134,
+          "trade_index": 123,
           "season": "2024-25",
           "from": "Peterson",
           "to": "Delaney",
@@ -2283,7 +2283,7 @@
       "is_swap": false,
       "trades": [
         {
-          "trade_index": 100,
+          "trade_index": 108,
           "season": "2023-24",
           "from": "Peterson",
           "to": "Moss",
@@ -2556,16 +2556,14 @@
   },
   "owner_summary": {
     "Baden": {
-      "total_held": 6,
+      "total_held": 4,
       "own_picks": 0,
-      "acquired_picks": 6,
+      "acquired_picks": 4,
       "traded_away": 9,
       "received_grades": [
         "A",
         "A+",
-        "F",
-        "D",
-        "A"
+        "D"
       ],
       "sent_grades": [
         "A",
@@ -2605,8 +2603,8 @@
       "acquired_picks": 21,
       "traded_away": 7,
       "received_grades": [
+        "A+",
         "C",
-        "B",
         "F",
         "C",
         "F",
@@ -2658,9 +2656,9 @@
       ]
     },
     "HaleTrager": {
-      "total_held": 25,
+      "total_held": 24,
       "own_picks": 10,
-      "acquired_picks": 15,
+      "acquired_picks": 14,
       "traded_away": 9,
       "received_grades": [
         "A+",
@@ -2669,12 +2667,11 @@
         "D",
         "D",
         "A+",
+        "D",
         "F",
         "A+",
-        "D",
-        "C",
-        "C",
-        "F"
+        "F",
+        "C"
       ],
       "sent_grades": [
         "A+",
@@ -2689,17 +2686,19 @@
       ]
     },
     "Jowkar": {
-      "total_held": 26,
+      "total_held": 28,
       "own_picks": 7,
-      "acquired_picks": 19,
+      "acquired_picks": 21,
       "traded_away": 8,
       "received_grades": [
         "F",
         "C",
         "F",
+        "A+",
         "F",
         "D",
-        "A+",
+        "B",
+        "F",
         "F",
         "F"
       ],
@@ -2729,30 +2728,32 @@
       ]
     },
     "Peterson": {
-      "total_held": 6,
-      "own_picks": 0,
-      "acquired_picks": 6,
+      "total_held": 8,
+      "own_picks": 1,
+      "acquired_picks": 7,
       "traded_away": 12,
       "received_grades": [
         "F",
-        "C",
         "B",
+        "C",
         "A",
         "F",
-        "A+"
+        "A+",
+        "A",
+        "C"
       ],
       "sent_grades": [
         "F",
         "F",
-        "A",
         "B",
         "F",
         "F",
         "F",
-        "F",
-        "D",
-        "D",
         "A",
+        "F",
+        "A",
+        "D",
+        "D",
         "D"
       ]
     },
