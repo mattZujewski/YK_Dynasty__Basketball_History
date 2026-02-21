@@ -191,3 +191,44 @@ These mappings were **incorrect** in the original data and have been corrected:
 - Excel-only: 17
 - Empty CSV groups skipped: 0
 - Multi-player improved: 26
+
+
+## rebuild_trade_players.py
+- Total items: 377 (311 players, 66 picks)
+- Name corrections: 0
+- Fuzzy matches: 0
+- Unmatched: 2
+  - Trade #44: Patrick Beverley
+  - Trade #72: Will Barton
+
+
+## track_pick_outcomes.py (8.4)
+- Total picks: 138 (34 completed, 101 projected, 3 pending)
+- Picks with trades: 53
+- Grade distribution: {'A+': 5, 'F': 13, 'A': 4, 'B': 3, 'C': 6, 'D': 3}
+  - Baden: holds 6, traded 9
+  - Berke: holds 15, traded 8
+  - Delaney: holds 30, traded 7
+  - Gold: holds 4, traded 4
+  - Green: holds 22, traded 3
+  - HaleTrager: holds 25, traded 9
+  - Jowkar: holds 26, traded 8
+  - Moss: holds 2, traded 3
+  - Peterson: holds 6, traded 12
+  - Zujewski: holds 1, traded 0
+
+
+## combine_trade_grades.py (8.5)
+- Player-only: 215, Pick-only: 30, Mixed: 4
+- Newly graded: 30, Still INC: 49
+- Distribution: {'F': 89, 'INC': 49, 'B': 39, 'A': 24, 'D': 53, 'C': 31, 'A+': 13}
+  - Baden: GPA 2.24 (C)
+  - Berke: GPA 2.14 (C)
+  - Delaney: GPA 2.53 (B)
+  - Gold: GPA 2.73 (B)
+  - Green: GPA 2.83 (B)
+  - HaleTrager: GPA 1.77 (C)
+  - Jowkar: GPA 2.27 (C)
+  - Moss: GPA 2.59 (B)
+  - Peterson: GPA 2.38 (C)
+  - Zujewski: GPA 1.75 (C)
