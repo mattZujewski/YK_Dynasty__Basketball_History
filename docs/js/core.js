@@ -61,7 +61,7 @@ window.YK = window.YK || {};
     'Delaney':     'David Delaney',
     'Gold':        'Sam Gold',
     'Green':       'Max Green',
-    'HaleTrager':  'Ryan HaleTrager',
+    'HaleTrager':  'Ryan Trager',
     'Jowkar':      'Nick Jowkar',
     'Moss':        'Max Moss',
     'Peterson':    'Kelvin Peterson',
@@ -96,7 +96,8 @@ window.YK = window.YK || {};
   ];
 
   function ownerColor(name) {
-    const idx = OWNERS_ALPHA.indexOf(name);
+    const canonical = resolveOwner(name);
+    const idx = OWNERS_ALPHA.indexOf(canonical);
     return idx >= 0 ? OWNER_COLORS_RAW[idx] : '#888';
   }
 
@@ -121,8 +122,9 @@ window.YK = window.YK || {};
     return TEAM_TO_OWNER[teamName] || null;
   }
 
-  // Get display name for canonical owner
-  function ownerDisplayName(canonical) {
+  // Get display name for canonical owner (resolves aliases first)
+  function ownerDisplayName(nameOrAlias) {
+    const canonical = resolveOwner(nameOrAlias);
     return OWNER_DISPLAY[canonical] || canonical;
   }
 
