@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Cards &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .cross-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      font-size: 0.85rem;
+    }
+    .cross-links a {
+      color: var(--brand-green);
+      text-decoration: none;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      transition: var(--transition);
+    }
+    .cross-links a:hover { background: var(--bg-card); box-shadow: var(--shadow-sm); }
+
+    /* Trade card grid */
+    .trade-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 16px;
+    }
+    .trade-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--transition);
+    }
+    .trade-card:hover { box-shadow: var(--shadow-md); }
+    .trade-card.collusion-card { border-color: rgba(230,57,70,0.4); opacity: 0.7; }
+    .trade-card-header {
+      padding: 10px 14px 8px;
+      background: var(--bg-primary);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .trade-card-header .trade-id {
+      font-weight: 700;
+      color: var(--text-primary);
+      font-size: 0.85rem;
+    }
+    .trade-card-sides {
+      display: flex;
+      min-height: 120px;
+    }
+    .trade-side {
+      flex: 1;
+      padding: 12px 14px;
+      min-width: 0;
+    }
+    .trade-side.winner-side {
+      background: rgba(42,157,143,0.07);
+    }
+    .trade-side.loser-side {
+      background: rgba(230,57,70,0.04);
+    }
+    .trade-side-owner {
+      font-weight: 700;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .owner-dot {
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .winner-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      background: rgba(42,157,143,0.15);
+      color: var(--brand-green);
+      padding: 1px 6px;
+      border-radius: 99px;
+    }
+    .trade-side-total {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+    }
+    .asset-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.76rem;
+    }
+    .asset-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2px 0;
+      color: var(--text-secondary);
+      border-bottom: 1px dashed var(--border);
+      gap: 4px;
+    }
+    .asset-list li:last-child { border-bottom: none; }
+    .asset-list .asset-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .asset-list .asset-val { font-weight: 600; color: var(--text-primary); flex-shrink: 0; }
+    .asset-list .asset-zero { color: var(--text-muted); font-style: italic; }
+    .trade-vs-divider {
+      width: 1px;
+      background: var(--border);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .trade-vs-label {
+      position: absolute;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      width: 22px; height: 22px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      z-index: 1;
+    }
+    .trade-card-footer {
+      padding: 8px 14px;
+      background: var(--bg-primary);
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .margin-bar-wrap {
+      flex: 1;
+      min-width: 100px;
+    }
+    .margin-bar-track {
+      height: 6px;
+      background: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .margin-bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      background: var(--brand-green);
+      transition: width 0.3s;
+    }
+    .margin-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .tvot-link {
+      font-size: 0.72rem;
+      color: var(--brand-green);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .tvot-link:hover { text-decoration: underline; }
+    .collusion-tag {
+      font-size: 0.7rem;
+      color: var(--status-ir);
+      background: rgba(230,57,70,0.1);
+      padding: 1px 6px;
+      border-radius: 4px;
+    }
+
+    /* Featured section heading */
+    .featured-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .featured-win  { background: rgba(42,157,143,0.15); color: var(--brand-green); }
+    .featured-loss { background: rgba(230,57,70,0.12); color: var(--status-ir); }
+    .featured-fair { background: rgba(74,181,241,0.12); color: #2a6ba8; }
+
+    /* Filter bar & select */
+    #season-select, #owner-filter-select {
+      padding: 4px 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-input);
+      color: var(--text-primary);
+      font-size: 0.82rem;
+    }
+    .filter-sep { color: var(--border); margin: 0 4px; }
+
+    /* Full-list cards use a single-column layout */
+    #all-trades-list .trade-cards-grid {
+      grid-template-columns: 1fr;
+    }
+    #all-trades-list .trade-card-sides {
+      flex-direction: row;
+    }
+    @media (max-width: 600px) {
+      .trade-cards-grid { grid-template-columns: 1fr; }
+      .trade-card-sides { flex-direction: column; }
+      .trade-vs-divider { display: none; }
+    }
+    #cards-count { font-size: 0.82rem; color: var(--text-muted); margin: 6px 0 8px; }
+  </style>
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F0CF; Trade Cards</h1>
+      <p class="subtitle">Every graded trade &mdash; both sides, asset values, and winners (2023&ndash;24 to present)</p>
+    </header>
+
+    <!-- Cross-links -->
+    <div class="cross-links">
+      <a href="trade-leaderboard.html">&#x1F4CA; Trade Grades Leaderboard</a>
+      <a href="trade-value-over-time.html">&#x23F3; Trade Value Over Time</a>
+    </div>
+
+    <!-- Summary stat cards -->
+    <div class="stat-row" id="summary-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
+
+    <!-- Top 5 Most Lopsided -->
+    <div class="chart-section">
+      <div class="featured-label featured-win">&#x1F3C6; Top 5 Biggest Trade Wins</div>
+      <h2 style="margin-top:0">Most Lopsided Trades</h2>
+      <p class="chart-description">The 5 trades with the highest dynasty value gap between sides (winner highlighted in green). Collusion-flagged trades excluded.</p>
+      <div class="trade-cards-grid" id="top-wins-grid">
+        <p class="text-muted" style="padding:12px">Loading&hellip;</p>
+      </div>
+    </div>
+
+    <!-- Top 5 Closest -->
+    <div class="chart-section">
+      <div class="featured-label featured-fair">&#x1F91D; Top 5 Closest Trades</div>
+      <h2 style="margin-top:0">Most Evenly Matched Trades</h2>
+      <p class="chart-description">The 5 trades where both sides received nearly equal dynasty value &mdash; true fair deals.</p>
+      <div class="trade-cards-grid" id="closest-grid">
+        <p class="text-muted" style="padding:12px">Loading&hellip;</p>
+      </div>
+    </div>
+
+    <!-- All Trades -->
+    <div class="chart-section">
+      <h2>All Trade Grades (74 trades)</h2>
+      <p class="chart-description">Filter and sort all graded trades. Click &ldquo;View TVOT&rdquo; to see how a trade&rsquo;s value changed over time.</p>
+
+      <div class="filter-bar" style="flex-wrap:wrap;gap:8px;align-items:center">
+        <div>
+          <label style="font-size:0.82rem;color:var(--text-muted)">Season:</label>
+          <select id="season-select"><option value="">All Seasons</option></select>
+        </div>
+        <span class="filter-sep">|</span>
+        <div>
+          <label style="font-size:0.82rem;color:var(--text-muted)">Owner:</label>
+          <select id="owner-filter-select"><option value="">All Owners</option></select>
+        </div>
+        <span class="filter-sep">|</span>
+        <div>
+          <button class="filter-btn active" data-sortby="margin">Biggest Margin</button>
+          <button class="filter-btn" data-sortby="recent">Most Recent</button>
+          <button class="filter-btn" data-sortby="fair">Closest First</button>
+        </div>
+        <span class="filter-sep">|</span>
+        <div>
+          <button class="filter-btn" data-collusion="hide">Hide Collusion</button>
+          <button class="filter-btn active" data-collusion="show">Show All</button>
+        </div>
+      </div>
+
+      <p id="cards-count"></p>
+      <div id="all-trades-list"></div>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/dashboards/trade_cards.js"></script>
+</body>
+</html>

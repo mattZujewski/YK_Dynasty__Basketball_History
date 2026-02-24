@@ -22,6 +22,8 @@
     const isStats    = path.includes('stats.html');
     const isGrades   = path.includes('grades.html');
     const isTradeLeaderboard = path.includes('trade-leaderboard.html');
+    const isTvot       = path.includes('trade-value-over-time.html');
+    const isTradeCards = path.includes('trade-cards.html');
 
     function activeClass(flag) { return flag ? ' nav-active' : ''; }
 
@@ -39,6 +41,8 @@
     <a class="nav-link${activeClass(isStandings)}" href="${base}standings.html">Standings</a>
     <a class="nav-link${activeClass(isTrade)}"     href="${base}trade.html">Trades</a>
     <a class="nav-link${activeClass(isTradeLeaderboard)}" href="${base}trade-leaderboard.html">Trade Grades</a>
+    <a class="nav-link${activeClass(isTvot)}"            href="${base}trade-value-over-time.html">Trade Trends</a>
+    <a class="nav-link${activeClass(isTradeCards)}"      href="${base}trade-cards.html">Trade Cards</a>
     <a class="nav-link${activeClass(isRoster)}"    href="${base}roster.html">Rosters</a>
     <a class="nav-link${activeClass(isPicks)}"     href="${base}picks.html">Picks</a>
     <a class="nav-link${activeClass(isTeam)}"      href="${base}team.html">Teams</a>

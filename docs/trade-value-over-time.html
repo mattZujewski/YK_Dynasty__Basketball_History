@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Value Over Time &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .tvot-headline {
+      text-align: center;
+      padding: 28px 16px 20px;
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      margin-bottom: 20px;
+    }
+    .tvot-headline .flip-number {
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-weight: 900;
+      color: var(--brand-gold);
+      line-height: 1;
+    }
+    .tvot-headline .flip-label {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
+    .tvot-headline .flip-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .badge-flipped {
+      background: rgba(232,184,75,0.18);
+      color: #c7960a;
+      font-weight: 700;
+      font-size: 0.72rem;
+      padding: 2px 7px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+    .badge-stable {
+      background: rgba(42,157,143,0.12);
+      color: var(--status-active);
+      font-size: 0.72rem;
+      padding: 2px 7px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+    .badge-collusion {
+      background: rgba(230,57,70,0.12);
+      color: var(--status-ir);
+      font-size: 0.72rem;
+      padding: 2px 7px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+    .expand-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      transition: var(--transition);
+    }
+    .expand-btn:hover { background: var(--bg-primary); }
+    .tvot-detail-row { display: none; }
+    .tvot-detail-row.open { display: table-row; }
+    .tvot-detail-inner {
+      padding: 12px 16px;
+      background: var(--bg-primary);
+      border-radius: var(--radius-sm);
+    }
+    .tvot-timeline-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+    }
+    .tvot-timeline-table th {
+      background: var(--bg-nav);
+      color: var(--text-nav);
+      padding: 5px 10px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .tvot-timeline-table th:first-child { text-align: left; }
+    .tvot-timeline-table td {
+      padding: 5px 10px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .tvot-timeline-table td:first-child { text-align: left; font-weight: 600; }
+    .tvot-timeline-table .winner-cell {
+      background: rgba(42,157,143,0.15);
+      color: var(--brand-green);
+      font-weight: 700;
+    }
+    .tvot-timeline-table .flip-cell {
+      background: rgba(232,184,75,0.15);
+      color: #9a6f00;
+      font-weight: 700;
+    }
+    .tvot-owner-dot {
+      display: inline-block;
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    .cross-links {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      font-size: 0.85rem;
+    }
+    .cross-links a {
+      color: var(--brand-green);
+      text-decoration: none;
+      padding: 5px 12px;
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      transition: var(--transition);
+    }
+    .cross-links a:hover { background: var(--bg-card); box-shadow: var(--shadow-sm); }
+    .filter-sep { color: var(--border); margin: 0 4px; }
+    #owner-select {
+      padding: 4px 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--bg-input);
+      color: var(--text-primary);
+      font-size: 0.82rem;
+    }
+    .trade-owners-cell { font-size: 0.8rem; }
+    .multi-badge { font-size: 0.68rem; color: var(--text-muted); margin-left: 4px; }
+  </style>
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x23F3; Trade Value Over Time</h1>
+      <p class="subtitle">How trade winners shift as seasons pass &mdash; 2021&ndash;22 to present</p>
+    </header>
+
+    <!-- Cross-links -->
+    <div class="cross-links">
+      <a href="trade-leaderboard.html">&#x1F4CA; Trade Grades Leaderboard</a>
+      <a href="trade-cards.html">&#x1F0CF; Trade Cards</a>
+    </div>
+
+    <!-- Headline Stat -->
+    <div class="tvot-headline">
+      <div class="flip-number" id="flip-pct-big">—%</div>
+      <div class="flip-label">of trades <strong>flipped winners</strong> over time</div>
+      <div class="flip-sub" id="flip-sub-text">Loading…</div>
+    </div>
+
+    <!-- Summary Stat Cards -->
+    <div class="stat-row" id="summary-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
+
+    <!-- Trade Timeline Table -->
+    <div class="chart-section">
+      <h2>Trade Timelines</h2>
+      <p class="chart-description">Click any row to expand the full season-by-season value breakdown. Yellow rows flipped winners over time.</p>
+
+      <div class="filter-bar" style="flex-wrap:wrap;gap:8px;align-items:center">
+        <div>
+          <button class="filter-btn active" data-flip="all">All Trades</button>
+          <button class="filter-btn" data-flip="flipped">&#x26A1; Flipped Only</button>
+          <button class="filter-btn" data-flip="stable">&#x2713; Stable Only</button>
+        </div>
+        <span class="filter-sep">|</span>
+        <div>
+          <label style="font-size:0.82rem;color:var(--text-muted)">Owner:</label>
+          <select id="owner-select"><option value="">All Owners</option></select>
+        </div>
+        <span class="filter-sep">|</span>
+        <div>
+          <button class="filter-btn active" data-sortby="swing">Biggest Swing</button>
+          <button class="filter-btn" data-sortby="recent">Most Recent</button>
+          <button class="filter-btn" data-sortby="margin">Current Margin</button>
+        </div>
+      </div>
+
+      <p id="tvot-count" style="font-size:0.82rem;color:var(--text-muted);margin:6px 0 8px"></p>
+
+      <div class="data-table-wrapper">
+        <table class="data-table" id="tvot-table">
+          <thead>
+            <tr>
+              <th style="width:46px">#</th>
+              <th>Season</th>
+              <th>Owners</th>
+              <th>Initial Winner</th>
+              <th>Current Winner</th>
+              <th>Flipped?</th>
+              <th style="text-align:right">Swing</th>
+              <th style="width:54px"></th>
+            </tr>
+          </thead>
+          <tbody id="tvot-tbody">
+            <tr><td colspan="8" class="text-center text-muted" style="padding:24px">Loading&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/dashboards/tvot.js"></script>
+</body>
+</html>
