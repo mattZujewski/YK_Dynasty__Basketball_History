@@ -12,7 +12,7 @@
   function buildNav() {
     const path       = window.location.pathname;
     const isIndex    = path.endsWith('index.html') || path.endsWith('/') || path === '';
-    const isTrade    = path.includes('trade.html');
+    const isTrade    = path.includes('trade.html') && !path.includes('trade-leaderboard.html');
     const isPicks    = path.includes('picks.html');
     const isStandings= path.includes('standings.html');
     const isRoster   = path.includes('roster.html');
@@ -21,6 +21,7 @@
     const isRankings = path.includes('rankings.html');
     const isStats    = path.includes('stats.html');
     const isGrades   = path.includes('grades.html');
+    const isTradeLeaderboard = path.includes('trade-leaderboard.html');
 
     function activeClass(flag) { return flag ? ' nav-active' : ''; }
 
@@ -37,6 +38,7 @@
     <a class="nav-link${activeClass(isIndex)}"     href="${base}index.html">Home</a>
     <a class="nav-link${activeClass(isStandings)}" href="${base}standings.html">Standings</a>
     <a class="nav-link${activeClass(isTrade)}"     href="${base}trade.html">Trades</a>
+    <a class="nav-link${activeClass(isTradeLeaderboard)}" href="${base}trade-leaderboard.html">Trade Grades</a>
     <a class="nav-link${activeClass(isRoster)}"    href="${base}roster.html">Rosters</a>
     <a class="nav-link${activeClass(isPicks)}"     href="${base}picks.html">Picks</a>
     <a class="nav-link${activeClass(isTeam)}"      href="${base}team.html">Teams</a>

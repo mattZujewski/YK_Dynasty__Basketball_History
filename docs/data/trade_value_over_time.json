@@ -1,0 +1,7658 @@
+{
+  "generated": "2026-02-23",
+  "trades": [
+    {
+      "trade_id": 1,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Green",
+        "Jowkar"
+      ],
+      "first_winner": "Green",
+      "last_winner": "Green",
+      "winner_changed": false,
+      "biggest_swing": 46.1,
+      "initial_margin": 115.0,
+      "current_margin": 115.7,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Green": 190.12,
+            "Jowkar": 75.17
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Green": 226.77,
+            "Jowkar": 62.97
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Green": 206.38,
+            "Jowkar": 44.65
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Green": 220.4,
+            "Jowkar": 69.76
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Green": 180.66,
+            "Jowkar": 64.91
+          },
+          "winner": "Green"
+        }
+      ]
+    },
+    {
+      "trade_id": 2,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Trager"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Trager",
+      "winner_changed": true,
+      "biggest_swing": 132.3,
+      "initial_margin": 111.5,
+      "current_margin": 23.9,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 222.71,
+            "Trager": 111.16
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 258.38,
+            "Trager": 148.99
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 239.72,
+            "Trager": 153.1
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 131.72,
+            "Trager": 128.68
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 126.1,
+            "Trager": 150.04
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 3,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Trager"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 17.3,
+      "initial_margin": 33.8,
+      "current_margin": 16.9,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Delaney": 69.37,
+            "Trager": 35.57
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 64.47,
+            "Trager": 34.96
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 52.49,
+            "Trager": 50.7
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 62.06,
+            "Trager": 41.52
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 52.12,
+            "Trager": 35.2
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 4,
+      "season": "",
+      "date": null,
+      "is_multi_party": true,
+      "receivers": [
+        "Peterson",
+        "Delaney",
+        "Jowkar"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 43.1,
+      "initial_margin": 1.7,
+      "current_margin": 39.7,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 63.72,
+            "Delaney": 62.05,
+            "Jowkar": 46.06
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 70.93,
+            "Delaney": 87.3,
+            "Jowkar": 49.57
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 58.38,
+            "Delaney": 66.4,
+            "Jowkar": 36.55
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 47.09,
+            "Delaney": 44.2,
+            "Jowkar": 63.42
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 36.67,
+            "Delaney": 79.03,
+            "Jowkar": 39.33
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 5,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Delaney"
+      ],
+      "first_winner": "Zujewski",
+      "last_winner": "Zujewski",
+      "winner_changed": false,
+      "biggest_swing": 40.4,
+      "initial_margin": 15.7,
+      "current_margin": 8.4,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Zujewski": 65.82,
+            "Delaney": 50.16
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Zujewski": 55.03,
+            "Delaney": 47.13
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 31.69,
+            "Delaney": 35.7
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 34.88,
+            "Delaney": 21.97
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 25.46,
+            "Delaney": 17.1
+          },
+          "winner": "Zujewski"
+        }
+      ]
+    },
+    {
+      "trade_id": 6,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Berke"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 38.0,
+      "initial_margin": 4.4,
+      "current_margin": 39.2,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 42.36,
+            "Berke": 37.98
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 49.34,
+            "Berke": 13.82
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 32.97,
+            "Berke": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 37.93,
+            "Berke": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 39.23,
+            "Berke": 0.0
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 7,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Moss"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Moss",
+      "winner_changed": false,
+      "biggest_swing": 74.3,
+      "initial_margin": 1.9,
+      "current_margin": 128.1,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 123.46,
+            "Moss": 125.33
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 94.22,
+            "Moss": 167.19
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 90.97,
+            "Moss": 198.79
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 71.98,
+            "Moss": 153.99
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 49.12,
+            "Moss": 177.21
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 8,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Green"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 39.4,
+      "initial_margin": 33.2,
+      "current_margin": 25.7,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 33.17,
+            "Green": 0.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 41.12,
+            "Green": 6.27
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 35.95,
+            "Green": 26.16
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 38.15,
+            "Green": 39.4
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 41.99,
+            "Green": 16.3
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 9,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Vlandis",
+      "winner_changed": false,
+      "biggest_swing": 56.6,
+      "initial_margin": 37.6,
+      "current_margin": 35.2,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 109.85,
+            "Vlandis": 147.4
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 125.49,
+            "Vlandis": 171.96
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 68.92,
+            "Vlandis": 164.46
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 92.71,
+            "Vlandis": 141.54
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 100.48,
+            "Vlandis": 135.73
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 10,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Trager"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 52.5,
+      "initial_margin": 12.0,
+      "current_margin": 81.6,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Berke": 70.23,
+            "Trager": 82.22
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Berke": 89.66,
+            "Trager": 94.67
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 37.17,
+            "Trager": 104.36
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 38.58,
+            "Trager": 121.44
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 47.25,
+            "Trager": 128.85
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 11,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Moss"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Vlandis",
+      "winner_changed": false,
+      "biggest_swing": 45.7,
+      "initial_margin": 5.6,
+      "current_margin": 8.9,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 79.04,
+            "Moss": 73.44
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 83.79,
+            "Moss": 53.5
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 111.17,
+            "Moss": 54.53
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 65.49,
+            "Moss": 70.95
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 86.71,
+            "Moss": 77.82
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 12,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 179.4,
+      "initial_margin": 82.1,
+      "current_margin": 225.1,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 126.47,
+            "Jowkar": 208.56
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 179.42,
+            "Jowkar": 216.38
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 123.13,
+            "Jowkar": 181.05
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 100.64,
+            "Jowkar": 194.87
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 0.0,
+            "Jowkar": 225.12
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 13,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 125.0,
+      "initial_margin": 56.9,
+      "current_margin": 29.0,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Zujewski": 97.14,
+            "Peterson": 154.01
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Zujewski": 86.67,
+            "Peterson": 132.39
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 69.64,
+            "Peterson": 118.11
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 53.62,
+            "Peterson": 60.6
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 0.0,
+            "Peterson": 29.05
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 14,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Delaney"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Peterson",
+      "winner_changed": true,
+      "biggest_swing": 56.5,
+      "initial_margin": 6.4,
+      "current_margin": 4.9,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 74.37,
+            "Delaney": 80.74
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 37.87,
+            "Delaney": 86.41
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 42.34,
+            "Delaney": 79.71
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 54.27,
+            "Delaney": 52.29
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 34.77,
+            "Delaney": 29.92
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 15,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 22.3,
+      "initial_margin": 33.3,
+      "current_margin": 33.0,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Delaney": 15.09,
+            "Jowkar": 48.38
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 9.39,
+            "Jowkar": 40.22
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 10.18,
+            "Jowkar": 55.32
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 40.47
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 32.99
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 16,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Jowkar"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Vlandis",
+      "winner_changed": false,
+      "biggest_swing": 38.8,
+      "initial_margin": 28.9,
+      "current_margin": 69.5,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 83.3,
+            "Jowkar": 54.37
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 94.03,
+            "Jowkar": 58.49
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 90.84,
+            "Jowkar": 60.16
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 89.95,
+            "Jowkar": 40.8
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 90.91,
+            "Jowkar": 21.37
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 17,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Green",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 37.3,
+      "initial_margin": 12.3,
+      "current_margin": 14.0,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Green": 27.8,
+            "Jowkar": 40.1
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Green": 47.25,
+            "Jowkar": 43.53
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Green": 41.28,
+            "Jowkar": 71.75
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Green": 52.43,
+            "Jowkar": 42.68
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Green": 63.36,
+            "Jowkar": 77.39
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 18,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Jowkar"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 22.8,
+      "initial_margin": 14.7,
+      "current_margin": 0.0,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Delaney": 22.77,
+            "Jowkar": 8.12
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 6.97,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 10.77,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 19,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Vlandis",
+      "winner_changed": true,
+      "biggest_swing": 86.6,
+      "initial_margin": 29.1,
+      "current_margin": 39.8,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 0.0,
+            "Jowkar": 29.07
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 48.41,
+            "Jowkar": 33.14
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 48.08,
+            "Jowkar": 46.32
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 43.98,
+            "Jowkar": 54.7
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 86.63,
+            "Jowkar": 46.83
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 20,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Vlandis",
+      "winner_changed": true,
+      "biggest_swing": 86.6,
+      "initial_margin": 29.1,
+      "current_margin": 39.8,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 0.0,
+            "Jowkar": 29.07
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 48.41,
+            "Jowkar": 33.14
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 48.08,
+            "Jowkar": 46.32
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 43.98,
+            "Jowkar": 54.7
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 86.63,
+            "Jowkar": 46.83
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 21,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Berke"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Vlandis",
+      "winner_changed": false,
+      "biggest_swing": 27.1,
+      "initial_margin": 21.4,
+      "current_margin": 5.1,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 31.47,
+            "Berke": 10.05
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 20.96,
+            "Berke": 11.63
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 14.69,
+            "Berke": 21.76
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 29.41,
+            "Berke": 26.22
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 41.8,
+            "Berke": 36.69
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 22,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Trager"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 0.0,
+      "initial_margin": 0.0,
+      "current_margin": 0.0,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 0.0,
+            "Trager": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 0.0,
+            "Trager": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 0.0,
+            "Trager": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 0.0,
+            "Trager": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 0.0,
+            "Trager": 0.0
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 23,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Jowkar"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 0.0,
+      "initial_margin": 0.0,
+      "current_margin": 0.0,
+      "eval_results": [
+        {
+          "label": "Post-Trade Y1 (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y2 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y3 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y4 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "Post-Trade Y5 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 24,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Trager",
+      "winner_changed": true,
+      "biggest_swing": 100.3,
+      "initial_margin": 38.5,
+      "current_margin": 67.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Trager": 0.0,
+            "Berke": 38.51
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Trager": 18.44,
+            "Berke": 44.67
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Trager": 26.95,
+            "Berke": 42.98
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Trager": 77.62,
+            "Berke": 28.95
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 100.33,
+            "Berke": 33.18
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 25,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 97.2,
+      "initial_margin": 50.7,
+      "current_margin": 46.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Delaney": 100.55,
+            "Berke": 151.28
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 93.64,
+            "Berke": 124.51
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 63.07,
+            "Berke": 122.49
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 41.14,
+            "Berke": 111.57
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 7.7,
+            "Berke": 54.04
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 26,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Zujewski"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Zujewski",
+      "winner_changed": true,
+      "biggest_swing": 74.4,
+      "initial_margin": 19.3,
+      "current_margin": 39.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 98.39,
+            "Zujewski": 79.07
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 117.81,
+            "Zujewski": 86.21
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 52.5,
+            "Zujewski": 84.95
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 50.86,
+            "Zujewski": 32.26
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 43.4,
+            "Zujewski": 82.47
+          },
+          "winner": "Zujewski"
+        }
+      ]
+    },
+    {
+      "trade_id": 27,
+      "season": "",
+      "date": null,
+      "is_multi_party": true,
+      "receivers": [
+        "Peterson",
+        "Zujewski",
+        "Gold"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Gold",
+      "winner_changed": true,
+      "biggest_swing": 69.6,
+      "initial_margin": 27.2,
+      "current_margin": 22.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 128.53,
+            "Zujewski": 58.48,
+            "Gold": 101.31
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 105.96,
+            "Zujewski": 116.7,
+            "Gold": 120.36
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 90.14,
+            "Zujewski": 96.9,
+            "Gold": 86.84
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 99.81,
+            "Zujewski": 97.84,
+            "Gold": 122.56
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 58.92,
+            "Zujewski": 113.3,
+            "Gold": 135.68
+          },
+          "winner": "Gold"
+        }
+      ]
+    },
+    {
+      "trade_id": 28,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Delaney"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 38.8,
+      "initial_margin": 0.7,
+      "current_margin": 30.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 55.06,
+            "Delaney": 54.37
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 87.94,
+            "Delaney": 58.49
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 80.04,
+            "Delaney": 60.16
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 59.73,
+            "Delaney": 40.8
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 51.51,
+            "Delaney": 21.37
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 29,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Jowkar"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Vlandis",
+      "winner_changed": false,
+      "biggest_swing": 69.3,
+      "initial_margin": 20.7,
+      "current_margin": 108.8,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 140.53,
+            "Jowkar": 119.82
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 175.82,
+            "Jowkar": 123.58
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 183.32,
+            "Jowkar": 115.06
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 209.88,
+            "Jowkar": 84.78
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 174.63,
+            "Jowkar": 65.79
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 30,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 46.2,
+      "initial_margin": 0.9,
+      "current_margin": 19.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 64.82,
+            "Peterson": 65.69
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 53.68,
+            "Peterson": 65.34
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 52.3,
+            "Peterson": 61.21
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 35.27,
+            "Peterson": 52.04
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 18.66,
+            "Peterson": 37.88
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 31,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Green",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Green",
+      "winner_changed": true,
+      "biggest_swing": 76.3,
+      "initial_margin": 47.1,
+      "current_margin": 54.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Green": 71.92,
+            "Jowkar": 119.04
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Green": 115.46,
+            "Jowkar": 97.4
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Green": 91.01,
+            "Jowkar": 79.47
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Green": 87.98,
+            "Jowkar": 58.22
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Green": 97.61,
+            "Jowkar": 42.71
+          },
+          "winner": "Green"
+        }
+      ]
+    },
+    {
+      "trade_id": 32,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 22.5,
+      "initial_margin": 11.3,
+      "current_margin": 33.8,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 33.61,
+            "Berke": 44.87
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 29.18,
+            "Berke": 64.94
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 20.32,
+            "Berke": 48.55
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 21.21,
+            "Berke": 67.36
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 20.11,
+            "Berke": 53.88
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 33,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 58.7,
+      "initial_margin": 22.2,
+      "current_margin": 90.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Delaney": 18.7,
+            "Peterson": 40.85
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 21.12,
+            "Peterson": 85.72
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 21.02,
+            "Peterson": 68.08
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 16.53,
+            "Peterson": 52.44
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 9.45,
+            "Peterson": 99.51
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 34,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Zujewski",
+      "winner_changed": true,
+      "biggest_swing": 59.6,
+      "initial_margin": 4.1,
+      "current_margin": 14.8,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Zujewski": 95.44,
+            "Jowkar": 99.51
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Zujewski": 79.76,
+            "Jowkar": 83.21
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 98.72,
+            "Jowkar": 90.71
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 83.05,
+            "Jowkar": 39.87
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 86.56,
+            "Jowkar": 71.79
+          },
+          "winner": "Zujewski"
+        }
+      ]
+    },
+    {
+      "trade_id": 35,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Green"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Green",
+      "winner_changed": true,
+      "biggest_swing": 46.2,
+      "initial_margin": 0.0,
+      "current_margin": 16.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 0.0,
+            "Green": 0.0
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 35.53,
+            "Green": 29.3
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 35.52,
+            "Green": 30.83
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 46.24,
+            "Green": 35.59
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 26.9,
+            "Green": 43.81
+          },
+          "winner": "Green"
+        }
+      ]
+    },
+    {
+      "trade_id": 36,
+      "season": "",
+      "date": null,
+      "is_multi_party": true,
+      "receivers": [
+        "Peterson",
+        "Trager",
+        "Delaney"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 39.3,
+      "initial_margin": 43.4,
+      "current_margin": 23.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 110.8,
+            "Trager": 154.16,
+            "Delaney": 19.22
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 100.94,
+            "Trager": 150.18,
+            "Delaney": 19.92
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 101.17,
+            "Trager": 114.89,
+            "Delaney": 18.68
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 119.14,
+            "Trager": 122.68,
+            "Delaney": 16.41
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 97.19,
+            "Trager": 120.88,
+            "Delaney": 15.92
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 37,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Green"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Green",
+      "winner_changed": true,
+      "biggest_swing": 54.8,
+      "initial_margin": 35.3,
+      "current_margin": 5.8,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Delaney": 67.27,
+            "Green": 31.98
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 72.57,
+            "Green": 38.19
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 46.28,
+            "Green": 25.82
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 47.62,
+            "Green": 23.76
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 17.77,
+            "Green": 23.61
+          },
+          "winner": "Green"
+        }
+      ]
+    },
+    {
+      "trade_id": 38,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Berke"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 58.7,
+      "initial_margin": 15.6,
+      "current_margin": 44.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 74.36,
+            "Berke": 58.72
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 68.46,
+            "Berke": 47.54
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 50.99,
+            "Berke": 23.52
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 39.0,
+            "Berke": 0.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 44.08,
+            "Berke": 0.0
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 39,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Delaney"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 28.1,
+      "initial_margin": 3.7,
+      "current_margin": 0.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 27.86,
+            "Delaney": 24.17
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 28.05,
+            "Delaney": 13.77
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 24.64,
+            "Delaney": 11.47
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 21.26,
+            "Delaney": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 0.0,
+            "Delaney": 0.0
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 40,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 32.8,
+      "initial_margin": 12.5,
+      "current_margin": 12.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Zujewski": 52.55,
+            "Peterson": 65.08
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Zujewski": 35.66,
+            "Peterson": 63.93
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 51.11,
+            "Peterson": 59.13
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 50.48,
+            "Peterson": 32.26
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 25.17,
+            "Peterson": 37.56
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 41,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 53.8,
+      "initial_margin": 0.1,
+      "current_margin": 63.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 28.43,
+            "Berke": 28.51
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 27.42,
+            "Berke": 41.78
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 22.41,
+            "Berke": 52.2
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 0.0,
+            "Berke": 82.35
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 0.0,
+            "Berke": 63.26
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 42,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Gold"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Moss",
+      "winner_changed": false,
+      "biggest_swing": 67.1,
+      "initial_margin": 22.2,
+      "current_margin": 16.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Moss": 42.99,
+            "Gold": 20.83
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Moss": 44.79,
+            "Gold": 46.04
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Moss": 72.14,
+            "Gold": 85.01
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 109.32,
+            "Gold": 84.8
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 104.35,
+            "Gold": 87.93
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 43,
+      "season": "",
+      "date": "2022-07-27T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Moss"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Peterson",
+      "winner_changed": true,
+      "biggest_swing": 65.9,
+      "initial_margin": 8.4,
+      "current_margin": 3.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 113.74,
+            "Moss": 122.09
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 67.19,
+            "Moss": 92.78
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 79.8,
+            "Moss": 86.49
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 102.83,
+            "Moss": 56.19
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 59.9,
+            "Moss": 56.4
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 44,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 52.6,
+      "initial_margin": 43.2,
+      "current_margin": 8.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 40.1,
+            "Vlandis": 83.26
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 72.79,
+            "Vlandis": 74.67
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 75.17,
+            "Vlandis": 75.57
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 46.24,
+            "Vlandis": 30.67
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 71.81,
+            "Vlandis": 63.57
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 45,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Delaney"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 121.1,
+      "initial_margin": 7.6,
+      "current_margin": 66.6,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 165.92,
+            "Delaney": 158.36
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 181.58,
+            "Delaney": 108.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 165.31,
+            "Delaney": 111.49
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 113.12,
+            "Delaney": 113.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 103.84,
+            "Delaney": 37.26
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 46,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Trager"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Trager",
+      "winner_changed": true,
+      "biggest_swing": 125.8,
+      "initial_margin": 48.4,
+      "current_margin": 104.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 48.42,
+            "Trager": 0.0
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 41.62,
+            "Trager": 33.49
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 40.36,
+            "Trager": 48.08
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 34.41,
+            "Trager": 43.98
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 21.7,
+            "Trager": 125.83
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 47,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Green",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Green",
+      "winner_changed": true,
+      "biggest_swing": 34.6,
+      "initial_margin": 32.6,
+      "current_margin": 1.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Green": 0.0,
+            "Jowkar": 32.58
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Green": 0.0,
+            "Jowkar": 37.38
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Green": 23.94,
+            "Jowkar": 36.9
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Green": 34.57,
+            "Jowkar": 39.38
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Green": 32.48,
+            "Jowkar": 31.5
+          },
+          "winner": "Green"
+        }
+      ]
+    },
+    {
+      "trade_id": 48,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Jowkar"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 71.6,
+      "initial_margin": 27.1,
+      "current_margin": 56.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 97.01,
+            "Jowkar": 69.92
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 86.43,
+            "Jowkar": 69.33
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 75.01,
+            "Jowkar": 72.98
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 37.45,
+            "Jowkar": 39.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 25.37,
+            "Jowkar": 81.48
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 49,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Jowkar"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 30.5,
+      "initial_margin": 27.8,
+      "current_margin": 6.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 55.98,
+            "Jowkar": 28.18
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 45.29,
+            "Jowkar": 18.32
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 39.11,
+            "Jowkar": 48.8
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 26.34,
+            "Jowkar": 41.28
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 32.54,
+            "Jowkar": 38.88
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 50,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Trager",
+      "winner_changed": true,
+      "biggest_swing": 63.3,
+      "initial_margin": 40.8,
+      "current_margin": 29.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Trager": 0.0,
+            "Vlandis": 40.75
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Trager": 30.23,
+            "Vlandis": 49.71
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Trager": 35.97,
+            "Vlandis": 26.03
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Trager": 63.29,
+            "Vlandis": 20.54
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 32.39,
+            "Vlandis": 3.0
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 51,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Moss",
+      "winner_changed": true,
+      "biggest_swing": 79.7,
+      "initial_margin": 37.8,
+      "current_margin": 89.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Moss": 56.86,
+            "Vlandis": 94.66
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Moss": 55.18,
+            "Vlandis": 62.03
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Moss": 55.65,
+            "Vlandis": 64.11
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 121.39,
+            "Vlandis": 61.31
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 134.83,
+            "Vlandis": 45.43
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 52,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Jowkar"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 25.5,
+      "initial_margin": 21.2,
+      "current_margin": 12.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Berke": 21.2,
+            "Jowkar": 0.0
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Berke": 14.22,
+            "Jowkar": 0.0
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 0.0,
+            "Jowkar": 25.46
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 0.0,
+            "Jowkar": 12.32
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 53,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Green",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 67.5,
+      "initial_margin": 94.0,
+      "current_margin": 132.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Green": 158.01,
+            "Peterson": 252.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Green": 190.46,
+            "Peterson": 298.67
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Green": 179.35,
+            "Peterson": 304.33
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Green": 129.65,
+            "Peterson": 319.49
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Green": 126.1,
+            "Peterson": 258.14
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 54,
+      "season": "",
+      "date": "2022-07-11T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Delaney"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 58.6,
+      "initial_margin": 5.2,
+      "current_margin": 63.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 200.5,
+            "Delaney": 195.31
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 198.38,
+            "Delaney": 191.84
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 226.63,
+            "Delaney": 142.07
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 174.05,
+            "Delaney": 136.76
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 213.5,
+            "Delaney": 150.51
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 55,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Trager"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 45.0,
+      "initial_margin": 20.7,
+      "current_margin": 3.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Vlandis": 47.33,
+            "Trager": 68.01
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 78.5,
+            "Trager": 101.07
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 73.66,
+            "Trager": 106.24
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 88.89,
+            "Trager": 111.02
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 92.31,
+            "Trager": 95.38
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 56,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Moss",
+      "winner_changed": true,
+      "biggest_swing": 56.9,
+      "initial_margin": 41.1,
+      "current_margin": 13.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Moss": 64.7,
+            "Vlandis": 105.83
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Moss": 86.36,
+            "Vlandis": 89.49
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Moss": 87.32,
+            "Vlandis": 79.02
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 79.69,
+            "Vlandis": 53.47
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 61.99,
+            "Vlandis": 48.97
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 57,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Vlandis",
+      "winner_changed": false,
+      "biggest_swing": 86.7,
+      "initial_margin": 25.1,
+      "current_margin": 15.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Peterson": 135.81,
+            "Vlandis": 160.91
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 129.67,
+            "Vlandis": 185.66
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 116.26,
+            "Vlandis": 171.88
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 93.35,
+            "Vlandis": 149.03
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 83.85,
+            "Vlandis": 98.94
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 58,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Gold",
+        "Vlandis"
+      ],
+      "first_winner": "Gold",
+      "last_winner": "Vlandis",
+      "winner_changed": true,
+      "biggest_swing": 66.1,
+      "initial_margin": 0.0,
+      "current_margin": 2.8,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Gold": 0.0,
+            "Vlandis": 0.0
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Gold": 29.3,
+            "Vlandis": 20.62
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Gold": 30.83,
+            "Vlandis": 55.12
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Gold": 52.01,
+            "Vlandis": 61.56
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Gold": 63.28,
+            "Vlandis": 66.06
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 59,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Gold",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Vlandis",
+      "winner_changed": false,
+      "biggest_swing": 37.8,
+      "initial_margin": 4.3,
+      "current_margin": 24.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Gold": 40.75,
+            "Vlandis": 45.02
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Gold": 27.74,
+            "Vlandis": 49.81
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Gold": 22.53,
+            "Vlandis": 37.36
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Gold": 20.54,
+            "Vlandis": 30.56
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Gold": 3.0,
+            "Vlandis": 27.22
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 60,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 88.7,
+      "initial_margin": 16.0,
+      "current_margin": 57.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 30.02,
+            "Vlandis": 46.06
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 63.71,
+            "Vlandis": 59.24
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 93.18,
+            "Vlandis": 57.76
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 100.09,
+            "Vlandis": 83.55
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 118.68,
+            "Vlandis": 60.99
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 61,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Green"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 26.1,
+      "initial_margin": 15.7,
+      "current_margin": 40.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Trager": 15.69,
+            "Green": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Trager": 28.27,
+            "Green": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Trager": 21.62,
+            "Green": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Trager": 41.79,
+            "Green": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 40.35,
+            "Green": 0.0
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 62,
+      "season": "",
+      "date": null,
+      "is_multi_party": true,
+      "receivers": [
+        "Gold",
+        "Trager",
+        "Jowkar"
+      ],
+      "first_winner": "Gold",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 65.1,
+      "initial_margin": 0.0,
+      "current_margin": 5.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Gold": 0.0,
+            "Trager": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Gold": 20.62,
+            "Trager": 39.51,
+            "Jowkar": 38.29
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Gold": 36.36,
+            "Trager": 57.51,
+            "Jowkar": 47.05
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Gold": 37.91,
+            "Trager": 65.12,
+            "Jowkar": 64.8
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Gold": 55.53,
+            "Trager": 46.74,
+            "Jowkar": 61.02
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 63,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Jowkar"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 107.0,
+      "initial_margin": 27.5,
+      "current_margin": 117.6,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Berke": 78.91,
+            "Jowkar": 51.38
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Berke": 63.27,
+            "Jowkar": 62.02
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 45.13,
+            "Jowkar": 87.35
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 42.24,
+            "Jowkar": 94.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 40.73,
+            "Jowkar": 158.37
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 64,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 60.1,
+      "initial_margin": 61.7,
+      "current_margin": 0.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Berke": 35.57,
+            "Peterson": 97.23
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Berke": 34.96,
+            "Peterson": 92.21
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 50.7,
+            "Peterson": 100.76
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 79.95,
+            "Peterson": 98.14
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 95.1,
+            "Peterson": 96.03
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 65,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 79.4,
+      "initial_margin": 16.8,
+      "current_margin": 44.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Delaney": 132.74,
+            "Berke": 149.54
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 151.73,
+            "Berke": 113.75
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 89.01,
+            "Berke": 119.22
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 82.56,
+            "Berke": 152.08
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 72.32,
+            "Berke": 117.21
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 66,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Green",
+        "Trager"
+      ],
+      "first_winner": "Green",
+      "last_winner": "Trager",
+      "winner_changed": true,
+      "biggest_swing": 71.5,
+      "initial_margin": 40.1,
+      "current_margin": 26.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Green": 40.1,
+            "Trager": 0.0
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Green": 37.26,
+            "Trager": 53.1
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Green": 39.65,
+            "Trager": 51.66
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Green": 0.0,
+            "Trager": 65.74
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Green": 44.91,
+            "Trager": 71.46
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 67,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Trager"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 71.5,
+      "initial_margin": 40.1,
+      "current_margin": 6.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2021-22)",
+          "season": "2021-22",
+          "totals": {
+            "Jowkar": 0.0,
+            "Trager": 40.1
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 53.1,
+            "Trager": 49.9
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 51.66,
+            "Trager": 41.33
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 65.74,
+            "Trager": 8.24
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y4 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 71.46,
+            "Trager": 65.39
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 68,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Delaney"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 109.5,
+      "initial_margin": 33.1,
+      "current_margin": 96.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 0.0,
+            "Delaney": 33.14
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 30.41,
+            "Delaney": 19.15
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 40.87,
+            "Delaney": 17.61
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 109.54,
+            "Delaney": 12.8
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 69,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Trager"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 37.6,
+      "initial_margin": 66.4,
+      "current_margin": 68.8,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Berke": 66.4,
+            "Trager": 0.0
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 63.01,
+            "Trager": 0.0
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 61.23,
+            "Trager": 29.88
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 98.78,
+            "Trager": 30.03
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 70,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 98.2,
+      "initial_margin": 26.4,
+      "current_margin": 5.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Berke": 156.57,
+            "Peterson": 182.98
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 109.7,
+            "Peterson": 180.79
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 78.96,
+            "Peterson": 144.1
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 79.04,
+            "Peterson": 84.76
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 71,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Green",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 20.0,
+      "initial_margin": 28.0,
+      "current_margin": 26.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Green": 38.19,
+            "Peterson": 66.23
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Green": 25.82,
+            "Peterson": 56.59
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Green": 23.76,
+            "Peterson": 46.19
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Green": 23.61,
+            "Peterson": 49.56
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 72,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Gold"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Gold",
+      "winner_changed": true,
+      "biggest_swing": 153.3,
+      "initial_margin": 80.7,
+      "current_margin": 114.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Moss": 80.66,
+            "Gold": 0.0
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Moss": 64.75,
+            "Gold": 15.85
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 51.04,
+            "Gold": 91.97
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 38.66,
+            "Gold": 153.33
+          },
+          "winner": "Gold"
+        }
+      ]
+    },
+    {
+      "trade_id": 73,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Vlandis",
+        "Jowkar"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Vlandis",
+      "winner_changed": false,
+      "biggest_swing": 7.9,
+      "initial_margin": 37.4,
+      "current_margin": 31.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Vlandis": 37.38,
+            "Jowkar": 0.0
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Vlandis": 36.9,
+            "Jowkar": 0.0
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Vlandis": 39.38,
+            "Jowkar": 0.0
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Vlandis": 31.5,
+            "Jowkar": 0.0
+          },
+          "winner": "Vlandis"
+        }
+      ]
+    },
+    {
+      "trade_id": 74,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Gold",
+        "Moss"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Moss",
+      "winner_changed": false,
+      "biggest_swing": 33.7,
+      "initial_margin": 1.4,
+      "current_margin": 10.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Gold": 33.69,
+            "Moss": 35.09
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Gold": 0.0,
+            "Moss": 25.36
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Gold": 31.16,
+            "Moss": 15.68
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Gold": 11.4,
+            "Moss": 21.5
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 75,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Trager"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Trager",
+      "winner_changed": true,
+      "biggest_swing": 36.8,
+      "initial_margin": 11.5,
+      "current_margin": 44.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 58.07,
+            "Trager": 46.56
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 34.2,
+            "Trager": 63.36
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 24.12,
+            "Trager": 70.53
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 21.31,
+            "Trager": 65.62
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 76,
+      "season": "",
+      "date": null,
+      "is_multi_party": true,
+      "receivers": [
+        "Peterson",
+        "Trager",
+        "Jowkar"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 36.8,
+      "initial_margin": 38.5,
+      "current_margin": 21.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 38.5,
+            "Trager": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 25.7,
+            "Trager": 0.0,
+            "Jowkar": 34.26
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 20.92,
+            "Trager": 0.0,
+            "Jowkar": 34.92
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 15.8,
+            "Trager": 0.0,
+            "Jowkar": 36.81
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 77,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Vlandis"
+      ],
+      "first_winner": "Vlandis",
+      "last_winner": "Berke",
+      "winner_changed": true,
+      "biggest_swing": 35.5,
+      "initial_margin": 9.2,
+      "current_margin": 21.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Berke": 37.38,
+            "Vlandis": 46.56
+          },
+          "winner": "Vlandis"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 58.66,
+            "Vlandis": 39.42
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 72.86,
+            "Vlandis": 35.96
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 54.67,
+            "Vlandis": 33.14
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 78,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Delaney"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 30.0,
+      "initial_margin": 0.0,
+      "current_margin": 30.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Trager": 0.0,
+            "Delaney": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Trager": 0.0,
+            "Delaney": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Trager": 0.0,
+            "Delaney": 29.88
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 0.0,
+            "Delaney": 30.03
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 79,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Delaney"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Zujewski",
+      "winner_changed": true,
+      "biggest_swing": 86.7,
+      "initial_margin": 86.7,
+      "current_margin": 0.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Zujewski": 0.0,
+            "Delaney": 86.67
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 0.0,
+            "Delaney": 69.64
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 0.0,
+            "Delaney": 53.62
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 0.0,
+            "Delaney": 0.0
+          },
+          "winner": "Zujewski"
+        }
+      ]
+    },
+    {
+      "trade_id": 80,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Zujewski",
+      "winner_changed": true,
+      "biggest_swing": 113.9,
+      "initial_margin": 66.2,
+      "current_margin": 26.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Zujewski": 0.0,
+            "Berke": 66.22
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 0.0,
+            "Berke": 68.78
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 60.27,
+            "Berke": 35.86
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 113.94,
+            "Berke": 87.98
+          },
+          "winner": "Zujewski"
+        }
+      ]
+    },
+    {
+      "trade_id": 81,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 76.1,
+      "initial_margin": 95.8,
+      "current_margin": 13.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Zujewski": 40.18,
+            "Peterson": 136.01
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 60.97,
+            "Peterson": 139.36
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 92.79,
+            "Peterson": 180.4
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 90.56,
+            "Peterson": 104.26
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 82,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 29.4,
+      "initial_margin": 64.1,
+      "current_margin": 26.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 0.0,
+            "Berke": 64.07
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 18.76,
+            "Berke": 66.63
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 23.65,
+            "Berke": 56.95
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 10.53,
+            "Berke": 37.22
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 83,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Berke"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 24.7,
+      "initial_margin": 8.9,
+      "current_margin": 10.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 36.67,
+            "Berke": 27.74
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 26.93,
+            "Berke": 22.53
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 25.57,
+            "Berke": 20.54
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 13.53,
+            "Berke": 3.0
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 84,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Jowkar"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Moss",
+      "winner_changed": false,
+      "biggest_swing": 23.1,
+      "initial_margin": 36.7,
+      "current_margin": 13.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Moss": 36.67,
+            "Jowkar": 0.0
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Moss": 26.93,
+            "Jowkar": 0.0
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 25.57,
+            "Jowkar": 0.0
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 13.53,
+            "Jowkar": 0.0
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 85,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 14.1,
+      "initial_margin": 34.8,
+      "current_margin": 33.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Peterson": 37.16,
+            "Berke": 71.95
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 33.79,
+            "Berke": 59.47
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 29.47,
+            "Berke": 73.26
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 25.77,
+            "Berke": 59.12
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 86,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Kelley"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 58.3,
+      "initial_margin": 66.4,
+      "current_margin": 1.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 110.43,
+            "Kelley": 44.04
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 102.19,
+            "Kelley": 23.24
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 111.19,
+            "Kelley": 55.2
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 82.98,
+            "Kelley": 81.52
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 87,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Delaney"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 162.7,
+      "initial_margin": 69.5,
+      "current_margin": 130.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 81.09,
+            "Delaney": 11.63
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 52.5,
+            "Delaney": 71.9
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 50.86,
+            "Delaney": 85.51
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 43.4,
+            "Delaney": 174.29
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 88,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Trager"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Trager",
+      "winner_changed": true,
+      "biggest_swing": 109.5,
+      "initial_margin": 43.4,
+      "current_margin": 36.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 43.44,
+            "Trager": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 68.72,
+            "Trager": 30.41
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 87.75,
+            "Trager": 40.87
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 72.64,
+            "Trager": 109.54
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 89,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Peterson"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 75.2,
+      "initial_margin": 0.4,
+      "current_margin": 12.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Trager": 37.63,
+            "Peterson": 37.26
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Trager": 35.37,
+            "Peterson": 39.65
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Trager": 28.87,
+            "Peterson": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 87.24,
+            "Peterson": 75.25
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 90,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Peterson"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 45.8,
+      "initial_margin": 35.6,
+      "current_margin": 18.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 80.87,
+            "Peterson": 45.29
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 89.49,
+            "Peterson": 73.37
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 43.73,
+            "Peterson": 61.26
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 87.56,
+            "Peterson": 69.35
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 91,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Gold"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 82.0,
+      "initial_margin": 137.4,
+      "current_margin": 4.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 137.38,
+            "Gold": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 148.66,
+            "Gold": 23.94
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 97.21,
+            "Gold": 64.45
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 66.66,
+            "Gold": 62.51
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 92,
+      "season": "",
+      "date": null,
+      "is_multi_party": true,
+      "receivers": [
+        "Kelley",
+        "Gold",
+        "Green",
+        "Trager"
+      ],
+      "first_winner": "Green",
+      "last_winner": "Kelley",
+      "winner_changed": true,
+      "biggest_swing": 189.4,
+      "initial_margin": 91.4,
+      "current_margin": 90.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Kelley": 59.53,
+            "Gold": 33.64,
+            "Green": 150.91,
+            "Trager": 0.0
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Kelley": 67.98,
+            "Gold": 60.17,
+            "Green": 205.93,
+            "Trager": 0.0
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Kelley": 144.35,
+            "Gold": 101.7,
+            "Green": 162.03,
+            "Trager": 0.0
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Kelley": 248.93,
+            "Gold": 150.51,
+            "Green": 158.72,
+            "Trager": 30.72
+          },
+          "winner": "Kelley"
+        }
+      ]
+    },
+    {
+      "trade_id": 93,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Gold"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 43.3,
+      "initial_margin": 41.8,
+      "current_margin": 60.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Delaney": 41.84,
+            "Gold": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 63.38,
+            "Gold": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 85.1,
+            "Gold": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 60.4,
+            "Gold": 0.0
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 94,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Kelley"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 33.8,
+      "initial_margin": 0.0,
+      "current_margin": 11.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Jowkar": 0.0,
+            "Kelley": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 33.77,
+            "Kelley": 18.76
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 21.38,
+            "Kelley": 23.65
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 21.99,
+            "Kelley": 10.53
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 95,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Gold",
+        "Jowkar"
+      ],
+      "first_winner": "Gold",
+      "last_winner": "Gold",
+      "winner_changed": false,
+      "biggest_swing": 33.8,
+      "initial_margin": 0.0,
+      "current_margin": 22.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Gold": 0.0,
+            "Jowkar": 0.0
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Gold": 33.77,
+            "Jowkar": 0.0
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Gold": 21.38,
+            "Jowkar": 0.0
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Gold": 21.99,
+            "Jowkar": 0.0
+          },
+          "winner": "Gold"
+        }
+      ]
+    },
+    {
+      "trade_id": 96,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Trager"
+      ],
+      "first_winner": "Zujewski",
+      "last_winner": "Zujewski",
+      "winner_changed": false,
+      "biggest_swing": 105.9,
+      "initial_margin": 62.6,
+      "current_margin": 45.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2022-23)",
+          "season": "2022-23",
+          "totals": {
+            "Zujewski": 62.59,
+            "Trager": 0.0
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y1 (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 109.61,
+            "Trager": 42.62
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y2 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 116.22,
+            "Trager": 72.31
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y3 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 150.96,
+            "Trager": 105.91
+          },
+          "winner": "Zujewski"
+        }
+      ]
+    },
+    {
+      "trade_id": 97,
+      "season": "",
+      "date": "2023-10-25T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Kelley"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Moss",
+      "winner_changed": false,
+      "biggest_swing": 36.5,
+      "initial_margin": 14.6,
+      "current_margin": 4.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Moss": 79.35,
+            "Kelley": 64.75
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 75.24,
+            "Kelley": 51.04
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 42.83,
+            "Kelley": 38.66
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 98,
+      "season": "",
+      "date": "2023-10-26T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Peterson"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Peterson",
+      "winner_changed": true,
+      "biggest_swing": 54.2,
+      "initial_margin": 55.1,
+      "current_margin": 11.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Trager": 55.14,
+            "Peterson": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Trager": 53.94,
+            "Peterson": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 42.67,
+            "Peterson": 54.2
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 99,
+      "season": "",
+      "date": "2023-11-14T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Kelley",
+        "Moss"
+      ],
+      "first_winner": "Kelley",
+      "last_winner": "Moss",
+      "winner_changed": true,
+      "biggest_swing": 158.3,
+      "initial_margin": 145.9,
+      "current_margin": 66.6,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Kelley": 265.8,
+            "Moss": 119.88
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Kelley": 248.47,
+            "Moss": 215.55
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Kelley": 211.54,
+            "Moss": 278.15
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 100,
+      "season": "",
+      "date": "2023-11-16T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 119.7,
+      "initial_margin": 40.5,
+      "current_margin": 60.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 186.5,
+            "Berke": 227.02
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 176.82,
+            "Berke": 169.14
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 168.24,
+            "Berke": 107.33
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 101,
+      "season": "",
+      "date": "2023-11-16T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Delaney"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 79.4,
+      "initial_margin": 89.6,
+      "current_margin": 20.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 89.57,
+            "Delaney": 0.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 56.02,
+            "Delaney": 0.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 10.17,
+            "Delaney": 30.34
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 102,
+      "season": "",
+      "date": "2023-11-30T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Green",
+        "Delaney"
+      ],
+      "first_winner": "Green",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 61.7,
+      "initial_margin": 27.4,
+      "current_margin": 60.1,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Green": 90.3,
+            "Delaney": 62.92
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Green": 50.0,
+            "Delaney": 124.49
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Green": 28.56,
+            "Delaney": 88.66
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 103,
+      "season": "",
+      "date": "2023-12-19T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Delaney"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 9.4,
+      "initial_margin": 16.3,
+      "current_margin": 15.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 19.15,
+            "Delaney": 35.49
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 17.61,
+            "Delaney": 37.63
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 12.8,
+            "Delaney": 28.2
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 104,
+      "season": "",
+      "date": "2023-12-22T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Gold",
+        "Delaney"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 28.2,
+      "initial_margin": 33.9,
+      "current_margin": 60.6,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Gold": 186.5,
+            "Delaney": 220.36
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Gold": 176.82,
+            "Delaney": 248.51
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Gold": 168.24,
+            "Delaney": 228.82
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 105,
+      "season": "",
+      "date": "2023-12-30T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Peterson"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 8.3,
+      "initial_margin": 6.3,
+      "current_margin": 12.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 34.26,
+            "Peterson": 40.58
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 34.92,
+            "Peterson": 47.33
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 36.81,
+            "Peterson": 48.85
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 106,
+      "season": "",
+      "date": "2024-01-06T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Peterson"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 50.6,
+      "initial_margin": 11.5,
+      "current_margin": 41.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 81.19,
+            "Peterson": 69.64
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 57.52,
+            "Peterson": 70.04
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 60.81,
+            "Peterson": 19.47
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 107,
+      "season": "",
+      "date": "2024-01-06T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Delaney"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 13.5,
+      "initial_margin": 8.8,
+      "current_margin": 16.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 30.58,
+            "Delaney": 39.42
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 21.97,
+            "Delaney": 35.96
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 17.1,
+            "Delaney": 33.14
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 108,
+      "season": "",
+      "date": "2024-02-04T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Delaney"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 40.6,
+      "initial_margin": 21.1,
+      "current_margin": 52.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 58.04,
+            "Delaney": 36.9
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 38.54,
+            "Delaney": 39.38
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 17.42,
+            "Delaney": 69.84
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 109,
+      "season": "",
+      "date": "2024-02-08T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Delaney"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 51.4,
+      "initial_margin": 11.6,
+      "current_margin": 73.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Peterson": 51.07,
+            "Delaney": 39.42
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 39.78,
+            "Delaney": 35.96
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 13.68,
+            "Delaney": 87.34
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 110,
+      "season": "",
+      "date": "2024-02-10T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Delaney"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Delaney",
+      "winner_changed": false,
+      "biggest_swing": 50.4,
+      "initial_margin": 74.3,
+      "current_margin": 74.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 0.0,
+            "Delaney": 74.27
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 0.0,
+            "Delaney": 24.55
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 0.0,
+            "Delaney": 74.91
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 111,
+      "season": "",
+      "date": "2024-02-11T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Kelley"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Kelley",
+      "winner_changed": true,
+      "biggest_swing": 225.8,
+      "initial_margin": 159.2,
+      "current_margin": 124.9,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Moss": 247.74,
+            "Kelley": 88.5
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 226.62,
+            "Kelley": 201.2
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 189.43,
+            "Kelley": 314.35
+          },
+          "winner": "Kelley"
+        }
+      ]
+    },
+    {
+      "trade_id": 112,
+      "season": "",
+      "date": "2024-02-11T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Kelley"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Kelley",
+      "winner_changed": true,
+      "biggest_swing": 54.9,
+      "initial_margin": 54.7,
+      "current_margin": 40.6,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 110.02,
+            "Kelley": 55.29
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 90.06,
+            "Kelley": 44.74
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 55.13,
+            "Kelley": 95.7
+          },
+          "winner": "Kelley"
+        }
+      ]
+    },
+    {
+      "trade_id": 113,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Kelley"
+      ],
+      "first_winner": "Moss",
+      "last_winner": "Kelley",
+      "winner_changed": true,
+      "biggest_swing": 20.7,
+      "initial_margin": 0.0,
+      "current_margin": 20.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Moss": 0.0,
+            "Kelley": 0.0
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 0.0,
+            "Kelley": 0.0
+          },
+          "winner": "Moss"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 0.0,
+            "Kelley": 20.68
+          },
+          "winner": "Kelley"
+        }
+      ]
+    },
+    {
+      "trade_id": 114,
+      "season": "",
+      "date": "2024-06-26T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Kelley"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Kelley",
+      "winner_changed": true,
+      "biggest_swing": 54.7,
+      "initial_margin": 72.0,
+      "current_margin": 2.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Trager": 71.98,
+            "Kelley": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Trager": 64.23,
+            "Kelley": 42.88
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 52.36,
+            "Kelley": 54.69
+          },
+          "winner": "Kelley"
+        }
+      ]
+    },
+    {
+      "trade_id": 115,
+      "season": "",
+      "date": "2024-07-02T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Delaney"
+      ],
+      "first_winner": "Zujewski",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 38.3,
+      "initial_margin": 42.9,
+      "current_margin": 5.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Zujewski": 103.56,
+            "Delaney": 60.69
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 113.15,
+            "Delaney": 90.69
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 94.01,
+            "Delaney": 99.03
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 116,
+      "season": "",
+      "date": "2024-07-23T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Kelley",
+        "Peterson"
+      ],
+      "first_winner": "Kelley",
+      "last_winner": "Peterson",
+      "winner_changed": true,
+      "biggest_swing": 14.0,
+      "initial_margin": 6.4,
+      "current_margin": 0.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Kelley": 42.98,
+            "Peterson": 36.55
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Kelley": 28.95,
+            "Peterson": 43.15
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Kelley": 33.18,
+            "Peterson": 33.21
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 117,
+      "season": "",
+      "date": "2024-07-25T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Trager"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 110.1,
+      "initial_margin": 5.6,
+      "current_margin": 132.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Delaney": 101.15,
+            "Trager": 106.76
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 168.15,
+            "Trager": 97.72
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 211.26,
+            "Trager": 78.78
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 118,
+      "season": "",
+      "date": "2024-07-28T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Kelley"
+      ],
+      "first_winner": "Kelley",
+      "last_winner": "Jowkar",
+      "winner_changed": true,
+      "biggest_swing": 20.0,
+      "initial_margin": 17.2,
+      "current_margin": 13.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Jowkar": 37.36,
+            "Kelley": 54.58
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 30.56,
+            "Kelley": 45.91
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 47.9,
+            "Kelley": 34.55
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 119,
+      "season": "",
+      "date": null,
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Jowkar"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 6.8,
+      "initial_margin": 44.0,
+      "current_margin": 37.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 44.04,
+            "Jowkar": 0.0
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 39.97,
+            "Jowkar": 0.0
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 37.22,
+            "Jowkar": 0.0
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 120,
+      "season": "",
+      "date": "2024-08-05T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Kelley",
+        "Delaney"
+      ],
+      "first_winner": "Kelley",
+      "last_winner": "Kelley",
+      "winner_changed": false,
+      "biggest_swing": 84.1,
+      "initial_margin": 0.0,
+      "current_margin": 0.6,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Kelley": 0.0,
+            "Delaney": 0.0
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Kelley": 51.72,
+            "Delaney": 50.11
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Kelley": 84.07,
+            "Delaney": 83.51
+          },
+          "winner": "Kelley"
+        }
+      ]
+    },
+    {
+      "trade_id": 121,
+      "season": "",
+      "date": "2024-08-05T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Peterson"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Peterson",
+      "winner_changed": true,
+      "biggest_swing": 62.3,
+      "initial_margin": 40.8,
+      "current_margin": 40.7,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Berke": 109.55,
+            "Peterson": 68.78
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 79.74,
+            "Peterson": 35.86
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 47.26,
+            "Peterson": 87.98
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 122,
+      "season": "",
+      "date": "2024-08-06T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Delaney"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 34.3,
+      "initial_margin": 0.0,
+      "current_margin": 7.8,
+      "eval_results": [
+        {
+          "label": "At Trade (2023-24)",
+          "season": "2023-24",
+          "totals": {
+            "Trager": 0.0,
+            "Delaney": 0.0
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Trager": 34.27,
+            "Delaney": 13.08
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y2 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 26.04,
+            "Delaney": 18.2
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 123,
+      "season": "",
+      "date": "2024-08-21T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Zujewski"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 0.0,
+      "initial_margin": 0.0,
+      "current_margin": 0.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 0.0,
+            "Zujewski": 0.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 0.0,
+            "Zujewski": 0.0
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 124,
+      "season": "",
+      "date": "2024-09-25T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Kelley"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 40.5,
+      "initial_margin": 0.0,
+      "current_margin": 40.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 0.0,
+            "Kelley": 0.0
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 40.5,
+            "Kelley": 0.0
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 125,
+      "season": "",
+      "date": "2024-10-22T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Kelley"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 21.9,
+      "initial_margin": 49.0,
+      "current_margin": 26.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 48.95,
+            "Kelley": 0.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 48.29,
+            "Kelley": 21.92
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 126,
+      "season": "",
+      "date": "2024-10-29T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Gold",
+        "Trager"
+      ],
+      "first_winner": "Gold",
+      "last_winner": "Gold",
+      "winner_changed": false,
+      "biggest_swing": 17.7,
+      "initial_margin": 39.6,
+      "current_margin": 48.6,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Gold": 105.65,
+            "Trager": 66.07
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Gold": 96.96,
+            "Trager": 48.34
+          },
+          "winner": "Gold"
+        }
+      ]
+    },
+    {
+      "trade_id": 127,
+      "season": "",
+      "date": "2024-11-07T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Moss",
+        "Green"
+      ],
+      "first_winner": "Green",
+      "last_winner": "Moss",
+      "winner_changed": true,
+      "biggest_swing": 12.1,
+      "initial_margin": 12.1,
+      "current_margin": 4.8,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Moss": 52.03,
+            "Green": 64.15
+          },
+          "winner": "Green"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Moss": 64.11,
+            "Green": 59.27
+          },
+          "winner": "Moss"
+        }
+      ]
+    },
+    {
+      "trade_id": 128,
+      "season": "",
+      "date": "2024-12-30T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Peterson",
+        "Delaney"
+      ],
+      "first_winner": "Peterson",
+      "last_winner": "Peterson",
+      "winner_changed": false,
+      "biggest_swing": 9.4,
+      "initial_margin": 34.9,
+      "current_margin": 25.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Peterson": 34.88,
+            "Delaney": 0.0
+          },
+          "winner": "Peterson"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Peterson": 25.46,
+            "Delaney": 0.0
+          },
+          "winner": "Peterson"
+        }
+      ]
+    },
+    {
+      "trade_id": 129,
+      "season": "",
+      "date": "2025-01-22T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Berke",
+        "Peterson"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 8.7,
+      "initial_margin": 10.4,
+      "current_margin": 1.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Berke": 48.95,
+            "Peterson": 38.58
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Berke": 48.29,
+            "Peterson": 47.25
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 130,
+      "season": "",
+      "date": "2025-01-26T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Berke"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Jowkar",
+      "winner_changed": false,
+      "biggest_swing": 17.4,
+      "initial_margin": 25.3,
+      "current_margin": 23.4,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 74.59,
+            "Berke": 49.26
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 57.17,
+            "Berke": 33.76
+          },
+          "winner": "Jowkar"
+        }
+      ]
+    },
+    {
+      "trade_id": 131,
+      "season": "",
+      "date": "2025-01-29T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Zujewski",
+        "Trager"
+      ],
+      "first_winner": "Zujewski",
+      "last_winner": "Zujewski",
+      "winner_changed": false,
+      "biggest_swing": 28.6,
+      "initial_margin": 20.7,
+      "current_margin": 17.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Zujewski": 100.13,
+            "Trager": 79.39
+          },
+          "winner": "Zujewski"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Zujewski": 125.54,
+            "Trager": 108.0
+          },
+          "winner": "Zujewski"
+        }
+      ]
+    },
+    {
+      "trade_id": 132,
+      "season": "",
+      "date": "2025-02-10T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Kelley",
+        "Trager"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 11.4,
+      "initial_margin": 11.6,
+      "current_margin": 8.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Kelley": 34.27,
+            "Trager": 45.91
+          },
+          "winner": "Trager"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Kelley": 26.04,
+            "Trager": 34.55
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 133,
+      "season": "",
+      "date": "2025-02-10T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Kelley",
+        "Trager"
+      ],
+      "first_winner": "Kelley",
+      "last_winner": "Kelley",
+      "winner_changed": false,
+      "biggest_swing": 12.4,
+      "initial_margin": 3.5,
+      "current_margin": 25.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Kelley": 54.51,
+            "Trager": 51.04
+          },
+          "winner": "Kelley"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Kelley": 63.83,
+            "Trager": 38.66
+          },
+          "winner": "Kelley"
+        }
+      ]
+    },
+    {
+      "trade_id": 134,
+      "season": "",
+      "date": "2025-02-10T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Jowkar"
+      ],
+      "first_winner": "Jowkar",
+      "last_winner": "Delaney",
+      "winner_changed": true,
+      "biggest_swing": 40.5,
+      "initial_margin": 53.2,
+      "current_margin": 0.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 0.0,
+            "Jowkar": 53.18
+          },
+          "winner": "Jowkar"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 40.5,
+            "Jowkar": 40.16
+          },
+          "winner": "Delaney"
+        }
+      ]
+    },
+    {
+      "trade_id": 135,
+      "season": "",
+      "date": "2025-07-15T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 23.3,
+      "initial_margin": 26.0,
+      "current_margin": 51.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Jowkar": 23.26,
+            "Berke": 49.27
+          },
+          "winner": "Berke"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 0.0,
+            "Berke": 51.02
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 136,
+      "season": "",
+      "date": "2025-07-25T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Delaney",
+        "Baden"
+      ],
+      "first_winner": "Delaney",
+      "last_winner": "Baden",
+      "winner_changed": true,
+      "biggest_swing": 70.8,
+      "initial_margin": 0.0,
+      "current_margin": 35.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Delaney": 0.0,
+            "Baden": 0.0
+          },
+          "winner": "Delaney"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Delaney": 35.86,
+            "Baden": 70.84
+          },
+          "winner": "Baden"
+        }
+      ]
+    },
+    {
+      "trade_id": 137,
+      "season": "",
+      "date": "2025-07-26T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Baden",
+        "Trager"
+      ],
+      "first_winner": "Baden",
+      "last_winner": "Trager",
+      "winner_changed": true,
+      "biggest_swing": 40.5,
+      "initial_margin": 0.0,
+      "current_margin": 40.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Baden": 0.0,
+            "Trager": 0.0
+          },
+          "winner": "Baden"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Baden": 0.0,
+            "Trager": 40.5
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 138,
+      "season": "",
+      "date": "2025-07-27T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Gold",
+        "Trager"
+      ],
+      "first_winner": "Gold",
+      "last_winner": "Gold",
+      "winner_changed": false,
+      "biggest_swing": 11.4,
+      "initial_margin": 45.9,
+      "current_margin": 34.5,
+      "eval_results": [
+        {
+          "label": "At Trade (2024-25)",
+          "season": "2024-25",
+          "totals": {
+            "Gold": 45.91,
+            "Trager": 0.0
+          },
+          "winner": "Gold"
+        },
+        {
+          "label": "After Y1 (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Gold": 34.55,
+            "Trager": 0.0
+          },
+          "winner": "Gold"
+        }
+      ]
+    },
+    {
+      "trade_id": 139,
+      "season": "",
+      "date": "2025-10-23T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Jowkar",
+        "Berke"
+      ],
+      "first_winner": "Berke",
+      "last_winner": "Berke",
+      "winner_changed": false,
+      "biggest_swing": 0.0,
+      "initial_margin": 31.0,
+      "current_margin": 31.0,
+      "eval_results": [
+        {
+          "label": "At Trade (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Jowkar": 0.0,
+            "Berke": 31.02
+          },
+          "winner": "Berke"
+        }
+      ]
+    },
+    {
+      "trade_id": 140,
+      "season": "",
+      "date": "2024-12-21T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Gold"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 0.0,
+      "initial_margin": 0.3,
+      "current_margin": 0.3,
+      "eval_results": [
+        {
+          "label": "At Trade (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 42.81,
+            "Gold": 42.55
+          },
+          "winner": "Trager"
+        }
+      ]
+    },
+    {
+      "trade_id": 141,
+      "season": "",
+      "date": "2026-02-09T00:00:00",
+      "is_multi_party": false,
+      "receivers": [
+        "Trager",
+        "Peterson"
+      ],
+      "first_winner": "Trager",
+      "last_winner": "Trager",
+      "winner_changed": false,
+      "biggest_swing": 0.0,
+      "initial_margin": 71.2,
+      "current_margin": 71.2,
+      "eval_results": [
+        {
+          "label": "At Trade (2025-26)",
+          "season": "2025-26",
+          "totals": {
+            "Trager": 153.66,
+            "Peterson": 82.48
+          },
+          "winner": "Trager"
+        }
+      ]
+    }
+  ]
+}

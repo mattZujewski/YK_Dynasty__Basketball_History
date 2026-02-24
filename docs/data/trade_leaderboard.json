@@ -1,0 +1,407 @@
+{
+  "generated": "2026-02-23",
+  "overall": [
+    {
+      "owner": "Delaney",
+      "wins": 14,
+      "losses": 9,
+      "win_pct": 0.609,
+      "total_margin": 755.9,
+      "avg_margin": 53.99
+    },
+    {
+      "owner": "Peterson",
+      "wins": 9,
+      "losses": 12,
+      "win_pct": 0.429,
+      "total_margin": 259.56,
+      "avg_margin": 28.84
+    },
+    {
+      "owner": "Jowkar",
+      "wins": 9,
+      "losses": 13,
+      "win_pct": 0.409,
+      "total_margin": 214.84,
+      "avg_margin": 23.87
+    },
+    {
+      "owner": "Kelley",
+      "wins": 8,
+      "losses": 6,
+      "win_pct": 0.571,
+      "total_margin": 165.31,
+      "avg_margin": 20.66
+    },
+    {
+      "owner": "Trager",
+      "wins": 8,
+      "losses": 12,
+      "win_pct": 0.4,
+      "total_margin": 161.8,
+      "avg_margin": 20.22
+    },
+    {
+      "owner": "Berke",
+      "wins": 8,
+      "losses": 8,
+      "win_pct": 0.5,
+      "total_margin": 155.13,
+      "avg_margin": 19.39
+    },
+    {
+      "owner": "Zujewski",
+      "wins": 5,
+      "losses": 2,
+      "win_pct": 0.714,
+      "total_margin": 247.79,
+      "avg_margin": 49.56
+    },
+    {
+      "owner": "Moss",
+      "wins": 5,
+      "losses": 1,
+      "win_pct": 0.833,
+      "total_margin": 77.7,
+      "avg_margin": 15.54
+    },
+    {
+      "owner": "Gold",
+      "wins": 4,
+      "losses": 6,
+      "win_pct": 0.4,
+      "total_margin": 161.09,
+      "avg_margin": 40.27
+    },
+    {
+      "owner": "Baden",
+      "wins": 1,
+      "losses": 1,
+      "win_pct": 0.5,
+      "total_margin": 29.95,
+      "avg_margin": 29.95
+    },
+    {
+      "owner": "Vlandis",
+      "wins": 1,
+      "losses": 1,
+      "win_pct": 0.5,
+      "total_margin": 25.2,
+      "avg_margin": 25.2
+    },
+    {
+      "owner": "Green",
+      "wins": 0,
+      "losses": 4,
+      "win_pct": 0.0,
+      "total_margin": 0.0,
+      "avg_margin": 0.0
+    }
+  ],
+  "seasons": {
+    "2022-23": [
+      {
+        "owner": "Jowkar",
+        "wins": 5,
+        "losses": 6,
+        "win_pct": 0.455,
+        "total_margin": 156.77,
+        "avg_margin": 31.35
+      },
+      {
+        "owner": "Trager",
+        "wins": 5,
+        "losses": 3,
+        "win_pct": 0.625,
+        "total_margin": 134.42,
+        "avg_margin": 26.88
+      },
+      {
+        "owner": "Zujewski",
+        "wins": 4,
+        "losses": 0,
+        "win_pct": 1.0,
+        "total_margin": 220.51,
+        "avg_margin": 55.13
+      },
+      {
+        "owner": "Delaney",
+        "wins": 3,
+        "losses": 4,
+        "win_pct": 0.429,
+        "total_margin": 146.59,
+        "avg_margin": 48.86
+      },
+      {
+        "owner": "Berke",
+        "wins": 3,
+        "losses": 4,
+        "win_pct": 0.429,
+        "total_margin": 77.93,
+        "avg_margin": 25.98
+      },
+      {
+        "owner": "Kelley",
+        "wins": 3,
+        "losses": 0,
+        "win_pct": 1.0,
+        "total_margin": 37.02,
+        "avg_margin": 12.34
+      },
+      {
+        "owner": "Peterson",
+        "wins": 2,
+        "losses": 6,
+        "win_pct": 0.25,
+        "total_margin": 75.39,
+        "avg_margin": 37.7
+      },
+      {
+        "owner": "Moss",
+        "wins": 2,
+        "losses": 1,
+        "win_pct": 0.667,
+        "total_margin": 2.88,
+        "avg_margin": 1.44
+      },
+      {
+        "owner": "Gold",
+        "wins": 1,
+        "losses": 5,
+        "win_pct": 0.167,
+        "total_margin": 74.66,
+        "avg_margin": 74.66
+      },
+      {
+        "owner": "Vlandis",
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "total_margin": 25.2,
+        "avg_margin": 25.2
+      },
+      {
+        "owner": "Green",
+        "wins": 0,
+        "losses": 2,
+        "win_pct": 0.0,
+        "total_margin": 0.0,
+        "avg_margin": 0.0
+      }
+    ],
+    "2023-24": [
+      {
+        "owner": "Delaney",
+        "wins": 11,
+        "losses": 2,
+        "win_pct": 0.846,
+        "total_margin": 609.31,
+        "avg_margin": 55.39
+      },
+      {
+        "owner": "Kelley",
+        "wins": 4,
+        "losses": 3,
+        "win_pct": 0.571,
+        "total_margin": 101.62,
+        "avg_margin": 25.4
+      },
+      {
+        "owner": "Peterson",
+        "wins": 3,
+        "losses": 5,
+        "win_pct": 0.375,
+        "total_margin": 92.73,
+        "avg_margin": 30.91
+      },
+      {
+        "owner": "Moss",
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1.0,
+        "total_margin": 66.75,
+        "avg_margin": 33.38
+      },
+      {
+        "owner": "Berke",
+        "wins": 2,
+        "losses": 3,
+        "win_pct": 0.4,
+        "total_margin": 33.01,
+        "avg_margin": 16.51
+      },
+      {
+        "owner": "Trager",
+        "wins": 1,
+        "losses": 3,
+        "win_pct": 0.25,
+        "total_margin": 23.98,
+        "avg_margin": 23.98
+      },
+      {
+        "owner": "Jowkar",
+        "wins": 1,
+        "losses": 5,
+        "win_pct": 0.167,
+        "total_margin": 3.44,
+        "avg_margin": 3.44
+      },
+      {
+        "owner": "Green",
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0.0,
+        "total_margin": 0.0,
+        "avg_margin": 0.0
+      },
+      {
+        "owner": "Gold",
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0.0,
+        "total_margin": 0.0,
+        "avg_margin": 0.0
+      },
+      {
+        "owner": "Zujewski",
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0.0,
+        "total_margin": 0.0,
+        "avg_margin": 0.0
+      }
+    ],
+    "2024-25": [
+      {
+        "owner": "Jowkar",
+        "wins": 3,
+        "losses": 1,
+        "win_pct": 0.75,
+        "total_margin": 54.63,
+        "avg_margin": 18.21
+      },
+      {
+        "owner": "Peterson",
+        "wins": 3,
+        "losses": 1,
+        "win_pct": 0.75,
+        "total_margin": 43.08,
+        "avg_margin": 14.36
+      },
+      {
+        "owner": "Gold",
+        "wins": 2,
+        "losses": 0,
+        "win_pct": 1.0,
+        "total_margin": 67.06,
+        "avg_margin": 33.53
+      },
+      {
+        "owner": "Berke",
+        "wins": 2,
+        "losses": 1,
+        "win_pct": 0.667,
+        "total_margin": 28.53,
+        "avg_margin": 14.27
+      },
+      {
+        "owner": "Trager",
+        "wins": 2,
+        "losses": 4,
+        "win_pct": 0.333,
+        "total_margin": 3.4,
+        "avg_margin": 1.7
+      },
+      {
+        "owner": "Baden",
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "total_margin": 29.95,
+        "avg_margin": 29.95
+      },
+      {
+        "owner": "Zujewski",
+        "wins": 1,
+        "losses": 1,
+        "win_pct": 0.5,
+        "total_margin": 27.28,
+        "avg_margin": 27.28
+      },
+      {
+        "owner": "Kelley",
+        "wins": 1,
+        "losses": 3,
+        "win_pct": 0.25,
+        "total_margin": 26.67,
+        "avg_margin": 26.67
+      },
+      {
+        "owner": "Moss",
+        "wins": 1,
+        "losses": 0,
+        "win_pct": 1.0,
+        "total_margin": 8.07,
+        "avg_margin": 8.07
+      },
+      {
+        "owner": "Green",
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0.0,
+        "total_margin": 0.0,
+        "avg_margin": 0.0
+      },
+      {
+        "owner": "Delaney",
+        "wins": 0,
+        "losses": 3,
+        "win_pct": 0.0,
+        "total_margin": 0.0,
+        "avg_margin": 0.0
+      }
+    ],
+    "2025-26": [
+      {
+        "owner": "Peterson",
+        "wins": 1,
+        "losses": 0,
+        "win_pct": 1.0,
+        "total_margin": 48.36,
+        "avg_margin": 48.36
+      },
+      {
+        "owner": "Gold",
+        "wins": 1,
+        "losses": 0,
+        "win_pct": 1.0,
+        "total_margin": 19.37,
+        "avg_margin": 19.37
+      },
+      {
+        "owner": "Berke",
+        "wins": 1,
+        "losses": 0,
+        "win_pct": 1.0,
+        "total_margin": 15.66,
+        "avg_margin": 15.66
+      },
+      {
+        "owner": "Jowkar",
+        "wins": 0,
+        "losses": 1,
+        "win_pct": 0.0,
+        "total_margin": 0.0,
+        "avg_margin": 0.0
+      },
+      {
+        "owner": "Trager",
+        "wins": 0,
+        "losses": 2,
+        "win_pct": 0.0,
+        "total_margin": 0.0,
+        "avg_margin": 0.0
+      }
+    ]
+  }
+}

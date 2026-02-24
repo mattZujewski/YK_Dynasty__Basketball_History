@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trade Leaderboard &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/chart.umd.min.js"></script>
+  <script src="js/chartjs-fix.js"></script>
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F4CA; Trade Leaderboard</h1>
+      <p class="subtitle">Dynasty trade grades by owner &mdash; who wins trades? (2022&ndash;23 to present)</p>
+    </header>
+
+    <!-- Summary stat cards -->
+    <div class="stat-row" id="summary-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px"></div>
+
+    <!-- Overall Standings Table -->
+    <div class="chart-section">
+      <h2>Overall Trade Grade Standings</h2>
+      <p class="chart-description">Cumulative win/loss record and margin across all graded trades (2023&ndash;24 to present). Click a row to see individual trade grades.</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="overall-table">
+          <thead>
+            <tr>
+              <th data-sort="rank" style="width:44px">Rank</th>
+              <th data-sort="owner">Owner</th>
+              <th data-sort="wins" style="text-align:center">W</th>
+              <th data-sort="losses" style="text-align:center">L</th>
+              <th data-sort="win_pct" style="text-align:center">Win %</th>
+              <th data-sort="total_margin" style="text-align:right">Total Margin</th>
+              <th data-sort="avg_margin" style="text-align:right">Avg Margin</th>
+            </tr>
+          </thead>
+          <tbody id="overall-tbody">
+            <tr><td colspan="7" class="text-center text-muted" style="padding:24px">Loading&hellip;</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="chart-insight" id="overall-insight"></p>
+    </div>
+
+    <!-- Win% Bar Chart -->
+    <div class="chart-section">
+      <h2>Trade Win Percentage by Owner</h2>
+      <p class="chart-description">Higher = better dynasty trade performance. Based on dynasty value calculations (Weighted FPPG &times; Dynasty Mult &times; Star Premium &times; GP Modifier).</p>
+      <div class="chart-wrapper" style="height:360px">
+        <canvas id="chart-winpct"></canvas>
+      </div>
+    </div>
+
+    <!-- Season-by-Season Breakdown -->
+    <div class="chart-section">
+      <h2>Season Breakdown</h2>
+      <p class="chart-description">Per-season trade grade records. Trades dated to the season they occurred in.</p>
+      <div class="filter-bar" id="season-filter">
+        <label>Season:</label>
+      </div>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="season-table">
+          <thead>
+            <tr>
+              <th data-sort="rank" style="width:44px">Rank</th>
+              <th data-sort="owner">Owner</th>
+              <th data-sort="wins" style="text-align:center">W</th>
+              <th data-sort="losses" style="text-align:center">L</th>
+              <th data-sort="win_pct" style="text-align:center">Win %</th>
+              <th data-sort="total_margin" style="text-align:right">Total Margin</th>
+              <th data-sort="avg_margin" style="text-align:right">Avg Margin</th>
+            </tr>
+          </thead>
+          <tbody id="season-tbody">
+            <tr><td colspan="7" class="text-center text-muted" style="padding:12px">Select a season above</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div class="chart-section">
+      <h2>About Trade Grades</h2>
+      <p class="chart-description">
+        Trade grades are calculated using the YK Trade Analyzer formula:
+        <strong>Dynasty Value = Weighted FPPG &times; Dynasty Multiplier &times; Star Premium &times; GP Modifier</strong>.
+        The owner who received the higher-value side wins the trade grade.
+        Collusion-flagged trades (IDs 99 &amp; 111) are excluded.
+        Coverage: trades from the 2023&ndash;24 season onward.
+        Only players with Fantrax data (current or historical) are included.
+      </p>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+  <script src="js/dashboards/trade_leaderboard.js"></script>
+</body>
+</html>

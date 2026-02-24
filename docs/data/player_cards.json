@@ -1,0 +1,3230 @@
+{
+  "generated": "2026-02-23",
+  "players": [
+    {
+      "player": "Nikola Jokic",
+      "owner": "Jowkar",
+      "lawson_rank": 3,
+      "composite": 19134.0,
+      "w_fpg": 66.55,
+      "w_fpmin": 1.905,
+      "age": 31,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 31,
+          "fpg": 55.9,
+          "gp": 68,
+          "fpmin": 1.689
+        },
+        "2022-23": {
+          "age": 31,
+          "fpg": 60.85,
+          "gp": 66,
+          "fpmin": 1.795
+        },
+        "2023-24": {
+          "age": 31,
+          "fpg": 62.09,
+          "gp": 69,
+          "fpmin": 1.805
+        },
+        "2024-25": {
+          "age": 31,
+          "fpg": 69.35,
+          "gp": 62,
+          "fpmin": 1.9
+        },
+        "2025-26": {
+          "age": 31,
+          "fpg": 66.66,
+          "gp": 41,
+          "fpmin": 1.949
+        }
+      }
+    },
+    {
+      "player": "Shai Gilgeous-Alexander",
+      "owner": "Gold",
+      "lawson_rank": 4,
+      "composite": 16412.0,
+      "w_fpg": 57.38,
+      "w_fpmin": 1.696,
+      "age": 27,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 27,
+          "fpg": 40.98,
+          "gp": 56,
+          "fpmin": 1.181
+        },
+        "2022-23": {
+          "age": 27,
+          "fpg": 52.19,
+          "gp": 64,
+          "fpmin": 1.47
+        },
+        "2023-24": {
+          "age": 27,
+          "fpg": 58.28,
+          "gp": 69,
+          "fpmin": 1.694
+        },
+        "2024-25": {
+          "age": 27,
+          "fpg": 58.94,
+          "gp": 68,
+          "fpmin": 1.718
+        },
+        "2025-26": {
+          "age": 27,
+          "fpg": 56.08,
+          "gp": 49,
+          "fpmin": 1.684
+        }
+      }
+    },
+    {
+      "player": "Luka Doncic",
+      "owner": "Jowkar",
+      "lawson_rank": 2,
+      "composite": 15012.0,
+      "w_fpg": 57.39,
+      "w_fpmin": 1.6,
+      "age": 26,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 50.92,
+          "gp": 58,
+          "fpmin": 1.43
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 58.25,
+          "gp": 60,
+          "fpmin": 1.6
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 64.26,
+          "gp": 62,
+          "fpmin": 1.714
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 52.73,
+          "gp": 40,
+          "fpmin": 1.502
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 57.44,
+          "gp": 43,
+          "fpmin": 1.613
+        }
+      }
+    },
+    {
+      "player": "Giannis Antetokounmpo",
+      "owner": "Berke",
+      "lawson_rank": 13,
+      "composite": 14983.0,
+      "w_fpg": 53.77,
+      "w_fpmin": 1.695,
+      "age": 31,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 31,
+          "fpg": 54.62,
+          "gp": 61,
+          "fpmin": 1.665
+        },
+        "2022-23": {
+          "age": 31,
+          "fpg": 51.05,
+          "gp": 59,
+          "fpmin": 1.585
+        },
+        "2023-24": {
+          "age": 31,
+          "fpg": 57.76,
+          "gp": 66,
+          "fpmin": 1.65
+        },
+        "2024-25": {
+          "age": 31,
+          "fpg": 55.95,
+          "gp": 59,
+          "fpmin": 1.646
+        },
+        "2025-26": {
+          "age": 31,
+          "fpg": 50.87,
+          "gp": 30,
+          "fpmin": 1.742
+        }
+      }
+    },
+    {
+      "player": "Anthony Edwards",
+      "owner": "Green",
+      "lawson_rank": 10,
+      "composite": 13448.0,
+      "w_fpg": 45.16,
+      "w_fpmin": 1.265,
+      "age": 24,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 24,
+          "fpg": 34.07,
+          "gp": 66,
+          "fpmin": 0.99
+        },
+        "2022-23": {
+          "age": 24,
+          "fpg": 41.71,
+          "gp": 72,
+          "fpmin": 1.159
+        },
+        "2023-24": {
+          "age": 24,
+          "fpg": 43.54,
+          "gp": 68,
+          "fpmin": 1.233
+        },
+        "2024-25": {
+          "age": 24,
+          "fpg": 43.27,
+          "gp": 70,
+          "fpmin": 1.192
+        },
+        "2025-26": {
+          "age": 24,
+          "fpg": 46.94,
+          "gp": 47,
+          "fpmin": 1.322
+        }
+      }
+    },
+    {
+      "player": "James Harden",
+      "owner": "Peterson",
+      "lawson_rank": 59,
+      "composite": 13277.0,
+      "w_fpg": 44.22,
+      "w_fpmin": 1.263,
+      "age": 36,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 36,
+          "fpg": 46.82,
+          "gp": 58,
+          "fpmin": 1.262
+        },
+        "2022-23": {
+          "age": 36,
+          "fpg": 49.81,
+          "gp": 53,
+          "fpmin": 1.35
+        },
+        "2023-24": {
+          "age": 36,
+          "fpg": 42.48,
+          "gp": 64,
+          "fpmin": 1.224
+        },
+        "2024-25": {
+          "age": 36,
+          "fpg": 44.09,
+          "gp": 68,
+          "fpmin": 1.256
+        },
+        "2025-26": {
+          "age": 36,
+          "fpg": 45.0,
+          "gp": 49,
+          "fpmin": 1.282
+        }
+      }
+    },
+    {
+      "player": "LeBron James",
+      "owner": "Berke",
+      "lawson_rank": 92,
+      "composite": 13002.0,
+      "w_fpg": 46.26,
+      "w_fpmin": 1.352,
+      "age": 41,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 41,
+          "fpg": 51.1,
+          "gp": 55,
+          "fpmin": 1.374
+        },
+        "2022-23": {
+          "age": 41,
+          "fpg": 51.6,
+          "gp": 48,
+          "fpmin": 1.437
+        },
+        "2023-24": {
+          "age": 41,
+          "fpg": 51.06,
+          "gp": 62,
+          "fpmin": 1.451
+        },
+        "2024-25": {
+          "age": 41,
+          "fpg": 49.78,
+          "gp": 60,
+          "fpmin": 1.426
+        },
+        "2025-26": {
+          "age": 41,
+          "fpg": 42.22,
+          "gp": 37,
+          "fpmin": 1.268
+        }
+      }
+    },
+    {
+      "player": "Domantas Sabonis",
+      "owner": "Peterson",
+      "lawson_rank": 51,
+      "composite": 12984.0,
+      "w_fpg": 41.44,
+      "w_fpmin": 1.269,
+      "age": 29,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 29,
+          "fpg": 41.49,
+          "gp": 62,
+          "fpmin": 1.206
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 47.24,
+          "gp": 72,
+          "fpmin": 1.354
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 51.31,
+          "gp": 71,
+          "fpmin": 1.429
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 45.85,
+          "gp": 59,
+          "fpmin": 1.321
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 34.84,
+          "gp": 19,
+          "fpmin": 1.173
+        }
+      }
+    },
+    {
+      "player": "Jayson Tatum",
+      "owner": "Moss",
+      "lawson_rank": 11,
+      "composite": 12966.0,
+      "w_fpg": 48.64,
+      "w_fpmin": 1.335,
+      "age": 27,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 27,
+          "fpg": 43.92,
+          "gp": 71,
+          "fpmin": 1.213
+        },
+        "2022-23": {
+          "age": 27,
+          "fpg": 49.77,
+          "gp": 69,
+          "fpmin": 1.334
+        },
+        "2023-24": {
+          "age": 27,
+          "fpg": 47.69,
+          "gp": 67,
+          "fpmin": 1.332
+        },
+        "2024-25": {
+          "age": 27,
+          "fpg": 48.77,
+          "gp": 66,
+          "fpmin": 1.34
+        },
+        "2025-26": {
+          "age": 27,
+          "fpg": 0.0,
+          "gp": 0,
+          "fpmin": null
+        }
+      }
+    },
+    {
+      "player": "DeMar DeRozan",
+      "owner": "Berke",
+      "lawson_rank": 202,
+      "composite": 12864.0,
+      "w_fpg": 35.44,
+      "w_fpmin": 1.029,
+      "age": 36,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 36,
+          "fpg": 41.74,
+          "gp": 69,
+          "fpmin": 1.159
+        },
+        "2022-23": {
+          "age": 36,
+          "fpg": 41.99,
+          "gp": 67,
+          "fpmin": 1.15
+        },
+        "2023-24": {
+          "age": 36,
+          "fpg": 40.89,
+          "gp": 70,
+          "fpmin": 1.087
+        },
+        "2024-25": {
+          "age": 36,
+          "fpg": 36.73,
+          "gp": 66,
+          "fpmin": 1.023
+        },
+        "2025-26": {
+          "age": 36,
+          "fpg": 32.48,
+          "gp": 58,
+          "fpmin": 1.009
+        }
+      }
+    },
+    {
+      "player": "Donovan Mitchell",
+      "owner": "Green",
+      "lawson_rank": 21,
+      "composite": 12864.0,
+      "w_fpg": 45.87,
+      "w_fpmin": 1.38,
+      "age": 29,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 29,
+          "fpg": 39.52,
+          "gp": 62,
+          "fpmin": 1.173
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 44.69,
+          "gp": 64,
+          "fpmin": 1.259
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 49.41,
+          "gp": 49,
+          "fpmin": 1.396
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 39.69,
+          "gp": 65,
+          "fpmin": 1.272
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 48.17,
+          "gp": 53,
+          "fpmin": 1.438
+        }
+      }
+    },
+    {
+      "player": "Pascal Siakam",
+      "owner": "Jowkar",
+      "lawson_rank": 85,
+      "composite": 12855.0,
+      "w_fpg": 39.24,
+      "w_fpmin": 1.171,
+      "age": 31,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 31,
+          "fpg": 41.17,
+          "gp": 61,
+          "fpmin": 1.098
+        },
+        "2022-23": {
+          "age": 31,
+          "fpg": 43.25,
+          "gp": 65,
+          "fpmin": 1.153
+        },
+        "2023-24": {
+          "age": 31,
+          "fpg": 39.77,
+          "gp": 71,
+          "fpmin": 1.18
+        },
+        "2024-25": {
+          "age": 31,
+          "fpg": 38.53,
+          "gp": 70,
+          "fpmin": 1.171
+        },
+        "2025-26": {
+          "age": 31,
+          "fpg": 39.45,
+          "gp": 51,
+          "fpmin": 1.167
+        }
+      }
+    },
+    {
+      "player": "Kevin Durant",
+      "owner": "Berke",
+      "lawson_rank": 65,
+      "composite": 12662.0,
+      "w_fpg": 45.09,
+      "w_fpmin": 1.223,
+      "age": 37,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 37,
+          "fpg": 47.84,
+          "gp": 48,
+          "fpmin": 1.304
+        },
+        "2022-23": {
+          "age": 37,
+          "fpg": 52.6,
+          "gp": 42,
+          "fpmin": 1.473
+        },
+        "2023-24": {
+          "age": 37,
+          "fpg": 49.29,
+          "gp": 65,
+          "fpmin": 1.325
+        },
+        "2024-25": {
+          "age": 37,
+          "fpg": 46.34,
+          "gp": 59,
+          "fpmin": 1.256
+        },
+        "2025-26": {
+          "age": 37,
+          "fpg": 42.67,
+          "gp": 52,
+          "fpmin": 1.163
+        }
+      }
+    },
+    {
+      "player": "Nikola Vucevic",
+      "owner": "Berke",
+      "lawson_rank": 214,
+      "composite": 12561.0,
+      "w_fpg": 38.16,
+      "w_fpmin": 1.209,
+      "age": 35,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 35,
+          "fpg": 39.18,
+          "gp": 66,
+          "fpmin": 1.17
+        },
+        "2022-23": {
+          "age": 35,
+          "fpg": 39.34,
+          "gp": 74,
+          "fpmin": 1.164
+        },
+        "2023-24": {
+          "age": 35,
+          "fpg": 38.25,
+          "gp": 67,
+          "fpmin": 1.112
+        },
+        "2024-25": {
+          "age": 35,
+          "fpg": 40.5,
+          "gp": 64,
+          "fpmin": 1.282
+        },
+        "2025-26": {
+          "age": 35,
+          "fpg": 36.71,
+          "gp": 52,
+          "fpmin": 1.204
+        }
+      }
+    },
+    {
+      "player": "Jalen Brunson",
+      "owner": "Green",
+      "lawson_rank": 52,
+      "composite": 12507.0,
+      "w_fpg": 43.2,
+      "w_fpmin": 1.236,
+      "age": 29,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 29,
+          "fpg": 28.55,
+          "gp": 72,
+          "fpmin": 0.892
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 40.68,
+          "gp": 65,
+          "fpmin": 1.162
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 44.32,
+          "gp": 66,
+          "fpmin": 1.263
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 44.02,
+          "gp": 61,
+          "fpmin": 1.244
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 42.25,
+          "gp": 52,
+          "fpmin": 1.221
+        }
+      }
+    },
+    {
+      "player": "DeAaron Fox",
+      "owner": "Moss",
+      "lawson_rank": 58,
+      "composite": 12353.0,
+      "w_fpg": 40.85,
+      "w_fpmin": 1.206,
+      "age": 28,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 36.76,
+          "gp": 59,
+          "fpmin": 1.041
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 43.18,
+          "gp": 66,
+          "fpmin": 1.278
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 46.57,
+          "gp": 63,
+          "fpmin": 1.304
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 42.5,
+          "gp": 62,
+          "fpmin": 1.177
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 37.57,
+          "gp": 47,
+          "fpmin": 1.185
+        }
+      }
+    },
+    {
+      "player": "Stephen Curry",
+      "owner": "Trager",
+      "lawson_rank": 71,
+      "composite": 12188.0,
+      "w_fpg": 43.18,
+      "w_fpmin": 1.357,
+      "age": 37,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 37,
+          "fpg": 41.64,
+          "gp": 64,
+          "fpmin": 1.207
+        },
+        "2022-23": {
+          "age": 37,
+          "fpg": 50.92,
+          "gp": 50,
+          "fpmin": 1.459
+        },
+        "2023-24": {
+          "age": 37,
+          "fpg": 42.16,
+          "gp": 64,
+          "fpmin": 1.289
+        },
+        "2024-25": {
+          "age": 37,
+          "fpg": 42.85,
+          "gp": 60,
+          "fpmin": 1.331
+        },
+        "2025-26": {
+          "age": 37,
+          "fpg": 43.79,
+          "gp": 39,
+          "fpmin": 1.399
+        }
+      }
+    },
+    {
+      "player": "Scottie Barnes",
+      "owner": "Trager",
+      "lawson_rank": 14,
+      "composite": 12110.0,
+      "w_fpg": 44.33,
+      "w_fpmin": 1.293,
+      "age": 24,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 24,
+          "fpg": 32.11,
+          "gp": 66,
+          "fpmin": 0.897
+        },
+        "2022-23": {
+          "age": 24,
+          "fpg": 33.9,
+          "gp": 70,
+          "fpmin": 0.971
+        },
+        "2023-24": {
+          "age": 24,
+          "fpg": 45.55,
+          "gp": 60,
+          "fpmin": 1.305
+        },
+        "2024-25": {
+          "age": 24,
+          "fpg": 42.11,
+          "gp": 57,
+          "fpmin": 1.253
+        },
+        "2025-26": {
+          "age": 24,
+          "fpg": 45.18,
+          "gp": 55,
+          "fpmin": 1.313
+        }
+      }
+    },
+    {
+      "player": "Devin Booker",
+      "owner": "Trager",
+      "lawson_rank": 31,
+      "composite": 11990.0,
+      "w_fpg": 41.45,
+      "w_fpmin": 1.182,
+      "age": 29,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 29,
+          "fpg": 40.9,
+          "gp": 64,
+          "fpmin": 1.189
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 44.47,
+          "gp": 47,
+          "fpmin": 1.289
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 47.45,
+          "gp": 58,
+          "fpmin": 1.325
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 43.36,
+          "gp": 66,
+          "fpmin": 1.159
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 37.91,
+          "gp": 44,
+          "fpmin": 1.138
+        }
+      }
+    },
+    {
+      "player": "Julius Randle",
+      "owner": "Peterson",
+      "lawson_rank": 81,
+      "composite": 11899.0,
+      "w_fpg": 37.51,
+      "w_fpmin": 1.121,
+      "age": 31,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 31,
+          "fpg": 39.66,
+          "gp": 70,
+          "fpmin": 1.12
+        },
+        "2022-23": {
+          "age": 31,
+          "fpg": 41.49,
+          "gp": 75,
+          "fpmin": 1.156
+        },
+        "2023-24": {
+          "age": 31,
+          "fpg": 38.63,
+          "gp": 46,
+          "fpmin": 1.091
+        },
+        "2024-25": {
+          "age": 31,
+          "fpg": 32.5,
+          "gp": 60,
+          "fpmin": 1.016
+        },
+        "2025-26": {
+          "age": 31,
+          "fpg": 40.07,
+          "gp": 57,
+          "fpmin": 1.196
+        }
+      }
+    },
+    {
+      "player": "Trae Young",
+      "owner": "Green",
+      "lawson_rank": 44,
+      "composite": 11881.0,
+      "w_fpg": 41.03,
+      "w_fpmin": 1.28,
+      "age": 27,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 27,
+          "fpg": 45.4,
+          "gp": 68,
+          "fpmin": 1.297
+        },
+        "2022-23": {
+          "age": 27,
+          "fpg": 45.04,
+          "gp": 68,
+          "fpmin": 1.302
+        },
+        "2023-24": {
+          "age": 27,
+          "fpg": 47.84,
+          "gp": 51,
+          "fpmin": 1.311
+        },
+        "2024-25": {
+          "age": 27,
+          "fpg": 44.36,
+          "gp": 66,
+          "fpmin": 1.232
+        },
+        "2025-26": {
+          "age": 27,
+          "fpg": 36.3,
+          "gp": 10,
+          "fpmin": 1.296
+        }
+      }
+    },
+    {
+      "player": "Tyrese Maxey",
+      "owner": "Gold",
+      "lawson_rank": 7,
+      "composite": 11805.0,
+      "w_fpg": 49.3,
+      "w_fpmin": 1.294,
+      "age": 25,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 25,
+          "fpg": 29.24,
+          "gp": 67,
+          "fpmin": 0.821
+        },
+        "2022-23": {
+          "age": 25,
+          "fpg": 32.65,
+          "gp": 55,
+          "fpmin": 0.978
+        },
+        "2023-24": {
+          "age": 25,
+          "fpg": 44.3,
+          "gp": 63,
+          "fpmin": 1.188
+        },
+        "2024-25": {
+          "age": 25,
+          "fpg": 45.5,
+          "gp": 52,
+          "fpmin": 1.207
+        },
+        "2025-26": {
+          "age": 25,
+          "fpg": 53.57,
+          "gp": 54,
+          "fpmin": 1.388
+        }
+      }
+    },
+    {
+      "player": "Bam Adebayo",
+      "owner": "Green",
+      "lawson_rank": 34,
+      "composite": 11673.0,
+      "w_fpg": 37.85,
+      "w_fpmin": 1.154,
+      "age": 28,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 38.63,
+          "gp": 50,
+          "fpmin": 1.181
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 39.91,
+          "gp": 70,
+          "fpmin": 1.134
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 41.15,
+          "gp": 60,
+          "fpmin": 1.2
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 38.88,
+          "gp": 69,
+          "fpmin": 1.127
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 35.92,
+          "gp": 50,
+          "fpmin": 1.151
+        }
+      }
+    },
+    {
+      "player": "Jaylen Brown",
+      "owner": "Zujewski",
+      "lawson_rank": 41,
+      "composite": 11646.0,
+      "w_fpg": 41.19,
+      "w_fpmin": 1.199,
+      "age": 29,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 29,
+          "fpg": 35.67,
+          "gp": 60,
+          "fpmin": 1.058
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 42.1,
+          "gp": 63,
+          "fpmin": 1.166
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 38.86,
+          "gp": 64,
+          "fpmin": 1.16
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 37.95,
+          "gp": 57,
+          "fpmin": 1.081
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 44.06,
+          "gp": 50,
+          "fpmin": 1.285
+        }
+      }
+    },
+    {
+      "player": "Mikal Bridges",
+      "owner": "Berke",
+      "lawson_rank": 100,
+      "composite": 11430.0,
+      "w_fpg": 34.74,
+      "w_fpmin": 0.984,
+      "age": 29,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 29,
+          "fpg": 25.59,
+          "gp": 75,
+          "fpmin": 0.721
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 36.08,
+          "gp": 76,
+          "fpmin": 1.002
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 33.32,
+          "gp": 72,
+          "fpmin": 0.944
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 32.63,
+          "gp": 70,
+          "fpmin": 0.868
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 36.58,
+          "gp": 57,
+          "fpmin": 1.07
+        }
+      }
+    },
+    {
+      "player": "Tyrese Haliburton",
+      "owner": "Moss",
+      "lawson_rank": 12,
+      "composite": 11284.0,
+      "w_fpg": 49.73,
+      "w_fpmin": 1.501,
+      "age": 25,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 25,
+          "fpg": 33.9,
+          "gp": 70,
+          "fpmin": 0.974
+        },
+        "2022-23": {
+          "age": 25,
+          "fpg": 50.62,
+          "gp": 56,
+          "fpmin": 1.507
+        },
+        "2023-24": {
+          "age": 25,
+          "fpg": 51.05,
+          "gp": 60,
+          "fpmin": 1.58
+        },
+        "2024-25": {
+          "age": 25,
+          "fpg": 47.08,
+          "gp": 64,
+          "fpmin": 1.389
+        },
+        "2025-26": {
+          "age": 25,
+          "fpg": 0.0,
+          "gp": 0,
+          "fpmin": null
+        }
+      }
+    },
+    {
+      "player": "Alperen Sengun",
+      "owner": "Trager",
+      "lawson_rank": 9,
+      "composite": 11259.0,
+      "w_fpg": 42.75,
+      "w_fpmin": 1.301,
+      "age": 23,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 23,
+          "fpg": 21.16,
+          "gp": 67,
+          "fpmin": 1.069
+        },
+        "2022-23": {
+          "age": 23,
+          "fpg": 33.44,
+          "gp": 68,
+          "fpmin": 1.169
+        },
+        "2023-24": {
+          "age": 23,
+          "fpg": 42.94,
+          "gp": 63,
+          "fpmin": 1.321
+        },
+        "2024-25": {
+          "age": 23,
+          "fpg": 40.37,
+          "gp": 68,
+          "fpmin": 1.282
+        },
+        "2025-26": {
+          "age": 23,
+          "fpg": 44.1,
+          "gp": 48,
+          "fpmin": 1.305
+        }
+      }
+    },
+    {
+      "player": "Karl-Anthony Towns",
+      "owner": "Jowkar",
+      "lawson_rank": 36,
+      "composite": 11196.0,
+      "w_fpg": 40.89,
+      "w_fpmin": 1.246,
+      "age": 30,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 30,
+          "fpg": 43.47,
+          "gp": 69,
+          "fpmin": 1.298
+        },
+        "2022-23": {
+          "age": 30,
+          "fpg": 39.48,
+          "gp": 23,
+          "fpmin": 1.182
+        },
+        "2023-24": {
+          "age": 30,
+          "fpg": 38.23,
+          "gp": 60,
+          "fpmin": 1.166
+        },
+        "2024-25": {
+          "age": 30,
+          "fpg": 47.14,
+          "gp": 63,
+          "fpmin": 1.347
+        },
+        "2025-26": {
+          "age": 30,
+          "fpg": 38.21,
+          "gp": 53,
+          "fpmin": 1.217
+        }
+      }
+    },
+    {
+      "player": "Anthony Davis",
+      "owner": "Peterson",
+      "lawson_rank": 53,
+      "composite": 11143.0,
+      "w_fpg": 48.93,
+      "w_fpmin": 1.48,
+      "age": 32,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 32,
+          "fpg": 44.64,
+          "gp": 37,
+          "fpmin": 1.272
+        },
+        "2022-23": {
+          "age": 32,
+          "fpg": 51.8,
+          "gp": 49,
+          "fpmin": 1.533
+        },
+        "2023-24": {
+          "age": 32,
+          "fpg": 55.67,
+          "gp": 67,
+          "fpmin": 1.564
+        },
+        "2024-25": {
+          "age": 32,
+          "fpg": 53.48,
+          "gp": 44,
+          "fpmin": 1.573
+        },
+        "2025-26": {
+          "age": 32,
+          "fpg": 43.5,
+          "gp": 20,
+          "fpmin": 1.39
+        }
+      }
+    },
+    {
+      "player": "Jaren Jackson",
+      "owner": "Zujewski",
+      "lawson_rank": 56,
+      "composite": 11044.0,
+      "w_fpg": 36.85,
+      "w_fpmin": 1.213,
+      "age": 26,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 29.98,
+          "gp": 74,
+          "fpmin": 1.098
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 40.18,
+          "gp": 57,
+          "fpmin": 1.425
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 37.24,
+          "gp": 62,
+          "fpmin": 1.16
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 39.88,
+          "gp": 64,
+          "fpmin": 1.352
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 34.88,
+          "gp": 48,
+          "fpmin": 1.151
+        }
+      }
+    },
+    {
+      "player": "Derrick White",
+      "owner": "Jowkar",
+      "lawson_rank": 82,
+      "composite": 11038.0,
+      "w_fpg": 37.87,
+      "w_fpmin": 1.12,
+      "age": 31,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 31,
+          "fpg": 26.96,
+          "gp": 68,
+          "fpmin": 0.92
+        },
+        "2022-23": {
+          "age": 31,
+          "fpg": 29.07,
+          "gp": 75,
+          "fpmin": 1.024
+        },
+        "2023-24": {
+          "age": 31,
+          "fpg": 37.76,
+          "gp": 66,
+          "fpmin": 1.158
+        },
+        "2024-25": {
+          "age": 31,
+          "fpg": 36.44,
+          "gp": 68,
+          "fpmin": 1.078
+        },
+        "2025-26": {
+          "age": 31,
+          "fpg": 38.77,
+          "gp": 53,
+          "fpmin": 1.13
+        }
+      }
+    },
+    {
+      "player": "Joel Embiid",
+      "owner": "Moss",
+      "lawson_rank": 76,
+      "composite": 10944.0,
+      "w_fpg": 45.9,
+      "w_fpmin": 1.448,
+      "age": 31,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 31,
+          "fpg": 52.67,
+          "gp": 61,
+          "fpmin": 1.577
+        },
+        "2022-23": {
+          "age": 31,
+          "fpg": 57.34,
+          "gp": 61,
+          "fpmin": 1.652
+        },
+        "2023-24": {
+          "age": 31,
+          "fpg": 63.5,
+          "gp": 34,
+          "fpmin": 1.868
+        },
+        "2024-25": {
+          "age": 31,
+          "fpg": 39.42,
+          "gp": 19,
+          "fpmin": 1.305
+        },
+        "2025-26": {
+          "age": 31,
+          "fpg": 42.74,
+          "gp": 31,
+          "fpmin": 1.365
+        }
+      }
+    },
+    {
+      "player": "Jarrett Allen",
+      "owner": "Zujewski",
+      "lawson_rank": 101,
+      "composite": 10747.0,
+      "w_fpg": 34.73,
+      "w_fpmin": 1.214,
+      "age": 27,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 27,
+          "fpg": 34.62,
+          "gp": 56,
+          "fpmin": 1.072
+        },
+        "2022-23": {
+          "age": 27,
+          "fpg": 35.05,
+          "gp": 65,
+          "fpmin": 1.062
+        },
+        "2023-24": {
+          "age": 27,
+          "fpg": 38.03,
+          "gp": 67,
+          "fpmin": 1.2
+        },
+        "2024-25": {
+          "age": 27,
+          "fpg": 35.03,
+          "gp": 71,
+          "fpmin": 1.225
+        },
+        "2025-26": {
+          "age": 27,
+          "fpg": 33.22,
+          "gp": 45,
+          "fpmin": 1.212
+        }
+      }
+    },
+    {
+      "player": "Evan Mobley",
+      "owner": "Green",
+      "lawson_rank": 18,
+      "composite": 10727.0,
+      "w_fpg": 40.81,
+      "w_fpmin": 1.289,
+      "age": 24,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 24,
+          "fpg": 32.26,
+          "gp": 66,
+          "fpmin": 0.941
+        },
+        "2022-23": {
+          "age": 24,
+          "fpg": 36.11,
+          "gp": 74,
+          "fpmin": 1.05
+        },
+        "2023-24": {
+          "age": 24,
+          "fpg": 38.6,
+          "gp": 40,
+          "fpmin": 1.257
+        },
+        "2024-25": {
+          "age": 24,
+          "fpg": 41.3,
+          "gp": 63,
+          "fpmin": 1.368
+        },
+        "2025-26": {
+          "age": 24,
+          "fpg": 41.4,
+          "gp": 43,
+          "fpmin": 1.255
+        }
+      }
+    },
+    {
+      "player": "Rudy Gobert",
+      "owner": "Moss",
+      "lawson_rank": 137,
+      "composite": 10717.0,
+      "w_fpg": 33.76,
+      "w_fpmin": 1.046,
+      "age": 33,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 33,
+          "fpg": 39.0,
+          "gp": 59,
+          "fpmin": 1.219
+        },
+        "2022-23": {
+          "age": 33,
+          "fpg": 33.71,
+          "gp": 63,
+          "fpmin": 1.098
+        },
+        "2023-24": {
+          "age": 33,
+          "fpg": 37.51,
+          "gp": 65,
+          "fpmin": 1.103
+        },
+        "2024-25": {
+          "age": 33,
+          "fpg": 32.19,
+          "gp": 63,
+          "fpmin": 0.984
+        },
+        "2025-26": {
+          "age": 33,
+          "fpg": 33.2,
+          "gp": 55,
+          "fpmin": 1.061
+        }
+      }
+    },
+    {
+      "player": "Cade Cunningham",
+      "owner": "Green",
+      "lawson_rank": 5,
+      "composite": 10387.0,
+      "w_fpg": 48.32,
+      "w_fpmin": 1.39,
+      "age": 24,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 24,
+          "fpg": 32.77,
+          "gp": 59,
+          "fpmin": 0.999
+        },
+        "2022-23": {
+          "age": 24,
+          "fpg": 34.92,
+          "gp": 12,
+          "fpmin": 1.049
+        },
+        "2023-24": {
+          "age": 24,
+          "fpg": 38.9,
+          "gp": 59,
+          "fpmin": 1.161
+        },
+        "2024-25": {
+          "age": 24,
+          "fpg": 48.27,
+          "gp": 66,
+          "fpmin": 1.371
+        },
+        "2025-26": {
+          "age": 24,
+          "fpg": 52.12,
+          "gp": 49,
+          "fpmin": 1.493
+        }
+      }
+    },
+    {
+      "player": "Russell Westbrook",
+      "owner": "Gold",
+      "lawson_rank": 362,
+      "composite": 10143.0,
+      "w_fpg": 30.32,
+      "w_fpmin": 1.108,
+      "age": 37,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 37,
+          "fpg": 36.91,
+          "gp": 73,
+          "fpmin": 1.073
+        },
+        "2022-23": {
+          "age": 37,
+          "fpg": 32.73,
+          "gp": 66,
+          "fpmin": 1.133
+        },
+        "2023-24": {
+          "age": 37,
+          "fpg": 25.8,
+          "gp": 59,
+          "fpmin": 1.142
+        },
+        "2024-25": {
+          "age": 37,
+          "fpg": 31.21,
+          "gp": 66,
+          "fpmin": 1.111
+        },
+        "2025-26": {
+          "age": 37,
+          "fpg": 31.59,
+          "gp": 54,
+          "fpmin": 1.093
+        }
+      }
+    },
+    {
+      "player": "CJ McCollum",
+      "owner": "Moss",
+      "lawson_rank": 231,
+      "composite": 10141.0,
+      "w_fpg": 33.16,
+      "w_fpmin": 1.064,
+      "age": 34,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 34,
+          "fpg": 36.68,
+          "gp": 55,
+          "fpmin": 1.042
+        },
+        "2022-23": {
+          "age": 34,
+          "fpg": 37.84,
+          "gp": 67,
+          "fpmin": 1.078
+        },
+        "2023-24": {
+          "age": 34,
+          "fpg": 36.69,
+          "gp": 55,
+          "fpmin": 1.165
+        },
+        "2024-25": {
+          "age": 34,
+          "fpg": 34.41,
+          "gp": 56,
+          "fpmin": 1.052
+        },
+        "2025-26": {
+          "age": 34,
+          "fpg": 31.0,
+          "gp": 53,
+          "fpmin": 1.03
+        }
+      }
+    },
+    {
+      "player": "Dejounte Murray",
+      "owner": "Peterson",
+      "lawson_rank": 91,
+      "composite": 9953.0,
+      "w_fpg": 40.95,
+      "w_fpmin": 1.176,
+      "age": 29,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 29,
+          "fpg": 47.39,
+          "gp": 65,
+          "fpmin": 1.366
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 40.72,
+          "gp": 68,
+          "fpmin": 1.119
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 42.56,
+          "gp": 68,
+          "fpmin": 1.202
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 39.03,
+          "gp": 31,
+          "fpmin": 1.197
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 0.0,
+          "gp": 0,
+          "fpmin": null
+        }
+      }
+    },
+    {
+      "player": "Josh Giddey",
+      "owner": "Delaney",
+      "lawson_rank": 26,
+      "composite": 9944.0,
+      "w_fpg": 37.48,
+      "w_fpmin": 1.256,
+      "age": 23,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 23,
+          "fpg": 31.27,
+          "gp": 54,
+          "fpmin": 0.993
+        },
+        "2022-23": {
+          "age": 23,
+          "fpg": 35.63,
+          "gp": 70,
+          "fpmin": 1.153
+        },
+        "2023-24": {
+          "age": 23,
+          "fpg": 27.49,
+          "gp": 69,
+          "fpmin": 1.117
+        },
+        "2024-25": {
+          "age": 23,
+          "fpg": 37.73,
+          "gp": 63,
+          "fpmin": 1.262
+        },
+        "2025-26": {
+          "age": 23,
+          "fpg": 41.33,
+          "gp": 36,
+          "fpmin": 1.308
+        }
+      }
+    },
+    {
+      "player": "Desmond Bane",
+      "owner": "Trager",
+      "lawson_rank": 70,
+      "composite": 9940.0,
+      "w_fpg": 37.31,
+      "w_fpmin": 1.121,
+      "age": 27,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 27,
+          "fpg": 29.58,
+          "gp": 71,
+          "fpmin": 0.986
+        },
+        "2022-23": {
+          "age": 27,
+          "fpg": 37.42,
+          "gp": 52,
+          "fpmin": 1.199
+        },
+        "2023-24": {
+          "age": 27,
+          "fpg": 40.9,
+          "gp": 41,
+          "fpmin": 1.196
+        },
+        "2024-25": {
+          "age": 27,
+          "fpg": 38.93,
+          "gp": 59,
+          "fpmin": 1.228
+        },
+        "2025-26": {
+          "age": 27,
+          "fpg": 34.91,
+          "gp": 55,
+          "fpmin": 1.027
+        }
+      }
+    },
+    {
+      "player": "Darius Garland",
+      "owner": "Delaney",
+      "lawson_rank": 49,
+      "composite": 9890.0,
+      "w_fpg": 34.7,
+      "w_fpmin": 1.12,
+      "age": 26,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 37.39,
+          "gp": 60,
+          "fpmin": 1.044
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 40.45,
+          "gp": 65,
+          "fpmin": 1.149
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 33.17,
+          "gp": 48,
+          "fpmin": 0.999
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 39.0,
+          "gp": 66,
+          "fpmin": 1.279
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 32.73,
+          "gp": 26,
+          "fpmin": 1.073
+        }
+      }
+    },
+    {
+      "player": "Jimmy Butler",
+      "owner": "Berke",
+      "lawson_rank": 138,
+      "composite": 9807.0,
+      "w_fpg": 38.42,
+      "w_fpmin": 1.208,
+      "age": 36,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 36,
+          "fpg": 39.35,
+          "gp": 52,
+          "fpmin": 1.168
+        },
+        "2022-23": {
+          "age": 36,
+          "fpg": 44.72,
+          "gp": 60,
+          "fpmin": 1.339
+        },
+        "2023-24": {
+          "age": 36,
+          "fpg": 39.84,
+          "gp": 50,
+          "fpmin": 1.168
+        },
+        "2024-25": {
+          "age": 36,
+          "fpg": 36.41,
+          "gp": 44,
+          "fpmin": 1.156
+        },
+        "2025-26": {
+          "age": 36,
+          "fpg": 39.05,
+          "gp": 38,
+          "fpmin": 1.256
+        }
+      }
+    },
+    {
+      "player": "Jamal Murray",
+      "owner": "Trager",
+      "lawson_rank": 30,
+      "composite": 9688.0,
+      "w_fpg": 45.0,
+      "w_fpmin": 1.286,
+      "age": 28,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 0.0,
+          "gp": 0,
+          "fpmin": null
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 37.38,
+          "gp": 60,
+          "fpmin": 1.133
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 41.48,
+          "gp": 54,
+          "fpmin": 1.292
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 42.34,
+          "gp": 64,
+          "fpmin": 1.166
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 48.0,
+          "gp": 52,
+          "fpmin": 1.356
+        }
+      }
+    },
+    {
+      "player": "Franz Wagner",
+      "owner": "Zujewski",
+      "lawson_rank": 28,
+      "composite": 9637.0,
+      "w_fpg": 37.36,
+      "w_fpmin": 1.147,
+      "age": 24,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 24,
+          "fpg": 26.79,
+          "gp": 75,
+          "fpmin": 0.85
+        },
+        "2022-23": {
+          "age": 24,
+          "fpg": 30.92,
+          "gp": 74,
+          "fpmin": 0.937
+        },
+        "2023-24": {
+          "age": 24,
+          "fpg": 34.84,
+          "gp": 63,
+          "fpmin": 1.065
+        },
+        "2024-25": {
+          "age": 24,
+          "fpg": 41.0,
+          "gp": 52,
+          "fpmin": 1.217
+        },
+        "2025-26": {
+          "age": 24,
+          "fpg": 36.18,
+          "gp": 28,
+          "fpmin": 1.138
+        }
+      }
+    },
+    {
+      "player": "Josh Hart",
+      "owner": "Berke",
+      "lawson_rank": 98,
+      "composite": 9561.0,
+      "w_fpg": 33.3,
+      "w_fpmin": 1.008,
+      "age": 30,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 30,
+          "fpg": 30.78,
+          "gp": 54,
+          "fpmin": 0.927
+        },
+        "2022-23": {
+          "age": 30,
+          "fpg": 28.51,
+          "gp": 69,
+          "fpmin": 0.875
+        },
+        "2023-24": {
+          "age": 30,
+          "fpg": 26.1,
+          "gp": 70,
+          "fpmin": 0.798
+        },
+        "2024-25": {
+          "age": 30,
+          "fpg": 39.43,
+          "gp": 67,
+          "fpmin": 1.046
+        },
+        "2025-26": {
+          "age": 30,
+          "fpg": 32.51,
+          "gp": 45,
+          "fpmin": 1.069
+        }
+      }
+    },
+    {
+      "player": "Damian Lillard",
+      "owner": "Peterson",
+      "lawson_rank": 135,
+      "composite": 9546.0,
+      "w_fpg": 46.01,
+      "w_fpmin": 1.286,
+      "age": 35,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 35,
+          "fpg": 39.17,
+          "gp": 29,
+          "fpmin": 1.076
+        },
+        "2022-23": {
+          "age": 35,
+          "fpg": 51.53,
+          "gp": 58,
+          "fpmin": 1.42
+        },
+        "2023-24": {
+          "age": 35,
+          "fpg": 42.79,
+          "gp": 66,
+          "fpmin": 1.219
+        },
+        "2024-25": {
+          "age": 35,
+          "fpg": 44.78,
+          "gp": 58,
+          "fpmin": 1.24
+        },
+        "2025-26": {
+          "age": 35,
+          "fpg": 0.0,
+          "gp": 0,
+          "fpmin": null
+        }
+      }
+    },
+    {
+      "player": "Myles Turner",
+      "owner": "Moss",
+      "lawson_rank": 119,
+      "composite": 9514.0,
+      "w_fpg": 31.52,
+      "w_fpmin": 1.091,
+      "age": 29,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 29,
+          "fpg": 28.93,
+          "gp": 42,
+          "fpmin": 0.984
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 38.05,
+          "gp": 62,
+          "fpmin": 1.294
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 34.17,
+          "gp": 69,
+          "fpmin": 1.252
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 33.73,
+          "gp": 63,
+          "fpmin": 1.102
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 29.14,
+          "gp": 50,
+          "fpmin": 1.019
+        }
+      }
+    },
+    {
+      "player": "Fred VanVleet",
+      "owner": "Peterson",
+      "lawson_rank": 132,
+      "composite": 9465.0,
+      "w_fpg": 39.88,
+      "w_fpmin": 1.098,
+      "age": 31,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 31,
+          "fpg": 37.92,
+          "gp": 60,
+          "fpmin": 1.001
+        },
+        "2022-23": {
+          "age": 31,
+          "fpg": 42.57,
+          "gp": 63,
+          "fpmin": 1.154
+        },
+        "2023-24": {
+          "age": 31,
+          "fpg": 42.05,
+          "gp": 64,
+          "fpmin": 1.152
+        },
+        "2024-25": {
+          "age": 31,
+          "fpg": 34.28,
+          "gp": 53,
+          "fpmin": 0.971
+        },
+        "2025-26": {
+          "age": 31,
+          "fpg": 0.0,
+          "gp": 0,
+          "fpmin": null
+        }
+      }
+    },
+    {
+      "player": "Ivica Zubac",
+      "owner": "Trager",
+      "lawson_rank": 50,
+      "composite": 9377.0,
+      "w_fpg": 33.8,
+      "w_fpmin": 1.105,
+      "age": 28,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 24.44,
+          "gp": 69,
+          "fpmin": 1.002
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 27.06,
+          "gp": 69,
+          "fpmin": 0.94
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 28.39,
+          "gp": 59,
+          "fpmin": 1.084
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 40.04,
+          "gp": 69,
+          "fpmin": 1.224
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 32.23,
+          "gp": 43,
+          "fpmin": 1.043
+        }
+      }
+    },
+    {
+      "player": "Tobias Harris",
+      "owner": "Peterson",
+      "lawson_rank": 183,
+      "composite": 9355.0,
+      "w_fpg": 28.48,
+      "w_fpmin": 0.932,
+      "age": 33,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 33,
+          "fpg": 32.0,
+          "gp": 65,
+          "fpmin": 0.914
+        },
+        "2022-23": {
+          "age": 33,
+          "fpg": 30.97,
+          "gp": 69,
+          "fpmin": 0.933
+        },
+        "2023-24": {
+          "age": 33,
+          "fpg": 33.79,
+          "gp": 63,
+          "fpmin": 0.997
+        },
+        "2024-25": {
+          "age": 33,
+          "fpg": 29.47,
+          "gp": 68,
+          "fpmin": 0.915
+        },
+        "2025-26": {
+          "age": 33,
+          "fpg": 25.77,
+          "gp": 39,
+          "fpmin": 0.917
+        }
+      }
+    },
+    {
+      "player": "Lauri Markkanen",
+      "owner": "Peterson",
+      "lawson_rank": 39,
+      "composite": 9297.0,
+      "w_fpg": 37.96,
+      "w_fpmin": 1.139,
+      "age": 28,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 25.53,
+          "gp": 53,
+          "fpmin": 0.818
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 41.52,
+          "gp": 64,
+          "fpmin": 1.207
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 40.24,
+          "gp": 54,
+          "fpmin": 1.223
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 29.47,
+          "gp": 47,
+          "fpmin": 0.939
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 42.15,
+          "gp": 41,
+          "fpmin": 1.225
+        }
+      }
+    },
+    {
+      "player": "Kyle Kuzma",
+      "owner": "Zujewski",
+      "lawson_rank": 239,
+      "composite": 9258.0,
+      "w_fpg": 25.97,
+      "w_fpmin": 0.896,
+      "age": 30,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 30,
+          "fpg": 33.48,
+          "gp": 66,
+          "fpmin": 1.002
+        },
+        "2022-23": {
+          "age": 30,
+          "fpg": 33.69,
+          "gp": 64,
+          "fpmin": 0.963
+        },
+        "2023-24": {
+          "age": 30,
+          "fpg": 36.94,
+          "gp": 67,
+          "fpmin": 1.144
+        },
+        "2024-25": {
+          "age": 30,
+          "fpg": 22.28,
+          "gp": 54,
+          "fpmin": 0.745
+        },
+        "2025-26": {
+          "age": 30,
+          "fpg": 23.8,
+          "gp": 51,
+          "fpmin": 0.888
+        }
+      }
+    },
+    {
+      "player": "Zach LaVine",
+      "owner": "Berke",
+      "lawson_rank": 139,
+      "composite": 9243.0,
+      "w_fpg": 31.91,
+      "w_fpmin": 0.959,
+      "age": 30,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 30,
+          "fpg": 36.85,
+          "gp": 61,
+          "fpmin": 1.059
+        },
+        "2022-23": {
+          "age": 30,
+          "fpg": 38.8,
+          "gp": 70,
+          "fpmin": 1.069
+        },
+        "2023-24": {
+          "age": 30,
+          "fpg": 33.24,
+          "gp": 25,
+          "fpmin": 0.952
+        },
+        "2024-25": {
+          "age": 30,
+          "fpg": 37.32,
+          "gp": 63,
+          "fpmin": 1.069
+        },
+        "2025-26": {
+          "age": 30,
+          "fpg": 28.13,
+          "gp": 39,
+          "fpmin": 0.896
+        }
+      }
+    },
+    {
+      "player": "LaMelo Ball",
+      "owner": "Jowkar",
+      "lawson_rank": 40,
+      "composite": 9095.0,
+      "w_fpg": 40.5,
+      "w_fpmin": 1.35,
+      "age": 24,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 24,
+          "fpg": 40.39,
+          "gp": 68,
+          "fpmin": 1.25
+        },
+        "2022-23": {
+          "age": 24,
+          "fpg": 45.61,
+          "gp": 36,
+          "fpmin": 1.296
+        },
+        "2023-24": {
+          "age": 24,
+          "fpg": 45.45,
+          "gp": 22,
+          "fpmin": 1.407
+        },
+        "2024-25": {
+          "age": 24,
+          "fpg": 42.39,
+          "gp": 46,
+          "fpmin": 1.321
+        },
+        "2025-26": {
+          "age": 24,
+          "fpg": 37.38,
+          "gp": 47,
+          "fpmin": 1.345
+        }
+      }
+    },
+    {
+      "player": "Nicolas Claxton",
+      "owner": "Zujewski",
+      "lawson_rank": 106,
+      "composite": 9077.0,
+      "w_fpg": 32.25,
+      "w_fpmin": 1.118,
+      "age": 26,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 19.49,
+          "gp": 40,
+          "fpmin": 0.951
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 37.63,
+          "gp": 70,
+          "fpmin": 1.271
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 35.37,
+          "gp": 62,
+          "fpmin": 1.191
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 28.87,
+          "gp": 63,
+          "fpmin": 1.054
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 33.04,
+          "gp": 50,
+          "fpmin": 1.128
+        }
+      }
+    },
+    {
+      "player": "Jrue Holiday",
+      "owner": "Berke",
+      "lawson_rank": 170,
+      "composite": 9033.0,
+      "w_fpg": 31.55,
+      "w_fpmin": 1.063,
+      "age": 35,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 35,
+          "fpg": 35.58,
+          "gp": 60,
+          "fpmin": 1.075
+        },
+        "2022-23": {
+          "age": 35,
+          "fpg": 40.08,
+          "gp": 62,
+          "fpmin": 1.226
+        },
+        "2023-24": {
+          "age": 35,
+          "fpg": 32.64,
+          "gp": 61,
+          "fpmin": 0.986
+        },
+        "2024-25": {
+          "age": 35,
+          "fpg": 26.73,
+          "gp": 55,
+          "fpmin": 0.876
+        },
+        "2025-26": {
+          "age": 35,
+          "fpg": 34.0,
+          "gp": 28,
+          "fpmin": 1.206
+        }
+      }
+    },
+    {
+      "player": "Deni Avdija",
+      "owner": "Jowkar",
+      "lawson_rank": 17,
+      "composite": 8976.0,
+      "w_fpg": 36.48,
+      "w_fpmin": 1.141,
+      "age": 25,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 25,
+          "fpg": 18.74,
+          "gp": 74,
+          "fpmin": 0.791
+        },
+        "2022-23": {
+          "age": 25,
+          "fpg": 22.14,
+          "gp": 73,
+          "fpmin": 0.842
+        },
+        "2023-24": {
+          "age": 25,
+          "fpg": 29.88,
+          "gp": 65,
+          "fpmin": 1.023
+        },
+        "2024-25": {
+          "age": 25,
+          "fpg": 30.77,
+          "gp": 66,
+          "fpmin": 1.047
+        },
+        "2025-26": {
+          "age": 25,
+          "fpg": 42.55,
+          "gp": 47,
+          "fpmin": 1.244
+        }
+      }
+    },
+    {
+      "player": "Jordan Poole",
+      "owner": "Baden",
+      "lawson_rank": 191,
+      "composite": 8821.0,
+      "w_fpg": 26.77,
+      "w_fpmin": 0.964,
+      "age": 26,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 27.34,
+          "gp": 69,
+          "fpmin": 0.921
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 29.79,
+          "gp": 76,
+          "fpmin": 0.977
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 27.57,
+          "gp": 70,
+          "fpmin": 0.941
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 34.07,
+          "gp": 61,
+          "fpmin": 1.132
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 22.07,
+          "gp": 30,
+          "fpmin": 0.872
+        }
+      }
+    },
+    {
+      "player": "Miles Bridges",
+      "owner": "Peterson",
+      "lawson_rank": 115,
+      "composite": 8730.0,
+      "w_fpg": 34.95,
+      "w_fpmin": 1.051,
+      "age": 27,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 27,
+          "fpg": 36.44,
+          "gp": 73,
+          "fpmin": 1.015
+        },
+        "2022-23": {
+          "age": 27,
+          "fpg": 0.0,
+          "gp": 0,
+          "fpmin": null
+        },
+        "2023-24": {
+          "age": 27,
+          "fpg": 37.4,
+          "gp": 60,
+          "fpmin": 0.995
+        },
+        "2024-25": {
+          "age": 27,
+          "fpg": 37.75,
+          "gp": 56,
+          "fpmin": 1.169
+        },
+        "2025-26": {
+          "age": 27,
+          "fpg": 32.3,
+          "gp": 53,
+          "fpmin": 1.003
+        }
+      }
+    },
+    {
+      "player": "DAngelo Russell",
+      "owner": "Jowkar",
+      "lawson_rank": 319,
+      "composite": 8616.0,
+      "w_fpg": 24.36,
+      "w_fpmin": 1.012,
+      "age": 29,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 30,
+          "fpg": 32.95,
+          "gp": 61,
+          "fpmin": 1.03
+        },
+        "2022-23": {
+          "age": 29,
+          "fpg": 35.45,
+          "gp": 65,
+          "fpmin": 1.091
+        },
+        "2023-24": {
+          "age": 29,
+          "fpg": 36.46,
+          "gp": 65,
+          "fpmin": 1.136
+        },
+        "2024-25": {
+          "age": 29,
+          "fpg": 27.2,
+          "gp": 54,
+          "fpmin": 1.054
+        },
+        "2025-26": {
+          "age": 29,
+          "fpg": 17.81,
+          "gp": 26,
+          "fpmin": 0.937
+        }
+      }
+    },
+    {
+      "player": "Keldon Johnson",
+      "owner": "Delaney",
+      "lawson_rank": 194,
+      "composite": 8557.0,
+      "w_fpg": 24.69,
+      "w_fpmin": 0.993,
+      "age": 26,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 27.59,
+          "gp": 68,
+          "fpmin": 0.87
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 31.3,
+          "gp": 61,
+          "fpmin": 0.954
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 28.31,
+          "gp": 67,
+          "fpmin": 0.96
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 22.27,
+          "gp": 67,
+          "fpmin": 0.94
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 24.7,
+          "gp": 56,
+          "fpmin": 1.038
+        }
+      }
+    },
+    {
+      "player": "Anfernee Simons",
+      "owner": "Zujewski",
+      "lawson_rank": 169,
+      "composite": 8480.0,
+      "w_fpg": 27.92,
+      "w_fpmin": 0.952,
+      "age": 26,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 25.71,
+          "gp": 57,
+          "fpmin": 0.872
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 32.63,
+          "gp": 62,
+          "fpmin": 0.932
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 34.78,
+          "gp": 46,
+          "fpmin": 1.011
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 31.94,
+          "gp": 67,
+          "fpmin": 0.977
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 22.76,
+          "gp": 55,
+          "fpmin": 0.914
+        }
+      }
+    },
+    {
+      "player": "Tyler Herro",
+      "owner": "Moss",
+      "lawson_rank": 60,
+      "composite": 8470.0,
+      "w_fpg": 36.99,
+      "w_fpmin": 1.137,
+      "age": 26,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 31.59,
+          "gp": 60,
+          "fpmin": 0.969
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 34.49,
+          "gp": 61,
+          "fpmin": 0.977
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 34.78,
+          "gp": 36,
+          "fpmin": 1.035
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 40.5,
+          "gp": 68,
+          "fpmin": 1.138
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 35.77,
+          "gp": 13,
+          "fpmin": 1.177
+        }
+      }
+    },
+    {
+      "player": "Naz Reid",
+      "owner": "Zujewski",
+      "lawson_rank": 107,
+      "composite": 8453.0,
+      "w_fpg": 30.14,
+      "w_fpmin": 1.149,
+      "age": 26,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 26,
+          "fpg": 16.49,
+          "gp": 71,
+          "fpmin": 1.044
+        },
+        "2022-23": {
+          "age": 26,
+          "fpg": 22.47,
+          "gp": 66,
+          "fpmin": 1.228
+        },
+        "2023-24": {
+          "age": 26,
+          "fpg": 25.67,
+          "gp": 70,
+          "fpmin": 1.088
+        },
+        "2024-25": {
+          "age": 26,
+          "fpg": 30.46,
+          "gp": 72,
+          "fpmin": 1.092
+        },
+        "2025-26": {
+          "age": 26,
+          "fpg": 31.74,
+          "gp": 57,
+          "fpmin": 1.207
+        }
+      }
+    },
+    {
+      "player": "Paul George",
+      "owner": "Jowkar",
+      "lawson_rank": 140,
+      "composite": 8420.0,
+      "w_fpg": 35.09,
+      "w_fpmin": 1.101,
+      "age": 35,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 35,
+          "fpg": 42.39,
+          "gp": 26,
+          "fpmin": 1.194
+        },
+        "2022-23": {
+          "age": 35,
+          "fpg": 41.86,
+          "gp": 56,
+          "fpmin": 1.21
+        },
+        "2023-24": {
+          "age": 35,
+          "fpg": 41.12,
+          "gp": 65,
+          "fpmin": 1.206
+        },
+        "2024-25": {
+          "age": 35,
+          "fpg": 34.29,
+          "gp": 41,
+          "fpmin": 1.055
+        },
+        "2025-26": {
+          "age": 35,
+          "fpg": 33.15,
+          "gp": 27,
+          "fpmin": 1.087
+        }
+      }
+    },
+    {
+      "player": "Jakob Poeltl",
+      "owner": "Moss",
+      "lawson_rank": 118,
+      "composite": 8385.0,
+      "w_fpg": 29.34,
+      "w_fpmin": 1.095,
+      "age": 30,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 30,
+          "fpg": 32.54,
+          "gp": 62,
+          "fpmin": 1.118
+        },
+        "2022-23": {
+          "age": 30,
+          "fpg": 34.11,
+          "gp": 65,
+          "fpmin": 1.273
+        },
+        "2023-24": {
+          "age": 30,
+          "fpg": 31.96,
+          "gp": 50,
+          "fpmin": 1.211
+        },
+        "2024-25": {
+          "age": 30,
+          "fpg": 37.22,
+          "gp": 54,
+          "fpmin": 1.253
+        },
+        "2025-26": {
+          "age": 30,
+          "fpg": 23.57,
+          "gp": 23,
+          "fpmin": 0.954
+        }
+      }
+    },
+    {
+      "player": "Brandon Ingram",
+      "owner": "Berke",
+      "lawson_rank": 80,
+      "composite": 8376.0,
+      "w_fpg": 37.09,
+      "w_fpmin": 1.106,
+      "age": 28,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 37.8,
+          "gp": 51,
+          "fpmin": 1.109
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 37.73,
+          "gp": 37,
+          "fpmin": 1.136
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 38.19,
+          "gp": 63,
+          "fpmin": 1.157
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 37.11,
+          "gp": 18,
+          "fpmin": 1.121
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 36.63,
+          "gp": 54,
+          "fpmin": 1.077
+        }
+      }
+    },
+    {
+      "player": "RJ Barrett",
+      "owner": "Green",
+      "lawson_rank": 111,
+      "composite": 8353.0,
+      "w_fpg": 32.75,
+      "w_fpmin": 1.062,
+      "age": 25,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 25,
+          "fpg": 31.19,
+          "gp": 64,
+          "fpmin": 0.904
+        },
+        "2022-23": {
+          "age": 25,
+          "fpg": 26.44,
+          "gp": 68,
+          "fpmin": 0.778
+        },
+        "2023-24": {
+          "age": 25,
+          "fpg": 30.74,
+          "gp": 53,
+          "fpmin": 0.973
+        },
+        "2024-25": {
+          "age": 25,
+          "fpg": 36.32,
+          "gp": 53,
+          "fpmin": 1.104
+        },
+        "2025-26": {
+          "age": 25,
+          "fpg": 31.41,
+          "gp": 32,
+          "fpmin": 1.072
+        }
+      }
+    },
+    {
+      "player": "Malik Monk",
+      "owner": "Zujewski",
+      "lawson_rank": 155,
+      "composite": 8349.0,
+      "w_fpg": 27.51,
+      "w_fpmin": 1.04,
+      "age": 28,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 22.26,
+          "gp": 68,
+          "fpmin": 0.804
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 23.96,
+          "gp": 71,
+          "fpmin": 1.074
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 29.84,
+          "gp": 70,
+          "fpmin": 1.135
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 35.67,
+          "gp": 58,
+          "fpmin": 1.088
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 21.69,
+          "gp": 45,
+          "fpmin": 0.973
+        }
+      }
+    },
+    {
+      "player": "Kristaps Porzingis",
+      "owner": "Trager",
+      "lawson_rank": 154,
+      "composite": 8313.0,
+      "w_fpg": 35.56,
+      "w_fpmin": 1.341,
+      "age": 30,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 30,
+          "fpg": 36.12,
+          "gp": 45,
+          "fpmin": 1.241
+        },
+        "2022-23": {
+          "age": 30,
+          "fpg": 43.02,
+          "gp": 64,
+          "fpmin": 1.32
+        },
+        "2023-24": {
+          "age": 30,
+          "fpg": 39.24,
+          "gp": 50,
+          "fpmin": 1.326
+        },
+        "2024-25": {
+          "age": 30,
+          "fpg": 38.67,
+          "gp": 36,
+          "fpmin": 1.338
+        },
+        "2025-26": {
+          "age": 30,
+          "fpg": 32.22,
+          "gp": 18,
+          "fpmin": 1.348
+        }
+      }
+    },
+    {
+      "player": "Deandre Ayton",
+      "owner": "Zujewski",
+      "lawson_rank": 116,
+      "composite": 8307.0,
+      "w_fpg": 31.54,
+      "w_fpmin": 1.065,
+      "age": 27,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 27,
+          "fpg": 33.22,
+          "gp": 54,
+          "fpmin": 1.126
+        },
+        "2022-23": {
+          "age": 27,
+          "fpg": 35.56,
+          "gp": 61,
+          "fpmin": 1.17
+        },
+        "2023-24": {
+          "age": 27,
+          "fpg": 35.3,
+          "gp": 47,
+          "fpmin": 1.093
+        },
+        "2024-25": {
+          "age": 27,
+          "fpg": 32.5,
+          "gp": 40,
+          "fpmin": 1.08
+        },
+        "2025-26": {
+          "age": 27,
+          "fpg": 29.47,
+          "gp": 47,
+          "fpmin": 1.045
+        }
+      }
+    },
+    {
+      "player": "John Collins",
+      "owner": "Jowkar",
+      "lawson_rank": 136,
+      "composite": 8240.0,
+      "w_fpg": 29.99,
+      "w_fpmin": 1.043,
+      "age": 28,
+      "trend": "\u2193 Declining",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 30.9,
+          "gp": 54,
+          "fpmin": 1.003
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 27.15,
+          "gp": 65,
+          "fpmin": 0.902
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 29.85,
+          "gp": 66,
+          "fpmin": 1.066
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 35.45,
+          "gp": 40,
+          "fpmin": 1.162
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 26.77,
+          "gp": 53,
+          "fpmin": 0.963
+        }
+      }
+    },
+    {
+      "player": "Jaden McDaniels",
+      "owner": "Green",
+      "lawson_rank": 105,
+      "composite": 8233.0,
+      "w_fpg": 28.54,
+      "w_fpmin": 0.902,
+      "age": 25,
+      "trend": "\u2191 Improving",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 25,
+          "fpg": 18.45,
+          "gp": 67,
+          "fpmin": 0.707
+        },
+        "2022-23": {
+          "age": 25,
+          "fpg": 25.71,
+          "gp": 72,
+          "fpmin": 0.84
+        },
+        "2023-24": {
+          "age": 25,
+          "fpg": 20.46,
+          "gp": 61,
+          "fpmin": 0.698
+        },
+        "2024-25": {
+          "age": 25,
+          "fpg": 30.22,
+          "gp": 73,
+          "fpmin": 0.944
+        },
+        "2025-26": {
+          "age": 25,
+          "fpg": 30.76,
+          "gp": 55,
+          "fpmin": 0.958
+        }
+      }
+    },
+    {
+      "player": "OG Anunoby",
+      "owner": "Moss",
+      "lawson_rank": 86,
+      "composite": 8227.0,
+      "w_fpg": 32.45,
+      "w_fpmin": 0.947,
+      "age": 28,
+      "trend": "\u2192 Stable",
+      "is_rostered": true,
+      "seasons": {
+        "2021-22": {
+          "age": 28,
+          "fpg": 30.45,
+          "gp": 44,
+          "fpmin": 0.839
+        },
+        "2022-23": {
+          "age": 28,
+          "fpg": 33.13,
+          "gp": 61,
+          "fpmin": 0.931
+        },
+        "2023-24": {
+          "age": 28,
+          "fpg": 29.82,
+          "gp": 44,
+          "fpmin": 0.877
+        },
+        "2024-25": {
+          "age": 28,
+          "fpg": 33.41,
+          "gp": 64,
+          "fpmin": 0.913
+        },
+        "2025-26": {
+          "age": 28,
+          "fpg": 32.93,
+          "gp": 43,
+          "fpmin": 0.995
+        }
+      }
+    }
+  ]
+}
