@@ -2,10 +2,9 @@
  * tvot.js — Trade Value Over Time dashboard
  * YK Dynasty Basketball
  *
- * Data source: data/trade_value_over_time.json
- * Structure: { generated, trades: [ {trade_id, season, date, is_multi_party,
- *   receivers, first_winner, last_winner, winner_changed, biggest_swing,
- *   initial_margin, current_margin, eval_results:[{label,season,totals,winner}] }] }
+ * Data sources:
+ *   data/trade_value_over_time.json
+ *   data/trade_details.json  (optional — for asset previews in rows)
  */
 (function () {
   'use strict';
@@ -13,15 +12,31 @@
   document.addEventListener('DOMContentLoaded', async function () {
     const YK = window.YK;
 
-    let data;
+    let data, detailsData;
     try {
-      data = await YK.loadJSON('data/trade_value_over_time.json');
+      var results = await Promise.all([
+        YK.loadJSON('data/trade_value_over_time.json'),
+        YK.loadJSON('data/trade_details.json').catch(function() { return { trades: [] }; }),
+      ]);
+      data        = results[0];
+      detailsData = results[1];
     } catch (e) {
       console.error('Failed to load trade_value_over_time.json:', e);
       document.getElementById('tvot-tbody').innerHTML =
         '<tr><td colspan="8" class="text-center text-muted" style="padding:24px">Failed to load data.</td></tr>';
       return;
     }
+
+    // Build details lookup: trade_id → { owner: [top2AssetNames] }
+    var detailsById = {};
+    ((detailsData && detailsData.trades) || []).forEach(function(t) {
+      var topAssets = {};
+      (t.sides || []).forEach(function(s) {
+        var sorted = (s.assets || []).slice().sort(function(a, b) { return (b.value||0) - (a.value||0); });
+        topAssets[s.owner] = sorted.slice(0, 2).map(function(a) { return a.name; });
+      });
+      detailsById[t.trade_id] = topAssets;
+    });
 
     const trades = data.trades || [];
 
@@ -141,11 +156,16 @@
         var swing       = t.biggest_swing || 0;
         var owners      = (t.receivers || []);
         var isOpen      = expandedIds.has(t.trade_id);
+        var tradeTopAssets = detailsById[t.trade_id] || {};
 
         var ownerDots = owners.map(function(o) {
+          var assetPreview = (tradeTopAssets[o] || []);
+          var previewHtml = assetPreview.length
+            ? '<span class="tvot-asset-preview">(' + assetPreview.map(YK.escapeHtml).join(', ') + ')</span>'
+            : '';
           return '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' +
             YK.ownerColor(o) + ';margin-right:3px;vertical-align:middle"></span>' +
-            YK.ownerDisplayName(o);
+            YK.ownerDisplayName(o) + previewHtml;
         }).join('<span style="color:var(--text-muted);margin:0 4px">vs</span>');
 
         var firstWinColor = YK.ownerColor(firstWinner);
@@ -160,7 +180,7 @@
         var swingStr = swing > 0 ? '+' + swing.toFixed(1) : swing.toFixed(1);
         var rowStyle = isCollusion ? 'opacity:0.6;' : (flippedHere ? 'background:rgba(232,184,75,0.06);' : '');
 
-        return '<tr class="tvot-trade-row" data-id="' + t.trade_id + '" style="cursor:pointer;' + rowStyle + '">' +
+        return '<tr class="tvot-trade-row" id="tvot-row-' + t.trade_id + '" data-id="' + t.trade_id + '" style="cursor:pointer;' + rowStyle + '">' +
           '<td style="font-weight:700;color:var(--text-muted);font-size:0.8rem">#' + t.trade_id + '</td>' +
           '<td style="font-size:0.8rem">' + (t.season || '—') + '</td>' +
           '<td class="trade-owners-cell">' + ownerDots + (t.is_multi_party ? '<span class="multi-badge">3-way</span>' : '') + '</td>' +
@@ -173,7 +193,10 @@
             YK.ownerDisplayName(lastWinner) +
           '</td>' +
           '<td>' + flipBadge + '</td>' +
-          '<td style="text-align:right;font-weight:600">' + swingStr + '</td>' +
+          '<td style="text-align:right;font-weight:600">' +
+            '<span data-tooltip="Largest single-season swing in dynasty value — how much the trade outcome shifted between evaluation periods.">' +
+            swingStr + '</span>' +
+          '</td>' +
           '<td style="text-align:center">' +
             '<button class="expand-btn" data-id="' + t.trade_id + '">' + (isOpen ? '▲' : '▼') + '</button>' +
           '</td>' +
@@ -192,6 +215,22 @@
       var owners   = trade.receivers || [];
       var results  = trade.eval_results || [];
       if (results.length === 0) return '<div style="padding:10px;color:var(--text-muted);font-size:0.8rem">No timeline data available.</div>';
+
+      // ── Color bar ──
+      var colorBarLabels = '<div class="tvot-colorbar-labels">' +
+        results.map(function(r, i) { return '<span>Y' + (i+1) + '</span>'; }).join('') +
+        '</div>';
+      var colorBar = '<div class="tvot-colorbar">' +
+        results.map(function(r, i) {
+          var isFlip = (i > 0 && r.winner !== results[i-1].winner);
+          var tipText = 'Y' + (i+1) + (r.season ? ' (' + r.season + ')' : '') + ': ' + YK.ownerDisplayName(r.winner || '—') + ' leads';
+          return '<div class="tvot-colorbar-seg' + (isFlip ? ' flip-point' : '') + '"' +
+            ' style="background:' + YK.ownerColor(r.winner || '') + '"' +
+            ' title="' + YK.escapeHtml(tipText) + '">' +
+            'Y' + (i+1) +
+            '</div>';
+        }).join('') +
+        '</div>';
 
       // Determine period labels (shortened)
       var periods = results.map(function(r, i) {
@@ -237,6 +276,7 @@
       '</tr>';
 
       return '<div class="tvot-detail-inner">' +
+        colorBarLabels + colorBar +
         '<table class="tvot-timeline-table">' +
           '<thead><tr>' + headers + '</tr></thead>' +
           '<tbody>' + ownerRows + overallRow + '</tbody>' +
@@ -296,5 +336,19 @@
 
     // ── Initial render ──────────────────────────────────────────────────── //
     applyFiltersAndSort();
+
+    // ── Hash deep-link: expand + scroll to a specific trade row ─────────── //
+    var _hash = window.location.hash;
+    if (_hash && _hash.startsWith('#trade-')) {
+      var _tid = parseInt(_hash.slice('#trade-'.length));
+      if (_tid) {
+        expandedIds.add(_tid);
+        applyFiltersAndSort();
+        setTimeout(function() {
+          var el = document.getElementById('tvot-row-' + _tid);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 150);
+      }
+    }
   });
 })();

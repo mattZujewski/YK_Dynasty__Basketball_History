@@ -1,6 +1,2835 @@
 {
-  "generated": "2026-02-23",
+  "generated": "2026-02-24",
   "trades": [
+    {
+      "trade_id": 24,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Trager",
+      "win_margin": 67.18,
+      "sides": [
+        {
+          "owner": "Trager",
+          "side_total": 95.51,
+          "is_winner": true,
+          "win_margin_pct": 0.7034,
+          "assets": [
+            {
+              "name": "Dyson Daniels",
+              "value": 59.09,
+              "fpg": 34.44,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Ryan Kalkbrenner",
+              "value": 36.42,
+              "fpg": 23.96,
+              "age": 24,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Berke",
+          "side_total": 28.33,
+          "is_winner": false,
+          "win_margin_pct": -0.7034,
+          "assets": [
+            {
+              "name": "Mitchell Robinson",
+              "value": 28.33,
+              "fpg": 22.12,
+              "age": 27,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 25,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Berke",
+      "win_margin": 17.76,
+      "sides": [
+        {
+          "owner": "Delaney",
+          "side_total": 66.61,
+          "is_winner": false,
+          "win_margin_pct": -0.2105,
+          "assets": [
+            {
+              "name": "Fred Vanvleet",
+              "value": 39.88,
+              "fpg": 0.0,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Montrezl Harrell",
+              "value": 19.8,
+              "fpg": 0.0,
+              "age": 32,
+              "asset_type": "player"
+            },
+            {
+              "name": "Nikola Topic",
+              "value": 6.93,
+              "fpg": 5.5,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Berke",
+          "side_total": 84.37,
+          "is_winner": true,
+          "win_margin_pct": 0.2105,
+          "assets": [
+            {
+              "name": "Lebron James",
+              "value": 65.92,
+              "fpg": 42.22,
+              "age": 41,
+              "asset_type": "player"
+            },
+            {
+              "name": "Draymond Green",
+              "value": 18.45,
+              "fpg": 24.43,
+              "age": 35,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 26,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Zujewski",
+      "win_margin": 70.98,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 70.22,
+          "is_winner": false,
+          "win_margin_pct": -0.5027,
+          "assets": [
+            {
+              "name": "Pascal Siakam",
+              "value": 43.16,
+              "fpg": 39.45,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Kemba Walker",
+              "value": 12.89,
+              "fpg": null,
+              "age": null,
+              "asset_type": "player"
+            },
+            {
+              "name": "John Wall",
+              "value": 14.17,
+              "fpg": 0.0,
+              "age": 35,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Zujewski",
+          "side_total": 141.2,
+          "is_winner": true,
+          "win_margin_pct": 0.5027,
+          "assets": [
+            {
+              "name": "Saddiq Bey",
+              "value": 40.59,
+              "fpg": 29.94,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Kevin Porter Jr.",
+              "value": 66.7,
+              "fpg": 41.69,
+              "age": 25,
+              "asset_type": "player"
+            },
+            {
+              "name": "Aaron Gordon",
+              "value": 33.91,
+              "fpg": 31.3,
+              "age": 30,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 27,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Gold",
+      "win_margin": 66.57,
+      "sides": [
+        {
+          "owner": "Peterson",
+          "side_total": 69.35,
+          "is_winner": false,
+          "win_margin_pct": -0.5392,
+          "assets": [
+            {
+              "name": "Caris Levert",
+              "value": 21.83,
+              "fpg": 18.66,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Mo Bamba",
+              "value": 10.1,
+              "fpg": 2.0,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "Rob Dillingham",
+              "value": 10.69,
+              "fpg": 8.43,
+              "age": 21,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Bobby Portis",
+              "value": 26.73,
+              "fpg": 25.46,
+              "age": 31,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Zujewski",
+          "side_total": 120.69,
+          "is_winner": false,
+          "win_margin_pct": -0.5392,
+          "assets": [
+            {
+              "name": "Jamal Murray",
+              "value": 101.25,
+              "fpg": 48.0,
+              "age": 28,
+              "asset_type": "player"
+            },
+            {
+              "name": "Chris Duarte",
+              "value": 11.64,
+              "fpg": 0.0,
+              "age": 28,
+              "asset_type": "player"
+            },
+            {
+              "name": "Mason Plumlee",
+              "value": 7.8,
+              "fpg": 7.57,
+              "age": 35,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Gold",
+          "side_total": 123.47,
+          "is_winner": true,
+          "win_margin_pct": 0.5392,
+          "assets": [
+            {
+              "name": "Jerami Grant",
+              "value": 26.11,
+              "fpg": 27.22,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Josh Giddey",
+              "value": 74.96,
+              "fpg": 41.33,
+              "age": 23,
+              "asset_type": "player"
+            },
+            {
+              "name": "Ron Holland",
+              "value": 22.4,
+              "fpg": 18.43,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 28,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 51.92,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 79.69,
+          "is_winner": true,
+          "win_margin_pct": 0.6515,
+          "assets": [
+            {
+              "name": "Terry Rozier",
+              "value": 31.61,
+              "fpg": 0.0,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Bennedict Mathurin",
+              "value": 41.15,
+              "fpg": 27.38,
+              "age": 23,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Nikola Topic",
+              "value": 6.93,
+              "fpg": 5.5,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Delaney",
+          "side_total": 27.77,
+          "is_winner": false,
+          "win_margin_pct": -0.6515,
+          "assets": [
+            {
+              "name": "D'Angelo Russell",
+              "value": 27.77,
+              "fpg": 17.81,
+              "age": 29,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 29,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Vlandis",
+      "win_margin": 117.21,
+      "sides": [
+        {
+          "owner": "Vlandis",
+          "side_total": 195.45,
+          "is_winner": true,
+          "win_margin_pct": 0.5997,
+          "assets": [
+            {
+              "name": "Tyler Herro",
+              "value": 57.98,
+              "fpg": 35.77,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Jaren Jackson Jr.",
+              "value": 55.28,
+              "fpg": 34.88,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Jakob Poeltl",
+              "value": 33.45,
+              "fpg": 23.57,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Bennedict Mathurin",
+              "value": 41.15,
+              "fpg": 27.38,
+              "age": 23,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Kobe Bufkin",
+              "value": 7.59,
+              "fpg": 6.17,
+              "age": 22,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 78.24,
+          "is_winner": false,
+          "win_margin_pct": -0.5997,
+          "assets": [
+            {
+              "name": "Lamelo Ball",
+              "value": 60.59,
+              "fpg": 37.38,
+              "age": 24,
+              "asset_type": "player"
+            },
+            {
+              "name": "Nassir Little",
+              "value": 17.65,
+              "fpg": 0.0,
+              "age": 26,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 30,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 7.75,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 53.4,
+          "is_winner": true,
+          "win_margin_pct": 0.1451,
+          "assets": [
+            {
+              "name": "Caris Levert",
+              "value": 21.83,
+              "fpg": 18.66,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "2026 Jowkar FRP Swap w/Kelvin 2026 FRP (if swap doesn't happen, protection is Kelvin 2026 SRP)",
+              "value": 25.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            },
+            {
+              "name": "Jae Crowder",
+              "value": 6.57,
+              "fpg": 0.0,
+              "age": 35,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Peterson",
+          "side_total": 45.65,
+          "is_winner": false,
+          "win_margin_pct": -0.1451,
+          "assets": [
+            {
+              "name": "Dennis Schroeder",
+              "value": 25.83,
+              "fpg": 24.35,
+              "age": 32,
+              "asset_type": "player"
+            },
+            {
+              "name": "Jordan Clarkson",
+              "value": 19.82,
+              "fpg": 13.53,
+              "age": 33,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 31,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Green",
+      "win_margin": 90.94,
+      "sides": [
+        {
+          "owner": "Green",
+          "side_total": 137.01,
+          "is_winner": true,
+          "win_margin_pct": 0.6637,
+          "assets": [
+            {
+              "name": "Derek Lively II",
+              "value": 27.01,
+              "fpg": 19.29,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Nikola Topic",
+              "value": 6.93,
+              "fpg": 5.5,
+              "age": 20,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Quentin Grimes",
+              "value": 37.04,
+              "fpg": 25.22,
+              "age": 25,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Nassir Little",
+              "value": 17.65,
+              "fpg": 0.0,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Nicolas Claxton",
+              "value": 48.38,
+              "fpg": 33.04,
+              "age": 26,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 46.07,
+          "is_winner": false,
+          "win_margin_pct": -0.6637,
+          "assets": [
+            {
+              "name": "Bradley Beal",
+              "value": 18.17,
+              "fpg": 10.17,
+              "age": 32,
+              "asset_type": "player"
+            },
+            {
+              "name": "Jusuf Nurkic",
+              "value": 27.9,
+              "fpg": 32.54,
+              "age": 31,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 32,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Berke",
+      "win_margin": 35.36,
+      "sides": [
+        {
+          "owner": "Peterson",
+          "side_total": 21.5,
+          "is_winner": false,
+          "win_margin_pct": -0.6219,
+          "assets": [
+            {
+              "name": "Harrison Barnes",
+              "value": 21.5,
+              "fpg": 20.11,
+              "age": 33,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Berke",
+          "side_total": 56.86,
+          "is_winner": true,
+          "win_margin_pct": 0.6219,
+          "assets": [
+            {
+              "name": "Jordan Clarkson",
+              "value": 19.82,
+              "fpg": 13.53,
+              "age": 33,
+              "asset_type": "player"
+            },
+            {
+              "name": "Quentin Grimes",
+              "value": 37.04,
+              "fpg": 25.22,
+              "age": 25,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 33,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 62.9,
+      "sides": [
+        {
+          "owner": "Delaney",
+          "side_total": 13.89,
+          "is_winner": false,
+          "win_margin_pct": -0.8191,
+          "assets": [
+            {
+              "name": "Mike Conley",
+              "value": 13.89,
+              "fpg": 13.5,
+              "age": 38,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Peterson",
+          "side_total": 76.79,
+          "is_winner": true,
+          "win_margin_pct": 0.8191,
+          "assets": [
+            {
+              "name": "Lauri Markkanen",
+              "value": 67.62,
+              "fpg": 42.15,
+              "age": 28,
+              "asset_type": "player"
+            },
+            {
+              "name": "TyTy Washington",
+              "value": 9.17,
+              "fpg": 12.8,
+              "age": 24,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 34,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Zujewski",
+      "win_margin": 9.17,
+      "sides": [
+        {
+          "owner": "Zujewski",
+          "side_total": 80.57,
+          "is_winner": true,
+          "win_margin_pct": 0.1138,
+          "assets": [
+            {
+              "name": "Dillon Brooks",
+              "value": 29.5,
+              "fpg": 29.0,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Isaac Okoro",
+              "value": 28.02,
+              "fpg": 18.6,
+              "age": 25,
+              "asset_type": "player"
+            },
+            {
+              "name": "Luke Kennard",
+              "value": 23.05,
+              "fpg": 18.33,
+              "age": 29,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 71.4,
+          "is_winner": false,
+          "win_margin_pct": -0.1138,
+          "assets": [
+            {
+              "name": "Saddiq Bey",
+              "value": 40.59,
+              "fpg": 29.94,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Andre Drummond",
+              "value": 20.59,
+              "fpg": 21.26,
+              "age": 32,
+              "asset_type": "player"
+            },
+            {
+              "name": "Kelly Olynyk",
+              "value": 10.22,
+              "fpg": 8.03,
+              "age": 34,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 35,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Green",
+      "win_margin": 62.69,
+      "sides": [
+        {
+          "owner": "Vlandis",
+          "side_total": 33.67,
+          "is_winner": false,
+          "win_margin_pct": -0.6506,
+          "assets": [
+            {
+              "name": "Jaden Ivey",
+              "value": 33.67,
+              "fpg": 16.81,
+              "age": 24,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Green",
+          "side_total": 96.36,
+          "is_winner": true,
+          "win_margin_pct": 0.6506,
+          "assets": [
+            {
+              "name": "Jabari Smith Jr",
+              "value": 55.21,
+              "fpg": 30.67,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Bennedict Mathurin",
+              "value": 41.15,
+              "fpg": 27.38,
+              "age": 23,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 36,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 69.38,
+      "sides": [
+        {
+          "owner": "Peterson",
+          "side_total": 192.78,
+          "is_winner": true,
+          "win_margin_pct": 0.3599,
+          "assets": [
+            {
+              "name": "Christian Wood",
+              "value": 33.67,
+              "fpg": 0.0,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Wendall Carter Jr",
+              "value": 40.02,
+              "fpg": 26.68,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Collin Sexton",
+              "value": 37.59,
+              "fpg": 23.47,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "Dyson Daniels",
+              "value": 59.09,
+              "fpg": 34.44,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Lamarcus Aldridge",
+              "value": 22.41,
+              "fpg": null,
+              "age": null,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Trager",
+          "side_total": 107.61,
+          "is_winner": false,
+          "win_margin_pct": -0.3599,
+          "assets": [
+            {
+              "name": "CJ McCollum",
+              "value": 23.21,
+              "fpg": 31.0,
+              "age": 34,
+              "asset_type": "player"
+            },
+            {
+              "name": "Mo Bamba",
+              "value": 10.1,
+              "fpg": 2.0,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "Kevin Huerter",
+              "value": 32.66,
+              "fpg": 22.6,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "TyTy Washington",
+              "value": 9.17,
+              "fpg": 12.8,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Davion Mitchell",
+              "value": 32.47,
+              "fpg": 27.87,
+              "age": 27,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Delaney",
+          "side_total": 15.79,
+          "is_winner": false,
+          "win_margin_pct": -0.3599,
+          "assets": [
+            {
+              "name": "Al Horford",
+              "value": 15.79,
+              "fpg": 22.74,
+              "age": 39,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 37,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Delaney",
+      "win_margin": 22.76,
+      "sides": [
+        {
+          "owner": "Delaney",
+          "side_total": 44.92,
+          "is_winner": true,
+          "win_margin_pct": 0.5067,
+          "assets": [
+            {
+              "name": "Spencer Dinwiddie",
+              "value": 28.28,
+              "fpg": 0.0,
+              "age": 32,
+              "asset_type": "player"
+            },
+            {
+              "name": "Thomas Bryant",
+              "value": 16.64,
+              "fpg": 11.85,
+              "age": 28,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Green",
+          "side_total": 22.16,
+          "is_winner": false,
+          "win_margin_pct": -0.5067,
+          "assets": [
+            {
+              "name": "Jarred Vanderbilt",
+              "value": 22.16,
+              "fpg": 15.74,
+              "age": 26,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 38,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 7.59,
+      "sides": [
+        {
+          "owner": "Peterson",
+          "side_total": 41.26,
+          "is_winner": true,
+          "win_margin_pct": 0.184,
+          "assets": [
+            {
+              "name": "Julius Randle",
+              "value": 41.26,
+              "fpg": 40.07,
+              "age": 31,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Berke",
+          "side_total": 33.67,
+          "is_winner": false,
+          "win_margin_pct": -0.184,
+          "assets": [
+            {
+              "name": "Christian Wood",
+              "value": 33.67,
+              "fpg": 0.0,
+              "age": 30,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 39,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Delaney",
+      "win_margin": 2.02,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 18.01,
+          "is_winner": false,
+          "win_margin_pct": -0.1008,
+          "assets": [
+            {
+              "name": "Alec Burks",
+              "value": 11.95,
+              "fpg": 0.0,
+              "age": 34,
+              "asset_type": "player"
+            },
+            {
+              "name": "Johnny Davis",
+              "value": 6.06,
+              "fpg": 0.0,
+              "age": 23,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Delaney",
+          "side_total": 20.03,
+          "is_winner": true,
+          "win_margin_pct": 0.1008,
+          "assets": [
+            {
+              "name": "Patrick Beverly",
+              "value": 20.03,
+              "fpg": null,
+              "age": null,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 40,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 4.71,
+      "sides": [
+        {
+          "owner": "Zujewski",
+          "side_total": 42.52,
+          "is_winner": false,
+          "win_margin_pct": -0.0997,
+          "assets": [
+            {
+              "name": "Gabe Vincent",
+              "value": 11.96,
+              "fpg": 9.7,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Amir Coffey",
+              "value": 14.46,
+              "fpg": 5.12,
+              "age": 28,
+              "asset_type": "player"
+            },
+            {
+              "name": "Leonard Miller",
+              "value": 5.19,
+              "fpg": 4.18,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Terrence Shannon Jr.",
+              "value": 10.91,
+              "fpg": 6.82,
+              "age": 25,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Peterson",
+          "side_total": 47.23,
+          "is_winner": true,
+          "win_margin_pct": 0.0997,
+          "assets": [
+            {
+              "name": "Aaron Gordon",
+              "value": 33.91,
+              "fpg": 31.3,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Evan Fournier",
+              "value": 13.32,
+              "fpg": 0.0,
+              "age": 33,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 41,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Berke",
+      "win_margin": 53.21,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 17.44,
+          "is_winner": false,
+          "win_margin_pct": -0.7531,
+          "assets": [
+            {
+              "name": "Gordon Hayward",
+              "value": 17.44,
+              "fpg": 0.0,
+              "age": 35,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Berke",
+          "side_total": 70.65,
+          "is_winner": true,
+          "win_margin_pct": 0.7531,
+          "assets": [
+            {
+              "name": "Donte Divencenzo",
+              "value": 35.26,
+              "fpg": 31.02,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Johnny Davis",
+              "value": 6.06,
+              "fpg": 0.0,
+              "age": 23,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Yves Missi",
+              "value": 29.33,
+              "fpg": 18.6,
+              "age": 21,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 42,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Gold",
+      "win_margin": 37.03,
+      "sides": [
+        {
+          "owner": "Moss",
+          "side_total": 91.89,
+          "is_winner": false,
+          "win_margin_pct": -0.2872,
+          "assets": [
+            {
+              "name": "Brandon Miller",
+              "value": 44.61,
+              "fpg": 33.58,
+              "age": 23,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Ron Holland",
+              "value": 22.4,
+              "fpg": 18.43,
+              "age": 20,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Brook Lopez",
+              "value": 16.15,
+              "fpg": 16.96,
+              "age": 37,
+              "asset_type": "player"
+            },
+            {
+              "name": "Seth Curry",
+              "value": 8.73,
+              "fpg": 18.5,
+              "age": 35,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Gold",
+          "side_total": 128.92,
+          "is_winner": true,
+          "win_margin_pct": 0.2872,
+          "assets": [
+            {
+              "name": "Jabari Smith Jr",
+              "value": 55.21,
+              "fpg": 30.67,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Shaedon Sharpe",
+              "value": 38.22,
+              "fpg": 30.85,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Jonathan Kuminga",
+              "value": 35.49,
+              "fpg": 20.25,
+              "age": 23,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 43,
+      "season": "2021-22",
+      "date": "2022-07-27T00:00:00",
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 45.82,
+      "sides": [
+        {
+          "owner": "Peterson",
+          "side_total": 100.46,
+          "is_winner": true,
+          "win_margin_pct": 0.4561,
+          "assets": [
+            {
+              "name": "Dejounte Murray",
+              "value": 49.14,
+              "fpg": 0.0,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Donovan Clingan",
+              "value": 51.32,
+              "fpg": 33.28,
+              "age": 21,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Moss",
+          "side_total": 54.64,
+          "is_winner": false,
+          "win_margin_pct": -0.4561,
+          "assets": [
+            {
+              "name": "Paul George",
+              "value": 20.88,
+              "fpg": 33.15,
+              "age": 35,
+              "asset_type": "player"
+            },
+            {
+              "name": "Rudy Gobert",
+              "value": 33.76,
+              "fpg": 33.2,
+              "age": 33,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 44,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 11.84,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 74.26,
+          "is_winner": true,
+          "win_margin_pct": 0.1594,
+          "assets": [
+            {
+              "name": "Jaden Ivey",
+              "value": 33.67,
+              "fpg": 16.81,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Saddiq Bey",
+              "value": 40.59,
+              "fpg": 29.94,
+              "age": 26,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Vlandis",
+          "side_total": 62.42,
+          "is_winner": false,
+          "win_margin_pct": -0.1594,
+          "assets": [
+            {
+              "name": "Caris Levert",
+              "value": 21.83,
+              "fpg": 18.66,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Saddiq Bey",
+              "value": 40.59,
+              "fpg": 29.94,
+              "age": 26,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 45,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 24.65,
+      "sides": [
+        {
+          "owner": "Peterson",
+          "side_total": 151.23,
+          "is_winner": true,
+          "win_margin_pct": 0.163,
+          "assets": [
+            {
+              "name": "Fred VanVleet",
+              "value": 39.88,
+              "fpg": 0.0,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "D'Angelo Russell",
+              "value": 27.77,
+              "fpg": 17.81,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Nikola Vucevic",
+              "value": 29.38,
+              "fpg": 36.71,
+              "age": 35,
+              "asset_type": "player"
+            },
+            {
+              "name": "Derik Queen",
+              "value": 54.2,
+              "fpg": 30.11,
+              "age": 21,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Delaney",
+          "side_total": 126.58,
+          "is_winner": false,
+          "win_margin_pct": -0.163,
+          "assets": [
+            {
+              "name": "Dejounte Murray",
+              "value": 49.14,
+              "fpg": 0.0,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Wendall Carter Jr",
+              "value": 40.02,
+              "fpg": 26.68,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Bobby Portis",
+              "value": 26.73,
+              "fpg": 25.46,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Rob Dillingham",
+              "value": 10.69,
+              "fpg": 8.43,
+              "age": 21,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 46,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Trager",
+      "win_margin": 96.62,
+      "sides": [
+        {
+          "owner": "Vlandis",
+          "side_total": 23.21,
+          "is_winner": false,
+          "win_margin_pct": -0.8063,
+          "assets": [
+            {
+              "name": "Cj McCollum",
+              "value": 23.21,
+              "fpg": 31.0,
+              "age": 34,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Trager",
+          "side_total": 119.83,
+          "is_winner": true,
+          "win_margin_pct": 0.8063,
+          "assets": [
+            {
+              "name": "Keegan Murray",
+              "value": 47.84,
+              "fpg": 31.29,
+              "age": 25,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Cooper Flagg",
+              "value": 71.99,
+              "fpg": 38.27,
+              "age": 19,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 47,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 1.8,
+      "sides": [
+        {
+          "owner": "Green",
+          "side_total": 31.4,
+          "is_winner": false,
+          "win_margin_pct": -0.0542,
+          "assets": [
+            {
+              "name": "Cason Wallace",
+              "value": 31.4,
+              "fpg": 23.2,
+              "age": 22,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 33.2,
+          "is_winner": true,
+          "win_margin_pct": 0.0542,
+          "assets": [
+            {
+              "name": "De'andre Hunter",
+              "value": 33.2,
+              "fpg": 21.0,
+              "age": 28,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 48,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 67.32,
+      "sides": [
+        {
+          "owner": "Vlandis",
+          "side_total": 47.12,
+          "is_winner": false,
+          "win_margin_pct": -0.5883,
+          "assets": [
+            {
+              "name": "Jae'Sean Tate",
+              "value": 9.31,
+              "fpg": 6.12,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Gordon Hayward",
+              "value": 17.44,
+              "fpg": 0.0,
+              "age": 35,
+              "asset_type": "player"
+            },
+            {
+              "name": "Alex Caruso",
+              "value": 20.37,
+              "fpg": 18.03,
+              "age": 31,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 114.44,
+          "is_winner": true,
+          "win_margin_pct": 0.5883,
+          "assets": [
+            {
+              "name": "Malik Beasley",
+              "value": 29.11,
+              "fpg": 0.0,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Cedric Coward",
+              "value": 34.74,
+              "fpg": 26.12,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Saddiq Bey",
+              "value": 40.59,
+              "fpg": 29.94,
+              "age": 26,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Vlandis 2026 2nd round",
+              "value": 10.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 49,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 85.07,
+      "sides": [
+        {
+          "owner": "Vlandis",
+          "side_total": 27.9,
+          "is_winner": false,
+          "win_margin_pct": -0.753,
+          "assets": [
+            {
+              "name": "Jusuf Nurkic",
+              "value": 27.9,
+              "fpg": 32.54,
+              "age": 31,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 112.97,
+          "is_winner": true,
+          "win_margin_pct": 0.753,
+          "assets": [
+            {
+              "name": "Reggie Jackson",
+              "value": 11.35,
+              "fpg": 0.0,
+              "age": 35,
+              "asset_type": "player"
+            },
+            {
+              "name": "Scoot Henderson",
+              "value": 26.62,
+              "fpg": 21.6,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Vlandis 2026 1st round",
+              "value": 75.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 50,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Trager",
+      "win_margin": 16.4,
+      "sides": [
+        {
+          "owner": "Trager",
+          "side_total": 38.89,
+          "is_winner": true,
+          "win_margin_pct": 0.4217,
+          "assets": [
+            {
+              "name": "Jeremy Sochan",
+              "value": 23.37,
+              "fpg": 9.23,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Tidjane Salaun",
+              "value": 15.52,
+              "fpg": 13.91,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Vlandis",
+          "side_total": 22.49,
+          "is_winner": false,
+          "win_margin_pct": -0.4217,
+          "assets": [
+            {
+              "name": "Mo Bamba",
+              "value": 10.1,
+              "fpg": 2.0,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "AJ Griffin",
+              "value": 12.39,
+              "fpg": 0.0,
+              "age": 22,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 51,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Moss",
+      "win_margin": 75.37,
+      "sides": [
+        {
+          "owner": "Moss",
+          "side_total": 122.14,
+          "is_winner": true,
+          "win_margin_pct": 0.6171,
+          "assets": [
+            {
+              "name": "Tyler Herro",
+              "value": 57.98,
+              "fpg": 35.77,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Alex Sarr",
+              "value": 64.16,
+              "fpg": 38.29,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Vlandis",
+          "side_total": 46.77,
+          "is_winner": false,
+          "win_margin_pct": -0.6171,
+          "assets": [
+            {
+              "name": "Jonas Valanciunas",
+              "value": 23.8,
+              "fpg": 18.24,
+              "age": 33,
+              "asset_type": "player"
+            },
+            {
+              "name": "Khris Middleton",
+              "value": 14.58,
+              "fpg": 20.78,
+              "age": 34,
+              "asset_type": "player"
+            },
+            {
+              "name": "Jett Howard",
+              "value": 8.39,
+              "fpg": 9.03,
+              "age": 22,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 52,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 4.68,
+      "sides": [
+        {
+          "owner": "Berke",
+          "side_total": 12.89,
+          "is_winner": false,
+          "win_margin_pct": -0.2664,
+          "assets": [
+            {
+              "name": "Kemba Walker",
+              "value": 12.89,
+              "fpg": null,
+              "age": null,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 17.57,
+          "is_winner": true,
+          "win_margin_pct": 0.2664,
+          "assets": [
+            {
+              "name": "Dalton Knecht",
+              "value": 17.57,
+              "fpg": 7.7,
+              "age": 24,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 53,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 134.75,
+      "sides": [
+        {
+          "owner": "Green",
+          "side_total": 117.61,
+          "is_winner": false,
+          "win_margin_pct": -0.534,
+          "assets": [
+            {
+              "name": "Joel Embiid",
+              "value": 58.52,
+              "fpg": 42.74,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Dyson Daniels",
+              "value": 59.09,
+              "fpg": 34.44,
+              "age": 22,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Peterson",
+          "side_total": 252.36,
+          "is_winner": true,
+          "win_margin_pct": 0.534,
+          "assets": [
+            {
+              "name": "Domantas Sabonis",
+              "value": 49.73,
+              "fpg": 34.84,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Zach Lavine",
+              "value": 36.38,
+              "fpg": 28.13,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Jarred Vanderbilt",
+              "value": 22.16,
+              "fpg": 15.74,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Derrick White",
+              "value": 43.74,
+              "fpg": 38.77,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Delaney 2022 1st (#7 overall)",
+              "value": 0.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "player"
+            },
+            {
+              "name": "Cason Wallace",
+              "value": 31.4,
+              "fpg": 23.2,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Kelly Oubre",
+              "value": 33.67,
+              "fpg": 27.62,
+              "age": 30,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Isaiah Collier",
+              "value": 35.28,
+              "fpg": 28.16,
+              "age": 21,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 54,
+      "season": "2021-22",
+      "date": "2022-07-11T00:00:00",
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 32.44,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 217.39,
+          "is_winner": true,
+          "win_margin_pct": 0.1492,
+          "assets": [
+            {
+              "name": "Luka Doncic",
+              "value": 163.56,
+              "fpg": 57.44,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Ziaire Williams",
+              "value": 28.14,
+              "fpg": 18.36,
+              "age": 24,
+              "asset_type": "player"
+            },
+            {
+              "name": "Rob Dillingham",
+              "value": 10.69,
+              "fpg": 8.43,
+              "age": 21,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Delaney 2026 2nd round",
+              "value": 15.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            }
+          ]
+        },
+        {
+          "owner": "Delaney",
+          "side_total": 184.95,
+          "is_winner": false,
+          "win_margin_pct": -0.1492,
+          "assets": [
+            {
+              "name": "Bradley Beal",
+              "value": 18.17,
+              "fpg": 10.17,
+              "age": 32,
+              "asset_type": "player"
+            },
+            {
+              "name": "Pascal Siakam",
+              "value": 43.16,
+              "fpg": 39.45,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Terry Rozier",
+              "value": 31.61,
+              "fpg": 0.0,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Carlton \"Bub\" Carrington",
+              "value": 29.97,
+              "fpg": 21.45,
+              "age": 20,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Tre Johnson",
+              "value": 27.3,
+              "fpg": 21.67,
+              "age": 19,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Vladnis 2026 1st round",
+              "value": 0.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "player"
+            },
+            {
+              "name": "Cedric Coward",
+              "value": 34.74,
+              "fpg": 26.12,
+              "age": 22,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 55,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Trager",
+      "win_margin": 27.52,
+      "sides": [
+        {
+          "owner": "Vlandis",
+          "side_total": 80.66,
+          "is_winner": false,
+          "win_margin_pct": -0.2544,
+          "assets": [
+            {
+              "name": "Desmond Bane",
+              "value": 55.97,
+              "fpg": 34.91,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "Tidjane Salaun",
+              "value": 15.52,
+              "fpg": 13.91,
+              "age": 20,
+              "asset_type": "pick"
+            },
+            {
+              "name": "TyTy Washington",
+              "value": 9.17,
+              "fpg": 12.8,
+              "age": 24,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Trager",
+          "side_total": 108.18,
+          "is_winner": true,
+          "win_margin_pct": 0.2544,
+          "assets": [
+            {
+              "name": "Bilal Coulibaly",
+              "value": 31.89,
+              "fpg": 24.31,
+              "age": 21,
+              "asset_type": "pick"
+            },
+            {
+              "name": "PJ Washington",
+              "value": 43.53,
+              "fpg": 28.88,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "AJ Griffin",
+              "value": 12.39,
+              "fpg": 0.0,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Alex Caruso",
+              "value": 20.37,
+              "fpg": 18.03,
+              "age": 31,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 56,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Vlandis",
+      "win_margin": 56.96,
+      "sides": [
+        {
+          "owner": "Moss",
+          "side_total": 67.4,
+          "is_winner": false,
+          "win_margin_pct": -0.458,
+          "assets": [
+            {
+              "name": "De'Aaron Fox",
+              "value": 67.4,
+              "fpg": 37.57,
+              "age": 28,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Vlandis",
+          "side_total": 124.36,
+          "is_winner": true,
+          "win_margin_pct": 0.458,
+          "assets": [
+            {
+              "name": "Tobias Harris",
+              "value": 28.48,
+              "fpg": 25.77,
+              "age": 33,
+              "asset_type": "player"
+            },
+            {
+              "name": "Paul George",
+              "value": 20.88,
+              "fpg": 33.15,
+              "age": 35,
+              "asset_type": "player"
+            },
+            {
+              "name": "Moss 2026 1st round",
+              "value": 75.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 57,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 49.17,
+      "sides": [
+        {
+          "owner": "Peterson",
+          "side_total": 179.64,
+          "is_winner": true,
+          "win_margin_pct": 0.2737,
+          "assets": [
+            {
+              "name": "Tobias Harris",
+              "value": 28.48,
+              "fpg": 25.77,
+              "age": 33,
+              "asset_type": "player"
+            },
+            {
+              "name": "Paul George",
+              "value": 20.88,
+              "fpg": 33.15,
+              "age": 35,
+              "asset_type": "player"
+            },
+            {
+              "name": "Moss 2026 1st round",
+              "value": 75.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            },
+            {
+              "name": "Jaren Jackson Jr.",
+              "value": 55.28,
+              "fpg": 34.88,
+              "age": 26,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Vlandis",
+          "side_total": 130.47,
+          "is_winner": false,
+          "win_margin_pct": -0.2737,
+          "assets": [
+            {
+              "name": "De'Angelo Russell",
+              "value": 29.23,
+              "fpg": 17.81,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Zach Lavine",
+              "value": 36.38,
+              "fpg": 28.13,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Malcolm Brogdon",
+              "value": 23.71,
+              "fpg": 0.0,
+              "age": 33,
+              "asset_type": "player"
+            },
+            {
+              "name": "Bennedict Mathurin",
+              "value": 41.15,
+              "fpg": 27.38,
+              "age": 23,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 58,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Gold",
+      "win_margin": 1.67,
+      "sides": [
+        {
+          "owner": "Gold",
+          "side_total": 56.67,
+          "is_winner": true,
+          "win_margin_pct": 0.0295,
+          "assets": [
+            {
+              "name": "Bennedict Mathurin",
+              "value": 41.15,
+              "fpg": 27.38,
+              "age": 23,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Tidjane Salaun",
+              "value": 15.52,
+              "fpg": 13.91,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Vlandis",
+          "side_total": 55.0,
+          "is_winner": false,
+          "win_margin_pct": -0.0295,
+          "assets": [
+            {
+              "name": "Shaedon Sharpe",
+              "value": 38.22,
+              "fpg": 30.85,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Jordan Hawkins",
+              "value": 16.78,
+              "fpg": 6.58,
+              "age": 23,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 59,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Vlandis",
+      "win_margin": 17.38,
+      "sides": [
+        {
+          "owner": "Gold",
+          "side_total": 10.1,
+          "is_winner": false,
+          "win_margin_pct": -0.6325,
+          "assets": [
+            {
+              "name": "Mo Bamba",
+              "value": 10.1,
+              "fpg": 2.0,
+              "age": 27,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Vlandis",
+          "side_total": 27.48,
+          "is_winner": true,
+          "win_margin_pct": 0.6325,
+          "assets": [
+            {
+              "name": "Jemai Grant",
+              "value": 27.48,
+              "fpg": 27.22,
+              "age": 31,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 60,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 16.98,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 94.23,
+          "is_winner": true,
+          "win_margin_pct": 0.1802,
+          "assets": [
+            {
+              "name": "Coby White",
+              "value": 46.84,
+              "fpg": 28.45,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Shaedon Sharpe",
+              "value": 38.22,
+              "fpg": 30.85,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "TyTy Washington",
+              "value": 9.17,
+              "fpg": 12.8,
+              "age": 24,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Vlandis",
+          "side_total": 77.25,
+          "is_winner": false,
+          "win_margin_pct": -0.1802,
+          "assets": [
+            {
+              "name": "Clint Capela",
+              "value": 20.02,
+              "fpg": 13.29,
+              "age": 31,
+              "asset_type": "player"
+            },
+            {
+              "name": "Jake Laravia",
+              "value": 29.66,
+              "fpg": 22.11,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Dalton Knecht",
+              "value": 17.57,
+              "fpg": 7.7,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Vlandis 2026 2nd round",
+              "value": 10.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 61,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": false,
+      "is_collusion": false,
+      "winner": "Trager",
+      "win_margin": 37.04,
+      "sides": [
+        {
+          "owner": "Trager",
+          "side_total": 37.04,
+          "is_winner": true,
+          "win_margin_pct": 1.0,
+          "assets": [
+            {
+              "name": "Quentin Grimes",
+              "value": 37.04,
+              "fpg": 25.22,
+              "age": 25,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Green",
+          "side_total": 0.0,
+          "is_winner": false,
+          "win_margin_pct": -1.0,
+          "assets": [
+            {
+              "name": "Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)",
+              "value": 0.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 62,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Trager",
+      "win_margin": 2.21,
+      "sides": [
+        {
+          "owner": "Gold",
+          "side_total": 38.22,
+          "is_winner": false,
+          "win_margin_pct": -0.0224,
+          "assets": [
+            {
+              "name": "Shaedon Sharpe",
+              "value": 38.22,
+              "fpg": 30.85,
+              "age": 22,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Trager",
+          "side_total": 98.64,
+          "is_winner": true,
+          "win_margin_pct": 0.0224,
+          "assets": [
+            {
+              "name": "Mark Williams",
+              "value": 43.64,
+              "fpg": 29.21,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Gold 2026 1st round Swap rights (connected to Trager 2026 FRP)",
+              "value": 55.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            },
+            {
+              "name": "Thomas Sorber",
+              "value": 0.0,
+              "fpg": 0.0,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 62.63,
+          "is_winner": false,
+          "win_margin_pct": -0.0224,
+          "assets": [
+            {
+              "name": "Tari Eason",
+              "value": 37.11,
+              "fpg": 25.97,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Tidjane Salaun",
+              "value": 15.52,
+              "fpg": 13.91,
+              "age": 20,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Gold 2026 2nd round",
+              "value": 10.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 63,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 88.38,
+      "sides": [
+        {
+          "owner": "Berke",
+          "side_total": 58.69,
+          "is_winner": false,
+          "win_margin_pct": -0.6009,
+          "assets": [
+            {
+              "name": "Andre Drummond",
+              "value": 20.59,
+              "fpg": 21.26,
+              "age": 32,
+              "asset_type": "player"
+            },
+            {
+              "name": "Reggie Jackson",
+              "value": 11.35,
+              "fpg": 0.0,
+              "age": 35,
+              "asset_type": "player"
+            },
+            {
+              "name": "Victor Oladipo",
+              "value": 11.23,
+              "fpg": 0.0,
+              "age": 33,
+              "asset_type": "player"
+            },
+            {
+              "name": "Tidjane Salaun",
+              "value": 15.52,
+              "fpg": 13.91,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Jowkar",
+          "side_total": 147.07,
+          "is_winner": true,
+          "win_margin_pct": 0.6009,
+          "assets": [
+            {
+              "name": "Egor Demin",
+              "value": 29.18,
+              "fpg": 21.94,
+              "age": 19,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Ayo Dosunmu",
+              "value": 41.28,
+              "fpg": 28.37,
+              "age": 26,
+              "asset_type": "player"
+            },
+            {
+              "name": "Deni Avdija",
+              "value": 76.61,
+              "fpg": 42.55,
+              "age": 25,
+              "asset_type": "player"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 64,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Peterson",
+      "win_margin": 43.15,
+      "sides": [
+        {
+          "owner": "Berke",
+          "side_total": 88.91,
+          "is_winner": false,
+          "win_margin_pct": -0.3267,
+          "assets": [
+            {
+              "name": "Collin Sexton",
+              "value": 37.59,
+              "fpg": 23.47,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "Donovan Clingan",
+              "value": 51.32,
+              "fpg": 33.28,
+              "age": 21,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Peterson",
+          "side_total": 132.06,
+          "is_winner": true,
+          "win_margin_pct": 0.3267,
+          "assets": [
+            {
+              "name": "Christian Wood",
+              "value": 33.67,
+              "fpg": 0.0,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Mitch Robinson",
+              "value": 33.33,
+              "fpg": 22.12,
+              "age": 27,
+              "asset_type": "player"
+            },
+            {
+              "name": "Brandin Podziemski",
+              "value": 35.73,
+              "fpg": 26.29,
+              "age": 22,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Yves Missi",
+              "value": 29.33,
+              "fpg": 18.6,
+              "age": 21,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 65,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Berke",
+      "win_margin": 67.75,
+      "sides": [
+        {
+          "owner": "Delaney",
+          "side_total": 78.98,
+          "is_winner": false,
+          "win_margin_pct": -0.4617,
+          "assets": [
+            {
+              "name": "James Harden",
+              "value": 46.43,
+              "fpg": 45.0,
+              "age": 36,
+              "asset_type": "player"
+            },
+            {
+              "name": "Chris Paul",
+              "value": 14.1,
+              "fpg": 11.38,
+              "age": 40,
+              "asset_type": "player"
+            },
+            {
+              "name": "Draymond Green",
+              "value": 18.45,
+              "fpg": 24.43,
+              "age": 35,
+              "asset_type": "player"
+            }
+          ]
+        },
+        {
+          "owner": "Berke",
+          "side_total": 146.73,
+          "is_winner": true,
+          "win_margin_pct": 0.4617,
+          "assets": [
+            {
+              "name": "Dejounte Murray",
+              "value": 49.14,
+              "fpg": 0.0,
+              "age": 29,
+              "asset_type": "player"
+            },
+            {
+              "name": "Kelly Oubre",
+              "value": 33.67,
+              "fpg": 27.62,
+              "age": 30,
+              "asset_type": "player"
+            },
+            {
+              "name": "Carlton \"Bub\" Carrington",
+              "value": 29.97,
+              "fpg": 21.45,
+              "age": 20,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Matas Buzelis",
+              "value": 33.95,
+              "fpg": 30.02,
+              "age": 21,
+              "asset_type": "pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 66,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Trager",
+      "win_margin": 31.69,
+      "sides": [
+        {
+          "owner": "Green",
+          "side_total": 40.59,
+          "is_winner": false,
+          "win_margin_pct": -0.4384,
+          "assets": [
+            {
+              "name": "Saddiq Bey",
+              "value": 40.59,
+              "fpg": 29.94,
+              "age": 26,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Trager",
+          "side_total": 72.28,
+          "is_winner": true,
+          "win_margin_pct": 0.4384,
+          "assets": [
+            {
+              "name": "Walker Kessler",
+              "value": 62.28,
+              "fpg": 40.6,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Green 2026 2nd round",
+              "value": 10.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "trade_id": 67,
+      "season": "2021-22",
+      "date": null,
+      "is_multi_party": true,
+      "is_collusion": false,
+      "winner": "Jowkar",
+      "win_margin": 2.52,
+      "sides": [
+        {
+          "owner": "Jowkar",
+          "side_total": 62.28,
+          "is_winner": true,
+          "win_margin_pct": 0.0405,
+          "assets": [
+            {
+              "name": "Walker Kessler",
+              "value": 62.28,
+              "fpg": 40.6,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Thomas Sorber",
+              "value": 0.0,
+              "fpg": 0.0,
+              "age": 20,
+              "asset_type": "pick"
+            }
+          ]
+        },
+        {
+          "owner": "Trager",
+          "side_total": 59.76,
+          "is_winner": false,
+          "win_margin_pct": -0.0405,
+          "assets": [
+            {
+              "name": "TyTy Washington",
+              "value": 9.17,
+              "fpg": 12.8,
+              "age": 24,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Saddiq Bey",
+              "value": 40.59,
+              "fpg": 29.94,
+              "age": 26,
+              "asset_type": "pick"
+            },
+            {
+              "name": "Jowkar 2026 2nd round",
+              "value": 10.0,
+              "fpg": null,
+              "age": null,
+              "asset_type": "future_pick"
+            }
+          ]
+        }
+      ]
+    },
     {
       "trade_id": 68,
       "season": "2022-23",

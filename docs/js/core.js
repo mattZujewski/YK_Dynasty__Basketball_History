@@ -55,6 +55,8 @@ window.YK = window.YK || {};
   ];
 
   // Owner display names (friendlier for UI)
+  // Includes aliases for transitional-slot and dual-abbrev owners so ownerDisplayName()
+  // can do a direct dict lookup without resolveOwner() — preserving historical names.
   const OWNER_DISPLAY = {
     'Baden':       'Sam Baden',
     'Berke':       'Logan Berke',
@@ -62,9 +64,12 @@ window.YK = window.YK || {};
     'Gold':        'Sam Gold',
     'Green':       'Max Green',
     'HaleTrager':  'Ryan Trager',
+    'Trager':      'Ryan Trager',       // alias
     'Jowkar':      'Nick Jowkar',
+    'Kelley':      'Brendan Kelley',    // transitional slot 2022-25
     'Moss':        'Max Moss',
     'Peterson':    'Kelvin Peterson',
+    'Vlandis':     'Spencer Vlandis',   // transitional slot 2020-23
     'Zujewski':    'Matthew Zujewski',
   };
 
@@ -90,9 +95,11 @@ window.YK = window.YK || {};
   };
 
   // Tableau10-based palette for 10 owners
+  // Index order: Baden, Berke, Delaney, Gold, Green, HaleTrager, Jowkar, Moss, Peterson, Zujewski
+  // Swap 0 (Baden) and 5 (HaleTrager/Trager): Trager = blue (#4e79a7), Baden = gold (#edc948)
   const OWNER_COLORS_RAW = [
-    '#4e79a7', '#f28e2b', '#e15759', '#76b7b2', '#59a14f',
-    '#edc948', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac',
+    '#edc948', '#f28e2b', '#e15759', '#76b7b2', '#59a14f',
+    '#4e79a7', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac',
   ];
 
   function ownerColor(name) {
@@ -122,10 +129,13 @@ window.YK = window.YK || {};
     return TEAM_TO_OWNER[teamName] || null;
   }
 
-  // Get display name for canonical owner (resolves aliases first)
+  // Get display name for any owner key, alias, or canonical name.
+  // Direct dict lookup — does NOT call resolveOwner() so historical names
+  // (Vlandis, Kelley) show their own display name instead of mapping to Baden.
+  // ownerColor() still calls resolveOwner() so all transitional-slot owners
+  // share the same Baden color.
   function ownerDisplayName(nameOrAlias) {
-    const canonical = resolveOwner(nameOrAlias);
-    return OWNER_DISPLAY[canonical] || canonical;
+    return OWNER_DISPLAY[nameOrAlias] || nameOrAlias;
   }
 
   // CSS var reader

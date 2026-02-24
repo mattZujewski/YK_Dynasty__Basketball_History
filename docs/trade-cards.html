@@ -27,8 +27,11 @@
     /* Trade card grid */
     .trade-cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 720px) {
+      .trade-cards-grid { grid-template-columns: 1fr; }
     }
     .trade-card {
       background: var(--bg-card);
@@ -114,7 +117,7 @@
       gap: 4px;
     }
     .asset-list li:last-child { border-bottom: none; }
-    .asset-list .asset-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .asset-list .asset-name { flex: 1; min-width: 0; }
     .asset-list .asset-val { font-weight: 600; color: var(--text-primary); flex-shrink: 0; }
     .asset-list .asset-zero { color: var(--text-muted); font-style: italic; }
     .trade-vs-divider {
@@ -209,19 +212,43 @@
     }
     .filter-sep { color: var(--border); margin: 0 4px; }
 
-    /* Full-list cards use a single-column layout */
-    #all-trades-list .trade-cards-grid {
-      grid-template-columns: 1fr;
-    }
-    #all-trades-list .trade-card-sides {
-      flex-direction: row;
-    }
     @media (max-width: 600px) {
-      .trade-cards-grid { grid-template-columns: 1fr; }
       .trade-card-sides { flex-direction: column; }
       .trade-vs-divider { display: none; }
     }
     #cards-count { font-size: 0.82rem; color: var(--text-muted); margin: 6px 0 8px; }
+
+    /* Tooltip */
+    [data-tooltip] { position: relative; cursor: help; }
+    [data-tooltip]::after {
+      content: attr(data-tooltip);
+      position: absolute; bottom: calc(100% + 6px); left: 50%;
+      transform: translateX(-50%);
+      background: #1a1d27; color: #e8eaf6;
+      font-size: 0.72rem; padding: 5px 10px; border-radius: 6px;
+      white-space: normal; max-width: 220px; text-align: center;
+      pointer-events: none; opacity: 0; transition: opacity 0.15s;
+      z-index: 100; line-height: 1.4;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    [data-tooltip]:hover::after { opacity: 1; }
+
+    /* TVOT mini-bar in card footer */
+    .tvot-mini-bar { display: flex; height: 22px; border-radius: 4px; overflow: hidden; gap: 2px; margin: 6px 0 2px; }
+    .tvot-mini-seg {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      font-size: 0.62rem; font-weight: 700; color: rgba(255,255,255,0.88);
+      transition: opacity 0.15s;
+    }
+    .tvot-mini-seg:hover { opacity: 0.8; }
+    .tvot-mini-seg.flip-point { box-shadow: inset 0 0 0 2px rgba(255,255,255,0.6); }
+
+    /* Asset list column header */
+    .asset-list-header {
+      display: flex; justify-content: space-between;
+      font-size: 0.63rem; font-weight: 600; text-transform: uppercase;
+      color: var(--text-muted); margin: 5px 0 2px;
+    }
   </style>
 </head>
 <body>
@@ -230,7 +257,7 @@
   <main class="page-container">
     <header class="page-header">
       <h1>&#x1F0CF; Trade Cards</h1>
-      <p class="subtitle">Every graded trade &mdash; both sides, asset values, and winners (2023&ndash;24 to present)</p>
+      <p class="subtitle">Every graded trade &mdash; both sides, asset values, and winners (2021&ndash;22 to present)</p>
     </header>
 
     <!-- Cross-links -->
@@ -264,7 +291,7 @@
 
     <!-- All Trades -->
     <div class="chart-section">
-      <h2>All Trade Grades (74 trades)</h2>
+      <h2>All Trade Grades <span id="cards-count-inline" style="font-size:0.8rem;font-weight:400;color:var(--text-muted)"></span></h2>
       <p class="chart-description">Filter and sort all graded trades. Click &ldquo;View TVOT&rdquo; to see how a trade&rsquo;s value changed over time.</p>
 
       <div class="filter-bar" style="flex-wrap:wrap;gap:8px;align-items:center">

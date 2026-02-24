@@ -2,10 +2,9 @@
  * trade_cards.js — Trade Cards dashboard
  * YK Dynasty Basketball
  *
- * Data source: data/trade_details.json
- * Structure: { generated, trades: [ {trade_id, season, date, is_multi_party,
- *   is_collusion, winner, win_margin, sides:[{owner, side_total, is_winner,
- *   win_margin_pct, assets:[{name, value, fpg, age, asset_type}]}] } ] }
+ * Data sources:
+ *   data/trade_details.json
+ *   data/trade_value_over_time.json  (optional — for TVOT mini-bar)
  */
 (function () {
   'use strict';
@@ -13,9 +12,14 @@
   document.addEventListener('DOMContentLoaded', async function () {
     const YK = window.YK;
 
-    let data;
+    let data, tvotData;
     try {
-      data = await YK.loadJSON('data/trade_details.json');
+      var results = await Promise.all([
+        YK.loadJSON('data/trade_details.json'),
+        YK.loadJSON('data/trade_value_over_time.json').catch(function() { return { trades: [] }; }),
+      ]);
+      data     = results[0];
+      tvotData = results[1];
     } catch (e) {
       console.error('Failed to load trade_details.json:', e);
       document.getElementById('all-trades-list').innerHTML =
@@ -25,6 +29,12 @@
 
     const trades = data.trades || [];
     const nonCollusion = trades.filter(function (t) { return !t.is_collusion; });
+
+    // Build TVOT lookup: trade_id → eval_results[]
+    var tvotById = {};
+    ((tvotData && tvotData.trades) || []).forEach(function(t) {
+      tvotById[t.trade_id] = t.eval_results || [];
+    });
 
     // ── Headline stats ───────────────────────────────────────────────────── //
     const avgMargin = nonCollusion.length > 0
@@ -55,7 +65,7 @@
         (sub ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px">' + sub + '</div>' : '');
       return d;
     }
-    cardsEl.appendChild(makeCard('Trades Graded', nonCollusion.length, '2022–23 to present'));
+    cardsEl.appendChild(makeCard('Trades Graded', nonCollusion.length, '2021–22 to present'));
     cardsEl.appendChild(makeCard('Avg Win Margin', '+' + avgMargin.toFixed(1), 'dynasty value gap per trade'));
     if (topWinOwner) {
       cardsEl.appendChild(makeCard(
@@ -65,7 +75,6 @@
       ));
     }
     if (closestTrade) {
-      var cSides = closestTrade.sides || [];
       cardsEl.appendChild(makeCard(
         'Closest Trade',
         '#' + closestTrade.trade_id,
@@ -114,6 +123,20 @@
 
     // ── Initial full list render ──────────────────────────────────────────── //
     applyFiltersAndSort();
+
+    // ── Hash deep-link: scroll to & highlight a specific card ────────────── //
+    var _hash = window.location.hash;
+    if (_hash && _hash.startsWith('#trade-')) {
+      setTimeout(function() {
+        var el = document.getElementById(_hash.slice(1));
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.style.outline = '2px solid var(--brand-green)';
+          el.style.transition = 'outline 0.5s';
+          setTimeout(function() { el.style.outline = ''; }, 2500);
+        }
+      }, 150);
+    }
 
     // ── Event listeners ───────────────────────────────────────────────────── //
     seasonSelect.addEventListener('change', function () {
@@ -165,6 +188,11 @@
       var countEl = document.getElementById('cards-count');
       if (countEl) {
         countEl.textContent = 'Showing ' + filtered.length + ' of ' + trades.length + ' trades';
+      }
+      // Also update inline H2 count
+      var inlineCount = document.getElementById('cards-count-inline');
+      if (inlineCount) {
+        inlineCount.textContent = '(' + trades.length + ' trades)';
       }
 
       var listEl = document.getElementById('all-trades-list');
@@ -249,21 +277,49 @@
       sidesHtml += '</div>';
 
       // ── Footer ──
-      var margin      = trade.win_margin || 0;
-      var winnerTotal = winnerSide.side_total || 0;
-      var loserTotal  = loserSides.length > 0 ? (loserSides[0].side_total || 0) : 0;
-      var combined    = winnerTotal + loserTotal;
-      var barPct      = combined > 0 ? Math.min(100, (margin / combined) * 100) : 0;
+      var margin = trade.win_margin || 0;
+
+      // TVOT mini-bar (if data available)
+      var tvotPeriods = tvotById[trade.trade_id] || [];
+      var footerInner = '';
+
+      if (tvotPeriods.length > 0) {
+        var miniBar = '<div class="tvot-mini-bar">';
+        tvotPeriods.forEach(function(r, i) {
+          var isFlip = (i > 0 && r.winner !== tvotPeriods[i-1].winner);
+          var segColor = YK.ownerColor(r.winner || '');
+          var tipText = 'Y' + (i+1) + (r.season ? ' (' + r.season + ')' : '') + ': ' + YK.ownerDisplayName(r.winner || '—') + ' leads';
+          miniBar += '<div class="tvot-mini-seg' + (isFlip ? ' flip-point' : '') + '"' +
+            ' style="background:' + segColor + '"' +
+            ' title="' + YK.escapeHtml(tipText) + '">' +
+            'Y' + (i+1) +
+            '</div>';
+        });
+        miniBar += '</div>';
+        footerInner = miniBar;
+      } else {
+        // Fallback: plain margin bar
+        var winnerTotal = winnerSide.side_total || 0;
+        var loserTotal  = loserSides.length > 0 ? (loserSides[0].side_total || 0) : 0;
+        var combined    = winnerTotal + loserTotal;
+        var barPct      = combined > 0 ? Math.min(100, (margin / combined) * 100) : 0;
+        footerInner = '<div class="margin-bar-track">' +
+          '<div class="margin-bar-fill" style="width:' + barPct.toFixed(1) + '%"></div>' +
+          '</div>';
+      }
+
+      var marginLabel = '<div class="margin-label">' +
+        '<span data-tooltip="Dynasty value combines production, age, durability, and star power. Higher = more valuable.">' +
+        'Margin: +' + margin.toFixed(1) + '</span>' +
+        '</div>';
 
       var tvotLink = '<a class="tvot-link" href="trade-value-over-time.html#trade-' + trade.trade_id +
-        '" title="View how this trade\'s value shifted over time">&#x23F3; TVOT</a>';
+        '" title="View how this trade\'s value shifted over time">&#x2197; TVOT</a>';
 
       var footerHtml = '<div class="trade-card-footer">' +
         '<div class="margin-bar-wrap">' +
-          '<div class="margin-bar-track">' +
-            '<div class="margin-bar-fill" style="width:' + barPct.toFixed(1) + '%"></div>' +
-          '</div>' +
-          '<div class="margin-label">Margin: +' + margin.toFixed(1) + ' dynasty pts</div>' +
+          footerInner +
+          marginLabel +
         '</div>' +
         tvotLink +
         (trade.is_collusion ? '<span class="collusion-tag">Flagged</span>' : '') +
@@ -305,6 +361,7 @@
       return '<div class="trade-side ' + sideClass + '">' +
         '<div class="trade-side-owner">' + dot + YK.ownerDisplayName(owner) + winBadge + '</div>' +
         '<div class="trade-side-total">' + total.toFixed(1) + ' pts</div>' +
+        '<div class="asset-list-header"><span>Asset</span><span>Dynasty Value</span></div>' +
         '<ul class="asset-list">' + assetRows + '</ul>' +
       '</div>';
     }
