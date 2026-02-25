@@ -68,6 +68,22 @@
     .standings-row:hover td { background: var(--bg-primary); }
     .drill-arrow { font-size: 0.7rem; color: var(--text-muted); margin-left: 4px; }
 
+    /* Tooltip */
+    [data-tooltip] { position: relative; }
+    [data-tooltip]::after {
+      content: attr(data-tooltip);
+      position: absolute; bottom: calc(100% + 6px); left: 50%;
+      transform: translateX(-50%);
+      background: #1a1d27; color: #e8eaf6;
+      font-size: 0.72rem; padding: 5px 10px; border-radius: 6px;
+      white-space: normal; max-width: 260px; text-align: center;
+      pointer-events: none; opacity: 0; transition: opacity 0.15s;
+      z-index: 100; line-height: 1.4;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    [data-tooltip]:hover::after { opacity: 1; }
+    .info-icon { font-size: 0.72rem; color: var(--text-muted); cursor: help; margin-left: 3px; opacity: 0.75; }
+
     /* Mobile: transform standings table into cards */
     @media (max-width: 640px) {
       #overall-table thead { display: none; }
@@ -144,8 +160,8 @@
               <th style="text-align:center">W</th>
               <th style="text-align:center">L</th>
               <th style="text-align:center">Win %</th>
-              <th style="text-align:right">Total Margin</th>
-              <th style="text-align:right">Avg Margin</th>
+              <th style="text-align:right">Total Margin <span class="info-icon" data-tooltip="Sum of dynasty value gained across all trade wins in the selected period.">&#x2139;</span></th>
+              <th style="text-align:right">Avg Margin <span class="info-icon" data-tooltip="Dynasty value = Weighted FPPG &times; age multiplier &times; star premium &times; durability modifier. Higher = better dynasty asset.">&#x2139;</span></th>
             </tr>
           </thead>
           <tbody id="overall-tbody">

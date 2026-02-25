@@ -55,50 +55,139 @@
     // ── Summary cards ────────────────────────────────────────────────────── //
     var cardsEl = document.getElementById('summary-cards');
 
-    function makeCard(label, value, sub) {
+    function makeCard(label, value, sub, valueColor) {
       var d = document.createElement('div');
       d.className = 'stat-card';
       d.innerHTML = '<div class="stat-label">' + label + '</div>' +
-        '<div class="stat-value">' + value + '</div>' +
-        (sub ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px">' + sub + '</div>' : '');
+        '<div class="stat-value"' + (valueColor ? ' style="color:' + valueColor + '"' : '') + '>' + value + '</div>' +
+        (sub ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px;text-align:center">' + sub + '</div>' : '');
       return d;
     }
 
     function buildSummaryCards(tradeSubset) {
       cardsEl.innerHTML = '';
       var nonCollusion = tradeSubset.filter(function(t) { return !t.is_collusion; });
-      var avgMargin = nonCollusion.length > 0
-        ? nonCollusion.reduce(function(s, t) { return s + (t.win_margin || 0); }, 0) / nonCollusion.length
-        : 0;
 
-      var ownerWins = {};
+      // Compute per-owner stats
+      var ownerWins  = {}, ownerLosses = {}, ownerCount = {};
       nonCollusion.forEach(function(t) {
-        if (t.winner) ownerWins[t.winner] = (ownerWins[t.winner] || 0) + 1;
+        (t.sides || []).forEach(function(s) {
+          ownerCount[s.owner] = (ownerCount[s.owner] || 0) + 1;
+          if (s.is_winner) ownerWins[s.owner]  = (ownerWins[s.owner]  || 0) + 1;
+          else             ownerLosses[s.owner] = (ownerLosses[s.owner] || 0) + 1;
+        });
       });
-      var topWinOwner = Object.keys(ownerWins).sort(function(a, b) {
-        return ownerWins[b] - ownerWins[a];
-      })[0];
+      var topWin   = Object.keys(ownerWins).sort(function(a,b){ return ownerWins[b]-ownerWins[a]; })[0];
+      var topLoss  = Object.keys(ownerLosses).sort(function(a,b){ return ownerLosses[b]-ownerLosses[a]; })[0];
+      var topCount = Object.keys(ownerCount).sort(function(a,b){ return ownerCount[b]-ownerCount[a]; })[0];
 
-      var closestTrade = nonCollusion.slice().sort(function(a, b) {
-        return (a.win_margin || 999) - (b.win_margin || 999);
-      })[0];
+      // Lopsided / Closest
+      var sortedDesc = nonCollusion.slice().sort(function(a,b){ return (b.win_margin||0)-(a.win_margin||0); });
+      var lopsided  = sortedDesc[0];
+      var closest   = sortedDesc[sortedDesc.length - 1];
 
-      cardsEl.appendChild(makeCard('Trades Graded', nonCollusion.length, '2021\u201322 to present'));
-      cardsEl.appendChild(makeCard('Avg Win Margin', '+' + avgMargin.toFixed(1), 'dynasty value gap per trade'));
-      if (topWinOwner) {
-        cardsEl.appendChild(makeCard(
-          'Most Trade Wins',
-          YK.ownerDisplayName(topWinOwner),
-          ownerWins[topWinOwner] + ' trade wins'
-        ));
+      // Biggest Comeback: winner_changed + biggest_swing, within current subset
+      var nonCollusionIds = new Set(nonCollusion.map(function(t){ return t.trade_id; }));
+      var comeback = null, bigSwing = 0;
+      ((tvotData && tvotData.trades) || []).forEach(function(t) {
+        if (t.winner_changed && (t.biggest_swing||0) > bigSwing && nonCollusionIds.has(t.trade_id)) {
+          bigSwing  = t.biggest_swing;
+          comeback  = t;
+        }
+      });
+
+      function makeClickable(card, fn) {
+        card.setAttribute('data-clickable', '1');
+        card.addEventListener('click', fn);
+        return card;
       }
-      if (closestTrade) {
-        cardsEl.appendChild(makeCard(
+
+      // 1. Most Trade Wins
+      if (topWin) {
+        var c = makeCard('Most Trade Wins', YK.ownerDisplayName(topWin), ownerWins[topWin] + ' wins');
+        makeClickable(c, function(){ scrollToTradesAndFilterOwner(topWin); });
+        cardsEl.appendChild(c);
+      }
+
+      // 2. Most Trade Losses
+      if (topLoss) {
+        var c = makeCard('Most Trade Losses', YK.ownerDisplayName(topLoss), ownerLosses[topLoss] + ' losses');
+        c.querySelector('.stat-value').style.color = '#B91C1C';
+        makeClickable(c, function(){ scrollToTradesAndFilterOwner(topLoss); });
+        cardsEl.appendChild(c);
+      }
+
+      // 3. Most Lopsided Trade
+      if (lopsided) {
+        var winSide = (lopsided.sides||[]).find(function(s){ return s.is_winner; }) || {};
+        var c = makeCard(
+          'Most Lopsided Trade',
+          '#' + lopsided.trade_id,
+          YK.ownerDisplayName(winSide.owner||'\u2014') + ' +' + (lopsided.win_margin||0).toFixed(1)
+        );
+        makeClickable(c, function(){ scrollToTrade(lopsided.trade_id); });
+        cardsEl.appendChild(c);
+      }
+
+      // 4. Closest Trade
+      if (closest) {
+        var winSide2 = (closest.sides||[]).find(function(s){ return s.is_winner; }) || {};
+        var c = makeCard(
           'Closest Trade',
-          '#' + closestTrade.trade_id,
-          'margin: ' + (closestTrade.win_margin || 0).toFixed(1) + ' (' + (closestTrade.season || '\u2014') + ')'
-        ));
+          '#' + closest.trade_id,
+          YK.ownerDisplayName(winSide2.owner||'\u2014') + ' +' + (closest.win_margin||0).toFixed(1)
+        );
+        makeClickable(c, function(){ scrollToTrade(closest.trade_id); });
+        cardsEl.appendChild(c);
       }
+
+      // 5. Most Trades Overall
+      if (topCount) {
+        var c = makeCard('Most Trades', YK.ownerDisplayName(topCount), ownerCount[topCount] + ' trades');
+        makeClickable(c, function(){ scrollToTradesAndFilterOwner(topCount); });
+        cardsEl.appendChild(c);
+      }
+
+      // 6. Biggest Comeback
+      if (comeback) {
+        var c = makeCard(
+          'Biggest Comeback',
+          '#' + comeback.trade_id,
+          YK.ownerDisplayName(comeback.last_winner||'\u2014') + ' swung +' + (comeback.biggest_swing||0).toFixed(1)
+        );
+        makeClickable(c, function(){ scrollToTrade(comeback.trade_id); });
+        cardsEl.appendChild(c);
+      }
+    }
+
+    function scrollToTrade(tradeId) {
+      if (filterOwner) {
+        filterOwner = '';
+        var os = document.getElementById('owner-filter-select');
+        if (os) os.value = '';
+        applyFiltersAndSort();
+      }
+      setTimeout(function() {
+        var el = document.getElementById('trade-' + tradeId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          el.style.outline = '2px solid var(--brand-gold)';
+          el.style.boxShadow = '0 0 0 5px rgba(202,138,4,0.15)';
+          el.style.transition = 'outline 0.5s, box-shadow 0.5s';
+          setTimeout(function() { el.style.outline = ''; el.style.boxShadow = ''; }, 2500);
+        }
+      }, 150);
+    }
+
+    function scrollToTradesAndFilterOwner(owner) {
+      filterOwner = owner;
+      var os = document.getElementById('owner-filter-select');
+      if (os) os.value = owner;
+      applyFiltersAndSort();
+      setTimeout(function() {
+        var sec = document.getElementById('all-trades-section');
+        if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
     }
 
     // Initial summary cards
@@ -190,19 +279,11 @@
       });
     });
 
-    // ── Collusion toggle ─────────────────────────────────────────────────── //
-    var collusionToggleBtn = document.getElementById('collusion-toggle-btn');
-    if (collusionToggleBtn) {
-      collusionToggleBtn.addEventListener('click', function() {
-        if (filterCollusion === 'hide') {
-          filterCollusion = 'show';
-          collusionToggleBtn.textContent = '\u26A0 Hide Collusion';
-          collusionToggleBtn.classList.add('active');
-        } else {
-          filterCollusion = 'hide';
-          collusionToggleBtn.textContent = '\u26A0 Show Collusion';
-          collusionToggleBtn.classList.remove('active');
-        }
+    // ── Collusion checkbox ───────────────────────────────────────────────── //
+    var collusionCb = document.getElementById('collusion-cb');
+    if (collusionCb) {
+      collusionCb.addEventListener('change', function() {
+        filterCollusion = collusionCb.checked ? 'show' : 'hide';
         applyFiltersAndSort();
       });
     }
@@ -450,8 +531,8 @@
 
       return '<div class="trade-side ' + sideClass + '">' +
         '<div class="trade-side-owner">' + dot + YK.ownerDisplayName(owner) + winBadge + '</div>' +
-        winnerHistory +
         '<div class="trade-side-total">' + total.toFixed(1) + ' pts</div>' +
+        winnerHistory +
         '<div class="asset-list-header"><span>Asset</span><span>Dynasty Value</span></div>' +
         '<ul class="asset-list">' + assetRows + '</ul>' +
         '</div>';

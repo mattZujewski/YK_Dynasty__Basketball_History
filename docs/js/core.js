@@ -100,7 +100,7 @@ window.YK = window.YK || {};
     '#475569', // Baden      — Slate
     '#9F1239', // Berke      — Maroon
     '#EA580C', // Delaney    — Orange
-    '#D97706', // Gold       — Amber
+    '#CA8A04', // Gold      — Gold
     '#16A34A', // Green      — Green
     '#2563EB', // HaleTrager — Blue (Ryan Trager)
     '#DC2626', // Jowkar     — Crimson

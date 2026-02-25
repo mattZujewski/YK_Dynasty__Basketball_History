@@ -19,121 +19,98 @@
     <!-- Stat Bar (dynamic) -->
     <div class="stat-bar" id="stat-bar"></div>
 
-    <!-- Dashboard Navigation Cards — League pages -->
-    <div class="dashboard-grid">
+    <!-- Featured: Trade Analysis Suite (Ryan's 3 pages) -->
+    <div style="margin-bottom:8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <span class="featured-label featured-win" style="margin:0">&#x2B50; Trade Analysis</span>
+      <span style="font-size:0.82rem;color:var(--text-muted)">Dynasty value grades, trends &amp; leaderboard</span>
+    </div>
+    <div class="dashboard-grid-featured">
+      <a class="dashboard-card dashboard-card-featured" href="trade-cards.html">
+        <div class="card-icon">&#x1F0CF;</div>
+        <div class="card-title">Trade Cards</div>
+        <div class="card-desc">
+          Side-by-side dynasty value breakdowns &mdash; asset values, win margins, and how winners shift over time.
+        </div>
+        <span class="card-tag">Dynasty Values</span>
+      </a>
+      <a class="dashboard-card dashboard-card-featured" href="trade-value-over-time.html">
+        <div class="card-icon">&#x23F3;</div>
+        <div class="card-title">Trade Trends</div>
+        <div class="card-desc">
+          How each trade&rsquo;s value shifted across 5 re-evaluation points as players developed and picks resolved.
+        </div>
+        <span class="card-tag">5 Snapshots</span>
+      </a>
+      <a class="dashboard-card dashboard-card-featured" href="trade-leaderboard.html">
+        <div class="card-icon">&#x1F4CA;</div>
+        <div class="card-title">Trade Leaderboard</div>
+        <div class="card-desc">
+          W-L trade records by owner &mdash; who wins dynasty trades? Filter by season, drill into every deal.
+        </div>
+        <span class="card-tag">W-L Records</span>
+      </a>
+    </div>
+
+    <!-- Secondary: League Pages + Other Trade Pages -->
+    <h3 style="font-size:0.8rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--text-muted);margin:28px 0 10px">League</h3>
+    <div class="dashboard-grid-sm">
       <a class="dashboard-card" href="standings.html">
         <div class="card-icon">&#x1F3C6;</div>
-        <div class="card-title">All-Time Standings</div>
-        <div class="card-desc">
-          Aggregate win-loss records by owner across all Fantrax seasons,
-          sorted by winning percentage.
-        </div>
+        <div class="card-title">Standings</div>
+        <div class="card-desc">All-time win-loss records by owner across every Fantrax season.</div>
         <span class="card-tag">By Owner</span>
       </a>
       <a class="dashboard-card" href="roster.html">
         <div class="card-icon">&#x1F4DD;</div>
         <div class="card-title">Rosters</div>
-        <div class="card-desc">
-          Current 2025&ndash;26 rosters pulled from Fantrax. See every
-          player on every team with status and position.
-        </div>
+        <div class="card-desc">Current 2025&ndash;26 rosters pulled from Fantrax with status and position.</div>
         <span class="card-tag">Live Data</span>
       </a>
       <a class="dashboard-card" href="picks.html">
         <div class="card-icon">&#x1F4CB;</div>
         <div class="card-title">Draft Picks</div>
-        <div class="card-desc">
-          Who owns which future picks from 2027&ndash;2031. The ultimate
-          war chest tracker for dynasty managers.
-        </div>
+        <div class="card-desc">Who owns which future picks from 2027&ndash;2031.</div>
         <span class="card-tag">5-Year Grid</span>
       </a>
       <a class="dashboard-card" href="team.html">
         <div class="card-icon">&#x1F464;</div>
         <div class="card-title">Team Profiles</div>
-        <div class="card-desc">
-          Detailed owner profiles with season history, trade logs,
-          draft picks, and current roster.
-        </div>
+        <div class="card-desc">Owner profiles with season history, trades, picks, and roster.</div>
         <span class="card-tag">10 Owners</span>
       </a>
       <a class="dashboard-card" href="players.html">
         <div class="card-icon">&#x26A1;</div>
         <div class="card-title">Players</div>
-        <div class="card-desc">
-          Dynasty player database with Fantrax stats, ownership history,
-          and season-by-season performance.
-        </div>
+        <div class="card-desc">Dynasty player database with Fantrax stats and ownership history.</div>
         <span class="card-tag">All Seasons</span>
       </a>
       <a class="dashboard-card" href="rankings.html">
         <div class="card-icon">&#x1F451;</div>
         <div class="card-title">Rankings</div>
-        <div class="card-desc">
-          Lawson dynasty rankings with historical movement across 29 snapshots.
-          Track who&rsquo;s rising and falling.
-        </div>
+        <div class="card-desc">Lawson dynasty rankings with historical movement across 29 snapshots.</div>
         <span class="card-tag">Lawson</span>
       </a>
       <a class="dashboard-card" href="stats.html">
         <div class="card-icon">&#x1F4C8;</div>
         <div class="card-title">Stats</div>
-        <div class="card-desc">
-          Season-by-season Fantrax performance stats for all players.
-          Filter by owner, season, and position.
-        </div>
+        <div class="card-desc">Season-by-season Fantrax performance stats. Filter by owner, season, position.</div>
         <span class="card-tag">FPPG &amp; More</span>
       </a>
     </div>
 
-    <!-- Trade Section -->
-    <h2 style="margin-top:36px;margin-bottom:4px">&#x1F504; Trades</h2>
-    <p class="chart-description" style="margin-bottom:16px">Five ways to explore the trade history — from the raw log to dynasty value analysis.</p>
-    <div class="dashboard-grid">
+    <h3 style="font-size:0.8rem;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--text-muted);margin:24px 0 10px">More Trades</h3>
+    <div class="dashboard-grid-sm">
       <a class="dashboard-card" href="trade.html">
         <div class="card-icon">&#x1F4C4;</div>
         <div class="card-title">Trade Log</div>
-        <div class="card-desc">
-          Every trade across all seasons with both sides, resolved picks,
-          and letter grades (System A).
-        </div>
+        <div class="card-desc">Every trade across all seasons with resolved picks and letter grades.</div>
         <span class="card-tag" id="card-trade-tag">All Seasons</span>
       </a>
       <a class="dashboard-card" href="grades.html">
         <div class="card-icon">&#x1F393;</div>
         <div class="card-title">Trade Grades</div>
-        <div class="card-desc">
-          System A letter grades (A+ to F) for every graded trade.
-          Sortable by grade, season, and owner.
-        </div>
+        <div class="card-desc">System A letter grades (A+ to F) for every graded trade.</div>
         <span class="card-tag">A+ &ndash; F</span>
-      </a>
-      <a class="dashboard-card" href="trade-cards.html">
-        <div class="card-icon">&#x1F0CF;</div>
-        <div class="card-title">Trade Cards</div>
-        <div class="card-desc">
-          Side-by-side dynasty value breakdowns for each trade &mdash;
-          asset values, win margins, and TVOT mini-bars.
-        </div>
-        <span class="card-tag">Dynasty Values</span>
-      </a>
-      <a class="dashboard-card" href="trade-value-over-time.html">
-        <div class="card-icon">&#x23F3;</div>
-        <div class="card-title">Trade Trends</div>
-        <div class="card-desc">
-          How each trade&rsquo;s dynasty value shifted across 5 evaluation
-          points as players developed and picks resolved.
-        </div>
-        <span class="card-tag">5 Snapshots</span>
-      </a>
-      <a class="dashboard-card" href="trade-leaderboard.html">
-        <div class="card-icon">&#x1F4CA;</div>
-        <div class="card-title">Trade Leaderboard</div>
-        <div class="card-desc">
-          Overall W-L trade records by owner. Filter by season and drill
-          down into every individual trade.
-        </div>
-        <span class="card-tag">W-L Records</span>
       </a>
     </div>
 

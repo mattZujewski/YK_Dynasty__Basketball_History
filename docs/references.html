@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About This Analysis &mdash; YK Dynasty Basketball</title>
+  <script>if(localStorage.getItem('yk_theme')==='dark')document.documentElement.classList.add('dark');</script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-container">
+    <header class="page-header">
+      <h1>&#x1F4D6; About This Analysis</h1>
+      <p class="subtitle">Methodology, data sources, and how to interpret the trade grades</p>
+    </header>
+
+    <div class="chart-section">
+      <h2>Dynasty Value Formula</h2>
+      <p class="chart-description">
+        Every player is assigned a <strong>dynasty value</strong> calculated as:
+        <strong>Weighted FPPG &times; Dynasty Multiplier &times; Star Premium &times; GP Modifier</strong>.
+      </p>
+      <p class="chart-description">
+        <strong>Weighted FPPG</strong> blends the last three Fantrax seasons (50/30/20 weight, most recent first)
+        to smooth out injury years and one-season outliers.
+        <strong>Dynasty Multiplier</strong> rewards youth and punishes age: players 22 and under with elite production
+        receive up to 1.8&times;, while players 34+ receive 0.7&times;.
+        <strong>Star Premium</strong> amplifies elite players: top-5 dynasty assets receive 2.0&times;,
+        top-6 through top-15 receive 1.5&times;.
+        <strong>GP Modifier</strong> adjusts for durability &mdash; players averaging fewer than 35 games per season
+        take a 0.70&times; haircut.
+      </p>
+      <p class="chart-description">
+        Draft picks are valued using a positional table based on the expected pick range given the
+        current owner&rsquo;s historical team strength.
+        All values are re-evaluated at five points in time (Year 1 through Year 5) as production data
+        and player development update the formula inputs.
+      </p>
+    </div>
+
+    <div class="chart-section">
+      <h2>Trade Grading Systems</h2>
+      <p class="chart-description">
+        The site runs two parallel grading systems.
+        <strong>System A</strong> (Trade Log + Trade Grades pages) uses letter grades (A+ to F)
+        based on a blended score: 60% player production value and 40% draft pick value at the time of the trade.
+        System A covers all seasons including 2020&ndash;21.
+      </p>
+      <p class="chart-description">
+        <strong>System B</strong> (Trade Cards + Trade Leaderboard + TVOT pages) uses the dynasty value formula
+        described above to assign a numeric dynasty value to each side of a trade.
+        The side with the higher total dynasty value wins the trade grade.
+        System B covers 2021&ndash;22 onward (118 trades as of the last build).
+        The two systems agree on the trade winner approximately 58% of the time &mdash;
+        disagreements reflect legitimate methodological differences, not errors.
+      </p>
+      <p class="chart-description">
+        Two trades (IDs 99 and 111, both involving the same two owners) are flagged as collusion
+        and excluded from all standings, leaderboards, and summary statistics.
+        They can be revealed by enabling &ldquo;Include Collusion Flags&rdquo; on the Trade Cards page.
+      </p>
+    </div>
+
+    <div class="chart-section">
+      <h2>Trade Value Over Time (TVOT)</h2>
+      <p class="chart-description">
+        The TVOT system re-runs the dynasty value formula at up to five evaluation points after each trade.
+        This captures how a trade looks in retrospect &mdash; for example, if a player got injured after the
+        trade, or if a draft pick turned into a star.
+        A trade that &ldquo;flipped&rdquo; means the initial loser eventually received more dynasty value
+        than the initial winner.
+        The <strong>swing</strong> metric measures the total dynasty value difference between the biggest
+        gap and the smallest gap across all evaluation points.
+      </p>
+    </div>
+
+    <div class="chart-section">
+      <h2>Data Sources</h2>
+      <ul style="font-size:0.9rem;color:var(--text-secondary);line-height:1.9;padding-left:20px">
+        <li><strong>Trade log:</strong> YK Dynasty Basketball spreadsheet (maintained by Ryan Trager)</li>
+        <li><strong>Player stats:</strong> Fantrax season exports (2021&ndash;22 through 2025&ndash;26)</li>
+        <li><strong>Dynasty rankings:</strong> Lawson Rankings (29 snapshots, 2021&ndash;2026)</li>
+        <li><strong>League rules:</strong> YK Dynasty Basketball Constitution</li>
+      </ul>
+    </div>
+
+    <div class="chart-section">
+      <h2>Questions or Corrections?</h2>
+      <p class="chart-description">
+        This site is maintained by <strong>Ryan Trager</strong>, YK Dynasty Basketball commissioner.
+        If you spot a trade that looks wrong, a player value that seems off, or have questions about
+        the methodology, reach out directly in the league group chat or Discord.
+      </p>
+      <p class="chart-description" style="color:var(--text-muted);font-size:0.85rem">
+        Data last rebuilt: February 2026. The analysis tool runs on Python 3 and is available at
+        <code style="background:var(--bg-primary);padding:2px 6px;border-radius:4px">~/Projects/yk-trade-analyzer</code>.
+      </p>
+    </div>
+  </main>
+
+  <script src="js/core.js"></script>
+</body>
+</html>

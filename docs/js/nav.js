@@ -121,6 +121,16 @@
         }
       });
     }
+
+    // ── Footer ────────────────────────────────────────────────────────────
+    if (!document.getElementById('yk-footer')) {
+      var footer = document.createElement('footer');
+      footer.id = 'yk-footer';
+      footer.innerHTML = '<a href="' + base + 'references.html">About This Analysis</a>' +
+        '<span style="margin:0 12px;opacity:0.4">·</span>' +
+        '<span>YK Dynasty Basketball</span>';
+      document.body.appendChild(footer);
+    }
   }
 
   if (document.readyState === 'loading') {

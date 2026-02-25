@@ -280,6 +280,24 @@
       font-size: 0.63rem; font-weight: 600; text-transform: uppercase;
       color: var(--text-muted); margin: 5px 0 2px;
     }
+
+    /* Desktop: filter bar stays on one row */
+    @media (min-width: 769px) {
+      .filter-bar { flex-wrap: nowrap !important; align-items: center; }
+      .filter-bar > div { flex-shrink: 0; display: flex; align-items: center; gap: 4px; }
+    }
+    /* Tighter trade card padding on desktop */
+    @media (min-width: 769px) {
+      .trade-card-header { padding: 7px 12px 6px; }
+      .trade-side { padding: 10px 12px; }
+      .trade-card-footer { padding: 6px 12px; }
+    }
+    /* Stat cards: centered text */
+    .stat-card .stat-label { text-align: center; }
+    .stat-card .stat-value { text-align: center; word-break: break-word; }
+    /* Clickable stat cards */
+    .stat-card[data-clickable] { cursor: pointer; }
+    .stat-card[data-clickable]:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
   </style>
 </head>
 <body>
@@ -293,11 +311,6 @@
 
     <!-- Season filter bar (top of page) -->
     <div id="season-filter-bar"></div>
-
-    <!-- Collusion toggle -->
-    <div style="margin-bottom:12px">
-      <button id="collusion-toggle-btn" class="sfb-btn">&#x26A0; Show Collusion</button>
-    </div>
 
     <!-- Cross-links -->
     <div class="cross-links">
@@ -333,7 +346,7 @@
     </div>
 
     <!-- All Trades -->
-    <div class="chart-section">
+    <div class="chart-section" id="all-trades-section">
       <h2>All Trade Grades <span id="cards-count-inline" style="font-size:0.8rem;font-weight:400;color:var(--text-muted)"></span></h2>
       <p class="chart-description">Filter and sort all graded trades. Click &ldquo;TVOT&rdquo; to see how a trade&rsquo;s value changed over time.</p>
 
@@ -352,6 +365,13 @@
           <button class="filter-btn active" data-sortby="margin">Biggest Margin</button>
           <button class="filter-btn" data-sortby="recent">Most Recent</button>
           <button class="filter-btn" data-sortby="fair">Closest First</button>
+        </div>
+        <span class="filter-sep">|</span>
+        <div style="display:flex;align-items:center;gap:6px">
+          <label style="font-size:0.82rem;color:var(--text-muted);display:flex;align-items:center;gap:5px;cursor:pointer">
+            <input type="checkbox" id="collusion-cb" style="cursor:pointer">
+            Include Collusion Flags
+          </label>
         </div>
       </div>
 

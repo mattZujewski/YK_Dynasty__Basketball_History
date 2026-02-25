@@ -297,6 +297,7 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   color: var(--text-muted);
   margin-bottom: 4px;
+  text-align: center;
 }
 .stat-card .stat-value {
   font-size: 1.65rem;
@@ -304,6 +305,7 @@ img { max-width: 100%; display: block; }
   color: var(--brand-green);
   letter-spacing: -0.02em;
   line-height: 1;
+  text-align: center; word-break: break-word;
 }
 .stat-card .stat-value.gold { color: var(--brand-gold); }
 
@@ -364,6 +366,63 @@ img { max-width: 100%; display: block; }
 html.dark .dashboard-card .card-tag {
   background: rgba(26,107,60,0.25);
 }
+
+/* --- Featured Labels --------------------------------------- */
+.featured-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.featured-win  { background: rgba(42,157,143,0.15); color: var(--brand-green); }
+.featured-loss { background: rgba(230,57,70,0.12); color: var(--status-ir); }
+.featured-fair { background: rgba(74,181,241,0.12); color: #2a6ba8; }
+
+/* --- Featured Cards (home page hero section) --------------- */
+.dashboard-grid-featured {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 12px;
+}
+.dashboard-card-featured {
+  border-color: var(--brand-green);
+  border-width: 2px;
+  padding: 28px 24px;
+}
+.dashboard-card-featured .card-icon { font-size: 3rem; margin-bottom: 16px; }
+.dashboard-card-featured .card-title { font-size: 1.3rem; }
+.dashboard-grid-sm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.dashboard-grid-sm .dashboard-card { padding: 16px 18px; }
+.dashboard-grid-sm .dashboard-card .card-icon { font-size: 1.8rem; margin-bottom: 8px; }
+.dashboard-grid-sm .dashboard-card .card-title { font-size: 1rem; }
+.dashboard-grid-sm .dashboard-card .card-desc { font-size: 0.82rem; }
+@media (max-width: 768px) {
+  .dashboard-grid-featured { grid-template-columns: 1fr; }
+}
+
+/* --- Footer ------------------------------------------------ */
+#yk-footer {
+  text-align: center;
+  padding: 28px 24px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+}
+#yk-footer a {
+  color: var(--brand-green);
+  text-decoration: none;
+}
+#yk-footer a:hover { text-decoration: underline; }
 
 /* --- Chart Sections ---------------------------------------- */
 .chart-section {

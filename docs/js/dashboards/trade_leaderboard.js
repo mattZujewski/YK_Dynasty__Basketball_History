@@ -85,13 +85,13 @@
     // ── Summary stat cards ──────────────────────────────────────────────── //
     var cardsEl = document.getElementById('summary-cards');
 
-    function makeCard(label, value, subtext) {
+    function makeCard(label, value, subtext, valueColor) {
       var card = document.createElement('div');
       card.className = 'stat-card';
       card.innerHTML =
         '<div class="stat-label">' + label + '</div>' +
-        '<div class="stat-value">' + value + '</div>' +
-        (subtext ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px">' + subtext + '</div>' : '');
+        '<div class="stat-value"' + (valueColor ? ' style="color:' + valueColor + ';font-size:1.2rem"' : '') + '>' + value + '</div>' +
+        (subtext ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px;text-align:center">' + subtext + '</div>' : '');
       return card;
     }
 
@@ -121,6 +121,39 @@
           'avg dynasty value per win'
         ));
       }
+
+      // Bottom of the Board
+      var minTradesThreshold = 2;
+      var qualifiedStandings = standings.filter(function(r) { return (r.wins + r.losses) >= minTradesThreshold; });
+      var worstWinRate = qualifiedStandings.slice().sort(function(a, b) {
+        return (a.win_pct - b.win_pct) || (a.wins - b.wins);
+      })[0];
+      var worstMargin = qualifiedStandings.filter(function(r) { return r.wins > 0; }).sort(function(a, b) {
+        return a.avg_margin - b.avg_margin;
+      })[0];
+
+      if (worstWinRate || worstMargin) {
+        var sep = document.createElement('div');
+        sep.style.cssText = 'flex:1 1 100%;width:100%;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--status-ir);padding:4px 0 2px;border-top:1px solid var(--border);margin-top:6px';
+        sep.innerHTML = '&#x1F4C9; Bottom of the Board';
+        cardsEl.appendChild(sep);
+      }
+      if (worstWinRate) {
+        cardsEl.appendChild(makeCard(
+          'Lowest Win Rate',
+          YK.ownerDisplayName(worstWinRate.owner) + ' \u2014 ' + (worstWinRate.win_pct * 100).toFixed(1) + '%',
+          worstWinRate.wins + 'W ' + worstWinRate.losses + 'L',
+          '#B91C1C'
+        ));
+      }
+      if (worstMargin) {
+        cardsEl.appendChild(makeCard(
+          'Lowest Avg Margin',
+          YK.ownerDisplayName(worstMargin.owner) + ' +' + worstMargin.avg_margin.toFixed(1),
+          'avg dynasty value per win',
+          '#B91C1C'
+        ));
+      }
     }
 
     // ── Render standings table with drill-down ──────────────────────────── //
@@ -146,9 +179,8 @@
         var avgStr      = row.wins > 0
           ? (row.avg_margin >= 0 ? '+' : '') + row.avg_margin.toFixed(1)
           : '\u2014';
-        var rankBadge   = i === 0
-          ? '<span style="color:var(--brand-gold);font-weight:900">&#x1F947;</span> '
-          : (i === 1 ? '<span style="color:var(--text-muted)">&#x1F948;</span> ' : '');
+        var rankEmojis  = ['&#x1F947;','&#x1F948;','&#x1F949;','&#x2197;&#xFE0F;','&#x2796;','&#x2796;','&#x1F4C9;','&#x1F4C9;','&#x1F4C9;','&#x1F4A9;'];
+        var rankBadge   = (rankEmojis[i] !== undefined ? '<span>' + rankEmojis[i] + '</span> ' : '');
 
         var safeOwner = YK.escapeHtml(row.owner);
 
