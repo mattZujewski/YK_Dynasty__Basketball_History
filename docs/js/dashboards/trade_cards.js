@@ -151,7 +151,7 @@
     // ── State ────────────────────────────────────────────────────────────── //
     var filterSeason    = '';
     var filterOwner     = '';
-    var filterCollusion = 'show'; // 'show' | 'hide'
+    var filterCollusion = 'hide'; // 'show' | 'hide' — default hidden
     var sortBy          = 'margin'; // 'margin' | 'recent' | 'fair'
 
     // ── Initial full list render ──────────────────────────────────────────── //
@@ -190,14 +190,22 @@
       });
     });
 
-    document.querySelectorAll('[data-collusion]').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('[data-collusion]').forEach(function(b) { b.classList.remove('active'); });
-        btn.classList.add('active');
-        filterCollusion = btn.dataset.collusion;
+    // ── Collusion toggle ─────────────────────────────────────────────────── //
+    var collusionToggleBtn = document.getElementById('collusion-toggle-btn');
+    if (collusionToggleBtn) {
+      collusionToggleBtn.addEventListener('click', function() {
+        if (filterCollusion === 'hide') {
+          filterCollusion = 'show';
+          collusionToggleBtn.textContent = '\u26A0 Hide Collusion';
+          collusionToggleBtn.classList.add('active');
+        } else {
+          filterCollusion = 'hide';
+          collusionToggleBtn.textContent = '\u26A0 Show Collusion';
+          collusionToggleBtn.classList.remove('active');
+        }
         applyFiltersAndSort();
       });
-    });
+    }
 
     // ── Helpers ───────────────────────────────────────────────────────────── //
     function applyFiltersAndSort() {

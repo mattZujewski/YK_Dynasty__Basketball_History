@@ -60,6 +60,7 @@
   <span class="nav-spacer"></span>
   <span class="nav-meta" id="nav-data-date">2025-26</span>
   <button id="dark-mode-toggle" aria-label="Toggle dark mode">\u{1F319}</button>
+  <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">&#x2630;</button>
 </nav>`;
 
     const container = document.createElement('div');
@@ -79,6 +80,47 @@
       updateToggle();
       document.dispatchEvent(new CustomEvent('themechange', { detail: { dark: isDark } }));
     });
+
+    // ── Mobile nav ────────────────────────────────────────────────────────
+    const hamburger  = nav.querySelector('.nav-hamburger');
+    const navLinks   = nav.querySelector('.nav-links');
+    const tradesBtn  = nav.querySelector('.nav-dropdown-btn');
+    const tradesMenu = nav.querySelector('.nav-dropdown-menu');
+    const tradeChevron = tradesBtn ? tradesBtn.querySelector('span') : null;
+
+    if (hamburger) {
+      hamburger.addEventListener('click', function() {
+        const isOpen = navLinks.classList.toggle('mobile-open');
+        hamburger.textContent = isOpen ? '\u00D7' : '\u2630'; // ✕ or ☰
+        hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        if (!isOpen && tradesMenu) {
+          tradesMenu.classList.remove('mobile-open');
+          if (tradeChevron) tradeChevron.textContent = '\u25BC';
+        }
+      });
+    }
+
+    if (tradesBtn && tradesMenu) {
+      tradesBtn.addEventListener('click', function(e) {
+        if (window.innerWidth > 768) return; // desktop: hover handles it
+        e.stopPropagation();
+        const isOpen = tradesMenu.classList.toggle('mobile-open');
+        if (tradeChevron) tradeChevron.textContent = isOpen ? '\u25B2' : '\u25BC';
+      });
+    }
+
+    // Close mobile nav when any link is tapped
+    if (navLinks) {
+      navLinks.addEventListener('click', function(e) {
+        if (window.innerWidth > 768) return;
+        const link = e.target.closest('a');
+        if (link) {
+          navLinks.classList.remove('mobile-open');
+          if (tradesMenu) tradesMenu.classList.remove('mobile-open');
+          if (hamburger) hamburger.textContent = '\u2630';
+        }
+      });
+    }
   }
 
   if (document.readyState === 'loading') {

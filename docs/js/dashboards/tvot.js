@@ -87,14 +87,21 @@
         return (b.biggest_swing || 0) - (a.biggest_swing || 0);
       })[0];
 
-      var ownerFlipCount = {};
+      // Most Flipped For: owner whose trades flipped into their favor (was losing Y1, now winning)
+      // Most Flipped Against: owner whose trades flipped against them (was winning Y1, now losing)
+      var flippedFor     = {};
+      var flippedAgainst = {};
       flipped.forEach(function(t) {
-        (t.receivers || []).forEach(function(r) {
-          ownerFlipCount[r] = (ownerFlipCount[r] || 0) + 1;
-        });
+        if (t.first_winner && t.last_winner) {
+          flippedFor[t.last_winner]       = (flippedFor[t.last_winner]       || 0) + 1;
+          flippedAgainst[t.first_winner]  = (flippedAgainst[t.first_winner]  || 0) + 1;
+        }
       });
-      var topFlipOwner = Object.keys(ownerFlipCount).sort(function(a, b) {
-        return ownerFlipCount[b] - ownerFlipCount[a];
+      var topFlippedFor = Object.keys(flippedFor).sort(function(a, b) {
+        return flippedFor[b] - flippedFor[a];
+      })[0];
+      var topFlippedAgainst = Object.keys(flippedAgainst).sort(function(a, b) {
+        return flippedAgainst[b] - flippedAgainst[a];
       })[0];
 
       // Update headline numbers
@@ -102,23 +109,30 @@
       var subEl = document.getElementById('flip-sub-text');
       if (bigEl) bigEl.textContent = Math.round(flipPct) + '%';
       if (subEl) subEl.textContent =
-        flipped.length + ' of ' + subset.length + ' analyzed trades changed winners over multiple seasons';
+        flipped.length + ' of ' + subset.length + ' trades changed winners over time';
 
-      cardsEl.appendChild(makeCard('Trades Analyzed', subset.length, 'all seasons 2021\u201322 to present'));
-      cardsEl.appendChild(makeCard('Flipped Winners', flipped.length, Math.round(flipPct) + '% of analyzed trades'));
-      cardsEl.appendChild(makeCard('Avg Swing', '+' + avgSwing.toFixed(1), 'dynasty value shift per trade'));
+      cardsEl.appendChild(makeCard('Trades', subset.length, '2021\u201322 to present'));
+      cardsEl.appendChild(makeCard('Flipped', flipped.length, Math.round(flipPct) + '% changed winner'));
+      cardsEl.appendChild(makeCard('Avg Swing', '+' + avgSwing.toFixed(1), 'value shift per trade'));
       if (maxSwingTrade) {
         cardsEl.appendChild(makeCard(
           'Biggest Swing',
           '+' + (maxSwingTrade.biggest_swing || 0).toFixed(1),
-          'Trade #' + maxSwingTrade.trade_id + ' (' + (maxSwingTrade.season || '\u2014') + ')'
+          'Trade #' + maxSwingTrade.trade_id
         ));
       }
-      if (topFlipOwner) {
+      if (topFlippedFor) {
         cardsEl.appendChild(makeCard(
-          'Most Trades Flipped',
-          YK.ownerDisplayName(topFlipOwner),
-          ownerFlipCount[topFlipOwner] + ' trades changed in their favor (or against)'
+          'Most Flipped For',
+          YK.ownerDisplayName(topFlippedFor),
+          flippedFor[topFlippedFor] + ' trades flipped in their favor'
+        ));
+      }
+      if (topFlippedAgainst) {
+        cardsEl.appendChild(makeCard(
+          'Most Flipped Against',
+          YK.ownerDisplayName(topFlippedAgainst),
+          flippedAgainst[topFlippedAgainst] + ' trades flipped away from them'
         ));
       }
     }

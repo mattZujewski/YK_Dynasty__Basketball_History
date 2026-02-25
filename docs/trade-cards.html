@@ -291,36 +291,43 @@
       <p class="subtitle">Every graded trade &mdash; both sides, asset values, and winners (2021&ndash;22 to present)</p>
     </header>
 
+    <!-- Season filter bar (top of page) -->
+    <div id="season-filter-bar"></div>
+
+    <!-- Collusion toggle -->
+    <div style="margin-bottom:12px">
+      <button id="collusion-toggle-btn" class="sfb-btn">&#x26A0; Show Collusion</button>
+    </div>
+
     <!-- Cross-links -->
     <div class="cross-links">
       <a href="trade-leaderboard.html">&#x1F4CA; Trade Grades Leaderboard</a>
       <a href="trade-value-over-time.html">&#x23F3; Trade Value Over Time</a>
     </div>
 
-    <!-- Season filter bar -->
-    <div id="season-filter-bar"></div>
-
     <!-- Summary stat cards -->
     <div class="stat-row" id="summary-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
 
-    <!-- Top 5 Most Lopsided -->
+    <!-- Top 5 Most Lopsided (collapsed by default) -->
     <div class="chart-section">
-      <div class="featured-label featured-win">&#x1F3C6; Top 5 Biggest Trade Wins</div>
-      <h2 style="margin-top:0">Most Lopsided Trades</h2>
-      <p class="chart-description">The 5 trades with the highest dynasty value gap between sides (winner highlighted). Collusion-flagged trades excluded.</p>
-      <button class="section-toggle" data-target="top-wins-grid">&#x25BC; Collapse</button>
-      <div class="trade-cards-grid" id="top-wins-grid">
+      <div class="section-header-row">
+        <span class="featured-label featured-win">&#x1F3C6; Top 5 Biggest Wins</span>
+        <span class="section-header-title">Most Lopsided Trades</span>
+      </div>
+      <button class="section-toggle" data-target="top-wins-grid">&#x25BA; Expand</button>
+      <div class="trade-cards-grid grid-collapsed" id="top-wins-grid">
         <p class="text-muted" style="padding:12px">Loading&hellip;</p>
       </div>
     </div>
 
-    <!-- Top 5 Closest -->
+    <!-- Top 5 Closest (collapsed by default) -->
     <div class="chart-section">
-      <div class="featured-label featured-fair">&#x1F91D; Top 5 Closest Trades</div>
-      <h2 style="margin-top:0">Most Evenly Matched Trades</h2>
-      <p class="chart-description">The 5 trades where both sides received nearly equal dynasty value &mdash; true fair deals.</p>
-      <button class="section-toggle" data-target="closest-grid">&#x25BC; Collapse</button>
-      <div class="trade-cards-grid" id="closest-grid">
+      <div class="section-header-row">
+        <span class="featured-label featured-fair">&#x1F91D; Top 5 Closest</span>
+        <span class="section-header-title">Most Evenly Matched Trades</span>
+      </div>
+      <button class="section-toggle" data-target="closest-grid">&#x25BA; Expand</button>
+      <div class="trade-cards-grid grid-collapsed" id="closest-grid">
         <p class="text-muted" style="padding:12px">Loading&hellip;</p>
       </div>
     </div>
@@ -328,7 +335,7 @@
     <!-- All Trades -->
     <div class="chart-section">
       <h2>All Trade Grades <span id="cards-count-inline" style="font-size:0.8rem;font-weight:400;color:var(--text-muted)"></span></h2>
-      <p class="chart-description">Filter and sort all graded trades. Click &ldquo;View TVOT&rdquo; to see how a trade&rsquo;s value changed over time.</p>
+      <p class="chart-description">Filter and sort all graded trades. Click &ldquo;TVOT&rdquo; to see how a trade&rsquo;s value changed over time.</p>
 
       <div class="filter-bar" style="flex-wrap:wrap;gap:8px;align-items:center">
         <div>
@@ -345,11 +352,6 @@
           <button class="filter-btn active" data-sortby="margin">Biggest Margin</button>
           <button class="filter-btn" data-sortby="recent">Most Recent</button>
           <button class="filter-btn" data-sortby="fair">Closest First</button>
-        </div>
-        <span class="filter-sep">|</span>
-        <div>
-          <button class="filter-btn" data-collusion="hide">Hide Collusion</button>
-          <button class="filter-btn active" data-collusion="show">Show All</button>
         </div>
       </div>
 

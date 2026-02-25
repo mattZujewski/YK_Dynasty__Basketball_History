@@ -153,18 +153,18 @@
         var safeOwner = YK.escapeHtml(row.owner);
 
         return '<tr class="standings-row" data-owner-key="' + safeOwner + '">' +
-          '<td style="text-align:center;font-weight:700">' + rankBadge + (i+1) + '</td>' +
-          '<td>' +
+          '<td data-label="" style="text-align:center;font-weight:700">' + rankBadge + (i+1) + '</td>' +
+          '<td data-label="Owner">' +
             '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;' +
               'background:' + color + ';margin-right:7px;vertical-align:middle"></span>' +
             '<strong>' + displayName + '</strong>' +
             '<span class="drill-arrow">&#x25BC;</span>' +
           '</td>' +
-          '<td style="text-align:center;font-weight:600;color:var(--brand-green)">' + row.wins + '</td>' +
-          '<td style="text-align:center;color:var(--text-muted)">' + row.losses + '</td>' +
-          '<td style="text-align:center;font-weight:700">' + pctStr + '</td>' +
-          '<td style="text-align:right;font-weight:600">' + marginStr + '</td>' +
-          '<td style="text-align:right;color:var(--text-muted)">' + avgStr + '</td>' +
+          '<td data-label="W" style="text-align:center;font-weight:600;color:var(--brand-green)">' + row.wins + '</td>' +
+          '<td data-label="L" style="text-align:center;color:var(--text-muted)">' + row.losses + '</td>' +
+          '<td data-label="Win %" style="text-align:center;font-weight:700">' + pctStr + '</td>' +
+          '<td data-label="Total +" style="text-align:right;font-weight:600">' + marginStr + '</td>' +
+          '<td data-label="Avg +" style="text-align:right;color:var(--text-muted)">' + avgStr + '</td>' +
         '</tr>' +
         '<tr class="drill-row" id="drill-' + safeOwner + '">' +
           '<td colspan="7" style="padding:0">' +
