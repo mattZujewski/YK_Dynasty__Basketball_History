@@ -8,6 +8,66 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/chart.umd.min.js"></script>
   <script src="js/chartjs-fix.js"></script>
+  <style>
+    /* Season filter bar */
+    .season-filter-bar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+    .season-filter-label { font-size: 0.82rem; color: var(--text-muted); margin-right: 2px; }
+    .sfb-btn {
+      padding: 4px 10px; border: 1px solid var(--border); border-radius: 99px;
+      background: var(--bg-input); color: var(--text-secondary); font-size: 0.8rem;
+      cursor: pointer; transition: var(--transition);
+    }
+    .sfb-btn.active { background: var(--brand-green); color: #fff; border-color: var(--brand-green); }
+    .sfb-btn.sfb-disabled { opacity: 0.45; cursor: not-allowed; }
+    .sfb-btn:hover:not(.sfb-disabled):not(.active) { background: var(--bg-card); }
+
+    /* Drill-down rows */
+    .drill-row { display: none; }
+    .drill-row.open { display: table-row; }
+    .drill-inner { padding: 10px 16px 14px; background: var(--bg-primary); }
+    .drill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 6px;
+      margin-top: 8px;
+    }
+    .drill-item {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding: 5px 8px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      background: var(--bg-card);
+    }
+    .drill-item-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .drill-item-result { font-weight: 600; }
+    .drill-item-result.win  { color: var(--brand-green); }
+    .drill-item-result.loss { color: var(--status-ir); }
+    .drill-item-row a {
+      color: var(--brand-green);
+      text-decoration: none;
+      margin-left: auto;
+      white-space: nowrap;
+      font-size: 0.75rem;
+    }
+    .drill-item-row a:hover { text-decoration: underline; }
+    .drill-assets {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      padding-top: 2px;
+      border-top: 1px dashed var(--border);
+    }
+    .standings-row { cursor: pointer; }
+    .standings-row:hover td { background: var(--bg-primary); }
+    .drill-arrow { font-size: 0.7rem; color: var(--text-muted); margin-left: 4px; }
+  </style>
 </head>
 <body>
   <script src="js/nav.js"></script>
@@ -15,7 +75,7 @@
   <main class="page-container">
     <header class="page-header">
       <h1>&#x1F4CA; Trade Leaderboard</h1>
-      <p class="subtitle">Dynasty trade grades by owner &mdash; who wins trades? (2022&ndash;23 to present)</p>
+      <p class="subtitle">Dynasty trade grades by owner &mdash; who wins trades? (2021&ndash;22 to present)</p>
     </header>
 
     <!-- Cross-links -->
@@ -24,24 +84,27 @@
       <a href="trade-cards.html" style="color:var(--brand-green);text-decoration:none;padding:5px 12px;border:1px solid var(--border);border-radius:99px;transition:var(--transition)">&#x1F0CF; Trade Cards</a>
     </div>
 
+    <!-- Season filter bar -->
+    <div id="season-filter-bar"></div>
+
     <!-- Summary stat cards -->
     <div class="stat-row" id="summary-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px"></div>
 
     <!-- Overall Standings Table -->
     <div class="chart-section">
       <h2>Overall Trade Grade Standings</h2>
-      <p class="chart-description">Cumulative win/loss record and margin across all graded trades (2023&ndash;24 to present). Click a row to see individual trade grades.</p>
+      <p class="chart-description">Cumulative win/loss record and margin across all graded trades (2021&ndash;22 to present). Click a row to see individual trade grades.</p>
       <div class="data-table-wrapper">
         <table class="data-table" id="overall-table">
           <thead>
             <tr>
-              <th data-sort="rank" style="width:44px">Rank</th>
-              <th data-sort="owner">Owner</th>
-              <th data-sort="wins" style="text-align:center">W</th>
-              <th data-sort="losses" style="text-align:center">L</th>
-              <th data-sort="win_pct" style="text-align:center">Win %</th>
-              <th data-sort="total_margin" style="text-align:right">Total Margin</th>
-              <th data-sort="avg_margin" style="text-align:right">Avg Margin</th>
+              <th style="width:44px">Rank</th>
+              <th>Owner</th>
+              <th style="text-align:center">W</th>
+              <th style="text-align:center">L</th>
+              <th style="text-align:center">Win %</th>
+              <th style="text-align:right">Total Margin</th>
+              <th style="text-align:right">Avg Margin</th>
             </tr>
           </thead>
           <tbody id="overall-tbody">
@@ -61,33 +124,6 @@
       </div>
     </div>
 
-    <!-- Season-by-Season Breakdown -->
-    <div class="chart-section">
-      <h2>Season Breakdown</h2>
-      <p class="chart-description">Per-season trade grade records. Trades dated to the season they occurred in.</p>
-      <div class="filter-bar" id="season-filter">
-        <label>Season:</label>
-      </div>
-      <div class="data-table-wrapper">
-        <table class="data-table" id="season-table">
-          <thead>
-            <tr>
-              <th data-sort="rank" style="width:44px">Rank</th>
-              <th data-sort="owner">Owner</th>
-              <th data-sort="wins" style="text-align:center">W</th>
-              <th data-sort="losses" style="text-align:center">L</th>
-              <th data-sort="win_pct" style="text-align:center">Win %</th>
-              <th data-sort="total_margin" style="text-align:right">Total Margin</th>
-              <th data-sort="avg_margin" style="text-align:right">Avg Margin</th>
-            </tr>
-          </thead>
-          <tbody id="season-tbody">
-            <tr><td colspan="7" class="text-center text-muted" style="padding:12px">Select a season above</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
     <!-- About section -->
     <div class="chart-section">
       <h2>About Trade Grades</h2>
@@ -96,7 +132,7 @@
         <strong>Dynasty Value = Weighted FPPG &times; Dynasty Multiplier &times; Star Premium &times; GP Modifier</strong>.
         The owner who received the higher-value side wins the trade grade.
         Collusion-flagged trades (IDs 99 &amp; 111) are excluded.
-        Coverage: trades from the 2023&ndash;24 season onward.
+        Coverage: trades from the 2021&ndash;22 season onward.
         Only players with Fantrax data (current or historical) are included.
       </p>
     </div>

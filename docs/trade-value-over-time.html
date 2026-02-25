@@ -154,17 +154,27 @@
     [data-tooltip]:hover::after { opacity: 1; }
 
     /* Color bar in expanded timeline */
-    .tvot-colorbar { display:flex; height:28px; border-radius:5px; overflow:hidden; gap:2px; margin-bottom:8px; }
+    .tvot-colorbar { display:flex; height:48px; border-radius:5px; overflow:hidden; gap:2px; margin-bottom:8px; }
     .tvot-colorbar-seg {
-      flex:1; display:flex; align-items:center; justify-content:center;
-      font-size:0.68rem; font-weight:700; color:rgba(255,255,255,0.9);
-      transition:opacity 0.15s;
+      flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+      font-weight:700; color:rgba(255,255,255,0.92); gap:1px;
     }
-    .tvot-colorbar-seg:hover { opacity:0.8; }
     .tvot-colorbar-seg.flip-point { box-shadow:inset 0 0 0 2px rgba(255,255,255,0.7); }
-    .tvot-colorbar-labels { display:flex; margin-bottom:5px; }
-    .tvot-colorbar-labels span { flex:1; text-align:center; font-size:0.62rem; color:var(--text-muted); }
+    .tvot-seg-year   { font-size:0.62rem; line-height:1; opacity:0.85; }
+    .tvot-seg-margin { font-size:0.72rem; line-height:1; }
     .tvot-asset-preview { font-size:0.72rem; color:var(--text-secondary); font-style:italic; margin-left:3px; }
+
+    /* Season filter bar */
+    .season-filter-bar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+    .season-filter-label { font-size: 0.82rem; color: var(--text-muted); margin-right: 2px; }
+    .sfb-btn {
+      padding: 4px 10px; border: 1px solid var(--border); border-radius: 99px;
+      background: var(--bg-input); color: var(--text-secondary); font-size: 0.8rem;
+      cursor: pointer; transition: var(--transition);
+    }
+    .sfb-btn.active { background: var(--brand-green); color: #fff; border-color: var(--brand-green); }
+    .sfb-btn.sfb-disabled { opacity: 0.45; cursor: not-allowed; }
+    .sfb-btn:hover:not(.sfb-disabled):not(.active) { background: var(--bg-card); }
   </style>
 </head>
 <body>
@@ -181,6 +191,10 @@
       <a href="trade-leaderboard.html">&#x1F4CA; Trade Grades Leaderboard</a>
       <a href="trade-cards.html">&#x1F0CF; Trade Cards</a>
     </div>
+
+
+    <!-- Season filter bar -->
+    <div id="season-filter-bar"></div>
 
     <!-- Headline Stat -->
     <div class="tvot-headline">

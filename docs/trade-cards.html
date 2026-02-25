@@ -68,19 +68,13 @@
       padding: 12px 14px;
       min-width: 0;
     }
-    .trade-side.winner-side {
-      background: rgba(42,157,143,0.07);
-    }
-    .trade-side.loser-side {
-      background: rgba(230,57,70,0.04);
-    }
     .trade-side-owner {
       font-weight: 700;
       font-size: 0.88rem;
       display: flex;
       align-items: center;
       gap: 6px;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
     }
     .owner-dot {
       width: 9px; height: 9px;
@@ -95,6 +89,17 @@
       padding: 1px 6px;
       border-radius: 99px;
     }
+    .winner-flipped-badge {
+      font-size: 0.65rem;
+      font-weight: 700;
+      background: rgba(232,184,75,0.18);
+      color: #c7960a;
+      padding: 1px 6px;
+      border-radius: 99px;
+    }
+    .winner-history { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 4px; line-height: 1.3; }
+    .winner-stable  { color: var(--brand-green); }
+    .winner-flipped-text { color: #c7960a; }
     .trade-side-total {
       font-size: 1.05rem;
       font-weight: 800;
@@ -186,6 +191,11 @@
       border-radius: 4px;
     }
 
+    /* Party count badge */
+    .party-tag { font-size: 0.7rem; padding: 1px 6px; border-radius: 4px; }
+    .party-tag-2     { background: rgba(0,0,0,0.05); color: var(--text-muted); }
+    .party-tag-multi { background: rgba(74,181,241,0.15); color: #2a6ba8; }
+
     /* Featured section heading */
     .featured-label {
       display: inline-block;
@@ -201,6 +211,14 @@
     .featured-loss { background: rgba(230,57,70,0.12); color: var(--status-ir); }
     .featured-fair { background: rgba(74,181,241,0.12); color: #2a6ba8; }
 
+    /* Collapsible section toggle */
+    .section-toggle {
+      font-size: 0.78rem; background: none; border: none; color: var(--text-muted);
+      cursor: pointer; padding: 0; margin-bottom: 8px; display: block;
+    }
+    .section-toggle:hover { color: var(--text-primary); }
+    .grid-collapsed { display: none; }
+
     /* Filter bar & select */
     #season-select, #owner-filter-select {
       padding: 4px 8px;
@@ -211,6 +229,18 @@
       font-size: 0.82rem;
     }
     .filter-sep { color: var(--border); margin: 0 4px; }
+
+    /* Season filter bar */
+    .season-filter-bar { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+    .season-filter-label { font-size: 0.82rem; color: var(--text-muted); margin-right: 2px; }
+    .sfb-btn {
+      padding: 4px 10px; border: 1px solid var(--border); border-radius: 99px;
+      background: var(--bg-input); color: var(--text-secondary); font-size: 0.8rem;
+      cursor: pointer; transition: var(--transition);
+    }
+    .sfb-btn.active { background: var(--brand-green); color: #fff; border-color: var(--brand-green); }
+    .sfb-btn.sfb-disabled { opacity: 0.45; cursor: not-allowed; }
+    .sfb-btn:hover:not(.sfb-disabled):not(.active) { background: var(--bg-card); }
 
     @media (max-width: 600px) {
       .trade-card-sides { flex-direction: column; }
@@ -238,10 +268,11 @@
     .tvot-mini-seg {
       flex: 1; display: flex; align-items: center; justify-content: center;
       font-size: 0.62rem; font-weight: 700; color: rgba(255,255,255,0.88);
-      transition: opacity 0.15s;
     }
-    .tvot-mini-seg:hover { opacity: 0.8; }
     .tvot-mini-seg.flip-point { box-shadow: inset 0 0 0 2px rgba(255,255,255,0.6); }
+
+    /* Multi-party trade cards span full grid width */
+    .trade-cards-grid .multi-party-card { grid-column: 1 / -1; }
 
     /* Asset list column header */
     .asset-list-header {
@@ -266,6 +297,9 @@
       <a href="trade-value-over-time.html">&#x23F3; Trade Value Over Time</a>
     </div>
 
+    <!-- Season filter bar -->
+    <div id="season-filter-bar"></div>
+
     <!-- Summary stat cards -->
     <div class="stat-row" id="summary-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px"></div>
 
@@ -273,7 +307,8 @@
     <div class="chart-section">
       <div class="featured-label featured-win">&#x1F3C6; Top 5 Biggest Trade Wins</div>
       <h2 style="margin-top:0">Most Lopsided Trades</h2>
-      <p class="chart-description">The 5 trades with the highest dynasty value gap between sides (winner highlighted in green). Collusion-flagged trades excluded.</p>
+      <p class="chart-description">The 5 trades with the highest dynasty value gap between sides (winner highlighted). Collusion-flagged trades excluded.</p>
+      <button class="section-toggle" data-target="top-wins-grid">&#x25BC; Collapse</button>
       <div class="trade-cards-grid" id="top-wins-grid">
         <p class="text-muted" style="padding:12px">Loading&hellip;</p>
       </div>
@@ -284,6 +319,7 @@
       <div class="featured-label featured-fair">&#x1F91D; Top 5 Closest Trades</div>
       <h2 style="margin-top:0">Most Evenly Matched Trades</h2>
       <p class="chart-description">The 5 trades where both sides received nearly equal dynasty value &mdash; true fair deals.</p>
+      <button class="section-toggle" data-target="closest-grid">&#x25BC; Collapse</button>
       <div class="trade-cards-grid" id="closest-grid">
         <p class="text-muted" style="padding:12px">Loading&hellip;</p>
       </div>

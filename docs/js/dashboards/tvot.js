@@ -29,6 +29,9 @@
 
     // Build details lookup: trade_id → { owner: [top2AssetNames] }
     var detailsById = {};
+    // Also build season lookup: trade_id → season string
+    // (TVOT JSON has empty season at top level; trade_details has correct seasons)
+    var seasonById = {};
     ((detailsData && detailsData.trades) || []).forEach(function(t) {
       var topAssets = {};
       (t.sides || []).forEach(function(s) {
@@ -36,43 +39,31 @@
         topAssets[s.owner] = sorted.slice(0, 2).map(function(a) { return a.name; });
       });
       detailsById[t.trade_id] = topAssets;
+      if (t.season) seasonById[t.trade_id] = t.season;
     });
 
     const trades = data.trades || [];
 
-    // ── Compute headline stats ──────────────────────────────────────────── //
-    const flipped   = trades.filter(function(t) { return t.winner_changed; });
-    const nonCollusion = trades.filter(function(t) {
-      // Collusion trades: IDs 99 and 111
-      return t.trade_id !== 99 && t.trade_id !== 111;
+    // ── Season filter ────────────────────────────────────────────────────── //
+    var filterSeasons = []; // [] = show all
+    var _sfb = YK.buildSeasonFilterBar('season-filter-bar', function(activeSeasons) {
+      filterSeasons = activeSeasons;
+      var subset = getSeasonSubset();
+      rebuildSummaryCards(subset);
+      applyFiltersAndSort();
     });
-    const flipPct   = trades.length > 0 ? (flipped.length / trades.length * 100) : 0;
-    const avgSwing  = trades.length > 0
-      ? trades.reduce(function(s, t) { return s + (t.biggest_swing || 0); }, 0) / trades.length
-      : 0;
 
-    // Most active flipping owner
-    var ownerFlipCount = {};
-    flipped.forEach(function(t) {
-      (t.receivers || []).forEach(function(r) {
-        ownerFlipCount[r] = (ownerFlipCount[r] || 0) + 1;
+    function getSeasonSubset() {
+      if (filterSeasons.length === 0) return trades;
+      return trades.filter(function(t) {
+        // TVOT JSON has empty top-level season; use trade_details season as source
+        var szn = seasonById[t.trade_id] || t.season || '';
+        var s = szn.replace(/^20/, '');
+        return filterSeasons.includes(s);
       });
-    });
-    var topFlipOwner = Object.keys(ownerFlipCount).sort(function(a,b) {
-      return ownerFlipCount[b] - ownerFlipCount[a];
-    })[0];
+    }
 
-    // Biggest single swing
-    var maxSwingTrade = trades.slice().sort(function(a,b) {
-      return (b.biggest_swing || 0) - (a.biggest_swing || 0);
-    })[0];
-
-    // ── Headline ───────────────────────────────────────────────────────── //
-    document.getElementById('flip-pct-big').textContent = Math.round(flipPct) + '%';
-    document.getElementById('flip-sub-text').textContent =
-      flipped.length + ' of ' + trades.length + ' analyzed trades changed winners over multiple seasons';
-
-    // ── Stat cards ─────────────────────────────────────────────────────── //
+    // ── Summary cards ─────────────────────────────────────────────────────── //
     var cardsEl = document.getElementById('summary-cards');
     function makeCard(label, value, sub) {
       var d = document.createElement('div');
@@ -82,23 +73,58 @@
         (sub ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px">' + sub + '</div>' : '');
       return d;
     }
-    cardsEl.appendChild(makeCard('Trades Analyzed', trades.length, 'all seasons 2021–22 to present'));
-    cardsEl.appendChild(makeCard('Flipped Winners', flipped.length, Math.round(flipPct) + '% of all trades'));
-    cardsEl.appendChild(makeCard('Avg Swing', '+' + avgSwing.toFixed(1), 'dynasty value shift per trade'));
-    if (maxSwingTrade) {
-      cardsEl.appendChild(makeCard(
-        'Biggest Swing',
-        '+' + (maxSwingTrade.biggest_swing || 0).toFixed(1),
-        'Trade #' + maxSwingTrade.trade_id + ' (' + (maxSwingTrade.season || '—') + ')'
-      ));
+
+    function rebuildSummaryCards(subset) {
+      cardsEl.innerHTML = '';
+
+      var flipped  = subset.filter(function(t) { return t.winner_changed; });
+      var flipPct  = subset.length > 0 ? (flipped.length / subset.length * 100) : 0;
+      var avgSwing = subset.length > 0
+        ? subset.reduce(function(s, t) { return s + (t.biggest_swing || 0); }, 0) / subset.length
+        : 0;
+
+      var maxSwingTrade = subset.slice().sort(function(a, b) {
+        return (b.biggest_swing || 0) - (a.biggest_swing || 0);
+      })[0];
+
+      var ownerFlipCount = {};
+      flipped.forEach(function(t) {
+        (t.receivers || []).forEach(function(r) {
+          ownerFlipCount[r] = (ownerFlipCount[r] || 0) + 1;
+        });
+      });
+      var topFlipOwner = Object.keys(ownerFlipCount).sort(function(a, b) {
+        return ownerFlipCount[b] - ownerFlipCount[a];
+      })[0];
+
+      // Update headline numbers
+      var bigEl = document.getElementById('flip-pct-big');
+      var subEl = document.getElementById('flip-sub-text');
+      if (bigEl) bigEl.textContent = Math.round(flipPct) + '%';
+      if (subEl) subEl.textContent =
+        flipped.length + ' of ' + subset.length + ' analyzed trades changed winners over multiple seasons';
+
+      cardsEl.appendChild(makeCard('Trades Analyzed', subset.length, 'all seasons 2021\u201322 to present'));
+      cardsEl.appendChild(makeCard('Flipped Winners', flipped.length, Math.round(flipPct) + '% of analyzed trades'));
+      cardsEl.appendChild(makeCard('Avg Swing', '+' + avgSwing.toFixed(1), 'dynasty value shift per trade'));
+      if (maxSwingTrade) {
+        cardsEl.appendChild(makeCard(
+          'Biggest Swing',
+          '+' + (maxSwingTrade.biggest_swing || 0).toFixed(1),
+          'Trade #' + maxSwingTrade.trade_id + ' (' + (maxSwingTrade.season || '\u2014') + ')'
+        ));
+      }
+      if (topFlipOwner) {
+        cardsEl.appendChild(makeCard(
+          'Most Trades Flipped',
+          YK.ownerDisplayName(topFlipOwner),
+          ownerFlipCount[topFlipOwner] + ' trades changed in their favor (or against)'
+        ));
+      }
     }
-    if (topFlipOwner) {
-      cardsEl.appendChild(makeCard(
-        'Most Trades Flipped',
-        YK.ownerDisplayName(topFlipOwner),
-        ownerFlipCount[topFlipOwner] + ' trades changed in their favor (or against)'
-      ));
-    }
+
+    // Initial summary cards
+    rebuildSummaryCards(trades);
 
     // ── Owner filter dropdown ───────────────────────────────────────────── //
     var allOwners = new Set();
@@ -121,7 +147,8 @@
 
     // ── Render ─────────────────────────────────────────────────────────── //
     function applyFiltersAndSort() {
-      var filtered = trades.filter(function(t) {
+      var base = getSeasonSubset();
+      var filtered = base.filter(function(t) {
         if (filterFlip === 'flipped' && !t.winner_changed) return false;
         if (filterFlip === 'stable' && t.winner_changed) return false;
         if (filterOwner && !(t.receivers || []).includes(filterOwner)) return false;
@@ -135,13 +162,15 @@
         return 0;
       });
 
+      var countEl = document.getElementById('tvot-count');
+      if (countEl) {
+        countEl.textContent = 'Showing ' + filtered.length + ' of ' + base.length + ' trades';
+      }
+
       renderTable(filtered);
     }
 
     function renderTable(tradeList) {
-      document.getElementById('tvot-count').textContent =
-        'Showing ' + tradeList.length + ' of ' + trades.length + ' trades';
-
       var tbody = document.getElementById('tvot-tbody');
       if (tradeList.length === 0) {
         tbody.innerHTML = '<tr><td colspan="8" class="text-center text-muted" style="padding:16px">No trades match filter.</td></tr>';
@@ -150,8 +179,8 @@
 
       var rows = tradeList.map(function(t) {
         var isCollusion = (t.trade_id === 99 || t.trade_id === 111);
-        var firstWinner = t.first_winner || '—';
-        var lastWinner  = t.last_winner  || '—';
+        var firstWinner = t.first_winner || '\u2014';
+        var lastWinner  = t.last_winner  || '\u2014';
         var flippedHere = t.winner_changed;
         var swing       = t.biggest_swing || 0;
         var owners      = (t.receivers || []);
@@ -182,7 +211,7 @@
 
         return '<tr class="tvot-trade-row" id="tvot-row-' + t.trade_id + '" data-id="' + t.trade_id + '" style="cursor:pointer;' + rowStyle + '">' +
           '<td style="font-weight:700;color:var(--text-muted);font-size:0.8rem">#' + t.trade_id + '</td>' +
-          '<td style="font-size:0.8rem">' + (t.season || '—') + '</td>' +
+          '<td style="font-size:0.8rem">' + (t.season || '\u2014') + '</td>' +
           '<td class="trade-owners-cell">' + ownerDots + (t.is_multi_party ? '<span class="multi-badge">3-way</span>' : '') + '</td>' +
           '<td>' +
             '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + firstWinColor + ';margin-right:5px;vertical-align:middle"></span>' +
@@ -194,11 +223,11 @@
           '</td>' +
           '<td>' + flipBadge + '</td>' +
           '<td style="text-align:right;font-weight:600">' +
-            '<span data-tooltip="Largest single-season swing in dynasty value — how much the trade outcome shifted between evaluation periods.">' +
+            '<span data-tooltip="Largest single-season swing in dynasty value.">' +
             swingStr + '</span>' +
           '</td>' +
           '<td style="text-align:center">' +
-            '<button class="expand-btn" data-id="' + t.trade_id + '">' + (isOpen ? '▲' : '▼') + '</button>' +
+            '<button class="expand-btn" data-id="' + t.trade_id + '">' + (isOpen ? '\u25B2' : '\u25BC') + '</button>' +
           '</td>' +
         '</tr>' +
         '<tr class="tvot-detail-row' + (isOpen ? ' open' : '') + '" id="tvot-detail-' + t.trade_id + '">' +
@@ -216,28 +245,29 @@
       var results  = trade.eval_results || [];
       if (results.length === 0) return '<div style="padding:10px;color:var(--text-muted);font-size:0.8rem">No timeline data available.</div>';
 
-      // ── Color bar ──
-      var colorBarLabels = '<div class="tvot-colorbar-labels">' +
-        results.map(function(r, i) { return '<span>Y' + (i+1) + '</span>'; }).join('') +
-        '</div>';
+      // Color bar — shows Y# label and margin per year segment
       var colorBar = '<div class="tvot-colorbar">' +
         results.map(function(r, i) {
           var isFlip = (i > 0 && r.winner !== results[i-1].winner);
-          var tipText = 'Y' + (i+1) + (r.season ? ' (' + r.season + ')' : '') + ': ' + YK.ownerDisplayName(r.winner || '—') + ' leads';
+          var totalsArr = Object.values(r.totals || {});
+          var margin = totalsArr.length >= 2
+            ? Math.abs(totalsArr[0] - totalsArr[1])
+            : 0;
+          var tipText = 'Y' + (i+1) + (r.season ? ' (' + r.season + ')' : '') +
+            ': ' + YK.ownerDisplayName(r.winner || '\u2014') + ' +' + margin.toFixed(0);
           return '<div class="tvot-colorbar-seg' + (isFlip ? ' flip-point' : '') + '"' +
             ' style="background:' + YK.ownerColor(r.winner || '') + '"' +
             ' title="' + YK.escapeHtml(tipText) + '">' +
-            'Y' + (i+1) +
+            '<div class="tvot-seg-year">Y' + (i+1) + '</div>' +
+            '<div class="tvot-seg-margin">+' + margin.toFixed(0) + '</div>' +
             '</div>';
         }).join('') +
         '</div>';
 
-      // Determine period labels (shortened)
       var periods = results.map(function(r, i) {
         return r.label || ('Y' + (i + 1));
       });
 
-      // Determine initial winner (first period) and track per period
       var headers = '<th style="min-width:100px">Owner</th>' +
         periods.map(function(p, i) {
           var shortLabel = 'Y' + (i + 1);
@@ -253,7 +283,7 @@
           var prevWin = i > 0 ? (results[i-1].winner === owner) : null;
           var justFlipped = (i > 0 && isWin && !prevWin) || (i > 0 && !isWin && prevWin !== null && prevWin);
           var cls = isWin ? (justFlipped ? 'flip-cell' : 'winner-cell') : '';
-          var valStr = total != null ? total.toFixed(1) : '—';
+          var valStr = total != null ? total.toFixed(1) : '\u2014';
           return '<td class="' + cls + '">' + valStr + (isWin ? ' &#x2714;' : '') + '</td>';
         }).join('');
         var dot = '<span class="tvot-owner-dot" style="background:' + YK.ownerColor(owner) + '"></span>';
@@ -270,23 +300,22 @@
       var overallRow = '<tr style="background:var(--bg-primary);font-size:0.78rem;color:var(--text-muted)">' +
         '<td>Winner</td>' +
         results.map(function(r) {
-          return '<td><strong>' + YK.ownerDisplayName(r.winner || '—') + '</strong></td>';
+          return '<td><strong>' + YK.ownerDisplayName(r.winner || '\u2014') + '</strong></td>';
         }).join('') +
         '<td>' + tradeCardsLink + '</td>' +
       '</tr>';
 
       return '<div class="tvot-detail-inner">' +
-        colorBarLabels + colorBar +
+        colorBar +
         '<table class="tvot-timeline-table">' +
           '<thead><tr>' + headers + '</tr></thead>' +
           '<tbody>' + ownerRows + overallRow + '</tbody>' +
         '</table>' +
-        (trade.is_multi_party ? '<p style="font-size:0.72rem;color:var(--text-muted);margin:6px 0 0">Multi-team trade — values show what each owner received.</p>' : '') +
+        (trade.is_multi_party ? '<p style="font-size:0.72rem;color:var(--text-muted);margin:6px 0 0">Multi-team trade \u2014 values show what each owner received.</p>' : '') +
       '</div>';
     }
 
     // ── Event listeners ─────────────────────────────────────────────────── //
-    // Flip filter buttons
     document.querySelectorAll('[data-flip]').forEach(function(btn) {
       btn.addEventListener('click', function() {
         document.querySelectorAll('[data-flip]').forEach(function(b) { b.classList.remove('active'); });
@@ -296,7 +325,6 @@
       });
     });
 
-    // Sort buttons
     document.querySelectorAll('[data-sortby]').forEach(function(btn) {
       btn.addEventListener('click', function() {
         document.querySelectorAll('[data-sortby]').forEach(function(b) { b.classList.remove('active'); });
@@ -306,13 +334,11 @@
       });
     });
 
-    // Owner select
     ownerSelect.addEventListener('change', function() {
       filterOwner = ownerSelect.value;
       applyFiltersAndSort();
     });
 
-    // Expand/collapse rows (event delegation on tbody)
     document.getElementById('tvot-tbody').addEventListener('click', function(e) {
       var btn = e.target.closest('.expand-btn');
       var row = e.target.closest('.tvot-trade-row');
@@ -330,14 +356,13 @@
         detailRow.classList.add('open');
         expandedIds.add(id);
       }
-      // Update button text
-      if (btn) btn.textContent = isOpen ? '▼' : '▲';
+      if (btn) btn.textContent = isOpen ? '\u25BC' : '\u25B2';
     });
 
     // ── Initial render ──────────────────────────────────────────────────── //
     applyFiltersAndSort();
 
-    // ── Hash deep-link: expand + scroll to a specific trade row ─────────── //
+    // ── Hash deep-link ──────────────────────────────────────────────────── //
     var _hash = window.location.hash;
     if (_hash && _hash.startsWith('#trade-')) {
       var _tid = parseInt(_hash.slice('#trade-'.length));

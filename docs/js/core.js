@@ -94,12 +94,19 @@ window.YK = window.YK || {};
     'Twin Towers':          'HaleTrager',
   };
 
-  // Tableau10-based palette for 10 owners
-  // Index order: Baden, Berke, Delaney, Gold, Green, HaleTrager, Jowkar, Moss, Peterson, Zujewski
-  // Swap 0 (Baden) and 5 (HaleTrager/Trager): Trager = blue (#4e79a7), Baden = gold (#edc948)
+  // Owner color palette — 10 owners in OWNERS_ALPHA order:
+  // Baden, Berke, Delaney, Gold, Green, HaleTrager, Jowkar, Moss, Peterson, Zujewski
   const OWNER_COLORS_RAW = [
-    '#edc948', '#f28e2b', '#e15759', '#76b7b2', '#59a14f',
-    '#4e79a7', '#b07aa1', '#ff9da7', '#9c755f', '#bab0ac',
+    '#475569', // Baden      — Slate
+    '#9F1239', // Berke      — Maroon
+    '#EA580C', // Delaney    — Orange
+    '#D97706', // Gold       — Amber
+    '#16A34A', // Green      — Green
+    '#2563EB', // HaleTrager — Blue (Ryan Trager)
+    '#DC2626', // Jowkar     — Crimson
+    '#B45309', // Moss       — Copper
+    '#7C3AED', // Peterson   — Purple
+    '#0891B2', // Zujewski   — Turquoise
   ];
 
   function ownerColor(name) {
@@ -136,6 +143,63 @@ window.YK = window.YK || {};
   // share the same Baden color.
   function ownerDisplayName(nameOrAlias) {
     return OWNER_DISPLAY[nameOrAlias] || nameOrAlias;
+  }
+
+  // ── Season filter bar helper ─────────────────────────────────────────────
+  // Renders season pill buttons inside containerId.
+  // onChange(activeSeasons) called on each change; [] means "All".
+  // Returns { getActive() } object.
+  function buildSeasonFilterBar(containerId, onChange) {
+    var container = document.getElementById(containerId);
+    if (!container) return { getActive: function() { return []; } };
+
+    var seasons = ['21-22', '22-23', '23-24', '24-25', '25-26'];
+    var active = []; // [] = All
+
+    var html = '<div class="season-filter-bar">' +
+      '<span class="season-filter-label">Season:</span>' +
+      '<button class="sfb-btn active" data-sfb="all">All</button>';
+    seasons.forEach(function(s) {
+      html += '<button class="sfb-btn" data-sfb="' + s + '">' + s + '</button>';
+    });
+    html += '<button class="sfb-btn sfb-disabled" data-sfb="20-21" disabled' +
+      ' data-tooltip="Coming Soon \u2014 2020-21 trades not yet graded">20-21</button>' +
+      '</div>';
+
+    container.innerHTML = html;
+
+    function updateButtons() {
+      container.querySelectorAll('.sfb-btn[data-sfb]').forEach(function(btn) {
+        var val = btn.dataset.sfb;
+        if (val === '20-21') return;
+        if (val === 'all') {
+          btn.classList.toggle('active', active.length === 0);
+        } else {
+          btn.classList.toggle('active', active.includes(val));
+        }
+      });
+    }
+
+    container.addEventListener('click', function(e) {
+      var btn = e.target.closest('.sfb-btn');
+      if (!btn || btn.disabled || btn.classList.contains('sfb-disabled')) return;
+      var val = btn.dataset.sfb;
+      if (val === 'all') {
+        active = [];
+      } else {
+        var idx = active.indexOf(val);
+        if (idx >= 0) {
+          active.splice(idx, 1);
+        } else {
+          active.push(val);
+        }
+        if (active.length === 0) active = [];
+      }
+      updateButtons();
+      if (typeof onChange === 'function') onChange(active.slice());
+    });
+
+    return { getActive: function() { return active.slice(); } };
   }
 
   // CSS var reader
@@ -304,6 +368,7 @@ window.YK = window.YK || {};
     resolveOwner,
     teamToOwner,
     ownerDisplayName,
+    buildSeasonFilterBar,
     cssVar,
     applyChartDefaults,
     barOptions,
