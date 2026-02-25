@@ -24,6 +24,7 @@
     const isTradeLeaderboard = path.includes('trade-leaderboard.html');
     const isTvot       = path.includes('trade-value-over-time.html');
     const isTradeCards = path.includes('trade-cards.html');
+    const isAnyTrade   = isTrade || isGrades || isTradeLeaderboard || isTvot || isTradeCards;
 
     function activeClass(flag) { return flag ? ' nav-active' : ''; }
 
@@ -39,17 +40,22 @@
   <div class="nav-links">
     <a class="nav-link${activeClass(isIndex)}"     href="${base}index.html">Home</a>
     <a class="nav-link${activeClass(isStandings)}" href="${base}standings.html">Standings</a>
-    <a class="nav-link${activeClass(isTrade)}"     href="${base}trade.html">Trades</a>
-    <a class="nav-link${activeClass(isTradeLeaderboard)}" href="${base}trade-leaderboard.html">Trade Grades</a>
-    <a class="nav-link${activeClass(isTvot)}"            href="${base}trade-value-over-time.html">Trade Trends</a>
-    <a class="nav-link${activeClass(isTradeCards)}"      href="${base}trade-cards.html">Trade Cards</a>
+    <div class="nav-dropdown-wrap">
+      <button class="nav-dropdown-btn${activeClass(isAnyTrade)}">Trades <span style="font-size:0.7em;opacity:0.7">&#x25BC;</span></button>
+      <div class="nav-dropdown-menu">
+        <a class="${isTrade ? 'nav-active' : ''}" href="${base}trade.html">&#x1F4C4; Trade Log</a>
+        <a class="${isGrades ? 'nav-active' : ''}" href="${base}grades.html">&#x1F393; Trade Grades</a>
+        <a class="${isTradeCards ? 'nav-active' : ''}" href="${base}trade-cards.html">&#x1F0CF; Trade Cards</a>
+        <a class="${isTvot ? 'nav-active' : ''}" href="${base}trade-value-over-time.html">&#x23F3; Trade Trends</a>
+        <a class="${isTradeLeaderboard ? 'nav-active' : ''}" href="${base}trade-leaderboard.html">&#x1F4CA; Trade Leaderboard</a>
+      </div>
+    </div>
     <a class="nav-link${activeClass(isRoster)}"    href="${base}roster.html">Rosters</a>
     <a class="nav-link${activeClass(isPicks)}"     href="${base}picks.html">Picks</a>
     <a class="nav-link${activeClass(isTeam)}"      href="${base}team.html">Teams</a>
     <a class="nav-link${activeClass(isPlayers)}"   href="${base}players.html">Players</a>
     <a class="nav-link${activeClass(isRankings)}"  href="${base}rankings.html">Rankings</a>
     <a class="nav-link${activeClass(isStats)}"     href="${base}stats.html">Stats</a>
-    <a class="nav-link${activeClass(isGrades)}"    href="${base}grades.html">Grades</a>
   </div>
   <span class="nav-spacer"></span>
   <span class="nav-meta" id="nav-data-date">2025-26</span>

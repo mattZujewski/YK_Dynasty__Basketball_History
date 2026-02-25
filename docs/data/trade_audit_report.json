@@ -1,0 +1,723 @@
+{
+  "generated": "2026-02-24",
+  "summary": {
+    "trades_raw_total": 138,
+    "system_a_total": 138,
+    "system_a_description": "trade_grades.json \u2014 letter grades A+ to F (60% player production + 40% pick value)",
+    "system_b_total": 118,
+    "system_b_description": "trade_details.json \u2014 dynasty values (Weighted FPPG \u00d7 Dynasty Mult \u00d7 Star Premium \u00d7 GP Modifier)",
+    "system_a_only_2020_21": 20,
+    "matched_between_systems": 81,
+    "only_in_system_a": 35,
+    "only_in_system_b": 37,
+    "winner_disagreements": 34,
+    "winner_agreement_rate_pct": 58.0
+  },
+  "key_finding_trade_81": {
+    "system_b_trade_id_81": {
+      "owner_a": "Zujewski",
+      "owner_b": "Peterson",
+      "season": "2022-23",
+      "system_b_winner": "Zujewski",
+      "system_b_margin": 79.5,
+      "system_b_totals": {
+        "Zujewski": 199.9,
+        "Peterson": 120.3
+      },
+      "note": "Zujewski received JJJ + Moss 2026 1st + Jaime Jacquez + Yves Missi"
+    },
+    "matching_system_a_trade": {
+      "grade_index": 77,
+      "system_a_winner": "Peterson",
+      "system_a_grades": {
+        "Peterson": null,
+        "Zujewski": null
+      },
+      "note": "System A gives Peterson the better grade \u2014 two methodologies disagree. NOT a data error."
+    },
+    "conclusion": "Two systems legitimately disagree. System A weights pick value at 40% and may value Anthony Davis + Josh Hart + two 2nd rounds above JJJ + 1st in that era. System B assigns dynasty values based on Weighted FPPG \u00d7 multipliers, making JJJ + 1st more valuable. No bug \u2014 trade #81 in trade_details.json is correctly computed."
+  },
+  "winner_disagreements": [
+    {
+      "grade_index": 20,
+      "detail_id": 24,
+      "season": "2021-22",
+      "owners": [
+        "Berke",
+        "Trager"
+      ],
+      "system_a_winner": "Berke",
+      "system_a_grades": {
+        "Berke": "C",
+        "Trager": "INC"
+      },
+      "system_b_winner": "Trager",
+      "system_b_margin": 67.2,
+      "system_b_totals": {
+        "Trager": 95.5,
+        "Berke": 28.3
+      }
+    },
+    {
+      "grade_index": 21,
+      "detail_id": 25,
+      "season": "2021-22",
+      "owners": [
+        "Berke",
+        "Delaney"
+      ],
+      "system_a_winner": "Delaney",
+      "system_a_grades": {
+        "Berke": "F",
+        "Delaney": "C"
+      },
+      "system_b_winner": "Berke",
+      "system_b_margin": 17.8,
+      "system_b_totals": {
+        "Delaney": 66.6,
+        "Berke": 84.4
+      }
+    },
+    {
+      "grade_index": 23,
+      "detail_id": 26,
+      "season": "2021-22",
+      "owners": [
+        "Jowkar",
+        "Zujewski"
+      ],
+      "system_a_winner": "Jowkar",
+      "system_a_grades": {
+        "Zujewski": "F",
+        "Jowkar": "C"
+      },
+      "system_b_winner": "Zujewski",
+      "system_b_margin": 71.0,
+      "system_b_totals": {
+        "Jowkar": 70.2,
+        "Zujewski": 141.2
+      }
+    },
+    {
+      "grade_index": 24,
+      "detail_id": 43,
+      "season": "2021-22",
+      "owners": [
+        "Moss",
+        "Peterson"
+      ],
+      "system_a_winner": "Moss",
+      "system_a_grades": {
+        "Moss": "D",
+        "Peterson": "F"
+      },
+      "system_b_winner": "Peterson",
+      "system_b_margin": 45.8,
+      "system_b_totals": {
+        "Peterson": 100.5,
+        "Moss": 54.6
+      }
+    },
+    {
+      "grade_index": 27,
+      "detail_id": 28,
+      "season": "2021-22",
+      "owners": [
+        "Delaney",
+        "Jowkar"
+      ],
+      "system_a_winner": "Delaney",
+      "system_a_grades": {
+        "Delaney": "C",
+        "Jowkar": "D"
+      },
+      "system_b_winner": "Jowkar",
+      "system_b_margin": 51.9,
+      "system_b_totals": {
+        "Jowkar": 79.7,
+        "Delaney": 27.8
+      }
+    },
+    {
+      "grade_index": 28,
+      "detail_id": 46,
+      "season": "2021-22",
+      "owners": [
+        "Baden",
+        "Trager"
+      ],
+      "system_a_winner": "Baden",
+      "system_a_grades": {
+        "Trager": "INC",
+        "Baden": "D"
+      },
+      "system_b_winner": "Trager",
+      "system_b_margin": 96.6,
+      "system_b_totals": {
+        "Baden": 23.2,
+        "Trager": 119.8
+      }
+    },
+    {
+      "grade_index": 33,
+      "detail_id": 49,
+      "season": "2021-22",
+      "owners": [
+        "Baden",
+        "Jowkar"
+      ],
+      "system_a_winner": "Baden",
+      "system_a_grades": {
+        "Jowkar": "F",
+        "Baden": "D"
+      },
+      "system_b_winner": "Jowkar",
+      "system_b_margin": 85.1,
+      "system_b_totals": {
+        "Baden": 27.9,
+        "Jowkar": 113.0
+      }
+    },
+    {
+      "grade_index": 34,
+      "detail_id": 31,
+      "season": "2021-22",
+      "owners": [
+        "Green",
+        "Jowkar"
+      ],
+      "system_a_winner": "Jowkar",
+      "system_a_grades": {
+        "Jowkar": "B",
+        "Green": "INC"
+      },
+      "system_b_winner": "Green",
+      "system_b_margin": 90.9,
+      "system_b_totals": {
+        "Green": 137.0,
+        "Jowkar": 46.1
+      }
+    },
+    {
+      "grade_index": 35,
+      "detail_id": 50,
+      "season": "2021-22",
+      "owners": [
+        "Baden",
+        "Trager"
+      ],
+      "system_a_winner": "Baden",
+      "system_a_grades": {
+        "Baden": "F",
+        "Trager": "INC"
+      },
+      "system_b_winner": "Trager",
+      "system_b_margin": 16.4,
+      "system_b_totals": {
+        "Trager": 38.9,
+        "Baden": 22.5
+      }
+    },
+    {
+      "grade_index": 38,
+      "detail_id": 52,
+      "season": "2021-22",
+      "owners": [
+        "Berke",
+        "Jowkar"
+      ],
+      "system_a_winner": "Berke",
+      "system_a_grades": {
+        "Jowkar": "INC",
+        "Berke": "F"
+      },
+      "system_b_winner": "Jowkar",
+      "system_b_margin": 4.7,
+      "system_b_totals": {
+        "Berke": 12.9,
+        "Jowkar": 17.6
+      }
+    },
+    {
+      "grade_index": 44,
+      "detail_id": 39,
+      "season": "2021-22",
+      "owners": [
+        "Delaney",
+        "Jowkar"
+      ],
+      "system_a_winner": "Jowkar",
+      "system_a_grades": {
+        "Delaney": "INC",
+        "Jowkar": "D"
+      },
+      "system_b_winner": "Delaney",
+      "system_b_margin": 2.0,
+      "system_b_totals": {
+        "Jowkar": 18.0,
+        "Delaney": 20.0
+      }
+    },
+    {
+      "grade_index": 48,
+      "detail_id": 59,
+      "season": "2021-22",
+      "owners": [
+        "Baden",
+        "Gold"
+      ],
+      "system_a_winner": "Gold",
+      "system_a_grades": {
+        "Baden": "INC",
+        "Gold": "F"
+      },
+      "system_b_winner": "Baden",
+      "system_b_margin": 17.4,
+      "system_b_totals": {
+        "Gold": 10.1,
+        "Baden": 27.5
+      }
+    },
+    {
+      "grade_index": 49,
+      "detail_id": 60,
+      "season": "2021-22",
+      "owners": [
+        "Baden",
+        "Jowkar"
+      ],
+      "system_a_winner": "Baden",
+      "system_a_grades": {
+        "Baden": "C",
+        "Jowkar": "D"
+      },
+      "system_b_winner": "Jowkar",
+      "system_b_margin": 17.0,
+      "system_b_totals": {
+        "Jowkar": 94.2,
+        "Baden": 77.2
+      }
+    },
+    {
+      "grade_index": 51,
+      "detail_id": 63,
+      "season": "2021-22",
+      "owners": [
+        "Berke",
+        "Jowkar"
+      ],
+      "system_a_winner": "Berke",
+      "system_a_grades": {
+        "Jowkar": "INC",
+        "Berke": "F"
+      },
+      "system_b_winner": "Jowkar",
+      "system_b_margin": 88.4,
+      "system_b_totals": {
+        "Berke": 58.7,
+        "Jowkar": 147.1
+      }
+    },
+    {
+      "grade_index": 52,
+      "detail_id": 64,
+      "season": "2021-22",
+      "owners": [
+        "Berke",
+        "Peterson"
+      ],
+      "system_a_winner": "Berke",
+      "system_a_grades": {
+        "Peterson": "F",
+        "Berke": "B"
+      },
+      "system_b_winner": "Peterson",
+      "system_b_margin": 43.1,
+      "system_b_totals": {
+        "Berke": 88.9,
+        "Peterson": 132.1
+      }
+    },
+    {
+      "grade_index": 53,
+      "detail_id": 65,
+      "season": "2021-22",
+      "owners": [
+        "Berke",
+        "Delaney"
+      ],
+      "system_a_winner": "Delaney",
+      "system_a_grades": {
+        "Berke": "F",
+        "Delaney": "B"
+      },
+      "system_b_winner": "Berke",
+      "system_b_margin": 67.8,
+      "system_b_totals": {
+        "Delaney": 79.0,
+        "Berke": 146.7
+      }
+    },
+    {
+      "grade_index": 58,
+      "detail_id": 70,
+      "season": "2022-23",
+      "owners": [
+        "Berke",
+        "Peterson"
+      ],
+      "system_a_winner": "Berke",
+      "system_a_grades": {
+        "Peterson": "F",
+        "Berke": "A+"
+      },
+      "system_b_winner": "Peterson",
+      "system_b_margin": 49.2,
+      "system_b_totals": {
+        "Berke": 77.5,
+        "Peterson": 126.6
+      }
+    },
+    {
+      "grade_index": 62,
+      "detail_id": 95,
+      "season": "2022-23",
+      "owners": [
+        "Gold",
+        "Jowkar"
+      ],
+      "system_a_winner": "Gold",
+      "system_a_grades": {
+        "Jowkar": "INC",
+        "Gold": "A+"
+      },
+      "system_b_winner": "Jowkar",
+      "system_b_margin": 44.1,
+      "system_b_totals": {
+        "Gold": 15.9,
+        "Jowkar": 60.0
+      }
+    },
+    {
+      "grade_index": 66,
+      "detail_id": 71,
+      "season": "2022-23",
+      "owners": [
+        "Green",
+        "Peterson"
+      ],
+      "system_a_winner": "Green",
+      "system_a_grades": {
+        "Peterson": "INC",
+        "Green": "F"
+      },
+      "system_b_winner": "Peterson",
+      "system_b_margin": 26.2,
+      "system_b_totals": {
+        "Green": 22.2,
+        "Peterson": 48.4
+      }
+    },
+    {
+      "grade_index": 67,
+      "detail_id": 72,
+      "season": "2022-23",
+      "owners": [
+        "Gold",
+        "Moss"
+      ],
+      "system_a_winner": "Moss",
+      "system_a_grades": {
+        "Gold": "INC",
+        "Moss": "D"
+      },
+      "system_b_winner": "Gold",
+      "system_b_margin": 74.7,
+      "system_b_totals": {
+        "Moss": 36.3,
+        "Gold": 110.9
+      }
+    },
+    {
+      "grade_index": 69,
+      "detail_id": 74,
+      "season": "2022-23",
+      "owners": [
+        "Gold",
+        "Moss"
+      ],
+      "system_a_winner": "Gold",
+      "system_a_grades": {
+        "Moss": "F",
+        "Gold": "B"
+      },
+      "system_b_winner": "Moss",
+      "system_b_margin": 1.1,
+      "system_b_totals": {
+        "Gold": 17.6,
+        "Moss": 18.7
+      }
+    },
+    {
+      "grade_index": 70,
+      "detail_id": 75,
+      "season": "2022-23",
+      "owners": [
+        "Peterson",
+        "Trager"
+      ],
+      "system_a_winner": "Peterson",
+      "system_a_grades": {
+        "Trager": "INC",
+        "Peterson": "F"
+      },
+      "system_b_winner": "Trager",
+      "system_b_margin": 30.9,
+      "system_b_totals": {
+        "Peterson": 34.2,
+        "Trager": 65.1
+      }
+    },
+    {
+      "grade_index": 74,
+      "detail_id": 79,
+      "season": "2022-23",
+      "owners": [
+        "Delaney",
+        "Zujewski"
+      ],
+      "system_a_winner": "Delaney",
+      "system_a_grades": {
+        "Delaney": "D",
+        "Zujewski": "F"
+      },
+      "system_b_winner": "Zujewski",
+      "system_b_margin": 76.0,
+      "system_b_totals": {
+        "Zujewski": 115.0,
+        "Delaney": 39.0
+      }
+    },
+    {
+      "grade_index": 76,
+      "detail_id": 80,
+      "season": "2022-23",
+      "owners": [
+        "Berke",
+        "Zujewski"
+      ],
+      "system_a_winner": "Berke",
+      "system_a_grades": {
+        "Berke": "B",
+        "Zujewski": "INC"
+      },
+      "system_b_winner": "Zujewski",
+      "system_b_margin": 9.4,
+      "system_b_totals": {
+        "Zujewski": 85.3,
+        "Berke": 75.9
+      }
+    },
+    {
+      "grade_index": 77,
+      "detail_id": 81,
+      "season": "2022-23",
+      "owners": [
+        "Peterson",
+        "Zujewski"
+      ],
+      "system_a_winner": "Peterson",
+      "system_a_grades": {
+        "Peterson": "B",
+        "Zujewski": "D"
+      },
+      "system_b_winner": "Zujewski",
+      "system_b_margin": 79.5,
+      "system_b_totals": {
+        "Zujewski": 199.9,
+        "Peterson": 120.3
+      }
+    },
+    {
+      "grade_index": 81,
+      "detail_id": 88,
+      "season": "2022-23",
+      "owners": [
+        "Delaney",
+        "Trager"
+      ],
+      "system_a_winner": "Delaney",
+      "system_a_grades": {
+        "Trager": "F",
+        "Delaney": "B"
+      },
+      "system_b_winner": "Trager",
+      "system_b_margin": 16.5,
+      "system_b_totals": {
+        "Delaney": 76.4,
+        "Trager": 92.8
+      }
+    },
+    {
+      "grade_index": 84,
+      "detail_id": 85,
+      "season": "2022-23",
+      "owners": [
+        "Berke",
+        "Peterson"
+      ],
+      "system_a_winner": "Peterson",
+      "system_a_grades": {
+        "Berke": "D",
+        "Peterson": "A"
+      },
+      "system_b_winner": "Berke",
+      "system_b_margin": 15.0,
+      "system_b_totals": {
+        "Peterson": 46.5,
+        "Berke": 61.5
+      }
+    },
+    {
+      "grade_index": 93,
+      "detail_id": 98,
+      "season": "2023-24",
+      "owners": [
+        "Peterson",
+        "Trager"
+      ],
+      "system_a_winner": "Trager",
+      "system_a_grades": {
+        "Peterson": "INC",
+        "Trager": "C"
+      },
+      "system_b_winner": "Peterson",
+      "system_b_margin": 7.4,
+      "system_b_totals": {
+        "Trager": 46.8,
+        "Peterson": 54.2
+      }
+    },
+    {
+      "grade_index": 97,
+      "detail_id": 101,
+      "season": "2023-24",
+      "owners": [
+        "Delaney",
+        "Peterson"
+      ],
+      "system_a_winner": "Peterson",
+      "system_a_grades": {
+        "Delaney": "INC",
+        "Peterson": "F"
+      },
+      "system_b_winner": "Delaney",
+      "system_b_margin": 62.5,
+      "system_b_totals": {
+        "Peterson": 49.8,
+        "Delaney": 112.3
+      }
+    },
+    {
+      "grade_index": 103,
+      "detail_id": 107,
+      "season": "2023-24",
+      "owners": [
+        "Delaney",
+        "Peterson"
+      ],
+      "system_a_winner": "Peterson",
+      "system_a_grades": {
+        "Delaney": "INC",
+        "Peterson": "C"
+      },
+      "system_b_winner": "Delaney",
+      "system_b_margin": 15.2,
+      "system_b_totals": {
+        "Peterson": 18.4,
+        "Delaney": 33.7
+      }
+    },
+    {
+      "grade_index": 105,
+      "detail_id": 109,
+      "season": "2023-24",
+      "owners": [
+        "Delaney",
+        "Peterson"
+      ],
+      "system_a_winner": "Peterson",
+      "system_a_grades": {
+        "Delaney": "INC",
+        "Peterson": "F"
+      },
+      "system_b_winner": "Delaney",
+      "system_b_margin": 62.1,
+      "system_b_totals": {
+        "Peterson": 25.8,
+        "Delaney": 87.9
+      }
+    },
+    {
+      "grade_index": 109,
+      "detail_id": 115,
+      "season": "2023-24",
+      "owners": [
+        "Delaney",
+        "Zujewski"
+      ],
+      "system_a_winner": "Zujewski",
+      "system_a_grades": {
+        "Delaney": "F",
+        "Zujewski": "D"
+      },
+      "system_b_winner": "Delaney",
+      "system_b_margin": 73.7,
+      "system_b_totals": {
+        "Zujewski": 94.2,
+        "Delaney": 167.9
+      }
+    },
+    {
+      "grade_index": 114,
+      "detail_id": 105,
+      "season": "2023-24",
+      "owners": [
+        "Jowkar",
+        "Peterson"
+      ],
+      "system_a_winner": "Jowkar",
+      "system_a_grades": {
+        "Peterson": "INC",
+        "Jowkar": "B"
+      },
+      "system_b_winner": "Peterson",
+      "system_b_margin": 33.7,
+      "system_b_totals": {
+        "Jowkar": 35.7,
+        "Peterson": 69.4
+      }
+    },
+    {
+      "grade_index": 126,
+      "detail_id": 131,
+      "season": "2024-25",
+      "owners": [
+        "Trager",
+        "Zujewski"
+      ],
+      "system_a_winner": "Trager",
+      "system_a_grades": {
+        "Trager": "A",
+        "Zujewski": "F"
+      },
+      "system_b_winner": "Zujewski",
+      "system_b_margin": 27.3,
+      "system_b_totals": {
+        "Zujewski": 128.5,
+        "Trager": 101.2
+      }
+    }
+  ],
+  "note_on_unmatched": "Trades only in System B but not System A are likely: (1) multi-party trades (3+ owners) that System A does not grade, (2) trades involving Vlandis whose owner mapping differs between systems, (3) trades where the asset text differs enough to prevent matching."
+}
