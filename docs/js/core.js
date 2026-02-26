@@ -104,7 +104,7 @@ window.YK = window.YK || {};
     '#16A34A', // Green      — Green
     '#2563EB', // HaleTrager — Blue (Ryan Trager)
     '#DC2626', // Jowkar     — Crimson
-    '#B45309', // Moss       — Copper
+    '#78350F', // Moss       — Dark Brown
     '#7C3AED', // Peterson   — Purple
     '#0891B2', // Zujewski   — Turquoise
   ];

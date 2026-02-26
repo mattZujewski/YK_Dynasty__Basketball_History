@@ -220,14 +220,6 @@
     .grid-collapsed { display: none; }
 
     /* Filter bar & select */
-    #season-select, #owner-filter-select {
-      padding: 4px 8px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      background: var(--bg-input);
-      color: var(--text-primary);
-      font-size: 0.82rem;
-    }
     .filter-sep { color: var(--border); margin: 0 4px; }
 
     /* Season filter bar */
@@ -264,12 +256,14 @@
     [data-tooltip]:hover::after { opacity: 1; }
 
     /* TVOT mini-bar in card footer */
-    .tvot-mini-bar { display: flex; height: 22px; border-radius: 4px; overflow: hidden; gap: 2px; margin: 6px 0 2px; }
+    .tvot-mini-bar { display: flex; height: 36px; border-radius: 4px; overflow: hidden; gap: 2px; margin: 6px 0 2px; }
     .tvot-mini-seg {
-      flex: 1; display: flex; align-items: center; justify-content: center;
-      font-size: 0.62rem; font-weight: 700; color: rgba(255,255,255,0.88);
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 1px;
     }
     .tvot-mini-seg.flip-point { box-shadow: inset 0 0 0 2px rgba(255,255,255,0.6); }
+    .tvot-mini-yr     { font-size: 0.55rem; opacity: 0.85; line-height: 1; color: rgba(255,255,255,0.9); }
+    .tvot-mini-margin { font-size: 0.6rem; font-weight: 700; line-height: 1; color: rgba(255,255,255,0.95); }
 
     /* Multi-party trade cards span full grid width */
     .trade-cards-grid .multi-party-card { grid-column: 1 / -1; }
@@ -304,6 +298,7 @@
   <script src="js/nav.js"></script>
 
   <main class="page-container">
+    <div id="sticky-season" class="sticky-season-pill"></div>
     <header class="page-header">
       <h1>&#x1F0CF; Trade Cards</h1>
       <p class="subtitle">Every graded trade &mdash; both sides, asset values, and winners (2021&ndash;22 to present)</p>
@@ -345,21 +340,19 @@
       </div>
     </div>
 
+    <!-- Collusion mode banner -->
+    <div id="collusion-banner" class="collusion-mode-banner" style="display:none">
+      &#x1F575;&#xFE0F; Viewing collusion flags &mdash; all other filters suspended.
+      <button id="collusion-banner-exit">Exit</button>
+    </div>
+
     <!-- All Trades -->
     <div class="chart-section" id="all-trades-section">
       <h2>All Trade Grades <span id="cards-count-inline" style="font-size:0.8rem;font-weight:400;color:var(--text-muted)"></span></h2>
       <p class="chart-description">Filter and sort all graded trades. Click &ldquo;TVOT&rdquo; to see how a trade&rsquo;s value changed over time.</p>
 
       <div class="filter-bar" style="flex-wrap:wrap;gap:8px;align-items:center">
-        <div>
-          <label style="font-size:0.82rem;color:var(--text-muted)">Season:</label>
-          <select id="season-select"><option value="">All Seasons</option></select>
-        </div>
-        <span class="filter-sep">|</span>
-        <div>
-          <label style="font-size:0.82rem;color:var(--text-muted)">Owner:</label>
-          <select id="owner-filter-select"><option value="">All Owners</option></select>
-        </div>
+        <div id="owner-pills-bar" class="owner-pill-bar"></div>
         <span class="filter-sep">|</span>
         <div>
           <button class="filter-btn active" data-sortby="margin">Biggest Margin</button>
@@ -367,12 +360,7 @@
           <button class="filter-btn" data-sortby="fair">Closest First</button>
         </div>
         <span class="filter-sep">|</span>
-        <div style="display:flex;align-items:center;gap:6px">
-          <label style="font-size:0.82rem;color:var(--text-muted);display:flex;align-items:center;gap:5px;cursor:pointer">
-            <input type="checkbox" id="collusion-cb" style="cursor:pointer">
-            Include Collusion Flags
-          </label>
-        </div>
+        <button id="collusion-icon-btn" class="collusion-icon-btn" title="Show collusion flags — overrides all filters">&#x1F575;&#xFE0F;</button>
       </div>
 
       <p id="cards-count"></p>

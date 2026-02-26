@@ -1269,3 +1269,67 @@ html.dark .chart-insight {
   .journey-timeline { padding-left: 28px; }
   .journey-dot { left: -22px; width: 10px; height: 10px; }
 }
+
+/* ── Phase 11.7 additions ────────────────────────────────── */
+
+/* 4-zone stat card accents */
+.stat-card-green { border-left: 4px solid var(--brand-green); background: rgba(42,157,143,0.04); }
+.stat-card-red   { border-left: 4px solid #B91C1C; background: rgba(185,28,28,0.04); }
+.stat-card-blue  { border-left: 4px solid #2563EB; background: rgba(37,99,235,0.04); }
+.stat-card-gold  { border-left: 4px solid #CA8A04; background: rgba(202,138,4,0.04); }
+
+/* Owner pill bar */
+.owner-pill-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.owner-pill {
+  display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px;
+  border: 1px solid var(--border); border-radius: 99px; cursor: pointer;
+  font-size: 0.78rem; color: var(--text-secondary); background: var(--bg-input);
+  transition: var(--transition); user-select: none;
+}
+.owner-pill:hover:not(.disabled) { background: var(--bg-card); }
+.owner-pill.selected {
+  background: var(--bg-card); border-color: var(--brand-green);
+  color: var(--text-primary); font-weight: 600;
+}
+.owner-pill.disabled { opacity: 0.4; cursor: not-allowed; }
+.owner-pill-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.owner-pill-clear {
+  font-size: 0.75rem; color: var(--text-muted); background: none;
+  border: 1px solid var(--border); border-radius: 99px; padding: 3px 8px;
+  cursor: pointer; transition: var(--transition);
+}
+.owner-pill-clear:hover { color: var(--text-primary); background: var(--bg-card); }
+
+/* Sticky season indicator */
+.sticky-season-pill {
+  position: fixed; top: 64px; right: 16px; z-index: 200;
+  background: var(--brand-green); color: #fff;
+  font-size: 0.75rem; font-weight: 700; padding: 5px 12px;
+  border-radius: 99px; box-shadow: var(--shadow-md);
+  pointer-events: none; opacity: 0; transition: opacity 0.2s;
+}
+.sticky-season-pill.visible { opacity: 1; }
+
+/* Collusion mode banner */
+.collusion-mode-banner {
+  background: rgba(232,184,75,0.18); border: 1px solid #CA8A04;
+  border-radius: var(--radius-sm); padding: 8px 14px; margin-bottom: 10px;
+  font-size: 0.82rem; color: #9a6f00; display: flex; align-items: center; gap: 8px;
+}
+.collusion-mode-banner button {
+  background: none; border: 1px solid #CA8A04; border-radius: 4px;
+  padding: 2px 8px; cursor: pointer; font-size: 0.78rem; color: #9a6f00;
+}
+.collusion-mode-banner button:hover { background: rgba(202,138,4,0.1); }
+
+/* Collusion icon button */
+.collusion-icon-btn {
+  background: none; border: 1px solid var(--border); border-radius: 4px;
+  padding: 3px 8px; cursor: pointer; font-size: 0.85rem;
+  transition: var(--transition); color: var(--text-muted); line-height: 1;
+}
+.collusion-icon-btn:hover { background: rgba(202,138,4,0.1); border-color: #CA8A04; }
+.collusion-icon-btn.active { background: rgba(202,138,4,0.18); border-color: #CA8A04; color: #9a6f00; }
+
+/* Collusion trade yellow left-border when in collusion mode */
+.collusion-mode-active .collusion-card { border-left: 4px solid #CA8A04 !important; opacity: 1; }

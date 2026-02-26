@@ -85,9 +85,9 @@
     // ── Summary stat cards ──────────────────────────────────────────────── //
     var cardsEl = document.getElementById('summary-cards');
 
-    function makeCard(label, value, subtext, valueColor) {
+    function makeCard(label, value, subtext, valueColor, zone) {
       var card = document.createElement('div');
-      card.className = 'stat-card';
+      card.className = 'stat-card' + (zone ? ' stat-card-' + zone : '');
       card.innerHTML =
         '<div class="stat-label">' + label + '</div>' +
         '<div class="stat-value"' + (valueColor ? ' style="color:' + valueColor + ';font-size:1.2rem"' : '') + '>' + value + '</div>' +
@@ -105,20 +105,30 @@
         ? standings.slice().sort(function(a, b) { return b.avg_margin - a.avg_margin; })[0]
         : null;
 
-      cardsEl.appendChild(makeCard('Trades Graded', subset.length, 'non-collusion trades'));
-      cardsEl.appendChild(makeCard('Seasons', uniqueSeasons.size, '2021\u201322 to present'));
+      // E1: "🏆 Top of the Board" separator before top stat cards
+      var topSep = document.createElement('div');
+      topSep.style.cssText = 'flex:1 1 100%;width:100%;font-size:0.7rem;font-weight:700;' +
+        'text-transform:uppercase;letter-spacing:0.07em;color:var(--brand-green);' +
+        'padding:4px 0 2px;';
+      topSep.innerHTML = '&#x1F3C6; Top of the Board';
+      cardsEl.appendChild(topSep);
+
+      cardsEl.appendChild(makeCard('Trades Graded', subset.length, 'non-collusion trades', null, 'blue'));
+      cardsEl.appendChild(makeCard('Seasons', uniqueSeasons.size, '2021\u201322 to present', null, 'blue'));
       if (topTrader) {
         cardsEl.appendChild(makeCard(
           'Best Win Rate',
           YK.ownerDisplayName(topTrader.owner) + ' \u2014 ' + (topTrader.win_pct * 100).toFixed(1) + '%',
-          topTrader.wins + 'W ' + topTrader.losses + 'L'
+          topTrader.wins + 'W ' + topTrader.losses + 'L',
+          null, 'green'
         ));
       }
       if (bestMargin) {
         cardsEl.appendChild(makeCard(
           'Highest Avg Margin',
           YK.ownerDisplayName(bestMargin.owner) + ' +' + bestMargin.avg_margin.toFixed(1),
-          'avg dynasty value per win'
+          'avg dynasty value per win',
+          null, 'green'
         ));
       }
 
@@ -143,7 +153,7 @@
           'Lowest Win Rate',
           YK.ownerDisplayName(worstWinRate.owner) + ' \u2014 ' + (worstWinRate.win_pct * 100).toFixed(1) + '%',
           worstWinRate.wins + 'W ' + worstWinRate.losses + 'L',
-          '#B91C1C'
+          '#B91C1C', 'red'
         ));
       }
       if (worstMargin) {
@@ -151,7 +161,7 @@
           'Lowest Avg Margin',
           YK.ownerDisplayName(worstMargin.owner) + ' +' + worstMargin.avg_margin.toFixed(1),
           'avg dynasty value per win',
-          '#B91C1C'
+          '#B91C1C', 'red'
         ));
       }
     }
@@ -218,21 +228,23 @@
         return '<div class="drill-inner">No graded trades found for this owner in the selected seasons.</div>';
       }
 
+      function topNames(side, n) {
+        return (side.assets || [])
+          .slice().sort(function(a, b) { return (b.value || 0) - (a.value || 0); })
+          .slice(0, n || 2).map(function(a) { return YK.escapeHtml(a.name); }).join(', ') || '\u2014';
+      }
+
       var items = ownerTrades.map(function(t) {
-        var side = (t.sides || []).find(function(s) { return s.owner === owner; }) || {};
-        var opp  = (t.sides || [])
+        var mySide  = (t.sides || []).find(function(s) { return s.owner === owner; }) || {};
+        var oppSide = (t.sides || []).find(function(s) { return s.owner !== owner; }) || {};
+        var opp     = (t.sides || [])
           .filter(function(s) { return s.owner !== owner; })
           .map(function(s) { return YK.ownerDisplayName(s.owner); })
           .join(', ');
-        var isWin     = !!side.is_winner;
+        var isWin     = !!mySide.is_winner;
         var marginStr = (t.win_margin || 0).toFixed(1);
-
-        // Top received assets (sorted by dynasty value, top 3)
-        var topAssets = (side.assets || [])
-          .slice().sort(function(a, b) { return (b.value || 0) - (a.value || 0); })
-          .slice(0, 3)
-          .map(function(a) { return YK.escapeHtml(a.name); })
-          .join(', ');
+        var myAssets  = topNames(mySide, 2);
+        var oppAssets = topNames(oppSide, 2);
 
         return '<div class="drill-item">' +
           '<div class="drill-item-row">' +
@@ -244,7 +256,7 @@
             '</span>' +
             '<a href="trade-cards.html#trade-' + t.trade_id + '" title="View trade card">\u2192 Card</a>' +
           '</div>' +
-          (topAssets ? '<div class="drill-assets">Received: ' + topAssets + '</div>' : '') +
+          '<div class="drill-assets">' + myAssets + ' &rarr; ' + oppAssets + '</div>' +
         '</div>';
       }).join('');
 

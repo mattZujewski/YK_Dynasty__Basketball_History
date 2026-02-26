@@ -65,9 +65,9 @@
 
     // ── Summary cards ─────────────────────────────────────────────────────── //
     var cardsEl = document.getElementById('summary-cards');
-    function makeCard(label, value, sub) {
+    function makeCard(label, value, sub, zone) {
       var d = document.createElement('div');
-      d.className = 'stat-card';
+      d.className = 'stat-card' + (zone ? ' stat-card-' + zone : '');
       d.innerHTML = '<div class="stat-label">' + label + '</div>' +
         '<div class="stat-value">' + value + '</div>' +
         (sub ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px">' + sub + '</div>' : '');
@@ -111,28 +111,34 @@
       if (subEl) subEl.textContent =
         flipped.length + ' of ' + subset.length + ' trades changed winners over time';
 
-      cardsEl.appendChild(makeCard('Trades', subset.length, '2021\u201322 to present'));
-      cardsEl.appendChild(makeCard('Flipped', flipped.length, Math.round(flipPct) + '% changed winner'));
-      cardsEl.appendChild(makeCard('Avg Swing', '+' + avgSwing.toFixed(1), 'value shift per trade'));
+      // F1: 4-zone colors — Trades=blue, Flipped=gold, Avg Swing=blue, Biggest Swing=gold
+      cardsEl.appendChild(makeCard('Trades', subset.length, '2021\u201322 to present', 'blue'));
+      cardsEl.appendChild(makeCard('Flipped', flipped.length, Math.round(flipPct) + '% changed winner', 'gold'));
+      cardsEl.appendChild(makeCard('Avg Swing', '+' + avgSwing.toFixed(1), 'value shift per trade', 'blue'));
       if (maxSwingTrade) {
         cardsEl.appendChild(makeCard(
           'Biggest Swing',
           '+' + (maxSwingTrade.biggest_swing || 0).toFixed(1),
-          'Trade #' + maxSwingTrade.trade_id
+          'Trade #' + maxSwingTrade.trade_id,
+          'gold'
         ));
       }
       if (topFlippedFor) {
+        // Most Flipped For → green
         cardsEl.appendChild(makeCard(
           'Most Flipped For',
           YK.ownerDisplayName(topFlippedFor),
-          flippedFor[topFlippedFor] + ' trades flipped in their favor'
+          flippedFor[topFlippedFor] + ' trades flipped in their favor',
+          'green'
         ));
       }
       if (topFlippedAgainst) {
+        // Most Flipped Against → red
         cardsEl.appendChild(makeCard(
           'Most Flipped Against',
           YK.ownerDisplayName(topFlippedAgainst),
-          flippedAgainst[topFlippedAgainst] + ' trades flipped away from them'
+          flippedAgainst[topFlippedAgainst] + ' trades flipped away from them',
+          'red'
         ));
       }
     }

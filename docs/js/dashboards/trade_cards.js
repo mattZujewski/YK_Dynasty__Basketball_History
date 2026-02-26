@@ -39,6 +39,14 @@
     var filterSeasons = []; // [] = show all
     var _sfb = YK.buildSeasonFilterBar('season-filter-bar', function(activeSeasons) {
       filterSeasons = activeSeasons;
+      // Update sticky pill text when season changes
+      if (stickyPill) {
+        if (filterSeasons.length > 0) {
+          stickyPill.textContent = 'Viewing: ' + filterSeasons.join(', ');
+        } else {
+          stickyPill.classList.remove('visible');
+        }
+      }
       var subset = getSeasonSubset();
       buildSummaryCards(subset);
       applyFiltersAndSort();
@@ -52,12 +60,28 @@
       });
     }
 
+    // ── Sticky season pill ───────────────────────────────────────────────── //
+    var stickyPill = document.getElementById('sticky-season');
+    var sfbEl = document.getElementById('season-filter-bar');
+    if (stickyPill && sfbEl && window.IntersectionObserver) {
+      var _sfbObs = new IntersectionObserver(function(entries) {
+        var isVisible = entries[0].isIntersecting;
+        if (!isVisible && filterSeasons.length > 0) {
+          stickyPill.textContent = 'Viewing: ' + filterSeasons.join(', ');
+          stickyPill.classList.add('visible');
+        } else {
+          stickyPill.classList.remove('visible');
+        }
+      }, { threshold: 0 });
+      _sfbObs.observe(sfbEl);
+    }
+
     // ── Summary cards ────────────────────────────────────────────────────── //
     var cardsEl = document.getElementById('summary-cards');
 
-    function makeCard(label, value, sub, valueColor) {
+    function makeCard(label, value, sub, valueColor, zone) {
       var d = document.createElement('div');
-      d.className = 'stat-card';
+      d.className = 'stat-card' + (zone ? ' stat-card-' + zone : '');
       d.innerHTML = '<div class="stat-label">' + label + '</div>' +
         '<div class="stat-value"' + (valueColor ? ' style="color:' + valueColor + '"' : '') + '>' + value + '</div>' +
         (sub ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px;text-align:center">' + sub + '</div>' : '');
@@ -66,7 +90,10 @@
 
     function buildSummaryCards(tradeSubset) {
       cardsEl.innerHTML = '';
-      var nonCollusion = tradeSubset.filter(function(t) { return !t.is_collusion; });
+      // D4: exclude 2020-21 from all featured stats
+      var nonCollusion = tradeSubset.filter(function(t) {
+        return !t.is_collusion && t.season !== '2020-21';
+      });
 
       // Compute per-owner stats
       var ownerWins  = {}, ownerLosses = {}, ownerCount = {};
@@ -102,58 +129,60 @@
         return card;
       }
 
-      // 1. Most Trade Wins
+      // 1. Most Trade Wins → green
       if (topWin) {
-        var c = makeCard('Most Trade Wins', YK.ownerDisplayName(topWin), ownerWins[topWin] + ' wins');
+        var c = makeCard('Most Trade Wins', YK.ownerDisplayName(topWin), ownerWins[topWin] + ' wins', null, 'green');
         makeClickable(c, function(){ scrollToTradesAndFilterOwner(topWin); });
         cardsEl.appendChild(c);
       }
 
-      // 2. Most Trade Losses
+      // 2. Most Trade Losses → red
       if (topLoss) {
-        var c = makeCard('Most Trade Losses', YK.ownerDisplayName(topLoss), ownerLosses[topLoss] + ' losses');
-        c.querySelector('.stat-value').style.color = '#B91C1C';
+        var c = makeCard('Most Trade Losses', YK.ownerDisplayName(topLoss), ownerLosses[topLoss] + ' losses', '#B91C1C', 'red');
         makeClickable(c, function(){ scrollToTradesAndFilterOwner(topLoss); });
         cardsEl.appendChild(c);
       }
 
-      // 3. Most Lopsided Trade
+      // 3. Most Lopsided Trade → gold
       if (lopsided) {
         var winSide = (lopsided.sides||[]).find(function(s){ return s.is_winner; }) || {};
         var c = makeCard(
           'Most Lopsided Trade',
           '#' + lopsided.trade_id,
-          YK.ownerDisplayName(winSide.owner||'\u2014') + ' +' + (lopsided.win_margin||0).toFixed(1)
+          YK.ownerDisplayName(winSide.owner||'\u2014') + ' +' + (lopsided.win_margin||0).toFixed(1),
+          null, 'gold'
         );
         makeClickable(c, function(){ scrollToTrade(lopsided.trade_id); });
         cardsEl.appendChild(c);
       }
 
-      // 4. Closest Trade
+      // 4. Closest Trade → gold
       if (closest) {
         var winSide2 = (closest.sides||[]).find(function(s){ return s.is_winner; }) || {};
         var c = makeCard(
           'Closest Trade',
           '#' + closest.trade_id,
-          YK.ownerDisplayName(winSide2.owner||'\u2014') + ' +' + (closest.win_margin||0).toFixed(1)
+          YK.ownerDisplayName(winSide2.owner||'\u2014') + ' +' + (closest.win_margin||0).toFixed(1),
+          null, 'gold'
         );
         makeClickable(c, function(){ scrollToTrade(closest.trade_id); });
         cardsEl.appendChild(c);
       }
 
-      // 5. Most Trades Overall
+      // 5. Most Trades Overall → blue
       if (topCount) {
-        var c = makeCard('Most Trades', YK.ownerDisplayName(topCount), ownerCount[topCount] + ' trades');
+        var c = makeCard('Most Trades', YK.ownerDisplayName(topCount), ownerCount[topCount] + ' trades', null, 'blue');
         makeClickable(c, function(){ scrollToTradesAndFilterOwner(topCount); });
         cardsEl.appendChild(c);
       }
 
-      // 6. Biggest Comeback
+      // 6. Biggest Comeback → gold
       if (comeback) {
         var c = makeCard(
           'Biggest Comeback',
           '#' + comeback.trade_id,
-          YK.ownerDisplayName(comeback.last_winner||'\u2014') + ' swung +' + (comeback.biggest_swing||0).toFixed(1)
+          YK.ownerDisplayName(comeback.last_winner||'\u2014') + ' swung +' + (comeback.biggest_swing||0).toFixed(1),
+          null, 'gold'
         );
         makeClickable(c, function(){ scrollToTrade(comeback.trade_id); });
         cardsEl.appendChild(c);
@@ -161,10 +190,9 @@
     }
 
     function scrollToTrade(tradeId) {
-      if (filterOwner) {
-        filterOwner = '';
-        var os = document.getElementById('owner-filter-select');
-        if (os) os.value = '';
+      if (selectedOwners.length > 0) {
+        selectedOwners = [];
+        buildOwnerPills();
         applyFiltersAndSort();
       }
       setTimeout(function() {
@@ -180,9 +208,8 @@
     }
 
     function scrollToTradesAndFilterOwner(owner) {
-      filterOwner = owner;
-      var os = document.getElementById('owner-filter-select');
-      if (os) os.value = owner;
+      selectedOwners = [owner];
+      buildOwnerPills();
       applyFiltersAndSort();
       setTimeout(function() {
         var sec = document.getElementById('all-trades-section');
@@ -190,33 +217,64 @@
       }, 100);
     }
 
-    // Initial summary cards
-    buildSummaryCards(trades);
+    // Initial summary cards (exclude 2020-21)
+    buildSummaryCards(trades.filter(function(t) { return t.season !== '2020-21'; }));
 
-    // ── Populate filters ─────────────────────────────────────────────────── //
-    var allSeasons = new Set();
+    // ── Collect all owners ────────────────────────────────────────────────── //
     var allOwners  = new Set();
     trades.forEach(function(t) {
-      if (t.season) allSeasons.add(t.season);
+      if (t.season === '2020-21') return; // D4: skip 2020-21 entirely
+      if (t.is_collusion) return;
       (t.sides || []).forEach(function(s) { allOwners.add(s.owner); });
     });
 
-    var seasonSelect = document.getElementById('season-select');
-    Array.from(allSeasons).sort().forEach(function(s) {
-      var opt = document.createElement('option');
-      opt.value = s; opt.textContent = s;
-      seasonSelect.appendChild(opt);
-    });
+    // ── Multi-select owner pill bar ──────────────────────────────────────── //
+    var selectedOwners = []; // [] = all; [x] = trades by x; [x,y] = trades between both
 
-    var ownerSelect = document.getElementById('owner-filter-select');
-    Array.from(allOwners).sort().forEach(function(o) {
-      var opt = document.createElement('option');
-      opt.value = o; opt.textContent = YK.ownerDisplayName(o);
-      ownerSelect.appendChild(opt);
-    });
+    function buildOwnerPills() {
+      var bar = document.getElementById('owner-pills-bar');
+      if (!bar) return;
+      bar.innerHTML = '';
+      var owners = Array.from(allOwners).sort(function(a,b) {
+        return YK.ownerDisplayName(a).localeCompare(YK.ownerDisplayName(b));
+      });
+      owners.forEach(function(o) {
+        var isSelected = selectedOwners.includes(o);
+        var isDisabled = !isSelected && selectedOwners.length >= 2;
+        var pill = document.createElement('span');
+        pill.className = 'owner-pill' + (isSelected ? ' selected' : '') + (isDisabled ? ' disabled' : '');
+        pill.innerHTML = '<span class="owner-pill-dot" style="background:' + YK.ownerColor(o) + '"></span>' +
+          YK.escapeHtml(YK.ownerDisplayName(o));
+        pill.addEventListener('click', function() {
+          if (collusionMode || isDisabled) return;
+          var idx = selectedOwners.indexOf(o);
+          if (idx >= 0) selectedOwners.splice(idx, 1);
+          else selectedOwners.push(o);
+          buildOwnerPills();
+          applyFiltersAndSort();
+        });
+        bar.appendChild(pill);
+      });
+      if (selectedOwners.length > 0) {
+        var clr = document.createElement('button');
+        clr.className = 'owner-pill-clear';
+        clr.textContent = 'Clear';
+        clr.addEventListener('click', function() {
+          selectedOwners = [];
+          buildOwnerPills();
+          applyFiltersAndSort();
+        });
+        bar.appendChild(clr);
+      }
+    }
+
+    buildOwnerPills();
 
     // ── Featured sections ─────────────────────────────────────────────────── //
-    var nonCollusionAll = trades.filter(function(t) { return !t.is_collusion; });
+    // D4: exclude 2020-21 from featured sections
+    var nonCollusionAll = trades.filter(function(t) {
+      return !t.is_collusion && t.season !== '2020-21';
+    });
     var sortedByMargin = nonCollusionAll.slice().sort(function(a, b) {
       return (b.win_margin || 0) - (a.win_margin || 0);
     });
@@ -238,10 +296,36 @@
     });
 
     // ── State ────────────────────────────────────────────────────────────── //
-    var filterSeason    = '';
-    var filterOwner     = '';
-    var filterCollusion = 'hide'; // 'show' | 'hide' — default hidden
-    var sortBy          = 'margin'; // 'margin' | 'recent' | 'fair'
+    var sortBy      = 'margin'; // 'margin' | 'recent' | 'fair'
+
+    // ── Collusion 🕵️ mode ────────────────────────────────────────────────── //
+    var collusionMode = false;
+
+    function enterCollusionMode() {
+      collusionMode = true;
+      var btn = document.getElementById('collusion-icon-btn');
+      var banner = document.getElementById('collusion-banner');
+      if (btn) btn.classList.add('active');
+      if (banner) banner.style.display = 'flex';
+      applyFiltersAndSort();
+    }
+    function exitCollusionMode() {
+      collusionMode = false;
+      var btn = document.getElementById('collusion-icon-btn');
+      var banner = document.getElementById('collusion-banner');
+      if (btn) btn.classList.remove('active');
+      if (banner) banner.style.display = 'none';
+      applyFiltersAndSort();
+    }
+
+    var _collusionBtn = document.getElementById('collusion-icon-btn');
+    if (_collusionBtn) {
+      _collusionBtn.addEventListener('click', function() {
+        if (collusionMode) exitCollusionMode(); else enterCollusionMode();
+      });
+    }
+    var _collusionExit = document.getElementById('collusion-banner-exit');
+    if (_collusionExit) _collusionExit.addEventListener('click', exitCollusionMode);
 
     // ── Initial full list render ──────────────────────────────────────────── //
     applyFiltersAndSort();
@@ -260,16 +344,7 @@
       }, 150);
     }
 
-    // ── Event listeners ───────────────────────────────────────────────────── //
-    seasonSelect.addEventListener('change', function() {
-      filterSeason = seasonSelect.value;
-      applyFiltersAndSort();
-    });
-    ownerSelect.addEventListener('change', function() {
-      filterOwner = ownerSelect.value;
-      applyFiltersAndSort();
-    });
-
+    // ── Sort button listeners ─────────────────────────────────────────────── //
     document.querySelectorAll('[data-sortby]').forEach(function(btn) {
       btn.addEventListener('click', function() {
         document.querySelectorAll('[data-sortby]').forEach(function(b) { b.classList.remove('active'); });
@@ -279,24 +354,39 @@
       });
     });
 
-    // ── Collusion checkbox ───────────────────────────────────────────────── //
-    var collusionCb = document.getElementById('collusion-cb');
-    if (collusionCb) {
-      collusionCb.addEventListener('change', function() {
-        filterCollusion = collusionCb.checked ? 'show' : 'hide';
-        applyFiltersAndSort();
-      });
-    }
-
     // ── Helpers ───────────────────────────────────────────────────────────── //
     function applyFiltersAndSort() {
+      var listEl = document.getElementById('all-trades-list');
+
+      if (collusionMode) {
+        // Override: show only collusion trades
+        var colTrades = trades.filter(function(t) { return t.is_collusion; });
+        listEl.classList.add('collusion-mode-active');
+        var grid2 = document.createElement('div');
+        grid2.className = 'trade-cards-grid';
+        colTrades.forEach(function(t) { grid2.appendChild(buildCard(t)); });
+        listEl.innerHTML = '';
+        listEl.appendChild(grid2);
+        var countEl2 = document.getElementById('cards-count');
+        if (countEl2) countEl2.textContent = 'Showing ' + colTrades.length + ' collusion-flagged trades';
+        return;
+      }
+
+      // Normal mode
+      if (listEl) listEl.classList.remove('collusion-mode-active');
+
       var base = getSeasonSubset();
       var filtered = base.filter(function(t) {
-        if (filterCollusion === 'hide' && t.is_collusion) return false;
-        if (filterSeason && t.season !== filterSeason) return false;
-        if (filterOwner) {
-          var owners = (t.sides || []).map(function(s) { return s.owner; });
-          if (!owners.includes(filterOwner)) return false;
+        if (t.is_collusion) return false;       // always hide collusion in normal mode
+        if (t.season === '2020-21') return false; // D4: hide 2020-21
+        // Owner pill multi-select
+        if (selectedOwners.length >= 1) {
+          var tradeOwners = (t.sides || []).map(function(s) { return s.owner; });
+          if (selectedOwners.length === 1) {
+            if (!tradeOwners.includes(selectedOwners[0])) return false;
+          } else {
+            if (!selectedOwners.every(function(o) { return tradeOwners.includes(o); })) return false;
+          }
         }
         return true;
       });
@@ -317,7 +407,6 @@
         inlineCount.textContent = '(' + trades.length + ' trades)';
       }
 
-      var listEl = document.getElementById('all-trades-list');
       if (filtered.length === 0) {
         listEl.innerHTML = '<p class="text-muted" style="padding:16px">No trades match filter.</p>';
         return;
@@ -418,16 +507,20 @@
       var footerInner = '';
 
       if (tvotPeriods.length > 0) {
+        // D6: mini-bar with year label + margin number per segment
         var miniBar = '<div class="tvot-mini-bar">';
         tvotPeriods.forEach(function(r, i) {
           var isFlip = (i > 0 && r.winner !== tvotPeriods[i - 1].winner);
           var segColor = YK.ownerColor(r.winner || '');
           var tipText = 'Y' + (i + 1) + (r.season ? ' (' + r.season + ')' : '') +
             ': ' + YK.ownerDisplayName(r.winner || '\u2014') + ' leads';
+          var totalsArr = Object.values(r.totals || {});
+          var segMargin = totalsArr.length >= 2 ? Math.abs(totalsArr[0] - totalsArr[1]) : 0;
           miniBar += '<div class="tvot-mini-seg' + (isFlip ? ' flip-point' : '') + '"' +
             ' style="background:' + segColor + '"' +
             ' title="' + YK.escapeHtml(tipText) + '">' +
-            'Y' + (i + 1) +
+            '<span class="tvot-mini-yr">Y' + (i + 1) + '</span>' +
+            '<span class="tvot-mini-margin">+' + segMargin.toFixed(0) + '</span>' +
             '</div>';
         });
         miniBar += '</div>';
@@ -442,7 +535,7 @@
           '</div>';
       }
 
-      // C6 — TVOT margin label (Y1 → current)
+      // TVOT margin label (Y1 → current)
       var marginLabel = '<div class="margin-label">';
       if (tvotPeriods.length >= 1) {
         var y1 = tvotPeriods[0];
@@ -488,7 +581,7 @@
 
       var dot = '<span class="owner-dot" style="background:' + YK.ownerColor(owner) + '"></span>';
 
-      // C5 — Winner history from TVOT
+      // Winner history from TVOT
       var tvotArr    = tvotPeriods || [];
       var initWinner = tvotArr.length > 0 ? tvotArr[0].winner : null;
       var currWinner = tvotArr.length > 0 ? tvotArr[tvotArr.length - 1].winner : null;
