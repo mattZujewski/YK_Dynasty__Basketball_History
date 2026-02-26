@@ -8,26 +8,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 67.18,
+      "win_margin": 66.97,
       "sides": [
         {
           "owner": "Trager",
-          "side_total": 95.51,
+          "side_total": 95.54,
           "is_winner": true,
-          "win_margin_pct": 0.7034,
+          "win_margin_pct": 0.701,
           "assets": [
             {
               "name": "Dyson Daniels",
-              "value": 59.09,
-              "fpg": 34.44,
+              "value": 59.29,
+              "fpg": 34.65,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Berke 2022 1st Round"
             },
             {
               "name": "Ryan Kalkbrenner",
-              "value": 36.42,
-              "fpg": 23.96,
+              "value": 36.25,
+              "fpg": 23.85,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Berke 2025 2nd Round"
@@ -36,14 +36,14 @@
         },
         {
           "owner": "Berke",
-          "side_total": 28.33,
+          "side_total": 28.57,
           "is_winner": false,
-          "win_margin_pct": -0.7034,
+          "win_margin_pct": -0.701,
           "assets": [
             {
               "name": "Mitchell Robinson",
-              "value": 28.33,
-              "fpg": 22.12,
+              "value": 28.57,
+              "fpg": 22.5,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -59,19 +59,19 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 17.76,
+      "win_margin": 19.13,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 66.61,
+          "side_total": 65.22,
           "is_winner": false,
-          "win_margin_pct": -0.2105,
+          "win_margin_pct": -0.2268,
           "assets": [
             {
               "name": "Fred Vanvleet",
               "value": 39.88,
               "fpg": 0,
-              "age": 31,
+              "age": 32,
               "asset_type": "player",
               "pick_desc": null
             },
@@ -85,8 +85,8 @@
             },
             {
               "name": "Nikola Topic",
-              "value": 6.93,
-              "fpg": 5.5,
+              "value": 5.54,
+              "fpg": 4.4,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 1st Round"
@@ -95,22 +95,22 @@
         },
         {
           "owner": "Berke",
-          "side_total": 84.37,
+          "side_total": 84.35,
           "is_winner": true,
-          "win_margin_pct": 0.2105,
+          "win_margin_pct": 0.2268,
           "assets": [
             {
               "name": "Lebron James",
-              "value": 65.92,
-              "fpg": 42.22,
+              "value": 65.82,
+              "fpg": 42.08,
               "age": 41,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Draymond Green",
-              "value": 18.45,
-              "fpg": 24.43,
+              "value": 18.53,
+              "fpg": 24.67,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
@@ -126,18 +126,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 70.98,
+      "win_margin": 75.79,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 70.22,
           "is_winner": false,
-          "win_margin_pct": -0.5027,
+          "win_margin_pct": -0.5191,
           "assets": [
             {
               "name": "Pascal Siakam",
               "value": 43.16,
-              "fpg": 39.45,
+              "fpg": 39.46,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -162,22 +162,22 @@
         },
         {
           "owner": "Zujewski",
-          "side_total": 141.2,
+          "side_total": 146.01,
           "is_winner": true,
-          "win_margin_pct": 0.5027,
+          "win_margin_pct": 0.5191,
           "assets": [
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Kevin Porter Jr.",
-              "value": 66.7,
-              "fpg": 41.69,
+              "value": 69.65,
+              "fpg": 43.53,
               "age": 25,
               "asset_type": "player",
               "pick_desc": null
@@ -201,18 +201,18 @@
       "is_multi_party": true,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": -66.57,
+      "win_margin": -54.89,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 69.35,
+          "side_total": 69.26,
           "is_winner": true,
-          "win_margin_pct": 0.5392,
+          "win_margin_pct": 0.4831,
           "assets": [
             {
               "name": "Caris Levert",
-              "value": 21.83,
-              "fpg": 18.66,
+              "value": 21.59,
+              "fpg": 18.15,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -227,16 +227,16 @@
             },
             {
               "name": "Rob Dillingham",
-              "value": 10.69,
-              "fpg": 8.43,
+              "value": 10.97,
+              "fpg": 8.83,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Gold 2024 2nd Round"
             },
             {
               "name": "Bobby Portis",
-              "value": 26.73,
-              "fpg": 25.46,
+              "value": 26.6,
+              "fpg": 25.2,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -245,15 +245,15 @@
         },
         {
           "owner": "Zujewski",
-          "side_total": 120.69,
+          "side_total": 99.25,
           "is_winner": true,
-          "win_margin_pct": 0.5392,
+          "win_margin_pct": 0.4831,
           "assets": [
             {
               "name": "Jamal Murray",
-              "value": 101.25,
-              "fpg": 48,
-              "age": 28,
+              "value": 79.81,
+              "fpg": 46.69,
+              "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
@@ -277,30 +277,30 @@
         },
         {
           "owner": "Gold",
-          "side_total": 123.47,
+          "side_total": 113.62,
           "is_winner": false,
-          "win_margin_pct": -0.5392,
+          "win_margin_pct": -0.4831,
           "assets": [
             {
               "name": "Jerami Grant",
-              "value": 26.11,
-              "fpg": 27.22,
+              "value": 26.25,
+              "fpg": 27.53,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Josh Giddey",
-              "value": 74.96,
-              "fpg": 41.33,
+              "value": 64.73,
+              "fpg": 39.92,
               "age": 23,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Ron Holland",
-              "value": 22.4,
-              "fpg": 18.43,
+              "value": 22.64,
+              "fpg": 18.72,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Kelvin 2024 FRP"
@@ -316,13 +316,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 51.92,
+      "win_margin": 50.69,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 79.69,
+          "side_total": 78.46,
           "is_winner": true,
-          "win_margin_pct": 0.6515,
+          "win_margin_pct": 0.6461,
           "assets": [
             {
               "name": "Terry Rozier",
@@ -334,16 +334,16 @@
             },
             {
               "name": "Bennedict Mathurin",
-              "value": 41.15,
-              "fpg": 27.38,
+              "value": 41.31,
+              "fpg": 27.58,
               "age": 23,
               "asset_type": "pick",
               "pick_desc": "Delaney 2022 1st Round"
             },
             {
               "name": "Nikola Topic",
-              "value": 6.93,
-              "fpg": 5.5,
+              "value": 5.54,
+              "fpg": 4.4,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 1st Round"
@@ -354,13 +354,13 @@
           "owner": "Delaney",
           "side_total": 27.77,
           "is_winner": false,
-          "win_margin_pct": -0.6515,
+          "win_margin_pct": -0.6461,
           "assets": [
             {
               "name": "D'Angelo Russell",
               "value": 27.77,
               "fpg": 17.81,
-              "age": 29,
+              "age": 30,
               "asset_type": "player",
               "pick_desc": null
             }
@@ -375,25 +375,25 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Vlandis",
-      "win_margin": 117.21,
+      "win_margin": 116.59,
       "sides": [
         {
           "owner": "Vlandis",
-          "side_total": 195.45,
+          "side_total": 195.37,
           "is_winner": true,
-          "win_margin_pct": 0.5997,
+          "win_margin_pct": 0.5968,
           "assets": [
             {
               "name": "Tyler Herro",
-              "value": 57.98,
-              "fpg": 35.77,
+              "value": 52.01,
+              "fpg": 34.79,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jaren Jackson Jr.",
-              "value": 55.28,
+              "value": 60.8,
               "fpg": 34.88,
               "age": 26,
               "asset_type": "player",
@@ -401,24 +401,24 @@
             },
             {
               "name": "Jakob Poeltl",
-              "value": 33.45,
-              "fpg": 23.57,
+              "value": 33.95,
+              "fpg": 24.44,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Bennedict Mathurin",
-              "value": 41.15,
-              "fpg": 27.38,
+              "value": 41.31,
+              "fpg": 27.58,
               "age": 23,
               "asset_type": "pick",
               "pick_desc": "Delaney 2022 1st Round"
             },
             {
               "name": "Kobe Bufkin",
-              "value": 7.59,
-              "fpg": 6.17,
+              "value": 7.3,
+              "fpg": 5.57,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Delaney 2023 2nd Round"
@@ -427,14 +427,14 @@
         },
         {
           "owner": "Jowkar",
-          "side_total": 78.24,
+          "side_total": 78.78,
           "is_winner": false,
-          "win_margin_pct": -0.5997,
+          "win_margin_pct": -0.5968,
           "assets": [
             {
               "name": "Lamelo Ball",
-              "value": 60.59,
-              "fpg": 37.38,
+              "value": 61.13,
+              "fpg": 38.1,
               "age": 24,
               "asset_type": "player",
               "pick_desc": null
@@ -458,18 +458,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 7.75,
+      "win_margin": 7.5,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 53.4,
+          "side_total": 53.16,
           "is_winner": true,
-          "win_margin_pct": 0.1451,
+          "win_margin_pct": 0.1411,
           "assets": [
             {
               "name": "Caris Levert",
-              "value": 21.83,
-              "fpg": 18.66,
+              "value": 21.59,
+              "fpg": 18.15,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -494,22 +494,22 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 45.65,
+          "side_total": 45.66,
           "is_winner": false,
-          "win_margin_pct": -0.1451,
+          "win_margin_pct": -0.1411,
           "assets": [
             {
               "name": "Dennis Schroeder",
-              "value": 25.83,
-              "fpg": 24.35,
+              "value": 25.97,
+              "fpg": 24.63,
               "age": 32,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jordan Clarkson",
-              "value": 19.82,
-              "fpg": 13.53,
+              "value": 19.69,
+              "fpg": 13.27,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -525,13 +525,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Green",
-      "win_margin": 90.94,
+      "win_margin": 90.15,
       "sides": [
         {
           "owner": "Green",
-          "side_total": 137.01,
+          "side_total": 136.22,
           "is_winner": true,
-          "win_margin_pct": 0.6637,
+          "win_margin_pct": 0.6618,
           "assets": [
             {
               "name": "Derek Lively II",
@@ -543,16 +543,16 @@
             },
             {
               "name": "Nikola Topic",
-              "value": 6.93,
-              "fpg": 5.5,
+              "value": 5.54,
+              "fpg": 4.4,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 1st round"
             },
             {
               "name": "Quentin Grimes",
-              "value": 37.04,
-              "fpg": 25.22,
+              "value": 37.38,
+              "fpg": 25.65,
               "age": 25,
               "asset_type": "pick",
               "pick_desc": "Berke 2022 2nd round"
@@ -567,8 +567,8 @@
             },
             {
               "name": "Nicolas Claxton",
-              "value": 48.38,
-              "fpg": 33.04,
+              "value": 48.64,
+              "fpg": 33.4,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -579,7 +579,7 @@
           "owner": "Jowkar",
           "side_total": 46.07,
           "is_winner": false,
-          "win_margin_pct": -0.6637,
+          "win_margin_pct": -0.6618,
           "assets": [
             {
               "name": "Bradley Beal",
@@ -608,18 +608,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 35.36,
+      "win_margin": 35.62,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 21.5,
+          "side_total": 21.45,
           "is_winner": false,
-          "win_margin_pct": -0.6219,
+          "win_margin_pct": -0.6241,
           "assets": [
             {
               "name": "Harrison Barnes",
-              "value": 21.5,
-              "fpg": 20.11,
+              "value": 21.45,
+              "fpg": 20,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -628,22 +628,22 @@
         },
         {
           "owner": "Berke",
-          "side_total": 56.86,
+          "side_total": 57.07,
           "is_winner": true,
-          "win_margin_pct": 0.6219,
+          "win_margin_pct": 0.6241,
           "assets": [
             {
               "name": "Jordan Clarkson",
-              "value": 19.82,
-              "fpg": 13.53,
+              "value": 19.69,
+              "fpg": 13.27,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Quentin Grimes",
-              "value": 37.04,
-              "fpg": 25.22,
+              "value": 37.38,
+              "fpg": 25.65,
               "age": 25,
               "asset_type": "player",
               "pick_desc": null
@@ -659,18 +659,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 62.9,
+      "win_margin": 62.83,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 13.89,
+          "side_total": 13.87,
           "is_winner": false,
-          "win_margin_pct": -0.8191,
+          "win_margin_pct": -0.8192,
           "assets": [
             {
               "name": "Mike Conley",
-              "value": 13.89,
-              "fpg": 13.5,
+              "value": 13.87,
+              "fpg": 13.44,
               "age": 38,
               "asset_type": "player",
               "pick_desc": null
@@ -679,14 +679,14 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 76.79,
+          "side_total": 76.7,
           "is_winner": true,
-          "win_margin_pct": 0.8191,
+          "win_margin_pct": 0.8192,
           "assets": [
             {
               "name": "Lauri Markkanen",
-              "value": 67.62,
-              "fpg": 42.15,
+              "value": 67.53,
+              "fpg": 42.05,
               "age": 28,
               "asset_type": "player",
               "pick_desc": null
@@ -710,13 +710,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 9.17,
+      "win_margin": 7.3,
       "sides": [
         {
           "owner": "Zujewski",
-          "side_total": 80.57,
+          "side_total": 80.4,
           "is_winner": true,
-          "win_margin_pct": 0.1138,
+          "win_margin_pct": 0.0908,
           "assets": [
             {
               "name": "Dillon Brooks",
@@ -728,16 +728,16 @@
             },
             {
               "name": "Isaac Okoro",
-              "value": 28.02,
-              "fpg": 18.6,
+              "value": 27.92,
+              "fpg": 18.48,
               "age": 25,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Luke Kennard",
-              "value": 23.05,
-              "fpg": 18.33,
+              "value": 22.98,
+              "fpg": 18.21,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -746,22 +746,22 @@
         },
         {
           "owner": "Jowkar",
-          "side_total": 71.4,
+          "side_total": 73.1,
           "is_winner": false,
-          "win_margin_pct": -0.1138,
+          "win_margin_pct": -0.0908,
           "assets": [
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Andre Drummond",
-              "value": 20.59,
-              "fpg": 21.26,
+              "value": 20.43,
+              "fpg": 20.93,
               "age": 32,
               "asset_type": "player",
               "pick_desc": null
@@ -785,13 +785,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Green",
-      "win_margin": 62.69,
+      "win_margin": 63.82,
       "sides": [
         {
           "owner": "Vlandis",
           "side_total": 33.67,
           "is_winner": false,
-          "win_margin_pct": -0.6506,
+          "win_margin_pct": -0.6546,
           "assets": [
             {
               "name": "Jaden Ivey",
@@ -805,22 +805,22 @@
         },
         {
           "owner": "Green",
-          "side_total": 96.36,
+          "side_total": 97.49,
           "is_winner": true,
-          "win_margin_pct": 0.6506,
+          "win_margin_pct": 0.6546,
           "assets": [
             {
               "name": "Jabari Smith Jr",
-              "value": 55.21,
-              "fpg": 30.67,
+              "value": 56.18,
+              "fpg": 31.21,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2022 1st round"
             },
             {
               "name": "Bennedict Mathurin",
-              "value": 41.15,
-              "fpg": 27.38,
+              "value": 41.31,
+              "fpg": 27.58,
               "age": 23,
               "asset_type": "pick",
               "pick_desc": "Delaney 2022 1st round"
@@ -836,13 +836,13 @@
       "is_multi_party": true,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 69.38,
+      "win_margin": 69.56,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 192.78,
+          "side_total": 193.01,
           "is_winner": true,
-          "win_margin_pct": 0.3599,
+          "win_margin_pct": 0.3604,
           "assets": [
             {
               "name": "Christian Wood",
@@ -854,24 +854,24 @@
             },
             {
               "name": "Wendall Carter Jr",
-              "value": 40.02,
-              "fpg": 26.68,
+              "value": 40.23,
+              "fpg": 26.82,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Collin Sexton",
-              "value": 37.59,
-              "fpg": 23.47,
+              "value": 37.41,
+              "fpg": 23.22,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Dyson Daniels",
-              "value": 59.09,
-              "fpg": 34.44,
+              "value": 59.29,
+              "fpg": 34.65,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Berke 2022 1st round"
@@ -888,14 +888,14 @@
         },
         {
           "owner": "Trager",
-          "side_total": 107.61,
+          "side_total": 107.25,
           "is_winner": false,
-          "win_margin_pct": -0.3599,
+          "win_margin_pct": -0.3604,
           "assets": [
             {
               "name": "CJ McCollum",
-              "value": 23.21,
-              "fpg": 31,
+              "value": 23.07,
+              "fpg": 30.6,
               "age": 34,
               "asset_type": "player",
               "pick_desc": null
@@ -910,8 +910,8 @@
             },
             {
               "name": "Kevin Huerter",
-              "value": 32.66,
-              "fpg": 22.6,
+              "value": 32.3,
+              "fpg": 22.12,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -926,8 +926,8 @@
             },
             {
               "name": "Davion Mitchell",
-              "value": 32.47,
-              "fpg": 27.87,
+              "value": 32.61,
+              "fpg": 28.04,
               "age": 27,
               "asset_type": "pick",
               "pick_desc": "Berke 2021 1st round swap rights (conveys to Trager 2021 1st round"
@@ -936,14 +936,14 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 15.79,
+          "side_total": 16.2,
           "is_winner": false,
-          "win_margin_pct": -0.3599,
+          "win_margin_pct": -0.3604,
           "assets": [
             {
               "name": "Al Horford",
-              "value": 15.79,
-              "fpg": 22.74,
+              "value": 16.2,
+              "fpg": 23.97,
               "age": 39,
               "asset_type": "player",
               "pick_desc": null
@@ -959,13 +959,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 22.76,
+      "win_margin": 22.84,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 44.92,
+          "side_total": 44.8,
           "is_winner": true,
-          "win_margin_pct": 0.5067,
+          "win_margin_pct": 0.5098,
           "assets": [
             {
               "name": "Spencer Dinwiddie",
@@ -977,8 +977,8 @@
             },
             {
               "name": "Thomas Bryant",
-              "value": 16.64,
-              "fpg": 11.85,
+              "value": 16.52,
+              "fpg": 11.67,
               "age": 28,
               "asset_type": "player",
               "pick_desc": null
@@ -987,14 +987,14 @@
         },
         {
           "owner": "Green",
-          "side_total": 22.16,
+          "side_total": 21.96,
           "is_winner": false,
-          "win_margin_pct": -0.5067,
+          "win_margin_pct": -0.5098,
           "assets": [
             {
               "name": "Jarred Vanderbilt",
-              "value": 22.16,
-              "fpg": 15.74,
+              "value": 21.96,
+              "fpg": 15.46,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -1010,18 +1010,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 7.59,
+      "win_margin": 7.42,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 41.26,
+          "side_total": 41.09,
           "is_winner": true,
-          "win_margin_pct": 0.184,
+          "win_margin_pct": 0.1806,
           "assets": [
             {
               "name": "Julius Randle",
-              "value": 41.26,
-              "fpg": 40.07,
+              "value": 41.09,
+              "fpg": 39.75,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -1032,7 +1032,7 @@
           "owner": "Berke",
           "side_total": 33.67,
           "is_winner": false,
-          "win_margin_pct": -0.184,
+          "win_margin_pct": -0.1806,
           "assets": [
             {
               "name": "Christian Wood",
@@ -1104,42 +1104,42 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 4.71,
+      "win_margin": 3.84,
       "sides": [
         {
           "owner": "Zujewski",
-          "side_total": 42.52,
+          "side_total": 43.39,
           "is_winner": false,
-          "win_margin_pct": -0.0997,
+          "win_margin_pct": -0.0813,
           "assets": [
             {
               "name": "Gabe Vincent",
-              "value": 11.96,
-              "fpg": 9.7,
+              "value": 12.16,
+              "fpg": 10.09,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Amir Coffey",
-              "value": 14.46,
-              "fpg": 5.12,
+              "value": 15.08,
+              "fpg": 5.97,
               "age": 28,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Leonard Miller",
-              "value": 5.19,
-              "fpg": 4.18,
+              "value": 5.41,
+              "fpg": 4.52,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Zujewski 2023 2nd round"
             },
             {
               "name": "Terrence Shannon Jr.",
-              "value": 10.91,
-              "fpg": 6.82,
+              "value": 10.74,
+              "fpg": 6.71,
               "age": 25,
               "asset_type": "pick",
               "pick_desc": "Peterson 2024 2nd round"
@@ -1150,7 +1150,7 @@
           "owner": "Peterson",
           "side_total": 47.23,
           "is_winner": true,
-          "win_margin_pct": 0.0997,
+          "win_margin_pct": 0.0813,
           "assets": [
             {
               "name": "Aaron Gordon",
@@ -1179,13 +1179,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 53.21,
+      "win_margin": 53.18,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 17.44,
           "is_winner": false,
-          "win_margin_pct": -0.7531,
+          "win_margin_pct": -0.753,
           "assets": [
             {
               "name": "Gordon Hayward",
@@ -1199,14 +1199,14 @@
         },
         {
           "owner": "Berke",
-          "side_total": 70.65,
+          "side_total": 70.62,
           "is_winner": true,
-          "win_margin_pct": 0.7531,
+          "win_margin_pct": 0.753,
           "assets": [
             {
               "name": "Donte Divencenzo",
-              "value": 35.26,
-              "fpg": 31.02,
+              "value": 35.23,
+              "fpg": 30.98,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -1238,34 +1238,34 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 37.03,
+      "win_margin": 38.77,
       "sides": [
         {
           "owner": "Moss",
-          "side_total": 91.89,
+          "side_total": 92.34,
           "is_winner": false,
-          "win_margin_pct": -0.2872,
+          "win_margin_pct": -0.2957,
           "assets": [
             {
               "name": "Brandon Miller",
-              "value": 44.61,
-              "fpg": 33.58,
+              "value": 44.8,
+              "fpg": 33.86,
               "age": 23,
               "asset_type": "pick",
               "pick_desc": "Gold 2023 1st round"
             },
             {
               "name": "Ron Holland",
-              "value": 22.4,
-              "fpg": 18.43,
+              "value": 22.64,
+              "fpg": 18.72,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Kelvin 2024 1st round"
             },
             {
               "name": "Brook Lopez",
-              "value": 16.15,
-              "fpg": 16.96,
+              "value": 16.17,
+              "fpg": 17.04,
               "age": 37,
               "asset_type": "player",
               "pick_desc": null
@@ -1282,14 +1282,14 @@
         },
         {
           "owner": "Gold",
-          "side_total": 128.92,
+          "side_total": 131.11,
           "is_winner": true,
-          "win_margin_pct": 0.2872,
+          "win_margin_pct": 0.2957,
           "assets": [
             {
               "name": "Jabari Smith Jr",
-              "value": 55.21,
-              "fpg": 30.67,
+              "value": 56.18,
+              "fpg": 31.21,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2022 1st round (swap rights)"
@@ -1304,8 +1304,8 @@
             },
             {
               "name": "Jonathan Kuminga",
-              "value": 35.49,
-              "fpg": 20.25,
+              "value": 36.71,
+              "fpg": 21.86,
               "age": 23,
               "asset_type": "player",
               "pick_desc": null
@@ -1321,27 +1321,27 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 45.82,
+      "win_margin": 29.09,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 100.46,
+          "side_total": 83.84,
           "is_winner": true,
-          "win_margin_pct": 0.4561,
+          "win_margin_pct": 0.347,
           "assets": [
             {
               "name": "Dejounte Murray",
-              "value": 49.14,
-              "fpg": 0,
+              "value": 31.6,
+              "fpg": 15,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Donovan Clingan",
-              "value": 51.32,
-              "fpg": 33.28,
-              "age": 21,
+              "value": 52.24,
+              "fpg": 34.13,
+              "age": 22,
               "asset_type": "pick",
               "pick_desc": "Moss 2024 FRP top 3 protected w/swap rights on Kelvin FRP - conveys to PETE 2024 FRP or Moss 2025 FRP"
             }
@@ -1349,9 +1349,9 @@
         },
         {
           "owner": "Moss",
-          "side_total": 54.64,
+          "side_total": 54.75,
           "is_winner": false,
-          "win_margin_pct": -0.4561,
+          "win_margin_pct": -0.347,
           "assets": [
             {
               "name": "Paul George",
@@ -1363,8 +1363,8 @@
             },
             {
               "name": "Rudy Gobert",
-              "value": 33.76,
-              "fpg": 33.2,
+              "value": 33.87,
+              "fpg": 33.43,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -1380,13 +1380,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 11.84,
+      "win_margin": 12.08,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 74.26,
+          "side_total": 76.12,
           "is_winner": true,
-          "win_margin_pct": 0.1594,
+          "win_margin_pct": 0.1587,
           "assets": [
             {
               "name": "Jaden Ivey",
@@ -1398,8 +1398,8 @@
             },
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2023 2nd round"
@@ -1408,22 +1408,22 @@
         },
         {
           "owner": "Vlandis",
-          "side_total": 62.42,
+          "side_total": 64.04,
           "is_winner": false,
-          "win_margin_pct": -0.1594,
+          "win_margin_pct": -0.1587,
           "assets": [
             {
               "name": "Caris Levert",
-              "value": 21.83,
-              "fpg": 18.66,
+              "value": 21.59,
+              "fpg": 18.15,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -1439,19 +1439,19 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 24.65,
+      "win_margin": 42.32,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 151.23,
+          "side_total": 151.72,
           "is_winner": true,
-          "win_margin_pct": 0.163,
+          "win_margin_pct": 0.2789,
           "assets": [
             {
               "name": "Fred VanVleet",
               "value": 39.88,
               "fpg": 0,
-              "age": 31,
+              "age": 32,
               "asset_type": "player",
               "pick_desc": null
             },
@@ -1459,22 +1459,22 @@
               "name": "D'Angelo Russell",
               "value": 27.77,
               "fpg": 17.81,
-              "age": 29,
+              "age": 30,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Nikola Vucevic",
-              "value": 29.38,
-              "fpg": 36.71,
+              "value": 30.36,
+              "fpg": 35.49,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Derik Queen",
-              "value": 54.2,
-              "fpg": 30.11,
+              "value": 53.71,
+              "fpg": 29.84,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2025 2nd round"
@@ -1483,38 +1483,38 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 126.58,
+          "side_total": 109.4,
           "is_winner": false,
-          "win_margin_pct": -0.163,
+          "win_margin_pct": -0.2789,
           "assets": [
             {
               "name": "Dejounte Murray",
-              "value": 49.14,
-              "fpg": 0,
+              "value": 31.6,
+              "fpg": 15,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Wendall Carter Jr",
-              "value": 40.02,
-              "fpg": 26.68,
+              "value": 40.23,
+              "fpg": 26.82,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Bobby Portis",
-              "value": 26.73,
-              "fpg": 25.46,
+              "value": 26.6,
+              "fpg": 25.2,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Rob Dillingham",
-              "value": 10.69,
-              "fpg": 8.43,
+              "value": 10.97,
+              "fpg": 8.83,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Gold 2024 2nd round"
@@ -1530,18 +1530,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 96.62,
+      "win_margin": 95.62,
       "sides": [
         {
           "owner": "Vlandis",
-          "side_total": 23.21,
+          "side_total": 23.07,
           "is_winner": false,
-          "win_margin_pct": -0.8063,
+          "win_margin_pct": -0.8056,
           "assets": [
             {
               "name": "Cj McCollum",
-              "value": 23.21,
-              "fpg": 31,
+              "value": 23.07,
+              "fpg": 30.6,
               "age": 34,
               "asset_type": "player",
               "pick_desc": null
@@ -1550,14 +1550,14 @@
         },
         {
           "owner": "Trager",
-          "side_total": 119.83,
+          "side_total": 118.69,
           "is_winner": true,
-          "win_margin_pct": 0.8063,
+          "win_margin_pct": 0.8056,
           "assets": [
             {
               "name": "Keegan Murray",
-              "value": 47.84,
-              "fpg": 31.29,
+              "value": 46.7,
+              "fpg": 29.87,
               "age": 25,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2022 1st round (#5 overall)"
@@ -1581,18 +1581,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 1.8,
+      "win_margin": 0.76,
       "sides": [
         {
           "owner": "Green",
-          "side_total": 31.4,
+          "side_total": 32.44,
           "is_winner": false,
-          "win_margin_pct": -0.0542,
+          "win_margin_pct": -0.0229,
           "assets": [
             {
               "name": "Cason Wallace",
-              "value": 31.4,
-              "fpg": 23.2,
+              "value": 32.44,
+              "fpg": 24.68,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "2023 Green 2nd round"
@@ -1603,7 +1603,7 @@
           "owner": "Jowkar",
           "side_total": 33.2,
           "is_winner": true,
-          "win_margin_pct": 0.0542,
+          "win_margin_pct": 0.0229,
           "assets": [
             {
               "name": "De'andre Hunter",
@@ -1624,13 +1624,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 67.32,
+      "win_margin": 69.04,
       "sides": [
         {
           "owner": "Vlandis",
-          "side_total": 47.12,
+          "side_total": 47.26,
           "is_winner": false,
-          "win_margin_pct": -0.5883,
+          "win_margin_pct": -0.5936,
           "assets": [
             {
               "name": "Jae'Sean Tate",
@@ -1650,8 +1650,8 @@
             },
             {
               "name": "Alex Caruso",
-              "value": 20.37,
-              "fpg": 18.03,
+              "value": 20.51,
+              "fpg": 18.33,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -1660,9 +1660,9 @@
         },
         {
           "owner": "Jowkar",
-          "side_total": 114.44,
+          "side_total": 116.3,
           "is_winner": true,
-          "win_margin_pct": 0.5883,
+          "win_margin_pct": 0.5936,
           "assets": [
             {
               "name": "Malik Beasley",
@@ -1682,8 +1682,8 @@
             },
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2023 2nd round"
@@ -1707,13 +1707,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 85.07,
+      "win_margin": 85.31,
       "sides": [
         {
           "owner": "Vlandis",
           "side_total": 27.9,
           "is_winner": false,
-          "win_margin_pct": -0.753,
+          "win_margin_pct": -0.7536,
           "assets": [
             {
               "name": "Jusuf Nurkic",
@@ -1727,9 +1727,9 @@
         },
         {
           "owner": "Jowkar",
-          "side_total": 112.97,
+          "side_total": 113.21,
           "is_winner": true,
-          "win_margin_pct": 0.753,
+          "win_margin_pct": 0.7536,
           "assets": [
             {
               "name": "Reggie Jackson",
@@ -1741,8 +1741,8 @@
             },
             {
               "name": "Scoot Henderson",
-              "value": 26.62,
-              "fpg": 21.6,
+              "value": 26.86,
+              "fpg": 22,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2023 1st round"
@@ -1766,26 +1766,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 16.4,
+      "win_margin": 16.37,
       "sides": [
         {
           "owner": "Trager",
-          "side_total": 38.89,
+          "side_total": 38.86,
           "is_winner": true,
-          "win_margin_pct": 0.4217,
+          "win_margin_pct": 0.4213,
           "assets": [
             {
               "name": "Jeremy Sochan",
-              "value": 23.37,
-              "fpg": 9.23,
+              "value": 23.2,
+              "fpg": 8.97,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2022 2nd round (#13 overall)"
             },
             {
               "name": "Tidjane Salaun",
-              "value": 15.52,
-              "fpg": 13.91,
+              "value": 15.66,
+              "fpg": 14.11,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2024 2nd round"
@@ -1796,7 +1796,7 @@
           "owner": "Vlandis",
           "side_total": 22.49,
           "is_winner": false,
-          "win_margin_pct": -0.4217,
+          "win_margin_pct": -0.4213,
           "assets": [
             {
               "name": "Mo Bamba",
@@ -1825,18 +1825,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 75.37,
+      "win_margin": 69.33,
       "sides": [
         {
           "owner": "Moss",
-          "side_total": 122.14,
+          "side_total": 116.17,
           "is_winner": true,
-          "win_margin_pct": 0.6171,
+          "win_margin_pct": 0.5968,
           "assets": [
             {
               "name": "Tyler Herro",
-              "value": 57.98,
-              "fpg": 35.77,
+              "value": 52.01,
+              "fpg": 34.79,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -1853,30 +1853,30 @@
         },
         {
           "owner": "Vlandis",
-          "side_total": 46.77,
+          "side_total": 46.84,
           "is_winner": false,
-          "win_margin_pct": -0.6171,
+          "win_margin_pct": -0.5968,
           "assets": [
             {
               "name": "Jonas Valanciunas",
-              "value": 23.8,
-              "fpg": 18.24,
+              "value": 23.71,
+              "fpg": 18.06,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Khris Middleton",
-              "value": 14.58,
-              "fpg": 20.78,
+              "value": 14.79,
+              "fpg": 21.49,
               "age": 34,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jett Howard",
-              "value": 8.39,
-              "fpg": 9.03,
+              "value": 8.34,
+              "fpg": 8.95,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Moss 2023 2nd round"
@@ -1892,13 +1892,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 4.68,
+      "win_margin": 4.52,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 12.89,
           "is_winner": false,
-          "win_margin_pct": -0.2664,
+          "win_margin_pct": -0.2596,
           "assets": [
             {
               "name": "Kemba Walker",
@@ -1912,14 +1912,14 @@
         },
         {
           "owner": "Jowkar",
-          "side_total": 17.57,
+          "side_total": 17.41,
           "is_winner": true,
-          "win_margin_pct": 0.2664,
+          "win_margin_pct": 0.2596,
           "assets": [
             {
               "name": "Dalton Knecht",
-              "value": 17.57,
-              "fpg": 7.7,
+              "value": 17.41,
+              "fpg": 7.52,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 2nd round"
@@ -1935,26 +1935,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 134.75,
+      "win_margin": 135.6,
       "sides": [
         {
           "owner": "Green",
-          "side_total": 117.61,
+          "side_total": 117.84,
           "is_winner": false,
-          "win_margin_pct": -0.534,
+          "win_margin_pct": -0.535,
           "assets": [
             {
               "name": "Joel Embiid",
-              "value": 58.52,
-              "fpg": 42.74,
+              "value": 58.55,
+              "fpg": 42.78,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Dyson Daniels",
-              "value": 59.09,
-              "fpg": 34.44,
+              "value": 59.29,
+              "fpg": 34.65,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Berke 2022 1st round (#10 overall)"
@@ -1963,9 +1963,9 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 252.36,
+          "side_total": 253.44,
           "is_winner": true,
-          "win_margin_pct": 0.534,
+          "win_margin_pct": 0.535,
           "assets": [
             {
               "name": "Domantas Sabonis",
@@ -1985,16 +1985,16 @@
             },
             {
               "name": "Jarred Vanderbilt",
-              "value": 22.16,
-              "fpg": 15.74,
+              "value": 21.96,
+              "fpg": 15.46,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Derrick White",
-              "value": 43.74,
-              "fpg": 38.77,
+              "value": 43.96,
+              "fpg": 39.16,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -2009,24 +2009,24 @@
             },
             {
               "name": "Cason Wallace",
-              "value": 31.4,
-              "fpg": 23.2,
+              "value": 32.44,
+              "fpg": 24.68,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Green 2023 2nd round"
             },
             {
               "name": "Kelly Oubre",
-              "value": 33.67,
-              "fpg": 27.62,
+              "value": 33.77,
+              "fpg": 27.78,
               "age": 30,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2024 2nd round"
             },
             {
               "name": "Isaiah Collier",
-              "value": 35.28,
-              "fpg": 28.16,
+              "value": 35.2,
+              "fpg": 28.06,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Green 2024 2nd round"
@@ -2042,18 +2042,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 32.44,
+      "win_margin": 32.65,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 217.39,
+          "side_total": 216.67,
           "is_winner": true,
-          "win_margin_pct": 0.1492,
+          "win_margin_pct": 0.1507,
           "assets": [
             {
               "name": "Luka Doncic",
-              "value": 163.56,
-              "fpg": 57.44,
+              "value": 162.56,
+              "fpg": 56.73,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -2068,8 +2068,8 @@
             },
             {
               "name": "Rob Dillingham",
-              "value": 10.69,
-              "fpg": 8.43,
+              "value": 10.97,
+              "fpg": 8.83,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Gold 2024 2nd round"
@@ -2086,9 +2086,9 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 184.95,
+          "side_total": 184.02,
           "is_winner": false,
-          "win_margin_pct": -0.1492,
+          "win_margin_pct": -0.1507,
           "assets": [
             {
               "name": "Bradley Beal",
@@ -2101,7 +2101,7 @@
             {
               "name": "Pascal Siakam",
               "value": 43.16,
-              "fpg": 39.45,
+              "fpg": 39.46,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -2116,16 +2116,16 @@
             },
             {
               "name": "Carlton \"Bub\" Carrington",
-              "value": 29.97,
-              "fpg": 21.45,
+              "value": 29.82,
+              "fpg": 21.28,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Green 2024 1st round"
             },
             {
               "name": "Tre Johnson",
-              "value": 27.3,
-              "fpg": 21.67,
+              "value": 26.52,
+              "fpg": 21.05,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 1st round"
@@ -2157,26 +2157,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 27.52,
+      "win_margin": 22.31,
       "sides": [
         {
           "owner": "Vlandis",
-          "side_total": 80.66,
+          "side_total": 86.74,
           "is_winner": false,
-          "win_margin_pct": -0.2544,
+          "win_margin_pct": -0.2046,
           "assets": [
             {
               "name": "Desmond Bane",
-              "value": 55.97,
-              "fpg": 34.91,
+              "value": 61.91,
+              "fpg": 35.33,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Tidjane Salaun",
-              "value": 15.52,
-              "fpg": 13.91,
+              "value": 15.66,
+              "fpg": 14.11,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2024 2nd round"
@@ -2193,22 +2193,22 @@
         },
         {
           "owner": "Trager",
-          "side_total": 108.18,
+          "side_total": 109.05,
           "is_winner": true,
-          "win_margin_pct": 0.2544,
+          "win_margin_pct": 0.2046,
           "assets": [
             {
               "name": "Bilal Coulibaly",
-              "value": 31.89,
-              "fpg": 24.31,
+              "value": 32.45,
+              "fpg": 25.14,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2023 1st round (lower swap of Vlandis and Delaney"
             },
             {
               "name": "PJ Washington",
-              "value": 43.53,
-              "fpg": 28.88,
+              "value": 43.7,
+              "fpg": 29.1,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -2223,8 +2223,8 @@
             },
             {
               "name": "Alex Caruso",
-              "value": 20.37,
-              "fpg": 18.03,
+              "value": 20.51,
+              "fpg": 18.33,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -2240,18 +2240,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Vlandis",
-      "win_margin": 56.96,
+      "win_margin": 57.18,
       "sides": [
         {
           "owner": "Moss",
-          "side_total": 67.4,
+          "side_total": 66.86,
           "is_winner": false,
-          "win_margin_pct": -0.458,
+          "win_margin_pct": -0.461,
           "assets": [
             {
               "name": "De'Aaron Fox",
-              "value": 67.4,
-              "fpg": 37.57,
+              "value": 66.86,
+              "fpg": 36.92,
               "age": 28,
               "asset_type": "player",
               "pick_desc": null
@@ -2260,14 +2260,14 @@
         },
         {
           "owner": "Vlandis",
-          "side_total": 124.36,
+          "side_total": 124.04,
           "is_winner": true,
-          "win_margin_pct": 0.458,
+          "win_margin_pct": 0.461,
           "assets": [
             {
               "name": "Tobias Harris",
-              "value": 28.48,
-              "fpg": 25.77,
+              "value": 28.16,
+              "fpg": 25.12,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -2299,18 +2299,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 49.17,
+      "win_margin": 54.21,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 179.64,
+          "side_total": 184.84,
           "is_winner": true,
-          "win_margin_pct": 0.2737,
+          "win_margin_pct": 0.2933,
           "assets": [
             {
               "name": "Tobias Harris",
-              "value": 28.48,
-              "fpg": 25.77,
+              "value": 28.16,
+              "fpg": 25.12,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -2333,7 +2333,7 @@
             },
             {
               "name": "Jaren Jackson Jr.",
-              "value": 55.28,
+              "value": 60.8,
               "fpg": 34.88,
               "age": 26,
               "asset_type": "player",
@@ -2343,15 +2343,15 @@
         },
         {
           "owner": "Vlandis",
-          "side_total": 130.47,
+          "side_total": 130.63,
           "is_winner": false,
-          "win_margin_pct": -0.2737,
+          "win_margin_pct": -0.2933,
           "assets": [
             {
               "name": "De'Angelo Russell",
               "value": 29.23,
               "fpg": 17.81,
-              "age": 29,
+              "age": 30,
               "asset_type": "player",
               "pick_desc": null
             },
@@ -2373,8 +2373,8 @@
             },
             {
               "name": "Bennedict Mathurin",
-              "value": 41.15,
-              "fpg": 27.38,
+              "value": 41.31,
+              "fpg": 27.58,
               "age": 23,
               "asset_type": "pick",
               "pick_desc": "Delaney 2022 1st round (#7 overall)"
@@ -2390,26 +2390,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 1.67,
+      "win_margin": 1.97,
       "sides": [
         {
           "owner": "Gold",
-          "side_total": 56.67,
+          "side_total": 56.97,
           "is_winner": true,
-          "win_margin_pct": 0.0295,
+          "win_margin_pct": 0.0346,
           "assets": [
             {
               "name": "Bennedict Mathurin",
-              "value": 41.15,
-              "fpg": 27.38,
+              "value": 41.31,
+              "fpg": 27.58,
               "age": 23,
               "asset_type": "pick",
               "pick_desc": "Delaney 2022 1st round (#7 overall)"
             },
             {
               "name": "Tidjane Salaun",
-              "value": 15.52,
-              "fpg": 13.91,
+              "value": 15.66,
+              "fpg": 14.11,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2024 2nd round"
@@ -2420,7 +2420,7 @@
           "owner": "Vlandis",
           "side_total": 55.0,
           "is_winner": false,
-          "win_margin_pct": -0.0295,
+          "win_margin_pct": -0.0346,
           "assets": [
             {
               "name": "Shaedon Sharpe",
@@ -2449,13 +2449,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Vlandis",
-      "win_margin": 17.38,
+      "win_margin": 17.53,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 10.1,
           "is_winner": false,
-          "win_margin_pct": -0.6325,
+          "win_margin_pct": -0.6345,
           "assets": [
             {
               "name": "Mo Bamba",
@@ -2469,14 +2469,14 @@
         },
         {
           "owner": "Vlandis",
-          "side_total": 27.48,
+          "side_total": 27.63,
           "is_winner": true,
-          "win_margin_pct": 0.6325,
+          "win_margin_pct": 0.6345,
           "assets": [
             {
               "name": "Jemai Grant",
-              "value": 27.48,
-              "fpg": 27.22,
+              "value": 27.63,
+              "fpg": 27.53,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -2492,18 +2492,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 16.98,
+      "win_margin": 17.43,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 94.23,
+          "side_total": 94.07,
           "is_winner": true,
-          "win_margin_pct": 0.1802,
+          "win_margin_pct": 0.1853,
           "assets": [
             {
               "name": "Coby White",
-              "value": 46.84,
-              "fpg": 28.45,
+              "value": 46.68,
+              "fpg": 28.23,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -2528,30 +2528,30 @@
         },
         {
           "owner": "Vlandis",
-          "side_total": 77.25,
+          "side_total": 76.64,
           "is_winner": false,
-          "win_margin_pct": -0.1802,
+          "win_margin_pct": -0.1853,
           "assets": [
             {
               "name": "Clint Capela",
-              "value": 20.02,
-              "fpg": 13.29,
+              "value": 19.85,
+              "fpg": 12.94,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jake Laravia",
-              "value": 29.66,
-              "fpg": 22.11,
+              "value": 29.38,
+              "fpg": 21.74,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2022 2nd round (#15 overall)"
             },
             {
               "name": "Dalton Knecht",
-              "value": 17.57,
-              "fpg": 7.7,
+              "value": 17.41,
+              "fpg": 7.52,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 2nd round"
@@ -2575,18 +2575,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 37.04,
+      "win_margin": 37.38,
       "sides": [
         {
           "owner": "Trager",
-          "side_total": 37.04,
+          "side_total": 37.38,
           "is_winner": true,
           "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Quentin Grimes",
-              "value": 37.04,
-              "fpg": 25.22,
+              "value": 37.38,
+              "fpg": 25.65,
               "age": 25,
               "asset_type": "pick",
               "pick_desc": "2022 Berke 2nd round (#20 overall)"
@@ -2618,13 +2618,13 @@
       "is_multi_party": true,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": -2.21,
+      "win_margin": -7.17,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 38.22,
           "is_winner": true,
-          "win_margin_pct": 0.0224,
+          "win_margin_pct": 0.073,
           "assets": [
             {
               "name": "Shaedon Sharpe",
@@ -2638,20 +2638,20 @@
         },
         {
           "owner": "Trager",
-          "side_total": 98.64,
+          "side_total": 98.21,
           "is_winner": false,
-          "win_margin_pct": -0.0224,
+          "win_margin_pct": -0.073,
           "assets": [
             {
               "name": "Mark Williams",
-              "value": 43.64,
-              "fpg": 29.21,
+              "value": 43.21,
+              "fpg": 28.56,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Gold 2022 2nd round (#11 overall)"
             },
             {
-              "name": "Gold 2026 1st round Swap rights (connected to Trager 2026 FRP)",
+              "name": "Gold 2026 1st round Right to Swap  (connected to Trager 2026 FRP)",
               "value": 55.0,
               "fpg": null,
               "age": null,
@@ -2670,22 +2670,22 @@
         },
         {
           "owner": "Jowkar",
-          "side_total": 62.63,
+          "side_total": 67.16,
           "is_winner": true,
-          "win_margin_pct": 0.0224,
+          "win_margin_pct": 0.073,
           "assets": [
             {
               "name": "Tari Eason",
-              "value": 37.11,
-              "fpg": 25.97,
+              "value": 41.5,
+              "fpg": 26,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Trager 2022 1st round (#9 overall)"
             },
             {
               "name": "Tidjane Salaun",
-              "value": 15.52,
-              "fpg": 13.91,
+              "value": 15.66,
+              "fpg": 14.11,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2024 2nd round"
@@ -2709,18 +2709,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 88.38,
+      "win_margin": 87.04,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 58.69,
+          "side_total": 58.67,
           "is_winner": false,
-          "win_margin_pct": -0.6009,
+          "win_margin_pct": -0.5974,
           "assets": [
             {
               "name": "Andre Drummond",
-              "value": 20.59,
-              "fpg": 21.26,
+              "value": 20.43,
+              "fpg": 20.93,
               "age": 32,
               "asset_type": "player",
               "pick_desc": null
@@ -2743,8 +2743,8 @@
             },
             {
               "name": "Tidjane Salaun",
-              "value": 15.52,
-              "fpg": 13.91,
+              "value": 15.66,
+              "fpg": 14.11,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2024 2nd round"
@@ -2753,30 +2753,30 @@
         },
         {
           "owner": "Jowkar",
-          "side_total": 147.07,
+          "side_total": 145.71,
           "is_winner": true,
-          "win_margin_pct": 0.6009,
+          "win_margin_pct": 0.5974,
           "assets": [
             {
               "name": "Egor Demin",
-              "value": 29.18,
-              "fpg": 21.94,
+              "value": 29.07,
+              "fpg": 21.86,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Berke 2025 1st round"
             },
             {
               "name": "Ayo Dosunmu",
-              "value": 41.28,
-              "fpg": 28.37,
+              "value": 40.96,
+              "fpg": 27.94,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Deni Avdija",
-              "value": 76.61,
-              "fpg": 42.55,
+              "value": 75.68,
+              "fpg": 41.67,
               "age": 25,
               "asset_type": "player",
               "pick_desc": null
@@ -2792,27 +2792,27 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 43.15,
+      "win_margin": 48.35,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 88.91,
+          "side_total": 89.65,
           "is_winner": false,
-          "win_margin_pct": -0.3267,
+          "win_margin_pct": -0.3504,
           "assets": [
             {
               "name": "Collin Sexton",
-              "value": 37.59,
-              "fpg": 23.47,
+              "value": 37.41,
+              "fpg": 23.22,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Donovan Clingan",
-              "value": 51.32,
-              "fpg": 33.28,
-              "age": 21,
+              "value": 52.24,
+              "fpg": 34.13,
+              "age": 22,
               "asset_type": "pick",
               "pick_desc": "Moss 2024 1st round"
             }
@@ -2820,9 +2820,9 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 132.06,
+          "side_total": 138.0,
           "is_winner": true,
-          "win_margin_pct": 0.3267,
+          "win_margin_pct": 0.3504,
           "assets": [
             {
               "name": "Christian Wood",
@@ -2834,17 +2834,17 @@
             },
             {
               "name": "Mitch Robinson",
-              "value": 33.33,
-              "fpg": 22.12,
+              "value": 33.62,
+              "fpg": 22.5,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Brandin Podziemski",
-              "value": 35.73,
-              "fpg": 26.29,
-              "age": 22,
+              "value": 41.38,
+              "fpg": 26.97,
+              "age": 23,
               "asset_type": "pick",
               "pick_desc": "Berke 2023 2nd round"
             },
@@ -2867,18 +2867,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 67.75,
+      "win_margin": 50.37,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 78.98,
+          "side_total": 78.87,
           "is_winner": false,
-          "win_margin_pct": -0.4617,
+          "win_margin_pct": -0.3897,
           "assets": [
             {
               "name": "James Harden",
-              "value": 46.43,
-              "fpg": 45,
+              "value": 46.24,
+              "fpg": 44.63,
               "age": 36,
               "asset_type": "player",
               "pick_desc": null
@@ -2893,8 +2893,8 @@
             },
             {
               "name": "Draymond Green",
-              "value": 18.45,
-              "fpg": 24.43,
+              "value": 18.53,
+              "fpg": 24.67,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
@@ -2903,38 +2903,38 @@
         },
         {
           "owner": "Berke",
-          "side_total": 146.73,
+          "side_total": 129.24,
           "is_winner": true,
-          "win_margin_pct": 0.4617,
+          "win_margin_pct": 0.3897,
           "assets": [
             {
               "name": "Dejounte Murray",
-              "value": 49.14,
-              "fpg": 0,
+              "value": 31.6,
+              "fpg": 15,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Kelly Oubre",
-              "value": 33.67,
-              "fpg": 27.62,
+              "value": 33.77,
+              "fpg": 27.78,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Carlton \"Bub\" Carrington",
-              "value": 29.97,
-              "fpg": 21.45,
+              "value": 29.82,
+              "fpg": 21.28,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Green 2024 1st round"
             },
             {
               "name": "Matas Buzelis",
-              "value": 33.95,
-              "fpg": 30.02,
+              "value": 34.05,
+              "fpg": 30.14,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2024 1st round"
@@ -2950,18 +2950,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 31.69,
+      "win_margin": 38.32,
       "sides": [
         {
           "owner": "Green",
-          "side_total": 40.59,
+          "side_total": 42.45,
           "is_winner": false,
-          "win_margin_pct": -0.4384,
+          "win_margin_pct": -0.4744,
           "assets": [
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2023 2nd round (#13 overall)"
@@ -2970,13 +2970,13 @@
         },
         {
           "owner": "Trager",
-          "side_total": 72.28,
+          "side_total": 80.77,
           "is_winner": true,
-          "win_margin_pct": 0.4384,
+          "win_margin_pct": 0.4744,
           "assets": [
             {
               "name": "Walker Kessler",
-              "value": 62.28,
+              "value": 70.77,
               "fpg": 40.6,
               "age": 24,
               "asset_type": "pick",
@@ -3001,17 +3001,17 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 2.52,
+      "win_margin": 9.15,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 62.28,
+          "side_total": 70.77,
           "is_winner": true,
-          "win_margin_pct": 0.0405,
+          "win_margin_pct": 0.1293,
           "assets": [
             {
               "name": "Walker Kessler",
-              "value": 62.28,
+              "value": 70.77,
               "fpg": 40.6,
               "age": 24,
               "asset_type": "pick",
@@ -3029,9 +3029,9 @@
         },
         {
           "owner": "Trager",
-          "side_total": 59.76,
+          "side_total": 61.62,
           "is_winner": false,
-          "win_margin_pct": -0.0405,
+          "win_margin_pct": -0.1293,
           "assets": [
             {
               "name": "TyTy Washington",
@@ -3043,8 +3043,8 @@
             },
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "pick",
               "pick_desc": "Vlandis 2023 2nd round"
@@ -3068,18 +3068,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 78.1,
+      "win_margin": 77.3,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 92.84,
+          "side_total": 92.06,
           "is_winner": true,
-          "win_margin_pct": 0.8412,
+          "win_margin_pct": 0.8397,
           "assets": [
             {
               "name": "Tre Johnson",
-              "value": 27.3,
-              "fpg": 21.67,
+              "value": 26.52,
+              "fpg": 21.05,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 1st Round"
@@ -3096,14 +3096,14 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 14.74,
+          "side_total": 14.76,
           "is_winner": false,
-          "win_margin_pct": -0.8412,
+          "win_margin_pct": -0.8397,
           "assets": [
             {
               "name": "Klay Thompson",
-              "value": 14.74,
-              "fpg": 18.28,
+              "value": 14.76,
+              "fpg": 18.35,
               "age": 36,
               "asset_type": "player",
               "pick_desc": null
@@ -3119,26 +3119,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 52.35,
+      "win_margin": 52.62,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 97.62,
+          "side_total": 97.2,
           "is_winner": false,
-          "win_margin_pct": -0.3491,
+          "win_margin_pct": -0.3512,
           "assets": [
             {
               "name": "Brandom Ingram",
-              "value": 61.2,
-              "fpg": 36.63,
+              "value": 60.95,
+              "fpg": 36.33,
               "age": 28,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Ryan Kalkbrenner",
-              "value": 36.42,
-              "fpg": 23.96,
+              "value": 36.25,
+              "fpg": 23.85,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Berke 2025 2nd Round"
@@ -3147,14 +3147,14 @@
         },
         {
           "owner": "Trager",
-          "side_total": 149.97,
+          "side_total": 149.82,
           "is_winner": true,
-          "win_margin_pct": 0.3491,
+          "win_margin_pct": 0.3512,
           "assets": [
             {
               "name": "Carlton \"Bub\" Carrington",
-              "value": 29.97,
-              "fpg": 21.45,
+              "value": 29.82,
+              "fpg": 21.28,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Green 2024 1st Round"
@@ -3186,13 +3186,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 49.17,
+      "win_margin": 31.48,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 77.46,
+          "side_total": 77.14,
           "is_winner": false,
-          "win_margin_pct": -0.3883,
+          "win_margin_pct": -0.2898,
           "assets": [
             {
               "name": "Paul George",
@@ -3212,8 +3212,8 @@
             },
             {
               "name": "Tobias Harris",
-              "value": 28.48,
-              "fpg": 25.77,
+              "value": 28.16,
+              "fpg": 25.12,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -3222,22 +3222,22 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 126.63,
+          "side_total": 108.62,
           "is_winner": true,
-          "win_margin_pct": 0.3883,
+          "win_margin_pct": 0.2898,
           "assets": [
             {
               "name": "Dejounte Murray",
-              "value": 49.14,
-              "fpg": 0,
+              "value": 31.6,
+              "fpg": 15,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jrue Holiday",
-              "value": 20.98,
-              "fpg": 34,
+              "value": 20.69,
+              "fpg": 33.13,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
@@ -3252,8 +3252,8 @@
             },
             {
               "name": "Collin Sexton",
-              "value": 37.59,
-              "fpg": 23.47,
+              "value": 37.41,
+              "fpg": 23.22,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -3269,18 +3269,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 26.22,
+      "win_margin": 26.68,
       "sides": [
         {
           "owner": "Green",
-          "side_total": 22.16,
+          "side_total": 21.96,
           "is_winner": false,
-          "win_margin_pct": -0.542,
+          "win_margin_pct": -0.5485,
           "assets": [
             {
               "name": "Jarred Vanderbilt",
-              "value": 22.16,
-              "fpg": 15.74,
+              "value": 21.96,
+              "fpg": 15.46,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -3289,14 +3289,14 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 48.38,
+          "side_total": 48.64,
           "is_winner": true,
-          "win_margin_pct": 0.542,
+          "win_margin_pct": 0.5485,
           "assets": [
             {
               "name": "Nicolas Claxton",
-              "value": 48.38,
-              "fpg": 33.04,
+              "value": 48.64,
+              "fpg": 33.4,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -3312,13 +3312,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 74.66,
+      "win_margin": 74.37,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 36.27,
           "is_winner": false,
-          "win_margin_pct": -0.673,
+          "win_margin_pct": -0.6722,
           "assets": [
             {
               "name": "Kristaps Porzingis",
@@ -3332,14 +3332,14 @@
         },
         {
           "owner": "Gold",
-          "side_total": 110.93,
+          "side_total": 110.64,
           "is_winner": true,
-          "win_margin_pct": 0.673,
+          "win_margin_pct": 0.6722,
           "assets": [
             {
               "name": "Anthony Black",
-              "value": 33.92,
-              "fpg": 32,
+              "value": 33.63,
+              "fpg": 31.58,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Moss 2023 1st round"
@@ -3457,18 +3457,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 30.89,
+      "win_margin": 32.27,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 34.18,
+          "side_total": 33.94,
           "is_winner": false,
-          "win_margin_pct": -0.4747,
+          "win_margin_pct": -0.4874,
           "assets": [
             {
               "name": "Marcus Smart",
-              "value": 19.02,
-              "fpg": 21.31,
+              "value": 18.78,
+              "fpg": 20.72,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -3485,22 +3485,22 @@
         },
         {
           "owner": "Trager",
-          "side_total": 65.07,
+          "side_total": 66.21,
           "is_winner": true,
-          "win_margin_pct": 0.4747,
+          "win_margin_pct": 0.4874,
           "assets": [
             {
               "name": "Cason Wallace",
-              "value": 31.4,
-              "fpg": 23.2,
+              "value": 32.44,
+              "fpg": 24.68,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Green 2023 2nd round"
             },
             {
               "name": "Kelly Oubre",
-              "value": 33.67,
-              "fpg": 27.62,
+              "value": 33.77,
+              "fpg": 27.78,
               "age": 30,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2024 2nd round swap rights (connected to Trager 2024 SRP)"
@@ -3516,13 +3516,13 @@
       "is_multi_party": true,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 4.12,
+      "win_margin": 17.6,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 20.29,
           "is_winner": false,
-          "win_margin_pct": -0.0901,
+          "win_margin_pct": -0.3425,
           "assets": [
             {
               "name": "Buddy Hield",
@@ -3536,15 +3536,15 @@
         },
         {
           "owner": "Trager",
-          "side_total": 21.32,
+          "side_total": 13.49,
           "is_winner": false,
-          "win_margin_pct": -0.0901,
+          "win_margin_pct": -0.3425,
           "assets": [
             {
               "name": "KJ Martin",
-              "value": 21.32,
-              "fpg": 14.21,
-              "age": 26,
+              "value": 13.49,
+              "fpg": 11.24,
+              "age": 30,
               "asset_type": "player",
               "pick_desc": null
             }
@@ -3552,15 +3552,15 @@
         },
         {
           "owner": "Jowkar",
-          "side_total": 45.73,
+          "side_total": 51.38,
           "is_winner": true,
-          "win_margin_pct": 0.0901,
+          "win_margin_pct": 0.3425,
           "assets": [
             {
               "name": "Brandin Podziemski",
-              "value": 35.73,
-              "fpg": 26.29,
-              "age": 22,
+              "value": 41.38,
+              "fpg": 26.97,
+              "age": 23,
               "asset_type": "pick",
               "pick_desc": "Berke 2023 2nd round"
             },
@@ -3583,13 +3583,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 26.38,
+      "win_margin": 26.24,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 58.37,
+          "side_total": 58.32,
           "is_winner": true,
-          "win_margin_pct": 0.4519,
+          "win_margin_pct": 0.4499,
           "assets": [
             {
               "name": "Jordan Hawkins",
@@ -3601,8 +3601,8 @@
             },
             {
               "name": "Jett Howard",
-              "value": 8.39,
-              "fpg": 9.03,
+              "value": 8.34,
+              "fpg": 8.95,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Moss 2023 2nd round"
@@ -3619,14 +3619,14 @@
         },
         {
           "owner": "Vlandis",
-          "side_total": 31.99,
+          "side_total": 32.08,
           "is_winner": false,
-          "win_margin_pct": -0.4519,
+          "win_margin_pct": -0.4499,
           "assets": [
             {
               "name": "Kelly Oubre Jr.",
-              "value": 31.99,
-              "fpg": 27.62,
+              "value": 32.08,
+              "fpg": 27.78,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
@@ -3642,13 +3642,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 25.03,
+      "win_margin": 25.18,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 75.0,
           "is_winner": true,
-          "win_margin_pct": 0.3337,
+          "win_margin_pct": 0.3357,
           "assets": [
             {
               "name": "Vlandis 2026 1st round",
@@ -3662,14 +3662,14 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 49.97,
+          "side_total": 49.82,
           "is_winner": false,
-          "win_margin_pct": -0.3337,
+          "win_margin_pct": -0.3357,
           "assets": [
             {
               "name": "Carlton \"Bub\" Carrington",
-              "value": 29.97,
-              "fpg": 21.45,
+              "value": 29.82,
+              "fpg": 21.28,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Green 2024 1st round"
@@ -3701,18 +3701,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 76.01,
+      "win_margin": 76.22,
       "sides": [
         {
           "owner": "Zujewski",
-          "side_total": 115.02,
+          "side_total": 115.23,
           "is_winner": true,
-          "win_margin_pct": 0.6608,
+          "win_margin_pct": 0.6615,
           "assets": [
             {
               "name": "Wendall Carter Jr.",
-              "value": 40.02,
-              "fpg": 26.68,
+              "value": 40.23,
+              "fpg": 26.82,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -3739,7 +3739,7 @@
           "owner": "Delaney",
           "side_total": 39.01,
           "is_winner": false,
-          "win_margin_pct": -0.6608,
+          "win_margin_pct": -0.6615,
           "assets": [
             {
               "name": "Kyrie Irving",
@@ -3760,27 +3760,27 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 9.4,
+      "win_margin": 10.01,
       "sides": [
         {
           "owner": "Zujewski",
-          "side_total": 85.27,
+          "side_total": 86.29,
           "is_winner": true,
-          "win_margin_pct": 0.1102,
+          "win_margin_pct": 0.116,
           "assets": [
             {
               "name": "Matas Buzelis",
-              "value": 33.95,
-              "fpg": 30.02,
+              "value": 34.05,
+              "fpg": 30.14,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2024 1st round"
             },
             {
               "name": "Donovan Clingan",
-              "value": 51.32,
-              "fpg": 33.28,
-              "age": 21,
+              "value": 52.24,
+              "fpg": 34.13,
+              "age": 22,
               "asset_type": "pick",
               "pick_desc": "Moss 2024 1st round"
             }
@@ -3788,14 +3788,14 @@
         },
         {
           "owner": "Berke",
-          "side_total": 75.87,
+          "side_total": 76.28,
           "is_winner": false,
-          "win_margin_pct": -0.1102,
+          "win_margin_pct": -0.116,
           "assets": [
             {
               "name": "Kawhi Leonard",
-              "value": 75.87,
-              "fpg": 48.88,
+              "value": 76.28,
+              "fpg": 49.36,
               "age": 34,
               "asset_type": "player",
               "pick_desc": null
@@ -3811,17 +3811,17 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 79.52,
+      "win_margin": 85.04,
       "sides": [
         {
           "owner": "Zujewski",
-          "side_total": 199.87,
+          "side_total": 205.19,
           "is_winner": true,
-          "win_margin_pct": 0.3979,
+          "win_margin_pct": 0.4144,
           "assets": [
             {
               "name": "Jaren Jackson Jr",
-              "value": 55.28,
+              "value": 60.8,
               "fpg": 34.88,
               "age": 26,
               "asset_type": "player",
@@ -3837,8 +3837,8 @@
             },
             {
               "name": "Jaime Jacquez",
-              "value": 40.26,
-              "fpg": 29.64,
+              "value": 40.06,
+              "fpg": 29.41,
               "age": 25,
               "asset_type": "pick",
               "pick_desc": "Peterson 2023 2nd round"
@@ -3855,9 +3855,9 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 120.35,
+          "side_total": 120.15,
           "is_winner": false,
-          "win_margin_pct": -0.3979,
+          "win_margin_pct": -0.4144,
           "assets": [
             {
               "name": "Anthony Davis",
@@ -3869,8 +3869,8 @@
             },
             {
               "name": "Josh Hart",
-              "value": 39.96,
-              "fpg": 32.51,
+              "value": 39.76,
+              "fpg": 32.17,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
@@ -3902,13 +3902,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 36.57,
+      "win_margin": 36.54,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 16.78,
           "is_winner": false,
-          "win_margin_pct": -0.6855,
+          "win_margin_pct": -0.6853,
           "assets": [
             {
               "name": "Jordan Hawkins",
@@ -3922,14 +3922,14 @@
         },
         {
           "owner": "Berke",
-          "side_total": 53.35,
+          "side_total": 53.32,
           "is_winner": true,
-          "win_margin_pct": 0.6855,
+          "win_margin_pct": 0.6853,
           "assets": [
             {
               "name": "Donte DiVincenzo",
-              "value": 35.26,
-              "fpg": 31.02,
+              "value": 35.23,
+              "fpg": 30.98,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -3953,18 +3953,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 9.72,
+      "win_margin": 9.59,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 19.82,
+          "side_total": 19.69,
           "is_winner": true,
-          "win_margin_pct": 0.4904,
+          "win_margin_pct": 0.487,
           "assets": [
             {
               "name": "Jordan Clarkson",
-              "value": 19.82,
-              "fpg": 13.53,
+              "value": 19.69,
+              "fpg": 13.27,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -3975,7 +3975,7 @@
           "owner": "Berke",
           "side_total": 10.1,
           "is_winner": false,
-          "win_margin_pct": -0.4904,
+          "win_margin_pct": -0.487,
           "assets": [
             {
               "name": "Mo Bamba",
@@ -3996,18 +3996,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 1.82,
+      "win_margin": 1.69,
       "sides": [
         {
           "owner": "Moss",
-          "side_total": 19.82,
+          "side_total": 19.69,
           "is_winner": true,
-          "win_margin_pct": 0.0918,
+          "win_margin_pct": 0.0858,
           "assets": [
             {
               "name": "Jordan Clarkson",
-              "value": 19.82,
-              "fpg": 13.53,
+              "value": 19.69,
+              "fpg": 13.27,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -4018,7 +4018,7 @@
           "owner": "Jowkar",
           "side_total": 18.0,
           "is_winner": false,
-          "win_margin_pct": -0.0918,
+          "win_margin_pct": -0.0858,
           "assets": [
             {
               "name": "Moss 2026 2nd round",
@@ -4047,18 +4047,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 14.98,
+      "win_margin": 15.05,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 46.48,
+          "side_total": 46.16,
           "is_winner": false,
-          "win_margin_pct": -0.2437,
+          "win_margin_pct": -0.2459,
           "assets": [
             {
               "name": "Tobias Harris",
-              "value": 28.48,
-              "fpg": 25.77,
+              "value": 28.16,
+              "fpg": 25.12,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -4091,22 +4091,22 @@
         },
         {
           "owner": "Berke",
-          "side_total": 61.46,
+          "side_total": 61.21,
           "is_winner": true,
-          "win_margin_pct": 0.2437,
+          "win_margin_pct": 0.2459,
           "assets": [
             {
               "name": "Josh Hart",
-              "value": 39.96,
-              "fpg": 32.51,
+              "value": 39.76,
+              "fpg": 32.17,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Harrison Barnes",
-              "value": 21.5,
-              "fpg": 20.11,
+              "value": 21.45,
+              "fpg": 20,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -4122,18 +4122,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": 71.51,
+      "win_margin": 72.03,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 81.87,
+          "side_total": 82.02,
           "is_winner": false,
-          "win_margin_pct": -0.4662,
+          "win_margin_pct": -0.4676,
           "assets": [
             {
               "name": "Karl Anthony-Towns",
-              "value": 53.97,
-              "fpg": 38.21,
+              "value": 54.12,
+              "fpg": 38.42,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
@@ -4150,14 +4150,14 @@
         },
         {
           "owner": "Kelley",
-          "side_total": 153.38,
+          "side_total": 154.05,
           "is_winner": true,
-          "win_margin_pct": 0.4662,
+          "win_margin_pct": 0.4676,
           "assets": [
             {
               "name": "Michael Porter Jr.",
-              "value": 60.6,
-              "fpg": 40.4,
+              "value": 60.2,
+              "fpg": 40.13,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -4172,24 +4172,24 @@
             },
             {
               "name": "Kris Dunn",
-              "value": 18.32,
-              "fpg": 22.2,
+              "value": 18.29,
+              "fpg": 22.14,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Zaccharie Risacher",
-              "value": 27.28,
-              "fpg": 20.43,
+              "value": 28.49,
+              "fpg": 20.15,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2024 1st round"
             },
             {
               "name": "Egor Demin",
-              "value": 29.18,
-              "fpg": 21.94,
+              "value": 29.07,
+              "fpg": 21.86,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Berke 2025 1st round"
@@ -4221,18 +4221,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 103.47,
+      "win_margin": 103.61,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 43.16,
           "is_winner": false,
-          "win_margin_pct": -0.7057,
+          "win_margin_pct": -0.7059,
           "assets": [
             {
               "name": "Pascal Siakam",
               "value": 43.16,
-              "fpg": 39.45,
+              "fpg": 39.46,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -4241,22 +4241,22 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 146.63,
+          "side_total": 146.77,
           "is_winner": true,
-          "win_margin_pct": 0.7057,
+          "win_margin_pct": 0.7059,
           "assets": [
             {
               "name": "Jarace Walker",
-              "value": 21.49,
-              "fpg": 20.04,
+              "value": 21.83,
+              "fpg": 20.55,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Berke 2023 1st round (#6 overall)"
             },
             {
               "name": "Tre Johnson",
-              "value": 27.3,
-              "fpg": 21.67,
+              "value": 26.52,
+              "fpg": 21.05,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 1st round"
@@ -4271,8 +4271,8 @@
             },
             {
               "name": "Moses Moody",
-              "value": 32.3,
-              "fpg": 22.93,
+              "value": 32.88,
+              "fpg": 23.65,
               "age": 23,
               "asset_type": "player",
               "pick_desc": null
@@ -4288,13 +4288,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 16.46,
+      "win_margin": 14.64,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 76.38,
+          "side_total": 77.42,
           "is_winner": false,
-          "win_margin_pct": -0.1773,
+          "win_margin_pct": -0.159,
           "assets": [
             {
               "name": "John Collins",
@@ -4306,8 +4306,8 @@
             },
             {
               "name": "Cason Wallace",
-              "value": 31.4,
-              "fpg": 23.2,
+              "value": 32.44,
+              "fpg": 24.68,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Green 2023 2nd round (#14 overall)"
@@ -4316,14 +4316,14 @@
         },
         {
           "owner": "Trager",
-          "side_total": 92.84,
+          "side_total": 92.06,
           "is_winner": true,
-          "win_margin_pct": 0.1773,
+          "win_margin_pct": 0.159,
           "assets": [
             {
               "name": "Tre Johnson",
-              "value": 27.3,
-              "fpg": 21.67,
+              "value": 26.52,
+              "fpg": 21.05,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 1st round"
@@ -4347,26 +4347,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 9.69,
+      "win_margin": 8.38,
       "sides": [
         {
           "owner": "Trager",
-          "side_total": 102.58,
+          "side_total": 102.35,
           "is_winner": true,
-          "win_margin_pct": 0.0945,
+          "win_margin_pct": 0.0819,
           "assets": [
             {
               "name": "Nicholas Claxton",
-              "value": 48.38,
-              "fpg": 33.04,
+              "value": 48.64,
+              "fpg": 33.4,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Derik Queen",
-              "value": 54.2,
-              "fpg": 30.11,
+              "value": 53.71,
+              "fpg": 29.84,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2025 2nd round"
@@ -4375,20 +4375,20 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 92.89,
+          "side_total": 93.97,
           "is_winner": false,
-          "win_margin_pct": -0.0945,
+          "win_margin_pct": -0.0819,
           "assets": [
             {
               "name": "Tre Johnson",
-              "value": 27.3,
-              "fpg": 21.67,
+              "value": 26.52,
+              "fpg": 21.05,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 1st round"
             },
             {
-              "name": "Trager 2026 1st round",
+              "name": "Trager 2026 1st round (swap rights to Gold 2026 1st round)",
               "value": 25.0,
               "fpg": null,
               "age": null,
@@ -4397,8 +4397,8 @@
             },
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "pick",
               "pick_desc": "Kelley 2023 2nd round (#19 overall)"
@@ -4414,26 +4414,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 20.7,
+      "win_margin": 17.13,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 84.33,
+          "side_total": 86.41,
           "is_winner": true,
-          "win_margin_pct": 0.2455,
+          "win_margin_pct": 0.1982,
           "assets": [
             {
               "name": "Derrick White",
-              "value": 43.74,
-              "fpg": 38.77,
+              "value": 43.96,
+              "fpg": 39.16,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "pick",
               "pick_desc": "Kelley 2023 2nd round (#19 overall)"
@@ -4442,9 +4442,9 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 63.63,
+          "side_total": 69.28,
           "is_winner": false,
-          "win_margin_pct": -0.2455,
+          "win_margin_pct": -0.1982,
           "assets": [
             {
               "name": "Jusuf Nurkic",
@@ -4456,9 +4456,9 @@
             },
             {
               "name": "Brandin Podziemski",
-              "value": 35.73,
-              "fpg": 26.29,
-              "age": 22,
+              "value": 41.38,
+              "fpg": 26.97,
+              "age": 23,
               "asset_type": "pick",
               "pick_desc": "Berke 2023 2nd round (#17 overall)"
             }
@@ -4473,26 +4473,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 24.32,
+      "win_margin": 23.2,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 85.69,
+          "side_total": 85.46,
           "is_winner": true,
-          "win_margin_pct": 0.2838,
+          "win_margin_pct": 0.2715,
           "assets": [
             {
               "name": "Kyle Kuzma",
-              "value": 31.16,
-              "fpg": 23.8,
+              "value": 31.1,
+              "fpg": 23.69,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Tyus Jones",
-              "value": 25.79,
-              "fpg": 11.4,
+              "value": 25.62,
+              "fpg": 11.13,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -4509,22 +4509,22 @@
         },
         {
           "owner": "Gold",
-          "side_total": 61.37,
+          "side_total": 62.26,
           "is_winner": false,
-          "win_margin_pct": -0.2838,
+          "win_margin_pct": -0.2715,
           "assets": [
             {
               "name": "Carlton \"Bub\" Carrington",
-              "value": 29.97,
-              "fpg": 21.45,
+              "value": 29.82,
+              "fpg": 21.28,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Green 2024 1st round"
             },
             {
               "name": "Cason Wallace",
-              "value": 31.4,
-              "fpg": 23.2,
+              "value": 32.44,
+              "fpg": 24.68,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Green 2023 2nd round (#14 overall)"
@@ -4540,18 +4540,18 @@
       "is_multi_party": true,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": -53.4,
+      "win_margin": -53.7,
       "sides": [
         {
           "owner": "Kelley",
-          "side_total": 255.79,
+          "side_total": 255.1,
           "is_winner": false,
-          "win_margin_pct": -0.2088,
+          "win_margin_pct": -0.2105,
           "assets": [
             {
               "name": "Mikal Bridges",
-              "value": 48.15,
-              "fpg": 36.58,
+              "value": 48.05,
+              "fpg": 36.44,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -4566,16 +4566,16 @@
             },
             {
               "name": "Gradey Dick",
-              "value": 20.08,
-              "fpg": 11.64,
+              "value": 19.98,
+              "fpg": 11.48,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Peterson 2023 1st round (#10 overall)"
             },
             {
               "name": "Nikola Topic",
-              "value": 6.93,
-              "fpg": 5.5,
+              "value": 5.54,
+              "fpg": 4.4,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 1st round"
@@ -4606,8 +4606,8 @@
             },
             {
               "name": "Khaman Maluach",
-              "value": 4.62,
-              "fpg": 3.67,
+              "value": 5.52,
+              "fpg": 4.38,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Green 2025 1st round"
@@ -4624,30 +4624,30 @@
         },
         {
           "owner": "Gold",
-          "side_total": 125.05,
+          "side_total": 125.86,
           "is_winner": true,
-          "win_margin_pct": 0.2088,
+          "win_margin_pct": 0.2105,
           "assets": [
             {
               "name": "Jalen Duren",
-              "value": 68.51,
-              "fpg": 36.27,
+              "value": 69.2,
+              "fpg": 36.98,
               "age": 22,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Carlton \"Bub\" Carrington",
-              "value": 29.97,
-              "fpg": 21.45,
+              "value": 29.82,
+              "fpg": 21.28,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Green 2024 1st round receives right to swap with Berke 2024 1st round"
             },
             {
               "name": "Reed Sheppard",
-              "value": 26.57,
-              "fpg": 27.04,
+              "value": 26.84,
+              "fpg": 27.37,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Gold 2024 1st round receives right to swap with Kelley 2024 1st round"
@@ -4656,30 +4656,30 @@
         },
         {
           "owner": "Green",
-          "side_total": 154.96,
+          "side_total": 153.87,
           "is_winner": true,
-          "win_margin_pct": 0.2088,
+          "win_margin_pct": 0.2105,
           "assets": [
             {
               "name": "Jalen Brunson",
-              "value": 64.8,
-              "fpg": 42.25,
+              "value": 64.44,
+              "fpg": 41.78,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Donovan Mitchell",
-              "value": 82.57,
-              "fpg": 48.17,
+              "value": 82.13,
+              "fpg": 47.69,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Kobe Bufkin",
-              "value": 7.59,
-              "fpg": 6.17,
+              "value": 7.3,
+              "fpg": 5.57,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Delaney 2023 2nd round (#18 overall)"
@@ -4688,14 +4688,14 @@
         },
         {
           "owner": "Trager",
-          "side_total": 29.18,
+          "side_total": 29.07,
           "is_winner": true,
-          "win_margin_pct": 0.2088,
+          "win_margin_pct": 0.2105,
           "assets": [
             {
               "name": "Egor Demin",
-              "value": 29.18,
-              "fpg": 21.94,
+              "value": 29.07,
+              "fpg": 21.86,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Berke 2025 1st round"
@@ -4719,26 +4719,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 18.8,
+      "win_margin": 19.49,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 63.8,
+          "side_total": 64.49,
           "is_winner": true,
-          "win_margin_pct": 0.2947,
+          "win_margin_pct": 0.3022,
           "assets": [
             {
               "name": "Cam Johnson",
-              "value": 32.4,
-              "fpg": 23.27,
+              "value": 32.05,
+              "fpg": 22.69,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Cason Wallace",
-              "value": 31.4,
-              "fpg": 23.2,
+              "value": 32.44,
+              "fpg": 24.68,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Green 2023 2nd round (#14 overall)"
@@ -4749,7 +4749,7 @@
           "owner": "Gold",
           "side_total": 45.0,
           "is_winner": false,
-          "win_margin_pct": -0.2947,
+          "win_margin_pct": -0.3022,
           "assets": [
             {
               "name": "Delaney 2027 1st round",
@@ -4888,26 +4888,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 55.58,
+      "win_margin": 53.58,
       "sides": [
         {
           "owner": "Zujewski",
-          "side_total": 135.08,
+          "side_total": 135.5,
           "is_winner": true,
-          "win_margin_pct": 0.4115,
+          "win_margin_pct": 0.3954,
           "assets": [
             {
               "name": "Deandre Ayton",
-              "value": 44.94,
-              "fpg": 29.47,
+              "value": 44.9,
+              "fpg": 29.41,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Taylor Hendricks",
-              "value": 14.47,
-              "fpg": 11.64,
+              "value": 14.93,
+              "fpg": 12.56,
               "age": 22,
               "asset_type": "player",
               "pick_desc": null
@@ -4932,30 +4932,30 @@
         },
         {
           "owner": "Trager",
-          "side_total": 79.5,
+          "side_total": 81.92,
           "is_winner": false,
-          "win_margin_pct": -0.4115,
+          "win_margin_pct": -0.3954,
           "assets": [
             {
               "name": "Ausar Thompson",
-              "value": 40.36,
-              "fpg": 28.76,
+              "value": 42.46,
+              "fpg": 28.75,
               "age": 23,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Matas Buzelis",
-              "value": 33.95,
-              "fpg": 30.02,
+              "value": 34.05,
+              "fpg": 30.14,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2024 1st round"
             },
             {
               "name": "Leonard Miller",
-              "value": 5.19,
-              "fpg": 4.18,
+              "value": 5.41,
+              "fpg": 4.52,
               "age": 22,
               "asset_type": "pick",
               "pick_desc": "Zujewski 2023 2nd round (#15 overall)"
@@ -4971,13 +4971,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 45.36,
+      "win_margin": 46.07,
       "sides": [
         {
           "owner": "Moss",
-          "side_total": 88.03,
+          "side_total": 88.74,
           "is_winner": true,
-          "win_margin_pct": 0.5153,
+          "win_margin_pct": 0.5192,
           "assets": [
             {
               "name": "Kelley 2028 1st round",
@@ -4989,16 +4989,16 @@
             },
             {
               "name": "Khris Middleton",
-              "value": 14.58,
-              "fpg": 20.78,
+              "value": 14.79,
+              "fpg": 21.49,
               "age": 34,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jakob Poeltl",
-              "value": 33.45,
-              "fpg": 23.57,
+              "value": 33.95,
+              "fpg": 24.44,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
@@ -5009,7 +5009,7 @@
           "owner": "Kelley",
           "side_total": 42.67,
           "is_winner": false,
-          "win_margin_pct": -0.5153,
+          "win_margin_pct": -0.5192,
           "assets": [
             {
               "name": "Kristaps Porzingus",
@@ -5030,18 +5030,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 7.36,
+      "win_margin": 7.03,
       "sides": [
         {
           "owner": "Trager",
-          "side_total": 46.84,
+          "side_total": 46.68,
           "is_winner": false,
-          "win_margin_pct": -0.1358,
+          "win_margin_pct": -0.1309,
           "assets": [
             {
               "name": "Coby White",
-              "value": 46.84,
-              "fpg": 28.45,
+              "value": 46.68,
+              "fpg": 28.23,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -5050,14 +5050,14 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 54.2,
+          "side_total": 53.71,
           "is_winner": true,
-          "win_margin_pct": 0.1358,
+          "win_margin_pct": 0.1309,
           "assets": [
             {
               "name": "Derik Queen",
-              "value": 54.2,
-              "fpg": 30.11,
+              "value": 53.71,
+              "fpg": 29.84,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2025 2nd round"
@@ -5073,18 +5073,18 @@
       "is_multi_party": false,
       "is_collusion": true,
       "winner": "Moss",
-      "win_margin": 51.1,
+      "win_margin": 51.96,
       "sides": [
         {
           "owner": "Kelley",
-          "side_total": 222.65,
+          "side_total": 222.12,
           "is_winner": false,
-          "win_margin_pct": -0.1867,
+          "win_margin_pct": -0.1896,
           "assets": [
             {
               "name": "De'Aaron Fox",
-              "value": 67.4,
-              "fpg": 37.57,
+              "value": 66.86,
+              "fpg": 36.92,
               "age": 28,
               "asset_type": "player",
               "pick_desc": null
@@ -5099,24 +5099,24 @@
             },
             {
               "name": "Myles Turner",
-              "value": 37.82,
-              "fpg": 29.14,
+              "value": 37.68,
+              "fpg": 28.89,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Rudy Gobert",
-              "value": 33.76,
-              "fpg": 33.2,
+              "value": 33.87,
+              "fpg": 33.43,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Russell Westbrook",
-              "value": 21.22,
-              "fpg": 31.59,
+              "value": 21.26,
+              "fpg": 31.7,
               "age": 37,
               "asset_type": "player",
               "pick_desc": null
@@ -5125,22 +5125,22 @@
         },
         {
           "owner": "Moss",
-          "side_total": 273.75,
+          "side_total": 274.08,
           "is_winner": true,
-          "win_margin_pct": 0.1867,
+          "win_margin_pct": 0.1896,
           "assets": [
             {
               "name": "CJ McCollum",
-              "value": 23.21,
-              "fpg": 31,
+              "value": 23.07,
+              "fpg": 30.6,
               "age": 34,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jonas Valanciunas",
-              "value": 23.8,
-              "fpg": 18.24,
+              "value": 23.71,
+              "fpg": 18.06,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -5156,7 +5156,7 @@
             {
               "name": "Nicolas Batum",
               "value": 9.6,
-              "fpg": 12.21,
+              "fpg": 12.22,
               "age": 37,
               "asset_type": "player",
               "pick_desc": null
@@ -5171,8 +5171,8 @@
             },
             {
               "name": "Zaccharie Risacher",
-              "value": 27.28,
-              "fpg": 20.43,
+              "value": 28.49,
+              "fpg": 20.15,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2024 1st round"
@@ -5187,8 +5187,8 @@
             },
             {
               "name": "Nikola Topic",
-              "value": 6.93,
-              "fpg": 5.5,
+              "value": 5.54,
+              "fpg": 4.4,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 1st round"
@@ -5203,16 +5203,16 @@
             },
             {
               "name": "Khaman Maluach",
-              "value": 4.62,
-              "fpg": 3.67,
+              "value": 5.52,
+              "fpg": 4.38,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Green 2025 1st round"
             },
             {
               "name": "Dalton Knecht",
-              "value": 17.57,
-              "fpg": 7.7,
+              "value": 17.41,
+              "fpg": 7.52,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 2nd round"
@@ -5236,13 +5236,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 63.17,
+      "win_margin": 63.24,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 212.14,
           "is_winner": true,
-          "win_margin_pct": 0.2978,
+          "win_margin_pct": 0.2981,
           "assets": [
             {
               "name": "Shai Gilgeous-Alexander",
@@ -5264,30 +5264,30 @@
         },
         {
           "owner": "Berke",
-          "side_total": 148.97,
+          "side_total": 148.9,
           "is_winner": false,
-          "win_margin_pct": -0.2978,
+          "win_margin_pct": -0.2981,
           "assets": [
             {
               "name": "Kevin Durant",
-              "value": 37.48,
-              "fpg": 42.67,
+              "value": 37.51,
+              "fpg": 42.72,
               "age": 37,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Demar Derozan",
-              "value": 26.05,
-              "fpg": 32.48,
+              "value": 26.14,
+              "fpg": 32.75,
               "age": 36,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "James Harden",
-              "value": 46.43,
-              "fpg": 45,
+              "value": 46.24,
+              "fpg": 44.63,
               "age": 36,
               "asset_type": "player",
               "pick_desc": null
@@ -5311,13 +5311,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 62.52,
+      "win_margin": 61.74,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 49.78,
           "is_winner": false,
-          "win_margin_pct": -0.5567,
+          "win_margin_pct": -0.5536,
           "assets": [
             {
               "name": "Bradley Beal",
@@ -5339,14 +5339,14 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 112.3,
+          "side_total": 111.52,
           "is_winner": true,
-          "win_margin_pct": 0.5567,
+          "win_margin_pct": 0.5536,
           "assets": [
             {
               "name": "Tre Johnson",
-              "value": 27.3,
-              "fpg": 21.67,
+              "value": 26.52,
+              "fpg": 21.05,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 1st round"
@@ -5378,18 +5378,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 68.4,
+      "win_margin": 68.68,
       "sides": [
         {
           "owner": "Green",
-          "side_total": 59.44,
+          "side_total": 59.38,
           "is_winner": false,
-          "win_margin_pct": -0.535,
+          "win_margin_pct": -0.5363,
           "assets": [
             {
               "name": "Kyle Kuzma",
-              "value": 31.16,
-              "fpg": 23.8,
+              "value": 31.1,
+              "fpg": 23.69,
               "age": 30,
               "asset_type": "player",
               "pick_desc": null
@@ -5406,22 +5406,22 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 127.84,
+          "side_total": 128.06,
           "is_winner": true,
-          "win_margin_pct": 0.535,
+          "win_margin_pct": 0.5363,
           "assets": [
             {
               "name": "Dyson Daniels",
-              "value": 59.09,
-              "fpg": 34.44,
+              "value": 59.29,
+              "fpg": 34.65,
               "age": 22,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jeremy Sochan",
-              "value": 23.37,
-              "fpg": 9.23,
+              "value": 23.2,
+              "fpg": 8.97,
               "age": 22,
               "asset_type": "player",
               "pick_desc": null
@@ -5436,8 +5436,8 @@
             },
             {
               "name": "Joan Beringer",
-              "value": 12.38,
-              "fpg": 7.64,
+              "value": 12.57,
+              "fpg": 7.76,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Green 2025 2nd round"
@@ -5461,18 +5461,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 26.6,
+      "win_margin": 26.69,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 14.74,
+          "side_total": 14.76,
           "is_winner": false,
-          "win_margin_pct": -0.6434,
+          "win_margin_pct": -0.6439,
           "assets": [
             {
               "name": "Klay Thompson",
-              "value": 14.74,
-              "fpg": 18.28,
+              "value": 14.76,
+              "fpg": 18.35,
               "age": 36,
               "asset_type": "player",
               "pick_desc": null
@@ -5481,14 +5481,14 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 41.34,
+          "side_total": 41.45,
           "is_winner": true,
-          "win_margin_pct": 0.6434,
+          "win_margin_pct": 0.6439,
           "assets": [
             {
               "name": "Luguentz Dort",
-              "value": 31.34,
-              "fpg": 18.8,
+              "value": 31.45,
+              "fpg": 18.96,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -5512,13 +5512,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 49.28,
+      "win_margin": 38.56,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 172.14,
           "is_winner": false,
-          "win_margin_pct": -0.2226,
+          "win_margin_pct": -0.183,
           "assets": [
             {
               "name": "Shai Gilgeous-Alexander",
@@ -5532,9 +5532,9 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 221.42,
+          "side_total": 210.7,
           "is_winner": true,
-          "win_margin_pct": 0.2226,
+          "win_margin_pct": 0.183,
           "assets": [
             {
               "name": "Devin Booker",
@@ -5546,24 +5546,24 @@
             },
             {
               "name": "Jaylen Brown",
-              "value": 61.78,
-              "fpg": 44.06,
+              "value": 61.44,
+              "fpg": 43.6,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Josh Giddey",
-              "value": 74.96,
-              "fpg": 41.33,
+              "value": 64.73,
+              "fpg": 39.92,
               "age": 23,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Carlton \"Bub\" Carrington",
-              "value": 29.97,
-              "fpg": 21.45,
+              "value": 29.82,
+              "fpg": 21.28,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Green 2024 1st round"
@@ -5579,19 +5579,19 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 33.67,
+      "win_margin": 28.02,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 35.73,
+          "side_total": 41.38,
           "is_winner": false,
-          "win_margin_pct": -0.4852,
+          "win_margin_pct": -0.4037,
           "assets": [
             {
               "name": "Brandon Podziemski",
-              "value": 35.73,
-              "fpg": 26.29,
-              "age": 22,
+              "value": 41.38,
+              "fpg": 26.97,
+              "age": 23,
               "asset_type": "player",
               "pick_desc": null
             }
@@ -5601,7 +5601,7 @@
           "owner": "Peterson",
           "side_total": 69.4,
           "is_winner": true,
-          "win_margin_pct": 0.4852,
+          "win_margin_pct": 0.4037,
           "assets": [
             {
               "name": "Jowkar 2026 1st round",
@@ -5630,13 +5630,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 2.75,
+      "win_margin": 3.59,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 57.28,
+          "side_total": 58.26,
           "is_winner": true,
-          "win_margin_pct": 0.048,
+          "win_margin_pct": 0.0616,
           "assets": [
             {
               "name": "Jusuf Nurkic",
@@ -5648,8 +5648,8 @@
             },
             {
               "name": "Nikola Vucevic",
-              "value": 29.38,
-              "fpg": 36.71,
+              "value": 30.36,
+              "fpg": 35.49,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
@@ -5658,9 +5658,9 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 54.53,
+          "side_total": 54.67,
           "is_winner": false,
-          "win_margin_pct": -0.048,
+          "win_margin_pct": -0.0616,
           "assets": [
             {
               "name": "Kyrie Irving",
@@ -5672,8 +5672,8 @@
             },
             {
               "name": "Tidjane Salaun",
-              "value": 15.52,
-              "fpg": 13.91,
+              "value": 15.66,
+              "fpg": 14.11,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Kelley 2024 2nd round"
@@ -5689,18 +5689,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 15.22,
+      "win_margin": 15.24,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 18.45,
+          "side_total": 18.53,
           "is_winner": false,
-          "win_margin_pct": -0.452,
+          "win_margin_pct": -0.4513,
           "assets": [
             {
               "name": "Draymond Green",
-              "value": 18.45,
-              "fpg": 24.43,
+              "value": 18.53,
+              "fpg": 24.67,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
@@ -5709,14 +5709,14 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 33.67,
+          "side_total": 33.77,
           "is_winner": true,
-          "win_margin_pct": 0.452,
+          "win_margin_pct": 0.4513,
           "assets": [
             {
               "name": "Kelly Oubre",
-              "value": 33.67,
-              "fpg": 27.62,
+              "value": 33.77,
+              "fpg": 27.78,
               "age": 30,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2024 2nd round"
@@ -5732,13 +5732,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 22.21,
+      "win_margin": 22.06,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 54.41,
+          "side_total": 54.39,
           "is_winner": false,
-          "win_margin_pct": -0.2899,
+          "win_margin_pct": -0.2886,
           "assets": [
             {
               "name": "Bojan Bogdanovic",
@@ -5750,8 +5750,8 @@
             },
             {
               "name": "Mike Conley",
-              "value": 13.89,
-              "fpg": 13.5,
+              "value": 13.87,
+              "fpg": 13.44,
               "age": 38,
               "asset_type": "player",
               "pick_desc": null
@@ -5768,9 +5768,9 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 76.62,
+          "side_total": 76.45,
           "is_winner": true,
-          "win_margin_pct": 0.2899,
+          "win_margin_pct": 0.2886,
           "assets": [
             {
               "name": "De'Andre Hunter",
@@ -5782,8 +5782,8 @@
             },
             {
               "name": "Ryan Kalkbrenner",
-              "value": 36.42,
-              "fpg": 23.96,
+              "value": 36.25,
+              "fpg": 23.85,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Berke 2025 2nd round"
@@ -5807,18 +5807,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 62.08,
+      "win_margin": 61.86,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 25.79,
+          "side_total": 25.62,
           "is_winner": false,
-          "win_margin_pct": -0.7065,
+          "win_margin_pct": -0.7071,
           "assets": [
             {
               "name": "Tyus Jones",
-              "value": 25.79,
-              "fpg": 11.4,
+              "value": 25.62,
+              "fpg": 11.13,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -5827,22 +5827,22 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 87.87,
+          "side_total": 87.48,
           "is_winner": true,
-          "win_margin_pct": 0.7065,
+          "win_margin_pct": 0.7071,
           "assets": [
             {
               "name": "Derik Queen",
-              "value": 54.2,
-              "fpg": 30.11,
+              "value": 53.71,
+              "fpg": 29.84,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2025 2nd round"
             },
             {
               "name": "Kelly Oubre",
-              "value": 33.67,
-              "fpg": 27.62,
+              "value": 33.77,
+              "fpg": 27.78,
               "age": 30,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2024 2nd round right to swap with Kelley 2024 2nd round"
@@ -5858,13 +5858,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 58.49,
+      "win_margin": 60.35,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 7.0,
           "is_winner": false,
-          "win_margin_pct": -0.8931,
+          "win_margin_pct": -0.8961,
           "assets": [
             {
               "name": "Berke 2028 2nd round",
@@ -5878,14 +5878,14 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 65.49,
+          "side_total": 67.35,
           "is_winner": true,
-          "win_margin_pct": 0.8931,
+          "win_margin_pct": 0.8961,
           "assets": [
             {
               "name": "Saddiq Bey",
-              "value": 40.59,
-              "fpg": 29.94,
+              "value": 42.45,
+              "fpg": 29.71,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -5909,18 +5909,18 @@
       "is_multi_party": false,
       "is_collusion": true,
       "winner": "Kelley",
-      "win_margin": 176.54,
+      "win_margin": 176.95,
       "sides": [
         {
           "owner": "Moss",
-          "side_total": 211.43,
+          "side_total": 210.86,
           "is_winner": false,
-          "win_margin_pct": -0.455,
+          "win_margin_pct": -0.4563,
           "assets": [
             {
               "name": "De'Aaron Fox",
-              "value": 67.4,
-              "fpg": 37.57,
+              "value": 66.86,
+              "fpg": 36.92,
               "age": 28,
               "asset_type": "player",
               "pick_desc": null
@@ -5935,16 +5935,16 @@
             },
             {
               "name": "Myles Turner",
-              "value": 37.82,
-              "fpg": 29.14,
+              "value": 37.68,
+              "fpg": 28.89,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Rudy Gobert",
-              "value": 33.76,
-              "fpg": 33.2,
+              "value": 33.87,
+              "fpg": 33.43,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -5961,14 +5961,14 @@
         },
         {
           "owner": "Kelley",
-          "side_total": 387.97,
+          "side_total": 387.81,
           "is_winner": true,
-          "win_margin_pct": 0.455,
+          "win_margin_pct": 0.4563,
           "assets": [
             {
               "name": "Jonas Valanciunas",
-              "value": 23.8,
-              "fpg": 18.24,
+              "value": 23.71,
+              "fpg": 18.06,
               "age": 33,
               "asset_type": "player",
               "pick_desc": null
@@ -5983,16 +5983,16 @@
             },
             {
               "name": "Jared Vanderbilt",
-              "value": 23.33,
-              "fpg": 15.74,
+              "value": 23.12,
+              "fpg": 15.46,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Zaccharie Risacher",
-              "value": 27.28,
-              "fpg": 20.43,
+              "value": 28.49,
+              "fpg": 20.15,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Jowkar 2024 1st round"
@@ -6007,8 +6007,8 @@
             },
             {
               "name": "Nikola Topic",
-              "value": 6.93,
-              "fpg": 5.5,
+              "value": 5.54,
+              "fpg": 4.4,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 1st round"
@@ -6023,8 +6023,8 @@
             },
             {
               "name": "Khaman Maluach",
-              "value": 4.62,
-              "fpg": 3.67,
+              "value": 5.52,
+              "fpg": 4.38,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Green 2025 1st round"
@@ -6047,8 +6047,8 @@
             },
             {
               "name": "Dalton Knecht",
-              "value": 17.57,
-              "fpg": 7.7,
+              "value": 17.41,
+              "fpg": 7.52,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 2nd round"
@@ -6063,8 +6063,8 @@
             },
             {
               "name": "Kasparas Jakucionis",
-              "value": 18.61,
-              "fpg": 14.77,
+              "value": 18.19,
+              "fpg": 14.44,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Moss 2025 2nd round"
@@ -6088,19 +6088,19 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": 42.66,
+      "win_margin": 43.16,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 64.15,
           "is_winner": false,
-          "win_margin_pct": -0.3994,
+          "win_margin_pct": -0.4022,
           "assets": [
             {
               "name": "D'Angelo Russell",
               "value": 27.77,
               "fpg": 17.81,
-              "age": 29,
+              "age": 30,
               "asset_type": "player",
               "pick_desc": null
             },
@@ -6116,22 +6116,22 @@
         },
         {
           "owner": "Kelley",
-          "side_total": 106.81,
+          "side_total": 107.31,
           "is_winner": true,
-          "win_margin_pct": 0.3994,
+          "win_margin_pct": 0.4022,
           "assets": [
             {
               "name": "Marvin Bagley",
-              "value": 23.64,
-              "fpg": 23.02,
+              "value": 23.84,
+              "fpg": 23.34,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Klay Thompson",
-              "value": 14.74,
-              "fpg": 18.28,
+              "value": 14.76,
+              "fpg": 18.35,
               "age": 36,
               "asset_type": "player",
               "pick_desc": null
@@ -6154,8 +6154,8 @@
             },
             {
               "name": "Rob Dillingham",
-              "value": 10.69,
-              "fpg": 8.43,
+              "value": 10.97,
+              "fpg": 8.83,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Gold 2024 2nd round"
@@ -6179,13 +6179,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 21.39,
+      "win_margin": 21.81,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 40.0,
           "is_winner": true,
-          "win_margin_pct": 0.5348,
+          "win_margin_pct": 0.5453,
           "assets": [
             {
               "name": "Kelley 2028 FRP, conveys to Kelley 2029 FRP if Kelley 2027 FRP falls 1-3 in 2027",
@@ -6199,14 +6199,14 @@
         },
         {
           "owner": "Kelley",
-          "side_total": 18.61,
+          "side_total": 18.19,
           "is_winner": false,
-          "win_margin_pct": -0.5348,
+          "win_margin_pct": -0.5453,
           "assets": [
             {
               "name": "Kasparas Jakucionis",
-              "value": 18.61,
-              "fpg": 14.77,
+              "value": 18.19,
+              "fpg": 14.44,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Moss 2025 2nd round"
@@ -6222,18 +6222,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": 52.67,
+      "win_margin": 46.73,
       "sides": [
         {
           "owner": "Trager",
-          "side_total": 55.97,
+          "side_total": 61.91,
           "is_winner": false,
-          "win_margin_pct": -0.4848,
+          "win_margin_pct": -0.4301,
           "assets": [
             {
               "name": "Desmond Bane",
-              "value": 55.97,
-              "fpg": 34.91,
+              "value": 61.91,
+              "fpg": 35.33,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -6244,7 +6244,7 @@
           "owner": "Kelley",
           "side_total": 108.64,
           "is_winner": true,
-          "win_margin_pct": 0.4848,
+          "win_margin_pct": 0.4301,
           "assets": [
             {
               "name": "Zach Edey",
@@ -6281,26 +6281,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 73.68,
+      "win_margin": 74.71,
       "sides": [
         {
           "owner": "Zujewski",
-          "side_total": 94.18,
+          "side_total": 93.49,
           "is_winner": false,
-          "win_margin_pct": -0.4389,
+          "win_margin_pct": -0.4442,
           "assets": [
             {
               "name": "Jaylen Brown",
-              "value": 61.78,
-              "fpg": 44.06,
+              "value": 61.44,
+              "fpg": 43.6,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Cam Johnson",
-              "value": 32.4,
-              "fpg": 23.27,
+              "value": 32.05,
+              "fpg": 22.69,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -6309,22 +6309,22 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 167.86,
+          "side_total": 168.2,
           "is_winner": true,
-          "win_margin_pct": 0.4389,
+          "win_margin_pct": 0.4442,
           "assets": [
             {
               "name": "Jaime Jaquez",
-              "value": 40.26,
-              "fpg": 29.64,
+              "value": 40.06,
+              "fpg": 29.41,
               "age": 25,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Taylor Hendricks",
-              "value": 14.47,
-              "fpg": 11.64,
+              "value": 14.93,
+              "fpg": 12.56,
               "age": 22,
               "asset_type": "player",
               "pick_desc": null
@@ -6347,8 +6347,8 @@
             },
             {
               "name": "Carter Bryant",
-              "value": 8.8,
-              "fpg": 6.62,
+              "value": 8.88,
+              "fpg": 6.68,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Zujewski 2025 2nd round"
@@ -6364,18 +6364,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": 5.46,
+      "win_margin": 5.87,
       "sides": [
         {
           "owner": "Kelley",
-          "side_total": 38.33,
+          "side_total": 38.57,
           "is_winner": true,
-          "win_margin_pct": 0.1424,
+          "win_margin_pct": 0.1522,
           "assets": [
             {
               "name": "Mitchell Robinson",
-              "value": 28.33,
-              "fpg": 22.12,
+              "value": 28.57,
+              "fpg": 22.5,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -6400,14 +6400,14 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 32.87,
+          "side_total": 32.7,
           "is_winner": false,
-          "win_margin_pct": -0.1424,
+          "win_margin_pct": -0.1522,
           "assets": [
             {
               "name": "Clint Capela",
-              "value": 20.02,
-              "fpg": 13.29,
+              "value": 19.85,
+              "fpg": 12.94,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -6431,13 +6431,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 107.66,
+      "win_margin": 105.62,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 186.69,
+          "side_total": 184.87,
           "is_winner": true,
-          "win_margin_pct": 0.5767,
+          "win_margin_pct": 0.5713,
           "assets": [
             {
               "name": "Darius Garland",
@@ -6449,24 +6449,24 @@
             },
             {
               "name": "Keegan Murray",
-              "value": 47.84,
-              "fpg": 31.29,
+              "value": 46.7,
+              "fpg": 29.87,
               "age": 25,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Matas Buzelis",
-              "value": 33.95,
-              "fpg": 30.02,
+              "value": 34.05,
+              "fpg": 30.14,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2024 1st round (#6 overall)"
             },
             {
               "name": "Tre Johnson",
-              "value": 27.3,
-              "fpg": 21.67,
+              "value": 26.52,
+              "fpg": 21.05,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 1st round right to swap w/Berke 2025 1st round"
@@ -6483,9 +6483,9 @@
         },
         {
           "owner": "Trager",
-          "side_total": 79.03,
+          "side_total": 79.25,
           "is_winner": false,
-          "win_margin_pct": -0.5767,
+          "win_margin_pct": -0.5713,
           "assets": [
             {
               "name": "Devin Booker",
@@ -6497,16 +6497,16 @@
             },
             {
               "name": "Tidjane Salaun",
-              "value": 15.52,
-              "fpg": 13.91,
+              "value": 15.66,
+              "fpg": 14.11,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Kelley 2024 2nd round (#15 overall)"
             },
             {
               "name": "Carter Bryant",
-              "value": 8.8,
-              "fpg": 6.62,
+              "value": 8.88,
+              "fpg": 6.68,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Zujewski 2025 2nd round"
@@ -6522,26 +6522,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 3.44,
+      "win_margin": 3.22,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 44.72,
+          "side_total": 44.44,
           "is_winner": true,
-          "win_margin_pct": 0.0769,
+          "win_margin_pct": 0.0725,
           "assets": [
             {
               "name": "Jerami Grant",
-              "value": 26.11,
-              "fpg": 27.22,
+              "value": 26.25,
+              "fpg": 27.53,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Kasparas Jakucionis",
-              "value": 18.61,
-              "fpg": 14.77,
+              "value": 18.19,
+              "fpg": 14.44,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Moss 2025 2nd round"
@@ -6550,14 +6550,14 @@
         },
         {
           "owner": "Kelley",
-          "side_total": 41.28,
+          "side_total": 41.22,
           "is_winner": false,
-          "win_margin_pct": -0.0769,
+          "win_margin_pct": -0.0725,
           "assets": [
             {
               "name": "Daniel Gafford",
-              "value": 41.28,
-              "fpg": 23.03,
+              "value": 41.22,
+              "fpg": 22.95,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -6573,18 +6573,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 30.26,
+      "win_margin": 30.23,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 35.26,
+          "side_total": 35.23,
           "is_winner": true,
-          "win_margin_pct": 0.8582,
+          "win_margin_pct": 0.8581,
           "assets": [
             {
               "name": "Donte Divincenzo",
-              "value": 35.26,
-              "fpg": 31.02,
+              "value": 35.23,
+              "fpg": 30.98,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -6595,7 +6595,7 @@
           "owner": "Jowkar",
           "side_total": 5.0,
           "is_winner": false,
-          "win_margin_pct": -0.8582,
+          "win_margin_pct": -0.8581,
           "assets": [
             {
               "name": "Berke 2029 2nd round",
@@ -6616,26 +6616,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": 0.83,
+      "win_margin": 2.17,
       "sides": [
         {
           "owner": "Kelley",
-          "side_total": 71.92,
+          "side_total": 71.87,
           "is_winner": true,
-          "win_margin_pct": 0.0115,
+          "win_margin_pct": 0.0302,
           "assets": [
             {
               "name": "Matas Buzelis",
-              "value": 33.95,
-              "fpg": 30.02,
+              "value": 34.05,
+              "fpg": 30.14,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Delaney 2024 1st round (#6 overall)"
             },
             {
               "name": "Carlton \"Bub\" Carrington",
-              "value": 29.97,
-              "fpg": 21.45,
+              "value": 29.82,
+              "fpg": 21.28,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Green 2024 1st round (#7 overall)"
@@ -6652,9 +6652,9 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 71.09,
+          "side_total": 69.7,
           "is_winner": false,
-          "win_margin_pct": -0.0115,
+          "win_margin_pct": -0.0302,
           "assets": [
             {
               "name": "Alex Sarr",
@@ -6666,8 +6666,8 @@
             },
             {
               "name": "Nikola Topic",
-              "value": 6.93,
-              "fpg": 5.5,
+              "value": 5.54,
+              "fpg": 4.4,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Berke 2024 1st round (#8 overall)"
@@ -6683,18 +6683,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 51.7,
+      "win_margin": 52.57,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 59.17,
+          "side_total": 58.71,
           "is_winner": false,
-          "win_margin_pct": -0.4663,
+          "win_margin_pct": -0.4724,
           "assets": [
             {
               "name": "Clint Capela",
-              "value": 20.02,
-              "fpg": 13.29,
+              "value": 19.85,
+              "fpg": 12.94,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -6709,8 +6709,8 @@
             },
             {
               "name": "Jrue Holiday",
-              "value": 20.98,
-              "fpg": 34,
+              "value": 20.69,
+              "fpg": 33.13,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
@@ -6719,14 +6719,14 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 110.87,
+          "side_total": 111.28,
           "is_winner": true,
-          "win_margin_pct": 0.4663,
+          "win_margin_pct": 0.4724,
           "assets": [
             {
               "name": "Kawhi Leonard",
-              "value": 75.87,
-              "fpg": 48.88,
+              "value": 76.28,
+              "fpg": 49.36,
               "age": 34,
               "asset_type": "player",
               "pick_desc": null
@@ -6750,13 +6750,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 23.98,
+      "win_margin": 24.21,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 39.33,
           "is_winner": true,
-          "win_margin_pct": 0.6097,
+          "win_margin_pct": 0.6156,
           "assets": [
             {
               "name": "Yves Missi",
@@ -6778,14 +6778,14 @@
         },
         {
           "owner": "Delaney",
-          "side_total": 15.35,
+          "side_total": 15.12,
           "is_winner": false,
-          "win_margin_pct": -0.6097,
+          "win_margin_pct": -0.6156,
           "assets": [
             {
               "name": "Cody Williams",
-              "value": 15.35,
-              "fpg": 13,
+              "value": 15.12,
+              "fpg": 12.73,
               "age": 21,
               "asset_type": "pick",
               "pick_desc": "Trager 2024 2nd round (#14 overall)"
@@ -6801,18 +6801,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 22.02,
+      "win_margin": 22.23,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 40.02,
+          "side_total": 40.23,
           "is_winner": true,
-          "win_margin_pct": 0.5502,
+          "win_margin_pct": 0.5526,
           "assets": [
             {
               "name": "Wendall Carter Jr.",
-              "value": 40.02,
-              "fpg": 26.68,
+              "value": 40.23,
+              "fpg": 26.82,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -6823,7 +6823,7 @@
           "owner": "Zujewski",
           "side_total": 18.0,
           "is_winner": false,
-          "win_margin_pct": -0.5502,
+          "win_margin_pct": -0.5526,
           "assets": [
             {
               "name": "Peterson 2026 2nd round",
@@ -6852,18 +6852,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 21.45,
+      "win_margin": 14.61,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 36.45,
+          "side_total": 29.61,
           "is_winner": true,
-          "win_margin_pct": 0.5885,
+          "win_margin_pct": 0.4934,
           "assets": [
             {
               "name": "Collin Murray-Boyles",
-              "value": 36.45,
-              "fpg": 22.5,
+              "value": 29.61,
+              "fpg": 22.26,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Kelley 2025 2nd round"
@@ -6874,7 +6874,7 @@
           "owner": "Kelley",
           "side_total": 15.0,
           "is_winner": false,
-          "win_margin_pct": -0.5885,
+          "win_margin_pct": -0.4934,
           "assets": [
             {
               "name": "Gold 2027 2nd round",
@@ -6902,19 +6902,19 @@
       "date": "2024-10-22 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Peterson",
-      "win_margin": 2.33,
+      "winner": "Kelley",
+      "win_margin": 0.44,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 58.15,
-          "is_winner": true,
-          "win_margin_pct": 0.0401,
+          "side_total": 58.05,
+          "is_winner": false,
+          "win_margin_pct": -0.0075,
           "assets": [
             {
               "name": "Mikal Bridges",
-              "value": 48.15,
-              "fpg": 36.58,
+              "value": 48.05,
+              "fpg": 36.44,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -6931,9 +6931,9 @@
         },
         {
           "owner": "Kelley",
-          "side_total": 55.82,
-          "is_winner": false,
-          "win_margin_pct": -0.0401,
+          "side_total": 58.49,
+          "is_winner": true,
+          "win_margin_pct": 0.0075,
           "assets": [
             {
               "name": "Jowkar 2026 1st round",
@@ -6945,8 +6945,8 @@
             },
             {
               "name": "Nique Clifford",
-              "value": 20.82,
-              "fpg": 13.7,
+              "value": 23.49,
+              "fpg": 14.68,
               "age": 24,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 2nd round"
@@ -6970,26 +6970,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 30.78,
+      "win_margin": 30.55,
       "sides": [
         {
           "owner": "Gold",
-          "side_total": 86.48,
+          "side_total": 86.25,
           "is_winner": true,
-          "win_margin_pct": 0.3559,
+          "win_margin_pct": 0.3542,
           "assets": [
             {
               "name": "Mark Williams",
-              "value": 43.64,
-              "fpg": 29.21,
+              "value": 43.21,
+              "fpg": 28.56,
               "age": 24,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Andrew Nembhard",
-              "value": 42.84,
-              "fpg": 33.48,
+              "value": 43.04,
+              "fpg": 33.74,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -7000,7 +7000,7 @@
           "owner": "Trager",
           "side_total": 55.7,
           "is_winner": false,
-          "win_margin_pct": -0.3559,
+          "win_margin_pct": -0.3542,
           "assets": [
             {
               "name": "Ivica Zubac",
@@ -7029,18 +7029,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 8.07,
+      "win_margin": 8.1,
       "sides": [
         {
           "owner": "Moss",
-          "side_total": 70.52,
+          "side_total": 70.55,
           "is_winner": true,
-          "win_margin_pct": 0.1144,
+          "win_margin_pct": 0.1148,
           "assets": [
             {
               "name": "Joel Embiid",
-              "value": 58.52,
-              "fpg": 42.74,
+              "value": 58.55,
+              "fpg": 42.78,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -7059,7 +7059,7 @@
           "owner": "Green",
           "side_total": 62.45,
           "is_winner": false,
-          "win_margin_pct": -0.1144,
+          "win_margin_pct": -0.1148,
           "assets": [
             {
               "name": "Bam Adebayo",
@@ -7080,18 +7080,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 18.73,
+      "win_margin": 18.6,
       "sides": [
         {
           "owner": "Peterson",
-          "side_total": 26.73,
+          "side_total": 26.6,
           "is_winner": true,
-          "win_margin_pct": 0.7007,
+          "win_margin_pct": 0.6992,
           "assets": [
             {
               "name": "Bobby Portis",
-              "value": 26.73,
-              "fpg": 25.46,
+              "value": 26.6,
+              "fpg": 25.2,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
@@ -7102,7 +7102,7 @@
           "owner": "Delaney",
           "side_total": 8.0,
           "is_winner": false,
-          "win_margin_pct": -0.7007,
+          "win_margin_pct": -0.6992,
           "assets": [
             {
               "name": "Zujewski 2027 2nd round",
@@ -7123,18 +7123,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 9.72,
+      "win_margin": 9.81,
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 56.15,
+          "side_total": 56.05,
           "is_winner": true,
-          "win_margin_pct": 0.1731,
+          "win_margin_pct": 0.175,
           "assets": [
             {
               "name": "Mikal Bridges",
-              "value": 48.15,
-              "fpg": 36.58,
+              "value": 48.05,
+              "fpg": 36.44,
               "age": 29,
               "asset_type": "player",
               "pick_desc": null
@@ -7151,14 +7151,14 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 46.43,
+          "side_total": 46.24,
           "is_winner": false,
-          "win_margin_pct": -0.1731,
+          "win_margin_pct": -0.175,
           "assets": [
             {
               "name": "James Harden",
-              "value": 46.43,
-              "fpg": 45,
+              "value": 46.24,
+              "fpg": 44.63,
               "age": 36,
               "asset_type": "player",
               "pick_desc": null
@@ -7174,13 +7174,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 31.65,
+      "win_margin": 31.36,
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 68.03,
+          "side_total": 67.74,
           "is_winner": true,
-          "win_margin_pct": 0.4652,
+          "win_margin_pct": 0.4629,
           "assets": [
             {
               "name": "Paul George",
@@ -7200,8 +7200,8 @@
             },
             {
               "name": "Jrue Holiday",
-              "value": 20.98,
-              "fpg": 34,
+              "value": 20.69,
+              "fpg": 33.13,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
@@ -7220,7 +7220,7 @@
           "owner": "Berke",
           "side_total": 36.38,
           "is_winner": false,
-          "win_margin_pct": -0.4652,
+          "win_margin_pct": -0.4629,
           "assets": [
             {
               "name": "Zach Lavine",
@@ -7241,34 +7241,34 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 27.28,
+      "win_margin": 48.66,
       "sides": [
         {
           "owner": "Zujewski",
-          "side_total": 128.53,
+          "side_total": 128.47,
           "is_winner": true,
-          "win_margin_pct": 0.2122,
+          "win_margin_pct": 0.3788,
           "assets": [
             {
               "name": "Coby White",
-              "value": 46.84,
-              "fpg": 28.45,
+              "value": 46.68,
+              "fpg": 28.23,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Nicolas Claxton",
-              "value": 48.38,
-              "fpg": 33.04,
+              "value": 48.64,
+              "fpg": 33.4,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jeramiah Fears",
-              "value": 33.31,
-              "fpg": 23.79,
+              "value": 33.15,
+              "fpg": 23.68,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Trager 2025 1st round"
@@ -7277,15 +7277,15 @@
         },
         {
           "owner": "Trager",
-          "side_total": 101.25,
+          "side_total": 79.81,
           "is_winner": false,
-          "win_margin_pct": -0.2122,
+          "win_margin_pct": -0.3788,
           "assets": [
             {
               "name": "Jamal Murray",
-              "value": 101.25,
-              "fpg": 48,
-              "age": 28,
+              "value": 79.81,
+              "fpg": 46.69,
+              "age": 29,
               "asset_type": "player",
               "pick_desc": null
             }
@@ -7300,13 +7300,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 1.95,
+      "win_margin": 1.89,
       "sides": [
         {
           "owner": "Kelley",
           "side_total": 39.33,
           "is_winner": false,
-          "win_margin_pct": -0.0472,
+          "win_margin_pct": -0.0459,
           "assets": [
             {
               "name": "Yves Missi",
@@ -7328,14 +7328,14 @@
         },
         {
           "owner": "Trager",
-          "side_total": 41.28,
+          "side_total": 41.22,
           "is_winner": true,
-          "win_margin_pct": 0.0472,
+          "win_margin_pct": 0.0459,
           "assets": [
             {
               "name": "Daniel Gafford",
-              "value": 41.28,
-              "fpg": 23.03,
+              "value": 41.22,
+              "fpg": 22.95,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -7351,26 +7351,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": 26.67,
+      "win_margin": 26.49,
       "sides": [
         {
           "owner": "Kelley",
-          "side_total": 69.34,
+          "side_total": 69.16,
           "is_winner": true,
-          "win_margin_pct": 0.3846,
+          "win_margin_pct": 0.383,
           "assets": [
             {
               "name": "Jordan Poole",
-              "value": 40.16,
-              "fpg": 22.07,
+              "value": 40.09,
+              "fpg": 22,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Egor Demin",
-              "value": 29.18,
-              "fpg": 21.94,
+              "value": 29.07,
+              "fpg": 21.86,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Berke 2025 1st round"
@@ -7381,7 +7381,7 @@
           "owner": "Trager",
           "side_total": 42.67,
           "is_winner": false,
-          "win_margin_pct": -0.3846,
+          "win_margin_pct": -0.383,
           "assets": [
             {
               "name": "Kristaps Porzingus",
@@ -7402,18 +7402,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 1.53,
+      "win_margin": 8.37,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 43.45,
+          "side_total": 36.61,
           "is_winner": false,
-          "win_margin_pct": -0.034,
+          "win_margin_pct": -0.1861,
           "assets": [
             {
               "name": "Collin Murray-Boyles",
-              "value": 36.45,
-              "fpg": 22.5,
+              "value": 29.61,
+              "fpg": 22.26,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Kelley 2025 2nd round"
@@ -7432,7 +7432,7 @@
           "owner": "Jowkar",
           "side_total": 44.98,
           "is_winner": true,
-          "win_margin_pct": 0.034,
+          "win_margin_pct": 0.1861,
           "assets": [
             {
               "name": "John Collins",
@@ -7453,13 +7453,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 18.81,
+      "win_margin": 18.66,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 28.28,
           "is_winner": false,
-          "win_margin_pct": -0.3994,
+          "win_margin_pct": -0.3975,
           "assets": [
             {
               "name": "Spencer Dinwiddie",
@@ -7473,22 +7473,22 @@
         },
         {
           "owner": "Berke",
-          "side_total": 47.09,
+          "side_total": 46.94,
           "is_winner": true,
-          "win_margin_pct": 0.3994,
+          "win_margin_pct": 0.3975,
           "assets": [
             {
               "name": "Jerami Grant",
-              "value": 26.11,
-              "fpg": 27.22,
+              "value": 26.25,
+              "fpg": 27.53,
               "age": 31,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Jrue Holiday",
-              "value": 20.98,
-              "fpg": 34,
+              "value": 20.69,
+              "fpg": 33.13,
               "age": 35,
               "asset_type": "player",
               "pick_desc": null
@@ -7504,26 +7504,26 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Baden",
-      "win_margin": 29.95,
+      "win_margin": 21.54,
       "sides": [
         {
           "owner": "Delaney",
-          "side_total": 33.8,
+          "side_total": 34.59,
           "is_winner": false,
-          "win_margin_pct": -0.4698,
+          "win_margin_pct": -0.3838,
           "assets": [
             {
               "name": "Egor Demin",
-              "value": 29.18,
-              "fpg": 21.94,
+              "value": 29.07,
+              "fpg": 21.86,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Berke 2025 1st round"
             },
             {
               "name": "Khaman Maluach",
-              "value": 4.62,
-              "fpg": 3.67,
+              "value": 5.52,
+              "fpg": 4.38,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Green 2025 1st round"
@@ -7532,22 +7532,22 @@
         },
         {
           "owner": "Baden",
-          "side_total": 63.75,
+          "side_total": 56.13,
           "is_winner": true,
-          "win_margin_pct": 0.4698,
+          "win_margin_pct": 0.3838,
           "assets": [
             {
               "name": "Tre Johnson",
-              "value": 27.3,
-              "fpg": 21.67,
+              "value": 26.52,
+              "fpg": 21.05,
               "age": 19,
               "asset_type": "pick",
               "pick_desc": "Peterson 2025 1st round"
             },
             {
               "name": "Collin Murray-Boyles",
-              "value": 36.45,
-              "fpg": 22.5,
+              "value": 29.61,
+              "fpg": 22.26,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Baden 2025 2nd round"
@@ -7562,14 +7562,14 @@
       "date": "2025-07-26 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Trager",
-      "win_margin": 1.45,
+      "winner": "Baden",
+      "win_margin": 5.39,
       "sides": [
         {
           "owner": "Baden",
           "side_total": 45.0,
-          "is_winner": false,
-          "win_margin_pct": -0.0312,
+          "is_winner": true,
+          "win_margin_pct": 0.1198,
           "assets": [
             {
               "name": "Berke 2027 1st round",
@@ -7583,14 +7583,14 @@
         },
         {
           "owner": "Trager",
-          "side_total": 46.45,
-          "is_winner": true,
-          "win_margin_pct": 0.0312,
+          "side_total": 39.61,
+          "is_winner": false,
+          "win_margin_pct": -0.1198,
           "assets": [
             {
               "name": "Collin Murray-Boyles",
-              "value": 36.45,
-              "fpg": 22.5,
+              "value": 29.61,
+              "fpg": 22.26,
               "age": 20,
               "asset_type": "pick",
               "pick_desc": "Baden 2025 2nd round"
@@ -7622,18 +7622,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 36.28,
+      "win_margin": 36.22,
       "sides": [
         {
           "owner": "Gold",
-          "side_total": 41.28,
+          "side_total": 41.22,
           "is_winner": true,
-          "win_margin_pct": 0.8789,
+          "win_margin_pct": 0.8787,
           "assets": [
             {
               "name": "Daniel Gafford",
-              "value": 41.28,
-              "fpg": 23.03,
+              "value": 41.22,
+              "fpg": 22.95,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
@@ -7644,7 +7644,7 @@
           "owner": "Trager",
           "side_total": 5.0,
           "is_winner": false,
-          "win_margin_pct": -0.8789,
+          "win_margin_pct": -0.8787,
           "assets": [
             {
               "name": "Gold 2030 2nd round",
@@ -7665,13 +7665,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 15.66,
+      "win_margin": 15.9,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 5.0,
           "is_winner": false,
-          "win_margin_pct": -0.758,
+          "win_margin_pct": -0.7608,
           "assets": [
             {
               "name": "Berke 2030 2nd round",
@@ -7685,14 +7685,14 @@
         },
         {
           "owner": "Berke",
-          "side_total": 20.66,
+          "side_total": 20.9,
           "is_winner": true,
-          "win_margin_pct": 0.758,
+          "win_margin_pct": 0.7608,
           "assets": [
             {
               "name": "Noah Clowney",
-              "value": 20.66,
-              "fpg": 22.16,
+              "value": 20.9,
+              "fpg": 22.57,
               "age": 21,
               "asset_type": "player",
               "pick_desc": null
@@ -7708,18 +7708,18 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 19.37,
+      "win_margin": 19.0,
       "sides": [
         {
           "owner": "Trager",
-          "side_total": 21.91,
+          "side_total": 21.96,
           "is_winner": false,
-          "win_margin_pct": -0.4692,
+          "win_margin_pct": -0.4639,
           "assets": [
             {
               "name": "Neemias Queta",
-              "value": 21.91,
-              "fpg": 28.54,
+              "value": 21.96,
+              "fpg": 28.62,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -7728,14 +7728,14 @@
         },
         {
           "owner": "Gold",
-          "side_total": 41.28,
+          "side_total": 40.96,
           "is_winner": true,
-          "win_margin_pct": 0.4692,
+          "win_margin_pct": 0.4639,
           "assets": [
             {
               "name": "Ayo Dosumnu",
-              "value": 41.28,
-              "fpg": 28.37,
+              "value": 40.96,
+              "fpg": 27.94,
               "age": 26,
               "asset_type": "player",
               "pick_desc": null
@@ -7751,13 +7751,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 48.36,
+      "win_margin": 48.64,
       "sides": [
         {
           "owner": "Trager",
-          "side_total": 140.64,
+          "side_total": 141.05,
           "is_winner": false,
-          "win_margin_pct": -0.2559,
+          "win_margin_pct": -0.2564,
           "assets": [
             {
               "name": "Steph Curry",
@@ -7769,8 +7769,8 @@
             },
             {
               "name": "Kawhi Leonard",
-              "value": 75.87,
-              "fpg": 48.88,
+              "value": 76.28,
+              "fpg": 49.36,
               "age": 34,
               "asset_type": "player",
               "pick_desc": null
@@ -7779,22 +7779,22 @@
         },
         {
           "owner": "Peterson",
-          "side_total": 189.0,
+          "side_total": 189.69,
           "is_winner": true,
-          "win_margin_pct": 0.2559,
+          "win_margin_pct": 0.2564,
           "assets": [
             {
               "name": "Miles Bridges",
-              "value": 52.43,
-              "fpg": 32.3,
+              "value": 52.53,
+              "fpg": 32.44,
               "age": 27,
               "asset_type": "player",
               "pick_desc": null
             },
             {
               "name": "Bilal Couliably",
-              "value": 33.57,
-              "fpg": 24.31,
+              "value": 34.16,
+              "fpg": 25.14,
               "age": 21,
               "asset_type": "player",
               "pick_desc": null

@@ -178,7 +178,7 @@
       "seasons": {}
     },
     {
-      "player": "Stephen Curry",
+      "player": "Scottie Barnes",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -189,7 +189,7 @@
       "seasons": {}
     },
     {
-      "player": "Scottie Barnes",
+      "player": "Stephen Curry",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -222,17 +222,6 @@
       "seasons": {}
     },
     {
-      "player": "Trae Young",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
       "player": "Tyrese Maxey",
       "owner": null,
       "lawson_rank": null,
@@ -244,7 +233,7 @@
       "seasons": {}
     },
     {
-      "player": "Bam Adebayo",
+      "player": "Trae Young",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -256,6 +245,17 @@
     },
     {
       "player": "Jaylen Brown",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
+      "player": "Bam Adebayo",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -321,7 +321,7 @@
       "seasons": {}
     },
     {
-      "player": "Tyrese Haliburton",
+      "player": "Alperen Sengun",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -332,7 +332,7 @@
       "seasons": {}
     },
     {
-      "player": "Alperen Sengun",
+      "player": "Tyrese Haliburton",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -464,17 +464,6 @@
       "seasons": {}
     },
     {
-      "player": "Jalen Williams",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
       "player": "Victor Wembanyama",
       "owner": null,
       "lawson_rank": null,
@@ -486,7 +475,7 @@
       "seasons": {}
     },
     {
-      "player": "Trey Murphy",
+      "player": "Jalen Williams",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -498,6 +487,17 @@
     },
     {
       "player": "Devin Vassell",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
+      "player": "Trey Murphy",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -651,6 +651,17 @@
       "seasons": {}
     },
     {
+      "player": "Kawhi Leonard",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
       "player": "Donovan Mitchell",
       "owner": null,
       "lawson_rank": null,
@@ -662,7 +673,7 @@
       "seasons": {}
     },
     {
-      "player": "Kawhi Leonard",
+      "player": "LaMelo Ball",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -685,17 +696,6 @@
     },
     {
       "player": "LeBron James",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
-      "player": "LaMelo Ball",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -783,6 +783,17 @@
       "seasons": {}
     },
     {
+      "player": "Jalen Duren",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
       "player": "Anthony Edwards",
       "owner": null,
       "lawson_rank": null,
@@ -805,29 +816,18 @@
       "seasons": {}
     },
     {
-      "player": "Josh Giddey",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
-      "player": "Jalen Duren",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
       "player": "Karl-Anthony Towns",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
+      "player": "Josh Giddey",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1036,7 +1036,7 @@
       "seasons": {}
     },
     {
-      "player": "Stephen Curry",
+      "player": "Scottie Barnes",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1047,7 +1047,7 @@
       "seasons": {}
     },
     {
-      "player": "Scottie Barnes",
+      "player": "Stephen Curry",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1080,17 +1080,6 @@
       "seasons": {}
     },
     {
-      "player": "Trae Young",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
       "player": "Tyrese Maxey",
       "owner": null,
       "lawson_rank": null,
@@ -1102,7 +1091,7 @@
       "seasons": {}
     },
     {
-      "player": "Bam Adebayo",
+      "player": "Trae Young",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1124,7 +1113,7 @@
       "seasons": {}
     },
     {
-      "player": "Mikal Bridges",
+      "player": "Bam Adebayo",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1135,7 +1124,7 @@
       "seasons": {}
     },
     {
-      "player": "Tyrese Haliburton",
+      "player": "Mikal Bridges",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1168,6 +1157,28 @@
       "seasons": {}
     },
     {
+      "player": "Tyrese Haliburton",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
+      "player": "Derrick White",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
       "player": "Anthony Davis",
       "owner": null,
       "lawson_rank": null,
@@ -1180,17 +1191,6 @@
     },
     {
       "player": "Jaren Jackson",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
-      "player": "Derrick White",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1278,7 +1278,7 @@
       "seasons": {}
     },
     {
-      "player": "Dejounte Murray",
+      "player": "Desmond Bane",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1300,7 +1300,7 @@
       "seasons": {}
     },
     {
-      "player": "Desmond Bane",
+      "player": "Dejounte Murray",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1366,7 +1366,7 @@
       "seasons": {}
     },
     {
-      "player": "Damian Lillard",
+      "player": "Myles Turner",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1377,7 +1377,7 @@
       "seasons": {}
     },
     {
-      "player": "Myles Turner",
+      "player": "Damian Lillard",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1399,7 +1399,7 @@
       "seasons": {}
     },
     {
-      "player": "Ivica Zubac",
+      "player": "Tobias Harris",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1410,7 +1410,7 @@
       "seasons": {}
     },
     {
-      "player": "Tobias Harris",
+      "player": "Ivica Zubac",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1520,29 +1520,7 @@
       "seasons": {}
     },
     {
-      "player": "DAngelo Russell",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
       "player": "Keldon Johnson",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
-      "player": "Anfernee Simons",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1564,29 +1542,18 @@
       "seasons": {}
     },
     {
+      "player": "Anfernee Simons",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
       "player": "Naz Reid",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
-      "player": "Paul George",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
-      "player": "Jakob Poeltl",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1608,7 +1575,29 @@
       "seasons": {}
     },
     {
+      "player": "Jakob Poeltl",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
       "player": "RJ Barrett",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
+      "player": "Paul George",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1630,29 +1619,7 @@
       "seasons": {}
     },
     {
-      "player": "Kristaps Porzingis",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
       "player": "Deandre Ayton",
-      "owner": null,
-      "lawson_rank": null,
-      "composite": null,
-      "w_fpg": null,
-      "w_fpmin": null,
-      "trend": "",
-      "is_rostered": false,
-      "seasons": {}
-    },
-    {
-      "player": "John Collins",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
@@ -1674,7 +1641,40 @@
       "seasons": {}
     },
     {
+      "player": "Kristaps Porzingis",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
       "player": "OG Anunoby",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
+      "player": "Michael Porter",
+      "owner": null,
+      "lawson_rank": null,
+      "composite": null,
+      "w_fpg": null,
+      "w_fpmin": null,
+      "trend": "",
+      "is_rostered": false,
+      "seasons": {}
+    },
+    {
+      "player": "Bobby Portis",
       "owner": null,
       "lawson_rank": null,
       "composite": null,
