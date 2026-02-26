@@ -137,15 +137,24 @@
 
     <!-- Cross-links -->
     <div class="cross-links" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;font-size:0.85rem">
-      <a href="trade-value-over-time.html" style="color:var(--brand-green);text-decoration:none;padding:5px 12px;border:1px solid var(--border);border-radius:99px;transition:var(--transition)">&#x23F3; Trade Trends</a>
+      <a href="trade-value-over-time.html" style="color:var(--brand-green);text-decoration:none;padding:5px 12px;border:1px solid var(--border);border-radius:99px;transition:var(--transition)">&#x23F3; TVOT</a>
       <a href="trade-cards.html" style="color:var(--brand-green);text-decoration:none;padding:5px 12px;border:1px solid var(--border);border-radius:99px;transition:var(--transition)">&#x1F0CF; Trade Cards</a>
     </div>
 
     <!-- Season filter bar -->
     <div id="season-filter-bar"></div>
 
-    <!-- Summary stat cards -->
-    <div class="stat-row" id="summary-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px"></div>
+    <!-- Context stat cards (Trades Graded + Seasons — above Top of the Board) -->
+    <div id="context-cards" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"></div>
+
+    <!-- Summary stat cards (Top / Bottom of the Board) -->
+    <div class="stat-row" id="summary-cards" style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px"></div>
+
+    <!-- Season filter + reset -->
+    <div class="filter-row" style="margin-bottom:10px;flex-wrap:wrap">
+      <div id="season-filter-bar" style="flex:0 0 auto"></div>
+      <button id="reset-filters-btn" class="reset-filters-btn">&#x21BA; Reset Filters</button>
+    </div>
 
     <!-- Overall Standings Table -->
     <div class="chart-section">

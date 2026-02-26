@@ -48,10 +48,35 @@
     var filterSeasons = []; // [] = show all
     var _sfb = YK.buildSeasonFilterBar('season-filter-bar', function(activeSeasons) {
       filterSeasons = activeSeasons;
+      updateResetBtn();
       var subset = getSeasonSubset();
       rebuildSummaryCards(subset);
       applyFiltersAndSort();
     });
+
+    // ── Reset filters ─────────────────────────────────────────────────────── //
+    function updateResetBtn() {
+      var btn = document.getElementById('reset-filters-btn');
+      if (!btn) return;
+      var hasFilter = filterSeasons.length > 0 || filterFlip !== 'all' || !!filterOwner;
+      btn.classList.toggle('visible', hasFilter);
+    }
+    function resetAllFilters() {
+      if (_sfb && typeof _sfb.reset === 'function') _sfb.reset();
+      filterSeasons = [];
+      filterFlip    = 'all';
+      filterOwner   = '';
+      if (ownerSelect) ownerSelect.value = '';
+      document.querySelectorAll('[data-flip]').forEach(function(b) {
+        b.classList.toggle('active', b.dataset.flip === 'all');
+      });
+      updateResetBtn();
+      var subset = getSeasonSubset();
+      rebuildSummaryCards(subset);
+      applyFiltersAndSort();
+    }
+    var _resetBtn = document.getElementById('reset-filters-btn');
+    if (_resetBtn) _resetBtn.addEventListener('click', resetAllFilters);
 
     function getSeasonSubset() {
       if (filterSeasons.length === 0) return trades;
@@ -70,8 +95,30 @@
       d.className = 'stat-card' + (zone ? ' stat-card-' + zone : '');
       d.innerHTML = '<div class="stat-label">' + label + '</div>' +
         '<div class="stat-value">' + value + '</div>' +
-        (sub ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px">' + sub + '</div>' : '');
+        (sub ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px;text-align:center">' + sub + '</div>' : '');
       return d;
+    }
+
+    // Task 14: filter TVOT table to an owner
+    function filterToOwner(owner) {
+      filterOwner = owner;
+      if (ownerSelect) ownerSelect.value = owner;
+      updateResetBtn();
+      applyFiltersAndSort();
+      setTimeout(function() {
+        var tbl = document.getElementById('tvot-tbody');
+        if (tbl) tbl.closest('.chart-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+
+    // Task 14: expand and scroll to a specific trade in TVOT table
+    function scrollToTvotTrade(tradeId) {
+      expandedIds.add(tradeId);
+      applyFiltersAndSort();
+      setTimeout(function() {
+        var el = document.getElementById('tvot-row-' + tradeId);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 150);
     }
 
     function rebuildSummaryCards(subset) {
@@ -111,35 +158,58 @@
       if (subEl) subEl.textContent =
         flipped.length + ' of ' + subset.length + ' trades changed winners over time';
 
+      function makeClickableCard(card, fn) {
+        card.setAttribute('data-clickable', '1');
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', fn);
+        return card;
+      }
+
       // F1: 4-zone colors — Trades=blue, Flipped=gold, Avg Swing=blue, Biggest Swing=gold
       cardsEl.appendChild(makeCard('Trades', subset.length, '2021\u201322 to present', 'blue'));
-      cardsEl.appendChild(makeCard('Flipped', flipped.length, Math.round(flipPct) + '% changed winner', 'gold'));
+      var flippedCard = makeCard('Flipped', flipped.length, Math.round(flipPct) + '% changed winner', 'gold');
+      makeClickableCard(flippedCard, function() {
+        filterFlip = 'flipped';
+        document.querySelectorAll('[data-flip]').forEach(function(b) {
+          b.classList.toggle('active', b.dataset.flip === 'flipped');
+        });
+        updateResetBtn();
+        applyFiltersAndSort();
+      });
+      cardsEl.appendChild(flippedCard);
       cardsEl.appendChild(makeCard('Avg Swing', '+' + avgSwing.toFixed(1), 'value shift per trade', 'blue'));
       if (maxSwingTrade) {
-        cardsEl.appendChild(makeCard(
+        // Task 14: click → expand and scroll to biggest-swing trade
+        var swingCard = makeCard(
           'Biggest Swing',
           '+' + (maxSwingTrade.biggest_swing || 0).toFixed(1),
           'Trade #' + maxSwingTrade.trade_id,
           'gold'
-        ));
+        );
+        makeClickableCard(swingCard, function() { scrollToTvotTrade(maxSwingTrade.trade_id); });
+        cardsEl.appendChild(swingCard);
       }
       if (topFlippedFor) {
-        // Most Flipped For → green
-        cardsEl.appendChild(makeCard(
+        // Most Flipped For → green, Task 14: click → filter to owner
+        var forCard = makeCard(
           'Most Flipped For',
           YK.ownerDisplayName(topFlippedFor),
           flippedFor[topFlippedFor] + ' trades flipped in their favor',
           'green'
-        ));
+        );
+        makeClickableCard(forCard, function() { filterToOwner(topFlippedFor); });
+        cardsEl.appendChild(forCard);
       }
       if (topFlippedAgainst) {
-        // Most Flipped Against → red
-        cardsEl.appendChild(makeCard(
+        // Most Flipped Against → red, Task 14: click → filter to owner
+        var againstCard = makeCard(
           'Most Flipped Against',
           YK.ownerDisplayName(topFlippedAgainst),
           flippedAgainst[topFlippedAgainst] + ' trades flipped away from them',
           'red'
-        ));
+        );
+        makeClickableCard(againstCard, function() { filterToOwner(topFlippedAgainst); });
+        cardsEl.appendChild(againstCard);
       }
     }
 
@@ -341,6 +411,7 @@
         document.querySelectorAll('[data-flip]').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
         filterFlip = btn.dataset.flip;
+        updateResetBtn();
         applyFiltersAndSort();
       });
     });
@@ -356,6 +427,7 @@
 
     ownerSelect.addEventListener('change', function() {
       filterOwner = ownerSelect.value;
+      updateResetBtn();
       applyFiltersAndSort();
     });
 

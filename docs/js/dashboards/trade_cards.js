@@ -47,6 +47,7 @@
           stickyPill.classList.remove('visible');
         }
       }
+      updateResetBtn();
       var subset = getSeasonSubset();
       buildSummaryCards(subset);
       applyFiltersAndSort();
@@ -189,6 +190,27 @@
       }
     }
 
+    // ── Reset all filters ────────────────────────────────────────────────── //
+    function updateResetBtn() {
+      var btn = document.getElementById('reset-filters-btn');
+      if (!btn) return;
+      var hasFilter = filterSeasons.length > 0 || selectedOwners.length > 0 || collusionMode;
+      btn.classList.toggle('visible', hasFilter);
+    }
+
+    function resetAllFilters() {
+      if (collusionMode) exitCollusionMode();
+      selectedOwners = [];
+      buildOwnerPills();
+      // Reset season bar to "All"
+      if (_sfb && typeof _sfb.reset === 'function') _sfb.reset();
+      filterSeasons = [];
+      applyFiltersAndSort();
+    }
+
+    var _resetBtn = document.getElementById('reset-filters-btn');
+    if (_resetBtn) _resetBtn.addEventListener('click', resetAllFilters);
+
     function scrollToTrade(tradeId) {
       if (selectedOwners.length > 0) {
         selectedOwners = [];
@@ -238,6 +260,9 @@
       var owners = Array.from(allOwners).sort(function(a,b) {
         return YK.ownerDisplayName(a).localeCompare(YK.ownerDisplayName(b));
       });
+      // Grid wrapper for 5-per-row layout on desktop
+      var grid = document.createElement('div');
+      grid.className = 'owner-pills-grid';
       owners.forEach(function(o) {
         var isSelected = selectedOwners.includes(o);
         var isDisabled = !isSelected && selectedOwners.length >= 2;
@@ -253,8 +278,9 @@
           buildOwnerPills();
           applyFiltersAndSort();
         });
-        bar.appendChild(pill);
+        grid.appendChild(pill);
       });
+      bar.appendChild(grid);
       if (selectedOwners.length > 0) {
         var clr = document.createElement('button');
         clr.className = 'owner-pill-clear';
@@ -360,6 +386,7 @@
 
       if (collusionMode) {
         // Override: show only collusion trades
+        updateResetBtn();
         var colTrades = trades.filter(function(t) { return t.is_collusion; });
         listEl.classList.add('collusion-mode-active');
         var grid2 = document.createElement('div');
@@ -367,8 +394,10 @@
         colTrades.forEach(function(t) { grid2.appendChild(buildCard(t)); });
         listEl.innerHTML = '';
         listEl.appendChild(grid2);
-        var countEl2 = document.getElementById('cards-count');
-        if (countEl2) countEl2.textContent = 'Showing ' + colTrades.length + ' collusion-flagged trades';
+        var labelEl2 = document.getElementById('all-trades-label');
+        if (labelEl2) labelEl2.textContent = 'Collusion Flagged Trades';
+        var inlineCount2 = document.getElementById('cards-count-inline');
+        if (inlineCount2) inlineCount2.textContent = '(' + colTrades.length + ')';
         return;
       }
 
@@ -398,13 +427,31 @@
         return 0;
       });
 
+      // Update reset button visibility
+      updateResetBtn();
+
+      // Update dynamic header (task 5)
+      var totalNonColl = trades.filter(function(t) { return !t.is_collusion && t.season !== '2020-21'; }).length;
+      var labelEl = document.getElementById('all-trades-label');
+      var inlineCount = document.getElementById('cards-count-inline');
+      if (selectedOwners.length === 2) {
+        if (labelEl) labelEl.textContent =
+          YK.ownerDisplayName(selectedOwners[0]) + ' vs ' + YK.ownerDisplayName(selectedOwners[1]);
+        if (inlineCount) inlineCount.textContent = '(' + filtered.length + ' trade' + (filtered.length !== 1 ? 's' : '') + ')';
+      } else {
+        if (labelEl) labelEl.textContent = 'All Trade Grades';
+        if (inlineCount) {
+          if (selectedOwners.length === 1 || filterSeasons.length > 0) {
+            inlineCount.textContent = '\u2014 Showing ' + filtered.length + ' of ' + totalNonColl + ' trades';
+          } else {
+            inlineCount.textContent = '(' + totalNonColl + ' trades)';
+          }
+        }
+      }
+
       var countEl = document.getElementById('cards-count');
       if (countEl) {
-        countEl.textContent = 'Showing ' + filtered.length + ' of ' + trades.length + ' trades';
-      }
-      var inlineCount = document.getElementById('cards-count-inline');
-      if (inlineCount) {
-        inlineCount.textContent = '(' + trades.length + ' trades)';
+        countEl.textContent = '';
       }
 
       if (filtered.length === 0) {
@@ -587,35 +634,54 @@
       var currWinner = tvotArr.length > 0 ? tvotArr[tvotArr.length - 1].winner : null;
       var flipped    = initWinner && currWinner && initWinner !== currWinner;
 
+      // Task 9: ONE status indicator per side — either winner badge OR flip text, not both
       var winBadge     = '';
       var winnerHistory = '';
       if (isWinner) {
         if (flipped && owner === currWinner) {
-          winBadge = '<span class="winner-flipped-badge">&#x2714; Winner</span>';
-          winnerHistory = '<div class="winner-history winner-flipped-text">&#x21C4; Flipped from ' +
+          // Flipped winner: single orange badge with context
+          winBadge = '<span class="winner-flipped-badge">&#x21C4; Flipped</span>';
+          winnerHistory = '<div class="winner-history winner-flipped-text">Flipped from ' +
             YK.ownerDisplayName(initWinner) + '</div>';
         } else {
+          // Stable winner: single green badge
           winBadge = '<span class="winner-badge">&#x2714; Winner</span>';
-          if (initWinner) {
+          if (tvotArr.length > 0) {
             winnerHistory = '<div class="winner-history winner-stable">Leading since Y1</div>';
           }
         }
-      } else if (flipped && owner === initWinner) {
-        winnerHistory = '<div class="winner-history winner-flipped-text">Was leading at Y1 \u2192 now trailing</div>';
       }
+      // Note: loser "Was leading Y1" removed — flip visible via mini-bar and winner badge
 
       var assetRows = assets.map(function(a) {
-        var valStr  = (a.value != null && a.value > 0) ? a.value.toFixed(1) : null;
-        var ageStr  = (a.age != null) ? ' &bull; age ' + a.age : '';
-        var typeTag = a.asset_type === 'pick'
-          ? '<span style="font-size:0.65rem;opacity:0.6;margin-left:3px">(pick)</span>'
-          : '';
-        return '<li>' +
-          '<span class="asset-name">' + YK.escapeHtml(a.name) + typeTag + '</span>' +
-          (valStr
-            ? '<span class="asset-val">' + valStr + ageStr + '</span>'
-            : '<span class="asset-zero">(no value)</span>') +
-          '</li>';
+        var valStr = (a.value != null && a.value > 0) ? a.value.toFixed(1) : null;
+        var fpgStr = (a.fpg != null && a.fpg > 0) ? (+a.fpg).toFixed(1) : null;
+        var ageStr = (a.age != null) ? ' \u00b7 age ' + a.age : '';
+
+        // Task 6: pick display — show pick description first, then player in parens
+        var namePart;
+        if (a.asset_type === 'pick' && a.pick_desc) {
+          namePart = YK.escapeHtml(a.pick_desc) +
+            '<br><span style="font-size:0.65rem;opacity:0.72">' +
+            YK.escapeHtml(a.name) + ageStr + '</span>';
+        } else {
+          // Task 8: age on name line
+          namePart = YK.escapeHtml(a.name) +
+            (ageStr ? '<span style="opacity:0.62;font-size:0.73em">' + ageStr + '</span>' : '');
+        }
+
+        // Task 8: FP/G next to dynasty value on value line
+        var valPart;
+        if (valStr) {
+          var valContent = '';
+          if (fpgStr) valContent += '<span style="font-size:0.63rem;opacity:0.7;font-weight:400">' + fpgStr + ' FP/G \u00b7 </span>';
+          valContent += valStr;
+          valPart = '<span class="asset-val">' + valContent + '</span>';
+        } else {
+          valPart = '<span class="asset-zero">(no value)</span>';
+        }
+
+        return '<li><span class="asset-name">' + namePart + '</span>' + valPart + '</li>';
       }).join('');
 
       if (assets.length === 0) {
@@ -626,7 +692,7 @@
         '<div class="trade-side-owner">' + dot + YK.ownerDisplayName(owner) + winBadge + '</div>' +
         '<div class="trade-side-total">' + total.toFixed(1) + ' pts</div>' +
         winnerHistory +
-        '<div class="asset-list-header"><span>Asset</span><span>Dynasty Value</span></div>' +
+        '<div class="asset-list-header"><span>Asset</span><span>Cur. Dynasty Value</span></div>' +
         '<ul class="asset-list">' + assetRows + '</ul>' +
         '</div>';
     }

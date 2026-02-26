@@ -46,7 +46,7 @@
         <a class="${isTrade ? 'nav-active' : ''}" href="${base}trade.html">&#x1F4C4; Trade Log</a>
         <a class="${isGrades ? 'nav-active' : ''}" href="${base}grades.html">&#x1F393; Trade Grades</a>
         <a class="${isTradeCards ? 'nav-active' : ''}" href="${base}trade-cards.html">&#x1F0CF; Trade Cards</a>
-        <a class="${isTvot ? 'nav-active' : ''}" href="${base}trade-value-over-time.html">&#x23F3; Trade Trends</a>
+        <a class="${isTvot ? 'nav-active' : ''}" href="${base}trade-value-over-time.html">&#x23F3; TVOT</a>
         <a class="${isTradeLeaderboard ? 'nav-active' : ''}" href="${base}trade-leaderboard.html">&#x1F4CA; Trade Leaderboard</a>
       </div>
     </div>

@@ -199,7 +199,14 @@ window.YK = window.YK || {};
       if (typeof onChange === 'function') onChange(active.slice());
     });
 
-    return { getActive: function() { return active.slice(); } };
+    return {
+      getActive: function() { return active.slice(); },
+      reset: function() {
+        active = [];
+        updateButtons();
+        // Do NOT call onChange — caller is responsible for side-effects after reset
+      },
+    };
   }
 
   // CSS var reader

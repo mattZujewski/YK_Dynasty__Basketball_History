@@ -37,6 +37,7 @@
     var filterSeasons = [];
     var _sfb = YK.buildSeasonFilterBar('season-filter-bar', function(activeSeasons) {
       filterSeasons = activeSeasons;
+      updateResetBtn();
       var subset    = getSeasonSubset();
       var standings = computeStandings(subset);
       rebuildSummaryCards(subset, standings);
@@ -44,6 +45,26 @@
       rebuildChart(standings);
       updateInsight(standings);
     });
+
+    // ── Reset filters ─────────────────────────────────────────────────────── //
+    function updateResetBtn() {
+      var btn = document.getElementById('reset-filters-btn');
+      if (!btn) return;
+      btn.classList.toggle('visible', filterSeasons.length > 0);
+    }
+    function resetAllFilters() {
+      if (_sfb && typeof _sfb.reset === 'function') _sfb.reset();
+      filterSeasons = [];
+      var subset    = getSeasonSubset();
+      var standings = computeStandings(subset);
+      rebuildSummaryCards(subset, standings);
+      renderStandings('overall-tbody', standings);
+      rebuildChart(standings);
+      updateInsight(standings);
+      updateResetBtn();
+    }
+    var _resetBtn = document.getElementById('reset-filters-btn');
+    if (_resetBtn) _resetBtn.addEventListener('click', resetAllFilters);
 
     function getSeasonSubset() {
       if (filterSeasons.length === 0) return allDetailTrades;
@@ -95,9 +116,43 @@
       return card;
     }
 
+    function makeClickable(card, fn) {
+      card.setAttribute('data-clickable', '1');
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', fn);
+      return card;
+    }
+
+    function scrollToOwnerRow(owner) {
+      var row = document.querySelector('tr[data-owner-key="' + CSS.escape(owner) + '"]');
+      if (!row) return;
+      row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      row.style.outline = '2px solid var(--brand-gold)';
+      row.style.transition = 'outline 0.5s';
+      setTimeout(function() { row.style.outline = ''; }, 2500);
+    }
+
     function rebuildSummaryCards(subset, standings) {
+      // Task 11: Context cards (Trades Graded + Seasons) go in separate smaller row
+      var ctxEl = document.getElementById('context-cards');
+      if (ctxEl) {
+        ctxEl.innerHTML = '';
+        var uniqueSeasons = new Set(subset.map(function(t) { return t.season; }));
+        var ctxCard = function(label, value, sub) {
+          var d = document.createElement('div');
+          d.className = 'stat-card stat-card-blue';
+          d.style.cssText = 'font-size:0.85em;flex:0 0 auto;min-width:130px';
+          d.innerHTML = '<div class="stat-label">' + label + '</div>' +
+            '<div class="stat-value">' + value + '</div>' +
+            (sub ? '<div style="font-size:0.68rem;color:var(--text-muted);margin-top:2px;text-align:center">' + sub + '</div>' : '');
+          return d;
+        };
+        ctxEl.appendChild(ctxCard('Trades Graded', subset.length, 'non-collusion'));
+        ctxEl.appendChild(ctxCard('Seasons', uniqueSeasons.size, '2021\u201322 to present'));
+      }
+
+      // Task 12: Top of the Board = only Best Win Rate + Highest Avg Margin
       cardsEl.innerHTML = '';
-      var uniqueSeasons = new Set(subset.map(function(t) { return t.season; }));
       var topTrader = standings.length > 0
         ? standings.slice().sort(function(a, b) { return (b.win_pct - a.win_pct) || (b.wins - a.wins); })[0]
         : null;
@@ -105,31 +160,32 @@
         ? standings.slice().sort(function(a, b) { return b.avg_margin - a.avg_margin; })[0]
         : null;
 
-      // E1: "🏆 Top of the Board" separator before top stat cards
       var topSep = document.createElement('div');
       topSep.style.cssText = 'flex:1 1 100%;width:100%;font-size:0.7rem;font-weight:700;' +
-        'text-transform:uppercase;letter-spacing:0.07em;color:var(--brand-green);' +
-        'padding:4px 0 2px;';
+        'text-transform:uppercase;letter-spacing:0.07em;color:var(--brand-green);padding:4px 0 2px;';
       topSep.innerHTML = '&#x1F3C6; Top of the Board';
       cardsEl.appendChild(topSep);
 
-      cardsEl.appendChild(makeCard('Trades Graded', subset.length, 'non-collusion trades', null, 'blue'));
-      cardsEl.appendChild(makeCard('Seasons', uniqueSeasons.size, '2021\u201322 to present', null, 'blue'));
       if (topTrader) {
-        cardsEl.appendChild(makeCard(
+        // Task 14: click to scroll to owner's row in standings table
+        var c = makeCard(
           'Best Win Rate',
           YK.ownerDisplayName(topTrader.owner) + ' \u2014 ' + (topTrader.win_pct * 100).toFixed(1) + '%',
           topTrader.wins + 'W ' + topTrader.losses + 'L',
           null, 'green'
-        ));
+        );
+        makeClickable(c, function() { scrollToOwnerRow(topTrader.owner); });
+        cardsEl.appendChild(c);
       }
       if (bestMargin) {
-        cardsEl.appendChild(makeCard(
+        var c2 = makeCard(
           'Highest Avg Margin',
           YK.ownerDisplayName(bestMargin.owner) + ' +' + bestMargin.avg_margin.toFixed(1),
           'avg dynasty value per win',
           null, 'green'
-        ));
+        );
+        makeClickable(c2, function() { scrollToOwnerRow(bestMargin.owner); });
+        cardsEl.appendChild(c2);
       }
 
       // Bottom of the Board
@@ -144,25 +200,30 @@
 
       if (worstWinRate || worstMargin) {
         var sep = document.createElement('div');
-        sep.style.cssText = 'flex:1 1 100%;width:100%;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--status-ir);padding:4px 0 2px;border-top:1px solid var(--border);margin-top:6px';
+        sep.style.cssText = 'flex:1 1 100%;width:100%;font-size:0.7rem;font-weight:700;text-transform:uppercase;' +
+          'letter-spacing:0.07em;color:var(--status-ir);padding:4px 0 2px;border-top:1px solid var(--border);margin-top:6px';
         sep.innerHTML = '&#x1F4C9; Bottom of the Board';
         cardsEl.appendChild(sep);
       }
       if (worstWinRate) {
-        cardsEl.appendChild(makeCard(
+        var c3 = makeCard(
           'Lowest Win Rate',
           YK.ownerDisplayName(worstWinRate.owner) + ' \u2014 ' + (worstWinRate.win_pct * 100).toFixed(1) + '%',
           worstWinRate.wins + 'W ' + worstWinRate.losses + 'L',
           '#B91C1C', 'red'
-        ));
+        );
+        makeClickable(c3, function() { scrollToOwnerRow(worstWinRate.owner); });
+        cardsEl.appendChild(c3);
       }
       if (worstMargin) {
-        cardsEl.appendChild(makeCard(
+        var c4 = makeCard(
           'Lowest Avg Margin',
           YK.ownerDisplayName(worstMargin.owner) + ' +' + worstMargin.avg_margin.toFixed(1),
           'avg dynasty value per win',
           '#B91C1C', 'red'
-        ));
+        );
+        makeClickable(c4, function() { scrollToOwnerRow(worstMargin.owner); });
+        cardsEl.appendChild(c4);
       }
     }
 

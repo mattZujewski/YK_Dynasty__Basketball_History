@@ -275,10 +275,9 @@
       color: var(--text-muted); margin: 5px 0 2px;
     }
 
-    /* Desktop: filter bar stays on one row */
+    /* Owner pills bar: wraps to 2 rows of 5 on desktop */
     @media (min-width: 769px) {
-      .filter-bar { flex-wrap: nowrap !important; align-items: center; }
-      .filter-bar > div { flex-shrink: 0; display: flex; align-items: center; gap: 4px; }
+      #owner-pills-bar { max-width: 520px; }
     }
     /* Tighter trade card padding on desktop */
     @media (min-width: 769px) {
@@ -309,8 +308,8 @@
 
     <!-- Cross-links -->
     <div class="cross-links">
-      <a href="trade-leaderboard.html">&#x1F4CA; Trade Grades Leaderboard</a>
-      <a href="trade-value-over-time.html">&#x23F3; Trade Value Over Time</a>
+      <a href="trade-leaderboard.html">&#x1F4CA; Trade Leaderboard</a>
+      <a href="trade-value-over-time.html">&#x23F3; TVOT</a>
     </div>
 
     <!-- Summary stat cards -->
@@ -348,19 +347,21 @@
 
     <!-- All Trades -->
     <div class="chart-section" id="all-trades-section">
-      <h2>All Trade Grades <span id="cards-count-inline" style="font-size:0.8rem;font-weight:400;color:var(--text-muted)"></span></h2>
+      <h2><span id="all-trades-label">All Trade Grades</span> <span id="cards-count-inline" style="font-size:0.8rem;font-weight:400;color:var(--text-muted)"></span></h2>
       <p class="chart-description">Filter and sort all graded trades. Click &ldquo;TVOT&rdquo; to see how a trade&rsquo;s value changed over time.</p>
 
-      <div class="filter-bar" style="flex-wrap:wrap;gap:8px;align-items:center">
+      <!-- Row 1: Owner pills -->
+      <div class="filter-row">
         <div id="owner-pills-bar" class="owner-pill-bar"></div>
-        <span class="filter-sep">|</span>
-        <div>
-          <button class="filter-btn active" data-sortby="margin">Biggest Margin</button>
-          <button class="filter-btn" data-sortby="recent">Most Recent</button>
-          <button class="filter-btn" data-sortby="fair">Closest First</button>
-        </div>
+      </div>
+      <!-- Row 2: Sort + Collusion + Reset -->
+      <div class="filter-row">
+        <button class="filter-btn active" data-sortby="margin">Biggest Margin</button>
+        <button class="filter-btn" data-sortby="recent">Most Recent</button>
+        <button class="filter-btn" data-sortby="fair">Closest First</button>
         <span class="filter-sep">|</span>
         <button id="collusion-icon-btn" class="collusion-icon-btn" title="Show collusion flags — overrides all filters">&#x1F575;&#xFE0F;</button>
+        <button id="reset-filters-btn" class="reset-filters-btn">&#x21BA; Reset Filters</button>
       </div>
 
       <p id="cards-count"></p>

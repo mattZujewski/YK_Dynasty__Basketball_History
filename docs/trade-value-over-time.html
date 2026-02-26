@@ -211,23 +211,19 @@
       <h2>Trade Timelines</h2>
       <p class="chart-description">Click any row to expand the full season-by-season value breakdown. Yellow rows flipped winners over time.</p>
 
-      <div class="filter-bar" style="flex-wrap:wrap;gap:8px;align-items:center">
-        <div>
-          <button class="filter-btn active" data-flip="all">All Trades</button>
-          <button class="filter-btn" data-flip="flipped">&#x26A1; Flipped Only</button>
-          <button class="filter-btn" data-flip="stable">&#x2713; Stable Only</button>
-        </div>
+      <!-- Row 1: Flip filter + Owner + Sort -->
+      <div class="filter-row">
+        <button class="filter-btn active" data-flip="all">All Trades</button>
+        <button class="filter-btn" data-flip="flipped">&#x26A1; Flipped Only</button>
+        <button class="filter-btn" data-flip="stable">&#x2713; Stable Only</button>
         <span class="filter-sep">|</span>
-        <div>
-          <label style="font-size:0.82rem;color:var(--text-muted)">Owner:</label>
-          <select id="owner-select"><option value="">All Owners</option></select>
-        </div>
+        <label style="font-size:0.82rem;color:var(--text-muted)">Owner:</label>
+        <select id="owner-select"><option value="">All Owners</option></select>
         <span class="filter-sep">|</span>
-        <div>
-          <button class="filter-btn active" data-sortby="swing">Biggest Swing</button>
-          <button class="filter-btn" data-sortby="recent">Most Recent</button>
-          <button class="filter-btn" data-sortby="margin">Current Margin</button>
-        </div>
+        <button class="filter-btn active" data-sortby="swing">Biggest Swing</button>
+        <button class="filter-btn" data-sortby="recent">Most Recent</button>
+        <button class="filter-btn" data-sortby="margin">Current Margin</button>
+        <button id="reset-filters-btn" class="reset-filters-btn">&#x21BA; Reset Filters</button>
       </div>
 
       <p id="tvot-count" style="font-size:0.82rem;color:var(--text-muted);margin:6px 0 8px"></p>

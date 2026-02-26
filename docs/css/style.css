@@ -1333,3 +1333,48 @@ html.dark .chart-insight {
 
 /* Collusion trade yellow left-border when in collusion mode */
 .collusion-mode-active .collusion-card { border-left: 4px solid #CA8A04 !important; opacity: 1; }
+
+/* ── Phase 11.6.2 additions ── */
+
+/* Reset Filters button */
+.reset-filters-btn {
+  display: none; /* shown via JS when any filter active */
+  padding: 4px 12px;
+  border: 1px solid var(--brand-green);
+  border-radius: 99px;
+  background: none;
+  color: var(--brand-green);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: var(--transition);
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.reset-filters-btn.visible { display: inline-flex; }
+.reset-filters-btn:hover { background: rgba(42,157,143,0.1); }
+
+/* Owner pills 2-row grid wrapper (5 per row on desktop) */
+.owner-pills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 480px; /* ~5 standard-sized pills per row */
+}
+@media (max-width: 768px) {
+  .owner-pills-grid { max-width: 100%; }
+}
+
+/* Filter bar organized into rows */
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.filter-row:last-child { margin-bottom: 0; }
+
+/* Clickable stat cards (global) */
+.stat-card[data-clickable] { cursor: pointer; transition: box-shadow 0.15s, transform 0.15s; }
+.stat-card[data-clickable]:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
