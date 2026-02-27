@@ -29,6 +29,14 @@
 
     const trades = data.trades || [];
 
+    // Multi-party note: count and display hidden 3-way trades
+    var multiPartyCount = trades.filter(function(t) { return t.is_multi_party && !t.is_collusion; }).length;
+    var mpNote = document.getElementById('multi-party-note');
+    if (mpNote && multiPartyCount > 0) {
+      mpNote.textContent = multiPartyCount + ' multi-party trades are hidden — grading coming soon.';
+      mpNote.style.display = '';
+    }
+
     // Build TVOT lookup: trade_id → eval_results[]
     var tvotById = {};
     ((tvotData && tvotData.trades) || []).forEach(function(t) {
@@ -93,7 +101,7 @@
       cardsEl.innerHTML = '';
       // D4: exclude 2020-21 from all featured stats
       var nonCollusion = tradeSubset.filter(function(t) {
-        return !t.is_collusion && t.season !== '2020-21';
+        return !t.is_collusion && t.season !== '2020-21' && !t.is_multi_party;
       });
 
       // Compute per-owner stats
@@ -212,21 +220,17 @@
     if (_resetBtn) _resetBtn.addEventListener('click', resetAllFilters);
 
     function scrollToTrade(tradeId) {
-      if (selectedOwners.length > 0) {
-        selectedOwners = [];
-        buildOwnerPills();
-        applyFiltersAndSort();
-      }
+      // Reset all filters so the card is guaranteed to be visible
+      resetAllFilters();
       setTimeout(function() {
         var el = document.getElementById('trade-' + tradeId);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          el.style.outline = '2px solid var(--brand-gold)';
-          el.style.boxShadow = '0 0 0 5px rgba(202,138,4,0.15)';
-          el.style.transition = 'outline 0.5s, box-shadow 0.5s';
-          setTimeout(function() { el.style.outline = ''; el.style.boxShadow = ''; }, 2500);
-        }
-      }, 150);
+        if (!el) return;
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        el.style.outline = '2px solid var(--brand-gold)';
+        el.style.boxShadow = '0 0 0 5px rgba(202,138,4,0.15)';
+        el.style.transition = 'outline 0.5s, box-shadow 0.5s';
+        setTimeout(function() { el.style.outline = ''; el.style.boxShadow = ''; }, 2500);
+      }, 250);
     }
 
     function scrollToTradesAndFilterOwner(owner) {
@@ -297,9 +301,9 @@
     buildOwnerPills();
 
     // ── Featured sections ─────────────────────────────────────────────────── //
-    // D4: exclude 2020-21 from featured sections
+    // D4: exclude 2020-21, collusion, and multi-party from featured sections
     var nonCollusionAll = trades.filter(function(t) {
-      return !t.is_collusion && t.season !== '2020-21';
+      return !t.is_collusion && t.season !== '2020-21' && !t.is_multi_party;
     });
     var sortedByMargin = nonCollusionAll.slice().sort(function(a, b) {
       return (b.win_margin || 0) - (a.win_margin || 0);
@@ -310,6 +314,7 @@
 
     renderFeatured(sortedByMargin.slice(0, 5), 'top-wins-grid');
     renderFeatured(sortedByClose.slice(0, 5), 'closest-grid');
+    renderComebacks();
 
     // ── Collapsible featured sections ─────────────────────────────────────── //
     document.querySelectorAll('.section-toggle').forEach(function(btn) {
@@ -408,6 +413,7 @@
       var filtered = base.filter(function(t) {
         if (t.is_collusion) return false;       // always hide collusion in normal mode
         if (t.season === '2020-21') return false; // D4: hide 2020-21
+        if (t.is_multi_party) return false;     // hide 3-way trades (grading coming soon)
         // Owner pill multi-select
         if (selectedOwners.length >= 1) {
           var tradeOwners = (t.sides || []).map(function(s) { return s.owner; });
@@ -431,7 +437,7 @@
       updateResetBtn();
 
       // Update dynamic header (task 5)
-      var totalNonColl = trades.filter(function(t) { return !t.is_collusion && t.season !== '2020-21'; }).length;
+      var totalNonColl = trades.filter(function(t) { return !t.is_collusion && t.season !== '2020-21' && !t.is_multi_party; }).length;
       var labelEl = document.getElementById('all-trades-label');
       var inlineCount = document.getElementById('cards-count-inline');
       if (selectedOwners.length === 2) {
@@ -482,6 +488,61 @@
       });
     }
 
+    function renderComebacks() {
+      var el = document.getElementById('comebacks-list');
+      var countEl = document.getElementById('comebacks-count');
+      if (!el) return;
+
+      var nonCollusionIds = new Set(nonCollusionAll.map(function(t) { return t.trade_id; }));
+
+      // Use TVOT data (has winner_changed + biggest_swing); filter to non-collusion 2-party trades
+      var comebacks = ((tvotData && tvotData.trades) || [])
+        .filter(function(t) { return t.winner_changed && t.biggest_swing && nonCollusionIds.has(t.trade_id); })
+        .sort(function(a, b) { return (b.biggest_swing || 0) - (a.biggest_swing || 0); })
+        .slice(0, 5);
+
+      if (countEl) countEl.textContent = '(' + comebacks.length + ')';
+      el.innerHTML = '';
+
+      comebacks.forEach(function(tvot) {
+        // Look up full trade details (sides) from trade_details
+        var t = trades.find(function(tr) { return tr.trade_id === tvot.trade_id; }) || {};
+        var sides = t.sides || [];
+        var firstWin = sides.find(function(s) { return s.owner === tvot.first_winner; });
+        var lastWin  = sides.find(function(s) { return s.owner === tvot.last_winner;  });
+
+        var div = document.createElement('div');
+        div.className = 'comeback-item';
+        div.innerHTML =
+          '<div class="comeback-header">' +
+            '<span class="comeback-id">Trade #' + tvot.trade_id + '</span>' +
+            '<span class="comeback-swing">&#x1F4C9; &#x2B06;&#xFE0F; +' + (tvot.biggest_swing || 0).toFixed(1) + '</span>' +
+          '</div>' +
+          '<div class="comeback-parties">' +
+            YK.escapeHtml(YK.ownerDisplayName(tvot.first_winner || '')) + ' (early) &#x2192; ' +
+            YK.escapeHtml(YK.ownerDisplayName(tvot.last_winner || '')) + ' (now)' +
+          '</div>' +
+          '<div class="comeback-assets">' +
+            (firstWin ? (firstWin.assets || []).slice(0, 2).map(function(a) { return YK.escapeHtml(a.name); }).join(', ') : '') +
+            ' &#x2194; ' +
+            (lastWin ? (lastWin.assets || []).slice(0, 2).map(function(a) { return YK.escapeHtml(a.name); }).join(', ') : '') +
+          '</div>' +
+          '<a class="comeback-link" href="#trade-' + tvot.trade_id + '">View &#x2192;</a>';
+
+        var link = div.querySelector('.comeback-link');
+        if (link) {
+          (function(tid) {
+            link.addEventListener('click', function(e) {
+              e.preventDefault();
+              scrollToTrade(tid);
+            });
+          })(tvot.trade_id);
+        }
+
+        el.appendChild(div);
+      });
+    }
+
     function buildCard(trade) {
       var sides      = trade.sides || [];
       var partyCount = sides.length;
@@ -512,8 +573,8 @@
         badges +
         '</div>';
 
-      // ── TVOT data for this trade ──
-      var tvotPeriods = tvotById[trade.trade_id] || [];
+      // ── TVOT data for this trade ── (capped at 5 segments Y1–Y5)
+      var tvotPeriods = (tvotById[trade.trade_id] || []).slice(0, 5);
 
       // ── Sides ──
       var sidesHtml = '<div class="trade-card-sides">';

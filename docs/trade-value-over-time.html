@@ -223,7 +223,13 @@
         <button class="filter-btn active" data-sortby="swing">Biggest Swing</button>
         <button class="filter-btn" data-sortby="recent">Most Recent</button>
         <button class="filter-btn" data-sortby="margin">Current Margin</button>
+        <button id="tvot-collusion-btn" class="collusion-icon-btn" title="Show collusion trades — overrides all filters">&#x1F575;&#xFE0F;</button>
         <button id="reset-filters-btn" class="reset-filters-btn">&#x21BA; Reset Filters</button>
+      </div>
+      <!-- Collusion mode banner -->
+      <div id="tvot-collusion-banner" class="collusion-mode-banner" style="display:none">
+        &#x1F575;&#xFE0F; Viewing collusion trades &mdash; all other filters suspended.
+        <button id="tvot-collusion-exit">Exit</button>
       </div>
 
       <p id="tvot-count" style="font-size:0.82rem;color:var(--text-muted);margin:6px 0 8px"></p>

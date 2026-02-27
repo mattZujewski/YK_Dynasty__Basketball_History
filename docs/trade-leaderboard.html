@@ -141,9 +141,6 @@
       <a href="trade-cards.html" style="color:var(--brand-green);text-decoration:none;padding:5px 12px;border:1px solid var(--border);border-radius:99px;transition:var(--transition)">&#x1F0CF; Trade Cards</a>
     </div>
 
-    <!-- Season filter bar -->
-    <div id="season-filter-bar"></div>
-
     <!-- Context stat cards (Trades Graded + Seasons — above Top of the Board) -->
     <div id="context-cards" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px"></div>
 
@@ -187,6 +184,24 @@
       <p class="chart-description">Higher = better dynasty trade performance. Based on dynasty value calculations (Weighted FPPG &times; Dynasty Mult &times; Star Premium &times; GP Modifier).</p>
       <div class="chart-wrapper" style="height:360px">
         <canvas id="chart-winpct"></canvas>
+      </div>
+    </div>
+
+    <!-- Total Margin Bar Chart -->
+    <div class="chart-section">
+      <h2>Total Trade Margin by Owner</h2>
+      <p class="chart-description">Sum of dynasty value gained across all trade wins. Higher = bigger winning margins overall.</p>
+      <div class="chart-wrapper" style="height:320px">
+        <canvas id="chart-totalmargin"></canvas>
+      </div>
+    </div>
+
+    <!-- Win% vs Total Margin Scatter -->
+    <div class="chart-section">
+      <h2>Win Rate vs. Total Margin</h2>
+      <p class="chart-description">Each dot = one owner. Top-right = wins often AND by large margins.</p>
+      <div class="chart-wrapper" style="height:360px">
+        <canvas id="chart-scatter"></canvas>
       </div>
     </div>
 

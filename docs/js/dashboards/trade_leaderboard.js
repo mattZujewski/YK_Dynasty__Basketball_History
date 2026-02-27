@@ -43,6 +43,8 @@
       rebuildSummaryCards(subset, standings);
       renderStandings('overall-tbody', standings);
       rebuildChart(standings);
+      rebuildMarginChart(standings);
+      rebuildScatterChart(standings);
       updateInsight(standings);
     });
 
@@ -60,6 +62,8 @@
       rebuildSummaryCards(subset, standings);
       renderStandings('overall-tbody', standings);
       rebuildChart(standings);
+      rebuildMarginChart(standings);
+      rebuildScatterChart(standings);
       updateInsight(standings);
       updateResetBtn();
     }
@@ -67,8 +71,11 @@
     if (_resetBtn) _resetBtn.addEventListener('click', resetAllFilters);
 
     function getSeasonSubset() {
-      if (filterSeasons.length === 0) return allDetailTrades;
-      return allDetailTrades.filter(function(t) {
+      var base = allDetailTrades.filter(function(t) {
+        return !t.is_multi_party;  // exclude 3-way from all leaderboard calcs
+      });
+      if (filterSeasons.length === 0) return base;
+      return base.filter(function(t) {
         var s = (t.season || '').replace(/^20/, '');
         return filterSeasons.includes(s);
       });
@@ -395,6 +402,100 @@
       });
     }
 
+    // ── Total Margin Bar Chart ───────────────────────────────────────────── //
+    var chartMargin = null;
+
+    function rebuildMarginChart(standings) {
+      var el = document.getElementById('chart-totalmargin');
+      if (!el) return;
+      var sorted = standings.slice().sort(function(a, b) { return (b.total_margin || 0) - (a.total_margin || 0); });
+      var labels = sorted.map(function(s) { return YK.ownerDisplayName(s.owner); });
+      var data   = sorted.map(function(s) { return +(s.total_margin || 0).toFixed(2); });
+      var colors = sorted.map(function(s) { return YK.ownerColor(s.owner); });
+
+      if (chartMargin) { chartMargin.destroy(); chartMargin = null; }
+
+      var barOpts = YK.barOptions({ yLabel: 'Total Margin' });
+      chartMargin = new Chart(el.getContext('2d'), {
+        type: 'bar',
+        data: { labels: labels, datasets: [{ data: data, backgroundColor: colors, borderColor: colors, borderWidth: 1, borderRadius: 4 }] },
+        options: {
+          ...barOpts,
+          plugins: { ...barOpts.plugins, legend: { display: false } },
+          scales: {
+            ...barOpts.scales,
+            x: { ...barOpts.scales.x, ticks: { maxRotation: 45, font: { size: 10 } } },
+          },
+        },
+      });
+    }
+
+    // ── Win% × Total Margin Scatter ──────────────────────────────────────── //
+    var chartScatter = null;
+
+    function rebuildScatterChart(standings) {
+      var el = document.getElementById('chart-scatter');
+      if (!el) return;
+
+      var datasets = standings.map(function(s) {
+        return {
+          label: YK.ownerDisplayName(s.owner),
+          data: [{ x: +(s.win_pct * 100).toFixed(1), y: +(s.total_margin || 0).toFixed(1) }],
+          backgroundColor: YK.ownerColor(s.owner),
+          pointRadius: 8,
+          pointHoverRadius: 10,
+        };
+      });
+
+      // Inline plugin: draw owner name labels next to each dot
+      var dotLabels = {
+        id: 'dotLabels',
+        afterDatasetsDraw: function(chart) {
+          var ctx = chart.ctx;
+          ctx.save();
+          ctx.font = '11px system-ui, sans-serif';
+          chart.data.datasets.forEach(function(ds, i) {
+            var meta = chart.getDatasetMeta(i);
+            if (!meta.hidden && meta.data.length) {
+              var pt = meta.data[0];
+              ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--text-secondary') || '#888';
+              ctx.fillText(ds.label, pt.x + 6, pt.y + 4);
+            }
+          });
+          ctx.restore();
+        },
+      };
+
+      if (chartScatter) { chartScatter.destroy(); chartScatter = null; }
+
+      chartScatter = new Chart(el.getContext('2d'), {
+        type: 'scatter',
+        data: { datasets: datasets },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: {
+            legend: { display: false },
+            tooltip: { callbacks: { label: function(ctx) {
+              return ctx.dataset.label + ': ' + ctx.parsed.x + '% win, +' + ctx.parsed.y + ' margin';
+            }}},
+          },
+          scales: {
+            x: {
+              title: { display: true, text: 'Win %', color: 'var(--text-secondary)' },
+              ticks: { color: 'var(--text-secondary)', callback: function(v) { return v + '%'; } },
+              grid: { color: 'var(--border)' },
+            },
+            y: {
+              title: { display: true, text: 'Total Margin', color: 'var(--text-secondary)' },
+              ticks: { color: 'var(--text-secondary)' },
+              grid: { color: 'var(--border)' },
+            },
+          },
+        },
+        plugins: [dotLabels],
+      });
+    }
+
     // ── Insight text ─────────────────────────────────────────────────────── //
     function updateInsight(standings) {
       var insightEl = document.getElementById('overall-insight');
@@ -411,10 +512,13 @@
     }
 
     // ── Initial render ───────────────────────────────────────────────────── //
-    var initStandings = computeStandings(allDetailTrades);
-    rebuildSummaryCards(allDetailTrades, initStandings);
+    var initSubset   = getSeasonSubset(); // already filters multi-party
+    var initStandings = computeStandings(initSubset);
+    rebuildSummaryCards(initSubset, initStandings);
     renderStandings('overall-tbody', initStandings);
     rebuildChart(initStandings);
+    rebuildMarginChart(initStandings);
+    rebuildScatterChart(initStandings);
     updateInsight(initStandings);
   });
 })();

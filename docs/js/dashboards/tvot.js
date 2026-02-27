@@ -49,7 +49,12 @@
     var _sfb = YK.buildSeasonFilterBar('season-filter-bar', function(activeSeasons) {
       filterSeasons = activeSeasons;
       updateResetBtn();
-      var subset = getSeasonSubset();
+      var subset = getSeasonSubset().filter(function(t) {
+        if (t.trade_id === 99 || t.trade_id === 111) return false;
+        if (t.is_multi_party) return false;
+        var szn = seasonById[t.trade_id] || t.season || '';
+        return szn !== '2020-21';
+      });
       rebuildSummaryCards(subset);
       applyFiltersAndSort();
     });
@@ -58,10 +63,11 @@
     function updateResetBtn() {
       var btn = document.getElementById('reset-filters-btn');
       if (!btn) return;
-      var hasFilter = filterSeasons.length > 0 || filterFlip !== 'all' || !!filterOwner;
+      var hasFilter = filterSeasons.length > 0 || filterFlip !== 'all' || !!filterOwner || collusionMode;
       btn.classList.toggle('visible', hasFilter);
     }
     function resetAllFilters() {
+      if (collusionMode) exitCollusionMode();
       if (_sfb && typeof _sfb.reset === 'function') _sfb.reset();
       filterSeasons = [];
       filterFlip    = 'all';
@@ -213,8 +219,14 @@
       }
     }
 
-    // Initial summary cards
-    rebuildSummaryCards(trades);
+    // Initial summary cards — exclude collusion, multi-party, 2020-21
+    var initSubset = trades.filter(function(t) {
+      if (t.trade_id === 99 || t.trade_id === 111) return false;
+      if (t.is_multi_party) return false;
+      var szn = seasonById[t.trade_id] || t.season || '';
+      return szn !== '2020-21';
+    });
+    rebuildSummaryCards(initSubset);
 
     // ── Owner filter dropdown ───────────────────────────────────────────── //
     var allOwners = new Set();
@@ -230,18 +242,61 @@
     });
 
     // ── State ──────────────────────────────────────────────────────────── //
-    var filterFlip  = 'all';   // 'all' | 'flipped' | 'stable'
-    var filterOwner = '';
-    var sortBy      = 'swing'; // 'swing' | 'recent' | 'margin'
-    var expandedIds = new Set();
+    var filterFlip   = 'all';   // 'all' | 'flipped' | 'stable'
+    var filterOwner  = '';
+    var sortBy       = 'swing'; // 'swing' | 'recent' | 'margin'
+    var expandedIds  = new Set();
+    var collusionMode = false;
+
+    // ── Collusion 🕵️ mode ─────────────────────────────────────────────── //
+    function enterCollusionMode() {
+      collusionMode = true;
+      var btn    = document.getElementById('tvot-collusion-btn');
+      var banner = document.getElementById('tvot-collusion-banner');
+      if (btn) btn.classList.add('active');
+      if (banner) banner.style.display = 'flex';
+      updateResetBtn();
+      applyFiltersAndSort();
+    }
+    function exitCollusionMode() {
+      collusionMode = false;
+      var btn    = document.getElementById('tvot-collusion-btn');
+      var banner = document.getElementById('tvot-collusion-banner');
+      if (btn) btn.classList.remove('active');
+      if (banner) banner.style.display = 'none';
+      updateResetBtn();
+      applyFiltersAndSort();
+    }
+
+    var _tvotColBtn = document.getElementById('tvot-collusion-btn');
+    if (_tvotColBtn) _tvotColBtn.addEventListener('click', function() {
+      if (collusionMode) exitCollusionMode(); else enterCollusionMode();
+    });
+    var _tvotColExit = document.getElementById('tvot-collusion-exit');
+    if (_tvotColExit) _tvotColExit.addEventListener('click', exitCollusionMode);
 
     // ── Render ─────────────────────────────────────────────────────────── //
     function applyFiltersAndSort() {
-      var base = getSeasonSubset();
+      var base;
+      if (collusionMode) {
+        // Override: show only collusion trades
+        base = trades.filter(function(t) { return t.trade_id === 99 || t.trade_id === 111; });
+      } else {
+        base = getSeasonSubset().filter(function(t) {
+          if (t.trade_id === 99 || t.trade_id === 111) return false; // collusion
+          if (t.is_multi_party) return false;                        // hide 3-way
+          var szn = seasonById[t.trade_id] || t.season || '';
+          if (szn === '2020-21') return false;                       // safety: no 2020-21
+          return true;
+        });
+      }
+
       var filtered = base.filter(function(t) {
-        if (filterFlip === 'flipped' && !t.winner_changed) return false;
-        if (filterFlip === 'stable' && t.winner_changed) return false;
-        if (filterOwner && !(t.receivers || []).includes(filterOwner)) return false;
+        if (!collusionMode) {
+          if (filterFlip === 'flipped' && !t.winner_changed) return false;
+          if (filterFlip === 'stable' && t.winner_changed) return false;
+          if (filterOwner && !(t.receivers || []).includes(filterOwner)) return false;
+        }
         return true;
       });
 
