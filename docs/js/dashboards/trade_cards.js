@@ -29,8 +29,8 @@
 
     const trades = data.trades || [];
 
-    // Multi-party note: count and display hidden 3-way trades
-    var multiPartyCount = trades.filter(function(t) { return t.is_multi_party && !t.is_collusion; }).length;
+    // Multi-party note: count and display hidden 3-way trades (exclude 2020-21)
+    var multiPartyCount = trades.filter(function(t) { return t.is_multi_party && !t.is_collusion && t.season !== '2020-21'; }).length;
     var mpNote = document.getElementById('multi-party-note');
     if (mpNote && multiPartyCount > 0) {
       mpNote.textContent = multiPartyCount + ' multi-party trades are hidden — grading coming soon.';
@@ -504,42 +504,11 @@
       if (countEl) countEl.textContent = '(' + comebacks.length + ')';
       el.innerHTML = '';
 
+      // Render full trade cards (same format as All Trade Grades)
       comebacks.forEach(function(tvot) {
-        // Look up full trade details (sides) from trade_details
-        var t = trades.find(function(tr) { return tr.trade_id === tvot.trade_id; }) || {};
-        var sides = t.sides || [];
-        var firstWin = sides.find(function(s) { return s.owner === tvot.first_winner; });
-        var lastWin  = sides.find(function(s) { return s.owner === tvot.last_winner;  });
-
-        var div = document.createElement('div');
-        div.className = 'comeback-item';
-        div.innerHTML =
-          '<div class="comeback-header">' +
-            '<span class="comeback-id">Trade #' + tvot.trade_id + '</span>' +
-            '<span class="comeback-swing">&#x1F4C9; &#x2B06;&#xFE0F; +' + (tvot.biggest_swing || 0).toFixed(1) + '</span>' +
-          '</div>' +
-          '<div class="comeback-parties">' +
-            YK.escapeHtml(YK.ownerDisplayName(tvot.first_winner || '')) + ' (early) &#x2192; ' +
-            YK.escapeHtml(YK.ownerDisplayName(tvot.last_winner || '')) + ' (now)' +
-          '</div>' +
-          '<div class="comeback-assets">' +
-            (firstWin ? (firstWin.assets || []).slice(0, 2).map(function(a) { return YK.escapeHtml(a.name); }).join(', ') : '') +
-            ' &#x2194; ' +
-            (lastWin ? (lastWin.assets || []).slice(0, 2).map(function(a) { return YK.escapeHtml(a.name); }).join(', ') : '') +
-          '</div>' +
-          '<a class="comeback-link" href="#trade-' + tvot.trade_id + '">View &#x2192;</a>';
-
-        var link = div.querySelector('.comeback-link');
-        if (link) {
-          (function(tid) {
-            link.addEventListener('click', function(e) {
-              e.preventDefault();
-              scrollToTrade(tid);
-            });
-          })(tvot.trade_id);
-        }
-
-        el.appendChild(div);
+        var t = trades.find(function(tr) { return tr.trade_id === tvot.trade_id; });
+        if (!t) return;
+        el.appendChild(buildCard(t));
       });
     }
 
@@ -556,6 +525,12 @@
 
       var winnerSide = sides.find(function(s) { return s.is_winner; }) || sides[0] || {};
       var loserSides = sides.filter(function(s) { return !s.is_winner; });
+
+      // Winner color left border — immediate visual scan of who won
+      var actualWinner = sides.find(function(s) { return s.is_winner; });
+      if (!isMultiParty && !trade.is_collusion && actualWinner) {
+        card.style.borderLeft = '4px solid ' + YK.ownerColor(actualWinner.owner);
+      }
 
       // ── Header badges: use sides.length for party count ──
       var partyLabel = partyCount <= 2 ? '2-way' : partyCount + '-way';

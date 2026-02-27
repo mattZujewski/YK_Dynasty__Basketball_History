@@ -28,9 +28,9 @@
       return;
     }
 
-    // All non-collusion trades from trade_details.json
+    // All gradable trades: exclude collusion and ungraded 2020-21 season
     const allDetailTrades = (detailsData.trades || []).filter(function(t) {
-      return !t.is_collusion;
+      return !t.is_collusion && t.season !== '2020-21';
     });
 
     // ── Season filter ────────────────────────────────────────────────────── //
@@ -442,26 +442,50 @@
           label: YK.ownerDisplayName(s.owner),
           data: [{ x: +(s.win_pct * 100).toFixed(1), y: +(s.total_margin || 0).toFixed(1) }],
           backgroundColor: YK.ownerColor(s.owner),
-          pointRadius: 8,
-          pointHoverRadius: 10,
+          pointRadius: 10,
+          pointHoverRadius: 13,
         };
       });
 
-      // Inline plugin: draw owner name labels next to each dot
+      // Tighten x-axis range: pad ±10pp around actual min/max, clamp 0–100
+      var xVals = standings.map(function(s) { return s.win_pct * 100; });
+      var xMin = xVals.length ? Math.max(0,   Math.floor((Math.min.apply(null, xVals) - 10) / 10) * 10) : 0;
+      var xMax = xVals.length ? Math.min(100, Math.ceil( (Math.max.apply(null, xVals) + 10) / 10) * 10) : 100;
+
+      // Name labels centered below each dot
       var dotLabels = {
         id: 'dotLabels',
         afterDatasetsDraw: function(chart) {
           var ctx = chart.ctx;
           ctx.save();
-          ctx.font = '11px system-ui, sans-serif';
+          ctx.font = '10px system-ui, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--text-secondary').trim() || '#888';
           chart.data.datasets.forEach(function(ds, i) {
             var meta = chart.getDatasetMeta(i);
             if (!meta.hidden && meta.data.length) {
               var pt = meta.data[0];
-              ctx.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--text-secondary') || '#888';
-              ctx.fillText(ds.label, pt.x + 6, pt.y + 4);
+              ctx.fillText(ds.label, pt.x, pt.y + 18);
             }
           });
+          ctx.restore();
+        },
+      };
+
+      // Quadrant corner labels
+      var quadrantPlugin = {
+        id: 'quadrantLabels',
+        afterDraw: function(chart) {
+          var ctx  = chart.ctx;
+          var xS   = chart.scales.x;
+          var yS   = chart.scales.y;
+          ctx.save();
+          ctx.font = '10px system-ui, sans-serif';
+          ctx.fillStyle = 'rgba(150,150,150,0.5)';
+          ctx.textAlign = 'right';
+          ctx.fillText('Wins often + big margins', xS.right - 6, yS.top + 14);
+          ctx.textAlign = 'left';
+          ctx.fillText('Wins rarely + small margins', xS.left + 6, yS.bottom - 8);
           ctx.restore();
         },
       };
@@ -473,6 +497,7 @@
         data: { datasets: datasets },
         options: {
           responsive: true, maintainAspectRatio: false,
+          layout: { padding: { bottom: 14 } },
           plugins: {
             legend: { display: false },
             tooltip: { callbacks: { label: function(ctx) {
@@ -481,6 +506,7 @@
           },
           scales: {
             x: {
+              min: xMin, max: xMax,
               title: { display: true, text: 'Win %', color: 'var(--text-secondary)' },
               ticks: { color: 'var(--text-secondary)', callback: function(v) { return v + '%'; } },
               grid: { color: 'var(--border)' },
@@ -492,7 +518,7 @@
             },
           },
         },
-        plugins: [dotLabels],
+        plugins: [dotLabels, quadrantPlugin],
       });
     }
 
