@@ -28,9 +28,9 @@
       return;
     }
 
-    // All gradable trades: exclude collusion and ungraded 2020-21 season
+    // All gradable trades: exclude early trades (#1-23), deprecated #20, and collusion
     const allDetailTrades = (detailsData.trades || []).filter(function(t) {
-      return !t.is_collusion && t.season !== '2020-21';
+      return !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20;
     });
 
     // ── Season filter ────────────────────────────────────────────────────── //
@@ -449,8 +449,15 @@
 
       // Tighten x-axis range: pad ±10pp around actual min/max, clamp 0–100
       var xVals = standings.map(function(s) { return s.win_pct * 100; });
+      var yVals = standings.map(function(s) { return s.total_margin || 0; });
       var xMin = xVals.length ? Math.max(0,   Math.floor((Math.min.apply(null, xVals) - 10) / 10) * 10) : 0;
       var xMax = xVals.length ? Math.min(100, Math.ceil( (Math.max.apply(null, xVals) + 10) / 10) * 10) : 100;
+      var medianY = 0;
+      if (yVals.length) {
+        var sortedY = yVals.slice().sort(function(a, b) { return a - b; });
+        var mid = Math.floor(sortedY.length / 2);
+        medianY = sortedY.length % 2 !== 0 ? sortedY[mid] : (sortedY[mid - 1] + sortedY[mid]) / 2;
+      }
 
       // Name labels centered below each dot
       var dotLabels = {
@@ -472,13 +479,40 @@
         },
       };
 
-      // Quadrant corner labels
+      // Quadrant divider lines at 50% Win and median Total Margin + corner labels
       var quadrantPlugin = {
         id: 'quadrantLabels',
         afterDraw: function(chart) {
           var ctx  = chart.ctx;
           var xS   = chart.scales.x;
           var yS   = chart.scales.y;
+
+          // Draw quadrant divider lines
+          ctx.save();
+          ctx.setLineDash([6, 4]);
+          ctx.strokeStyle = 'rgba(150,150,150,0.45)';
+          ctx.lineWidth = 1;
+
+          // Vertical line at 50% Win
+          var x50 = xS.getPixelForValue(50);
+          if (x50 >= xS.left && x50 <= xS.right) {
+            ctx.beginPath();
+            ctx.moveTo(x50, yS.top);
+            ctx.lineTo(x50, yS.bottom);
+            ctx.stroke();
+          }
+
+          // Horizontal line at median Total Margin
+          var yMed = yS.getPixelForValue(medianY);
+          if (yMed >= yS.top && yMed <= yS.bottom) {
+            ctx.beginPath();
+            ctx.moveTo(xS.left, yMed);
+            ctx.lineTo(xS.right, yMed);
+            ctx.stroke();
+          }
+          ctx.restore();
+
+          // Corner labels
           ctx.save();
           ctx.font = '10px system-ui, sans-serif';
           ctx.fillStyle = 'rgba(150,150,150,0.5)';
@@ -509,12 +543,12 @@
               min: xMin, max: xMax,
               title: { display: true, text: 'Win %', color: 'var(--text-secondary)' },
               ticks: { color: 'var(--text-secondary)', callback: function(v) { return v + '%'; } },
-              grid: { color: 'var(--border)' },
+              grid: { color: 'rgba(160,160,160,0.18)', borderDash: [4, 3] },
             },
             y: {
               title: { display: true, text: 'Total Margin', color: 'var(--text-secondary)' },
               ticks: { color: 'var(--text-secondary)' },
-              grid: { color: 'var(--border)' },
+              grid: { color: 'rgba(160,160,160,0.18)', borderDash: [4, 3] },
             },
           },
         },

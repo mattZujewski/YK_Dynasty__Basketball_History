@@ -1,45 +1,45 @@
 {
-  "generated": "2026-02-26",
+  "generated": "2026-02-28",
   "overall": [
     {
       "owner": "Jowkar",
       "wins": 20,
       "losses": 20,
       "win_pct": 0.5,
-      "total_margin": 599.48,
-      "avg_margin": 29.97
+      "total_margin": 664.48,
+      "avg_margin": 33.22
     },
     {
       "owner": "Peterson",
       "wins": 17,
       "losses": 16,
       "win_pct": 0.515,
-      "total_margin": 688.47,
-      "avg_margin": 40.5
+      "total_margin": 661.79,
+      "avg_margin": 38.93
     },
     {
       "owner": "Delaney",
       "wins": 16,
       "losses": 16,
       "win_pct": 0.5,
-      "total_margin": 769.91,
-      "avg_margin": 48.12
+      "total_margin": 774.91,
+      "avg_margin": 48.43
     },
     {
       "owner": "Trager",
       "wins": 14,
       "losses": 15,
       "win_pct": 0.483,
-      "total_margin": 428.99,
-      "avg_margin": 30.64
+      "total_margin": 438.99,
+      "avg_margin": 31.36
     },
     {
       "owner": "Berke",
       "wins": 12,
       "losses": 13,
       "win_pct": 0.48,
-      "total_margin": 314.32,
-      "avg_margin": 26.19
+      "total_margin": 313.32,
+      "avg_margin": 26.11
     },
     {
       "owner": "Kelley",
@@ -86,8 +86,8 @@
       "wins": 2,
       "losses": 9,
       "win_pct": 0.182,
-      "total_margin": 153.97,
-      "avg_margin": 76.98
+      "total_margin": 158.97,
+      "avg_margin": 79.48
     },
     {
       "owner": "Baden",
@@ -105,24 +105,24 @@
         "wins": 11,
         "losses": 7,
         "win_pct": 0.611,
-        "total_margin": 376.17,
-        "avg_margin": 34.2
+        "total_margin": 441.17,
+        "avg_margin": 40.11
       },
       {
         "owner": "Peterson",
         "wins": 9,
         "losses": 3,
         "win_pct": 0.75,
-        "total_margin": 453.22,
-        "avg_margin": 50.36
+        "total_margin": 426.54,
+        "avg_margin": 47.39
       },
       {
         "owner": "Trager",
         "wins": 7,
         "losses": 2,
         "win_pct": 0.778,
-        "total_margin": 269.8,
-        "avg_margin": 38.54
+        "total_margin": 279.8,
+        "avg_margin": 39.97
       },
       {
         "owner": "Berke",
@@ -153,8 +153,8 @@
         "wins": 2,
         "losses": 5,
         "win_pct": 0.286,
-        "total_margin": 153.97,
-        "avg_margin": 76.98
+        "total_margin": 158.97,
+        "avg_margin": 79.48
       },
       {
         "owner": "Zujewski",
@@ -219,8 +219,8 @@
         "wins": 3,
         "losses": 4,
         "win_pct": 0.429,
-        "total_margin": 77.83,
-        "avg_margin": 25.94
+        "total_margin": 76.83,
+        "avg_margin": 25.61
       },
       {
         "owner": "Kelley",
@@ -277,8 +277,8 @@
         "wins": 11,
         "losses": 2,
         "win_pct": 0.846,
-        "total_margin": 598.75,
-        "avg_margin": 54.43
+        "total_margin": 603.75,
+        "avg_margin": 54.89
       },
       {
         "owner": "Kelley",

@@ -29,8 +29,8 @@
 
     const trades = data.trades || [];
 
-    // Multi-party note: count and display hidden 3-way trades (exclude 2020-21)
-    var multiPartyCount = trades.filter(function(t) { return t.is_multi_party && !t.is_collusion && t.season !== '2020-21'; }).length;
+    // Multi-party note: count and display hidden 3-way trades (exclude early + deprecated)
+    var multiPartyCount = trades.filter(function(t) { return t.is_multi_party && !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20; }).length;
     var mpNote = document.getElementById('multi-party-note');
     if (mpNote && multiPartyCount > 0) {
       mpNote.textContent = multiPartyCount + ' multi-party trades are hidden — grading coming soon.';
@@ -101,7 +101,7 @@
       cardsEl.innerHTML = '';
       // D4: exclude 2020-21 from all featured stats
       var nonCollusion = tradeSubset.filter(function(t) {
-        return !t.is_collusion && t.season !== '2020-21' && !t.is_multi_party;
+        return !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20 && !t.is_multi_party;
       });
 
       // Compute per-owner stats
@@ -244,7 +244,7 @@
     }
 
     // Initial summary cards (exclude 2020-21)
-    buildSummaryCards(trades.filter(function(t) { return t.season !== '2020-21'; }));
+    buildSummaryCards(trades.filter(function(t) { return t.trade_id > 23 && t.trade_id !== 20; }));
 
     // ── Collect all owners ────────────────────────────────────────────────── //
     var allOwners  = new Set();
@@ -303,7 +303,7 @@
     // ── Featured sections ─────────────────────────────────────────────────── //
     // D4: exclude 2020-21, collusion, and multi-party from featured sections
     var nonCollusionAll = trades.filter(function(t) {
-      return !t.is_collusion && t.season !== '2020-21' && !t.is_multi_party;
+      return !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20 && !t.is_multi_party;
     });
     var sortedByMargin = nonCollusionAll.slice().sort(function(a, b) {
       return (b.win_margin || 0) - (a.win_margin || 0);
@@ -437,7 +437,7 @@
       updateResetBtn();
 
       // Update dynamic header (task 5)
-      var totalNonColl = trades.filter(function(t) { return !t.is_collusion && t.season !== '2020-21' && !t.is_multi_party; }).length;
+      var totalNonColl = trades.filter(function(t) { return !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20 && !t.is_multi_party; }).length;
       var labelEl = document.getElementById('all-trades-label');
       var inlineCount = document.getElementById('cards-count-inline');
       if (selectedOwners.length === 2) {

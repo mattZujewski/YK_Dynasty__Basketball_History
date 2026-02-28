@@ -50,10 +50,10 @@
       filterSeasons = activeSeasons;
       updateResetBtn();
       var subset = getSeasonSubset().filter(function(t) {
+        if (t.trade_id <= 23 || t.trade_id === 20) return false;
         if (t.trade_id === 99 || t.trade_id === 111) return false;
         if (t.is_multi_party) return false;
-        var szn = seasonById[t.trade_id] || t.season || '';
-        return szn !== '2020-21';
+        return true;
       });
       rebuildSummaryCards(subset);
       applyFiltersAndSort();
@@ -219,12 +219,12 @@
       }
     }
 
-    // Initial summary cards — exclude collusion, multi-party, 2020-21
+    // Initial summary cards — exclude early trades, deprecated #20, collusion, multi-party
     var initSubset = trades.filter(function(t) {
+      if (t.trade_id <= 23 || t.trade_id === 20) return false;
       if (t.trade_id === 99 || t.trade_id === 111) return false;
       if (t.is_multi_party) return false;
-      var szn = seasonById[t.trade_id] || t.season || '';
-      return szn !== '2020-21';
+      return true;
     });
     rebuildSummaryCards(initSubset);
 
@@ -283,10 +283,9 @@
         base = trades.filter(function(t) { return t.trade_id === 99 || t.trade_id === 111; });
       } else {
         base = getSeasonSubset().filter(function(t) {
+          if (t.trade_id <= 23 || t.trade_id === 20) return false;   // early/deprecated
           if (t.trade_id === 99 || t.trade_id === 111) return false; // collusion
           if (t.is_multi_party) return false;                        // hide 3-way
-          var szn = seasonById[t.trade_id] || t.season || '';
-          if (szn === '2020-21') return false;                       // safety: no 2020-21
           return true;
         });
       }
