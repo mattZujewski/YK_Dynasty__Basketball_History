@@ -654,6 +654,41 @@
       return card;
     }
 
+    // Clean up pick descriptions for display
+    function cleanPickDesc(rawDesc) {
+      if (!rawDesc) return { display: '', tooltip: '' };
+      var full = rawDesc;
+      // Strip "(#N overall)" draft slot
+      var desc = rawDesc.replace(/\s*\(#\d+\s+overall\)/gi, '');
+      // If no swap, return cleaned description
+      if (!/swap/i.test(desc)) {
+        return { display: desc.trim(), tooltip: desc.trim() !== full ? full : '' };
+      }
+      // Extract base: "Owner YYYY round"
+      var baseMatch = desc.match(/^(\S+)\s+(\d{4})\s+(1st|2nd|FRP|SRP)\b/i);
+      if (!baseMatch) {
+        // Try year-first: "YYYY Owner FRP"
+        var yfm = desc.match(/^(\d{4})\s+(\S+)\s+(FRP|SRP)\b/i);
+        if (yfm) baseMatch = [yfm[0], yfm[2], yfm[1], yfm[3]];
+      }
+      if (!baseMatch) return { display: desc.trim(), tooltip: full };
+      var owner = baseMatch[1];
+      var round = baseMatch[3].toUpperCase();
+      if (round === 'FRP') round = '1st';
+      else if (round === 'SRP') round = '2nd';
+      else round = round.toLowerCase();
+      var base = owner + ' ' + baseMatch[2] + ' ' + round;
+      // Find counterparty after "swap"
+      var afterSwap = desc.substring(desc.search(/swap/i) + 4);
+      var cp = afterSwap.match(/w\/\s*([A-Za-z]+)/);
+      if (!cp) cp = afterSwap.match(/with\s+([A-Za-z]+)/i);
+      if (!cp) cp = afterSwap.match(/(?:connected\s+)?to\s+([A-Z][a-z]+)/);
+      if (!cp) cp = afterSwap.match(/on\s+([A-Z][a-z]+)/);
+      if (!cp) cp = afterSwap.match(/of\s+\S+\s+and\s+([A-Z][a-z]+)/);
+      var display = cp ? base + ' (swap w/ ' + cp[1] + ')' : base + ' (swap)';
+      return { display: display, tooltip: full };
+    }
+
     function buildSideHtml(side, sideClass, isCollusion, tvotPeriods, isMultiParty) {
       if (!side || !side.owner) return '<div class="trade-side ' + sideClass + '"></div>';
 
@@ -694,18 +729,20 @@
         var fpgStr = (a.fpg != null && a.fpg > 0) ? (+a.fpg).toFixed(1) : null;
         var ageStr = (a.age != null) ? ' \u00b7 age ' + a.age : '';
 
-        // Pick display: show description (original pick text) primary, resolved player secondary
+        // Pick display: description primary (cleaned), resolved player as → secondary line
         var namePart;
         var isPick = (a.asset_type === 'pick' || a.asset_type === 'future_pick');
         if (isPick && a.description) {
-          namePart = YK.escapeHtml(a.description);
+          var pickInfo = cleanPickDesc(a.description);
+          namePart = '<span' + (pickInfo.tooltip ? ' title="' + YK.escapeHtml(pickInfo.tooltip) + '"' : '') +
+            '>' + YK.escapeHtml(pickInfo.display) + '</span>';
           if (a.name) {
-            namePart += '<br><span style="font-size:0.65rem;opacity:0.72">(' +
-              YK.escapeHtml(a.name) + ')' + ageStr + '</span>';
+            namePart += '<br><span style="font-size:0.65rem;opacity:0.72">\u2192 ' +
+              YK.escapeHtml(a.name) + ageStr + '</span>';
           }
         } else {
           // Player asset or fallback
-          var displayName = a.name || a.description || '—';
+          var displayName = a.name || a.description || '\u2014';
           namePart = YK.escapeHtml(displayName) +
             (ageStr ? '<span style="opacity:0.62;font-size:0.73em">' + ageStr + '</span>' : '');
         }
