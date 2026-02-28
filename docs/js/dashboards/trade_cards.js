@@ -694,15 +694,19 @@
         var fpgStr = (a.fpg != null && a.fpg > 0) ? (+a.fpg).toFixed(1) : null;
         var ageStr = (a.age != null) ? ' \u00b7 age ' + a.age : '';
 
-        // Task 6: pick display — show pick description first, then player in parens
+        // Pick display: show description (original pick text) primary, resolved player secondary
         var namePart;
-        if (a.asset_type === 'pick' && a.pick_desc) {
-          namePart = YK.escapeHtml(a.pick_desc) +
-            '<br><span style="font-size:0.65rem;opacity:0.72">' +
-            YK.escapeHtml(a.name) + ageStr + '</span>';
+        var isPick = (a.asset_type === 'pick' || a.asset_type === 'future_pick');
+        if (isPick && a.description) {
+          namePart = YK.escapeHtml(a.description);
+          if (a.name) {
+            namePart += '<br><span style="font-size:0.65rem;opacity:0.72">(' +
+              YK.escapeHtml(a.name) + ')' + ageStr + '</span>';
+          }
         } else {
-          // Task 8: age on name line
-          namePart = YK.escapeHtml(a.name) +
+          // Player asset or fallback
+          var displayName = a.name || a.description || '—';
+          namePart = YK.escapeHtml(displayName) +
             (ageStr ? '<span style="opacity:0.62;font-size:0.73em">' + ageStr + '</span>' : '');
         }
 

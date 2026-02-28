@@ -162,7 +162,7 @@
       var subEl = document.getElementById('flip-sub-text');
       if (bigEl) bigEl.textContent = Math.round(flipPct) + '%';
       if (subEl) subEl.textContent =
-        flipped.length + ' of ' + subset.length + ' trades changed winners over time';
+        flipped.length + ' of ' + subset.length + ' trades flipped winners since they occurred';
 
       function makeClickableCard(card, fn) {
         card.setAttribute('data-clickable', '1');

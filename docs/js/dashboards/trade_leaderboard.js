@@ -257,7 +257,7 @@
         var avgStr      = row.wins > 0
           ? (row.avg_margin >= 0 ? '+' : '') + row.avg_margin.toFixed(1)
           : '\u2014';
-        var rankEmojis  = ['&#x1F947;','&#x1F948;','&#x1F949;','&#x2197;&#xFE0F;','&#x2796;','&#x2796;','&#x1F4C9;','&#x1F4C9;','&#x1F4C9;','&#x1F4A9;'];
+        var rankEmojis  = ['&#x1F947;','&#x1F948;','&#x1F949;','&#x2197;&#xFE0F;','&#x2796;','&#x2796;','&#x1F4C9;','&#x1F4C9;','&#x1F4C9;','&#x1F4A9;','&#x1F4A9;','&#x1F4A9;'];
         var rankBadge   = (rankEmojis[i] !== undefined ? '<span>' + rankEmojis[i] + '</span> ' : '');
 
         var safeOwner = YK.escapeHtml(row.owner);
@@ -490,7 +490,7 @@
           // Draw quadrant divider lines
           ctx.save();
           ctx.setLineDash([6, 4]);
-          ctx.strokeStyle = 'rgba(150,150,150,0.45)';
+          ctx.strokeStyle = 'rgba(100,100,100,0.7)';
           ctx.lineWidth = 1;
 
           // Vertical line at 50% Win
