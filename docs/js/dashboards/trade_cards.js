@@ -307,7 +307,7 @@
       return !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20 && !t.is_multi_party;
     });
     var sortedByMargin = nonCollusionAll.slice().sort(function(a, b) {
-      return (b.win_margin || 0) - (a.win_margin || 0);
+      return (b.cumulative_margin || b.win_margin || 0) - (a.cumulative_margin || a.win_margin || 0);
     });
     var sortedByClose = nonCollusionAll.slice().sort(function(a, b) {
       return (a.win_margin || 999) - (b.win_margin || 999);
@@ -497,9 +497,16 @@
       var nonCollusionIds = new Set(nonCollusionAll.map(function(t) { return t.trade_id; }));
 
       // Use TVOT data (has winner_changed + biggest_swing); filter to non-collusion 2-party trades
+      // Sort by cumulative_margin from trade_details (cross-referenced), fallback to biggest_swing
+      var tradeById = {};
+      trades.forEach(function(t) { tradeById[t.trade_id] = t; });
       var comebacks = ((tvotData && tvotData.trades) || [])
         .filter(function(t) { return t.winner_changed && t.biggest_swing && nonCollusionIds.has(t.trade_id); })
-        .sort(function(a, b) { return (b.biggest_swing || 0) - (a.biggest_swing || 0); })
+        .sort(function(a, b) {
+          var aCum = (tradeById[a.trade_id] || {}).cumulative_margin || a.biggest_swing || 0;
+          var bCum = (tradeById[b.trade_id] || {}).cumulative_margin || b.biggest_swing || 0;
+          return bCum - aCum;
+        })
         .slice(0, 5);
 
       if (countEl) countEl.textContent = '(' + comebacks.length + ')';
@@ -558,15 +565,15 @@
       if (isMultiParty) {
         // Multi-party: no winner/loser styling, no winner badge
         sides.forEach(function(side, i, arr) {
-          sidesHtml += buildSideHtml(side, '', trade.is_collusion, tvotPeriods, true);
+          sidesHtml += buildSideHtml(side, '', trade.is_collusion, tvotPeriods, true, trade);
           if (i < arr.length - 1) {
             sidesHtml += '<div class="trade-vs-divider"><span class="trade-vs-label">vs</span></div>';
           }
         });
       } else {
-        sidesHtml += buildSideHtml(winnerSide, 'winner-side', trade.is_collusion, tvotPeriods, false);
+        sidesHtml += buildSideHtml(winnerSide, 'winner-side', trade.is_collusion, tvotPeriods, false, trade);
         sidesHtml += '<div class="trade-vs-divider"><span class="trade-vs-label">vs</span></div>';
-        sidesHtml += buildSideHtml(loserSides[0] || {}, 'loser-side', trade.is_collusion, tvotPeriods, false);
+        sidesHtml += buildSideHtml(loserSides[0] || {}, 'loser-side', trade.is_collusion, tvotPeriods, false, trade);
       }
 
       sidesHtml += '</div>';
@@ -690,7 +697,7 @@
       return { display: display, tooltip: full };
     }
 
-    function buildSideHtml(side, sideClass, isCollusion, tvotPeriods, isMultiParty) {
+    function buildSideHtml(side, sideClass, isCollusion, tvotPeriods, isMultiParty, trade) {
       if (!side || !side.owner) return '<div class="trade-side ' + sideClass + '"></div>';
 
       var owner    = side.owner;
@@ -706,6 +713,10 @@
       var currWinner = tvotArr.length > 0 ? tvotArr[tvotArr.length - 1].winner : null;
       var flipped    = initWinner && currWinner && initWinner !== currWinner;
 
+      // Cumulative margin suffix for winner badge
+      var cumMargin = (trade && trade.cumulative_margin != null) ? trade.cumulative_margin : null;
+      var cumSuffix = (cumMargin != null) ? ' (+' + cumMargin.toFixed(1) + ')' : '';
+
       // Task 9: ONE status indicator per side — either winner badge OR flip text, not both
       var winBadge     = '';
       var winnerHistory = '';
@@ -716,8 +727,8 @@
           winnerHistory = '<div class="winner-history winner-flipped-text">Flipped from ' +
             YK.ownerDisplayName(initWinner) + '</div>';
         } else {
-          // Stable winner: single green badge
-          winBadge = '<span class="winner-badge">&#x2714; Dynasty Winner</span>';
+          // Stable winner: single green badge with cumulative margin
+          winBadge = '<span class="winner-badge">&#x2714; Dynasty Winner' + cumSuffix + '</span>';
           if (tvotArr.length > 1) {
             winnerHistory = '<div class="winner-history winner-stable">Leading since Y1</div>';
           }
@@ -768,9 +779,9 @@
 
       return '<div class="trade-side ' + sideClass + '">' +
         '<div class="trade-side-owner">' + dot + YK.ownerDisplayName(owner) + winBadge + '</div>' +
-        '<div class="trade-side-total">' + total.toFixed(1) + ' dynasty value</div>' +
+        '<div class="trade-side-total">' + total.toFixed(1) + ' Trade Value</div>' +
         winnerHistory +
-        '<div class="asset-list-header"><span>Asset</span><span style="font-weight:700">CUR. DYNASTY VALUE</span></div>' +
+        '<div class="asset-list-header"><span>Asset</span><span style="font-weight:700">CUR. TRADE VALUE</span></div>' +
         '<ul class="asset-list">' + assetRows + '</ul>' +
         '</div>';
     }
