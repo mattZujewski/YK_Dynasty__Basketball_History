@@ -30,11 +30,11 @@
 
     const trades = data.trades || [];
 
-    // Multi-party note: count and display hidden 3-way trades (exclude early + deprecated)
+    // Multi-party note: count and display 3-way trades info
     var multiPartyCount = trades.filter(function(t) { return t.is_multi_party && !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20; }).length;
     var mpNote = document.getElementById('multi-party-note');
     if (mpNote && multiPartyCount > 0) {
-      mpNote.textContent = multiPartyCount + ' multi-party trades are hidden — grading coming soon.';
+      mpNote.textContent = multiPartyCount + ' multi-party trades shown — not included in W/L records.';
       mpNote.style.display = '';
     }
 
@@ -414,7 +414,7 @@
       var filtered = base.filter(function(t) {
         if (t.is_collusion) return false;       // always hide collusion in normal mode
         if (t.season === '2020-21') return false; // D4: hide 2020-21
-        if (t.is_multi_party) return false;     // hide 3-way trades (grading coming soon)
+        // Multi-party trades are shown but excluded from featured sections and W/L records
         // Owner pill multi-select
         if (selectedOwners.length >= 1) {
           var tradeOwners = (t.sides || []).map(function(s) { return s.owner; });
@@ -438,7 +438,7 @@
       updateResetBtn();
 
       // Update dynamic header (task 5)
-      var totalNonColl = trades.filter(function(t) { return !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20 && !t.is_multi_party; }).length;
+      var totalNonColl = trades.filter(function(t) { return !t.is_collusion && t.trade_id > 23 && t.trade_id !== 20; }).length;
       var labelEl = document.getElementById('all-trades-label');
       var inlineCount = document.getElementById('cards-count-inline');
       if (selectedOwners.length === 2) {
@@ -587,7 +587,7 @@
       if (isMultiParty && !trade.is_collusion) {
         var footerHtml = '<div class="trade-card-footer">' +
           '<div style="font-size:0.75rem;color:var(--text-muted);font-style:italic">' +
-          partyCount + '-way trade \u2014 individual grades coming soon' +
+          partyCount + '-way trade \u2014 not included in W/L records' +
           '</div>' +
           tvotLink +
           '</div>';

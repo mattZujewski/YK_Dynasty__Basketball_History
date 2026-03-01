@@ -267,6 +267,21 @@
 
     /* Multi-party trade cards span full grid width */
     .trade-cards-grid .multi-party-card { grid-column: 1 / -1; }
+    .multi-party-card { border-left: 4px solid #4ab5f1 !important; }
+    .multi-party-card .trade-card-sides { flex-wrap: nowrap; }
+    @media (max-width: 600px) {
+      .multi-party-card .trade-card-sides { flex-direction: column; }
+      .multi-party-card .trade-vs-divider {
+        display: flex;
+        width: 100%; height: 1px;
+        background: var(--border);
+        justify-content: center;
+      }
+      .multi-party-card .trade-vs-label {
+        position: static;
+        transform: none;
+      }
+    }
 
     /* Asset list column header */
     .asset-list-header {
