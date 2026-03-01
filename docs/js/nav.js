@@ -24,7 +24,7 @@
     const isTradeLeaderboard = path.includes('trade-leaderboard.html');
     const isTvot       = path.includes('trade-value-over-time.html');
     const isTradeCards = path.includes('trade-cards.html');
-    const isAnyTrade   = isTrade || isGrades || isTradeLeaderboard || isTvot || isTradeCards;
+    const isAnyTrade   = isTrade || isTradeLeaderboard || isTvot || isTradeCards;
 
     function activeClass(flag) { return flag ? ' nav-active' : ''; }
 
@@ -44,7 +44,6 @@
       <button class="nav-dropdown-btn${activeClass(isAnyTrade)}">Trades <span style="font-size:0.7em;opacity:0.7">&#x25BC;</span></button>
       <div class="nav-dropdown-menu">
         <a class="${isTrade ? 'nav-active' : ''}" href="${base}trade.html">&#x1F4C4; Trade Log</a>
-        <a class="${isGrades ? 'nav-active' : ''}" href="${base}grades.html">&#x1F393; Trade Grades</a>
         <a class="${isTradeCards ? 'nav-active' : ''}" href="${base}trade-cards.html">&#x1F0CF; Trade Cards</a>
         <a class="${isTvot ? 'nav-active' : ''}" href="${base}trade-value-over-time.html">&#x23F3; TVOT</a>
         <a class="${isTradeLeaderboard ? 'nav-active' : ''}" href="${base}trade-leaderboard.html">&#x1F4CA; Trade Leaderboard</a>

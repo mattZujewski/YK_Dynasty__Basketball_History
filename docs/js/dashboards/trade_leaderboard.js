@@ -1,9 +1,10 @@
+// DATA SOURCE: System B only. No legacy grade imports.
 /**
  * trade_leaderboard.js — Dashboard module for trade-leaderboard.html
  * YK Dynasty Basketball
  *
  * Data sources:
- *   data/trade_leaderboard.json  (season keys reference)
+ *   data/trade_leaderboard.json  (season keys reference + trade activity)
  *   data/trade_details.json      (primary — for dynamic standings + drill-down)
  */
 (function () {
@@ -571,6 +572,114 @@
         'averaging <strong>+' + topRow.avg_margin.toFixed(1) + '</strong> dynasty value per graded trade.';
     }
 
+    // ── Trade Activity section ─────────────────────────────────────────── //
+    function renderTradeActivity() {
+      var activity = lbData.trade_activity;
+      if (!activity) return;
+
+      // Volume by owner table
+      var volEl = document.getElementById('volume-by-owner');
+      if (volEl && activity.volume_by_owner) {
+        var vol = activity.volume_by_owner;
+        var owners = Object.keys(vol).sort(function(a, b) {
+          return (vol[b].total || 0) - (vol[a].total || 0);
+        });
+        // Collect all seasons
+        var allSeasons = new Set();
+        owners.forEach(function(o) {
+          Object.keys(vol[o].seasons || {}).forEach(function(s) { allSeasons.add(s); });
+        });
+        var seasons = Array.from(allSeasons).sort();
+
+        var html = '<div class="data-table-wrapper"><table class="data-table"><thead><tr>' +
+          '<th>Owner</th><th style="text-align:center">Total</th>';
+        seasons.forEach(function(s) {
+          html += '<th style="text-align:center">' + s + '</th>';
+        });
+        html += '</tr></thead><tbody>';
+        owners.forEach(function(o) {
+          var color = YK.ownerColor(o);
+          html += '<tr><td>' +
+            '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' +
+            color + ';margin-right:6px;vertical-align:middle"></span>' +
+            YK.ownerDisplayName(o) + '</td>' +
+            '<td style="text-align:center;font-weight:700">' + (vol[o].total || 0) + '</td>';
+          seasons.forEach(function(s) {
+            var ct = (vol[o].seasons || {})[s] || 0;
+            html += '<td style="text-align:center;color:' + (ct === 0 ? 'var(--text-muted)' : 'inherit') + '">' +
+              (ct || '\u2014') + '</td>';
+          });
+          html += '</tr>';
+        });
+        html += '</tbody></table></div>';
+        volEl.innerHTML = html;
+      }
+
+      // Partner matrix heat-map table
+      var matEl = document.getElementById('partner-matrix');
+      if (matEl && activity.partner_matrix) {
+        var pm = activity.partner_matrix;
+        var pmOwners = pm.owners || [];
+        var counts = pm.counts || [];
+        // Find max for heat-map scaling
+        var maxCount = 0;
+        counts.forEach(function(row) {
+          row.forEach(function(c) { if (c > maxCount) maxCount = c; });
+        });
+
+        var html = '<table class="data-table" style="font-size:0.78rem"><thead><tr><th></th>';
+        pmOwners.forEach(function(o) {
+          var short = YK.ownerDisplayName(o);
+          if (short.length > 5) short = short.substring(0, 4) + '.';
+          html += '<th style="text-align:center;writing-mode:vertical-lr;transform:rotate(180deg);' +
+            'max-width:32px;padding:4px 2px;font-size:0.68rem">' + short + '</th>';
+        });
+        html += '</tr></thead><tbody>';
+        pmOwners.forEach(function(o, i) {
+          html += '<tr><td style="font-weight:600;white-space:nowrap;font-size:0.75rem">' +
+            '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' +
+            YK.ownerColor(o) + ';margin-right:4px"></span>' + YK.ownerDisplayName(o) + '</td>';
+          (counts[i] || []).forEach(function(c, j) {
+            if (i === j) {
+              html += '<td style="text-align:center;background:var(--bg-primary);color:var(--text-muted)">\u2014</td>';
+            } else {
+              var intensity = maxCount > 0 ? c / maxCount : 0;
+              var bg = 'rgba(34,197,94,' + (intensity * 0.45).toFixed(2) + ')';
+              html += '<td style="text-align:center;background:' + bg + ';font-weight:' +
+                (c >= 3 ? '700' : '400') + '">' + (c || '') + '</td>';
+            }
+          });
+          html += '</tr>';
+        });
+        html += '</tbody></table>';
+        matEl.innerHTML = html;
+      }
+
+      // Multi-party trades
+      var mpEl = document.getElementById('multi-party-trades');
+      var mpTrades = lbData.multi_party_trades || [];
+      if (mpEl && mpTrades.length > 0) {
+        var html = '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px">';
+        mpTrades.forEach(function(t) {
+          html += '<div style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 10px;' +
+            'background:var(--bg-card);font-size:0.8rem">' +
+            '<div style="font-weight:600;margin-bottom:4px">#' + t.trade_id + ' <span style="color:var(--text-muted);' +
+            'font-weight:400">' + (t.season || '') + '</span></div>';
+          (t.sides || []).forEach(function(s) {
+            html += '<div style="display:flex;justify-content:space-between;padding:1px 0">' +
+              '<span>' + YK.ownerDisplayName(s.owner) + '</span>' +
+              '<span style="color:var(--text-muted)">' + (s.side_total || 0).toFixed(1) + '</span></div>';
+          });
+          html += '<div style="font-size:0.68rem;color:var(--text-muted);margin-top:4px;font-style:italic">' +
+            'Not included in W/L records</div></div>';
+        });
+        html += '</div>';
+        mpEl.innerHTML = html;
+      } else if (mpEl) {
+        mpEl.innerHTML = '<p class="text-muted" style="font-size:0.8rem">No multi-party trades found.</p>';
+      }
+    }
+
     // ── Initial render ───────────────────────────────────────────────────── //
     var initSubset   = getSeasonSubset(); // already filters multi-party
     var initStandings = computeStandings(initSubset);
@@ -580,5 +689,6 @@
     rebuildMarginChart(initStandings);
     rebuildScatterChart(initStandings);
     updateInsight(initStandings);
+    renderTradeActivity();
   });
 })();

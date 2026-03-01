@@ -1,3 +1,4 @@
+// DATA SOURCE: System B only. No legacy grade imports.
 /**
  * trade_cards.js — Trade Cards dashboard
  * YK Dynasty Basketball
@@ -716,8 +717,8 @@
             YK.ownerDisplayName(initWinner) + '</div>';
         } else {
           // Stable winner: single green badge
-          winBadge = '<span class="winner-badge">&#x2714; Winner</span>';
-          if (tvotArr.length > 0) {
+          winBadge = '<span class="winner-badge">&#x2714; Dynasty Winner</span>';
+          if (tvotArr.length > 1) {
             winnerHistory = '<div class="winner-history winner-stable">Leading since Y1</div>';
           }
         }
@@ -767,9 +768,9 @@
 
       return '<div class="trade-side ' + sideClass + '">' +
         '<div class="trade-side-owner">' + dot + YK.ownerDisplayName(owner) + winBadge + '</div>' +
-        '<div class="trade-side-total">' + total.toFixed(1) + ' pts</div>' +
+        '<div class="trade-side-total">' + total.toFixed(1) + ' dynasty value</div>' +
         winnerHistory +
-        '<div class="asset-list-header"><span>Asset</span><span>Cur. Dynasty Value</span></div>' +
+        '<div class="asset-list-header"><span>Asset</span><span style="font-weight:700">CUR. DYNASTY VALUE</span></div>' +
         '<ul class="asset-list">' + assetRows + '</ul>' +
         '</div>';
     }

@@ -8,13 +8,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 66.97,
+      "win_margin": 34.5,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 95.54,
           "is_winner": true,
-          "win_margin_pct": 0.701,
+          "win_margin_pct": 0.1544,
           "assets": [
             {
               "name": "Dyson Daniels",
@@ -38,7 +38,7 @@
           "owner": "Berke",
           "side_total": 28.57,
           "is_winner": false,
-          "win_margin_pct": -0.701,
+          "win_margin_pct": -0.1544,
           "assets": [
             {
               "name": "Mitchell Robinson",
@@ -49,7 +49,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 34.5,
+      "cumulative_values": {
+        "Trager": 223.4,
+        "Berke": 188.9
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 25,
@@ -58,13 +66,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 19.13,
+      "win_margin": 259.5,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 65.22,
           "is_winner": false,
-          "win_margin_pct": -0.2268,
+          "win_margin_pct": -0.4601,
           "assets": [
             {
               "name": "Fred Vanvleet",
@@ -94,7 +102,7 @@
           "owner": "Berke",
           "side_total": 84.35,
           "is_winner": true,
-          "win_margin_pct": 0.2268,
+          "win_margin_pct": 0.4601,
           "assets": [
             {
               "name": "Lebron James",
@@ -112,7 +120,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 259.5,
+      "cumulative_values": {
+        "Delaney": 304.5,
+        "Berke": 564.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 26,
@@ -121,13 +137,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 75.79,
+      "win_margin": 1.6,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 70.22,
           "is_winner": false,
-          "win_margin_pct": -0.5191,
+          "win_margin_pct": -0.0044,
           "assets": [
             {
               "name": "Pascal Siakam",
@@ -156,7 +172,7 @@
           "owner": "Zujewski",
           "side_total": 146.01,
           "is_winner": true,
-          "win_margin_pct": 0.5191,
+          "win_margin_pct": 0.0044,
           "assets": [
             {
               "name": "Saddiq Bey",
@@ -181,7 +197,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Zujewski",
+      "cumulative_margin": 1.6,
+      "cumulative_values": {
+        "Jowkar": 363.0,
+        "Zujewski": 364.6
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 27,
@@ -190,13 +214,13 @@
       "is_multi_party": true,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": -54.89,
+      "win_margin": 72.0,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 69.26,
-          "is_winner": true,
-          "win_margin_pct": 0.4831,
+          "is_winner": false,
+          "win_margin_pct": -0.1297,
           "assets": [
             {
               "name": "Caris Levert",
@@ -232,8 +256,8 @@
         {
           "owner": "Zujewski",
           "side_total": 99.25,
-          "is_winner": true,
-          "win_margin_pct": 0.4831,
+          "is_winner": false,
+          "win_margin_pct": -0.1297,
           "assets": [
             {
               "name": "Jamal Murray",
@@ -261,8 +285,8 @@
         {
           "owner": "Gold",
           "side_total": 113.62,
-          "is_winner": false,
-          "win_margin_pct": -0.4831,
+          "is_winner": true,
+          "win_margin_pct": 0.1297,
           "assets": [
             {
               "name": "Jerami Grant",
@@ -288,7 +312,16 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Gold",
+      "cumulative_margin": 72.0,
+      "cumulative_values": {
+        "Peterson": 483.1,
+        "Zujewski": 459.2,
+        "Gold": 555.1
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 28,
@@ -297,13 +330,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 50.69,
+      "win_margin": 97.7,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 78.46,
           "is_winner": true,
-          "win_margin_pct": 0.6461,
+          "win_margin_pct": 0.2934,
           "assets": [
             {
               "name": "Terry Rozier",
@@ -334,7 +367,7 @@
           "owner": "Delaney",
           "side_total": 27.77,
           "is_winner": false,
-          "win_margin_pct": -0.6461,
+          "win_margin_pct": -0.2934,
           "assets": [
             {
               "name": "D'Angelo Russell",
@@ -345,7 +378,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 97.7,
+      "cumulative_values": {
+        "Jowkar": 333.0,
+        "Delaney": 235.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 29,
@@ -354,13 +395,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Vlandis",
-      "win_margin": 116.59,
+      "win_margin": 367.4,
       "sides": [
         {
           "owner": "Vlandis",
           "side_total": 195.37,
           "is_winner": true,
-          "win_margin_pct": 0.5968,
+          "win_margin_pct": 0.4185,
           "assets": [
             {
               "name": "Tyler Herro",
@@ -405,7 +446,7 @@
           "owner": "Jowkar",
           "side_total": 78.78,
           "is_winner": false,
-          "win_margin_pct": -0.5968,
+          "win_margin_pct": -0.4185,
           "assets": [
             {
               "name": "Lamelo Ball",
@@ -423,7 +464,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Vlandis",
+      "cumulative_margin": 367.4,
+      "cumulative_values": {
+        "Vlandis": 877.8,
+        "Jowkar": 510.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 30,
@@ -432,13 +481,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 57.5,
+      "win_margin": 2.2,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 103.16,
           "is_winner": true,
-          "win_margin_pct": 0.5574,
+          "win_margin_pct": 0.0077,
           "assets": [
             {
               "name": "Caris Levert",
@@ -468,7 +517,7 @@
           "owner": "Peterson",
           "side_total": 45.66,
           "is_winner": false,
-          "win_margin_pct": -0.5574,
+          "win_margin_pct": -0.0077,
           "assets": [
             {
               "name": "Dennis Schroeder",
@@ -486,7 +535,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 2.2,
+      "cumulative_values": {
+        "Jowkar": 284.3,
+        "Peterson": 282.1
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 31,
@@ -495,13 +552,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Green",
-      "win_margin": 95.15,
+      "win_margin": 91.9,
       "sides": [
         {
           "owner": "Green",
           "side_total": 141.22,
           "is_winner": true,
-          "win_margin_pct": 0.6738,
+          "win_margin_pct": 0.188,
           "assets": [
             {
               "name": "Derek Lively II",
@@ -547,7 +604,7 @@
           "owner": "Jowkar",
           "side_total": 46.07,
           "is_winner": false,
-          "win_margin_pct": -0.6738,
+          "win_margin_pct": -0.188,
           "assets": [
             {
               "name": "Bradley Beal",
@@ -565,7 +622,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Green",
+      "cumulative_margin": 91.9,
+      "cumulative_values": {
+        "Green": 488.7,
+        "Jowkar": 396.8
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 32,
@@ -574,13 +639,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 35.62,
+      "win_margin": 155.7,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 21.45,
           "is_winner": false,
-          "win_margin_pct": -0.6241,
+          "win_margin_pct": -0.5561,
           "assets": [
             {
               "name": "Harrison Barnes",
@@ -595,7 +660,7 @@
           "owner": "Berke",
           "side_total": 57.07,
           "is_winner": true,
-          "win_margin_pct": 0.6241,
+          "win_margin_pct": 0.5561,
           "assets": [
             {
               "name": "Jordan Clarkson",
@@ -613,7 +678,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 155.7,
+      "cumulative_values": {
+        "Peterson": 124.3,
+        "Berke": 280.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 33,
@@ -622,13 +695,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 62.83,
+      "win_margin": 259.7,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 13.87,
           "is_winner": false,
-          "win_margin_pct": -0.8192,
+          "win_margin_pct": -0.7497,
           "assets": [
             {
               "name": "Mike Conley",
@@ -643,7 +716,7 @@
           "owner": "Peterson",
           "side_total": 76.7,
           "is_winner": true,
-          "win_margin_pct": 0.8192,
+          "win_margin_pct": 0.7497,
           "assets": [
             {
               "name": "Lauri Markkanen",
@@ -662,7 +735,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 259.7,
+      "cumulative_values": {
+        "Delaney": 86.7,
+        "Peterson": 346.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 34,
@@ -671,13 +752,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 7.3,
+      "win_margin": 58.8,
       "sides": [
         {
           "owner": "Zujewski",
           "side_total": 80.4,
           "is_winner": true,
-          "win_margin_pct": 0.0908,
+          "win_margin_pct": 0.1327,
           "assets": [
             {
               "name": "Dillon Brooks",
@@ -706,7 +787,7 @@
           "owner": "Jowkar",
           "side_total": 73.1,
           "is_winner": false,
-          "win_margin_pct": -0.0908,
+          "win_margin_pct": -0.1327,
           "assets": [
             {
               "name": "Saddiq Bey",
@@ -731,7 +812,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Zujewski",
+      "cumulative_margin": 58.8,
+      "cumulative_values": {
+        "Zujewski": 443.2,
+        "Jowkar": 384.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 35,
@@ -739,14 +828,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Green",
-      "win_margin": 63.82,
+      "winner": "Vlandis",
+      "win_margin": 4.3,
       "sides": [
         {
           "owner": "Vlandis",
           "side_total": 33.67,
-          "is_winner": false,
-          "win_margin_pct": -0.6546,
+          "is_winner": true,
+          "win_margin_pct": 0.0298,
           "assets": [
             {
               "name": "Jaden Ivey",
@@ -761,8 +850,8 @@
         {
           "owner": "Green",
           "side_total": 97.49,
-          "is_winner": true,
-          "win_margin_pct": 0.6546,
+          "is_winner": false,
+          "win_margin_pct": -0.0298,
           "assets": [
             {
               "name": "Jabari Smith Jr",
@@ -782,7 +871,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Vlandis",
+      "cumulative_margin": 4.3,
+      "cumulative_values": {
+        "Vlandis": 144.1,
+        "Green": 139.8
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 36,
@@ -790,14 +887,14 @@
       "date": "",
       "is_multi_party": true,
       "is_collusion": false,
-      "winner": "Peterson",
-      "win_margin": 42.88,
+      "winner": "Trager",
+      "win_margin": 177.7,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 193.01,
-          "is_winner": true,
-          "win_margin_pct": 0.2222,
+          "is_winner": false,
+          "win_margin_pct": -0.2507,
           "assets": [
             {
               "name": "Christian Wood",
@@ -840,8 +937,8 @@
         {
           "owner": "Trager",
           "side_total": 133.93,
-          "is_winner": false,
-          "win_margin_pct": -0.2222,
+          "is_winner": true,
+          "win_margin_pct": 0.2507,
           "assets": [
             {
               "name": "CJ McCollum",
@@ -886,7 +983,7 @@
           "owner": "Delaney",
           "side_total": 16.2,
           "is_winner": false,
-          "win_margin_pct": -0.2222,
+          "win_margin_pct": -0.2507,
           "assets": [
             {
               "name": "Al Horford",
@@ -897,7 +994,16 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 177.7,
+      "cumulative_values": {
+        "Peterson": 531.2,
+        "Trager": 708.9,
+        "Delaney": 91.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 37,
@@ -906,13 +1012,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 22.84,
+      "win_margin": 108.3,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 44.8,
           "is_winner": true,
-          "win_margin_pct": 0.5098,
+          "win_margin_pct": 0.431,
           "assets": [
             {
               "name": "Spencer Dinwiddie",
@@ -934,7 +1040,7 @@
           "owner": "Green",
           "side_total": 21.96,
           "is_winner": false,
-          "win_margin_pct": -0.5098,
+          "win_margin_pct": -0.431,
           "assets": [
             {
               "name": "Jarred Vanderbilt",
@@ -945,7 +1051,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 108.3,
+      "cumulative_values": {
+        "Delaney": 251.3,
+        "Green": 143.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 38,
@@ -954,13 +1068,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 7.42,
+      "win_margin": 146.9,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 41.09,
           "is_winner": true,
-          "win_margin_pct": 0.1806,
+          "win_margin_pct": 0.5311,
           "assets": [
             {
               "name": "Julius Randle",
@@ -975,7 +1089,7 @@
           "owner": "Berke",
           "side_total": 33.67,
           "is_winner": false,
-          "win_margin_pct": -0.1806,
+          "win_margin_pct": -0.5311,
           "assets": [
             {
               "name": "Christian Wood",
@@ -986,7 +1100,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 146.9,
+      "cumulative_values": {
+        "Peterson": 276.6,
+        "Berke": 129.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 39,
@@ -994,14 +1116,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Delaney",
-      "win_margin": 2.02,
+      "winner": "Jowkar",
+      "win_margin": 52.4,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 18.01,
-          "is_winner": false,
-          "win_margin_pct": -0.1008,
+          "is_winner": true,
+          "win_margin_pct": 0.5142,
           "assets": [
             {
               "name": "Alec Burks",
@@ -1023,8 +1145,8 @@
         {
           "owner": "Delaney",
           "side_total": 20.03,
-          "is_winner": true,
-          "win_margin_pct": 0.1008,
+          "is_winner": false,
+          "win_margin_pct": -0.5142,
           "assets": [
             {
               "name": "Patrick Beverly",
@@ -1035,7 +1157,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 52.4,
+      "cumulative_values": {
+        "Jowkar": 101.9,
+        "Delaney": 49.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 40,
@@ -1044,13 +1174,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 3.84,
+      "win_margin": 40.8,
       "sides": [
         {
           "owner": "Zujewski",
           "side_total": 43.39,
           "is_winner": false,
-          "win_margin_pct": -0.0813,
+          "win_margin_pct": -0.1581,
           "assets": [
             {
               "name": "Gabe Vincent",
@@ -1088,7 +1218,7 @@
           "owner": "Peterson",
           "side_total": 47.23,
           "is_winner": true,
-          "win_margin_pct": 0.0813,
+          "win_margin_pct": 0.1581,
           "assets": [
             {
               "name": "Aaron Gordon",
@@ -1106,7 +1236,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 40.8,
+      "cumulative_values": {
+        "Zujewski": 217.2,
+        "Peterson": 258.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 41,
@@ -1115,13 +1253,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 53.18,
+      "win_margin": 189.8,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 17.44,
           "is_winner": false,
-          "win_margin_pct": -0.753,
+          "win_margin_pct": -0.7082,
           "assets": [
             {
               "name": "Gordon Hayward",
@@ -1136,7 +1274,7 @@
           "owner": "Berke",
           "side_total": 70.62,
           "is_winner": true,
-          "win_margin_pct": 0.753,
+          "win_margin_pct": 0.7082,
           "assets": [
             {
               "name": "Donte Divencenzo",
@@ -1163,7 +1301,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 189.8,
+      "cumulative_values": {
+        "Jowkar": 78.2,
+        "Berke": 268.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 42,
@@ -1171,14 +1317,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Gold",
-      "win_margin": 38.77,
+      "winner": "Moss",
+      "win_margin": 47.4,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 92.34,
-          "is_winner": false,
-          "win_margin_pct": -0.2957,
+          "is_winner": true,
+          "win_margin_pct": 0.1266,
           "assets": [
             {
               "name": "Brandon Miller",
@@ -1215,8 +1361,8 @@
         {
           "owner": "Gold",
           "side_total": 131.11,
-          "is_winner": true,
-          "win_margin_pct": 0.2957,
+          "is_winner": false,
+          "win_margin_pct": -0.1266,
           "assets": [
             {
               "name": "Jabari Smith Jr",
@@ -1243,7 +1389,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Moss",
+      "cumulative_margin": 47.4,
+      "cumulative_values": {
+        "Moss": 374.5,
+        "Gold": 327.1
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 43,
@@ -1252,13 +1406,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 29.09,
+      "win_margin": 28.7,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 83.84,
           "is_winner": true,
-          "win_margin_pct": 0.347,
+          "win_margin_pct": 0.0648,
           "assets": [
             {
               "name": "Dejounte Murray",
@@ -1281,7 +1435,7 @@
           "owner": "Moss",
           "side_total": 54.75,
           "is_winner": false,
-          "win_margin_pct": -0.347,
+          "win_margin_pct": -0.0648,
           "assets": [
             {
               "name": "Paul George",
@@ -1299,7 +1453,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 28.7,
+      "cumulative_values": {
+        "Peterson": 442.9,
+        "Moss": 414.2
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 44,
@@ -1307,14 +1469,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Jowkar",
-      "win_margin": 12.08,
+      "winner": "Vlandis",
+      "win_margin": 21.2,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 76.12,
-          "is_winner": true,
-          "win_margin_pct": 0.1587,
+          "is_winner": false,
+          "win_margin_pct": -0.0648,
           "assets": [
             {
               "name": "Jaden Ivey",
@@ -1337,8 +1499,8 @@
         {
           "owner": "Vlandis",
           "side_total": 64.04,
-          "is_winner": false,
-          "win_margin_pct": -0.1587,
+          "is_winner": true,
+          "win_margin_pct": 0.0648,
           "assets": [
             {
               "name": "Caris Levert",
@@ -1356,7 +1518,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Vlandis",
+      "cumulative_margin": 21.2,
+      "cumulative_values": {
+        "Jowkar": 305.8,
+        "Vlandis": 327.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 45,
@@ -1365,13 +1535,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 42.32,
+      "win_margin": 181.8,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 151.72,
           "is_winner": true,
-          "win_margin_pct": 0.2789,
+          "win_margin_pct": 0.2496,
           "assets": [
             {
               "name": "Fred VanVleet",
@@ -1408,7 +1578,7 @@
           "owner": "Delaney",
           "side_total": 109.4,
           "is_winner": false,
-          "win_margin_pct": -0.2789,
+          "win_margin_pct": -0.2496,
           "assets": [
             {
               "name": "Dejounte Murray",
@@ -1441,7 +1611,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 181.8,
+      "cumulative_values": {
+        "Peterson": 728.3,
+        "Delaney": 546.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 46,
@@ -1450,13 +1628,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 95.62,
+      "win_margin": 63.0,
       "sides": [
         {
           "owner": "Vlandis",
           "side_total": 23.07,
           "is_winner": false,
-          "win_margin_pct": -0.8056,
+          "win_margin_pct": -0.2528,
           "assets": [
             {
               "name": "Cj McCollum",
@@ -1471,7 +1649,7 @@
           "owner": "Trager",
           "side_total": 118.69,
           "is_winner": true,
-          "win_margin_pct": 0.8056,
+          "win_margin_pct": 0.2528,
           "assets": [
             {
               "name": "Keegan Murray",
@@ -1491,7 +1669,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 63.0,
+      "cumulative_values": {
+        "Vlandis": 186.2,
+        "Trager": 249.2
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 47,
@@ -1500,13 +1686,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 0.76,
+      "win_margin": 84.8,
       "sides": [
         {
           "owner": "Green",
           "side_total": 32.44,
           "is_winner": false,
-          "win_margin_pct": -0.0229,
+          "win_margin_pct": -0.4769,
           "assets": [
             {
               "name": "Cason Wallace",
@@ -1522,7 +1708,7 @@
           "owner": "Jowkar",
           "side_total": 33.2,
           "is_winner": true,
-          "win_margin_pct": 0.0229,
+          "win_margin_pct": 0.4769,
           "assets": [
             {
               "name": "De'andre Hunter",
@@ -1533,7 +1719,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 84.8,
+      "cumulative_values": {
+        "Green": 93.0,
+        "Jowkar": 177.8
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 48,
@@ -1542,13 +1736,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 69.04,
+      "win_margin": 10.7,
       "sides": [
         {
           "owner": "Vlandis",
           "side_total": 47.26,
           "is_winner": false,
-          "win_margin_pct": -0.5936,
+          "win_margin_pct": -0.0322,
           "assets": [
             {
               "name": "Jae'Sean Tate",
@@ -1577,7 +1771,7 @@
           "owner": "Jowkar",
           "side_total": 116.3,
           "is_winner": true,
-          "win_margin_pct": 0.5936,
+          "win_margin_pct": 0.0322,
           "assets": [
             {
               "name": "Malik Beasley",
@@ -1612,7 +1806,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 10.7,
+      "cumulative_values": {
+        "Vlandis": 321.6,
+        "Jowkar": 332.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 49,
@@ -1620,14 +1822,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Jowkar",
-      "win_margin": 85.31,
+      "winner": "Vlandis",
+      "win_margin": 31.8,
       "sides": [
         {
           "owner": "Vlandis",
           "side_total": 27.9,
-          "is_winner": false,
-          "win_margin_pct": -0.7536,
+          "is_winner": true,
+          "win_margin_pct": 0.1596,
           "assets": [
             {
               "name": "Jusuf Nurkic",
@@ -1641,8 +1843,8 @@
         {
           "owner": "Jowkar",
           "side_total": 113.21,
-          "is_winner": true,
-          "win_margin_pct": 0.7536,
+          "is_winner": false,
+          "win_margin_pct": -0.1596,
           "assets": [
             {
               "name": "Reggie Jackson",
@@ -1669,7 +1871,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Vlandis",
+      "cumulative_margin": 31.8,
+      "cumulative_values": {
+        "Vlandis": 199.2,
+        "Jowkar": 167.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 50,
@@ -1678,13 +1888,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 16.37,
+      "win_margin": 21.8,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 38.86,
           "is_winner": true,
-          "win_margin_pct": 0.4213,
+          "win_margin_pct": 0.1347,
           "assets": [
             {
               "name": "Jeremy Sochan",
@@ -1708,7 +1918,7 @@
           "owner": "Vlandis",
           "side_total": 22.49,
           "is_winner": false,
-          "win_margin_pct": -0.4213,
+          "win_margin_pct": -0.1347,
           "assets": [
             {
               "name": "Mo Bamba",
@@ -1727,7 +1937,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 21.8,
+      "cumulative_values": {
+        "Trager": 161.8,
+        "Vlandis": 140.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 51,
@@ -1736,13 +1954,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 69.33,
+      "win_margin": 89.4,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 116.17,
           "is_winner": true,
-          "win_margin_pct": 0.5968,
+          "win_margin_pct": 0.2143,
           "assets": [
             {
               "name": "Tyler Herro",
@@ -1765,7 +1983,7 @@
           "owner": "Vlandis",
           "side_total": 46.84,
           "is_winner": false,
-          "win_margin_pct": -0.5968,
+          "win_margin_pct": -0.2143,
           "assets": [
             {
               "name": "Jonas Valanciunas",
@@ -1791,7 +2009,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Moss",
+      "cumulative_margin": 89.4,
+      "cumulative_values": {
+        "Moss": 417.1,
+        "Vlandis": 327.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 52,
@@ -1800,13 +2026,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 4.52,
+      "win_margin": 2.1,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 12.89,
           "is_winner": false,
-          "win_margin_pct": -0.2596,
+          "win_margin_pct": -0.056,
           "assets": [
             {
               "name": "Kemba Walker",
@@ -1821,7 +2047,7 @@
           "owner": "Jowkar",
           "side_total": 17.41,
           "is_winner": true,
-          "win_margin_pct": 0.2596,
+          "win_margin_pct": 0.056,
           "assets": [
             {
               "name": "Dalton Knecht",
@@ -1833,7 +2059,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 2.1,
+      "cumulative_values": {
+        "Berke": 35.4,
+        "Jowkar": 37.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 53,
@@ -1842,13 +2076,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 135.6,
+      "win_margin": 650.7,
       "sides": [
         {
           "owner": "Green",
           "side_total": 117.84,
           "is_winner": false,
-          "win_margin_pct": -0.535,
+          "win_margin_pct": -0.4535,
           "assets": [
             {
               "name": "Joel Embiid",
@@ -1871,7 +2105,7 @@
           "owner": "Peterson",
           "side_total": 253.44,
           "is_winner": true,
-          "win_margin_pct": 0.535,
+          "win_margin_pct": 0.4535,
           "assets": [
             {
               "name": "Domantas Sabonis",
@@ -1934,7 +2168,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 650.7,
+      "cumulative_values": {
+        "Green": 784.0,
+        "Peterson": 1434.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 54,
@@ -1943,13 +2185,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 32.65,
+      "win_margin": 192.0,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 216.67,
           "is_winner": true,
-          "win_margin_pct": 0.1507,
+          "win_margin_pct": 0.1898,
           "assets": [
             {
               "name": "Luka Doncic",
@@ -1987,7 +2229,7 @@
           "owner": "Delaney",
           "side_total": 184.02,
           "is_winner": false,
-          "win_margin_pct": -0.1507,
+          "win_margin_pct": -0.1898,
           "assets": [
             {
               "name": "Bradley Beal",
@@ -2043,7 +2285,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 192.0,
+      "cumulative_values": {
+        "Jowkar": 1011.4,
+        "Delaney": 819.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 55,
@@ -2052,13 +2302,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 22.31,
+      "win_margin": 91.6,
       "sides": [
         {
           "owner": "Vlandis",
           "side_total": 86.74,
           "is_winner": false,
-          "win_margin_pct": -0.2046,
+          "win_margin_pct": -0.1914,
           "assets": [
             {
               "name": "Desmond Bane",
@@ -2089,7 +2339,7 @@
           "owner": "Trager",
           "side_total": 109.05,
           "is_winner": true,
-          "win_margin_pct": 0.2046,
+          "win_margin_pct": 0.1914,
           "assets": [
             {
               "name": "Bilal Coulibaly",
@@ -2123,7 +2373,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 91.6,
+      "cumulative_values": {
+        "Vlandis": 386.9,
+        "Trager": 478.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 56,
@@ -2131,14 +2389,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Vlandis",
-      "win_margin": 57.18,
+      "winner": "Moss",
+      "win_margin": 2.9,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 66.86,
-          "is_winner": false,
-          "win_margin_pct": -0.461,
+          "is_winner": true,
+          "win_margin_pct": 0.0077,
           "assets": [
             {
               "name": "De'Aaron Fox",
@@ -2152,8 +2410,8 @@
         {
           "owner": "Vlandis",
           "side_total": 124.04,
-          "is_winner": true,
-          "win_margin_pct": 0.461,
+          "is_winner": false,
+          "win_margin_pct": -0.0077,
           "assets": [
             {
               "name": "Tobias Harris",
@@ -2179,7 +2437,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Moss",
+      "cumulative_margin": 2.9,
+      "cumulative_values": {
+        "Moss": 379.0,
+        "Vlandis": 376.1
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 57,
@@ -2187,14 +2453,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Peterson",
-      "win_margin": 54.21,
+      "winner": "Vlandis",
+      "win_margin": 208.5,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 184.84,
-          "is_winner": true,
-          "win_margin_pct": 0.2933,
+          "is_winner": false,
+          "win_margin_pct": -0.2719,
           "assets": [
             {
               "name": "Tobias Harris",
@@ -2230,8 +2496,8 @@
         {
           "owner": "Vlandis",
           "side_total": 130.63,
-          "is_winner": false,
-          "win_margin_pct": -0.2933,
+          "is_winner": true,
+          "win_margin_pct": 0.2719,
           "assets": [
             {
               "name": "De'Angelo Russell",
@@ -2264,7 +2530,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Vlandis",
+      "cumulative_margin": 208.5,
+      "cumulative_values": {
+        "Peterson": 558.3,
+        "Vlandis": 766.8
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 58,
@@ -2272,14 +2546,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Gold",
-      "win_margin": 1.97,
+      "winner": "Vlandis",
+      "win_margin": 27.4,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 56.97,
-          "is_winner": true,
-          "win_margin_pct": 0.0346,
+          "is_winner": false,
+          "win_margin_pct": -0.1347,
           "assets": [
             {
               "name": "Bennedict Mathurin",
@@ -2302,8 +2576,8 @@
         {
           "owner": "Vlandis",
           "side_total": 55.0,
-          "is_winner": false,
-          "win_margin_pct": -0.0346,
+          "is_winner": true,
+          "win_margin_pct": 0.1347,
           "assets": [
             {
               "name": "Shaedon Sharpe",
@@ -2323,7 +2597,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Vlandis",
+      "cumulative_margin": 27.4,
+      "cumulative_values": {
+        "Gold": 176.0,
+        "Vlandis": 203.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 59,
@@ -2332,13 +2614,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Vlandis",
-      "win_margin": 17.53,
+      "win_margin": 75.8,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 10.1,
           "is_winner": false,
-          "win_margin_pct": -0.6345,
+          "win_margin_pct": -0.3983,
           "assets": [
             {
               "name": "Mo Bamba",
@@ -2353,7 +2635,7 @@
           "owner": "Vlandis",
           "side_total": 27.63,
           "is_winner": true,
-          "win_margin_pct": 0.6345,
+          "win_margin_pct": 0.3983,
           "assets": [
             {
               "name": "Jemai Grant",
@@ -2364,7 +2646,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Vlandis",
+      "cumulative_margin": 75.8,
+      "cumulative_values": {
+        "Gold": 114.5,
+        "Vlandis": 190.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 60,
@@ -2373,13 +2663,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 17.43,
+      "win_margin": 98.9,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 94.07,
           "is_winner": true,
-          "win_margin_pct": 0.1853,
+          "win_margin_pct": 0.244,
           "assets": [
             {
               "name": "Coby White",
@@ -2410,7 +2700,7 @@
           "owner": "Vlandis",
           "side_total": 76.64,
           "is_winner": false,
-          "win_margin_pct": -0.1853,
+          "win_margin_pct": -0.244,
           "assets": [
             {
               "name": "Clint Capela",
@@ -2445,7 +2735,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 98.9,
+      "cumulative_values": {
+        "Jowkar": 405.4,
+        "Vlandis": 306.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 61,
@@ -2454,13 +2752,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 37.38,
+      "win_margin": 142.4,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 37.38,
           "is_winner": true,
-          "win_margin_pct": 1.0,
+          "win_margin_pct": 0.9596,
           "assets": [
             {
               "name": "Quentin Grimes",
@@ -2476,7 +2774,7 @@
           "owner": "Green",
           "side_total": 0.0,
           "is_winner": false,
-          "win_margin_pct": -1.0,
+          "win_margin_pct": -0.9596,
           "assets": [
             {
               "name": "Right to swap Green 2025 2nd round Trager 2025 2nd round (if it doesn't convey, right to swap Green 2026 2nd round with Trager 2026 2nd round)",
@@ -2487,7 +2785,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 142.4,
+      "cumulative_values": {
+        "Trager": 148.4,
+        "Green": 6.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 62,
@@ -2496,13 +2802,13 @@
       "is_multi_party": true,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 2.83,
+      "win_margin": 91.3,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 38.22,
           "is_winner": false,
-          "win_margin_pct": -0.0262,
+          "win_margin_pct": -0.3015,
           "assets": [
             {
               "name": "Shaedon Sharpe",
@@ -2518,7 +2824,7 @@
           "owner": "Trager",
           "side_total": 108.21,
           "is_winner": true,
-          "win_margin_pct": 0.0262,
+          "win_margin_pct": 0.3015,
           "assets": [
             {
               "name": "Mark Williams",
@@ -2550,7 +2856,7 @@
           "owner": "Jowkar",
           "side_total": 67.16,
           "is_winner": false,
-          "win_margin_pct": -0.0262,
+          "win_margin_pct": -0.3015,
           "assets": [
             {
               "name": "Tari Eason",
@@ -2578,7 +2884,16 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 91.3,
+      "cumulative_values": {
+        "Gold": 150.4,
+        "Trager": 302.8,
+        "Jowkar": 211.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 63,
@@ -2587,13 +2902,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 87.04,
+      "win_margin": 180.3,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 58.67,
           "is_winner": false,
-          "win_margin_pct": -0.5974,
+          "win_margin_pct": -0.4002,
           "assets": [
             {
               "name": "Andre Drummond",
@@ -2630,7 +2945,7 @@
           "owner": "Jowkar",
           "side_total": 145.71,
           "is_winner": true,
-          "win_margin_pct": 0.5974,
+          "win_margin_pct": 0.4002,
           "assets": [
             {
               "name": "Egor Demin",
@@ -2656,7 +2971,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 180.3,
+      "cumulative_values": {
+        "Berke": 270.2,
+        "Jowkar": 450.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 64,
@@ -2665,13 +2988,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 48.35,
+      "win_margin": 193.6,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 89.65,
           "is_winner": false,
-          "win_margin_pct": -0.3504,
+          "win_margin_pct": -0.3941,
           "assets": [
             {
               "name": "Collin Sexton",
@@ -2694,7 +3017,7 @@
           "owner": "Peterson",
           "side_total": 138.0,
           "is_winner": true,
-          "win_margin_pct": 0.3504,
+          "win_margin_pct": 0.3941,
           "assets": [
             {
               "name": "Christian Wood",
@@ -2728,7 +3051,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 193.6,
+      "cumulative_values": {
+        "Berke": 297.6,
+        "Peterson": 491.2
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 65,
@@ -2737,13 +3068,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 50.37,
+      "win_margin": 141.9,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 78.87,
           "is_winner": false,
-          "win_margin_pct": -0.3897,
+          "win_margin_pct": -0.2118,
           "assets": [
             {
               "name": "James Harden",
@@ -2772,7 +3103,7 @@
           "owner": "Berke",
           "side_total": 129.24,
           "is_winner": true,
-          "win_margin_pct": 0.3897,
+          "win_margin_pct": 0.2118,
           "assets": [
             {
               "name": "Dejounte Murray",
@@ -2806,7 +3137,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 141.9,
+      "cumulative_values": {
+        "Delaney": 528.1,
+        "Berke": 670.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 66,
@@ -2815,13 +3154,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 38.32,
+      "win_margin": 90.1,
       "sides": [
         {
           "owner": "Green",
           "side_total": 42.45,
           "is_winner": false,
-          "win_margin_pct": -0.4744,
+          "win_margin_pct": -0.358,
           "assets": [
             {
               "name": "Saddiq Bey",
@@ -2837,7 +3176,7 @@
           "owner": "Trager",
           "side_total": 80.77,
           "is_winner": true,
-          "win_margin_pct": 0.4744,
+          "win_margin_pct": 0.358,
           "assets": [
             {
               "name": "Walker Kessler",
@@ -2857,7 +3196,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 90.1,
+      "cumulative_values": {
+        "Green": 161.6,
+        "Trager": 251.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 67,
@@ -2866,13 +3213,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 24.15,
+      "win_margin": 102.2,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 85.77,
           "is_winner": true,
-          "win_margin_pct": 0.2816,
+          "win_margin_pct": 0.3332,
           "assets": [
             {
               "name": "Walker Kessler",
@@ -2896,7 +3243,7 @@
           "owner": "Trager",
           "side_total": 61.62,
           "is_winner": false,
-          "win_margin_pct": -0.2816,
+          "win_margin_pct": -0.3332,
           "assets": [
             {
               "name": "TyTy Washington",
@@ -2924,7 +3271,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 102.2,
+      "cumulative_values": {
+        "Jowkar": 306.7,
+        "Trager": 204.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 68,
@@ -2933,13 +3288,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 77.3,
+      "win_margin": 97.4,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 92.06,
           "is_winner": true,
-          "win_margin_pct": 0.8397,
+          "win_margin_pct": 0.5411,
           "assets": [
             {
               "name": "Tre Johnson",
@@ -2963,7 +3318,7 @@
           "owner": "Delaney",
           "side_total": 14.76,
           "is_winner": false,
-          "win_margin_pct": -0.8397,
+          "win_margin_pct": -0.5411,
           "assets": [
             {
               "name": "Klay Thompson",
@@ -2974,7 +3329,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 97.4,
+      "cumulative_values": {
+        "Jowkar": 180.0,
+        "Delaney": 82.6
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 69,
@@ -2982,14 +3345,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Trager",
-      "win_margin": 52.62,
+      "winner": "Berke",
+      "win_margin": 229.0,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 97.2,
-          "is_winner": false,
-          "win_margin_pct": -0.3512,
+          "is_winner": true,
+          "win_margin_pct": 0.7932,
           "assets": [
             {
               "name": "Brandom Ingram",
@@ -3011,8 +3374,8 @@
         {
           "owner": "Trager",
           "side_total": 149.82,
-          "is_winner": true,
-          "win_margin_pct": 0.3512,
+          "is_winner": false,
+          "win_margin_pct": -0.7932,
           "assets": [
             {
               "name": "Carlton \"Bub\" Carrington",
@@ -3040,7 +3403,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 229.0,
+      "cumulative_values": {
+        "Berke": 288.7,
+        "Trager": 59.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 70,
@@ -3049,13 +3420,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 31.48,
+      "win_margin": 186.0,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 77.14,
           "is_winner": false,
-          "win_margin_pct": -0.2898,
+          "win_margin_pct": -0.3051,
           "assets": [
             {
               "name": "Paul George",
@@ -3084,7 +3455,7 @@
           "owner": "Peterson",
           "side_total": 108.62,
           "is_winner": true,
-          "win_margin_pct": 0.2898,
+          "win_margin_pct": 0.3051,
           "assets": [
             {
               "name": "Dejounte Murray",
@@ -3116,7 +3487,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 186.0,
+      "cumulative_values": {
+        "Berke": 423.7,
+        "Peterson": 609.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 71,
@@ -3125,13 +3504,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 26.68,
+      "win_margin": 108.1,
       "sides": [
         {
           "owner": "Green",
           "side_total": 21.96,
           "is_winner": false,
-          "win_margin_pct": -0.5485,
+          "win_margin_pct": -0.4934,
           "assets": [
             {
               "name": "Jarred Vanderbilt",
@@ -3146,7 +3525,7 @@
           "owner": "Peterson",
           "side_total": 48.64,
           "is_winner": true,
-          "win_margin_pct": 0.5485,
+          "win_margin_pct": 0.4934,
           "assets": [
             {
               "name": "Nicolas Claxton",
@@ -3157,7 +3536,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 108.1,
+      "cumulative_values": {
+        "Green": 111.0,
+        "Peterson": 219.1
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 72,
@@ -3166,13 +3553,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 74.37,
+      "win_margin": 25.2,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 36.27,
           "is_winner": false,
-          "win_margin_pct": -0.6722,
+          "win_margin_pct": -0.0968,
           "assets": [
             {
               "name": "Kristaps Porzingis",
@@ -3187,7 +3574,7 @@
           "owner": "Gold",
           "side_total": 110.64,
           "is_winner": true,
-          "win_margin_pct": 0.6722,
+          "win_margin_pct": 0.0968,
           "assets": [
             {
               "name": "Anthony Black",
@@ -3215,7 +3602,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Gold",
+      "cumulative_margin": 25.2,
+      "cumulative_values": {
+        "Moss": 235.2,
+        "Gold": 260.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 73,
@@ -3224,13 +3619,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": 25.2,
+      "win_margin": 145.2,
       "sides": [
         {
           "owner": "Kelley",
           "side_total": 33.2,
           "is_winner": true,
-          "win_margin_pct": 0.759,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "De'Andre Hunter",
@@ -3245,7 +3640,7 @@
           "owner": "Jowkar",
           "side_total": 8.0,
           "is_winner": false,
-          "win_margin_pct": -0.759,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -3257,7 +3652,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Kelley",
+      "cumulative_margin": 145.2,
+      "cumulative_values": {
+        "Kelley": 145.2,
+        "Jowkar": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 74,
@@ -3266,13 +3669,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 1.06,
+      "win_margin": 21.4,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 17.64,
           "is_winner": false,
-          "win_margin_pct": -0.0567,
+          "win_margin_pct": -0.219,
           "assets": [
             {
               "name": "Brandon Clarke",
@@ -3287,7 +3690,7 @@
           "owner": "Moss",
           "side_total": 18.7,
           "is_winner": true,
-          "win_margin_pct": 0.0567,
+          "win_margin_pct": 0.219,
           "assets": [
             {
               "name": "Kyle Anderson",
@@ -3298,7 +3701,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Moss",
+      "cumulative_margin": 21.4,
+      "cumulative_values": {
+        "Gold": 76.3,
+        "Moss": 97.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 75,
@@ -3307,13 +3718,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 32.27,
+      "win_margin": 113.3,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 33.94,
           "is_winner": false,
-          "win_margin_pct": -0.4874,
+          "win_margin_pct": -0.4525,
           "assets": [
             {
               "name": "Marcus Smart",
@@ -3335,7 +3746,7 @@
           "owner": "Trager",
           "side_total": 66.21,
           "is_winner": true,
-          "win_margin_pct": 0.4874,
+          "win_margin_pct": 0.4525,
           "assets": [
             {
               "name": "Cason Wallace",
@@ -3355,7 +3766,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 113.3,
+      "cumulative_values": {
+        "Peterson": 137.1,
+        "Trager": 250.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 76,
@@ -3364,13 +3783,13 @@
       "is_multi_party": true,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 17.6,
+      "win_margin": 11.4,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 20.29,
           "is_winner": false,
-          "win_margin_pct": -0.3425,
+          "win_margin_pct": -0.1015,
           "assets": [
             {
               "name": "Buddy Hield",
@@ -3385,7 +3804,7 @@
           "owner": "Trager",
           "side_total": 13.49,
           "is_winner": false,
-          "win_margin_pct": -0.3425,
+          "win_margin_pct": -0.1015,
           "assets": [
             {
               "name": "KJ Martin",
@@ -3400,7 +3819,7 @@
           "owner": "Jowkar",
           "side_total": 51.38,
           "is_winner": true,
-          "win_margin_pct": 0.3425,
+          "win_margin_pct": 0.1015,
           "assets": [
             {
               "name": "Brandin Podziemski",
@@ -3420,7 +3839,16 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 11.4,
+      "cumulative_values": {
+        "Peterson": 100.9,
+        "Trager": 0.0,
+        "Jowkar": 112.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 77,
@@ -3429,13 +3857,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 26.24,
+      "win_margin": 68.3,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 58.32,
           "is_winner": true,
-          "win_margin_pct": 0.4499,
+          "win_margin_pct": 0.3055,
           "assets": [
             {
               "name": "Jordan Hawkins",
@@ -3466,7 +3894,7 @@
           "owner": "Kelley",
           "side_total": 32.08,
           "is_winner": false,
-          "win_margin_pct": -0.4499,
+          "win_margin_pct": -0.3055,
           "assets": [
             {
               "name": "Kelly Oubre Jr.",
@@ -3477,7 +3905,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 68.3,
+      "cumulative_values": {
+        "Berke": 223.6,
+        "Kelley": 155.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 78,
@@ -3485,14 +3921,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Trager",
-      "win_margin": 25.18,
+      "winner": "Delaney",
+      "win_margin": 59.7,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 75.0,
-          "is_winner": true,
-          "win_margin_pct": 0.3357,
+          "is_winner": false,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -3507,8 +3943,8 @@
         {
           "owner": "Delaney",
           "side_total": 49.82,
-          "is_winner": false,
-          "win_margin_pct": -0.3357,
+          "is_winner": true,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Carlton \"Bub\" Carrington",
@@ -3536,7 +3972,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 59.7,
+      "cumulative_values": {
+        "Trager": 0.0,
+        "Delaney": 59.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 79,
@@ -3544,14 +3988,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Zujewski",
-      "win_margin": 76.22,
+      "winner": "Delaney",
+      "win_margin": 209.9,
       "sides": [
         {
           "owner": "Zujewski",
           "side_total": 115.23,
-          "is_winner": true,
-          "win_margin_pct": 0.6615,
+          "is_winner": false,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": "Wendall Carter Jr.",
@@ -3580,8 +4024,8 @@
         {
           "owner": "Delaney",
           "side_total": 39.01,
-          "is_winner": false,
-          "win_margin_pct": -0.6615,
+          "is_winner": true,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Kyrie Irving",
@@ -3592,7 +4036,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 209.9,
+      "cumulative_values": {
+        "Zujewski": 0.0,
+        "Delaney": 209.9
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 80,
@@ -3600,14 +4052,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Zujewski",
-      "win_margin": 10.01,
+      "winner": "Berke",
+      "win_margin": 83.7,
       "sides": [
         {
           "owner": "Zujewski",
           "side_total": 86.29,
-          "is_winner": true,
-          "win_margin_pct": 0.116,
+          "is_winner": false,
+          "win_margin_pct": -0.3223,
           "assets": [
             {
               "name": "Matas Buzelis",
@@ -3630,8 +4082,8 @@
         {
           "owner": "Berke",
           "side_total": 76.28,
-          "is_winner": false,
-          "win_margin_pct": -0.116,
+          "is_winner": true,
+          "win_margin_pct": 0.3223,
           "assets": [
             {
               "name": "Kawhi Leonard",
@@ -3642,7 +4094,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 83.7,
+      "cumulative_values": {
+        "Zujewski": 176.0,
+        "Berke": 259.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 81,
@@ -3650,14 +4110,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Zujewski",
-      "win_margin": 85.04,
+      "winner": "Peterson",
+      "win_margin": 275.3,
       "sides": [
         {
           "owner": "Zujewski",
           "side_total": 205.19,
-          "is_winner": true,
-          "win_margin_pct": 0.4144,
+          "is_winner": false,
+          "win_margin_pct": -0.492,
           "assets": [
             {
               "name": "Jaren Jackson Jr",
@@ -3695,8 +4155,8 @@
         {
           "owner": "Peterson",
           "side_total": 120.15,
-          "is_winner": false,
-          "win_margin_pct": -0.4144,
+          "is_winner": true,
+          "win_margin_pct": 0.492,
           "assets": [
             {
               "name": "Anthony Davis",
@@ -3730,7 +4190,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 275.3,
+      "cumulative_values": {
+        "Zujewski": 284.3,
+        "Peterson": 559.6
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 82,
@@ -3739,13 +4207,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 36.54,
+      "win_margin": 172.0,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 16.78,
           "is_winner": false,
-          "win_margin_pct": -0.6853,
+          "win_margin_pct": -0.7648,
           "assets": [
             {
               "name": "Jordan Hawkins",
@@ -3761,7 +4229,7 @@
           "owner": "Berke",
           "side_total": 53.32,
           "is_winner": true,
-          "win_margin_pct": 0.6853,
+          "win_margin_pct": 0.7648,
           "assets": [
             {
               "name": "Donte DiVincenzo",
@@ -3779,7 +4247,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 172.0,
+      "cumulative_values": {
+        "Jowkar": 52.9,
+        "Berke": 224.9
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 83,
@@ -3788,13 +4264,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 9.59,
+      "win_margin": 28.8,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 19.69,
           "is_winner": true,
-          "win_margin_pct": 0.487,
+          "win_margin_pct": 0.281,
           "assets": [
             {
               "name": "Jordan Clarkson",
@@ -3809,7 +4285,7 @@
           "owner": "Berke",
           "side_total": 10.1,
           "is_winner": false,
-          "win_margin_pct": -0.487,
+          "win_margin_pct": -0.281,
           "assets": [
             {
               "name": "Mo Bamba",
@@ -3820,7 +4296,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 28.8,
+      "cumulative_values": {
+        "Jowkar": 102.5,
+        "Berke": 73.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 84,
@@ -3829,13 +4313,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 1.69,
+      "win_margin": 102.5,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 19.69,
           "is_winner": true,
-          "win_margin_pct": 0.0858,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Jordan Clarkson",
@@ -3850,7 +4334,7 @@
           "owner": "Jowkar",
           "side_total": 18.0,
           "is_winner": false,
-          "win_margin_pct": -0.0858,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -3870,7 +4354,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Moss",
+      "cumulative_margin": 102.5,
+      "cumulative_values": {
+        "Moss": 102.5,
+        "Jowkar": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 85,
@@ -3879,13 +4371,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 14.05,
+      "win_margin": 128.8,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 47.16,
           "is_winner": false,
-          "win_margin_pct": -0.2295,
+          "win_margin_pct": -0.489,
           "assets": [
             {
               "name": "Tobias Harris",
@@ -3923,7 +4415,7 @@
           "owner": "Berke",
           "side_total": 61.21,
           "is_winner": true,
-          "win_margin_pct": 0.2295,
+          "win_margin_pct": 0.489,
           "assets": [
             {
               "name": "Josh Hart",
@@ -3941,7 +4433,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 128.8,
+      "cumulative_values": {
+        "Peterson": 134.6,
+        "Berke": 263.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 86,
@@ -3949,14 +4449,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Kelley",
-      "win_margin": 72.03,
+      "winner": "Jowkar",
+      "win_margin": 203.6,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 82.02,
-          "is_winner": false,
-          "win_margin_pct": -0.4676,
+          "is_winner": true,
+          "win_margin_pct": 0.5002,
           "assets": [
             {
               "name": "Karl Anthony-Towns",
@@ -3977,8 +4477,8 @@
         {
           "owner": "Kelley",
           "side_total": 154.05,
-          "is_winner": true,
-          "win_margin_pct": 0.4676,
+          "is_winner": false,
+          "win_margin_pct": -0.5002,
           "assets": [
             {
               "name": "Michael Porter Jr.",
@@ -4035,7 +4535,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 203.6,
+      "cumulative_values": {
+        "Jowkar": 407.0,
+        "Kelley": 203.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 87,
@@ -4044,13 +4552,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 103.61,
+      "win_margin": 116.4,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 43.16,
           "is_winner": false,
-          "win_margin_pct": -0.7059,
+          "win_margin_pct": -0.3381,
           "assets": [
             {
               "name": "Pascal Siakam",
@@ -4065,7 +4573,7 @@
           "owner": "Delaney",
           "side_total": 146.77,
           "is_winner": true,
-          "win_margin_pct": 0.7059,
+          "win_margin_pct": 0.3381,
           "assets": [
             {
               "name": "Jarace Walker",
@@ -4100,7 +4608,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 116.4,
+      "cumulative_values": {
+        "Jowkar": 227.9,
+        "Delaney": 344.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 88,
@@ -4108,14 +4624,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Trager",
-      "win_margin": 14.64,
+      "winner": "Delaney",
+      "win_margin": 94.6,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 77.42,
-          "is_winner": false,
-          "win_margin_pct": -0.159,
+          "is_winner": true,
+          "win_margin_pct": 0.3445,
           "assets": [
             {
               "name": "John Collins",
@@ -4137,8 +4653,8 @@
         {
           "owner": "Trager",
           "side_total": 92.06,
-          "is_winner": true,
-          "win_margin_pct": 0.159,
+          "is_winner": false,
+          "win_margin_pct": -0.3445,
           "assets": [
             {
               "name": "Tre Johnson",
@@ -4158,7 +4674,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 94.6,
+      "cumulative_values": {
+        "Delaney": 274.6,
+        "Trager": 180.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 89,
@@ -4167,13 +4691,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 8.38,
+      "win_margin": 38.1,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 102.35,
           "is_winner": true,
-          "win_margin_pct": 0.0819,
+          "win_margin_pct": 0.2016,
           "assets": [
             {
               "name": "Nicholas Claxton",
@@ -4196,7 +4720,7 @@
           "owner": "Peterson",
           "side_total": 93.97,
           "is_winner": false,
-          "win_margin_pct": -0.0819,
+          "win_margin_pct": -0.2016,
           "assets": [
             {
               "name": "Tre Johnson",
@@ -4224,7 +4748,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 38.1,
+      "cumulative_values": {
+        "Trager": 189.0,
+        "Peterson": 150.9
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 90,
@@ -4233,13 +4765,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 17.13,
+      "win_margin": 46.0,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 86.41,
           "is_winner": true,
-          "win_margin_pct": 0.1982,
+          "win_margin_pct": 0.1525,
           "assets": [
             {
               "name": "Derrick White",
@@ -4262,7 +4794,7 @@
           "owner": "Peterson",
           "side_total": 69.28,
           "is_winner": false,
-          "win_margin_pct": -0.1982,
+          "win_margin_pct": -0.1525,
           "assets": [
             {
               "name": "Jusuf Nurkic",
@@ -4281,7 +4813,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 46.0,
+      "cumulative_values": {
+        "Jowkar": 301.7,
+        "Peterson": 255.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 91,
@@ -4290,13 +4830,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 23.2,
+      "win_margin": 296.8,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 85.46,
           "is_winner": true,
-          "win_margin_pct": 0.2715,
+          "win_margin_pct": 0.6603,
           "assets": [
             {
               "name": "Kyle Kuzma",
@@ -4325,7 +4865,7 @@
           "owner": "Gold",
           "side_total": 62.26,
           "is_winner": false,
-          "win_margin_pct": -0.2715,
+          "win_margin_pct": -0.6603,
           "assets": [
             {
               "name": "Carlton \"Bub\" Carrington",
@@ -4345,7 +4885,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 296.8,
+      "cumulative_values": {
+        "Delaney": 449.5,
+        "Gold": 152.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 92,
@@ -4353,14 +4901,14 @@
       "date": "",
       "is_multi_party": true,
       "is_collusion": false,
-      "winner": "Kelley",
-      "win_margin": -53.7,
+      "winner": "Green",
+      "win_margin": 157.2,
       "sides": [
         {
           "owner": "Kelley",
           "side_total": 255.1,
           "is_winner": false,
-          "win_margin_pct": -0.2105,
+          "win_margin_pct": -0.2329,
           "assets": [
             {
               "name": "Mikal Bridges",
@@ -4437,8 +4985,8 @@
         {
           "owner": "Gold",
           "side_total": 125.86,
-          "is_winner": true,
-          "win_margin_pct": 0.2105,
+          "is_winner": false,
+          "win_margin_pct": -0.2329,
           "assets": [
             {
               "name": "Jalen Duren",
@@ -4469,7 +5017,7 @@
           "owner": "Green",
           "side_total": 153.87,
           "is_winner": true,
-          "win_margin_pct": 0.2105,
+          "win_margin_pct": 0.2329,
           "assets": [
             {
               "name": "Jalen Brunson",
@@ -4498,8 +5046,8 @@
         {
           "owner": "Trager",
           "side_total": 29.07,
-          "is_winner": true,
-          "win_margin_pct": 0.2105,
+          "is_winner": false,
+          "win_margin_pct": -0.2329,
           "assets": [
             {
               "name": "Egor Demin",
@@ -4518,7 +5066,17 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Green",
+      "cumulative_margin": 157.2,
+      "cumulative_values": {
+        "Kelley": 517.9,
+        "Gold": 359.8,
+        "Green": 675.1,
+        "Trager": 30.6
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 93,
@@ -4527,13 +5085,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 19.49,
+      "win_margin": 252.1,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 64.49,
           "is_winner": true,
-          "win_margin_pct": 0.3022,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Cam Johnson",
@@ -4556,7 +5114,7 @@
           "owner": "Gold",
           "side_total": 45.0,
           "is_winner": false,
-          "win_margin_pct": -0.3022,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -4568,7 +5126,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 252.1,
+      "cumulative_values": {
+        "Delaney": 252.1,
+        "Gold": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 94,
@@ -4576,14 +5142,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Kelley",
-      "win_margin": 18.91,
+      "winner": "Jowkar",
+      "win_margin": 24.3,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 15.87,
-          "is_winner": false,
-          "win_margin_pct": -0.5437,
+          "is_winner": true,
+          "win_margin_pct": 0.3148,
           "assets": [
             {
               "name": "Cam Whitmore",
@@ -4597,8 +5163,8 @@
         {
           "owner": "Kelley",
           "side_total": 34.78,
-          "is_winner": true,
-          "win_margin_pct": 0.5437,
+          "is_winner": false,
+          "win_margin_pct": -0.3148,
           "assets": [
             {
               "name": "Jordan Hawkins",
@@ -4626,7 +5192,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 24.3,
+      "cumulative_values": {
+        "Jowkar": 77.2,
+        "Kelley": 52.9
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 95,
@@ -4634,14 +5208,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Jowkar",
-      "win_margin": 44.13,
+      "winner": "Gold",
+      "win_margin": 77.2,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 15.87,
-          "is_winner": false,
-          "win_margin_pct": -0.7355,
+          "is_winner": true,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Cam Whitmore",
@@ -4655,8 +5229,8 @@
         {
           "owner": "Jowkar",
           "side_total": 60.0,
-          "is_winner": true,
-          "win_margin_pct": 0.7355,
+          "is_winner": false,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -4684,7 +5258,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Gold",
+      "cumulative_margin": 77.2,
+      "cumulative_values": {
+        "Gold": 77.2,
+        "Jowkar": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 96,
@@ -4693,13 +5275,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 53.58,
+      "win_margin": 219.1,
       "sides": [
         {
           "owner": "Zujewski",
           "side_total": 135.5,
           "is_winner": true,
-          "win_margin_pct": 0.3954,
+          "win_margin_pct": 0.4973,
           "assets": [
             {
               "name": "Deandre Ayton",
@@ -4736,7 +5318,7 @@
           "owner": "Trager",
           "side_total": 81.92,
           "is_winner": false,
-          "win_margin_pct": -0.3954,
+          "win_margin_pct": -0.4973,
           "assets": [
             {
               "name": "Ausar Thompson",
@@ -4763,7 +5345,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Zujewski",
+      "cumulative_margin": 219.1,
+      "cumulative_values": {
+        "Zujewski": 440.6,
+        "Trager": 221.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 97,
@@ -4772,13 +5362,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Moss",
-      "win_margin": 46.07,
+      "win_margin": 44.4,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 88.74,
           "is_winner": true,
-          "win_margin_pct": 0.5192,
+          "win_margin_pct": 0.2232,
           "assets": [
             {
               "name": null,
@@ -4808,7 +5398,7 @@
           "owner": "Kelley",
           "side_total": 42.67,
           "is_winner": false,
-          "win_margin_pct": -0.5192,
+          "win_margin_pct": -0.2232,
           "assets": [
             {
               "name": "Kristaps Porzingus",
@@ -4819,7 +5409,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Moss",
+      "cumulative_margin": 44.4,
+      "cumulative_values": {
+        "Moss": 198.9,
+        "Kelley": 154.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 98,
@@ -4827,14 +5425,14 @@
       "date": "2023-10-26 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Peterson",
-      "win_margin": 7.03,
+      "winner": "Trager",
+      "win_margin": 97.6,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 46.68,
-          "is_winner": false,
-          "win_margin_pct": -0.1309,
+          "is_winner": true,
+          "win_margin_pct": 0.6451,
           "assets": [
             {
               "name": "Coby White",
@@ -4848,8 +5446,8 @@
         {
           "owner": "Peterson",
           "side_total": 53.71,
-          "is_winner": true,
-          "win_margin_pct": 0.1309,
+          "is_winner": false,
+          "win_margin_pct": -0.6451,
           "assets": [
             {
               "name": "Derik Queen",
@@ -4861,7 +5459,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 97.6,
+      "cumulative_values": {
+        "Trager": 151.3,
+        "Peterson": 53.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 99,
@@ -4869,14 +5475,14 @@
       "date": "2023-11-14 00:00:00",
       "is_multi_party": false,
       "is_collusion": true,
-      "winner": "Moss",
-      "win_margin": 51.96,
+      "winner": "Kelley",
+      "win_margin": 112.9,
       "sides": [
         {
           "owner": "Kelley",
           "side_total": 222.12,
-          "is_winner": false,
-          "win_margin_pct": -0.1896,
+          "is_winner": true,
+          "win_margin_pct": 0.1558,
           "assets": [
             {
               "name": "De'Aaron Fox",
@@ -4918,8 +5524,8 @@
         {
           "owner": "Moss",
           "side_total": 274.08,
-          "is_winner": true,
-          "win_margin_pct": 0.1896,
+          "is_winner": false,
+          "win_margin_pct": -0.1558,
           "assets": [
             {
               "name": "CJ McCollum",
@@ -5014,7 +5620,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Kelley",
+      "cumulative_margin": 112.9,
+      "cumulative_values": {
+        "Kelley": 724.8,
+        "Moss": 611.9
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 100,
@@ -5023,13 +5637,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 63.24,
+      "win_margin": 28.2,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 212.14,
           "is_winner": true,
-          "win_margin_pct": 0.2981,
+          "win_margin_pct": 0.0531,
           "assets": [
             {
               "name": "Shai Gilgeous-Alexander",
@@ -5052,7 +5666,7 @@
           "owner": "Berke",
           "side_total": 148.9,
           "is_winner": false,
-          "win_margin_pct": -0.2981,
+          "win_margin_pct": -0.0531,
           "assets": [
             {
               "name": "Kevin Durant",
@@ -5084,7 +5698,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 28.2,
+      "cumulative_values": {
+        "Delaney": 531.5,
+        "Berke": 503.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 101,
@@ -5092,14 +5714,14 @@
       "date": "2023-11-16 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Delaney",
-      "win_margin": 61.74,
+      "winner": "Peterson",
+      "win_margin": 126.3,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 49.78,
-          "is_winner": false,
-          "win_margin_pct": -0.5536,
+          "is_winner": true,
+          "win_margin_pct": 0.8107,
           "assets": [
             {
               "name": "Bradley Beal",
@@ -5120,8 +5742,8 @@
         {
           "owner": "Delaney",
           "side_total": 111.52,
-          "is_winner": true,
-          "win_margin_pct": 0.5536,
+          "is_winner": false,
+          "win_margin_pct": -0.8107,
           "assets": [
             {
               "name": "Tre Johnson",
@@ -5149,7 +5771,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 126.3,
+      "cumulative_values": {
+        "Peterson": 155.8,
+        "Delaney": 29.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 102,
@@ -5158,13 +5788,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 68.68,
+      "win_margin": 107.6,
       "sides": [
         {
           "owner": "Green",
           "side_total": 59.38,
           "is_winner": false,
-          "win_margin_pct": -0.5363,
+          "win_margin_pct": -0.3894,
           "assets": [
             {
               "name": "Kyle Kuzma",
@@ -5186,7 +5816,7 @@
           "owner": "Delaney",
           "side_total": 128.06,
           "is_winner": true,
-          "win_margin_pct": 0.5363,
+          "win_margin_pct": 0.3894,
           "assets": [
             {
               "name": "Dyson Daniels",
@@ -5228,7 +5858,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 107.6,
+      "cumulative_values": {
+        "Green": 168.7,
+        "Delaney": 276.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 103,
@@ -5237,13 +5875,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 26.69,
+      "win_margin": 52.0,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 14.76,
           "is_winner": false,
-          "win_margin_pct": -0.6439,
+          "win_margin_pct": -0.5123,
           "assets": [
             {
               "name": "Klay Thompson",
@@ -5258,7 +5896,7 @@
           "owner": "Delaney",
           "side_total": 41.45,
           "is_winner": true,
-          "win_margin_pct": 0.6439,
+          "win_margin_pct": 0.5123,
           "assets": [
             {
               "name": "Luguentz Dort",
@@ -5277,7 +5915,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 52.0,
+      "cumulative_values": {
+        "Jowkar": 49.5,
+        "Delaney": 101.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 104,
@@ -5286,13 +5932,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 38.56,
+      "win_margin": 152.9,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 172.14,
           "is_winner": false,
-          "win_margin_pct": -0.183,
+          "win_margin_pct": -0.2234,
           "assets": [
             {
               "name": "Shai Gilgeous-Alexander",
@@ -5307,7 +5953,7 @@
           "owner": "Delaney",
           "side_total": 210.7,
           "is_winner": true,
-          "win_margin_pct": 0.183,
+          "win_margin_pct": 0.2234,
           "assets": [
             {
               "name": "Devin Booker",
@@ -5340,7 +5986,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 152.9,
+      "cumulative_values": {
+        "Gold": 531.5,
+        "Delaney": 684.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 105,
@@ -5349,13 +6003,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 28.02,
+      "win_margin": 24.5,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 41.38,
           "is_winner": false,
-          "win_margin_pct": -0.4037,
+          "win_margin_pct": -0.1791,
           "assets": [
             {
               "name": "Brandon Podziemski",
@@ -5370,7 +6024,7 @@
           "owner": "Peterson",
           "side_total": 69.4,
           "is_winner": true,
-          "win_margin_pct": 0.4037,
+          "win_margin_pct": 0.1791,
           "assets": [
             {
               "name": null,
@@ -5390,7 +6044,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 24.5,
+      "cumulative_values": {
+        "Jowkar": 112.3,
+        "Peterson": 136.8
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 106,
@@ -5399,13 +6061,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 3.59,
+      "win_margin": 39.2,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 58.26,
           "is_winner": true,
-          "win_margin_pct": 0.0616,
+          "win_margin_pct": 0.1974,
           "assets": [
             {
               "name": "Jusuf Nurkic",
@@ -5427,7 +6089,7 @@
           "owner": "Peterson",
           "side_total": 54.67,
           "is_winner": false,
-          "win_margin_pct": -0.0616,
+          "win_margin_pct": -0.1974,
           "assets": [
             {
               "name": "Kyrie Irving",
@@ -5446,7 +6108,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 39.2,
+      "cumulative_values": {
+        "Berke": 198.6,
+        "Peterson": 159.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 107,
@@ -5455,13 +6125,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 15.24,
+      "win_margin": 38.8,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 18.53,
           "is_winner": false,
-          "win_margin_pct": -0.4513,
+          "win_margin_pct": -0.3569,
           "assets": [
             {
               "name": "Draymond Green",
@@ -5476,7 +6146,7 @@
           "owner": "Delaney",
           "side_total": 33.77,
           "is_winner": true,
-          "win_margin_pct": 0.4513,
+          "win_margin_pct": 0.3569,
           "assets": [
             {
               "name": "Kelly Oubre",
@@ -5488,7 +6158,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 38.8,
+      "cumulative_values": {
+        "Peterson": 69.9,
+        "Delaney": 108.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 108,
@@ -5497,13 +6175,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 22.06,
+      "win_margin": 32.1,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 54.39,
           "is_winner": false,
-          "win_margin_pct": -0.2886,
+          "win_margin_pct": -0.2199,
           "assets": [
             {
               "name": "Bojan Bogdanovic",
@@ -5532,7 +6210,7 @@
           "owner": "Delaney",
           "side_total": 76.45,
           "is_winner": true,
-          "win_margin_pct": 0.2886,
+          "win_margin_pct": 0.2199,
           "assets": [
             {
               "name": "De'Andre Hunter",
@@ -5559,7 +6237,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 32.1,
+      "cumulative_values": {
+        "Berke": 113.9,
+        "Delaney": 146.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 109,
@@ -5568,13 +6254,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 61.86,
+      "win_margin": 58.2,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 25.62,
           "is_winner": false,
-          "win_margin_pct": -0.7071,
+          "win_margin_pct": -0.3582,
           "assets": [
             {
               "name": "Tyus Jones",
@@ -5589,7 +6275,7 @@
           "owner": "Delaney",
           "side_total": 87.48,
           "is_winner": true,
-          "win_margin_pct": 0.7071,
+          "win_margin_pct": 0.3582,
           "assets": [
             {
               "name": "Derik Queen",
@@ -5609,7 +6295,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 58.2,
+      "cumulative_values": {
+        "Peterson": 104.3,
+        "Delaney": 162.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 110,
@@ -5618,13 +6312,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 60.35,
+      "win_margin": 173.5,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 7.0,
           "is_winner": false,
-          "win_margin_pct": -0.8961,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -5640,7 +6334,7 @@
           "owner": "Delaney",
           "side_total": 67.35,
           "is_winner": true,
-          "win_margin_pct": 0.8961,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Saddiq Bey",
@@ -5658,7 +6352,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 173.5,
+      "cumulative_values": {
+        "Jowkar": 0.0,
+        "Delaney": 173.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 111,
@@ -5666,14 +6368,14 @@
       "date": "2024-02-11 00:00:00",
       "is_multi_party": false,
       "is_collusion": true,
-      "winner": "Kelley",
-      "win_margin": 176.95,
+      "winner": "Moss",
+      "win_margin": 60.8,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 210.86,
-          "is_winner": false,
-          "win_margin_pct": -0.4563,
+          "is_winner": true,
+          "win_margin_pct": 0.0918,
           "assets": [
             {
               "name": "De'Aaron Fox",
@@ -5716,8 +6418,8 @@
         {
           "owner": "Kelley",
           "side_total": 387.81,
-          "is_winner": true,
-          "win_margin_pct": 0.4563,
+          "is_winner": false,
+          "win_margin_pct": -0.0918,
           "assets": [
             {
               "name": "Jonas Valanciunas",
@@ -5830,7 +6532,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Moss",
+      "cumulative_margin": 60.8,
+      "cumulative_values": {
+        "Moss": 662.6,
+        "Kelley": 601.8
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 112,
@@ -5838,14 +6548,14 @@
       "date": "2024-02-11 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Kelley",
-      "win_margin": 43.16,
+      "winner": "Jowkar",
+      "win_margin": 58.4,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 64.15,
-          "is_winner": false,
-          "win_margin_pct": -0.4022,
+          "is_winner": true,
+          "win_margin_pct": 0.2288,
           "assets": [
             {
               "name": "D'Angelo Russell",
@@ -5866,8 +6576,8 @@
         {
           "owner": "Kelley",
           "side_total": 107.31,
-          "is_winner": true,
-          "win_margin_pct": 0.4022,
+          "is_winner": false,
+          "win_margin_pct": -0.2288,
           "assets": [
             {
               "name": "Marvin Bagley",
@@ -5917,7 +6627,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 58.4,
+      "cumulative_values": {
+        "Jowkar": 255.2,
+        "Kelley": 196.8
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 113,
@@ -5925,14 +6643,14 @@
       "date": "",
       "is_multi_party": false,
       "is_collusion": true,
-      "winner": "Moss",
-      "win_margin": 21.81,
+      "winner": "Kelley",
+      "win_margin": 20.2,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 40.0,
-          "is_winner": true,
-          "win_margin_pct": 0.5453,
+          "is_winner": false,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -5947,8 +6665,8 @@
         {
           "owner": "Kelley",
           "side_total": 18.19,
-          "is_winner": false,
-          "win_margin_pct": -0.5453,
+          "is_winner": true,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Kasparas Jakucionis",
@@ -5960,7 +6678,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Kelley",
+      "cumulative_margin": 20.2,
+      "cumulative_values": {
+        "Moss": 0.0,
+        "Kelley": 20.2
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 114,
@@ -5968,14 +6694,14 @@
       "date": "2024-06-26 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Kelley",
-      "win_margin": 46.73,
+      "winner": "Trager",
+      "win_margin": 96.9,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 61.91,
-          "is_winner": false,
-          "win_margin_pct": -0.4301,
+          "is_winner": true,
+          "win_margin_pct": 0.4982,
           "assets": [
             {
               "name": "Desmond Bane",
@@ -5989,8 +6715,8 @@
         {
           "owner": "Kelley",
           "side_total": 108.64,
-          "is_winner": true,
-          "win_margin_pct": 0.4301,
+          "is_winner": false,
+          "win_margin_pct": -0.4982,
           "assets": [
             {
               "name": "Zach Edey",
@@ -6018,7 +6744,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 96.9,
+      "cumulative_values": {
+        "Trager": 194.5,
+        "Kelley": 97.6
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 115,
@@ -6026,14 +6760,14 @@
       "date": "2024-07-02 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Delaney",
-      "win_margin": 74.71,
+      "winner": "Zujewski",
+      "win_margin": 58.0,
       "sides": [
         {
           "owner": "Zujewski",
           "side_total": 93.49,
-          "is_winner": false,
-          "win_margin_pct": -0.4442,
+          "is_winner": true,
+          "win_margin_pct": 0.1875,
           "assets": [
             {
               "name": "Jaylen Brown",
@@ -6054,8 +6788,8 @@
         {
           "owner": "Delaney",
           "side_total": 168.2,
-          "is_winner": true,
-          "win_margin_pct": 0.4442,
+          "is_winner": false,
+          "win_margin_pct": -0.1875,
           "assets": [
             {
               "name": "Jaime Jaquez",
@@ -6097,7 +6831,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Zujewski",
+      "cumulative_margin": 58.0,
+      "cumulative_values": {
+        "Zujewski": 309.4,
+        "Delaney": 251.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 116,
@@ -6105,14 +6847,14 @@
       "date": "2024-07-23 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Kelley",
-      "win_margin": 5.87,
+      "winner": "Peterson",
+      "win_margin": 6.8,
       "sides": [
         {
           "owner": "Kelley",
           "side_total": 38.57,
-          "is_winner": true,
-          "win_margin_pct": 0.1522,
+          "is_winner": false,
+          "win_margin_pct": -0.0604,
           "assets": [
             {
               "name": "Mitchell Robinson",
@@ -6141,8 +6883,8 @@
         {
           "owner": "Peterson",
           "side_total": 32.7,
-          "is_winner": false,
-          "win_margin_pct": -0.1522,
+          "is_winner": true,
+          "win_margin_pct": 0.0604,
           "assets": [
             {
               "name": "Clint Capela",
@@ -6161,7 +6903,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 6.8,
+      "cumulative_values": {
+        "Kelley": 105.7,
+        "Peterson": 112.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 117,
@@ -6170,13 +6920,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Delaney",
-      "win_margin": 110.62,
+      "win_margin": 209.1,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 189.87,
           "is_winner": true,
-          "win_margin_pct": 0.5826,
+          "win_margin_pct": 0.4244,
           "assets": [
             {
               "name": "Darius Garland",
@@ -6221,7 +6971,7 @@
           "owner": "Trager",
           "side_total": 79.25,
           "is_winner": false,
-          "win_margin_pct": -0.5826,
+          "win_margin_pct": -0.4244,
           "assets": [
             {
               "name": "Devin Booker",
@@ -6248,7 +6998,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Delaney",
+      "cumulative_margin": 209.1,
+      "cumulative_values": {
+        "Delaney": 492.7,
+        "Trager": 283.6
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 118,
@@ -6256,14 +7014,14 @@
       "date": "2024-07-28 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Jowkar",
-      "win_margin": 3.22,
+      "winner": "Kelley",
+      "win_margin": 19.1,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 44.44,
-          "is_winner": true,
-          "win_margin_pct": 0.0725,
+          "is_winner": false,
+          "win_margin_pct": -0.1416,
           "assets": [
             {
               "name": "Jerami Grant",
@@ -6285,8 +7043,8 @@
         {
           "owner": "Kelley",
           "side_total": 41.22,
-          "is_winner": false,
-          "win_margin_pct": -0.0725,
+          "is_winner": true,
+          "win_margin_pct": 0.1416,
           "assets": [
             {
               "name": "Daniel Gafford",
@@ -6297,7 +7055,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Kelley",
+      "cumulative_margin": 19.1,
+      "cumulative_values": {
+        "Jowkar": 115.8,
+        "Kelley": 134.9
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 119,
@@ -6306,13 +7072,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 30.23,
+      "win_margin": 121.2,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 35.23,
           "is_winner": true,
-          "win_margin_pct": 0.8581,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Donte Divincenzo",
@@ -6327,7 +7093,7 @@
           "owner": "Jowkar",
           "side_total": 5.0,
           "is_winner": false,
-          "win_margin_pct": -0.8581,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -6339,7 +7105,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 121.2,
+      "cumulative_values": {
+        "Berke": 121.2,
+        "Jowkar": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 120,
@@ -6348,13 +7122,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Kelley",
-      "win_margin": 2.17,
+      "win_margin": 3.6,
       "sides": [
         {
           "owner": "Kelley",
           "side_total": 71.87,
           "is_winner": true,
-          "win_margin_pct": 0.0302,
+          "win_margin_pct": 0.0265,
           "assets": [
             {
               "name": "Matas Buzelis",
@@ -6386,7 +7160,7 @@
           "owner": "Delaney",
           "side_total": 69.7,
           "is_winner": false,
-          "win_margin_pct": -0.0302,
+          "win_margin_pct": -0.0265,
           "assets": [
             {
               "name": "Alex Sarr",
@@ -6406,7 +7180,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Kelley",
+      "cumulative_margin": 3.6,
+      "cumulative_values": {
+        "Kelley": 135.7,
+        "Delaney": 132.1
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 121,
@@ -6414,14 +7196,14 @@
       "date": "2024-08-05 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Peterson",
-      "win_margin": 52.57,
+      "winner": "Berke",
+      "win_margin": 42.0,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 58.71,
-          "is_winner": false,
-          "win_margin_pct": -0.4724,
+          "is_winner": true,
+          "win_margin_pct": 0.1783,
           "assets": [
             {
               "name": "Clint Capela",
@@ -6449,8 +7231,8 @@
         {
           "owner": "Peterson",
           "side_total": 111.28,
-          "is_winner": true,
-          "win_margin_pct": 0.4724,
+          "is_winner": false,
+          "win_margin_pct": -0.1783,
           "assets": [
             {
               "name": "Kawhi Leonard",
@@ -6469,7 +7251,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 42.0,
+      "cumulative_values": {
+        "Berke": 235.5,
+        "Peterson": 193.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 122,
@@ -6478,13 +7268,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 24.21,
+      "win_margin": 29.4,
       "sides": [
         {
           "owner": "Trager",
           "side_total": 39.33,
           "is_winner": true,
-          "win_margin_pct": 0.6156,
+          "win_margin_pct": 0.4876,
           "assets": [
             {
               "name": "Yves Missi",
@@ -6508,7 +7298,7 @@
           "owner": "Delaney",
           "side_total": 15.12,
           "is_winner": false,
-          "win_margin_pct": -0.6156,
+          "win_margin_pct": -0.4876,
           "assets": [
             {
               "name": "Cody Williams",
@@ -6520,7 +7310,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 29.4,
+      "cumulative_values": {
+        "Trager": 60.3,
+        "Delaney": 30.9
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 123,
@@ -6529,13 +7327,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 22.23,
+      "win_margin": 0.0,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 40.23,
           "is_winner": true,
-          "win_margin_pct": 0.5526,
+          "win_margin_pct": 0,
           "assets": [
             {
               "name": "Wendall Carter Jr.",
@@ -6550,7 +7348,7 @@
           "owner": "Zujewski",
           "side_total": 18.0,
           "is_winner": false,
-          "win_margin_pct": -0.5526,
+          "win_margin_pct": 0,
           "assets": [
             {
               "name": null,
@@ -6570,7 +7368,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 0.0,
+      "cumulative_values": {
+        "Peterson": 0.0,
+        "Zujewski": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 124,
@@ -6579,13 +7385,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 14.61,
+      "win_margin": 31.2,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 29.61,
           "is_winner": true,
-          "win_margin_pct": 0.4934,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Collin Murray-Boyles",
@@ -6601,7 +7407,7 @@
           "owner": "Baden",
           "side_total": 15.0,
           "is_winner": false,
-          "win_margin_pct": -0.4934,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -6621,7 +7427,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 31.2,
+      "cumulative_values": {
+        "Jowkar": 31.2,
+        "Baden": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 125,
@@ -6629,14 +7443,14 @@
       "date": "2024-10-22 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Baden",
-      "win_margin": 0.44,
+      "winner": "Peterson",
+      "win_margin": 73.6,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 58.05,
-          "is_winner": false,
-          "win_margin_pct": -0.0075,
+          "is_winner": true,
+          "win_margin_pct": 0.758,
           "assets": [
             {
               "name": "Mikal Bridges",
@@ -6658,8 +7472,8 @@
         {
           "owner": "Baden",
           "side_total": 58.49,
-          "is_winner": true,
-          "win_margin_pct": 0.0075,
+          "is_winner": false,
+          "win_margin_pct": -0.758,
           "assets": [
             {
               "name": null,
@@ -6687,7 +7501,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 73.6,
+      "cumulative_values": {
+        "Peterson": 97.1,
+        "Baden": 23.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 126,
@@ -6696,13 +7518,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 30.55,
+      "win_margin": 87.6,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 86.25,
           "is_winner": true,
-          "win_margin_pct": 0.3542,
+          "win_margin_pct": 0.4337,
           "assets": [
             {
               "name": "Mark Williams",
@@ -6724,7 +7546,7 @@
           "owner": "Trager",
           "side_total": 55.7,
           "is_winner": false,
-          "win_margin_pct": -0.3542,
+          "win_margin_pct": -0.4337,
           "assets": [
             {
               "name": "Ivica Zubac",
@@ -6743,7 +7565,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Gold",
+      "cumulative_margin": 87.6,
+      "cumulative_values": {
+        "Gold": 202.0,
+        "Trager": 114.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 127,
@@ -6751,14 +7581,14 @@
       "date": "2024-11-07 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Moss",
-      "win_margin": 8.1,
+      "winner": "Green",
+      "win_margin": 7.3,
       "sides": [
         {
           "owner": "Moss",
           "side_total": 70.55,
-          "is_winner": true,
-          "win_margin_pct": 0.1148,
+          "is_winner": false,
+          "win_margin_pct": -0.0591,
           "assets": [
             {
               "name": "Joel Embiid",
@@ -6780,8 +7610,8 @@
         {
           "owner": "Green",
           "side_total": 62.45,
-          "is_winner": false,
-          "win_margin_pct": -0.1148,
+          "is_winner": true,
+          "win_margin_pct": 0.0591,
           "assets": [
             {
               "name": "Bam Adebayo",
@@ -6792,7 +7622,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Green",
+      "cumulative_margin": 7.3,
+      "cumulative_values": {
+        "Moss": 116.2,
+        "Green": 123.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 128,
@@ -6801,13 +7639,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Peterson",
-      "win_margin": 18.6,
+      "win_margin": 60.1,
       "sides": [
         {
           "owner": "Peterson",
           "side_total": 26.6,
           "is_winner": true,
-          "win_margin_pct": 0.6992,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Bobby Portis",
@@ -6822,7 +7660,7 @@
           "owner": "Delaney",
           "side_total": 8.0,
           "is_winner": false,
-          "win_margin_pct": -0.6992,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -6834,7 +7672,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Peterson",
+      "cumulative_margin": 60.1,
+      "cumulative_values": {
+        "Peterson": 60.1,
+        "Delaney": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 129,
@@ -6843,13 +7689,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 9.81,
+      "win_margin": 11.6,
       "sides": [
         {
           "owner": "Berke",
           "side_total": 56.05,
           "is_winner": true,
-          "win_margin_pct": 0.175,
+          "win_margin_pct": 0.1195,
           "assets": [
             {
               "name": "Mikal Bridges",
@@ -6872,7 +7718,7 @@
           "owner": "Peterson",
           "side_total": 46.24,
           "is_winner": false,
-          "win_margin_pct": -0.175,
+          "win_margin_pct": -0.1195,
           "assets": [
             {
               "name": "James Harden",
@@ -6883,7 +7729,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 11.6,
+      "cumulative_values": {
+        "Berke": 97.1,
+        "Peterson": 85.5
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 130,
@@ -6892,13 +7746,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 31.36,
+      "win_margin": 48.1,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 67.74,
           "is_winner": true,
-          "win_margin_pct": 0.4629,
+          "win_margin_pct": 0.3666,
           "assets": [
             {
               "name": "Paul George",
@@ -6935,7 +7789,7 @@
           "owner": "Berke",
           "side_total": 36.38,
           "is_winner": false,
-          "win_margin_pct": -0.4629,
+          "win_margin_pct": -0.3666,
           "assets": [
             {
               "name": "Zach Lavine",
@@ -6946,7 +7800,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 48.1,
+      "cumulative_values": {
+        "Jowkar": 131.2,
+        "Berke": 83.1
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 131,
@@ -6955,13 +7817,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Zujewski",
-      "win_margin": 48.66,
+      "win_margin": 62.3,
       "sides": [
         {
           "owner": "Zujewski",
           "side_total": 128.47,
           "is_winner": true,
-          "win_margin_pct": 0.3788,
+          "win_margin_pct": 0.276,
           "assets": [
             {
               "name": "Coby White",
@@ -6991,7 +7853,7 @@
           "owner": "Trager",
           "side_total": 79.81,
           "is_winner": false,
-          "win_margin_pct": -0.3788,
+          "win_margin_pct": -0.276,
           "assets": [
             {
               "name": "Jamal Murray",
@@ -7002,7 +7864,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Zujewski",
+      "cumulative_margin": 62.3,
+      "cumulative_values": {
+        "Zujewski": 225.7,
+        "Trager": 163.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 132,
@@ -7011,13 +7881,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Trager",
-      "win_margin": 1.89,
+      "win_margin": 20.0,
       "sides": [
         {
           "owner": "Baden",
           "side_total": 39.33,
           "is_winner": false,
-          "win_margin_pct": -0.0459,
+          "win_margin_pct": -0.2491,
           "assets": [
             {
               "name": "Yves Missi",
@@ -7040,7 +7910,7 @@
           "owner": "Trager",
           "side_total": 41.22,
           "is_winner": true,
-          "win_margin_pct": 0.0459,
+          "win_margin_pct": 0.2491,
           "assets": [
             {
               "name": "Daniel Gafford",
@@ -7051,7 +7921,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 20.0,
+      "cumulative_values": {
+        "Baden": 60.3,
+        "Trager": 80.3
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 133,
@@ -7060,13 +7938,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Baden",
-      "win_margin": 26.49,
+      "win_margin": 28.4,
       "sides": [
         {
           "owner": "Baden",
           "side_total": 69.16,
           "is_winner": true,
-          "win_margin_pct": 0.383,
+          "win_margin_pct": 0.2405,
           "assets": [
             {
               "name": "Jordan Poole",
@@ -7089,7 +7967,7 @@
           "owner": "Trager",
           "side_total": 42.67,
           "is_winner": false,
-          "win_margin_pct": -0.383,
+          "win_margin_pct": -0.2405,
           "assets": [
             {
               "name": "Kristaps Porzingus",
@@ -7100,7 +7978,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Baden",
+      "cumulative_margin": 28.4,
+      "cumulative_values": {
+        "Baden": 118.1,
+        "Trager": 89.7
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 134,
@@ -7109,13 +7995,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Jowkar",
-      "win_margin": 8.37,
+      "win_margin": 62.2,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 36.61,
           "is_winner": false,
-          "win_margin_pct": -0.1861,
+          "win_margin_pct": -0.666,
           "assets": [
             {
               "name": "Collin Murray-Boyles",
@@ -7139,7 +8025,7 @@
           "owner": "Jowkar",
           "side_total": 44.98,
           "is_winner": true,
-          "win_margin_pct": 0.1861,
+          "win_margin_pct": 0.666,
           "assets": [
             {
               "name": "John Collins",
@@ -7150,7 +8036,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Jowkar",
+      "cumulative_margin": 62.2,
+      "cumulative_values": {
+        "Delaney": 31.2,
+        "Jowkar": 93.4
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 135,
@@ -7159,13 +8053,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Berke",
-      "win_margin": 18.66,
+      "win_margin": 76.7,
       "sides": [
         {
           "owner": "Jowkar",
           "side_total": 28.28,
           "is_winner": false,
-          "win_margin_pct": -0.3975,
+          "win_margin_pct": -0.767,
           "assets": [
             {
               "name": "Spencer Dinwiddie",
@@ -7180,7 +8074,7 @@
           "owner": "Berke",
           "side_total": 46.94,
           "is_winner": true,
-          "win_margin_pct": 0.3975,
+          "win_margin_pct": 0.767,
           "assets": [
             {
               "name": "Jerami Grant",
@@ -7198,7 +8092,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Berke",
+      "cumulative_margin": 76.7,
+      "cumulative_values": {
+        "Jowkar": 23.3,
+        "Berke": 100.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 136,
@@ -7207,13 +8109,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Baden",
-      "win_margin": 21.54,
+      "win_margin": 23.9,
       "sides": [
         {
           "owner": "Delaney",
           "side_total": 34.59,
           "is_winner": false,
-          "win_margin_pct": -0.3838,
+          "win_margin_pct": -0.3944,
           "assets": [
             {
               "name": "Egor Demin",
@@ -7237,7 +8139,7 @@
           "owner": "Baden",
           "side_total": 56.13,
           "is_winner": true,
-          "win_margin_pct": 0.3838,
+          "win_margin_pct": 0.3944,
           "assets": [
             {
               "name": "Tre Johnson",
@@ -7257,7 +8159,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Baden",
+      "cumulative_margin": 23.9,
+      "cumulative_values": {
+        "Delaney": 36.7,
+        "Baden": 60.6
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 137,
@@ -7265,14 +8175,14 @@
       "date": "2025-07-26 00:00:00",
       "is_multi_party": false,
       "is_collusion": false,
-      "winner": "Baden",
-      "win_margin": 5.39,
+      "winner": "Trager",
+      "win_margin": 31.2,
       "sides": [
         {
           "owner": "Baden",
           "side_total": 45.0,
-          "is_winner": true,
-          "win_margin_pct": 0.1198,
+          "is_winner": false,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -7287,8 +8197,8 @@
         {
           "owner": "Trager",
           "side_total": 39.61,
-          "is_winner": false,
-          "win_margin_pct": -0.1198,
+          "is_winner": true,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Collin Murray-Boyles",
@@ -7316,7 +8226,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Trager",
+      "cumulative_margin": 31.2,
+      "cumulative_values": {
+        "Baden": 0.0,
+        "Trager": 31.2
+      },
+      "winner_method": "cumulative",
+      "led_every_period": false
     },
     {
       "trade_id": 138,
@@ -7325,13 +8243,13 @@
       "is_multi_party": false,
       "is_collusion": false,
       "winner": "Gold",
-      "win_margin": 36.22,
+      "win_margin": 80.3,
       "sides": [
         {
           "owner": "Gold",
           "side_total": 41.22,
           "is_winner": true,
-          "win_margin_pct": 0.8787,
+          "win_margin_pct": 1.0,
           "assets": [
             {
               "name": "Daniel Gafford",
@@ -7346,7 +8264,7 @@
           "owner": "Trager",
           "side_total": 5.0,
           "is_winner": false,
-          "win_margin_pct": -0.8787,
+          "win_margin_pct": -1.0,
           "assets": [
             {
               "name": null,
@@ -7358,7 +8276,15 @@
             }
           ]
         }
-      ]
+      ],
+      "cumulative_winner": "Gold",
+      "cumulative_margin": 80.3,
+      "cumulative_values": {
+        "Gold": 80.3,
+        "Trager": 0.0
+      },
+      "winner_method": "cumulative",
+      "led_every_period": true
     },
     {
       "trade_id": 139,
@@ -7400,7 +8326,8 @@
             }
           ]
         }
-      ]
+      ],
+      "winner_method": "snapshot"
     },
     {
       "trade_id": 140,
@@ -7441,7 +8368,8 @@
             }
           ]
         }
-      ]
+      ],
+      "winner_method": "snapshot"
     },
     {
       "trade_id": 141,
@@ -7528,7 +8456,8 @@
             }
           ]
         }
-      ]
+      ],
+      "winner_method": "snapshot"
     }
   ]
 }

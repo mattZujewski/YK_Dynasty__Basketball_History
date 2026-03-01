@@ -1,3 +1,4 @@
+// DATA SOURCE: System B only. No legacy grade imports.
 /**
  * tvot.js — Trade Value Over Time dashboard
  * YK Dynasty Basketball
