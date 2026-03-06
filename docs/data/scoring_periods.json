@@ -19,15 +19,6 @@
         "streak": "8 (W)",
         "avg_fpts": 1807.4
       },
-      "Baden": {
-        "team": "Charlotte Wobnets",
-        "w": 12,
-        "l": 5,
-        "fpts_for": 26515.0,
-        "fpts_against": 26500.0,
-        "streak": "3 (W)",
-        "avg_fpts": 1559.7
-      },
       "Delaney": {
         "team": "Freshly Washed Kings",
         "w": 10,
@@ -82,7 +73,7 @@
         "streak": "6 (L)",
         "avg_fpts": 1234.9
       },
-      "HaleTrager": {
+      "Trager": {
         "team": "Lob Land",
         "w": 3,
         "l": 14,
@@ -90,6 +81,15 @@
         "fpts_against": 26555.0,
         "streak": "3 (L)",
         "avg_fpts": 1375.3
+      },
+      "Vlandis": {
+        "team": "Charlotte Wobnets",
+        "w": 12,
+        "l": 5,
+        "fpts_for": 26515.0,
+        "fpts_against": 26500.0,
+        "streak": "3 (W)",
+        "avg_fpts": 1559.7
       }
     },
     "source": "fantrax_api",
@@ -142,16 +142,7 @@
         "streak": "1 (L)",
         "avg_fpts": 1462.4
       },
-      "Baden": {
-        "team": "BKs Whoppers",
-        "w": 8,
-        "l": 8,
-        "fpts_for": 22465.0,
-        "fpts_against": 24649.0,
-        "streak": "1 (L)",
-        "avg_fpts": 1404.1
-      },
-      "HaleTrager": {
+      "Trager": {
         "team": "Twin Towers",
         "w": 7,
         "l": 9,
@@ -186,6 +177,15 @@
         "fpts_against": 25154.0,
         "streak": "8 (L)",
         "avg_fpts": 1122.4
+      },
+      "Kelley": {
+        "team": "BKs Whoppers",
+        "w": 8,
+        "l": 8,
+        "fpts_for": 22465.0,
+        "fpts_against": 24649.0,
+        "streak": "1 (L)",
+        "avg_fpts": 1404.1
       }
     },
     "source": "fantrax_api",
@@ -211,7 +211,7 @@
         "streak": "2 (W)",
         "avg_fpts": 1767.1
       },
-      "HaleTrager": {
+      "Trager": {
         "team": "Twin Towers",
         "w": 12,
         "l": 4,
@@ -274,7 +274,7 @@
         "streak": "3 (L)",
         "avg_fpts": 1032.7
       },
-      "Baden": {
+      "Kelley": {
         "team": "BKs Whoppers",
         "w": 0,
         "l": 16,
@@ -316,7 +316,7 @@
         "streak": "1 (W)",
         "avg_fpts": 1804.9
       },
-      "HaleTrager": {
+      "Trager": {
         "team": "Twin Towers",
         "w": 11,
         "l": 4,

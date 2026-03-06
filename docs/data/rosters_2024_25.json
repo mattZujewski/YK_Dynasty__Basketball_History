@@ -153,151 +153,6 @@
         }
       ]
     },
-    "Baden": {
-      "team_name": "BKs Whoppers",
-      "owner": "Sam Baden",
-      "fantrax_id": "kijnahz5lvclsxb7",
-      "players": [
-        {
-          "name": "Andrew Wiggins",
-          "pos": "SF",
-          "nbaTeam": "MIA",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "Bol Bol",
-          "pos": "PF",
-          "nbaTeam": "",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Cameron Thomas",
-          "pos": "SG",
-          "nbaTeam": "MIL",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Carlton Carrington",
-          "pos": "PG",
-          "nbaTeam": "WAS",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Dalton Knecht",
-          "pos": "SF",
-          "nbaTeam": "LAL",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Dereck Lively",
-          "pos": "C",
-          "nbaTeam": "DAL",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "Gradey Dick",
-          "pos": "SG",
-          "nbaTeam": "TOR",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Isaiah Jackson",
-          "pos": "C",
-          "nbaTeam": "LAC",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "Jonas Valanciunas",
-          "pos": "C",
-          "nbaTeam": "DEN",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Jordan Poole",
-          "pos": "SG",
-          "nbaTeam": "NO",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Keldon Johnson",
-          "pos": "SF",
-          "nbaTeam": "SA",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Klay Thompson",
-          "pos": "SF",
-          "nbaTeam": "DAL",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Matas Buzelis",
-          "pos": "SF",
-          "nbaTeam": "CHI",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Michael Porter",
-          "pos": "SF",
-          "nbaTeam": "BKN",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Mitchell Robinson",
-          "pos": "C",
-          "nbaTeam": "NY",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "Robert Dillingham",
-          "pos": "PG",
-          "nbaTeam": "CHI",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Tre Jones",
-          "pos": "PG",
-          "nbaTeam": "CHI",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Vince Williams",
-          "pos": "SG",
-          "nbaTeam": "UTA",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Yves Missi",
-          "pos": "C",
-          "nbaTeam": "NO",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Zaccharie Risacher",
-          "pos": "SF",
-          "nbaTeam": "ATL",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Zach Edey",
-          "pos": "C",
-          "nbaTeam": "MEM",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Isaiah Collier",
-          "pos": "PG",
-          "nbaTeam": "UTA",
-          "status": "MINORS"
-        },
-        {
-          "name": "Jordan Hawkins",
-          "pos": "SG",
-          "nbaTeam": "NO",
-          "status": "MINORS"
-        }
-      ]
-    },
     "Green": {
       "team_name": "Ice Trae",
       "owner": "Max Green",
@@ -1077,9 +932,9 @@
         }
       ]
     },
-    "HaleTrager": {
+    "Trager": {
       "team_name": "Twin Towers",
-      "owner": "Ryan HaleTrager",
+      "owner": "Ryan Trager",
       "fantrax_id": "nqtl1778lvclsxb6",
       "players": [
         {
@@ -1556,6 +1411,151 @@
           "name": "Peyton Watson",
           "pos": "SF",
           "nbaTeam": "DEN",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Kelley": {
+      "team_name": "BKs Whoppers",
+      "owner": "Brendan Kelley",
+      "fantrax_id": "kijnahz5lvclsxb7",
+      "players": [
+        {
+          "name": "Andrew Wiggins",
+          "pos": "SF",
+          "nbaTeam": "MIA",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Bol Bol",
+          "pos": "PF",
+          "nbaTeam": "",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Cameron Thomas",
+          "pos": "SG",
+          "nbaTeam": "MIL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Carlton Carrington",
+          "pos": "PG",
+          "nbaTeam": "WAS",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Dalton Knecht",
+          "pos": "SF",
+          "nbaTeam": "LAL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Dereck Lively",
+          "pos": "C",
+          "nbaTeam": "DAL",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Gradey Dick",
+          "pos": "SG",
+          "nbaTeam": "TOR",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Isaiah Jackson",
+          "pos": "C",
+          "nbaTeam": "LAC",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Jonas Valanciunas",
+          "pos": "C",
+          "nbaTeam": "DEN",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jordan Poole",
+          "pos": "SG",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Keldon Johnson",
+          "pos": "SF",
+          "nbaTeam": "SA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Klay Thompson",
+          "pos": "SF",
+          "nbaTeam": "DAL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Matas Buzelis",
+          "pos": "SF",
+          "nbaTeam": "CHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Michael Porter",
+          "pos": "SF",
+          "nbaTeam": "BKN",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Mitchell Robinson",
+          "pos": "C",
+          "nbaTeam": "NY",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Robert Dillingham",
+          "pos": "PG",
+          "nbaTeam": "CHI",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Tre Jones",
+          "pos": "PG",
+          "nbaTeam": "CHI",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Vince Williams",
+          "pos": "SG",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Yves Missi",
+          "pos": "C",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Zaccharie Risacher",
+          "pos": "SF",
+          "nbaTeam": "ATL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Zach Edey",
+          "pos": "C",
+          "nbaTeam": "MEM",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Isaiah Collier",
+          "pos": "PG",
+          "nbaTeam": "UTA",
+          "status": "MINORS"
+        },
+        {
+          "name": "Jordan Hawkins",
+          "pos": "SG",
+          "nbaTeam": "NO",
           "status": "MINORS"
         }
       ]

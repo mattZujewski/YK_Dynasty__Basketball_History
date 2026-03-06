@@ -3,8 +3,15 @@
     {
       "id": "peterson",
       "realName": "Kelvin Peterson",
-      "abbrevs": ["PETE", "DIME"],
-      "altNames": ["Peterson", "Kelvin", "AlwaysDroppin"],
+      "abbrevs": [
+        "PETE",
+        "DIME"
+      ],
+      "altNames": [
+        "Peterson",
+        "Kelvin",
+        "AlwaysDroppin"
+      ],
       "fantraxUsername": "kpcrispy3",
       "fantraxAbbrev": "Kelvin",
       "teams": {
@@ -17,8 +24,12 @@
     {
       "id": "jowkar",
       "realName": "Nick Jowkar",
-      "abbrevs": ["JOWK"],
-      "altNames": ["Jowkar"],
+      "abbrevs": [
+        "JOWK"
+      ],
+      "altNames": [
+        "Jowkar"
+      ],
       "fantraxUsername": "NickJowkar",
       "fantraxAbbrev": "Jowk",
       "teams": {
@@ -31,8 +42,13 @@
     {
       "id": "berke",
       "realName": "Logan Berke",
-      "abbrevs": ["BERK"],
-      "altNames": ["Berke", "Logan"],
+      "abbrevs": [
+        "BERK"
+      ],
+      "altNames": [
+        "Berke",
+        "Logan"
+      ],
       "fantraxUsername": "lbtape",
       "fantraxAbbrev": "Berke",
       "teams": {
@@ -45,14 +61,35 @@
     {
       "id": "baden",
       "realName": "Sam Baden",
-      "abbrevs": ["VLAND", "KELL", "BADEN", "FLAGGS"],
-      "altNames": ["Vlandis", "Kelley", "Baden"],
+      "abbrevs": [
+        "VLAND",
+        "KELL",
+        "BADEN",
+        "FLAGGS"
+      ],
+      "altNames": [
+        "Vlandis",
+        "Kelley",
+        "Baden"
+      ],
       "fantraxUsername": "BadenBaden",
       "fantraxAbbrev": "FLAGGS",
       "franchiseHistory": [
-        {"owner": "Spencer Vlandis", "period": "2022-2023", "abbrev": "VLAND"},
-        {"owner": "Brendan Kelley", "period": "2023-2024", "abbrev": "KELL"},
-        {"owner": "Sam Baden", "period": "2024-present", "abbrev": "BADEN"}
+        {
+          "owner": "Spencer Vlandis",
+          "period": "2020-2023",
+          "abbrev": "VLAND"
+        },
+        {
+          "owner": "Brendan Kelley",
+          "period": "2023-2025",
+          "abbrev": "KELL"
+        },
+        {
+          "owner": "Sam Baden",
+          "period": "2025-present",
+          "abbrev": "BADEN"
+        }
       ],
       "teams": {
         "2022-23": "Charlotte Wobnets",
@@ -64,8 +101,12 @@
     {
       "id": "delaney",
       "realName": "David Delaney",
-      "abbrevs": ["DELA"],
-      "altNames": ["Delaney"],
+      "abbrevs": [
+        "DELA"
+      ],
+      "altNames": [
+        "Delaney"
+      ],
       "fantraxUsername": "Daviddjd16",
       "fantraxAbbrev": "DELA",
       "teams": {
@@ -78,8 +119,13 @@
     {
       "id": "green",
       "realName": "Max Green",
-      "abbrevs": ["GREEN"],
-      "altNames": ["Green", "Max"],
+      "abbrevs": [
+        "GREEN"
+      ],
+      "altNames": [
+        "Green",
+        "Max"
+      ],
       "fantraxUsername": "maxgreen9",
       "fantraxAbbrev": "Max",
       "teams": {
@@ -92,8 +138,12 @@
     {
       "id": "gold",
       "realName": "Sam Gold",
-      "abbrevs": ["GOLD"],
-      "altNames": ["Gold"],
+      "abbrevs": [
+        "GOLD"
+      ],
+      "altNames": [
+        "Gold"
+      ],
       "fantraxUsername": "sgold58",
       "fantraxAbbrev": "Gold",
       "teams": {
@@ -106,8 +156,13 @@
     {
       "id": "zujewski",
       "realName": "Matthew Zujewski",
-      "abbrevs": ["ZJEW"],
-      "altNames": ["Zujewski", "Franz"],
+      "abbrevs": [
+        "ZJEW"
+      ],
+      "altNames": [
+        "Zujewski",
+        "Franz"
+      ],
       "fantraxUsername": "MattZujewski",
       "fantraxAbbrev": "Franz",
       "teams": {
@@ -120,8 +175,12 @@
     {
       "id": "moss",
       "realName": "Max Moss",
-      "abbrevs": ["MOSS"],
-      "altNames": ["Moss"],
+      "abbrevs": [
+        "MOSS"
+      ],
+      "altNames": [
+        "Moss"
+      ],
       "fantraxUsername": "mmoss11",
       "fantraxAbbrev": "Moss",
       "teams": {
@@ -132,10 +191,17 @@
       }
     },
     {
-      "id": "haletrager",
-      "realName": "Ryan HaleTrager",
-      "abbrevs": ["TRAG", "HALE"],
-      "altNames": ["Trager", "Hale", "HaleTrager"],
+      "id": "trager",
+      "realName": "Ryan Trager",
+      "abbrevs": [
+        "TRAG",
+        "HALE"
+      ],
+      "altNames": [
+        "Trager",
+        "Hale",
+        "HaleTrager"
+      ],
       "fantraxUsername": "HaleTrager",
       "fantraxAbbrev": "Hale",
       "teams": {

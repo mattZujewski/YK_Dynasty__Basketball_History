@@ -9,11 +9,11 @@ window.YK = window.YK || {};
   'use strict';
 
   // ── Owner abbreviation → canonical owner name ──────────────────
-  // TRAG + HALE = same person (Ryan HaleTrager)
+  // TRAG + HALE = same person (Ryan Trager)
   // VLAND + KELL + BADEN = same franchise slot (currently Sam Baden)
   // PETE + DIME = same person (Kelvin Peterson)
   const OWNER_ABBREVS = {
-    TRAG:  'HaleTrager',  HALE:  'HaleTrager',
+    TRAG:  'Trager',      HALE:  'Trager',
     JOWK:  'Jowkar',
     DELA:  'Delaney',
     GREEN: 'Green',
@@ -37,9 +37,9 @@ window.YK = window.YK || {};
     'Logan':         'Berke',
     'Berke':         'Berke',
     'Moss':          'Moss',
-    'Trager':        'HaleTrager',
-    'Hale':          'HaleTrager',
-    'HaleTrager':    'HaleTrager',
+    'Trager':        'Trager',
+    'Hale':          'Trager',
+    'HaleTrager':    'Trager',
     'Vlandis':       'Baden',
     'Kelley':        'Baden',
     'Baden':         'Baden',
@@ -51,7 +51,7 @@ window.YK = window.YK || {};
   // Canonical 10 owners sorted alphabetically
   const OWNERS_ALPHA = [
     'Baden', 'Berke', 'Delaney', 'Gold', 'Green',
-    'HaleTrager', 'Jowkar', 'Moss', 'Peterson', 'Zujewski',
+    'Jowkar', 'Moss', 'Peterson', 'Trager', 'Zujewski',
   ];
 
   // Owner display names (friendlier for UI)
@@ -63,7 +63,7 @@ window.YK = window.YK || {};
     'Delaney':     'David Delaney',
     'Gold':        'Sam Gold',
     'Green':       'Max Green',
-    'HaleTrager':  'Ryan Trager',
+    'Trager':      'Ryan Trager',
     'Trager':      'Ryan Trager',       // alias
     'Jowkar':      'Nick Jowkar',
     'Kelley':      'Brendan Kelley',    // transitional slot 2022-25
@@ -86,26 +86,26 @@ window.YK = window.YK || {};
     'Ice Trae':             'Green',
     'Kelvin got No Dimes':  'Berke',    // Confirmed by Fantrax shortName "Berke"
     'Kentucky Fried Guards':'Gold',
-    'Lob Land':             'HaleTrager', // 2022-23
+    'Lob Land':             'Trager', // 2022-23
     'No Shaime':            'Gold',       // 2023-24
     'Only Franz':           'Zujewski',
     'Pure Sweat Farm':      'Moss',
     'Pure Sweat Fam':       'Moss',
-    'Twin Towers':          'HaleTrager',
+    'Twin Towers':          'Trager',
   };
 
   // Owner color palette — 10 owners in OWNERS_ALPHA order:
-  // Baden, Berke, Delaney, Gold, Green, HaleTrager, Jowkar, Moss, Peterson, Zujewski
+  // Baden, Berke, Delaney, Gold, Green, Jowkar, Moss, Peterson, Trager, Zujewski
   const OWNER_COLORS_RAW = [
     '#475569', // Baden      — Slate
     '#9F1239', // Berke      — Maroon
     '#EA580C', // Delaney    — Orange
-    '#CA8A04', // Gold      — Gold
+    '#CA8A04', // Gold       — Gold
     '#16A34A', // Green      — Green
-    '#2563EB', // HaleTrager — Blue (Ryan Trager)
     '#DC2626', // Jowkar     — Crimson
     '#78350F', // Moss       — Dark Brown
     '#7C3AED', // Peterson   — Purple
+    '#2563EB', // Trager     — Blue (Ryan Trager)
     '#0891B2', // Zujewski   — Turquoise
   ];
 

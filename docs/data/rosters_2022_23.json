@@ -304,172 +304,9 @@
         }
       ]
     },
-    "Baden": {
-      "team_name": "Charlotte Wobnets",
-      "owner": "Sam Baden",
-      "fantrax_id": "pc94tdvjl1ydjvku",
-      "players": [
-        {
-          "name": "Andrew Wiggins",
-          "pos": "SF",
-          "nbaTeam": "MIA",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "CJ McCollum",
-          "pos": "PG",
-          "nbaTeam": "ATL",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Caris LeVert",
-          "pos": "SG",
-          "nbaTeam": "DET",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Clint Capela",
-          "pos": "C",
-          "nbaTeam": "HOU",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "DAngelo Russell",
-          "pos": "PG",
-          "nbaTeam": "WAS",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "Desmond Bane",
-          "pos": "SG",
-          "nbaTeam": "ORL",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Donovan Mitchell",
-          "pos": "SG",
-          "nbaTeam": "CLE",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Doug McDermott",
-          "pos": "SF",
-          "nbaTeam": "SAC",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "Gordon Hayward",
-          "pos": "SF",
-          "nbaTeam": "",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Jakob Poeltl",
-          "pos": "C",
-          "nbaTeam": "TOR",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Jalen Brunson",
-          "pos": "PG",
-          "nbaTeam": "NY",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "Jerami Grant",
-          "pos": "PF",
-          "nbaTeam": "POR",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Jevon Carter",
-          "pos": "PG",
-          "nbaTeam": "ORL",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "John Konchar",
-          "pos": "SG",
-          "nbaTeam": "UTA",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Jonas Valanciunas",
-          "pos": "C",
-          "nbaTeam": "DEN",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Jusuf Nurkic",
-          "pos": "C",
-          "nbaTeam": "UTA",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Karl-Anthony Towns",
-          "pos": "C",
-          "nbaTeam": "NY",
-          "status": "INJURED_RESERVE"
-        },
-        {
-          "name": "Keldon Johnson",
-          "pos": "SF",
-          "nbaTeam": "SA",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Kelly Oubre Jr.",
-          "pos": "SF",
-          "nbaTeam": "PHI",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Khris Middleton",
-          "pos": "SF",
-          "nbaTeam": "DAL",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Malcolm Brogdon",
-          "pos": "PG",
-          "nbaTeam": "",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Moritz Wagner",
-          "pos": "C",
-          "nbaTeam": "ORL",
-          "status": "ACTIVE"
-        },
-        {
-          "name": "Saddiq Bey",
-          "pos": "SF",
-          "nbaTeam": "NO",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Zach LaVine",
-          "pos": "SG",
-          "nbaTeam": "SAC",
-          "status": "RESERVE"
-        },
-        {
-          "name": "Corey Kispert",
-          "pos": "SF",
-          "nbaTeam": "ATL",
-          "status": "MINORS"
-        },
-        {
-          "name": "Davion Mitchell",
-          "pos": "PG",
-          "nbaTeam": "MIA",
-          "status": "MINORS"
-        }
-      ]
-    },
-    "HaleTrager": {
+    "Trager": {
       "team_name": "Lob Land",
-      "owner": "Ryan HaleTrager",
+      "owner": "Ryan Trager",
       "fantrax_id": "0lncmbzhl1ydddwu",
       "players": [
         {
@@ -1550,6 +1387,169 @@
           "name": "Paul Reed",
           "pos": "C",
           "nbaTeam": "DET",
+          "status": "MINORS"
+        }
+      ]
+    },
+    "Vlandis": {
+      "team_name": "Charlotte Wobnets",
+      "owner": "Spencer Vlandis",
+      "fantrax_id": "pc94tdvjl1ydjvku",
+      "players": [
+        {
+          "name": "Andrew Wiggins",
+          "pos": "SF",
+          "nbaTeam": "MIA",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "CJ McCollum",
+          "pos": "PG",
+          "nbaTeam": "ATL",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Caris LeVert",
+          "pos": "SG",
+          "nbaTeam": "DET",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Clint Capela",
+          "pos": "C",
+          "nbaTeam": "HOU",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "DAngelo Russell",
+          "pos": "PG",
+          "nbaTeam": "WAS",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Desmond Bane",
+          "pos": "SG",
+          "nbaTeam": "ORL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Donovan Mitchell",
+          "pos": "SG",
+          "nbaTeam": "CLE",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Doug McDermott",
+          "pos": "SF",
+          "nbaTeam": "SAC",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Gordon Hayward",
+          "pos": "SF",
+          "nbaTeam": "",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jakob Poeltl",
+          "pos": "C",
+          "nbaTeam": "TOR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jalen Brunson",
+          "pos": "PG",
+          "nbaTeam": "NY",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Jerami Grant",
+          "pos": "PF",
+          "nbaTeam": "POR",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jevon Carter",
+          "pos": "PG",
+          "nbaTeam": "ORL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "John Konchar",
+          "pos": "SG",
+          "nbaTeam": "UTA",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Jonas Valanciunas",
+          "pos": "C",
+          "nbaTeam": "DEN",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Jusuf Nurkic",
+          "pos": "C",
+          "nbaTeam": "UTA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Karl-Anthony Towns",
+          "pos": "C",
+          "nbaTeam": "NY",
+          "status": "INJURED_RESERVE"
+        },
+        {
+          "name": "Keldon Johnson",
+          "pos": "SF",
+          "nbaTeam": "SA",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Kelly Oubre Jr.",
+          "pos": "SF",
+          "nbaTeam": "PHI",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Khris Middleton",
+          "pos": "SF",
+          "nbaTeam": "DAL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Malcolm Brogdon",
+          "pos": "PG",
+          "nbaTeam": "",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Moritz Wagner",
+          "pos": "C",
+          "nbaTeam": "ORL",
+          "status": "ACTIVE"
+        },
+        {
+          "name": "Saddiq Bey",
+          "pos": "SF",
+          "nbaTeam": "NO",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Zach LaVine",
+          "pos": "SG",
+          "nbaTeam": "SAC",
+          "status": "RESERVE"
+        },
+        {
+          "name": "Corey Kispert",
+          "pos": "SF",
+          "nbaTeam": "ATL",
+          "status": "MINORS"
+        },
+        {
+          "name": "Davion Mitchell",
+          "pos": "PG",
+          "nbaTeam": "MIA",
           "status": "MINORS"
         }
       ]

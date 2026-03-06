@@ -34,7 +34,7 @@
       {
         "period": 16,
         "away_team": "Lob Land",
-        "away_owner": "HaleTrager",
+        "away_owner": "Trager",
         "away_score": 1488.0,
         "home_team": "Pure Sweat Fam",
         "home_owner": "Moss",
@@ -97,7 +97,7 @@
         "away_owner": "Baden",
         "away_score": 1450.0,
         "home_team": "Lob Land",
-        "home_owner": "HaleTrager",
+        "home_owner": "Trager",
         "home_score": 1401.0,
         "winner": "Baden"
       }
@@ -144,7 +144,7 @@
       {
         "period": 15,
         "away_team": "Twin Towers",
-        "away_owner": "HaleTrager",
+        "away_owner": "Trager",
         "away_score": 1675.0,
         "home_team": "Kelvin got No Dimes",
         "home_owner": "Berke",
@@ -187,7 +187,7 @@
         "away_owner": "Peterson",
         "away_score": 2201.0,
         "home_team": "Twin Towers",
-        "home_owner": "HaleTrager",
+        "home_owner": "Trager",
         "home_score": 1648.0,
         "winner": "Peterson"
       },
@@ -247,9 +247,9 @@
         "away_owner": "Moss",
         "away_score": 1823.0,
         "home_team": "Twin Towers",
-        "home_owner": "HaleTrager",
+        "home_owner": "Trager",
         "home_score": 1986.0,
-        "winner": "HaleTrager"
+        "winner": "Trager"
       },
       {
         "period": 15,
@@ -304,12 +304,12 @@
       {
         "period": 16,
         "away_team": "Twin Towers",
-        "away_owner": "HaleTrager",
+        "away_owner": "Trager",
         "away_score": 2316.0,
         "home_team": "Always Droppin Dimes",
         "home_owner": "Peterson",
         "home_score": 1558.0,
-        "winner": "HaleTrager"
+        "winner": "Trager"
       },
       {
         "period": 16,
@@ -364,12 +364,12 @@
       {
         "period": 14,
         "away_team": "Twin Towers",
-        "away_owner": "HaleTrager",
+        "away_owner": "Trager",
         "away_score": 1772.0,
         "home_team": "Always Droppin Dimes",
         "home_owner": "Peterson",
         "home_score": 1479.0,
-        "winner": "HaleTrager"
+        "winner": "Trager"
       },
       {
         "period": 14,
@@ -427,7 +427,7 @@
         "away_owner": "Jowkar",
         "away_score": 1739.0,
         "home_team": "Twin Towers",
-        "home_owner": "HaleTrager",
+        "home_owner": "Trager",
         "home_score": 1709.0,
         "winner": "Jowkar"
       }

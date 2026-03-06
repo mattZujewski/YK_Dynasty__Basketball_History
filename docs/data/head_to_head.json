@@ -145,8 +145,8 @@
       }
     ]
   },
-  "HaleTrager_vs_Moss": {
-    "owner1": "HaleTrager",
+  "Trager_vs_Moss": {
+    "owner1": "Trager",
     "owner2": "Moss",
     "wins": 1,
     "losses": 1,
@@ -167,9 +167,9 @@
       }
     ]
   },
-  "Moss_vs_HaleTrager": {
+  "Moss_vs_Trager": {
     "owner1": "Moss",
-    "owner2": "HaleTrager",
+    "owner2": "Trager",
     "wins": 1,
     "losses": 1,
     "matchups": [
@@ -381,9 +381,9 @@
       }
     ]
   },
-  "Baden_vs_HaleTrager": {
+  "Baden_vs_Trager": {
     "owner1": "Baden",
-    "owner2": "HaleTrager",
+    "owner2": "Trager",
     "wins": 1,
     "losses": 0,
     "matchups": [
@@ -396,8 +396,8 @@
       }
     ]
   },
-  "HaleTrager_vs_Baden": {
-    "owner1": "HaleTrager",
+  "Trager_vs_Baden": {
+    "owner1": "Trager",
     "owner2": "Baden",
     "wins": 0,
     "losses": 1,
@@ -485,8 +485,8 @@
       }
     ]
   },
-  "HaleTrager_vs_Berke": {
-    "owner1": "HaleTrager",
+  "Trager_vs_Berke": {
+    "owner1": "Trager",
     "owner2": "Berke",
     "wins": 0,
     "losses": 1,
@@ -500,9 +500,9 @@
       }
     ]
   },
-  "Berke_vs_HaleTrager": {
+  "Berke_vs_Trager": {
     "owner1": "Berke",
-    "owner2": "HaleTrager",
+    "owner2": "Trager",
     "wins": 1,
     "losses": 0,
     "matchups": [
@@ -633,9 +633,9 @@
       }
     ]
   },
-  "Peterson_vs_HaleTrager": {
+  "Peterson_vs_Trager": {
     "owner1": "Peterson",
-    "owner2": "HaleTrager",
+    "owner2": "Trager",
     "wins": 1,
     "losses": 2,
     "matchups": [
@@ -662,8 +662,8 @@
       }
     ]
   },
-  "HaleTrager_vs_Peterson": {
-    "owner1": "HaleTrager",
+  "Trager_vs_Peterson": {
+    "owner1": "Trager",
     "owner2": "Peterson",
     "wins": 2,
     "losses": 1,
@@ -961,9 +961,9 @@
       }
     ]
   },
-  "Jowkar_vs_HaleTrager": {
+  "Jowkar_vs_Trager": {
     "owner1": "Jowkar",
-    "owner2": "HaleTrager",
+    "owner2": "Trager",
     "wins": 1,
     "losses": 0,
     "matchups": [
@@ -976,8 +976,8 @@
       }
     ]
   },
-  "HaleTrager_vs_Jowkar": {
-    "owner1": "HaleTrager",
+  "Trager_vs_Jowkar": {
+    "owner1": "Trager",
     "owner2": "Jowkar",
     "wins": 0,
     "losses": 1,
