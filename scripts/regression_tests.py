@@ -478,6 +478,30 @@ nav_txt = read_text(os.path.join(JS, 'nav.js'))
 test("T77: nav.js has About link, no Stats main nav link",
      'references.html' in nav_txt and "stats.html'>Stats" not in nav_txt)
 
+# T78: picks.json has Baden 2027 picks > 0
+picks = load('picks.json')
+baden_2027 = picks.get('2027', {}).get('Baden', [])
+test("T78: picks.json Baden 2027 pick count > 0",
+     len(baden_2027) > 0, f"got {len(baden_2027)}")
+
+# T79: picks.json has 2026-2030 years
+pick_years = sorted(k for k in picks.keys() if k != 'summary')
+test("T79: picks.json has 2026-2030",
+     pick_years == ['2026', '2027', '2028', '2029', '2030'],
+     f"got {pick_years}")
+
+# T80: picks.json summary totals match actual counts
+if 'summary' in picks:
+    all_match = True
+    for owner in ['Trager', 'Jowkar', 'Delaney', 'Green', 'Berke', 'Gold', 'Moss', 'Baden', 'Peterson', 'Zujewski']:
+        actual = sum(len(picks.get(yr, {}).get(owner, [])) for yr in pick_years)
+        expected = picks['summary'].get(owner, {}).get('total', -1)
+        if actual != expected:
+            all_match = False
+    test("T80: picks.json summary totals match actual pick counts", all_match)
+else:
+    test("T80: picks.json summary totals match actual pick counts", False, "no summary key")
+
 # ── Summary ───────────────────────────────────────────────────────────
 
 print(f"\n{'='*50}")

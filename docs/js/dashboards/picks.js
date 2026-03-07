@@ -19,7 +19,7 @@
       return;
     }
 
-    const years = Object.keys(picksData).sort();
+    const years = Object.keys(picksData).filter(function(k) { return k !== 'summary'; }).sort();
 
     // Dynamic subtitle
     if (years.length > 0) {
