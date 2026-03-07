@@ -76,22 +76,32 @@ window.YK = window.YK || {};
   // Team name → canonical owner mapping (all seasons, verified against Fantrax)
   const TEAM_TO_OWNER = {
     'Always Droppin Dimes': 'Peterson',
+    'Always Dropping Dimes':'Peterson',   // 2020-21
     'Ball Don\'t Lie':      'Jowkar',
     'BKs Whoppers':         'Baden',
     'Burner account':       'Berke',
-    'Charlotte Wobnets':    'Baden',    // Vlandis franchise (2022-23)
+    'Charlotte Wobnets':    'Baden',    // Vlandis franchise (2021-23)
+    'Deepwater':            'Gold',     // 2020-21
     'Flaming Flaggs':       'Baden',
     'Freshly Washed Kings': 'Delaney',
     'Giddey Up':            'Gold',     // Confirmed by Fantrax shortName "Gold"
+    'Herro Ball':           'Jowkar',   // 2020-21
     'Ice Trae':             'Green',
-    'Kelvin got No Dimes':  'Berke',    // Confirmed by Fantrax shortName "Berke"
+    'Kelvin Got No Dimes':  'Berke',    // 2020-22
+    'Kelvin got No Dimes':  'Berke',    // 2022-24 (Fantrax casing)
     'Kentucky Fried Guards':'Gold',
-    'Lob Land':             'Trager', // 2022-23
+    'Lob Land':             'Trager',
+    'Minnesota TimberWobs': 'Baden',    // Vlandis franchise (2020-21)
+    'Morey Ball':           'Moss',     // 2020-22
     'No Shaime':            'Gold',       // 2023-24
     'Only Franz':           'Zujewski',
     'Pure Sweat Farm':      'Moss',
     'Pure Sweat Fam':       'Moss',
+    'Sex Land':             'Trager',   // 2020-21
     'Twin Towers':          'Trager',
+    'Unwashed Princes':     'Delaney',  // 2021-22
+    'Washed Kings':         'Delaney',  // 2020-21
+    'Z Man the Juice':      'Zujewski', // 2020-21
   };
 
   // Owner color palette — 10 owners in OWNERS_ALPHA order:

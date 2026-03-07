@@ -1,0 +1,216 @@
+{
+  "playoffs": [
+    {
+      "year": "2020-21",
+      "format": "top3_bye",
+      "champion": "Moss",
+      "runner_up": "Delaney",
+      "third": "Peterson",
+      "payouts": { "1st": 700, "2nd": 200, "3rd": 100 },
+      "rounds": [
+        {
+          "name": "Wild Card",
+          "matchups": [
+            { "higher_seed": { "owner": "Moss", "seed": 4 }, "lower_seed": { "owner": "Trager", "seed": 5 }, "winner": "Moss" }
+          ]
+        },
+        {
+          "name": "Semifinals",
+          "matchups": [
+            { "higher_seed": { "owner": "Berke", "seed": 1 }, "lower_seed": { "owner": "Moss", "seed": 4 }, "winner": "Moss" },
+            { "higher_seed": { "owner": "Peterson", "seed": 2 }, "lower_seed": { "owner": "Delaney", "seed": 3 }, "winner": "Delaney" }
+          ]
+        },
+        {
+          "name": "Finals",
+          "matchups": [
+            { "higher_seed": { "owner": "Moss", "seed": 4 }, "lower_seed": { "owner": "Delaney", "seed": 3 }, "winner": "Moss" }
+          ]
+        },
+        {
+          "name": "Consolation",
+          "matchups": [
+            { "higher_seed": { "owner": "Peterson", "seed": 2 }, "lower_seed": { "owner": "Berke", "seed": 1 }, "winner": "Peterson" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2021-22",
+      "format": "top3_bye",
+      "champion": "Berke",
+      "runner_up": "Trager",
+      "third": "Peterson",
+      "payouts": { "1st": 700, "2nd": 200, "3rd": 100 },
+      "rounds": [
+        {
+          "name": "Wild Card",
+          "matchups": [
+            { "higher_seed": { "owner": "Delaney", "seed": 4 }, "lower_seed": { "owner": "Moss", "seed": 5 }, "winner": "Moss" }
+          ]
+        },
+        {
+          "name": "Semifinals",
+          "matchups": [
+            { "higher_seed": { "owner": "Trager", "seed": 1 }, "lower_seed": { "owner": "Moss", "seed": 5 }, "winner": "Trager" },
+            { "higher_seed": { "owner": "Berke", "seed": 2 }, "lower_seed": { "owner": "Peterson", "seed": 3 }, "winner": "Berke" }
+          ]
+        },
+        {
+          "name": "Finals",
+          "matchups": [
+            { "higher_seed": { "owner": "Trager", "seed": 1 }, "lower_seed": { "owner": "Berke", "seed": 2 }, "winner": "Berke" }
+          ]
+        },
+        {
+          "name": "Consolation",
+          "matchups": [
+            { "higher_seed": { "owner": "Peterson", "seed": 3 }, "lower_seed": { "owner": "Moss", "seed": 5 }, "winner": "Peterson" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2022-23",
+      "format": "top3_bye",
+      "champion": "Peterson",
+      "runner_up": "Moss",
+      "third": "Delaney",
+      "rounds": [
+        {
+          "name": "Wild Card",
+          "matchups": [
+            { "higher_seed": { "owner": "Delaney", "seed": 4 }, "lower_seed": { "owner": "Berke", "seed": 5 }, "winner": "Delaney" }
+          ]
+        },
+        {
+          "name": "Semifinals",
+          "matchups": [
+            { "higher_seed": { "owner": "Peterson", "seed": 1 }, "lower_seed": { "owner": "Delaney", "seed": 4 }, "winner": "Peterson" },
+            { "higher_seed": { "owner": "Moss", "seed": 2 }, "lower_seed": { "owner": "Vlandis", "seed": 3 }, "winner": "Moss" }
+          ]
+        },
+        {
+          "name": "Finals",
+          "matchups": [
+            { "higher_seed": { "owner": "Peterson", "seed": 1 }, "lower_seed": { "owner": "Moss", "seed": 2 }, "winner": "Peterson" }
+          ]
+        },
+        {
+          "name": "Consolation",
+          "matchups": [
+            { "higher_seed": { "owner": "Delaney", "seed": 4 }, "lower_seed": { "owner": "Vlandis", "seed": 3 }, "winner": "Delaney" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2023-24",
+      "format": "top2_bye",
+      "champion": "Peterson",
+      "runner_up": "Berke",
+      "third": "Jowkar",
+      "rounds": [
+        {
+          "name": "Wild Card",
+          "matchups": [
+            { "higher_seed": { "owner": "Berke", "seed": 3 }, "lower_seed": { "owner": "Kelley", "seed": 6 }, "winner": "Berke" },
+            { "higher_seed": { "owner": "Green", "seed": 4 }, "lower_seed": { "owner": "Delaney", "seed": 5 }, "winner": "Green" }
+          ]
+        },
+        {
+          "name": "Semifinals",
+          "matchups": [
+            { "higher_seed": { "owner": "Peterson", "seed": 1 }, "lower_seed": { "owner": "Green", "seed": 4 }, "winner": "Peterson" },
+            { "higher_seed": { "owner": "Jowkar", "seed": 2 }, "lower_seed": { "owner": "Berke", "seed": 3 }, "winner": "Berke" }
+          ]
+        },
+        {
+          "name": "Finals",
+          "matchups": [
+            { "higher_seed": { "owner": "Peterson", "seed": 1 }, "lower_seed": { "owner": "Berke", "seed": 3 }, "winner": "Peterson" }
+          ]
+        },
+        {
+          "name": "Consolation",
+          "matchups": [
+            { "higher_seed": { "owner": "Jowkar", "seed": 2 }, "lower_seed": { "owner": "Green", "seed": 4 }, "winner": "Jowkar" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2024-25",
+      "format": "top2_bye",
+      "champion": "Trager",
+      "runner_up": "Jowkar",
+      "third": "Green",
+      "rounds": [
+        {
+          "name": "Wild Card",
+          "matchups": [
+            { "higher_seed": { "owner": "Peterson", "seed": 3 }, "lower_seed": { "owner": "Berke", "seed": 6 }, "winner": "Peterson" },
+            { "higher_seed": { "owner": "Moss", "seed": 4 }, "lower_seed": { "owner": "Trager", "seed": 5 }, "winner": "Trager" }
+          ]
+        },
+        {
+          "name": "Semifinals",
+          "matchups": [
+            { "higher_seed": { "owner": "Green", "seed": 2 }, "lower_seed": { "owner": "Trager", "seed": 5 }, "winner": "Trager" },
+            { "higher_seed": { "owner": "Jowkar", "seed": 1 }, "lower_seed": { "owner": "Peterson", "seed": 3 }, "winner": "Jowkar" }
+          ]
+        },
+        {
+          "name": "Finals",
+          "matchups": [
+            { "higher_seed": { "owner": "Jowkar", "seed": 1 }, "lower_seed": { "owner": "Trager", "seed": 5 }, "winner": "Trager" }
+          ]
+        },
+        {
+          "name": "Consolation",
+          "matchups": [
+            { "higher_seed": { "owner": "Green", "seed": 2 }, "lower_seed": { "owner": "Peterson", "seed": 3 }, "winner": "Green" }
+          ]
+        }
+      ]
+    },
+    {
+      "year": "2025-26",
+      "format": "top2_bye",
+      "in_progress": true,
+      "champion": null,
+      "runner_up": null,
+      "third": null,
+      "rounds": [
+        {
+          "name": "Wild Card",
+          "matchups": [
+            { "higher_seed": { "owner": "Green", "seed": 3 }, "lower_seed": { "owner": "Berke", "seed": 4 }, "winner": "Green" },
+            { "higher_seed": { "owner": "Trager", "seed": 5 }, "lower_seed": { "owner": "Zujewski", "seed": 6 }, "winner": "Trager" }
+          ]
+        },
+        {
+          "name": "Semifinals",
+          "matchups": [
+            { "higher_seed": { "owner": "Jowkar", "seed": 1 }, "lower_seed": { "owner": "Trager", "seed": 5 }, "winner": null },
+            { "higher_seed": { "owner": "Gold", "seed": 2 }, "lower_seed": { "owner": "Green", "seed": 3 }, "winner": null }
+          ]
+        }
+      ]
+    }
+  ],
+  "career_totals": [
+    { "owner": "Peterson", "rings": 2, "finals": 2, "playoff_apps": 5, "byes": 4 },
+    { "owner": "Berke",    "rings": 1, "finals": 2, "playoff_apps": 6, "byes": 3 },
+    { "owner": "Moss",     "rings": 1, "finals": 2, "playoff_apps": 4, "byes": 1 },
+    { "owner": "Trager",   "rings": 1, "finals": 2, "playoff_apps": 4, "byes": 1 },
+    { "owner": "Jowkar",   "rings": 0, "finals": 1, "playoff_apps": 3, "byes": 3 },
+    { "owner": "Delaney",  "rings": 0, "finals": 1, "playoff_apps": 4, "byes": 1 },
+    { "owner": "Green",    "rings": 0, "finals": 0, "playoff_apps": 3, "byes": 1 },
+    { "owner": "Vlandis",  "rings": 0, "finals": 0, "playoff_apps": 1, "byes": 1 },
+    { "owner": "Gold",     "rings": 0, "finals": 0, "playoff_apps": 1, "byes": 1 },
+    { "owner": "Kelley",   "rings": 0, "finals": 0, "playoff_apps": 1, "byes": 0 },
+    { "owner": "Zujewski", "rings": 0, "finals": 0, "playoff_apps": 1, "byes": 0 },
+    { "owner": "Baden",    "rings": 0, "finals": 0, "playoff_apps": 0, "byes": 0 }
+  ]
+}

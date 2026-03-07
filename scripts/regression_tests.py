@@ -61,7 +61,7 @@ test("T01: All JSON files parse without error", all_json_ok)
 
 # T2: seasons.json has 4 seasons
 seasons = load('seasons.json')
-test("T02: seasons.json has 4 seasons", len(seasons['seasons']) == 4)
+test("T02: seasons.json has 6 seasons", len(seasons['seasons']) == 6)
 
 # T3: owners.json has 10 owners
 owners = load('owners.json')

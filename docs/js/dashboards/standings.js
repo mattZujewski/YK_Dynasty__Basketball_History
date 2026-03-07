@@ -9,11 +9,12 @@
     const YK = window.YK;
     YK.applyChartDefaults();
 
-    let seasonsData, ownersData;
+    let seasonsData, ownersData, playoffsData;
     try {
-      [seasonsData, ownersData] = await Promise.all([
+      [seasonsData, ownersData, playoffsData] = await Promise.all([
         YK.loadJSON('data/seasons.json'),
         YK.loadJSON('data/owners.json'),
+        YK.loadJSON('data/playoffs.json'),
       ]);
     } catch (e) {
       console.error('Failed to load data:', e);
@@ -212,5 +213,106 @@
 
     renderSeasonDetail(seasons[seasons.length - 1].year);
     YK.makeSortable(document.getElementById('season-detail-table'));
+
+    // --- Playoff Brackets ---
+    var playoffs = playoffsData.playoffs || [];
+    var playoffFilter = document.getElementById('playoff-filter');
+    var bracketContainer = document.getElementById('playoff-bracket-container');
+
+    function renderPlayoffBracket(year) {
+      var p = playoffs.find(function(x) { return x.year === year; });
+      if (!p) { bracketContainer.innerHTML = ''; return; }
+
+      var html = '';
+      if (p.champion) {
+        html += '<div class="champion-banner" style="margin-top:16px">' +
+          '<div class="trophy">&#x1F3C6;</div>' +
+          '<div class="champ-info">' +
+            '<h2>' + YK.ownerDisplayName(p.champion) + ' &mdash; Year ' + (playoffs.indexOf(p) + 1) + ' Champion</h2>' +
+            '<p>';
+        if (p.runner_up) html += 'Runner-up: ' + YK.ownerDisplayName(p.runner_up);
+        if (p.third) html += ' &middot; 3rd: ' + YK.ownerDisplayName(p.third);
+        if (p.payouts) html += ' &middot; Payouts: $' + p.payouts['1st'] + ' / $' + p.payouts['2nd'] + ' / $' + p.payouts['3rd'];
+        html += '</p></div></div>';
+      } else if (p.in_progress) {
+        html += '<div style="margin-top:16px;padding:12px 16px;background:rgba(42,157,143,0.08);border-left:3px solid var(--brand-green);border-radius:0 6px 6px 0;font-size:0.85rem;color:var(--text-secondary)">' +
+          '<strong>Playoffs in progress</strong></div>';
+      }
+
+      html += '<div class="playoff-rounds" style="margin-top:16px">';
+      (p.rounds || []).forEach(function(round) {
+        html += '<div class="playoff-round" style="margin-bottom:16px">' +
+          '<h3 style="font-size:0.85rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px">' + round.name + '</h3>';
+        (round.matchups || []).forEach(function(m) {
+          var hColor = YK.ownerColor(m.higher_seed.owner);
+          var lColor = YK.ownerColor(m.lower_seed.owner);
+          var hDisplay = YK.ownerDisplayName(m.higher_seed.owner);
+          var lDisplay = YK.ownerDisplayName(m.lower_seed.owner);
+          var hWin = m.winner === m.higher_seed.owner;
+          var lWin = m.winner === m.lower_seed.owner;
+          var ongoing = m.winner === null;
+
+          html += '<div class="playoff-matchup">' +
+            '<div class="playoff-team' + (hWin ? ' playoff-winner' : '') + '">' +
+              '<span class="playoff-seed">' + m.higher_seed.seed + '</span>' +
+              '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + hColor + ';margin-right:6px"></span>' +
+              '<span class="playoff-name">' + hDisplay + '</span>' +
+              (hWin ? ' <span class="badge badge-champ" style="font-size:0.65rem;padding:1px 6px">W</span>' : '') +
+            '</div>' +
+            '<div class="playoff-vs">vs</div>' +
+            '<div class="playoff-team' + (lWin ? ' playoff-winner' : '') + '">' +
+              '<span class="playoff-seed">' + m.lower_seed.seed + '</span>' +
+              '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:' + lColor + ';margin-right:6px"></span>' +
+              '<span class="playoff-name">' + lDisplay + '</span>' +
+              (lWin ? ' <span class="badge badge-champ" style="font-size:0.65rem;padding:1px 6px">W</span>' : '') +
+            '</div>' +
+            (ongoing ? '<div style="font-size:0.72rem;color:var(--text-muted);margin-top:2px;font-style:italic">Ongoing</div>' : '') +
+          '</div>';
+        });
+        html += '</div>';
+      });
+      html += '</div>';
+
+      bracketContainer.innerHTML = html;
+    }
+
+    if (playoffFilter && playoffs.length > 0) {
+      playoffs.forEach(function(p, i) {
+        var btn = document.createElement('button');
+        btn.className = 'filter-btn' + (i === playoffs.length - 1 ? ' active' : '');
+        btn.textContent = p.year;
+        btn.addEventListener('click', function() {
+          playoffFilter.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          renderPlayoffBracket(p.year);
+        });
+        playoffFilter.appendChild(btn);
+      });
+      renderPlayoffBracket(playoffs[playoffs.length - 1].year);
+    }
+
+    // --- Career Playoff Totals ---
+    var careerTotals = playoffsData.career_totals || [];
+    var careerTbody = document.getElementById('career-playoff-tbody');
+
+    if (careerTbody && careerTotals.length > 0) {
+      careerTbody.innerHTML = careerTotals.map(function(t, i) {
+        var color = YK.ownerColor(t.owner);
+        var display = YK.ownerDisplayName(t.owner);
+        return '<tr data-rank="' + (i+1) + '" data-owner="' + display + '" data-rings="' + t.rings + '" data-finals="' + t.finals + '" data-apps="' + t.playoff_apps + '" data-byes="' + t.byes + '">' +
+          '<td style="text-align:center;font-weight:700">' + (i + 1) + '</td>' +
+          '<td>' +
+            '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + color + ';margin-right:7px;vertical-align:middle"></span>' +
+            '<strong>' + display + '</strong>' +
+            (t.rings > 0 ? ' <span class="badge badge-champ">' + t.rings + 'x Champ</span>' : '') +
+          '</td>' +
+          '<td style="text-align:center;font-weight:700;color:var(--brand-gold)">' + (t.rings > 0 ? t.rings : '&mdash;') + '</td>' +
+          '<td style="text-align:center">' + (t.finals > 0 ? t.finals : '&mdash;') + '</td>' +
+          '<td style="text-align:center">' + (t.playoff_apps > 0 ? t.playoff_apps : '&mdash;') + '</td>' +
+          '<td style="text-align:center">' + (t.byes > 0 ? t.byes : '&mdash;') + '</td>' +
+        '</tr>';
+      }).join('');
+      YK.makeSortable(document.getElementById('career-playoff-table'));
+    }
   });
 })();

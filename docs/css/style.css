@@ -1378,3 +1378,59 @@ html.dark .chart-insight {
 /* Clickable stat cards (global) */
 .stat-card[data-clickable] { cursor: pointer; transition: box-shadow 0.15s, transform 0.15s; }
 .stat-card[data-clickable]:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+/* ── Playoff bracket ──────────────────────────────────────── */
+.playoff-matchup {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  margin-bottom: 6px;
+  margin-right: 10px;
+  font-size: 0.85rem;
+}
+.playoff-team {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.playoff-team.playoff-winner .playoff-name { font-weight: 700; color: var(--brand-green); }
+.playoff-seed {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--bg-card); border: 1px solid var(--border);
+  font-size: 0.68rem; font-weight: 700; color: var(--text-muted);
+  margin-right: 2px; flex-shrink: 0;
+}
+.playoff-vs {
+  font-size: 0.72rem; color: var(--text-muted); font-weight: 600;
+  margin: 0 2px;
+}
+
+/* ── Info banner (picks, trade pages) ─────────────────────── */
+.info-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 24px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.info-banner-icon { font-size: 1.4rem; flex-shrink: 0; }
+.info-banner-construction {
+  background: rgba(202,138,4,0.10);
+  border: 1px solid rgba(202,138,4,0.35);
+  color: var(--text-secondary);
+}
+.info-banner-link {
+  background: rgba(37,99,235,0.08);
+  border: 1px solid rgba(37,99,235,0.25);
+  color: var(--text-secondary);
+}
+.info-banner-link a { color: var(--brand-green); font-weight: 600; }

@@ -15,7 +15,7 @@
   <main class="page-container">
     <header class="page-header">
       <h1>&#x1F3C6; All-Time Standings</h1>
-      <p class="subtitle">Aggregate records by owner across all Fantrax seasons (2022&ndash;23 to present)</p>
+      <p class="subtitle">Aggregate records by owner across all Fantrax seasons (2020&ndash;21 to present)</p>
     </header>
 
     <!-- All-Time Standings Table -->
@@ -76,6 +76,36 @@
             </tr>
           </thead>
           <tbody id="season-detail-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Playoff Brackets -->
+    <div class="chart-section">
+      <h2>&#x1F3C6; Playoff Brackets</h2>
+      <p class="chart-description">Postseason brackets for each year. Select a season to view.</p>
+      <div class="filter-bar" id="playoff-filter"></div>
+      <div id="playoff-bracket-container"></div>
+    </div>
+
+    <!-- Career Playoff Totals -->
+    <div class="chart-section">
+      <h2>&#x1F3C5; Career Playoff Totals</h2>
+      <p class="chart-description">All-time postseason records by owner. Sorted by rings, finals, playoff appearances, then byes.</p>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="career-playoff-table">
+          <thead>
+            <tr>
+              <th data-sort="rank" style="width:50px">Rank</th>
+              <th data-sort="owner">Owner</th>
+              <th data-sort="rings" style="text-align:center">Rings</th>
+              <th data-sort="finals" style="text-align:center">Finals</th>
+              <th data-sort="apps" style="text-align:center">Playoff Apps</th>
+              <th data-sort="byes" style="text-align:center">Byes</th>
+            </tr>
+          </thead>
+          <tbody id="career-playoff-tbody">
+            <tr><td colspan="6" class="text-center text-muted" style="padding:24px">Loading&hellip;</td></tr>
+          </tbody>
         </table>
       </div>
     </div>
