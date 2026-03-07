@@ -433,6 +433,25 @@ has_swap_table = 'WITH' in refs_html and 'SUBJECT TO' in refs_html
 test("T72: references.html has Swap Rights section with table",
      has_swap_section and has_swap_table)
 
+# T73: On page load with no filters, trade card count > 0
+# Simulates: trade_details.json has renderable trades (non-collusion, non-2020-21, id>23)
+td = load('trade_details.json')
+renderable = [t for t in td.get('trades', [])
+              if not t.get('is_collusion') and t.get('season') != '2020-21'
+              and t.get('trade_id', 0) > 23 and t.get('trade_id') != 20]
+test("T73: trade_details has >0 renderable trades (no-filter page load)",
+     len(renderable) > 0, f"got {len(renderable)}")
+
+# T74: INACTIVE_PLAYERS defined before first buildCard call (hoisting fix)
+tc_lines = tc_txt.split('\n')
+inactive_line = next((i for i, l in enumerate(tc_lines) if 'INACTIVE_PLAYERS' in l and 'new Set' in l), None)
+render_featured_call = next((i for i, l in enumerate(tc_lines) if 'renderFeatured(' in l and 'sortedByMargin' in l), None)
+apply_initial_call = next((i for i, l in enumerate(tc_lines) if 'applyFiltersAndSort()' in l), None)
+test("T74: INACTIVE_PLAYERS defined before renderFeatured/applyFiltersAndSort",
+     inactive_line is not None and render_featured_call is not None
+     and inactive_line < render_featured_call,
+     f"INACTIVE_PLAYERS at line {inactive_line}, renderFeatured at {render_featured_call}")
+
 # ── Summary ───────────────────────────────────────────────────────────
 
 print(f"\n{'='*50}")

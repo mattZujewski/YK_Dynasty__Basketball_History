@@ -44,9 +44,14 @@
       tvotById[t.trade_id] = t.eval_results || [];
     });
 
+    // Inactive players: traded players with 0 current production
+    // Must be defined before any buildCard/buildSideHtml calls (hoisted functions access this)
+    var INACTIVE_PLAYERS = new Set(['Kyrie Irving', 'Fred VanVleet', 'Damian Lillard', 'Cam Thomas']);
+
     // ── Season filter (two-way sync between top bar and inline bar) ──── //
     var filterSeasons = []; // [] = show all
     var _syncing = false; // prevent infinite sync loops
+    var _ready   = false; // guard: block sync callbacks until initial render completes
 
     function onSeasonChange(activeSeasons) {
       filterSeasons = activeSeasons;
@@ -64,7 +69,7 @@
     }
 
     var _sfb = YK.buildSeasonFilterBar('season-filter-bar', function(activeSeasons) {
-      if (_syncing) return;
+      if (!_ready || _syncing) return;
       _syncing = true;
       onSeasonChange(activeSeasons);
       syncInlineFilter(activeSeasons);
@@ -134,7 +139,7 @@
       inlineSeasonRow.addEventListener('click', function(e) {
         var btn = e.target.closest('.sfb-btn');
         if (!btn || btn.disabled || btn.classList.contains('sfb-disabled')) return;
-        if (_syncing) return;
+        if (!_ready || _syncing) return;
         _syncing = true;
         var val = btn.dataset.sfb;
         if (val === 'all') {
@@ -449,6 +454,7 @@
 
     // ── Initial full list render ──────────────────────────────────────────── //
     applyFiltersAndSort();
+    _ready = true; // unlock sync callbacks now that initial render is complete
 
     // ── Hash deep-link: scroll to & highlight a specific card ────────────── //
     var _hash = window.location.hash;
@@ -785,9 +791,6 @@
       var display = cp ? base + ' (swap w/ ' + cp[1] + ')' : base + ' (swap)';
       return { display: display, tooltip: full };
     }
-
-    // Inactive players: traded players with 0 current production
-    var INACTIVE_PLAYERS = new Set(['Kyrie Irving', 'Fred VanVleet', 'Damian Lillard', 'Cam Thomas']);
 
     function buildSideHtml(side, sideClass, isCollusion, tvotPeriods, isMultiParty, trade) {
       if (!side || !side.owner) return '<div class="trade-side ' + sideClass + '"></div>';
