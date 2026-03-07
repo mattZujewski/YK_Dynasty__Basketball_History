@@ -46,7 +46,7 @@
 
     // Inactive players: traded players with 0 current production
     // Must be defined before any buildCard/buildSideHtml calls (hoisted functions access this)
-    var INACTIVE_PLAYERS = new Set(['Kyrie Irving', 'Fred VanVleet', 'Damian Lillard', 'Cam Thomas']);
+    var INACTIVE_PLAYERS = new Set(['Kyrie Irving', 'Fred VanVleet', 'Damian Lillard', 'Cam Thomas', 'Kemba Walker', 'John Wall']);
 
     // ── Season filter (two-way sync between top bar and inline bar) ──── //
     var filterSeasons = []; // [] = show all
@@ -820,7 +820,7 @@
         winBadge = '<span class="winner-badge">&#x2714; Dynasty Winner' + cumSuffix + '</span>';
         if (flipped && owner === currWinner) {
           // Flipped: add secondary Flipped badge with margin
-          winBadge += ' <span class="winner-flipped-badge">&#x21C4; Flipped' + cumSuffix + '</span>';
+          winBadge += ' <span class="winner-flipped-badge">&#x21C4; Flipped</span>';
         } else if (tvotArr.length > 1) {
           winnerHistory = '<div class="winner-history winner-stable">Leading since Y1</div>';
         }

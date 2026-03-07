@@ -391,13 +391,14 @@ all_stable = all(
 )
 test("T65: Non-flipped trades have first_winner == last_winner", all_stable)
 
-# T66: trade_cards.js has INACTIVE_PLAYERS Set with 4 players
+# T66: trade_cards.js has INACTIVE_PLAYERS Set with 6 players
 tc_path = os.path.join(JS, 'dashboards', 'trade_cards.js')
 tc_txt = read_text(tc_path)
-inactive_names = ['Kyrie Irving', 'Fred VanVleet', 'Damian Lillard', 'Cam Thomas']
+inactive_names = ['Kyrie Irving', 'Fred VanVleet', 'Damian Lillard', 'Cam Thomas',
+                  'Kemba Walker', 'John Wall']
 has_inactive_set = 'INACTIVE_PLAYERS' in tc_txt
 all_inactive_present = all(name in tc_txt for name in inactive_names)
-test("T66: trade_cards.js has INACTIVE_PLAYERS with 4 players",
+test("T66: trade_cards.js has INACTIVE_PLAYERS with 6 players",
      has_inactive_set and all_inactive_present)
 
 # T67: trade_cards.js has stacked flipped badge logic (Dynasty Winner + Flipped)
@@ -451,6 +452,31 @@ test("T74: INACTIVE_PLAYERS defined before renderFeatured/applyFiltersAndSort",
      inactive_line is not None and render_featured_call is not None
      and inactive_line < render_featured_call,
      f"INACTIVE_PLAYERS at line {inactive_line}, renderFeatured at {render_featured_call}")
+
+# T75-T76: Kemba Walker and John Wall have 0 dynasty value in trade_details
+def find_player_values(player_name):
+    vals = []
+    for t in td.get('trades', []):
+        for side in t.get('sides', []):
+            for a in side.get('assets', []):
+                if a.get('name') == player_name:
+                    vals.append((t['trade_id'], a.get('value', -1)))
+    return vals
+
+kemba_vals = find_player_values('Kemba Walker')
+test("T75: Kemba Walker dynasty value = 0 in all trades",
+     len(kemba_vals) > 0 and all(v == 0 for _, v in kemba_vals),
+     f"values: {kemba_vals}")
+
+wall_vals = find_player_values('John Wall')
+test("T76: John Wall dynasty value = 0 in all trades",
+     len(wall_vals) > 0 and all(v == 0 for _, v in wall_vals),
+     f"values: {wall_vals}")
+
+# T77: nav.js has References/About link, no Stats link
+nav_txt = read_text(os.path.join(JS, 'nav.js'))
+test("T77: nav.js has About link, no Stats main nav link",
+     'references.html' in nav_txt and "stats.html'>Stats" not in nav_txt)
 
 # ── Summary ───────────────────────────────────────────────────────────
 

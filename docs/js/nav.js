@@ -19,7 +19,7 @@
     const isTeam     = path.includes('team.html');
     const isPlayers  = path.includes('players.html');
     const isRankings = path.includes('rankings.html');
-    const isStats    = path.includes('stats.html');
+    const isRefs     = path.includes('references.html');
     const isGrades   = path.includes('grades.html');
     const isTradeLeaderboard = path.includes('trade-leaderboard.html');
     const isTvot       = path.includes('trade-value-over-time.html');
@@ -54,7 +54,7 @@
     <a class="nav-link${activeClass(isTeam)}"      href="${base}team.html">Teams</a>
     <a class="nav-link${activeClass(isPlayers)}"   href="${base}players.html">Players</a>
     <a class="nav-link${activeClass(isRankings)}"  href="${base}rankings.html">Rankings</a>
-    <a class="nav-link${activeClass(isStats)}"     href="${base}stats.html">Stats</a>
+    <a class="nav-link${activeClass(isRefs)}"      href="${base}references.html">About</a>
   </div>
   <span class="nav-spacer"></span>
   <span class="nav-meta" id="nav-data-date">2025-26</span>

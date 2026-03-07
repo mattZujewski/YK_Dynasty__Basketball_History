@@ -26,7 +26,7 @@
     // Build team history map from owners.json: owner canonical → [{team, season}]
     const ownerTeamHistory = {};
     (ownersData.owners || []).forEach(function(ownerObj) {
-      const canonical = YK.resolveOwner(ownerObj.id);
+      const canonical = ownerObj.id.charAt(0).toUpperCase() + ownerObj.id.slice(1);
       const teams = ownerObj.teams || {};
       const history = [];
       Object.keys(teams).sort().forEach(function(yr) {

@@ -141,7 +141,7 @@
       "sides": [
         {
           "owner": "Jowkar",
-          "side_total": 70.22,
+          "side_total": 43.16,
           "is_winner": false,
           "win_margin_pct": -0.5175,
           "assets": [
@@ -154,14 +154,14 @@
             },
             {
               "name": "Kemba Walker",
-              "value": 12.89,
-              "fpg": null,
+              "value": 0,
+              "fpg": 0.0,
               "age": null,
               "asset_type": "player"
             },
             {
               "name": "John Wall",
-              "value": 14.17,
+              "value": 0,
               "fpg": 0.0,
               "age": 35,
               "asset_type": "player"
@@ -2030,14 +2030,14 @@
       "sides": [
         {
           "owner": "Berke",
-          "side_total": 12.89,
+          "side_total": 0,
           "is_winner": true,
           "win_margin_pct": -0.2596,
           "assets": [
             {
               "name": "Kemba Walker",
-              "value": 12.89,
-              "fpg": null,
+              "value": 0,
+              "fpg": 0.0,
               "age": null,
               "asset_type": "player"
             }
