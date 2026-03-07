@@ -286,7 +286,7 @@
       tradeHtml += '</div>';
 
       // === D. Draft Picks Owned ===
-      var pickYears = Object.keys(picksData).sort();
+      var pickYears = Object.keys(picksData).filter(function(k) { return k !== 'summary'; }).sort();
       var picksHtml = '<div class="chart-section">';
       picksHtml += '<h2>&#x1F4CB; Draft Picks Owned</h2>';
       picksHtml += '<div class="data-table-wrapper" style="border:none">';

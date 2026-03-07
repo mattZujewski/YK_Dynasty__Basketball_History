@@ -502,6 +502,12 @@ if 'summary' in picks:
 else:
     test("T80: picks.json summary totals match actual pick counts", False, "no summary key")
 
+# T81: team.js filters out 'summary' key from picksData
+team_js = read_text(os.path.join(JS, 'dashboards', 'team.js'))
+test("T81: team.js filters summary from picksData keys",
+     "k !== 'summary'" in team_js,
+     "team.js does not filter summary key from picks")
+
 # ── Summary ───────────────────────────────────────────────────────────
 
 print(f"\n{'='*50}")
