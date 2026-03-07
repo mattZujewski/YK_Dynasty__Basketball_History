@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Regression test suite for YK Dynasty Basketball History site data.
 
-62 tests covering:
+Tests covering:
 - Owner naming (no HaleTrager in canonical positions)
 - Vlandis/Kelley/Baden attribution by season
 - Fantasy-point correctness in seasons.json
 - Structural integrity of all JSON data files
+- Phase 11.8: flipped badges, inactive labels, sort options, year filter sync
 """
 
 import json
@@ -359,6 +360,78 @@ test("T61: core.js OWNERS_ALPHA has exactly 10 entries",
 
 test("T62: core.js OWNERS_ALPHA is sorted alphabetically",
      alpha_list == sorted(alpha_list), f"got {alpha_list}")
+
+# ── 10. Phase 11.8 — Flipped badges, inactive labels, UI checks ─────
+
+print("\n── Phase 11.8 Checks ──")
+
+# T63: TVOT data has winner_changed field on every trade
+tvot = load('trade_value_over_time.json')
+tvot_trades = tvot.get('trades', [])
+all_have_wc = all('winner_changed' in t for t in tvot_trades)
+test("T63: TVOT trades all have winner_changed field", all_have_wc)
+
+# T64: Flipped trades have first_winner != last_winner
+flipped_trades = [t for t in tvot_trades if t.get('winner_changed')]
+all_flipped_correct = all(
+    t.get('first_winner') != t.get('last_winner') and
+    t.get('first_winner') is not None and
+    t.get('last_winner') is not None
+    for t in flipped_trades
+)
+test("T64: Flipped trades have first_winner != last_winner",
+     all_flipped_correct and len(flipped_trades) > 0,
+     f"{len(flipped_trades)} flipped trades found")
+
+# T65: Non-flipped trades have consistent winners
+non_flipped = [t for t in tvot_trades if not t.get('winner_changed')]
+all_stable = all(
+    t.get('first_winner') == t.get('last_winner')
+    for t in non_flipped if t.get('first_winner') is not None
+)
+test("T65: Non-flipped trades have first_winner == last_winner", all_stable)
+
+# T66: trade_cards.js has INACTIVE_PLAYERS Set with 4 players
+tc_path = os.path.join(JS, 'dashboards', 'trade_cards.js')
+tc_txt = read_text(tc_path)
+inactive_names = ['Kyrie Irving', 'Fred VanVleet', 'Damian Lillard', 'Cam Thomas']
+has_inactive_set = 'INACTIVE_PLAYERS' in tc_txt
+all_inactive_present = all(name in tc_txt for name in inactive_names)
+test("T66: trade_cards.js has INACTIVE_PLAYERS with 4 players",
+     has_inactive_set and all_inactive_present)
+
+# T67: trade_cards.js has stacked flipped badge logic (Dynasty Winner + Flipped)
+has_dynasty_winner = 'Dynasty Winner' in tc_txt
+has_flipped_badge = 'winner-flipped-badge' in tc_txt
+test("T67: trade_cards.js has stacked Dynasty Winner + Flipped badges",
+     has_dynasty_winner and has_flipped_badge)
+
+# T68: trade_cards.js has oldest sort option
+has_oldest_sort = "sortBy === 'oldest'" in tc_txt or 'sortBy==="oldest"' in tc_txt
+test("T68: trade_cards.js has oldest sort option", has_oldest_sort)
+
+# T69: trade-cards.html has inline season filter row
+tc_html = read_text(os.path.join(os.path.dirname(JS), 'trade-cards.html'))
+has_inline_filter = 'inline-season-filter-row' in tc_html
+test("T69: trade-cards.html has inline season filter row", has_inline_filter)
+
+# T70: trade-cards.html has Oldest First button
+has_oldest_btn = 'Oldest First' in tc_html or 'data-sortby="oldest"' in tc_html
+test("T70: trade-cards.html has Oldest First button", has_oldest_btn)
+
+# T71: standings.html column header says "Team Name" not "Teams"
+standings_html = read_text(os.path.join(os.path.dirname(JS), 'standings.html'))
+has_team_name_header = 'Team Name' in standings_html
+no_old_teams_header = '>Teams<' not in standings_html
+test("T71: standings.html uses 'Team Name' column header",
+     has_team_name_header and no_old_teams_header)
+
+# T72: references.html has Swap Rights section
+refs_html = read_text(os.path.join(os.path.dirname(JS), 'references.html'))
+has_swap_section = 'Swap Rights' in refs_html
+has_swap_table = 'WITH' in refs_html and 'SUBJECT TO' in refs_html
+test("T72: references.html has Swap Rights section with table",
+     has_swap_section and has_swap_table)
 
 # ── Summary ───────────────────────────────────────────────────────────
 

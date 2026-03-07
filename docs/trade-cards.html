@@ -99,7 +99,6 @@
     }
     .winner-history { font-size: 0.72rem; color: var(--text-muted); margin-bottom: 4px; line-height: 1.3; }
     .winner-stable  { color: var(--brand-green); }
-    .winner-flipped-text { color: #c7960a; }
     .trade-side-total {
       font-size: 1.05rem;
       font-weight: 800;
@@ -377,6 +376,10 @@
       <h2><span id="all-trades-label">All Trade Grades</span> <span id="cards-count-inline" style="font-size:0.8rem;font-weight:400;color:var(--text-muted)"></span></h2>
       <p class="chart-description">Filter and sort all graded trades. Click &ldquo;TVOT&rdquo; to see how a trade&rsquo;s value changed over time.</p>
 
+      <!-- Row 0: Season pills (synced with top filter) -->
+      <div class="filter-row" id="inline-season-filter-row">
+        <label style="font-size:0.8rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.05em;margin-right:4px">Season:</label>
+      </div>
       <!-- Row 1: Owner pills -->
       <div class="filter-row">
         <div id="owner-pills-bar" class="owner-pill-bar"></div>
@@ -386,6 +389,7 @@
         <button class="filter-btn active" data-sortby="margin">Biggest Margin</button>
         <button class="filter-btn" data-sortby="recent">Most Recent</button>
         <button class="filter-btn" data-sortby="fair">Closest First</button>
+        <button class="filter-btn" data-sortby="oldest">Oldest First</button>
         <span class="filter-sep">|</span>
         <button id="collusion-icon-btn" class="collusion-icon-btn" title="Show collusion flags — overrides all filters">&#x1F575;&#xFE0F;</button>
         <button id="reset-filters-btn" class="reset-filters-btn">&#x21BA; Reset Filters</button>

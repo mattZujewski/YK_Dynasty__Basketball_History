@@ -35,33 +35,11 @@
       ownerTeamHistory[canonical] = history;
     });
 
-    // Format team history for display: "TeamName (YY-YY)" format
-    function formatTeamHistory(owner) {
+    // Get current team name for display (most recent season)
+    function getCurrentTeamName(owner) {
       const history = ownerTeamHistory[owner];
-      if (!history || history.length === 0) return '—';
-
-      // Group consecutive seasons with same team name
-      var groups = [];
-      var current = null;
-      history.forEach(function(h) {
-        if (current && current.team === h.team) {
-          current.endYear = h.season;
-        } else {
-          if (current) groups.push(current);
-          current = { team: h.team, startYear: h.season, endYear: h.season };
-        }
-      });
-      if (current) groups.push(current);
-
-      return groups.map(function(g) {
-        var startShort = g.startYear.split('-')[0].slice(-2);
-        var endShort = g.endYear.split('-')[1];
-        if (g.startYear === g.endYear) {
-          return g.team + " ('" + startShort + '-' + endShort + ')';
-        }
-        var endLong = g.endYear.split('-')[1];
-        return g.team + " ('" + startShort + '-' + endLong + ')';
-      }).join(', ');
+      if (!history || history.length === 0) return '\u2014';
+      return history[history.length - 1].team;
     }
 
     // --- All-Time Aggregation by OWNER ---
@@ -95,15 +73,15 @@
     alltimeTbody.innerHTML = allOwners.map(function(t, i) {
       var color = YK.ownerColor(t.owner);
       var displayName = YK.ownerDisplayName(t.owner);
-      var teamHistory = formatTeamHistory(t.owner);
-      return '<tr data-rank="' + (i+1) + '" data-owner="' + displayName + '" data-teams="' + teamHistory + '" data-seasons="' + t.seasons + '" data-w="' + t.w + '" data-l="' + t.l + '" data-pct="' + t.pct.toFixed(3) + '" data-fpts="' + t.fpts + '" data-titles="' + t.titles + '">' +
+      var teamName = getCurrentTeamName(t.owner);
+      return '<tr data-rank="' + (i+1) + '" data-owner="' + displayName + '" data-teams="' + teamName + '" data-seasons="' + t.seasons + '" data-w="' + t.w + '" data-l="' + t.l + '" data-pct="' + t.pct.toFixed(3) + '" data-fpts="' + t.fpts + '" data-titles="' + t.titles + '">' +
         '<td style="text-align:center;font-weight:700">' + (i + 1) + '</td>' +
         '<td>' +
           '<span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:' + color + ';margin-right:7px;vertical-align:middle"></span>' +
           '<strong>' + displayName + '</strong>' +
           (t.titles > 0 ? ' <span class="badge badge-champ">' + t.titles + 'x Champ</span>' : '') +
         '</td>' +
-        '<td style="color:var(--text-muted);font-size:0.78rem">' + teamHistory + '</td>' +
+        '<td style="font-size:0.82rem">' + teamName + '</td>' +
         '<td style="text-align:center">' + t.seasons + '</td>' +
         '<td style="text-align:center;font-weight:600">' + t.w + '</td>' +
         '<td style="text-align:center">' + t.l + '</td>' +

@@ -44,11 +44,12 @@
       tvotById[t.trade_id] = t.eval_results || [];
     });
 
-    // ── Season filter ────────────────────────────────────────────────────── //
+    // ── Season filter (two-way sync between top bar and inline bar) ──── //
     var filterSeasons = []; // [] = show all
-    var _sfb = YK.buildSeasonFilterBar('season-filter-bar', function(activeSeasons) {
+    var _syncing = false; // prevent infinite sync loops
+
+    function onSeasonChange(activeSeasons) {
       filterSeasons = activeSeasons;
-      // Update sticky pill text when season changes
       if (stickyPill) {
         if (filterSeasons.length > 0) {
           stickyPill.textContent = 'Viewing: ' + filterSeasons.join(', ');
@@ -60,6 +61,14 @@
       var subset = getSeasonSubset();
       buildSummaryCards(subset);
       applyFiltersAndSort();
+    }
+
+    var _sfb = YK.buildSeasonFilterBar('season-filter-bar', function(activeSeasons) {
+      if (_syncing) return;
+      _syncing = true;
+      onSeasonChange(activeSeasons);
+      syncInlineFilter(activeSeasons);
+      _syncing = false;
     });
 
     function getSeasonSubset() {
@@ -84,6 +93,84 @@
         }
       }, { threshold: 0 });
       _sfbObs.observe(sfbEl);
+    }
+
+    // ── Inline season filter (inside All Trade Grades section) ────────── //
+    var inlineSeasonRow = document.getElementById('inline-season-filter-row');
+    var inlineSeasons = ['21-22', '22-23', '23-24', '24-25', '25-26'];
+
+    function buildInlineSeasonBtns() {
+      if (!inlineSeasonRow) return;
+      // Remove old buttons (keep the label)
+      inlineSeasonRow.querySelectorAll('.sfb-btn').forEach(function(b) { b.remove(); });
+
+      // "All" button
+      var allBtn = document.createElement('button');
+      allBtn.className = 'sfb-btn' + (filterSeasons.length === 0 ? ' active' : '');
+      allBtn.textContent = 'All';
+      allBtn.dataset.sfb = 'all';
+      inlineSeasonRow.appendChild(allBtn);
+
+      inlineSeasons.forEach(function(s) {
+        var btn = document.createElement('button');
+        btn.className = 'sfb-btn' + (filterSeasons.includes(s) ? ' active' : '');
+        btn.textContent = s;
+        btn.dataset.sfb = s;
+        inlineSeasonRow.appendChild(btn);
+      });
+
+      // Disabled 20-21
+      var disBtn = document.createElement('button');
+      disBtn.className = 'sfb-btn sfb-disabled';
+      disBtn.textContent = '20-21';
+      disBtn.disabled = true;
+      disBtn.title = 'Coming Soon \u2014 2020-21 trades not yet graded';
+      inlineSeasonRow.appendChild(disBtn);
+    }
+
+    buildInlineSeasonBtns();
+
+    if (inlineSeasonRow) {
+      inlineSeasonRow.addEventListener('click', function(e) {
+        var btn = e.target.closest('.sfb-btn');
+        if (!btn || btn.disabled || btn.classList.contains('sfb-disabled')) return;
+        if (_syncing) return;
+        _syncing = true;
+        var val = btn.dataset.sfb;
+        if (val === 'all') {
+          filterSeasons = [];
+        } else {
+          var idx = filterSeasons.indexOf(val);
+          if (idx >= 0) filterSeasons.splice(idx, 1);
+          else filterSeasons.push(val);
+        }
+        buildInlineSeasonBtns();
+        // Sync top bar
+        if (_sfb && typeof _sfb.reset === 'function') {
+          _sfb.reset();
+          // Rebuild top bar to match
+          syncTopFilter(filterSeasons);
+        }
+        onSeasonChange(filterSeasons.slice());
+        _syncing = false;
+      });
+    }
+
+    function syncInlineFilter(activeSeasons) {
+      filterSeasons = activeSeasons;
+      buildInlineSeasonBtns();
+    }
+
+    function syncTopFilter(activeSeasons) {
+      // Click buttons in top bar to match state
+      var topBar = document.getElementById('season-filter-bar');
+      if (!topBar) return;
+      topBar.querySelectorAll('.sfb-btn[data-sfb]').forEach(function(btn) {
+        var val = btn.dataset.sfb;
+        if (val === '20-21' || btn.disabled) return;
+        var shouldBeActive = (val === 'all' && activeSeasons.length === 0) || activeSeasons.includes(val);
+        btn.classList.toggle('active', shouldBeActive);
+      });
     }
 
     // ── Summary cards ────────────────────────────────────────────────────── //
@@ -211,9 +298,10 @@
       if (collusionMode) exitCollusionMode();
       selectedOwners = [];
       buildOwnerPills();
-      // Reset season bar to "All"
+      // Reset both season bars to "All"
       if (_sfb && typeof _sfb.reset === 'function') _sfb.reset();
       filterSeasons = [];
+      buildInlineSeasonBtns();
       applyFiltersAndSort();
     }
 
@@ -431,6 +519,7 @@
         if (sortBy === 'margin') return (b.win_margin || 0) - (a.win_margin || 0);
         if (sortBy === 'recent') return b.trade_id - a.trade_id;
         if (sortBy === 'fair')   return (a.win_margin || 999) - (b.win_margin || 999);
+        if (sortBy === 'oldest') return a.trade_id - b.trade_id;
         return 0;
       });
 
@@ -697,6 +786,9 @@
       return { display: display, tooltip: full };
     }
 
+    // Inactive players: traded players with 0 current production
+    var INACTIVE_PLAYERS = new Set(['Kyrie Irving', 'Fred VanVleet', 'Damian Lillard', 'Cam Thomas']);
+
     function buildSideHtml(side, sideClass, isCollusion, tvotPeriods, isMultiParty, trade) {
       if (!side || !side.owner) return '<div class="trade-side ' + sideClass + '"></div>';
 
@@ -717,24 +809,19 @@
       var cumMargin = (trade && trade.cumulative_margin != null) ? trade.cumulative_margin : null;
       var cumSuffix = (cumMargin != null) ? ' (+' + cumMargin.toFixed(1) + ')' : '';
 
-      // Task 9: ONE status indicator per side — either winner badge OR flip text, not both
+      // Winner badge(s): Dynasty Winner always shown; Flipped badge stacked if applicable
       var winBadge     = '';
       var winnerHistory = '';
       if (isWinner) {
+        // Every winner gets Dynasty Winner badge
+        winBadge = '<span class="winner-badge">&#x2714; Dynasty Winner' + cumSuffix + '</span>';
         if (flipped && owner === currWinner) {
-          // Flipped winner: single orange badge with context
-          winBadge = '<span class="winner-flipped-badge">&#x21C4; Flipped</span>';
-          winnerHistory = '<div class="winner-history winner-flipped-text">Flipped from ' +
-            YK.ownerDisplayName(initWinner) + '</div>';
-        } else {
-          // Stable winner: single green badge with cumulative margin
-          winBadge = '<span class="winner-badge">&#x2714; Dynasty Winner' + cumSuffix + '</span>';
-          if (tvotArr.length > 1) {
-            winnerHistory = '<div class="winner-history winner-stable">Leading since Y1</div>';
-          }
+          // Flipped: add secondary Flipped badge with margin
+          winBadge += ' <span class="winner-flipped-badge">&#x21C4; Flipped' + cumSuffix + '</span>';
+        } else if (tvotArr.length > 1) {
+          winnerHistory = '<div class="winner-history winner-stable">Leading since Y1</div>';
         }
       }
-      // Note: loser "Was leading Y1" removed — flip visible via mini-bar and winner badge
 
       var assetRows = assets.map(function(a) {
         var valStr = (a.value != null && a.value > 0) ? a.value.toFixed(1) : null;
@@ -755,7 +842,10 @@
         } else {
           // Player asset or fallback
           var displayName = a.name || a.description || '\u2014';
-          namePart = YK.escapeHtml(displayName) +
+          var inactivePill = INACTIVE_PLAYERS.has(displayName)
+            ? ' <span style="font-size:0.6rem;font-weight:600;color:var(--text-muted);background:var(--bg-primary);border:1px solid var(--border);padding:0 4px;border-radius:3px;vertical-align:middle">Inactive</span>'
+            : '';
+          namePart = YK.escapeHtml(displayName) + inactivePill +
             (ageStr ? '<span style="opacity:0.62;font-size:0.73em">' + ageStr + '</span>' : '');
         }
 
